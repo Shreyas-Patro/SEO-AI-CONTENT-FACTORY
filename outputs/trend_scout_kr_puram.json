@@ -1,0 +1,905 @@
+{
+  "topic": "KR PURAM",
+  "classification": {
+    "categories": [
+      "locality"
+    ],
+    "primary_category": "locality",
+    "detected_localities": [
+      "KR Puram"
+    ],
+    "is_locality": true,
+    "is_cross_cutting": false
+  },
+  "raw_data": {
+    "trends": {
+      "trend_available": false,
+      "error": "No module named 'pytrends'"
+    },
+    "paa_questions": [
+      "Which part of Bangalore is KR Puram?",
+      "Why is KR Puram famous?",
+      "Is RK puram a good area?",
+      "Is KR Puram a district?",
+      "What is famous in KR Puram, Bangalore?",
+      "What is the 60/40 rule in Bangalore?",
+      "Where do most billionaires live in Bangalore?",
+      "Does Virat Kohli own a restaurant in Bangalore?",
+      "Is KR Puram a posh area?",
+      "Which area of Bangalore is best to live in?",
+      "Is a 30k salary enough to live in Bangalore?",
+      "Is Krishnarajapuram safe?",
+      "What is the price of land in KR Puram Bangalore?",
+      "Is KR Puram a good place to invest?",
+      "What is the cost of a 30 * 40 site in Bangalore?",
+      "Which is the cheapest area in Bangalore for property?",
+      "Is Kr.puram a good place to invest?",
+      "What is the cost of 1 square foot?",
+      "What are the upcoming projects in Bangalore?",
+      "Which area is growing fastest in Bangalore?",
+      "Who are the top 5 builders in Bangalore?",
+      "What is special in KR Puram?",
+      "How to spend 3 hours in Bangalore?",
+      "What to do in free time in Bangalore?",
+      "Where to hang out with friends in Bangalore?",
+      "Where is Virat Kohli's restaurant in Bangalore?",
+      "What is a 6 top restaurant?",
+      "What are some romantic restaurants in Bangalore?",
+      "Which syllabus is easy?",
+      "Which school is ranked no. 1 in Bangalore?",
+      "Which is costly, CBSE or ICSE?",
+      "Is Whitefield a posh area in Bangalore?",
+      "Which area is booming in Bangalore?",
+      "Is Whitefield cheap or expensive?"
+    ],
+    "related_searches": [
+      "Kr puram bangalore map",
+      "KR Puram railway station",
+      "KR Puram Bangalore Pin Code",
+      "KR Puram Bangalore location",
+      "KR Puram Bangalore Railway station",
+      "Kr puram bangalore distance",
+      "Kr puram bangalore address",
+      "Kr puram bangalore places to visit",
+      "Kr puram bangalore guide 2022",
+      "Places to visit in KR Puram Bangalore",
+      "KR Puram distance",
+      "Kr puram from my location",
+      "KR Puram Metro station",
+      "KR Puram location",
+      "Places to visit near KR Puram Railway Station",
+      "Living in kr puram bangalore reviews",
+      "Living in kr puram bangalore reddit",
+      "Living in kr puram bangalore for rent",
+      "Kr Puram directions",
+      "Kr puram review quora",
+      "Kr puram review in english",
+      "Kr puram review reddit",
+      "Kr puram review 2022",
+      "Kr puram bangalore which direction",
+      "KR Puram near areas",
+      "Kr puram property price per square foot",
+      "Kr puram property price per square feet",
+      "Kr puram property price per sq ft",
+      "KR Puram square feet rate",
+      "Kr puram property price in bangalore",
+      "Independent House for sale in KR Puram below 35 lakhs",
+      "House for sale in KR Puram a khata",
+      "KR Puram House for sale",
+      "Kr puram rent house",
+      "Kr puram rent 2bhk",
+      "2 BHK House for rent in KR Puram Below 6,000",
+      "1 BHK House for rent in KR Puram below 6,000",
+      "Kr puram rent 1 bhk",
+      "1 BHK House for rent in KR Puram below 10000",
+      "Kr puram rent flats",
+      "Independent House for rent in KR Puram below 6000",
+      "2 BHK independent House for rent in KR Puram, Bangalore",
+      "Gated community Flats for rent in KR Puram",
+      "Independent House for rent in KR Puram Below 6,000",
+      "Independent House for rent in KR Puram Below 5000",
+      "2 BHK for rent near Tin Factory Bangalore",
+      "2BHK for rent near KR Puram railway station",
+      "1 BHK for rent in KR Puram, Bangalore",
+      "2 BHK Flats for sale in KR Puram",
+      "KR Puram Flats for rent",
+      "Ready to move Flats in KR Puram, Bangalore",
+      "Gated community Flats for sale in KR Puram",
+      "1 BHK Flats in KR Puram, bangalore for rent",
+      "New apartments in KR Puram, Bangalore",
+      "3 BHK Flats for sale in KR Puram, Bangalore",
+      "1 BHK Flat for sale in KR Puram Bangalore",
+      "KR Puram property Rates",
+      "BDA approved plots in KR Puram",
+      "Plots for sale in KR Puram gated community",
+      "Seegehalli square feet rate",
+      "Kr puram new projects price",
+      "Kr puram new projects in bangalore",
+      "Kr puram new projects for sale",
+      "New flats in KR Puram, Bangalore",
+      "Rera approved Projects in KR Puram Bangalore",
+      "Assetz KR Puram",
+      "Things to do in kr puram for couples",
+      "Things to do in kr puram with friends",
+      "Places to visit in KR Puram",
+      "Places to visit KR Puram for couples",
+      "KR Puram lake Park",
+      "Places to visit near KR Puram for kids",
+      "Malls near kr puram",
+      "Best restaurants kr puram for lunch",
+      "Best restaurants kr puram for family",
+      "Best restaurants near Kr Puram Railway Station",
+      "Best Veg Restaurants in KR Puram",
+      "Best non veg restaurants in KR Puram",
+      "Best restaurants kr puram for couples",
+      "Veg Restaurants near kr puram",
+      "Restaurants near KR Puram Bangalore",
+      "Top 10 schools near kr puram",
+      "Cbse schools near kr puram",
+      "KR Puram schools list with fees",
+      "Best schools near kr puram",
+      "Schools near kr puram with fees",
+      "Top 10 schools in KR Puram, Bangalore with Fees",
+      "Top 10 CBSE schools in KR Puram Bangalore",
+      "ICSE schools near KR Puram",
+      "KR Puram Hospital list",
+      "KR Puram Hospital Government",
+      "Best Hospital in KR Puram Bangalore",
+      "Kr puram Hospital Job vacancy",
+      "Altor hospital kr Puram",
+      "Manipal Hospital KR Puram",
+      "Sri Ram Hospital KR Puram",
+      "Hope hospital, KR Puram"
+    ],
+    "autocomplete": [
+      "kr puram railway station",
+      "kr puram metro station",
+      "kr puram pin code",
+      "kr puram bangalore",
+      "kr puram distance",
+      "kr puram rto",
+      "kr puram railway station code",
+      "kr puram market",
+      "kr puram to majestic metro",
+      "kr puram to majestic distance",
+      "kr puram to whitefield distance",
+      "kr puram metro",
+      "kr puram to hoskote metro",
+      "kr puram to hoskote distance",
+      "kr puram police station",
+      "kr puram bangalore pin code",
+      "kr puram bangalore railway station",
+      "kr puram bangalore railway station code",
+      "kr puram bangalore one",
+      "kr puram bangalore distance",
+      "kr puram bangalore north or south",
+      "kr puram bangalore rural or urban",
+      "kr puram bangalore map",
+      "kr puram bangalore metro",
+      "kr puram bangalore distance from my location",
+      "kr puram bangalore location",
+      "kr puram bangalore direction",
+      "kr puram bangalore to marathahalli distance",
+      "kr puram bangalore metro station",
+      "kr puram bangalore to airport distance",
+      "rent in kr puram bangalore",
+      "apartments in kr puram",
+      "apartments in kr puram bangalore",
+      "apartments in kr puram for sale",
+      "rent house in kr puram",
+      "rent house in kr puram bangalore",
+      "1bhk rent in kr puram",
+      "2bhk rent in kr puram",
+      "room rent in kr puram",
+      "1bhk rent in kr puram bangalore",
+      "1rk rent in kr puram",
+      "2bhk rent in kr puram bangalore",
+      "bike rent in kr puram",
+      "room rent in kr puram bangalore",
+      "flat rent in kr puram",
+      "kr puram property for sale",
+      "kr puram property registration office",
+      "kr puram property rates",
+      "kr puram house for rent",
+      "kr puram house for sale",
+      "kr puram land price",
+      "kr puram real estate",
+      "kr puram house broker contact number",
+      "kr puram land for sale",
+      "kr puram house",
+      "kr puram house for lease",
+      "kr puram land value",
+      "kr puram house for rent 2 bhk",
+      "kr puram house for sale price",
+      "kr puram house for rent 1bhk"
+    ],
+    "serp_results_summary": [
+      {
+        "query": "KR Puram Bangalore",
+        "top_results": [
+          {
+            "title": "Krishnarajapuram",
+            "link": "https://en.wikipedia.org/wiki/Krishnarajapuram",
+            "snippet": "Krishnarajapuram is an eastern suburb of Bengaluru, the capital of the Indian state of Karnataka. It is one of the zones of BBMP.",
+            "position": 1,
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "Location 12.9716 77.5944 kr puram, Bangalore, India",
+            "link": "https://www.google.com/maps/search/kr+puram%2C+Bangalore%2C+India/?hl=en",
+            "snippet": "",
+            "position": 2,
+            "domain": "www.google.com"
+          },
+          {
+            "title": "KR Puram, Bangalore: Map, Property Rates, ...",
+            "link": "https://www.magicbricks.com/KR-Puram-in-Bangalore-Overview",
+            "snippet": "KR Puram (Krishna Raja Puram) is a suburban area in Bengaluru, surrounded by Mallasandra to the east, Aavalahalli to the north, Ramamurthy Nagar to the west, ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "KR Puram Bangalore guide",
+        "top_results": [
+          {
+            "title": "KR Puram, Bengaluru \u2013 Neighbourhood Guide",
+            "link": "https://www.aparnaconstructions.com/kr-puram-bengaluru-neighbourhood-guide",
+            "snippet": "KR Puram is located at the junction of the Old Madras Road and the Outer Ring Road, on NH-75. It is 15 kilometres away from Bengaluru ...",
+            "position": 1,
+            "domain": "www.aparnaconstructions.com"
+          },
+          {
+            "title": "KR Puram Bangalore: Guide to Best Eats, Stays, Shops & ...",
+            "link": "https://www.justdial.com/list/nammabengaluru-a-local-journey-to-kr-puram-and-its-best-places-to-eat-stay-shop-and-visit",
+            "snippet": "Explore KR Puram Bangalore with our guide to top restaurants, hotels, shopping spots, and attractions for a complete local experience.",
+            "position": 2,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "Krishnarajapura Travel Guide - Bengaluru",
+            "link": "https://www.expedia.co.in/Bengaluru-Krishnarajapura.dx553248635974587414",
+            "snippet": "Uncover Krishnarajapura's best with our Travel Guide for 2026. Expert tips & must see recommendations. Whether a tourist or local, plan your holiday today ...",
+            "position": 3,
+            "domain": "www.expedia.co.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "living in KR Puram Bangalore",
+        "top_results": [
+          {
+            "title": "How does living in KR Puram feel like : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/t4tipy/how_does_living_in_kr_puram_feel_like/",
+            "snippet": "Most parts of the area would feel sub-urban specially compared to Jayanagar. There arent many parks, and the area is quite dusty in general. But ...",
+            "position": 1,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Top Benefits of Living in Apartments Near KR Puram",
+            "link": "https://www.pridegroup.net/blog/top-benefits-of-living-in-apartments-near-kr-puram",
+            "snippet": "KR Puram is quickly becoming the preferred area for individuals looking for luxury apartments in Bangalore due to its advantageous location, strong ...",
+            "position": 2,
+            "domain": "www.pridegroup.net"
+          },
+          {
+            "title": "Ratings & Reviews of KR Puram, Bangalore",
+            "link": "https://www.99acres.com/kr-puram-bangalore-east-reviews-and-ratings-wrffid",
+            "snippet": "Overall, it's a convenient and secure locality that makes day-to-day living smooth and stress-free. Good Public Transport. Rare Crimes Reported. Easy Cab/Auto ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "local_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "KR Puram review",
+        "top_results": [
+          {
+            "title": "Ratings & Reviews of KR Puram, Bangalore",
+            "link": "https://www.99acres.com/kr-puram-bangalore-east-reviews-and-ratings-wrffid",
+            "snippet": "The area feels quite safe even at night, which gives a peace of mind. Crime rates are very low, and the neighbourhood generally has a calm and friendly vibe.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "How does living in KR Puram feel like : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/t4tipy/how_does_living_in_kr_puram_feel_like/",
+            "snippet": "Absolutely hate this place. Feels like sub-urban, Dirty, nothing nearby. have to pay huge cab money to reach anything reasonable.",
+            "position": 2,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "KR Puram, Bangalore: Map, Property Rates, ...",
+            "link": "https://www.magicbricks.com/KR-Puram-in-Bangalore-Overview",
+            "snippet": "K R Puram is a good locality. It has good connectivity to school, college, bus stand, hospital, bank and market. Rukumangadan Murali NAIDU.",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "KR Puram property price",
+        "top_results": [
+          {
+            "title": "Property Rates in KR Puram, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-kr-puram-bangalore-east-prffid",
+            "snippet": "The average flat rates in KR Puram, Bangalore is \u20b9 9,550 per sq ft. A 1 BHK flat is available at a price range of \u20b9 3,410,000-9,720,000. A 2 BHK flat is ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property in KR Puram, Bangalore",
+            "link": "https://www.magicbricks.com/property-for-sale-in-k-r-puram-bangalore-pppfs",
+            "snippet": "The price of flats in KR Puram range between \u20b9 35 lakhs - \u20b9 16.31 Cr, and houses price between \u20b9 46 lakhs - \u20b9 7 Cr, with 1-5 BHK options. However, land prices ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Property in KR Puram, Bangalore",
+            "link": "https://www.99acres.com/property-in-kr-puram-bangalore-east-ffid",
+            "snippet": "... Puram? The average price of 1 BHK property in KR Puram is \u20b9 Rs 33L to \u20b9 2.1Cr. 2 BHK property price in KR Puram is \u20b9 Rs 6L to \u20b9 2.6Cr. For 3 BHK property ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "housing.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "KR Puram rent",
+        "top_results": [
+          {
+            "title": "Flats for Rent in KR Puram, Bangalore",
+            "link": "https://www.magicbricks.com/flats-for-rent-in-k-r-puram-bangalore-pppfr",
+            "snippet": "What is the rental price of 2 BHK flat in KR Puram, Bangalore? The monthly rent of 2 BHK flats in KR Puram Bangalore is between Rs. \u20b9 14,599-\u20b9 61,600. The ...",
+            "position": 1,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Flats for Rent in Krishnarajapura , Bangalore",
+            "link": "https://www.nobroker.in/flats-for-rent-in-k_r_puram_bangalore",
+            "snippet": "1 BHK Flats for rent in K R Puram \u00b7 2 BHK Flats for rent in K R Puram \u00b7 3 ... Villas for rent in K R Puram \u00b7 Independent Builder Floor for rent in K R Puram.",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "House for rent in KR Puram, Bangalore",
+            "link": "https://www.99acres.com/independent-house-for-rent-in-kr-puram-bangalore-east-ffid",
+            "snippet": "House/villa available for rent in kr puram, bangalore. Available at rent of rs 50000 per month. It has plot area of 1500 sq ft. It has 4 bhk, 4 bathroom, 1 ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "housing.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "2BHK rent KR Puram",
+        "top_results": [
+          {
+            "title": "2 BHK Flats for Rent in KR Puram, Bangalore",
+            "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-kr-puram-bangalore-east-ffid",
+            "snippet": "Big 2bhk available for rent in sri sai paradise, seegehalli, bangalore. 2. Available to occupy from may 3rd 2026. 3. Rent is rs 33,000 per month + ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "2 BHK Flats for rent in Krishnarajapura, Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-k_r_puram_bangalore",
+            "snippet": "2 BHK - 300 sq. ft. to 2,670 sq. ft. Monthly rent generally in Krishnarajapura falls between \u20b912,000 to \u20b940,000 per month, influenced by amenities, water source ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "bangalore",
+            "link": "https://www.nestaway.com/bangalore/2-bhk-flat-house-for-rent-in-kr-puram",
+            "snippet": "... Nestaway. 2 BHK semi furnished flat for Rent in Abhi Nest, Battarahalli, Bengaluru \u00b7 Abhi Nest | 25 Houses. For girls, family. 35,000. Rent. 1,04,000. Deposit.",
+            "position": 3,
+            "domain": "www.nestaway.com"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "magicbricks.com",
+          "housing.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "KR Puram flat for sale",
+        "top_results": [
+          {
+            "title": "Apartments in KR Puram, Bangalore - 741+ Flats for sale ...",
+            "link": "https://www.99acres.com/flats-in-kr-puram-bangalore-east-ffid",
+            "snippet": "Pride Euphora society now offers elegantly built 3,4 BHK apartments in KR Puram. Apartments in Pride Euphora have SUPER area ranging between 1,693 - 2,982 ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Flats for Sale in Krishnarajapura Bangalore | Apartments in ...",
+            "link": "https://www.nobroker.in/flats-for-sale-in-k_r_puram_bangalore",
+            "snippet": "2 BHK Flat In Ravoos Nandan For Sale In Krishnarajapuram. \u20b965 Lacs ... 1 BHK Flats for sale in K R Puram \u00b7 2 BHK Flats for sale in K R Puram \u00b7 3 BHK ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "12 Flats & Apartments for Sale in KR Puram",
+            "link": "https://www.olx.in/en-in/kr-puram_g5386077/for-sale-houses-apartments_c1725",
+            "snippet": "Explore flats for sale in KR Puram in the price range of \u20b910,000 - \u20b985 Crores. OLX provides you options ranging from 1-5 BHK flats for sale in KR Puram.",
+            "position": 3,
+            "domain": "www.olx.in"
+          }
+        ],
+        "serp_features": [
+          "video_results"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "KR Puram property rate per sq ft",
+        "top_results": [
+          {
+            "title": "Property Rates in KR Puram, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-kr-puram-bangalore-east-prffid",
+            "snippet": "The average flat rates in KR Puram, Bangalore is \u20b9 9,550 per sq ft. A 1 BHK flat is available at a price range of \u20b9 3,410,000-9,720,000. A 2 BHK flat is ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Plots for Sale in KR Puram, Bangalore",
+            "link": "https://www.magicbricks.com/residential-plots-land-for-sale-in-k-r-puram-bangalore-pppfs",
+            "snippet": "Residential land in Krishnarajapura comes at an average price of \u20b91.38 Cr, a median price of \u20b91.14 Cr, and shows a QoQ growth of -1.21%. The other area nearby ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Property Price & Trends in K R Puram, Bengaluru - Housing.com",
+            "link": "https://housing.com/price-trends/property-rates-for-buy-in-k_r_puram_bengaluru-P5ldjyvluv8dq34ho",
+            "snippet": "Starting price of properties in K R Puram is Rs. 3,508 per sqft and the average price of properties in K R Puram is Rs. 9,328 per sqft. Price trend recommends ...",
+            "position": 3,
+            "domain": "housing.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "housing.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "KR Puram new projects",
+        "top_results": [
+          {
+            "title": "New Projects in KR Puram Bangalore for Sale",
+            "link": "https://www.99acres.com/new-projects-in-kr-puram-bangalore-east-ffid",
+            "snippet": "New Projects in KR Puram Bangalore for Sale ; Pride Euphora \u00b7 \u20b913.0K/sqft onwards \u00b7 3BHK. \u20b92.2 Cr+. 4BHK. \u20b93.75 Cr+ ; Brigade Belvedere \u00b7 \u20b912.0K/sqft onwards \u00b7 1BHK.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "New Projects in K R Puram Bangalore | Latest Residential ...",
+            "link": "https://www.nobroker.in/new-projects-in-k-r-puram-bangalore",
+            "snippet": "New Projects in K R Puram Bangalore | NoBroker \u00b7 Goyal The Orchid Life \u00b7 Codename Elite Yelahanka \u00b7 Fortune Primero Seven \u00b7 Provident Botanico \u00b7 Provident ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Ongoing projects in K R Puram, Bangalore",
+            "link": "https://www.commonfloor.com/ongoing-apartments-in-k-r-puram/psr-4fc348c9bba83",
+            "snippet": "26 New Projects in K R Puram, Bangalore \u00b7 Monarch Aqua Block C \u00b7 Krishna Lakefront \u00b7 DS MAX SkyShubham \u00b7 Kingston Legacy \u00b7 Sree Adithya Lotus Park \u00b7 Pride Euphora.",
+            "position": 3,
+            "domain": "www.commonfloor.com"
+          }
+        ],
+        "serp_features": [
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "things to do in KR Puram",
+        "top_results": [
+          {
+            "title": "Bangalore Attractions near KR Puram",
+            "link": "https://www.evomahotels.com/blog/bangalore-attractions-near-kr-puram.html",
+            "snippet": "1. Lazer Castle. \u00b7 2. Yele Mallappa Shetty Lake. \u00b7 3. Lumbini Gardens. \u00b7 4. K.R. Puram Lake Park. \u00b7 5. Ragigudda Sri Prasanna Anjaneya Temple. \u00b7 6. Bangalore ...",
+            "position": 1,
+            "domain": "www.evomahotels.com"
+          },
+          {
+            "title": "What do people do in K.R Puram for fun?",
+            "link": "https://www.reddit.com/r/BangaloreMeetups/comments/1nf459t/what_do_people_do_in_kr_puram_for_fun/",
+            "snippet": "If anyone lives around let's connect, go on nature trails or suggest some fun activities and food.",
+            "position": 2,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Things to do near Krishnarajapuram Station",
+            "link": "https://www.tripadvisor.in/AttractionsNear-g659923-d4143896-Krishnarajapuram_Station-Mahadevapura_Bangalore_District_Karnataka.html",
+            "snippet": "Things to do near Krishnarajapuram Station on Tripadvisor: See 62 reviews and 107 candid photos of things to do near Krishnarajapuram Station in ...",
+            "position": 3,
+            "domain": "www.tripadvisor.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "best restaurants KR Puram",
+        "top_results": [
+          {
+            "title": "KR Puram Restaurants, Bangalore",
+            "link": "https://www.zomato.com/bangalore/best-kr-puram-restaurants",
+            "snippet": "KR Puram Restaurants, Bangalore \u00b7 Windmills \u00b7 Oota Bangalore \u00b7 Pasta Street \u00b7 Biergarten \u00b7 Toscano \u00b7 Ishaara \u00b7 Daily Sushi \u00b7 Chambal.",
+            "position": 1,
+            "domain": "www.zomato.com"
+          },
+          {
+            "title": "THE 10 BEST Restaurants Near Krishnarajapuram Station",
+            "link": "https://www.tripadvisor.in/RestaurantsNear-g659923-d4143896-Krishnarajapuram_Station-Mahadevapura_Bangalore_District_Karnataka.html",
+            "snippet": "Restaurants near Krishnarajapuram Station \u00b7 1. 46 Ounces Brewhouse, Old Madras Road. 5.0. (263 reviews) \u00b7 2. Bieregarten. 5.0. (4 reviews).",
+            "position": 2,
+            "domain": "www.tripadvisor.in"
+          },
+          {
+            "title": "10 Best Family Dining Restaurants In Kr Puram, Bangalore",
+            "link": "https://www.swiggy.com/city/bangalore/kr-puram-restaurants/family-dining-restaurants-dineout",
+            "snippet": "Discover The Best Family Dining Restaurants In Kr Puram, Bangalore. Find Ratings, Reviews And Bestsellers To Each Family Dining Restaurants Serving In Kr ...",
+            "position": 3,
+            "domain": "www.swiggy.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "schools near KR Puram",
+        "top_results": [
+          {
+            "title": "7 Best Schools in KR Puram, Bangalore 2026-27",
+            "link": "https://yellowslate.com/blog/best-schools-in-kr-puram-bangalore",
+            "snippet": "7 Best Schools in KR Puram, Bangalore 2026-27: Fee, Admission, Curriculum, Facilities & More \u00b7 1. Lake Montfort School \u00b7 2. Amara Jyothi Public School \u00b7 3. New ...",
+            "position": 1,
+            "domain": "yellowslate.com"
+          },
+          {
+            "title": "NPS KR Puram: Best CBSE School in Bangalore",
+            "link": "https://npskrpuram.com/",
+            "snippet": "National Public School, KR Puram, part of the prestigious NPS family, is located near KR Puram Road, Bangalore. Spanning 6 acres, our campus is thoughtfully ...",
+            "position": 2,
+            "domain": "npskrpuram.com"
+          },
+          {
+            "title": "CBSE School Near KR Puram Bangalore | PSBB LLA ...",
+            "link": "https://psbbmillenniumschool.org/home-bengaluru/cbse-school-near-kr-puram-psbb-lla-bengaluru/",
+            "snippet": "Best CBSE School Near KR Puram, Bangalore \u2013 PSBB Learning Leadership Academy (LLA) \u00b7 Pre-Primary (Pre-KG to UKG) \u00b7 Primary (Grades 1\u20135) \u00b7 Middle School (Grades 6\u20138).",
+            "position": 3,
+            "domain": "psbbmillenniumschool.org"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "hospitals near KR Puram",
+        "top_results": [
+          {
+            "title": "Best Hospitals Near Me in KR Puram, Bangalore",
+            "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/kr-puram",
+            "snippet": "39 Hospitals in KR Puram, Bangalore \u00b7 Koshys Hospital \u00b7 Partha Dental Skin Hair \u00b7 Sri Lakshmi Mother And Children Hospital \u00b7 Hope Hospital \u00b7 Sri Lakshmi Super ...",
+            "position": 1,
+            "domain": "www.practo.com"
+          },
+          {
+            "title": "Best Hospitals in Krishnarajapuram, Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Hospitals-in-Krishnarajapuram/nct-10253670",
+            "snippet": "162 Hospitals in Krishnarajapuram,Bangalore. Homeocare International Pvt Ltd, Hcg Cancer Centre, Aster Hospital Whitefield etc.",
+            "position": 2,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "Altor Hospitals | Best Multispeciality Hospital in Bangalore ...",
+            "link": "https://altorhospitals.com/",
+            "snippet": "Altor Hospitals is the best multispeciality hospital in Bangalore, KR Puram offering advanced cardiac care, neuro care, maternity, orthopedic, ICU, ...",
+            "position": 3,
+            "domain": "altorhospitals.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "KR Puram vs Whitefield",
+        "top_results": [
+          {
+            "title": "KR Puram Vs Whitefield : r/indianrealestate",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1ln9log/kr_puram_vs_whitefield/",
+            "snippet": "Whitefield wins over KR Puram. KR Puram - though is a great connecting location, hasn't really grown as much as folks would've liked.",
+            "position": 1,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "What location is better to buy a flat for investment purpose ...",
+            "link": "https://www.quora.com/What-location-is-better-to-buy-a-flat-for-investment-purpose-between-Budhigere-cross-Yelahanka-Thanisandra-KR-Puram-and-Whitefield",
+            "snippet": "What location is better to buy a flat for investment purpose between Budhigere cross, Yelahanka, Thanisandra, KR Puram and Whitefield? All ...",
+            "position": 2,
+            "domain": "www.quora.com"
+          },
+          {
+            "title": "Primed Location: What the KR Pura-Whitefield Metro Line ...",
+            "link": "https://www.moneycontrol.com/news/business/primed-location-what-the-new-kr-pura-whitefield-metro-line-means-for-bengalurus-real-estate-market-10353871.html",
+            "snippet": "Brokers say areas like KR Pura-Mahadevpura and Kadugodi to Whitefield hold more potential for further real estate appreciation. Way ahead.",
+            "position": 3,
+            "domain": "www.moneycontrol.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com"
+        ]
+      }
+    ],
+    "aeo_scores": [
+      {
+        "query": "best restaurants KR Puram",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "schools near KR Puram",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "hospitals near KR Puram",
+        "score": 95,
+        "serp_features": [
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "KR Puram Bangalore",
+        "score": 90,
+        "serp_features": [
+          "knowledge_panel",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "KR Puram new projects",
+        "score": 90,
+        "serp_features": [
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "KR Puram rent",
+        "score": 85,
+        "serp_features": [
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "2BHK rent KR Puram",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "KR Puram flat for sale",
+        "score": 85,
+        "serp_features": [
+          "video_results"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "things to do in KR Puram",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "KR Puram Bangalore guide",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "living in KR Puram Bangalore",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "local_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "KR Puram review",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "KR Puram property price",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "KR Puram property rate per sq ft",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "KR Puram vs Whitefield",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      }
+    ]
+  },
+  "analysis": {
+    "topic": "unknown",
+    "trend_direction": "unknown",
+    "trend_summary": "LLM parsing failed",
+    "intent_clusters": [],
+    "content_gaps": [],
+    "recommended_topics": []
+  },
+  "competitor_tracker": {
+    "magicbricks.com": 10,
+    "nobroker.in": 8,
+    "99acres.com": 10,
+    "housing.com": 4
+  },
+  "serp_calls_used": 15,
+  "autocomplete_calls_used": 4,
+  "cost_usd": 0.019146
+}

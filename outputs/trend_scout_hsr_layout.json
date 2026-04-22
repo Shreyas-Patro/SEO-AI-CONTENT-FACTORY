@@ -1,0 +1,930 @@
+{
+  "topic": "HSR Layout",
+  "classification": {
+    "categories": [
+      "locality"
+    ],
+    "primary_category": "locality",
+    "detected_localities": [
+      "HSR Layout"
+    ],
+    "is_locality": true,
+    "is_cross_cutting": false
+  },
+  "raw_data": {
+    "trends": {
+      "trend_available": false,
+      "error": "No module named 'pytrends'"
+    },
+    "paa_questions": [
+      "Why is HSR Layout famous?",
+      "Is HSR Layout a good area in Bangalore?",
+      "Which part of Bangalore is HSR Layout?",
+      "What is the full form of HSR?",
+      "How is the HSR Layout to live?",
+      "Which is better, Koramangala or HSR Layout?",
+      "What is the cost of living in HSR Layout?",
+      "Is HSR urban or rural?",
+      "How safe is the HSR Layout?",
+      "What is HSR Layout famous for?",
+      "Which HSR sector is best?",
+      "What is the cost of land in HSR Layout?",
+      "What is the price of flat in HSR Layout?",
+      "What is the cost of a 30 * 40 site in Bangalore?",
+      "Which area has the cheapest rent in Bangalore?",
+      "What is the price of apartment in HSR Layout?",
+      "What are the advantages of a 2 BHK?",
+      "What is the land rate in HSR Layout?",
+      "What is the cost of 1 square foot?",
+      "What can I do in a HSR Layout?",
+      "Where to take a girl on date in Bangalore?",
+      "What is the price of 1 BHK in HSR Layout for sale?",
+      "What is famous in HSR Layout Bangalore?",
+      "What are some romantic restaurants in Bangalore?",
+      "What is the price of unlimited non veg buffet in HSR Layout?",
+      "Which sector is best to live in HSR Layout?",
+      "Which school is ranked no. 1 in Bangalore?",
+      "Why is Bishop Cotton school famous?",
+      "What are the top 3 hospitals?",
+      "Does Lotus Hospital HSR have an ICU?",
+      "Which is the number one hospital in Bangalore?",
+      "Where are the posh areas in Bangalore?",
+      "Is BTM Layout expensive?",
+      "Which is the best area in Bangalore to live in?"
+    ],
+    "related_searches": [
+      "Hsr layout bangalore map",
+      "Hsr layout bangalore rent",
+      "Hsr layout bangalore directions",
+      "HSR Layout Bangalore Pin Code",
+      "HSR Layout, Bangalore PG",
+      "HSR Layout Bangalore distance",
+      "Hsr layout bangalore price",
+      "Hsr Layout bangalore near Railway Station",
+      "Hsr layout bangalore guide for rent",
+      "Unique places to visit in HSR Layout",
+      "HSR Layout places to visit",
+      "HSR Layout places to eat",
+      "HSR Layout Market",
+      "HSR Layout hangout places",
+      "HSR layout Street shopping",
+      "Places to visit in HSR Layout with friends",
+      "Living in hsr layout bangalore reddit",
+      "Living in hsr layout bangalore reviews",
+      "Living in hsr layout bangalore cost",
+      "Is HSR Layout a posh area",
+      "Is HSR Layout expensive",
+      "HSR layout reddit",
+      "Hsr bangalore directions",
+      "Bangalore hsr layout review",
+      "Hsr layout review reddit",
+      "HSR Layout, Bangalore",
+      "HSR Layout Post Office",
+      "Hsr layout property price per square foot",
+      "Hsr layout property price per square feet",
+      "Hsr layout property price per sq ft",
+      "30x40 site in HSR Layout price",
+      "HSR Layout per square feet rate",
+      "Hsr layout property price in bangalore",
+      "HSR Layout plot for sale",
+      "Individual House for sale in HSR Layout",
+      "Hsr layout rent 1 bhk",
+      "Hsr layout rent 2bhk",
+      "1 BHK in HSR Layout under 15,000 rent",
+      "Rent House in HSR Layout> 5,000",
+      "Fully furnished 1 BHK in HSR Layout rent",
+      "Hsr layout rent 3bhk",
+      "HSR Layout rent house",
+      "1 BHK for rent in HSR Layout Below 10000",
+      "2 BHK for rent in HSR Layout without broker",
+      "2 BHK for rent in HSR Layout Sector 1",
+      "2 BHK in HSR Layout for sale",
+      "2 BHK for rent in HSR Layout Sector 6",
+      "2 BHK fully furnished flat for rent in HSR Layout",
+      "2 BHK for rent in HSR Layout Sector 2",
+      "2 BHK for rent in HSR Layout Sector 7",
+      "2 BHK for rent in HSR Layout Sector 3",
+      "Ready to move Flats for sale in HSR Layout",
+      "Ready to move Flats for sale in HSR Layout price",
+      "Hsr layout flat for sale olx",
+      "2 bhk hsr layout flat for sale",
+      "HSR Layout Flats for rent",
+      "New Flats for sale in HSR Layout",
+      "2 BHK Flats for sale in HSR Layout 2nd Sector",
+      "Hsr layout flat for sale in bangalore",
+      "Property Rates in HSR Layout, Bangalore",
+      "Hbr layout price per sq ft",
+      "Price per sq ft in my area",
+      "How to check per square feet Rate",
+      "HSR Layout plots for sale",
+      "Plots for sale in HSR Layout Sector 1",
+      "Hsr layout new projects price",
+      "Hsr layout new projects in bangalore",
+      "Hsr layout new projects for sale",
+      "Casagrand HSR New project",
+      "New apartments in HSR Layout for rent",
+      "Housing projects in hsr layout",
+      "Square Yards HSR Layout",
+      "Brigade hsr layout",
+      "Unique things to do in hsr layout",
+      "Things to do in hsr layout with friends",
+      "Things to do in hsr layout with family",
+      "Things to do in hsr layout at night",
+      "Free things to do in hsr layout",
+      "Places to eat in HSR Layout",
+      "Shopping in HSR Layout",
+      "Events in HSR Layout today",
+      "Best restaurants hsr layout for lunch",
+      "Top 10 restaurants in HSR Layout",
+      "Best restaurants in HSR Layout veg",
+      "Best family restaurants in HSR Layout",
+      "Best restaurants in HSR Layout For dinner",
+      "Veg restaurants in HSR Layout",
+      "Best restaurants in HSR Layout for breakfast",
+      "Best non veg restaurants in HSR Layout",
+      "Cbse schools near hsr layout",
+      "Top 10 schools near hsr layout",
+      "Top 10 schools in HSR Layout, Bangalore",
+      "Private schools near hsr layout",
+      "Schools near hsr layout bangalore",
+      "Top 10 schools in HSR Layout, Bangalore with fees",
+      "Best CBSE schools in HSR Layout",
+      "Best schools near hsr layout",
+      "Multispeciality Hospitals in HSR Layout, Bangalore",
+      "Best Hospital in HSR Layout",
+      "Lotus Hospital HSR Layout",
+      "HSR Hospital Bangalore",
+      "Services offered by Narayana Multispeciality Hospital, HSR Layout",
+      "Narayana Hospital, HSR Layout",
+      "Narayana Clinic HSR Layout reviews",
+      "Narayana Hospital, HSR contact number",
+      "Hsr layout vs btm layout review",
+      "Hsr layout vs btm layout vs koramangal",
+      "Hsr layout vs btm layout quora",
+      "Hsr layout vs btm layout reddit",
+      "Hsr layout to btm layout distance",
+      "HSR Layout full form",
+      "Residential areas near HSR Layout",
+      "HSR Layout to Koramangala"
+    ],
+    "autocomplete": [
+      "hsr layout pin code",
+      "hsr layout full form",
+      "hsr layout bangalore",
+      "hsr layout distance",
+      "hsr layout restaurants",
+      "hsr layout police station",
+      "hsr layout location",
+      "hsr layout nearest metro station",
+      "hsr layout food street",
+      "hsr layout cafes",
+      "hsr layout to electronic city",
+      "hsr layout to whitefield distance",
+      "hsr layout bda complex",
+      "hsr layout to koramangala distance",
+      "hsr layout rto office",
+      "hsr layout bangalore pin code",
+      "hsr layout bangalore pg",
+      "hsr layout bangalore rent",
+      "hsr layout bangalore one",
+      "hsr layout bangalore pg for girls",
+      "hsr layout bangalore map",
+      "hsr layout bangalore companies",
+      "hsr layout bangalore distance",
+      "hsr layout bangalore pg for boys",
+      "hsr layout bangalore location",
+      "hsr layout bangalore near railway station",
+      "hsr layout bangalore to whitefield distance",
+      "hsr layout bangalore full form",
+      "hsr layout bangalore pg for men",
+      "hsr layout bangalore address",
+      "rent in hsr layout bangalore",
+      "rent in hsr layout sector 2",
+      "rent in hsr layout sector 1",
+      "rent in hsr layout 1 bhk",
+      "rent in hsr layout sector 7",
+      "rent in hsr layout reddit",
+      "rent in hsr layout sector 6",
+      "rent in hsr layout sector 3",
+      "rent in hsr layout for 2 bhk",
+      "rentals in hsr layout",
+      "apartments in hsr layout",
+      "apartments in hsr layout for sale",
+      "apartments in hsr layout sector 1",
+      "apartments in hsr layout sector 2",
+      "apartments in hsr layout sector 7",
+      "hsr layout property for sale",
+      "hsr layout property rates",
+      "hsr layout property dealer",
+      "hsr layout property price",
+      "hsr layout properties for rent",
+      "hsr layout house for rent",
+      "hsr layout house for sale",
+      "hsr layout land price",
+      "hsr layout land for sale",
+      "hsr layout houses",
+      "hsr layout house broker contact number",
+      "hsr layout house of commons",
+      "hsr layout house for lease",
+      "hsr layout land",
+      "hsr layout house for sale price"
+    ],
+    "serp_results_summary": [
+      {
+        "query": "HSR Layout Bangalore",
+        "top_results": [
+          {
+            "title": "HSR Layout",
+            "link": "https://en.wikipedia.org/wiki/HSR_Layout",
+            "snippet": "HSR Layout, an abbreviation of Hosur Sarjapura Road Layout, is a suburb in South Eastern Bangalore, India. The locality, initially developed by the Bangalore ...",
+            "position": 1,
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "HSR Layout, Bangalore: Map, Property Rates, ...",
+            "link": "https://www.magicbricks.com/HSR-Layout-in-Bangalore-Overview",
+            "snippet": "Situated in the south-eastern part of Bengaluru, Hosur-Sarjapur Road Layout is a prominent residential locality in Bengaluru.",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "HSR Layout",
+            "link": "https://hsr-layout.in/",
+            "snippet": "HSR Layout is one of Bangalore's largest layouts, divided into seven sectors, the largest of which is Sector 1 and the smallest is Sector 6. 27 main road of ...",
+            "position": 3,
+            "domain": "hsr-layout.in"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "HSR Layout Bangalore guide",
+        "top_results": [
+          {
+            "title": "HSR Layout Travel Guide - Bengaluru",
+            "link": "https://www.expedia.co.in/Bengaluru-HSR-Layout.dx553248628939816845",
+            "snippet": "Popular places to visit \u00b7 Nandi Hills \u00b7 Bangalore Palace \u00b7 Manyata Tech Park \u00b7 Cubbon Park \u00b7 UB City \u00b7 Lalbagh Botanical Gardens \u00b7 Wonderla Amusement Park \u00b7 ISKCON ...",
+            "position": 1,
+            "domain": "www.expedia.co.in"
+          },
+          {
+            "title": "Food To Shopping: What To Do In HSR Layout | LBB, Bangalore",
+            "link": "https://lbb.in/bangalore/things-to-do-hsr-layout/",
+            "snippet": "From the cafes and places to eat in HSR, we give you a list of things that you can do in HSR Layout that includes shopping, baking and pottery classes.",
+            "position": 2,
+            "domain": "lbb.in"
+          },
+          {
+            "title": "HSR Layout Guide \u2014 Cafes, Bars & The New Cool (2026)",
+            "link": "https://bangalorelife.com/neighborhoods/hsr-layout",
+            "snippet": "HSR Layout guide - Bangalore's quietly cool neighborhood. Best cafes, bars, and why HSR has become one of the most interesting areas in the city.",
+            "position": 3,
+            "domain": "bangalorelife.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "living in HSR Layout Bangalore",
+        "top_results": [
+          {
+            "title": "What's it like living in HSR Layout? : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/uncbcu/whats_it_like_living_in_hsr_layout/",
+            "snippet": "Have been living here since 4 years. Food options are good. Roads are mostly good. Traffic is not that high. Some walkable streets too. The only cons are power ...",
+            "position": 1,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "What It Is Like Living in an Apartment for Rent in HSR ...",
+            "link": "https://housr.in/blog/what-it-is-like-living-in-an-apartment-for-rent-in-hsr-layout",
+            "snippet": "HSR Layout has become one of Bengaluru's most preferred residential areas because it offers a balanced mix of comfort, convenience, ...",
+            "position": 2,
+            "domain": "housr.in"
+          },
+          {
+            "title": "Why HSR Layout Stands Out as a Preferred Residential ...",
+            "link": "https://www.magicbricks.com/blog/hsr-layout-bangalore-best-place-to-live-invest/145242.html",
+            "snippet": "Parks, affordable flats, busy main roads, and other amenities make for easy routines in HSR Layout, Bangalore. Fewer long trips, more easy walks ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "local_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "HSR Layout review",
+        "top_results": [
+          {
+            "title": "Ratings & Reviews of HSR Layout, Bangalore",
+            "link": "https://www.99acres.com/hsr-layout-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "Parks maintaince is excellent, beautiful gardens are there for children to play. Plus, safety is top class, police patrolling is regular and an active RWA.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "What's it like living in HSR Layout? : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/uncbcu/whats_it_like_living_in_hsr_layout/",
+            "snippet": "Excellent Quality of life in HSR. Place is full of fancy restaurants and street food options are limitless too. Very wide roads. Lots of parks.",
+            "position": 2,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "HSR Layout, Bangalore Reviews - Ratings, Pros & Cons ...",
+            "link": "https://www.nobroker.in/locality-iq/hsr-layout-bangalore-liqlt/reviews",
+            "snippet": "Wide spacious planned layout, with numerous parks and open spaces. Good ambience with adequate greenery. At right proper distance from ring round, no issue of ...",
+            "position": 3,
+            "domain": "www.nobroker.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "image_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "HSR Layout property price",
+        "top_results": [
+          {
+            "title": "Property Rates in HSR Layout, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-hsr-layout-bangalore-south-prffid",
+            "snippet": "The average flat rates in HSR Layout, Bangalore is \u20b9 13,200 per sq ft. A 1 BHK flat is available at a price range of \u20b9 6,670,150-14,108,250. A 2 BHK flat is ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property in HSR Layout, Bangalore",
+            "link": "https://www.magicbricks.com/property-for-sale-in-hsr-layout-bangalore-pppfs",
+            "snippet": "The price of flats in HSR Layout range between \u20b9 35 lakhs - \u20b9 16.42 Cr, and houses price between \u20b9 45.7 lakhs - \u20b9 6.50 Cr, with 1-5 BHK options. However, land ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Flats for Sale in HSR Layout Bangalore",
+            "link": "https://www.nobroker.in/flats-for-sale-in-hsr_layout_bangalore",
+            "snippet": "2 BHK Apartment In Prestige Ferns Residency For Sale In Harlur \u00b7 1.95 Cr. \u20b916,610/sq.ft ; 2 BHK Apartment In Prestige Ferns Residency For Sale In Haralur \u00b7 1.95 Cr.",
+            "position": 3,
+            "domain": "www.nobroker.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "HSR Layout rent",
+        "top_results": [
+          {
+            "title": "Flats for Rent in HSR Layout, Bengaluru - Housing",
+            "link": "https://housing.com/rent/flats-for-rent-in-hsr-layout-bengaluru-P5kgp2umse63qjm62",
+            "snippet": "Flats for Rent in HSR Layout, Bengaluru \u00b7 1 BHK Independent Builder Floor for rent in Sector 1, HSR Layout, Bengaluru. 38,000. Price breakup. 700 sq.ft. Builtup ...",
+            "position": 1,
+            "domain": "housing.com"
+          },
+          {
+            "title": "Flats for Rent in HSR Layout , Bangalore",
+            "link": "https://www.nobroker.in/flats-for-rent-in-hsr_layout_bangalore",
+            "snippet": "1 BHK Flats for Rent in HSR Layout. 1 BHK - 200 sq. ft. to 1,200 sq. ft. Monthly rent generally in HSR Layout falls between \u20b98,600 to \u20b938,749 per month, with ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "House for rent in HSR Layout, Bangalore",
+            "link": "https://www.99acres.com/independent-house-for-rent-in-hsr-layout-bangalore-south-ffid",
+            "snippet": "House/villa available for rent in hsr layout, bangalore south. Available at rent of rs 24000 per month. It has carpet area of 700 sqft. It has 2 bhk, 1 bathroom ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "2BHK rent HSR Layout",
+        "top_results": [
+          {
+            "title": "2 BHK Flats for rent in HSR Layout, Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-hsr_layout_bangalore",
+            "snippet": "2 BHK Flats for Rent in HSR Layout. 2 BHK - 450 sq. ft. to 1,800 sq. ft. Monthly rent generally in HSR Layout falls between \u20b917,750 to \u20b955,250 per month, ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "2 BHK Flats for Rent in HSR Layout, Bangalore",
+            "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-hsr-layout-bangalore-south-ffid",
+            "snippet": "2 BHK Flat for rent in Sector 1 HSR Layout, Bangalore ... This flat consists of 2 bathrooms & 1 balcony in 677 sq.Ft. Carpet area. Flat is constructed on 977 sq.",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Houses for rent in Hsr-layout-bengaluru for Short term & ...",
+            "link": "https://www.rentmystay.com/hsr-layout-bengaluru/all",
+            "snippet": "HSR Layout 1.2 Km Distance. Pearlheights 3rd Floor; Max Guests:3. Regular Rent. 20,000/Month. Flexi Rent. 24,000/Month. certified.",
+            "position": 3,
+            "domain": "www.rentmystay.com"
+          }
+        ],
+        "serp_features": [
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "HSR Layout flat for sale",
+        "top_results": [
+          {
+            "title": "Flats for Sale in HSR Layout Bangalore",
+            "link": "https://www.nobroker.in/flats-for-sale-in-hsr_layout_bangalore",
+            "snippet": "136 - Flats for Sale in HSR Layout Bangalore | Apartments for Sale in HSR Layout Bangalore \u00b7 2 BHK Apartment In Prestige Ferns Residency For Sale In Harlur \u00b7 2 ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Apartments in HSR Layout, Bangalore - 183+ Flats for sale ...",
+            "link": "https://www.99acres.com/flats-in-hsr-layout-bangalore-south-ffid",
+            "snippet": "Spacious 3,4 BHK apartments in HSR Layout are available for sale.Check out latest property options at Purva Meraki housing society.",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "540+ Flats for Sale in HSR Layout, Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-hsr-layout-bangalore-for-sale-pppfs",
+            "snippet": "Discover 1-5 BHK flats for sale in HSR Layout priced between \u20b91.01 Cr - \u20b911.24 Cr. You can choose from 333+ resale flats, 210+ ready-to-move apartments, and 288 ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "HSR Layout property rate per sq ft",
+        "top_results": [
+          {
+            "title": "Property Rates in HSR Layout, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-hsr-layout-bangalore-south-prffid",
+            "snippet": "The average flat rates in HSR Layout, Bangalore is \u20b9 13,200 per sq ft. A 1 BHK flat is available at a price range of \u20b9 6,670,150-14,108,250. A 2 BHK flat is ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property Rates in HSR Layout Bangalore",
+            "link": "https://www.magicbricks.com/Property-Rates-Trends/Multistorey-Apartment-rates-HSR-Layout-in-Bangalore",
+            "snippet": "... Price: Rs 11,012 per Sq-ft. 1% Trends Up. Average Locality Price: Rs 9,363 per Sq-ft. 0.2% Trends Down. Lowest Locality Price: Rs 7,714 per Sq-ft. 1% Trends ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Property Rates in Sector 1, HSR Layout, Bengaluru - Housing",
+            "link": "https://housing.com/price-trends/property-rates-for-buy-in-sector_1_hsr_layout_bengaluru-P3vbu3746pykmrmw",
+            "snippet": "Starting price of properties in Sector 1 is Rs. 9,546 per sqft and the average price of properties in Sector 1 is Rs. 14,802 per sqft. Price trend recommends ...",
+            "position": 3,
+            "domain": "housing.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "HSR Layout new projects",
+        "top_results": [
+          {
+            "title": "New Projects in HSR Layout Bangalore for Sale",
+            "link": "https://www.99acres.com/new-projects-in-hsr-layout-bangalore-south-ffid",
+            "snippet": "New Projects in HSR Layout Bangalore for Sale ; Assetz Mizumi Reserve. HSR Layout, Bangalore South. \u20b913.0K/sqft. ~ (super built-up area). 3BHK. \u20b92.47 Cr+. 4BHK.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "New Projects in Hsr Layout Bangalore",
+            "link": "https://www.nobroker.in/new-projects-in-hsr-layout-bangalore",
+            "snippet": "New Projects in Hsr Layout Bangalore | NoBroker \u00b7 Pariwar Wise Palm Springs \u00b7 Pariwar Wise Palm Springs \u00b7 S Balan Meenakshi Vrindavan \u00b7 Abhee Nandana \u00b7 Land ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "New Projects in HSR Layout, Bangalore",
+            "link": "https://www.magicbricks.com/new-projects-HSR-Layout-in-Bangalore",
+            "snippet": "Find over 314+ new projects in HSR Layout, Bangalore with video review, RERA info, possession date & more. Search pre-launched / upcoming projects in HSR ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "local_pack"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "things to do in HSR Layout",
+        "top_results": [
+          {
+            "title": "Namma HSR | Bengaluru \u2764\ufe0f (@hsr_layout)",
+            "link": "https://www.instagram.com/hsr_layout/",
+            "snippet": "HSR - is not a place, it's an Emotion.! \u2764\ufe0f Things to do in Namma HSR.! Food | Fashion | Fitness | Places \ud83c\udfdb\ufe0f BENGALURU | Karnataka DM for promotion.",
+            "position": 1,
+            "domain": "www.instagram.com"
+          },
+          {
+            "title": "Places to visit near HSR Layout : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/x1dq6p/places_to_visit_near_hsr_layout/",
+            "snippet": "Famous pubs and restaurants like House of Commons and newer ones like Broadway: The Gourmet Theater (you can get sushi) \u00b7 If you want to head to ...",
+            "position": 2,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Discover HSR Bangalore : Top Places To Eat, Shop & See",
+            "link": "https://lbb.in/bangalore/locality/hsr-bangalore/",
+            "snippet": "Discover HSR in Bangalore with curated reviews and recommendations on top places to see, best shops, best cafes, restaurants, & bars, and markets & other ...",
+            "position": 3,
+            "domain": "lbb.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "best restaurants HSR Layout",
+        "top_results": [
+          {
+            "title": "HSR Restaurants, Bangalore",
+            "link": "https://www.zomato.com/bangalore/best-hsr-restaurants",
+            "snippet": "HSR Restaurants, Bangalore \u00b7 Table For Tous \u00b7 Hustle \u00b7 The Pet People Cafe \u00b7 Truffles \u00b7 Biergarten \u00b7 The Pizza Bakery - Wood Fired Sourdough \u00b7 Chianti \u00b7 Pasta Street.",
+            "position": 1,
+            "domain": "www.zomato.com"
+          },
+          {
+            "title": "Best Restaurants In Hsr Layout, Bangalore 2025",
+            "link": "https://www.swiggy.com/city/bangalore/best-restaurants-in-hsr-layout",
+            "snippet": "Check Out The List Of All Best Restaurants Near You In Hsr Layout, Bangalore And Check Their Menus, Reviews & Rating, Price, Location, Cuisine, Offers, ...",
+            "position": 2,
+            "domain": "www.swiggy.com"
+          },
+          {
+            "title": "Your favourite food joints in HSR? Local stalls or nice ...",
+            "link": "https://www.reddit.com/r/bangalore/comments/m181c4/your_favourite_food_joints_in_hsr_local_stalls_or/",
+            "snippet": "Mumbai Tiffin is decent meal. Aarogya Ahaara also for some good home (Brekkie, Lunch) cooked South Indian food. Bharatiya Jalpaan is quite the ...",
+            "position": 3,
+            "domain": "www.reddit.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "schools near HSR Layout",
+        "top_results": [
+          {
+            "title": "9 Best Schools In HSR Layout, Bangalore 2026-27",
+            "link": "https://yellowslate.com/blog/best-schools-in-hsr-layout",
+            "snippet": "9 Best Schools In HSR Layout, Bangalore 2026-27: Fees, Academics, Review and More \u00b7 1. Sri Chaitanya School HSR Layout \u00b7 2. National Public School Sector 4, HSR ...",
+            "position": 1,
+            "domain": "yellowslate.com"
+          },
+          {
+            "title": "Top Schools in HSR Layout, Bangalore 2026-27",
+            "link": "https://ezyschooling.com/admissions/school-admission-in-hsr-layout-bangalore",
+            "snippet": "The top 10 Schools in HSR Layout, Bangalore are: MS Dhoni Global School, EuroSchool- HSR, Freedom International School, Gnan Srishti School of ...",
+            "position": 2,
+            "domain": "ezyschooling.com"
+          },
+          {
+            "title": "Best CBSE Schools in HSR Layout, Bangalore",
+            "link": "https://www.vibgyorhigh.com/school/bengaluru/cbse/hsr-layout",
+            "snippet": "We are one of the top CBSE schools in HSR Layout owing to our holistic approach, highly qualified teachers, coaches, and domain experts, as well as our cutting ...",
+            "position": 3,
+            "domain": "www.vibgyorhigh.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "hospitals near HSR Layout",
+        "top_results": [
+          {
+            "title": "Best Hospitals in Hsr Layout, Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Hospitals-in-Hsr-Layout/nct-10253670",
+            "snippet": "134 Hospitals in Hsr Layout,Bangalore. Homeocare International Pvt Ltd, Hcg Cancer Centre, Hcg Cancer Centre, Aster Hospital Whitefield etc.",
+            "position": 1,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "100 Hospitals in HSR Layout, Bangalore",
+            "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/hsr-layout",
+            "snippet": "100 Hospitals in HSR Layout, Bangalore \u00b7 Dr. Parthasarathi's Asian Hair and Skin Hospitals \u00b7 Phoenix Hospital \u00b7 Sunlife Hospital \u00b7 Bangalore Gastro Centre ...",
+            "position": 2,
+            "domain": "www.practo.com"
+          },
+          {
+            "title": "Narayana Multispeciality Hospital, HSR Bangalore",
+            "link": "https://www.narayanahealth.org/hospitals/bangalore/narayana-multispeciality-hospital-hsr-bangalore",
+            "snippet": "Narayana Multispeciality Hospital at HSR Layout in Bangalore is a premium facility with all key medical specialities including a short stay surgical centre.",
+            "position": 3,
+            "domain": "www.narayanahealth.org"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "HSR Layout vs btm layout",
+        "top_results": [
+          {
+            "title": "HSR vs BTM vs Koramangala : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/eb27qy/hsr_vs_btm_vs_koramangala/",
+            "snippet": "BTM for savings in rent. Hsr for good infrastructure and less traffic. Koramangala is the heaven for food but costly and a traffic hell.You ...",
+            "position": 1,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "What are some good residential areas between HSR ...",
+            "link": "https://www.quora.com/What-are-some-good-residential-areas-between-HSR-Layout-and-BTM-Layout-as-I-plan-to-move-to-Bangalore",
+            "snippet": "BTM: Great place, more traffic, good Crowd, lively till late night, easy Accessible things like the local shops of day to day usages. \u00b7 HSR: ...",
+            "position": 2,
+            "domain": "www.quora.com"
+          },
+          {
+            "title": "About HSR Layout, BTM Layout and HBR Layout in ...",
+            "link": "https://simplifiedlaws.com/society/about-hsr-layout-btm-layout-and-hbr-layout-in-bangalore/",
+            "snippet": "Hosur Sarjapur Road Layout popularly known as HSR Layout is a relatively new suburb located to the south-east of Bangalore, India.",
+            "position": 3,
+            "domain": "simplifiedlaws.com"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "magicbricks.com"
+        ]
+      }
+    ],
+    "aeo_scores": [
+      {
+        "query": "best restaurants HSR Layout",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "schools near HSR Layout",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "hospitals near HSR Layout",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "2BHK rent HSR Layout",
+        "score": 90,
+        "serp_features": [
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "HSR Layout rent",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "HSR Layout flat for sale",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "things to do in HSR Layout",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "HSR Layout Bangalore guide",
+        "score": 75,
+        "serp_features": [
+          "ai_overview",
+          "video_results"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "HSR Layout Bangalore",
+        "score": 70,
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "living in HSR Layout Bangalore",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "local_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "HSR Layout review",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "image_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "HSR Layout property price",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "HSR Layout property rate per sq ft",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "HSR Layout vs btm layout",
+        "score": 70,
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "HSR Layout new projects",
+        "score": 65,
+        "serp_features": [
+          "ai_overview",
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      }
+    ]
+  },
+  "analysis": {
+    "topic": "unknown",
+    "trend_direction": "unknown",
+    "trend_summary": "LLM parsing failed",
+    "intent_clusters": [],
+    "content_gaps": [],
+    "recommended_topics": []
+  },
+  "competitor_tracker": {
+    "nobroker.in": 9,
+    "99acres.com": 9,
+    "magicbricks.com": 10,
+    "housing.com": 6
+  },
+  "serp_calls_used": 15,
+  "autocomplete_calls_used": 4,
+  "cost_usd": 0.019094
+}
