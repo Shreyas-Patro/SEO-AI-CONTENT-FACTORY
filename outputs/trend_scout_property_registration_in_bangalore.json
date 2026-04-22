@@ -12,8 +12,24 @@
   "raw_data": {
     "trends": {
       "trend_available": false,
-      "error": "The request failed: Google returned a response with code 429",
-      "fallback_strategy": "Will use SERP related queries as proxy"
+      "reason": "using_serp_proxy",
+      "assumed_direction": "rising",
+      "serp_based_insights": {
+        "questions_in_paa": 60,
+        "assumed_rising_queries": [
+          "What is the latest news about property registration in Bangalore?",
+          "What are the registration charges for a flat in Bangalore in 2026?",
+          "What are the registration charges for a flat in Bangalore in 2026?",
+          "Should you buy property in 2026 in Bangalore?",
+          "What is the latest news about property registration in Bangalore?",
+          "Which day is good for property registration in January 2026 in Bangalore?",
+          "What is the latest news about property registration in Bangalore?",
+          "What is the latest news about property registration in Bangalore?",
+          "What is the latest news about property registration in Bangalore?"
+        ],
+        "pages_with_paa": 15
+      },
+      "fallback_strategy": "Derived from SERP People Also Ask signals"
     },
     "paa_questions": [
       "What is the property registration process in Bangalore?",
@@ -842,8 +858,8 @@
   "analysis": {
     "topic": "Property registration in Bangalore",
     "topic_type": "legal",
-    "trend_direction": "stable",
-    "trend_summary": "Property registration searches remain consistently high in Bangalore with strong user intent around process clarity, costs, and current status. Recent queries suggest concern about registration delays/stoppages, indicating potential regulatory friction.",
+    "trend_direction": "rising",
+    "trend_summary": "Property registration searches are rising sharply, driven by 2026 regulatory changes, fee updates, and e-khata implementation concerns. Users show high intent around costs, processes, and current news about registration halts.",
     "total_queries_discovered": 136,
     "intent_clusters": [
       {
@@ -851,12 +867,15 @@
         "queries": [
           "What is the property registration process in Bangalore?",
           "How many days will it take to register property in Karnataka?",
+          "What is the latest news about property registration in Bangalore?",
           "What are the documents required for property registration in Bangalore?",
           "How is registration fee calculated in Karnataka?",
-          "What is the value of stamp duty on property in Bangalore?",
-          "Property registration in Bangalore documents required",
-          "Property registration in Bangalore format",
-          "Property registration in Bangalore problems"
+          "What is the problem with e-Khata in Bangalore?",
+          "Why is flat registration not happening in Bangalore?",
+          "Why did the Karnataka government stop registration?",
+          "What are common plot buying mistakes?",
+          "Can a land registry be cancelled?",
+          "How to correct spelling mistake in sale deed?"
         ],
         "estimated_volume": "high",
         "aeo_opportunity": "high"
@@ -867,9 +886,23 @@
           "How to register a property in Bangalore?",
           "How to check property registration online in Bangalore?",
           "How to apply for e-khata online in Bangalore?",
-          "How to download property registration documents in Karnataka?",
           "How to do property registration in Bangalore?",
-          "Online property registration in bangalore process"
+          "How to download property registration documents in Karnataka?",
+          "Property registration in bangalore online"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "comparative",
+        "queries": [
+          "How much does property registration cost in Bangalore?",
+          "What is the cost of property registration in Bengaluru?",
+          "What are the registration charges for a flat in Bangalore in 2026?",
+          "What is the registration charges for 50 lakhs in Bangalore?",
+          "What is the value of stamp duty on property in Bangalore?",
+          "Property registration charges in bangalore for women",
+          "Property registration charges in bangalore increase"
         ],
         "estimated_volume": "high",
         "aeo_opportunity": "high"
@@ -879,113 +912,99 @@
         "queries": [
           "Sub Registrar Office List in Bangalore",
           "Karnataka Registration Department website",
-          "Property registration in bangalore in bangalore online",
-          "Property registration in bangalore in bangalore pdf"
-        ],
-        "estimated_volume": "medium",
-        "aeo_opportunity": "medium"
-      },
-      {
-        "intent": "comparative",
-        "queries": [
-          "Should you buy property in 2026 in Bangalore?",
-          "What are common plot buying mistakes?",
-          "What documents are required to be checked before buying a property in Bangalore?"
-        ],
-        "estimated_volume": "low",
-        "aeo_opportunity": "medium"
-      },
-      {
-        "intent": "news/current_events",
-        "queries": [
-          "What is the latest news about property registration in Bangalore?",
-          "Property registration in Bangalore latest News",
-          "Property registration in Bangalore stopped",
-          "Why is flat registration not happening in Bangalore?",
-          "Why did the Karnataka government stop registration?",
+          "Property registration in bangalore stopped",
+          "Property registration in bangalore latest news",
+          "Property registration in bangalore open now",
           "Revenue site registration latest News Karnataka Today"
         ],
         "estimated_volume": "medium",
-        "aeo_opportunity": "high"
+        "aeo_opportunity": "medium"
       }
     ],
     "content_gaps": [
       {
-        "gap": "No featured snippets exist for core registration queries despite high search volume. AI overviews are present but not optimized for Canvas Homes attribution.",
+        "gap": "No comprehensive guide on 2026 registration fee changes and their impact on different property values",
         "queries": [
-          "Property registration in Bangalore documents required",
-          "Property registration in Bangalore process",
-          "How to register a property in Bangalore?",
-          "Property registration in Bangalore step by step"
-        ],
-        "opportunity": "Create authoritative, structured hub content with step-by-step guides, checklists, and visual flowcharts that can capture featured snippet and AI overview citations.",
-        "suggested_content_type": "hub",
-        "priority": "high"
-      },
-      {
-        "gap": "Current status and news queries (registration stopped, delays, e-khata problems) lack dedicated Canvas Homes content. Users are searching for real-time updates but finding generic results.",
-        "queries": [
-          "Property registration in Bangalore stopped",
-          "Why is flat registration not happening in Bangalore?",
-          "What is the problem with e-Khata in Bangalore?",
-          "Property registration in Bangalore latest News"
-        ],
-        "opportunity": "Create a 'Registration Status & News' hub with real-time updates, FAQs addressing common delays, and Canvas Homes' expert commentary on regulatory changes. Update monthly.",
-        "suggested_content_type": "hub",
-        "priority": "high"
-      },
-      {
-        "gap": "Cost-related queries (stamp duty, registration charges, fees for specific amounts) have no clear, calculable answers. Users need a cost calculator or breakdown by property value.",
-        "queries": [
-          "How much does property registration cost in Bangalore?",
-          "What is the cost of property registration in Bengaluru?",
-          "What is the registration charges for a flat in Bangalore in 2026?",
+          "What are the registration charges for a flat in Bangalore in 2026?",
           "What is the registration charges for 50 lakhs in Bangalore?",
-          "Property registration charges in bangalore 2026"
+          "Property registration charges in bangalore increase"
         ],
-        "opportunity": "Build an interactive 'Registration Cost Calculator' tool + detailed cost breakdown spoke with stamp duty slabs, e-khata fees, and lawyer costs. Include 2026 updates.",
-        "suggested_content_type": "spoke",
+        "opportunity": "Create a detailed fee calculator and guide showing 2026 fee structure with examples for different property values (25L, 50L, 75L, 1Cr+)",
+        "suggested_content_type": "hub",
         "priority": "high"
       },
       {
-        "gap": "E-khata specific queries (mandatory status, how to apply, problems) are fragmented across results. No single authoritative Canvas Homes resource exists.",
+        "gap": "Limited content on e-khata mandatory requirements, problems, and implementation timeline",
         "queries": [
           "Is it mandatory to have e-khata in Bangalore?",
-          "How to apply for e-khata online in Bangalore?",
-          "What is the problem with e-Khata in Bangalore?"
+          "What is the problem with e-Khata in Bangalore?",
+          "How to apply for e-khata online in Bangalore?"
         ],
-        "opportunity": "Create dedicated 'E-khata in Bangalore' spoke with eligibility, step-by-step application guide, troubleshooting, and comparison with traditional khata.",
+        "opportunity": "Create a comprehensive e-khata guide covering mandatory status, common issues, step-by-step application process, and troubleshooting",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "No clear explanation of current registration halt/suspension status and expected resolution timeline",
+        "queries": [
+          "Why is flat registration not happening in Bangalore?",
+          "Why did the Karnataka government stop registration?",
+          "Property registration in bangalore stopped",
+          "Are land registrations happening in Bangalore?"
+        ],
+        "opportunity": "Create a news/updates hub tracking registration suspension status, reasons, and expected reopening dates with official sources",
         "suggested_content_type": "spoke",
         "priority": "high"
       },
       {
-        "gap": "Legal/procedural edge cases (lawyer necessity, deed corrections, cancellations, mistakes) are underserved. Users have specific pain points but limited guidance.",
+        "gap": "Weak coverage of lawyer requirement and cost implications for property registration",
         "queries": [
-          "Is it mandatory to have a lawyer for property registration in Bangalore?",
-          "Can a land registry be cancelled?",
-          "How to correct spelling mistake in sale deed?"
+          "Is it mandatory to have a lawyer for property registration in Bangalore?"
         ],
-        "opportunity": "Create 'Property Registration FAQs & Legal Edge Cases' sub-spoke addressing common mistakes, lawyer requirements, and correction procedures.",
+        "opportunity": "Create a guide on when lawyers are mandatory vs optional, cost comparison, and how to find qualified registration lawyers",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "Missing step-by-step visual guides and checklists for document verification before purchase",
+        "queries": [
+          "What documents are required to be checked before buying a property in Bangalore?",
+          "What documents are required for land ownership in Karnataka?",
+          "How to download property registration documents in Karnataka?"
+        ],
+        "opportunity": "Create downloadable checklists, document verification guides, and pre-purchase document audit templates",
         "suggested_content_type": "sub_spoke",
         "priority": "medium"
       },
       {
-        "gap": "Auspicious timing queries (which day is good for registration) suggest cultural/superstition-driven searches with no Canvas Homes presence.",
+        "gap": "No content addressing common registration mistakes and correction procedures",
+        "queries": [
+          "What are common plot buying mistakes?",
+          "How to correct spelling mistake in sale deed?",
+          "Can a land registry be cancelled?"
+        ],
+        "opportunity": "Create a mistakes guide with real examples and step-by-step correction procedures for common errors",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "Limited content on auspicious timing for registration (astrology-based queries)",
         "queries": [
           "Which day is good for property registration in January 2026 in Bangalore?"
         ],
-        "opportunity": "Create a light FAQ addressing this cultural aspect while redirecting to practical registration timelines. Low priority but easy win for engagement.",
-        "suggested_content_type": "faq",
+        "opportunity": "Create a practical guide addressing both auspicious timing beliefs and practical scheduling tips for registration",
+        "suggested_content_type": "sub_spoke",
         "priority": "low"
       },
       {
-        "gap": "Document verification and pre-purchase due diligence queries lack Canvas Homes guidance. Users need checklists before buying.",
+        "gap": "No comprehensive comparison of registration costs for different property types (flat vs house vs land)",
         "queries": [
-          "What documents are required to be checked before buying a property in Bangalore?",
-          "What are common plot buying mistakes?"
+          "Flat registration in bangalore",
+          "Land registration in bangalore",
+          "House registration in bangalore"
         ],
-        "opportunity": "Create 'Pre-Purchase Document Checklist' spoke with downloadable PDF, covering title verification, encumbrance checks, and red flags.",
-        "suggested_content_type": "spoke",
+        "opportunity": "Create property-type-specific registration guides with cost breakdowns and process variations",
+        "suggested_content_type": "hub",
         "priority": "medium"
       }
     ],
@@ -993,136 +1012,136 @@
       {
         "query": "Property registration in Bangalore documents required",
         "current_answer_quality": "moderate",
-        "our_strategy": "Create comprehensive, structured list with categories (seller docs, buyer docs, property docs), downloadable checklist, and visual infographic. Optimize for AI overview by using clear H2/H3 hierarchy and bullet points. Include Canvas Homes expert tips.",
-        "content_type": "spoke"
-      },
-      {
-        "query": "How to Property registration in Bangalore",
-        "current_answer_quality": "moderate",
-        "our_strategy": "Build step-by-step process guide (8-10 clear steps) with timelines, costs, and sub-registrar office locator. Include video embeds and interactive flowchart. Target AI overview with numbered lists and clear process flow.",
+        "our_strategy": "Create a comprehensive, interactive document checklist with categorization (seller docs, buyer docs, property docs), downloadable PDF, and common mistakes. Include e-khata specific documents and 2026 updates.",
         "content_type": "hub"
       },
       {
-        "query": "Property registration in Bangalore process",
+        "query": "how to Property registration in Bangalore",
         "current_answer_quality": "moderate",
-        "our_strategy": "Create detailed process hub with phases (pre-registration, registration, post-registration), timelines, and decision trees. Include comparison with e-khata process. Optimize for AI overview with structured data markup.",
+        "our_strategy": "Develop a step-by-step visual guide with timeline, cost breakdown, and decision trees for different scenarios (online vs offline, with/without lawyer). Include video embeds and interactive flowcharts.",
         "content_type": "hub"
       },
       {
         "query": "Property registration in Bangalore problems",
         "current_answer_quality": "weak",
-        "our_strategy": "Address current registration delays, e-khata issues, and common blockers. Create troubleshooting guide with solutions. Position Canvas Homes as expert resource for regulatory updates. Update monthly.",
+        "our_strategy": "Create a troubleshooting guide addressing current registration suspension, e-khata issues, document rejection reasons, and solutions. Include official contact information and escalation procedures.",
+        "content_type": "hub"
+      },
+      {
+        "query": "Property registration in Bangalore format",
+        "current_answer_quality": "weak",
+        "our_strategy": "Provide downloadable templates and samples of all required documents (sale deed, power of attorney, affidavits) with annotations explaining each section and 2026 format changes.",
         "content_type": "spoke"
+      },
+      {
+        "query": "Property registration in Bangalore process",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create a detailed process guide with timeline estimates, cost calculator, and comparison with Karnataka state-wide process. Include pre-registration and post-registration steps.",
+        "content_type": "hub"
       },
       {
         "query": "Property registration in Bangalore step by step",
         "current_answer_quality": "moderate",
-        "our_strategy": "Create visual step-by-step guide with screenshots, timelines, and downloadable checklists. Include sub-registrar office finder. Optimize for video results by creating accompanying YouTube content.",
-        "content_type": "spoke"
+        "our_strategy": "Develop an interactive step-by-step guide with estimated time for each step, required documents per step, and common delays. Include decision points for different property types.",
+        "content_type": "hub"
       },
       {
         "query": "Property registration in Bangalore online",
         "current_answer_quality": "moderate",
-        "our_strategy": "Create guide to online registration via IGR portal with screenshots, account setup, document upload process, and troubleshooting. Include comparison of online vs. offline registration.",
+        "our_strategy": "Create a comprehensive online registration guide covering e-khata portal, online fee payment, document upload requirements, and tracking. Include screenshots and troubleshooting.",
         "content_type": "spoke"
       },
       {
         "query": "Property registration in Bangalore fees",
-        "current_answer_quality": "weak",
-        "our_strategy": "Build interactive cost calculator with stamp duty slabs, registration fees, e-khata charges, and lawyer costs. Include 2026 updates and comparison tables. Optimize for featured snippet with clear fee structure.",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Build an interactive fee calculator showing stamp duty, registration charges, and other costs for different property values. Include 2026 fee structure and women's discount eligibility.",
         "content_type": "spoke"
       },
       {
-        "query": "What is the value of stamp duty on property in Bangalore?",
+        "query": "What are the registration charges for a flat in Bangalore in 2026?",
         "current_answer_quality": "weak",
-        "our_strategy": "Create detailed stamp duty guide with current rates (2026), calculation examples for different property values, exemptions, and recent changes. Include downloadable stamp duty calculator.",
+        "our_strategy": "Create a 2026-specific fee guide with examples for different flat values, comparison with 2025 rates, and impact analysis. Include women's registration benefits and exemptions.",
         "content_type": "spoke"
       },
       {
-        "query": "Is it mandatory to have a lawyer for property registration in Bangalore?",
+        "query": "What is the latest news about property registration in Bangalore?",
         "current_answer_quality": "weak",
-        "our_strategy": "Create FAQ addressing legal requirements, when lawyers are needed, average costs, and alternatives. Include Canvas Homes' recommendation on when to hire legal help.",
-        "content_type": "faq"
-      },
-      {
-        "query": "Property registration in Bangalore latest News",
-        "current_answer_quality": "weak",
-        "our_strategy": "Create 'Registration News & Updates' hub with monthly regulatory changes, government announcements, and Canvas Homes expert analysis. Position as go-to source for Bangalore registration news.",
+        "our_strategy": "Establish a news hub tracking registration suspension status, fee changes, e-khata updates, and policy changes. Update weekly with official sources and expert commentary.",
         "content_type": "hub"
       }
     ],
     "competitor_insights": [
       {
         "competitor": "nobroker.in",
-        "strength": "Strong presence (10 mentions) across registration queries; likely has comprehensive guides and cost calculators. Established authority in transactional queries.",
-        "weakness": "Generalist approach may lack Bangalore-specific regulatory updates and real-time news. Opportunity to position Canvas Homes as Bangalore-focused expert."
+        "strength": "Strong presence in 10 queries, likely due to broader real estate platform authority and content volume on registration processes",
+        "weakness": "Likely lacks specialized 2026 fee calculators, e-khata troubleshooting guides, and real-time news updates on registration suspension"
       },
       {
         "competitor": "99acres.com",
-        "strength": "Present in 4 queries; likely has property-specific registration content tied to listings.",
-        "weakness": "Limited presence suggests weak content strategy for registration guidance. Canvas Homes can dominate with dedicated hub content."
+        "strength": "Present in 4 queries, probably with general property guides and registration overview content",
+        "weakness": "Limited specialized content on Bangalore-specific registration issues, e-khata problems, and current suspension status"
       },
       {
         "competitor": "brigadegroup.com & sobha.com",
-        "strength": "Ranking in top 3 for process queries; builder-specific content with credibility.",
-        "weakness": "Builder bias may limit objectivity. Canvas Homes can position as neutral, comprehensive resource for all property types."
+        "strength": "Ranking for process and documents queries due to developer authority and detailed guides",
+        "weakness": "Content is developer-centric, lacks neutral third-party perspective, missing fee calculators and current news updates"
       },
       {
         "competitor": "igr.karnataka.gov.in",
-        "strength": "Official government portal; ranks #1 for most queries. Authoritative source.",
-        "weakness": "Poor UX, outdated design, limited user-friendly guidance. Canvas Homes can create 'IGR Portal Guide' spoke explaining government resources in simple terms."
+        "strength": "Dominates official process and documents queries with government authority",
+        "weakness": "Poor UX, outdated information, no fee calculators, no troubleshooting guides, no news updates on suspension status"
       },
       {
         "competitor": "magicbricks.com & housing.com",
-        "strength": "Minimal presence (1-2 mentions); not prioritizing registration content.",
-        "weakness": "Major opportunity for Canvas Homes to capture market share with superior content strategy."
+        "strength": "Minimal presence suggests they haven't prioritized registration content",
+        "weakness": "Major opportunity gap - Canvas can dominate with specialized, user-friendly registration guides"
       }
     ],
     "top_5_priority_queries": [
       {
+        "query": "What are the registration charges for a flat in Bangalore in 2026?",
+        "reason": "Rising query with high commercial intent, clear 2026 fee update demand, and weak current answers. High traffic potential and immediate user need.",
+        "suggested_action": "Create interactive 2026 fee calculator with examples for 25L, 50L, 75L, 1Cr+ properties. Include women's discount, exemptions, and comparison with 2025 rates. Update monthly as fees change."
+      },
+      {
+        "query": "Why is flat registration not happening in Bangalore?",
+        "reason": "Critical news-driven query with high user urgency. Current suspension is major blocker for buyers. No good answers available. Opportunity to become authoritative news source.",
+        "suggested_action": "Create a news hub tracking registration suspension status with official sources, expected resolution dates, impact on buyers, and workarounds. Update weekly with latest government announcements."
+      },
+      {
         "query": "Property registration in Bangalore documents required",
-        "reason": "High search volume, high AEO opportunity (score 80), no featured snippet, AI overview present but not Canvas Homes-attributed. Clear user intent (informational/transactional). Foundational query for all registration journeys.",
-        "suggested_action": "Create comprehensive 'Documents Checklist' spoke with categorized lists (seller, buyer, property), downloadable PDF, visual infographic, and Canvas Homes expert tips. Optimize for featured snippet and AI overview with structured data."
+        "reason": "High-volume informational query with AEO opportunity (score 80). No featured snippet, weak competitor presence. Clear content gap for comprehensive document guide.",
+        "suggested_action": "Create a master document checklist hub with categorization (seller/buyer/property docs), downloadable PDF, e-khata specific requirements, and common rejection reasons with solutions."
       },
       {
-        "query": "Property registration in Bangalore stopped / Why is flat registration not happening in Bangalore?",
-        "reason": "High search volume in autocomplete and PAA, indicates urgent user pain point. Current results lack Canvas Homes perspective. Regulatory uncertainty creates opportunity for expert positioning. Time-sensitive content can drive traffic and trust.",
-        "suggested_action": "Create 'Registration Status & Delays' hub with real-time updates on government stoppages, reasons, expected resolution, and Canvas Homes' expert analysis. Update monthly. Include FAQ addressing common concerns."
+        "query": "How to register a property in Bangalore?",
+        "reason": "High transactional intent, broad search volume, and multiple variations in autocomplete. Users actively seeking step-by-step guidance. Opportunity to capture conversion-ready audience.",
+        "suggested_action": "Develop comprehensive step-by-step guide with timeline, cost breakdown, decision trees for different scenarios, video embeds, and interactive flowcharts. Include online and offline options."
       },
       {
-        "query": "How to register a property in Bangalore? / How to Property registration in Bangalore?",
-        "reason": "Core transactional query with high volume and AEO opportunity (score 80). Users actively seeking step-by-step guidance. Multiple competitors present but no dominant Canvas Homes resource.",
-        "suggested_action": "Create 'Complete Property Registration Guide' hub with 8-10 clear steps, timelines, costs, sub-registrar locator, downloadable checklists, and video embeds. Optimize for AI overview and featured snippet."
-      },
-      {
-        "query": "What is the registration charges for a flat in Bangalore in 2026? / Property registration charges in bangalore 2026",
-        "reason": "High commercial intent (transactional), time-sensitive (2026 updates), no clear answer in current results. Users need cost clarity before buying. Interactive calculator can drive engagement and lead generation.",
-        "suggested_action": "Build 'Registration Cost Calculator' tool with stamp duty slabs, registration fees, e-khata charges, and lawyer costs. Create accompanying 'Cost Breakdown' spoke with examples for different property values. Include 2026 updates."
-      },
-      {
-        "query": "Is it mandatory to have e-khata in Bangalore? / How to apply for e-khata online in Bangalore?",
-        "reason": "Fragmented queries across multiple searches indicate user confusion about e-khata. No single Canvas Homes resource exists. E-khata is critical for modern registration process. High opportunity to become go-to guide.",
-        "suggested_action": "Create 'E-khata in Bangalore' spoke with eligibility criteria, mandatory status, step-by-step online application guide, troubleshooting, and comparison with traditional khata. Include screenshots and video walkthrough."
+        "query": "What is the problem with e-Khata in Bangalore?",
+        "reason": "Rising user pain point with no good answers. High intent to solve specific problems. Opportunity to become go-to troubleshooting resource and build trust with buyers.",
+        "suggested_action": "Create a comprehensive e-khata problems guide covering mandatory status, common issues (delays, rejections, technical errors), solutions, and escalation procedures. Include official contact information."
       }
     ],
     "related_topics_to_explore": [
-      "Stamp duty in Bangalore",
-      "E-khata in Bangalore",
-      "Sub-registrar offices in Bangalore",
-      "Property title verification in Bangalore",
-      "Encumbrance certificate in Bangalore",
-      "Sale deed in Bangalore",
-      "Property ownership transfer in Bangalore",
-      "Mutation in Bangalore",
-      "Property tax in Bangalore",
-      "Legal due diligence for property purchase in Bangalore",
-      "Property registration delays in Karnataka",
-      "IGR portal guide",
-      "Lawyer fees for property registration",
-      "Property registration for NRI in Bangalore",
-      "Property registration for women in Bangalore"
+      "Stamp duty calculation in Bangalore",
+      "E-khata application process and requirements",
+      "Property registration suspension in Karnataka 2026",
+      "Sub-registrar offices in Bangalore locations",
+      "Sale deed format and requirements",
+      "Power of attorney for property registration",
+      "Property registration for women in Bangalore",
+      "Online property registration portal (IGR Karnataka)",
+      "Property registration timeline and delays",
+      "Common property registration mistakes and corrections",
+      "Property registration costs for different property values",
+      "Registration charges for NRI property buyers",
+      "Property registration for joint ownership",
+      "Property registration for inherited property",
+      "Property registration for commercial properties in Bangalore"
     ],
-    "seasonal_notes": "Queries show 2026-specific interest (registration charges 2026, flat registration 2026, auspicious day January 2026), suggesting seasonal planning around new year and financial year. No clear monthly seasonality detected, but regulatory announcements (government stoppages) create event-driven spikes. Recommend monitoring for budget announcements and government policy changes that affect stamp duty and registration fees."
+    "seasonal_notes": "Strong seasonal spike expected in January 2026 (auspicious timing queries). Registration suspension status will drive query volume fluctuations - expect spikes when government announces reopening or fee changes. Year-end (Nov-Dec 2025) likely to see increased searches as buyers rush before potential 2026 fee increases. Monitor government announcements and policy changes as primary seasonal drivers rather than traditional seasonal patterns."
   },
   "competitor_tracker": {
     "nobroker.in": 10,
@@ -1132,5 +1151,5 @@
   },
   "serp_calls_used": 15,
   "autocomplete_calls_used": 4,
-  "cost_usd": 0.019479
+  "cost_usd": 0.018549
 }

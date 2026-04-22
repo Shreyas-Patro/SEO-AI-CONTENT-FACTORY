@@ -1,0 +1,1248 @@
+{
+  "topic": "varthur",
+  "classification": {
+    "categories": [
+      "locality"
+    ],
+    "primary_category": "locality",
+    "detected_localities": [
+      "Varthur"
+    ],
+    "is_locality": true,
+    "is_cross_cutting": false
+  },
+  "raw_data": {
+    "trends": {
+      "trend_available": true,
+      "average_interest": 66.3,
+      "recent_interest": 59.0,
+      "peak_interest": 100,
+      "direction": "declining",
+      "is_seasonal": true,
+      "rising_queries": [
+        "green pearl varthur",
+        "legends microbrewery varthur",
+        "microbrewery bangalore",
+        "varthur is bangalore rural or urban",
+        "bangalore news"
+      ],
+      "top_queries": [
+        "varthur road bangalore",
+        "whitefield",
+        "manipal varthur",
+        "manipal hospital varthur",
+        "varthur weather",
+        "varthur pin code",
+        "varthur pincode",
+        "varthur bangalore map",
+        "bangalore news",
+        "varthur police station"
+      ]
+    },
+    "paa_questions": [
+      "Which part of Bangalore is Varthur?",
+      "Is Varthur a good area to live in Bangalore?",
+      "What is Varthur famous for?",
+      "How far is Varthur from Bangalore city Center?",
+      "Is there a water problem in Varthur, Bangalore?",
+      "Is Varthur a part of Bangalore?",
+      "Is Varthur urban or rural?",
+      "How much is land in Varthur Bangalore?",
+      "Is Varthur a good place to live?",
+      "How safe is Varthur, Bangalore?",
+      "What is the future of Varthur?",
+      "What is the water problem in Varthur?",
+      "What is the price of land in Varthur?",
+      "What is the cost of 1 square foot?",
+      "What is the price of flat in Varthur Bangalore?",
+      "Is Varthur good for investment?",
+      "What is the cost of a 30 * 40 site in Bangalore?",
+      "How to spend 4 hours in Bangalore?",
+      "What is the problem with the water in Varthur?",
+      "What is special in Whitefield?",
+      "Where is Virat Kohli's restaurant in Bangalore?",
+      "Who owns 50 best restaurants?",
+      "Which international school is near to Varthur Bangalore?",
+      "What is the old name of CBSE?",
+      "What are the top 3 hospitals?",
+      "Which is costly, manipal or Apollo?",
+      "Is Varthur comes under BBMP?",
+      "What are the top 6 hospitals?",
+      "Is Whitefield, Bangalore a posh area?"
+    ],
+    "related_searches": [
+      "Varthur bangalore map",
+      "Varthur bangalore Pin Code",
+      "Varthur bangalore distance",
+      "Varthur Bangalore to Whitefield",
+      "Varthur bangalore directions",
+      "Varthur bangalore urban or rural",
+      "Varthur, Bangalore House rent",
+      "Varthur bangalore famous for",
+      "Varthur bangalore guide map",
+      "Varthur Bangalore map",
+      "Varthur district name",
+      "Varthur to Whitefield distance",
+      "Varthur is Bangalore South or north",
+      "Places to visit near Varthur, Bangalore",
+      "Bangalore to varthur distance",
+      "Varthur to whitefield metro",
+      "Pros and cons of living in varthur bangalore",
+      "Living in varthur bangalore reddit",
+      "Varthur Lake Bangalore",
+      "Varthur Lake reviews",
+      "Varthur lake area",
+      "Varthur Lake photos",
+      "Varthur Bangalore News",
+      "Varthur review reddit",
+      "Varthur direction",
+      "Where is Varthur in Bangalore",
+      "Varthur Reddit",
+      "Varthur whitefield distance",
+      "Varthur property price per square foot",
+      "Varthur property price per square feet",
+      "Varthur property price per sq ft",
+      "Bangalore varthur property price",
+      "Varthur square feet rate",
+      "Independent House for sale in Varthur, Bangalore",
+      "1 Acre Land for sale in Varthur",
+      "Varthur Sarjapur road widening",
+      "Varthur rent house",
+      "1 BHK House for rent in Varthur",
+      "2 BHK House for rent in Varthur, Bangalore",
+      "Varthur rent 1 bhk",
+      "Varthur rent flats",
+      "Varthur room rent",
+      "1 BHK house for rent in Varthur olx",
+      "3 BHK Flats for rent in Varthur, Bangalore",
+      "2 BHK independent House for rent in Varthur, Bangalore",
+      "1 BHK Flats for rent in Varthur, Bangalore",
+      "2 BHK for rent in Gunjur",
+      "Varthur Flats for rent",
+      "2bhk in Varthur",
+      "Apartments near Varthur",
+      "House for rent near varthur police station",
+      "3 BHK Flats for sale in Varthur, Bangalore",
+      "2 BHK Flats for sale in Varthur, Bangalore",
+      "Ready to move Flats in Varthur, Bangalore",
+      "Resale flats in Varthur, Bangalore",
+      "2 BHK Flats in Varthur, Bangalore",
+      "New apartments in Varthur",
+      "1 BHK in Varthur for sale",
+      "Varthur Property Rates",
+      "Varthur plots for sale",
+      "Gunjur property rates",
+      "Gated Community plots for sale in Varthur",
+      "How to check per square feet Rate",
+      "Varthur new projects price",
+      "Varthur new projects latest",
+      "Prestige upcoming Projects in Varthur",
+      "Varthur new projects for sale",
+      "Upcoming Villa Projects in Varthur, Bangalore",
+      "Pre Launch Projects in Varthur, Bangalore",
+      "New projects in Varthur Gunjur",
+      "Sattva Varthur Road",
+      "Unique things to do in varthur",
+      "Varthur Lake",
+      "Bangalorethings to do",
+      "Varthur distance",
+      "Places to visit near Whitefield within 10 kms",
+      "Varthur Police Station",
+      "Varthur Vacation",
+      "Veg Restaurants near Varthur",
+      "Best restaurants varthur for lunch",
+      "Best restaurants varthur main",
+      "Best restaurants varthur for family",
+      "Restaurants in Varthur Road",
+      "Nusa Varthur",
+      "Restaurants near Gunjur",
+      "Best restaurants near Me",
+      "Top 10 schools in Varthur",
+      "Cbse schools near varthur",
+      "Top 10 schools near varthur",
+      "Top 10 Schools in Varthur with fees",
+      "Best schools in Varthur, Bangalore",
+      "Best CBSE Schools in Varthur, Bangalore",
+      "Best ICSE schools in Varthur, Bangalore",
+      "Vishwa Vidyapeeth, Varthur fee structure",
+      "Manipal Hospital Varthur Road",
+      "Sahasra Hospital Varthur",
+      "Manipal Hospital Varthur Road book Appointment",
+      "Manipal Hospital Varthur Road address",
+      "Manipal Hospital Varthur Road, Bangalore",
+      "Manipal Hospital Varthur Road reviews",
+      "Manipal Hospital Varthur Road contact number",
+      "Manipal Hospital Varthur Road doctors list",
+      "Varthur vs whitefield reddit",
+      "Varthur vs whitefield price",
+      "Poetry of Earth Varthur"
+    ],
+    "autocomplete": [
+      "varthur pincode",
+      "varthur police station",
+      "varthur santhosh",
+      "varthur bangalore",
+      "varthur lake",
+      "varthur prakash",
+      "varthur post office",
+      "varthur manipal",
+      "varthur road",
+      "varthur weather",
+      "varthur distance",
+      "varthur santhosh age",
+      "varthur bangalore pin code",
+      "varthur hobli",
+      "varthur manipal hospital",
+      "varthur bangalore map",
+      "varthur bangalore one",
+      "varthur bangalore distance",
+      "varthur bangalore weather",
+      "varthur bangalore rural or urban",
+      "varthur bangalore east",
+      "varthur bangalore aqi",
+      "varthur bangalore flat for sale",
+      "varthur bangalore news",
+      "varthur bangalore to whitefield",
+      "varthur bangalore directions",
+      "varthur bangalore nearest metro station",
+      "varthur bangalore house rent",
+      "varthur bangalore police station",
+      "rent in varthur bangalore",
+      "rent house in varthur bangalore",
+      "room rent in varthur bangalore",
+      "2bhk rent in varthur bangalore",
+      "rent house in varthur",
+      "2bhk rent in varthur",
+      "1bhk rent in varthur",
+      "1bhk rent in varthur bangalore",
+      "3bhk rent in varthur",
+      "flat rent in varthur",
+      "apartment rent in varthur",
+      "room rent in varthur",
+      "1rk rent in varthur",
+      "flats for rent in varthur bangalore",
+      "shop for rent in varthur",
+      "varthur property registration office",
+      "varthur property rates",
+      "varthur property dealer",
+      "varthur santhosh property",
+      "varthur santhosh property value",
+      "varthur santhosh property value in rupees",
+      "varthur santhosh total property value",
+      "adarsh property varthur",
+      "property rights examples",
+      "property value in karnataka",
+      "property listing details",
+      "property value of my property",
+      "varthur projects",
+      "varthur plots",
+      "varthur real estate"
+    ],
+    "serp_results_summary": [
+      {
+        "query": "Varthur Bangalore",
+        "top_results": [
+          {
+            "title": "Varthur",
+            "link": "https://en.wikipedia.org/wiki/Varthur",
+            "snippet": "Varthur is a suburb situated in the Eastern periphery of Bangalore City and part of the internationally famous Whitefield township. Varthur is a Hobli and ...",
+            "position": 1,
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "Varthur, Bangalore: Map, Property Rates, Projects, Photos ...",
+            "link": "https://www.magicbricks.com/Varthur-in-Bangalore-Overview",
+            "snippet": "Varthur is a good locality. It has good connectivity to school, mall, hospital and It companies available in close proximity.",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Varthur, Bangalore - Map, Pin Code, & Property Rates 2026",
+            "link": "https://www.nobroker.in/locality-iq/varthur-bangalore-liqlt",
+            "snippet": "Varthur is located in the eastern part of Bangalore. Varthur PIN code is 560087. Varthur is well connected to other popular cities like Sarjapur, Whitefield ...",
+            "position": 3,
+            "domain": "www.nobroker.in"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "housing.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Varthur Bangalore guide",
+        "top_results": [
+          {
+            "title": "Top Places to Visit in Varthur | Travel Guide 2025",
+            "link": "https://www.prestigesevergreen.info/varthur-road/varthur-places-to-visit.html",
+            "snippet": "Varthur Places to Visit \u00b7 Jagriti Theatre \u00b7 HAL Aerospace Museum \u00b7 Varthur Temples \u00b7 Windmill Craftworks Restaurant. \u00b7 Lumbini Gardens.",
+            "position": 1,
+            "domain": "www.prestigesevergreen.info"
+          },
+          {
+            "title": "Varthur Travel Guide - Bengaluru",
+            "link": "https://www.expedia.co.in/Bengaluru-Varthur.dx553248635976008345",
+            "snippet": "Popular places to visit \u00b7 Nandi Hills \u00b7 Bangalore Palace \u00b7 Manyata Tech Park \u00b7 Cubbon Park \u00b7 UB City \u00b7 Lalbagh Botanical Gardens \u00b7 Wonderla Amusement Park \u00b7 ISKCON ...",
+            "position": 2,
+            "domain": "www.expedia.co.in"
+          },
+          {
+            "title": "Varthur, Bangalore: Map, Property Rates, Projects, Photos ...",
+            "link": "https://www.magicbricks.com/Varthur-in-Bangalore-Overview",
+            "snippet": "Varthur is a good locality. It has good connectivity to school, mall, hospital and It companies available in close proximity.",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "living in Varthur Bangalore",
+        "top_results": [
+          {
+            "title": "Why Varthur is One of the Best Places to Live in Bangalore",
+            "link": "https://www.magicbricks.com/blog/varthur-bangalore-best-place-to-live-invest/145250.html",
+            "snippet": "You enjoy a comfortable lifestyle in Varthur, Bangalore, with easy access to top schools, reputable hospitals, fitness centres and vibrant ...",
+            "position": 1,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Is Varthur Road a good location for buying an apartment in ...",
+            "link": "https://www.quora.com/Is-Varthur-Road-a-good-location-for-buying-an-apartment-in-Bangalore",
+            "snippet": "Varthur's biggest advantage is that it is located strategically between the Outer Ring Road and Whitefield, while possessing good access to ...",
+            "position": 2,
+            "domain": "www.quora.com"
+          },
+          {
+            "title": "Opinion on staying near Varthur lake? : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/l1206r/opinion_on_staying_near_varthur_lake/",
+            "snippet": "If you really want to stay somewhere, Immidihalli, Hagadur are really decent options. All inside a KM from the varthur cross.",
+            "position": 3,
+            "domain": "www.reddit.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "Varthur review",
+        "top_results": [
+          {
+            "title": "Ratings & Reviews of Varthur, Bangalore",
+            "link": "https://www.99acres.com/varthur-bangalore-east-reviews-and-ratings-wrffid",
+            "snippet": "The roads are well maintained.Also,the people living there are quite friendly.Varthur is the best if you are looking for an eco friendly non polluted town.This ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Varthur, Bangalore Reviews - Ratings, Pros & Cons by ...",
+            "link": "https://www.nobroker.in/locality-iq/varthur-bangalore-liqlt/reviews",
+            "snippet": "The area suits families well. There are green spaces near Varthur Lake, multiple parks, and good accessibility to healthcare facilities like Sri Venkateshwara ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Opinion on staying near Varthur lake? : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/l1206r/opinion_on_staying_near_varthur_lake/",
+            "snippet": "The area is pathetic with shit roads and terrible traffic condition. The area is known for long traffic jams, Varthur bridge on one side and ...",
+            "position": 3,
+            "domain": "www.reddit.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Varthur property price",
+        "top_results": [
+          {
+            "title": "Property Rates in Varthur, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-varthur-bangalore-east-prffid",
+            "snippet": "The average flat rates in Varthur, Bangalore is \u20b9 13,900 per sq ft. A 1 BHK flat is available at a price range of \u20b9 7,500,000-11,041,950. A 2 BHK flat is ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property in Varthur, Bangalore",
+            "link": "https://www.magicbricks.com/property-for-sale-in-varthur-bangalore-pppfs",
+            "snippet": "The price of flats in Varthur range between \u20b9 35 lakhs - \u20b9 16.42 Cr, and houses price between \u20b9 45.7 lakhs - \u20b9 6.50 Cr, with 1-5 BHK options. However, land ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Varthur, Bangalore East",
+            "link": "https://www.propertypistol.com/locality/a7795d1f-da69-4584-b3c6-e01595e30392/varthur",
+            "snippet": "What is the average price per sq ft. for sale in Varthur? faq. As of 2024, the average property rate in Varthur is INR 4,940 per square foot. However, the price ...",
+            "position": 3,
+            "domain": "www.propertypistol.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Varthur rent",
+        "top_results": [
+          {
+            "title": "Flats for Rent in Varthur, Bangalore",
+            "link": "https://www.magicbricks.com/flats-for-rent-in-varthur-bangalore-pppfr",
+            "snippet": "Browse flats for rent in Varthur that fall within the \u20b911,846 - \u20b969,700 budget, including 1-5 BHK types. Rent in the area changes based on apartment size and ...",
+            "position": 1,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Flats for Rent in Varthur , Bangalore",
+            "link": "https://www.nobroker.in/flats-for-rent-in-varthur_bangalore",
+            "snippet": "3 BHK Flats for Rent in Varthur. 3 BHK - 800 sq. ft. to 4,200 sq. ft. Monthly rent generally in Varthur falls between \u20b925,000 to \u20b976,399 per month, especially ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Property for rent in Varthur, Bangalore",
+            "link": "https://www.99acres.com/property-for-rent-in-varthur-bangalore-east-ffid",
+            "snippet": "Find 445+ Properties for Rent in Varthur, Bangalore on 99acres.com. Verified Listings, 80+ Furnished, 340+ Semi Furnished, 270+ Owner Properties, Map View, ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "local_pack"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "housing.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "2BHK rent Varthur",
+        "top_results": [
+          {
+            "title": "2 BHK Flats for rent in Varthur, Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-varthur_bangalore",
+            "snippet": "2 BHK Flats for Rent in Varthur. 2 BHK - 300 sq. ft. to 1,600 sq. ft. Monthly rent generally in Varthur falls between \u20b913,000 to \u20b945,000 per month, influenced ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "2 BHK Flats for Rent in Varthur, Bangalore",
+            "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-varthur-bangalore-east-ffid",
+            "snippet": "Quick info about Varthur. Explore 2 BHK Flats for Rent in Varthur, Bangalore, with prices ranging from \u20b935 thousand to \u20b950 thousand. Varthur is rated 4.2 ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "2 BHK Flats for Rent in Varthur, Bangalore",
+            "link": "https://www.magicbricks.com/2-bhk-flats-for-rent-in-varthur-bangalore-pppfr",
+            "snippet": "The rent of 2 BHK flats in Varthur, Bangalore ranges between Rs. \u20b9 24,600 - \u20b9 60,000. Great connectivity with major highways and accessibility to public ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "magicbricks.com",
+          "housing.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Varthur flat for sale",
+        "top_results": [
+          {
+            "title": "Flats for Sale in Varthur Bangalore | Apartments in ...",
+            "link": "https://www.nobroker.in/flats-for-sale-in-varthur_bangalore",
+            "snippet": "304 - Flats for Sale in Varthur Bangalore | Apartments for Sale in Varthur Bangalore \u00b7 3 BHK Apartment In Brigade Cornerstone Utopia For Sale In Varthur \u00b7 1 RK ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Apartments in Varthur, Bangalore - 784+ Flats for sale in ...",
+            "link": "https://www.99acres.com/flats-in-varthur-bangalore-east-ffid",
+            "snippet": "Apartments in Varthur, Bangalore \u00b7 1 BHK Flat in Varthur, Bangalore. Resale. \u20b980 Lac. \u20b916,260 /sqft. Under Construction. 691 sqft(64 sqm). Super built-up area.",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "951+ Flats for Sale in Varthur, Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-varthur-bangalore-for-sale-pppfs",
+            "snippet": "Search for 1-5 BHK flats in Varthur available in the \u20b966.7 Lac - \u20b95.65 Cr price range. Choose from 546+ resale flats, 412+ ready-to-move flats, ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Varthur property rate per sq ft",
+        "top_results": [
+          {
+            "title": "Property Rates in Varthur, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-varthur-bangalore-east-prffid",
+            "snippet": "The average transaction rate of a flat in Varthur is Rs 10023 per sq ft. It is Rs 8036 per sq ft for a builder floor. For an independent house, property buyers ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property Price Trends in Varthur - Bangalore",
+            "link": "https://www.magicbricks.com/Property-Rates-Trends/Multistorey-Apartment-rates-Varthur-in-Bangalore",
+            "snippet": "... Price: Rs 10,510 per Sq-ft. 2% Trends Up. Comparatives - Jan-Mar 2026. Get an overview of prices in this locality for the property type being viewed. This ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Property Rates in Varthur Road, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-varthur-road-bangalore-east-prffid",
+            "snippet": "The average flat rates in Varthur Road, Bangalore is \u20b9 10,900 per sq ft. A 2 BHK flat is available at a price range of \u20b9 12,050,000-14,818,000. A 3 BHK flat is ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Varthur new projects",
+        "top_results": [
+          {
+            "title": "New Projects in Varthur Bangalore for Sale",
+            "link": "https://www.99acres.com/new-projects-in-varthur-bangalore-east-ffid",
+            "snippet": "Recently Launched Projects in Bangalore \u00b7 RRL Palm Altezze in Varthur \u00b7 The Earthscape by Bricks and Milestones in Varthur \u00b7 Whispers of Bliss in Varthur \u00b7 SSVR ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "New Projects in Varthur, Bangalore: 195+ Pre Launch ...",
+            "link": "https://www.magicbricks.com/new-projects-Varthur-in-Bangalore",
+            "snippet": "Projects in Varthur, Bangalore \u00b7 Tranquil at Brigade Cornerstone Utopia \u00b7 Prestige Lavender Fields \u00b7 Neeladri Sarovaram \u00b7 Prestige Serenity Shores \u00b7 Ecolife Eon ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "151 New Projects in Varthur, Bangalore",
+            "link": "https://www.commonfloor.com/all-apartments-in-varthur/psr-4e44c243c0551",
+            "snippet": "151 New Projects in Varthur, Bangalore \u00b7 Paradise at Brigade Cornerstone Utopia \u00b7 Prestige Lavender Fields \u00b7 Nature Elation \u00b7 Green Edge Signature \u00b7 Mithila ...",
+            "position": 3,
+            "domain": "www.commonfloor.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "things to do in Varthur",
+        "top_results": [
+          {
+            "title": "Top Tourist Attractions in Varthur - Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Tourist-Attraction-in-Varthur/nct-10596038",
+            "snippet": "Explore Top Tourist Attractions in Varthur, Bangalore \u00b7 Varthur Lake \u00b7 Gunjur Lake \u00b7 Kachamaranahalli Lake \u00b7 Vartur Kere \u00b7 Charan Sir Checkpoint \u00b7 Madhouse ...",
+            "position": 1,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "Varthur Places to Visit \u2013 Lakes, Parks, Malls & Attractions in ...",
+            "link": "https://www.prestigeevergreen.info/location/varthur-places-to-visit.html",
+            "snippet": "Outdoor Activities, Lakes, and Parks \u00b7 Varthur Lake \u00b7 Thubarahalli Lake Park \u00b7 Whitefield Inner Circle Park. Just 4.6 km away, this park is popular among kids ...",
+            "position": 2,
+            "domain": "www.prestigeevergreen.info"
+          },
+          {
+            "title": "Varthur Travel Guide - Bengaluru",
+            "link": "https://www.expedia.co.in/Bengaluru-Varthur.dx553248635976008345",
+            "snippet": "Bring the children to Wonderla Amusement Park and enjoy the excitement of this theme park in Ramanagara. Amble around the area's forests or visit its temples.",
+            "position": 3,
+            "domain": "www.expedia.co.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "best restaurants Varthur",
+        "top_results": [
+          {
+            "title": "Best Restaurants in Varthur Main Road, Whitefield",
+            "link": "https://www.eazydiner.com/bengaluru/restaurants/varthur-main-road-whitefield",
+            "snippet": "Best Restaurants in Varthur Main Road, Whitefield \u00b7 Old Mill \u00b7 Element 3 \u00b7 Toscano \u00b7 The Fat Chef \u00b7 Pasta Street \u00b7 Chaayos \u00b7 The Rasoiya Street \u00b7 Bhagini ...",
+            "position": 1,
+            "domain": "www.eazydiner.com"
+          },
+          {
+            "title": "Best Restaurants In Varthur, Bangalore 2025",
+            "link": "https://www.swiggy.com/city/bangalore/varthur-restaurants",
+            "snippet": "Restaurants in Varthur ... Original Burger Co. 4.7. American \u2022 Burger. \u20b91200 for two. Miraya Rose, Varthur, Bangalore. 19.5 km. Table booking. Table booking. Up ...",
+            "position": 2,
+            "domain": "www.swiggy.com"
+          },
+          {
+            "title": "Varthur Main Road, Whitefield Restaurants, Bangalore",
+            "link": "https://www.zomato.com/bangalore/best-varthur-main-road-whitefield-restaurants",
+            "snippet": "Windmills \u00b7 Oota Bangalore \u00b7 Pasta Street \u00b7 Lyfe Farm To Fork Restaurant & Pizzeria \u00b7 Malties - Radisson Blu \u00b7 Nakkshatra by Nagarjuna \u00b7 Saffron Radisson Blu Outer ...",
+            "position": 3,
+            "domain": "www.zomato.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "schools near Varthur",
+        "top_results": [
+          {
+            "title": "12 Best Schools in Varthur, Bangalore 2026-27",
+            "link": "https://yellowslate.com/blog/best-schools-in-varthur-bangalore",
+            "snippet": "12 Best Schools in Varthur, Bangalore 2026-27: Fee, Admission, Review, Curriculum, Facility & More \u00b7 1. Basil Woods International School \u00b7 2. Crestwood High \u00b7 3 ...",
+            "position": 1,
+            "domain": "yellowslate.com"
+          },
+          {
+            "title": "Best CBSE Schools in Varthur, Bangalore",
+            "link": "https://vishwavidyapeeth.edu.in/cbse-varthur/",
+            "snippet": "Vishwa Vidyapeeth nurtures responsible citizens of tomorrow, offering quality education and ranking among the top CBSE schools in Varthur.",
+            "position": 2,
+            "domain": "vishwavidyapeeth.edu.in"
+          },
+          {
+            "title": "International School in Varthur | OWIS India",
+            "link": "https://owis.org/in/bangalore/best-schools-near-varthur/",
+            "snippet": "Among the best-known international schools in the region are The Prodigies International School, Pratham International School, Oakridge International School and ...",
+            "position": 3,
+            "domain": "owis.org"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "hospitals near Varthur",
+        "top_results": [
+          {
+            "title": "Best Hospitals Near Me in Varthur, Bangalore",
+            "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/varthur",
+            "snippet": "20 Hospitals in Varthur, Bangalore \u00b7 Cloudnine Hospital \u00b7 Cloudnine Fertility \u00b7 Manipal Hospital Varthur Road (formerly Columbia Asia Hospital) \u00b7 Motherhood ...",
+            "position": 1,
+            "domain": "www.practo.com"
+          },
+          {
+            "title": "Best Hospitals in Varthur, Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Hospitals-in-Varthur/nct-10253670",
+            "snippet": "44 Hospitals in Varthur,Bangalore. Homeocare International Pvt Ltd, Hcg Cancer Centre, Aster Hospital Whitefield etc. Find \u2713Multispeciality Hospitals ...",
+            "position": 2,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "Best Multispeciality Hospital in Varthur Road,Bangalore",
+            "link": "https://www.manipalhospitals.com/varthurroad/",
+            "snippet": "Manipal Hospital is the Best multispeciality hospital in Varthur Road, Bangalore near Domlur, Indiranagar & Marathahalli. Find 2000+ super speciality ...",
+            "position": 3,
+            "domain": "www.manipalhospitals.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "Varthur vs Whitefield",
+        "top_results": [
+          {
+            "title": "East Bangalore Absorption RERA Q4 Check: Whitefield vs ...",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1snltvs/east_bangalore_absorption_rera_q4_check/",
+            "snippet": "Whitefield seems to have a decent number of unsold units, but Varthur and Hoskote are catching up. I guess it shows how different areas are ...",
+            "position": 1,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Varthur",
+            "link": "https://en.wikipedia.org/wiki/Varthur",
+            "snippet": "Varthur is a suburb situated in the Eastern periphery of Bangalore City and part of the internationally famous Whitefield township. Varthur is a Hobli and ...",
+            "position": 2,
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "Is Varthur Road a good location for buying an apartment in ...",
+            "link": "https://www.quora.com/Is-Varthur-Road-a-good-location-for-buying-an-apartment-in-Bangalore",
+            "snippet": "Varthur's biggest advantage is that it is located strategically between the Outer Ring Road and Whitefield, while possessing good access to ...",
+            "position": 3,
+            "domain": "www.quora.com"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com",
+          "nobroker.in"
+        ]
+      }
+    ],
+    "aeo_scores": [
+      {
+        "query": "best restaurants Varthur",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "schools near Varthur",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "hospitals near Varthur",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "Varthur Bangalore",
+        "score": 90,
+        "serp_features": [
+          "knowledge_panel",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "Varthur rent",
+        "score": 85,
+        "serp_features": [
+          "knowledge_panel",
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "2BHK rent Varthur",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "Varthur flat for sale",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "things to do in Varthur",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "Varthur Bangalore guide",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "living in Varthur Bangalore",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Varthur review",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Varthur property price",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Varthur property rate per sq ft",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Varthur new projects",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Varthur vs Whitefield",
+        "score": 70,
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      }
+    ]
+  },
+  "analysis": {
+    "topic": "Varthur",
+    "topic_type": "locality",
+    "trend_direction": "declining",
+    "trend_summary": "Varthur search interest is declining from a 12-month average of 66.3 to recent interest of 59.0, indicating softening demand. However, 5 rising queries suggest emerging lifestyle and infrastructure interests (microbreweries, urban classification) that present counter-trend opportunities.",
+    "total_queries_discovered": 193,
+    "intent_clusters": [
+      {
+        "intent": "informational",
+        "queries": [
+          "Which part of Bangalore is Varthur?",
+          "Is Varthur urban or rural?",
+          "What is Varthur famous for?",
+          "How far is Varthur from Bangalore city center?",
+          "Varthur Bangalore guide",
+          "Varthur bangalore map",
+          "Varthur district name",
+          "Varthur is Bangalore South or north",
+          "varthur hobli",
+          "Varthur Lake Bangalore"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "transactional",
+        "queries": [
+          "Varthur rent",
+          "2BHK rent Varthur",
+          "Varthur flat for sale",
+          "How much is land in Varthur Bangalore?",
+          "What is the price of flat in Varthur Bangalore?",
+          "Varthur property price",
+          "Varthur, Bangalore House rent",
+          "What is the cost of 1 square foot?",
+          "What is the cost of a 30 * 40 site in Bangalore?"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "comparative",
+        "queries": [
+          "Is Varthur a good area to live in Bangalore?",
+          "Is Varthur a good place to live?",
+          "Pros and cons of living in varthur bangalore",
+          "living in Varthur Bangalore",
+          "Is Varthur good for investment?",
+          "Is Whitefield, Bangalore a posh area?",
+          "What is special in Whitefield?",
+          "Varthur Bangalore to Whitefield"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "navigational",
+        "queries": [
+          "varthur pincode",
+          "varthur bangalore pin code",
+          "varthur police station",
+          "varthur post office",
+          "varthur manipal hospital",
+          "varthur bangalore distance",
+          "Varthur to whitefield distance",
+          "Varthur to whitefield metro",
+          "Bangalore to varthur distance",
+          "varthur weather",
+          "varthur bangalore weather"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "medium"
+      },
+      {
+        "intent": "lifestyle",
+        "queries": [
+          "best restaurants Varthur",
+          "schools near Varthur",
+          "hospitals near Varthur",
+          "Which international school is near to Varthur Bangalore?",
+          "Places to visit near Varthur, Bangalore",
+          "things to do in Varthur",
+          "green pearl varthur",
+          "legends microbrewery varthur",
+          "Virat Kohli's restaurant in Bangalore",
+          "Varthur Lake reviews"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "high"
+      }
+    ],
+    "content_gaps": [
+      {
+        "gap": "No comprehensive guide to lifestyle amenities in Varthur (restaurants, cafes, microbreweries, entertainment)",
+        "queries": [
+          "best restaurants Varthur",
+          "things to do in Varthur",
+          "green pearl varthur",
+          "legends microbrewery varthur",
+          "Places to visit near Varthur, Bangalore"
+        ],
+        "opportunity": "Create a detailed lifestyle and entertainment guide for Varthur highlighting emerging F&B scene, microbreweries, and leisure activities",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "No dedicated content on Varthur's administrative classification (urban vs rural status) despite rising search interest",
+        "queries": [
+          "varthur is bangalore rural or urban",
+          "Is Varthur urban or rural?",
+          "Is Varthur comes under BBMP?"
+        ],
+        "opportunity": "Create authoritative content clarifying Varthur's administrative status, BBMP coverage, and governance implications for residents and investors",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "Weak coverage of infrastructure and amenities (schools, hospitals) near Varthur with no featured snippets or AI overviews",
+        "queries": [
+          "schools near Varthur",
+          "hospitals near Varthur",
+          "Which international school is near to Varthur Bangalore?",
+          "Which is costly, manipal or Apollo?"
+        ],
+        "opportunity": "Build comprehensive directory pages for schools and hospitals near Varthur with comparison tables, ratings, and proximity information",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Limited content on water and infrastructure challenges in Varthur despite multiple queries about water problems",
+        "queries": [
+          "Is there a water problem in Varthur, Bangalore?",
+          "What is the water problem in Varthur?",
+          "What is the problem with the water in Varthur?"
+        ],
+        "opportunity": "Create transparent, balanced content addressing water supply challenges, solutions, and infrastructure development plans in Varthur",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "No structured comparison content between Varthur and nearby localities (Whitefield, Manipal area)",
+        "queries": [
+          "Varthur Bangalore to Whitefield",
+          "Varthur to Whitefield distance",
+          "What is special in Whitefield?",
+          "Is Whitefield, Bangalore a posh area?"
+        ],
+        "opportunity": "Create comparative locality guides (Varthur vs Whitefield, Varthur vs Manipal) with cost, lifestyle, and investment analysis",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "Minimal content on investment potential and future development of Varthur",
+        "queries": [
+          "What is the future of Varthur?",
+          "Is Varthur good for investment?"
+        ],
+        "opportunity": "Develop investment analysis content covering future growth prospects, infrastructure projects, and ROI potential in Varthur",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "No dedicated FAQ addressing common resident concerns (safety, livability, water issues, administrative status)",
+        "queries": [
+          "How safe is Varthur, Bangalore?",
+          "Is Varthur a part of Bangalore?",
+          "Living in varthur bangalore reddit"
+        ],
+        "opportunity": "Create comprehensive FAQ page addressing resident concerns with data-backed answers and community insights",
+        "suggested_content_type": "faq",
+        "priority": "high"
+      }
+    ],
+    "aeo_targets": [
+      {
+        "query": "best restaurants Varthur",
+        "current_answer_quality": "none",
+        "our_strategy": "Create a curated restaurant guide with categories (microbreweries, fine dining, casual), ratings, menus, and location maps. Leverage rising interest in 'legends microbrewery varthur' and 'green pearl varthur'",
+        "content_type": "hub"
+      },
+      {
+        "query": "schools near Varthur",
+        "current_answer_quality": "none",
+        "our_strategy": "Build a comprehensive school directory with CBSE/ICSE schools, fees, ratings, distance from Varthur center, and parent reviews. Address query about international schools specifically",
+        "content_type": "hub"
+      },
+      {
+        "query": "hospitals near Varthur",
+        "current_answer_quality": "none",
+        "our_strategy": "Create hospital directory featuring Manipal Hospital Varthur and competitors, with specialties, emergency services, ratings, and distance information",
+        "content_type": "hub"
+      },
+      {
+        "query": "Varthur Bangalore",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Develop authoritative locality hub page covering geography, administration, amenities, property market, and lifestyle. Target the knowledge panel with structured data",
+        "content_type": "hub"
+      },
+      {
+        "query": "Varthur rent",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create rental market analysis page with current rent ranges by BHK, locality micro-segments, and comparison with nearby areas. Include rental trends and investment analysis",
+        "content_type": "spoke"
+      },
+      {
+        "query": "2BHK rent Varthur",
+        "current_answer_quality": "weak",
+        "our_strategy": "Build specific rental guide for 2BHK apartments with price ranges, popular complexes, amenities, and neighborhood comparisons",
+        "content_type": "sub_spoke"
+      },
+      {
+        "query": "Varthur flat for sale",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create sales market guide with price per sqft trends, popular projects, investment potential, and comparison with rental yields",
+        "content_type": "spoke"
+      },
+      {
+        "query": "things to do in Varthur",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Expand existing AI overview content with detailed activity guide covering Varthur Lake, microbreweries, restaurants, parks, and weekend activities",
+        "content_type": "hub"
+      },
+      {
+        "query": "Varthur Bangalore guide",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Develop comprehensive locality guide competing with Expedia and Prestige content, covering geography, amenities, transport, safety, and livability factors",
+        "content_type": "hub"
+      },
+      {
+        "query": "living in Varthur Bangalore",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create detailed livability assessment with pros/cons, cost of living, safety data, infrastructure quality, and resident testimonials to compete with Reddit/Quora results",
+        "content_type": "hub"
+      },
+      {
+        "query": "varthur is bangalore rural or urban",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create authoritative content clarifying Varthur's administrative classification, BBMP coverage, and implications for governance and services",
+        "content_type": "spoke"
+      },
+      {
+        "query": "Varthur property price",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Develop detailed property pricing guide with per-sqft rates by micro-locality, price trends, and investment analysis to compete with 99acres and MagicBricks",
+        "content_type": "hub"
+      }
+    ],
+    "competitor_insights": [
+      {
+        "competitor": "magicbricks.com",
+        "strength": "Dominant presence across 11 queries with strong property listing integration, established authority on Varthur property rates and projects, good livability content",
+        "weakness": "Limited lifestyle and amenity content, weak on emerging trends (microbreweries), no comprehensive restaurant/entertainment guides, minimal investment analysis"
+      },
+      {
+        "competitor": "99acres.com",
+        "strength": "Strong presence in property pricing queries, good ratings and reviews section, established credibility in property market data",
+        "weakness": "Limited locality guide content, weak on lifestyle amenities, no comprehensive school/hospital directories, minimal comparison content with other localities"
+      },
+      {
+        "competitor": "nobroker.in",
+        "strength": "Good presence in rental and property queries, clean interface for property browsing, established in rental market",
+        "weakness": "Limited informational content, weak on lifestyle and amenities, no comprehensive guides, minimal investment or future outlook content"
+      },
+      {
+        "competitor": "housing.com",
+        "strength": "Presence in property queries with good listing database",
+        "weakness": "Minimal presence in Varthur searches (only 3 queries), weak on locality guides, limited lifestyle content, low authority for informational queries"
+      },
+      {
+        "competitor": "Wikipedia, Expedia, Prestige Severgreen",
+        "strength": "Wikipedia has authority for basic locality information, Expedia and Prestige have travel/lifestyle guides",
+        "weakness": "Not real estate focused, limited property market data, no investment analysis, outdated information, not optimized for real estate buyer intent"
+      }
+    ],
+    "top_5_priority_queries": [
+      {
+        "query": "best restaurants Varthur",
+        "reason": "Perfect AEO opportunity (score 100) with zero competitor presence, no featured snippet, and rising interest in microbreweries. High commercial intent for lifestyle positioning",
+        "suggested_action": "Create comprehensive restaurant and F&B guide highlighting Legends Microbrewery, Green Pearl, and other dining options with categories, ratings, and maps"
+      },
+      {
+        "query": "Varthur Bangalore",
+        "reason": "Highest volume query (score 90) with knowledge panel opportunity. Currently dominated by Wikipedia and competitors. Winning this establishes authority across all Varthur searches",
+        "suggested_action": "Build authoritative locality hub page with geography, administration, amenities, property market, and lifestyle. Optimize for knowledge panel with structured data"
+      },
+      {
+        "query": "varthur is bangalore rural or urban",
+        "reason": "Rising query with no existing content addressing it directly. Critical for investor and resident decision-making. Opportunity to establish authority on administrative classification",
+        "suggested_action": "Create definitive content clarifying Varthur's urban/rural status, BBMP coverage, governance implications, and how this affects services and property values"
+      },
+      {
+        "query": "schools near Varthur",
+        "reason": "Perfect AEO opportunity (score 100) with zero competitor presence and high family-oriented search intent. Addresses specific query about international schools",
+        "suggested_action": "Build comprehensive school directory with CBSE/ICSE schools, fees, ratings, distance, and parent reviews. Create comparison tables and neighborhood guides"
+      },
+      {
+        "query": "living in Varthur Bangalore",
+        "reason": "High-intent query (score 70) with AI overview opportunity and moderate competitor presence. Currently dominated by Reddit/Quora. Chance to provide authoritative livability assessment",
+        "suggested_action": "Create detailed livability guide with pros/cons, cost of living, safety data, infrastructure quality, water issues, and resident testimonials to compete with community content"
+      }
+    ],
+    "related_topics_to_explore": [
+      "Varthur Lake",
+      "Whitefield Bangalore",
+      "Manipal Hospital Varthur",
+      "Varthur Road",
+      "East Bangalore localities",
+      "Bangalore microbreweries",
+      "Bangalore property investment",
+      "BBMP coverage areas",
+      "Bangalore water supply issues",
+      "Bangalore school rankings",
+      "Bangalore hospital comparison",
+      "Bangalore rental market trends",
+      "Bangalore infrastructure development",
+      "Bangalore lifestyle and entertainment"
+    ],
+    "seasonal_notes": "Varthur shows seasonal patterns in search interest. Rising queries indicate emerging lifestyle interests (microbreweries, restaurants) that may peak during weekends and festive seasons. Property-related searches likely peak during financial year-end (March-April) and post-monsoon (September-October). Administrative classification queries ('urban vs rural') may spike during policy announcements or infrastructure development news. Monitor 'bangalore news' rising query for policy-related content opportunities."
+  },
+  "competitor_tracker": {
+    "magicbricks.com": 11,
+    "housing.com": 3,
+    "99acres.com": 10,
+    "nobroker.in": 9
+  },
+  "serp_calls_used": 15,
+  "autocomplete_calls_used": 4,
+  "cost_usd": 0.019373
+}

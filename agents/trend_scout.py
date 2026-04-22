@@ -16,6 +16,7 @@ Key improvements over v1:
 
 import json
 import os
+import re
 import time
 import hashlib
 from serpapi import GoogleSearch
@@ -236,14 +237,6 @@ def classify_topic(topic):
     """
     Classify a topic into one or more categories.
     Returns a list of matching categories, ordered by confidence.
-    
-    Examples:
-        "HSR Layout" → ["locality"]
-        "home loan" → ["finance"]
-        "RERA registration process" → ["legal", "process"]
-        "best schools near Whitefield" → ["lifestyle", "locality"]
-        "2BHK rent in Koramangala" → ["property_type", "locality"]
-        "Bangalore property market 2026" → ["market"]
     """
     topic_lower = topic.lower().strip()
     matches = []
@@ -264,17 +257,15 @@ def classify_topic(topic):
             if signal in topic_lower:
                 if category not in matches:
                     matches.append(category)
-                break  # One match per category is enough
+                break
 
     # Default: if nothing matched and it looks like a locality name
-    # (capitalized, 2-3 words, no obvious category signals)
     if not matches:
         words = topic.strip().split()
         if 1 <= len(words) <= 4 and words[0][0].isupper():
             matches.append("locality")
             detected_localities.append(topic.strip())
 
-    # Always at least one category
     if not matches:
         matches.append("market")
 
@@ -332,15 +323,14 @@ def _generate_queries_locality(topic, classification):
         "comparison": [],
     }
 
-    # 🔥 FIX: Always ensure comparison queries exist
+    # Always ensure comparison queries exist
     loc_key = loc.lower()
     neighbors = LOCALITY_NEIGHBORS.get(loc_key, [])
 
-    # Fallback neighbors if not found
+    # Fallback neighbors if not in dict — generic well-known areas
     if not neighbors:
         neighbors = ["Whitefield", "Koramangala", "Indiranagar"]
 
-    # Use comparison patterns
     for neighbor in neighbors[:3]:
         for pattern in COMPARISON_PATTERNS:
             queries["comparison"].append(
@@ -444,7 +434,6 @@ def _generate_queries_finance(topic, classification):
 
 def _generate_queries_lifestyle(topic, classification):
     """Generate search queries for a lifestyle topic."""
-    # If there's also a locality, combine them
     loc = ""
     if classification["detected_localities"]:
         loc = classification["detected_localities"][0]
@@ -561,51 +550,45 @@ def generate_all_queries(topic, classification, max_serp_calls=15):
     """
     Generate all search queries based on topic classification.
     Respects SerpAPI budget by prioritizing high-value queries.
-    
-    Returns a dict of {group_name: [queries]} with total ≤ max_serp_calls.
     """
     primary = classification["primary_category"]
     generator = QUERY_GENERATORS.get(primary, _generate_queries_market)
     query_groups = generator(topic, classification)
 
-    # If cross-cutting (e.g., "schools near Whitefield" = lifestyle + locality),
-    # also pull some queries from secondary categories
+    # If cross-cutting, pull core queries from secondary categories too
     if classification["is_cross_cutting"]:
         for secondary in classification["categories"][1:]:
             sec_generator = QUERY_GENERATORS.get(secondary)
             if sec_generator:
                 sec_queries = sec_generator(topic, classification)
-                # Only take the "core" group from secondary to stay within budget
                 core = sec_queries.get("core", [])[:2]
                 if core:
                     query_groups[f"cross_{secondary}"] = core
 
-    # Budget allocation: flatten, deduplicate, prioritize, trim
     all_queries = []
     seen = set()
 
-    # Priority order: core first, then others
     priority_order = [
-    "core",
-    "property",
-    "lifestyle",       
-    "comparison",    
-    "how_to",
-    "rates",
-    "practical",
-    "specific",
-    "connectivity",
-    "by_locality",
-    "impact",
-    "related",
-    "problems",
-    "tax",
-    "eligibility",
-    "audience",
-    "timeline",
-    "data",
-    "trends",
-]
+        "core",
+        "property",
+        "lifestyle",
+        "comparison",
+        "how_to",
+        "rates",
+        "practical",
+        "specific",
+        "connectivity",
+        "by_locality",
+        "impact",
+        "related",
+        "problems",
+        "tax",
+        "eligibility",
+        "audience",
+        "timeline",
+        "data",
+        "trends",
+    ]
 
     for group in priority_order:
         for q in query_groups.get(group, []):
@@ -640,8 +623,6 @@ def generate_all_queries(topic, classification, max_serp_calls=15):
 def _search_serp_enhanced(query, num_results=10):
     """
     Enhanced SerpAPI search that also captures SERP features.
-    Detects: featured snippets, PAA, knowledge panels, AI overviews,
-    local packs, image packs, video results.
     """
     cache_key = f"serp_v2:{hashlib.md5(query.encode()).hexdigest()}"
     cached = cache_get(cache_key)
@@ -661,7 +642,6 @@ def _search_serp_enhanced(query, num_results=10):
         search = GoogleSearch(params)
         results = search.get_dict()
 
-        # Organic results
         organic = [
             {
                 "title": r.get("title", ""),
@@ -673,7 +653,6 @@ def _search_serp_enhanced(query, num_results=10):
             for r in results.get("organic_results", [])
         ]
 
-        # People Also Ask
         paa = [
             {
                 "question": q.get("question", ""),
@@ -683,12 +662,9 @@ def _search_serp_enhanced(query, num_results=10):
             for q in results.get("related_questions", [])
         ]
 
-        # Related searches
         related = [r.get("query", "") for r in results.get("related_searches", [])]
 
-        # SERP features detection
         serp_features = []
-
         if results.get("answer_box"):
             serp_features.append("featured_snippet")
         if results.get("knowledge_graph"):
@@ -708,7 +684,6 @@ def _search_serp_enhanced(query, num_results=10):
         if paa:
             serp_features.append("people_also_ask")
 
-        # Featured snippet content (if present — great AEO intel)
         featured_snippet = None
         if results.get("answer_box"):
             ab = results["answer_box"]
@@ -719,7 +694,6 @@ def _search_serp_enhanced(query, num_results=10):
                 "source": ab.get("link", ""),
             }
 
-        # AI Overview content (if present)
         ai_overview = None
         if results.get("ai_overview"):
             aio = results["ai_overview"]
@@ -728,7 +702,6 @@ def _search_serp_enhanced(query, num_results=10):
                 "sources": [s.get("link", "") for s in aio.get("sources", [])][:3],
             }
 
-        # Competitor detection
         competitor_domains = set()
         competitors = cfg.get("competitors", [])
         for r in organic:
@@ -749,7 +722,7 @@ def _search_serp_enhanced(query, num_results=10):
         }
 
         cache_set(cache_key, data, ttl_days=7)
-        time.sleep(1.2)  # Rate limiting — be conservative
+        time.sleep(1.2)
         return data
 
     except Exception as e:
@@ -794,35 +767,56 @@ def _get_autocomplete_enhanced(seed):
 
 def _get_google_trends(topic):
     """
-    Get Google Trends data with graceful fallback.
-    Returns trend data if available, otherwise returns useful defaults.
+    Get Google Trends data via SerpAPI — no pytrends, no 429s, no proxies.
+    Uses your existing SerpAPI key. Costs 2 SerpAPI credits per topic.
     """
+    cache_key = f"trends_serpapi:{hashlib.md5(topic.lower().encode()).hexdigest()}"
+    cached = cache_get(cache_key)
+    if cached:
+        print("    (trends from cache)")
+        return cached
+
     try:
-        from pytrends.request import TrendReq
-        
-        pytrends = TrendReq(hl="en-US", tz=330, timeout=(10, 25))
-        kw = f"{topic} Bangalore"
+        kw = f"{topic} Bangalore"[:100]
 
-        if len(kw) > 100:
-            kw = kw[:100]
+        # ── Fetch interest over time ──
+        params_time = {
+            "engine": "google_trends",
+            "q": kw,
+            "geo": "IN-KA",
+            "date": "today 12-m",
+            "api_key": SERPAPI_KEY,
+        }
+        search = GoogleSearch(params_time)
+        time_data = search.get_dict()
 
-        pytrends.build_payload([kw], cat=0, timeframe="today 12-m", geo="IN-KA")
-
-        interest = pytrends.interest_over_time()
-        if interest.empty:
+        timeline = time_data.get("interest_over_time", {}).get("timeline_data", [])
+        if not timeline:
+            print("    Trends: no timeline data returned")
             return {
                 "trend_available": False,
                 "reason": "no_data",
                 "fallback_strategy": "Using SERP data as proxy"
             }
 
-        values = interest[kw].tolist()
-        avg = sum(values) / len(values) if values else 0
-        recent_avg = sum(values[-4:]) / 4 if len(values) >= 4 else avg
-        peak = max(values) if values else 0
-        trough = min(values) if values else 0
+        values = []
+        for point in timeline:
+            for val in point.get("values", []):
+                extracted = val.get("extracted_value", 0)
+                values.append(extracted)
 
-        # Direction detection
+        if not values:
+            return {
+                "trend_available": False,
+                "reason": "no_values",
+                "fallback_strategy": "Using SERP data as proxy"
+            }
+
+        avg = sum(values) / len(values)
+        recent_avg = sum(values[-4:]) / 4 if len(values) >= 4 else avg
+        peak = max(values)
+        trough = min(values)
+
         if recent_avg > avg * 1.15:
             direction = "rising_fast"
         elif recent_avg > avg * 1.05:
@@ -836,16 +830,28 @@ def _get_google_trends(topic):
 
         is_seasonal = (peak - trough) > (avg * 0.5) if avg > 0 else False
 
-        related = pytrends.related_queries()
-        rising_queries = []
-        top_queries = []
-        if kw in related:
-            if related[kw].get("rising") is not None:
-                rising_queries = related[kw]["rising"]["query"].tolist()[:15]
-            if related[kw].get("top") is not None:
-                top_queries = related[kw]["top"]["query"].tolist()[:10]
+        # ── Fetch related queries ──
+        time.sleep(1.0)
+        params_related = {
+            "engine": "google_trends",
+            "q": kw,
+            "geo": "IN-KA",
+            "data_type": "RELATED_QUERIES",
+            "api_key": SERPAPI_KEY,
+        }
+        related_search = GoogleSearch(params_related)
+        related_data = related_search.get_dict()
 
-        return {
+        rising_queries = [
+            r.get("query", "")
+            for r in related_data.get("related_queries", {}).get("rising", [])[:15]
+        ]
+        top_queries = [
+            r.get("query", "")
+            for r in related_data.get("related_queries", {}).get("top", [])[:10]
+        ]
+
+        result = {
             "trend_available": True,
             "average_interest": round(avg, 1),
             "recent_interest": round(recent_avg, 1),
@@ -855,96 +861,84 @@ def _get_google_trends(topic):
             "rising_queries": rising_queries,
             "top_queries": top_queries,
         }
-        
-    except ImportError:
-        # pytrends not installed
-        print("⚠️  pytrends not installed. Install with:")
-        print("   pip install pytrends --break-system-packages")
-        return {
-            "trend_available": False,
-            "error": "pytrends_not_installed",
-            "remedy": "pip install pytrends --break-system-packages",
-            "fallback_strategy": "Will use SERP related queries as proxy"
-        }
-        
-    except ConnectionError as e:
-        # Pytrends server error
-        print(f"⚠️  Pytrends connection error: {e}")
-        return {
-            "trend_available": False,
-            "error": "connection_error",
-            "message": str(e),
-            "fallback_strategy": "Will use SERP related queries as proxy"
-        }
-        
+
+        cache_set(cache_key, result, ttl_days=1)
+        time.sleep(1.0)
+        return result
+
     except Exception as e:
-        print(f"⚠️  Google Trends error: {e}")
+        print(f"⚠️  SerpAPI Trends error: {e}")
         return {
             "trend_available": False,
             "error": str(e),
             "fallback_strategy": "Will use SERP related queries as proxy"
         }
 
+
 def summarize_trends(trends_data):
-    """Create human-readable trend summary."""
+    """Create human-readable trend summary for the LLM prompt."""
     if not trends_data or not trends_data.get("trend_available"):
-        return "Trend data unavailable."
-    
+        reason = trends_data.get("error", trends_data.get("reason", "unavailable"))
+        return f"Trend data unavailable ({reason}). Using SERP signals as proxy."
+
     direction = trends_data.get("direction", "unknown")
     recent = trends_data.get("recent_interest", 0)
     avg = trends_data.get("average_interest", 0)
     seasonal = trends_data.get("is_seasonal", False)
-    
+
     summary = f"Topic is {direction}."
-    
+
     if recent > avg:
-        summary += f" Recent interest ({recent}) up from average ({avg})."
+        summary += f" Recent interest ({recent}) up from 12-month average ({avg})."
     elif recent < avg:
-        summary += f" Recent interest ({recent}) down from average ({avg})."
-    
+        summary += f" Recent interest ({recent}) down from 12-month average ({avg})."
+    else:
+        summary += f" Interest stable around {avg}."
+
     if seasonal:
         summary += " Seasonal patterns detected."
-    
+
+    rising = trends_data.get("rising_queries", [])
+    if rising:
+        summary += f" {len(rising)} rising related queries found."
+
     return summary
+
 
 def _extract_trend_proxies_from_serp(all_serp_results):
     """
     If Google Trends fails, extract trend signals from SERP data.
-    People Also Ask questions often indicate rising searches.
+    Called AFTER SERP results are collected in run_trend_scout.
     """
-    trend_proxies = {
-        "trend_available": False,
-        "reason": "using_serp_proxy",
-        "serp_based_insights": {
-            "questions_in_paa": 0,
-            "assumed_rising_queries": [],
-            "pages_with_paa": 0
-        }
-    }
-    
     paa_question_count = 0
     pages_with_paa = 0
-    
+    assumed_rising_queries = []
+
     for result in all_serp_results:
         paa = result.get("people_also_ask", [])
         if paa:
             pages_with_paa += 1
             paa_question_count += len(paa)
-            # Questions with "new" or "latest" terminology often rising
             for q in paa[:3]:
-                if any(word in q.lower() for word in ["new", "latest", "upcoming", "2026"]):
-                    trend_proxies["serp_based_insights"]["assumed_rising_queries"].append(q)
-    
-    trend_proxies["serp_based_insights"]["questions_in_paa"] = paa_question_count
-    trend_proxies["serp_based_insights"]["pages_with_paa"] = pages_with_paa
-    
-    # Heuristic: lots of PAA = topic in high demand
-    if paa_question_count > 20:
-        trend_proxies["assumed_direction"] = "rising"  # Many questions = growing interest
-    else:
-        trend_proxies["assumed_direction"] = "stable"
-    
-    return trend_proxies
+                q_text = q.get("question", "") if isinstance(q, dict) else q
+                if any(word in q_text.lower() for word in ["new", "latest", "upcoming", "2026", "stopped", "news"]):
+                    assumed_rising_queries.append(q_text)
+
+    # Heuristic: lots of PAA = topic in high demand / rising
+    assumed_direction = "rising" if paa_question_count > 20 else "stable"
+
+    return {
+        "trend_available": False,
+        "reason": "using_serp_proxy",
+        "assumed_direction": assumed_direction,
+        "serp_based_insights": {
+            "questions_in_paa": paa_question_count,
+            "assumed_rising_queries": assumed_rising_queries[:10],
+            "pages_with_paa": pages_with_paa,
+        },
+        "fallback_strategy": "Derived from SERP People Also Ask signals"
+    }
+
 
 # ─────────────────────────────────────────────────────────
 # AEO OPPORTUNITY SCORING
@@ -952,15 +946,8 @@ def _extract_trend_proxies_from_serp(all_serp_results):
 
 def _score_aeo_opportunity(serp_result):
     """
-    Score how good an AEO (Answer Engine Optimization) opportunity a query is.
+    Score how good an AEO opportunity a query is.
     Higher score = easier to become the AI-cited answer.
-    
-    Factors:
-    - No featured snippet → opportunity to claim it
-    - No AI overview → AIO hasn't formed an answer yet
-    - Weak organic results → less competition
-    - No competitor presence → they haven't targeted this
-    - Question format → high AEO potential
     """
     score = 50  # Base score
 
@@ -970,25 +957,24 @@ def _score_aeo_opportunity(serp_result):
     if not serp_result.get("featured_snippet"):
         score += 15
     else:
-        # Featured snippet exists but is from a competitor → we can steal it
         fs_source = serp_result.get("featured_snippet", {}).get("source", "")
         competitors = cfg.get("competitors", [])
         if any(c in fs_source for c in competitors):
-            score += 5  # Competitor has it, but we can beat them
+            score += 5  # Competitor has it — we can displace them
 
-    # No AI overview = huge AEO opportunity
+    # No AI overview content = AEO opportunity
     if not serp_result.get("ai_overview"):
         score += 20
 
-    # No competitor in top 5 results
+    # No competitor in top results
     if not serp_result.get("competitor_presence"):
         score += 10
 
-    # Question format queries have highest AEO potential
+    # Question-format queries have highest AEO potential
     if any(query.startswith(w) for w in ["what ", "how ", "why ", "when ", "where ", "is ", "can ", "should "]):
         score += 10
 
-    # "People Also Ask" present means Google sees this as Q&A territory
+    # PAA present means Google sees this as Q&A territory
     if "people_also_ask" in serp_result.get("serp_features", []):
         score += 5
 
@@ -1003,6 +989,10 @@ ANALYSIS_SYSTEM_PROMPT = """You are a search trend analyst for Canvas Homes, a B
 
 Given search data for a topic, analyze and structure the findings into an actionable intelligence report.
 
+CRITICAL: Your entire response must be a single valid JSON object.
+No text before it, no text after it, no markdown fences, no explanation.
+Start your response with { and end with }.
+
 Your analysis must:
 1. Identify the overall trend direction
 2. Cluster queries by user intent (informational, transactional, navigational, comparative)
@@ -1014,7 +1004,7 @@ Your analysis must:
 
 Consider ALL query categories present: locality, property, legal, finance, lifestyle, infrastructure, process, market.
 
-Respond with ONLY JSON:
+Respond with ONLY this JSON structure:
 {
   "topic": "string",
   "topic_type": "locality|property_type|legal|finance|lifestyle|infrastructure|process|market",
@@ -1072,25 +1062,6 @@ Respond with ONLY JSON:
 def run_trend_scout(seed_topic, cluster_id=None, max_serp_calls=15, max_autocomplete_calls=5):
     """
     Full Trend Scout analysis for any Bangalore real estate topic.
-    
-    Works for:
-    - Localities: "HSR Layout", "Whitefield", "Koramangala"
-    - Property types: "2BHK apartment", "villa", "PG accommodation"
-    - Legal: "RERA registration", "stamp duty", "rental agreement"
-    - Finance: "home loan", "property tax", "EMI calculator"
-    - Lifestyle: "best schools", "things to do", "restaurants"
-    - Infrastructure: "Namma Metro", "ORR", "airport road"
-    - Process: "how to buy property", "NRI property purchase"
-    - Market: "Bangalore property market 2026", "price forecast"
-    
-    Args:
-        seed_topic: The topic to analyze
-        cluster_id: Optional cluster ID for tracking
-        max_serp_calls: Max SerpAPI search calls (default 15, ~$0.15)
-        max_autocomplete_calls: Max autocomplete calls (default 5)
-    
-    Returns:
-        Structured dict with raw_data, analysis, classification, and aeo_opportunities
     """
     run_id = start_agent_run(
         "trend_scout", cluster_id=cluster_id,
@@ -1130,7 +1101,7 @@ def run_trend_scout(seed_topic, cluster_id=None, max_serp_calls=15, max_autocomp
         all_paa = []
         all_related = []
         aeo_scores = []
-        competitor_tracker = {}  # domain → count of appearances
+        competitor_tracker = {}
 
         for i, q_info in enumerate(queries):
             query = q_info["query"]
@@ -1140,22 +1111,18 @@ def run_trend_scout(seed_topic, cluster_id=None, max_serp_calls=15, max_autocomp
             result = _search_serp_enhanced(query)
             all_serp_results.append(result)
 
-            # Collect PAA questions
             for paa in result.get("people_also_ask", []):
                 q_text = paa.get("question", "")
                 if q_text and q_text not in all_paa:
                     all_paa.append(q_text)
 
-            # Collect related searches
             for rel in result.get("related_searches", []):
                 if rel and rel not in all_related:
                     all_related.append(rel)
 
-            # Track competitor presence
             for comp in result.get("competitor_presence", []):
                 competitor_tracker[comp] = competitor_tracker.get(comp, 0) + 1
 
-            # AEO scoring
             aeo_score = _score_aeo_opportunity(result)
             aeo_scores.append({
                 "query": query,
@@ -1168,6 +1135,11 @@ def run_trend_scout(seed_topic, cluster_id=None, max_serp_calls=15, max_autocomp
 
         print(f"    Total PAA questions: {len(all_paa)}")
         print(f"    Total related searches: {len(all_related)}")
+
+        # ── After step 4: enrich trends with SERP proxy if trends unavailable ──
+        if not trends.get("trend_available"):
+            print("    Enriching trend data with SERP proxy signals...")
+            trends = _extract_trend_proxies_from_serp(all_serp_results)
 
         # ── Step 5: Autocomplete ──
         print(f"  [5/6] Fetching autocomplete ({max_autocomplete_calls} calls)...")
@@ -1197,11 +1169,12 @@ def run_trend_scout(seed_topic, cluster_id=None, max_serp_calls=15, max_autocomp
         # ── Step 6: LLM analysis ──
         print("  [6/6] Running LLM analysis...")
 
-        # Sort AEO scores to highlight top opportunities
         aeo_scores.sort(key=lambda x: x["score"], reverse=True)
         top_aeo = aeo_scores[:10]
 
-        # Build analysis prompt with all collected data
+        # Build human-readable trend summary for the prompt
+        trend_summary_text = summarize_trends(trends)
+
         analysis_input = f"""Analyze this search data for "{seed_topic}" in Bangalore.
 
 TOPIC CLASSIFICATION:
@@ -1209,7 +1182,10 @@ TOPIC CLASSIFICATION:
 - All categories: {classification['categories']}
 - Detected localities: {classification['detected_localities']}
 
-GOOGLE TRENDS:
+GOOGLE TRENDS SUMMARY:
+{trend_summary_text}
+
+GOOGLE TRENDS RAW DATA:
 {json.dumps(trends, indent=2)}
 
 PEOPLE ALSO ASK ({len(all_paa)} unique questions):
@@ -1242,7 +1218,7 @@ TOP SERP RESULTS (first 3 per query, top 5 queries):
 ], indent=2)}
 
 RISING QUERIES FROM GOOGLE TRENDS:
-{json.dumps(trends.get('rising_queries', []), indent=2)}
+{json.dumps(trends.get('rising_queries', trends.get('serp_based_insights', {}).get('assumed_rising_queries', [])), indent=2)}
 
 Provide a comprehensive analysis. Focus on AEO opportunities and content gaps.
 """
@@ -1362,9 +1338,10 @@ if __name__ == "__main__":
             print(f"  [{q['group']}] {q['query']}")
     else:
         result = run_trend_scout(topic, max_serp_calls=max_serp)
-        
-        # Save full output
-        output_path = f"outputs/trend_scout_{topic.lower().replace(' ', '_')}.json"
+
+        # Safe filename — strip special chars, cap length
+        safe_topic = re.sub(r'[^\w\s-]', '', topic.lower()).strip().replace(' ', '_')[:60]
+        output_path = f"outputs/trend_scout_{safe_topic}.json"
         os.makedirs("outputs", exist_ok=True)
         with open(output_path, "w") as f:
             json.dump(result, f, indent=2)

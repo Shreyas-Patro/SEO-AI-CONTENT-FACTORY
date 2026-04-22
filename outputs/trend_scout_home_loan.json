@@ -1,0 +1,659 @@
+{
+  "topic": "home loan",
+  "classification": {
+    "categories": [
+      "finance"
+    ],
+    "primary_category": "finance",
+    "detected_localities": [],
+    "is_locality": false,
+    "is_cross_cutting": false
+  },
+  "raw_data": {
+    "trends": {
+      "trend_available": true,
+      "average_interest": 59.3,
+      "recent_interest": 41.5,
+      "peak_interest": 100,
+      "direction": "declining_fast",
+      "is_seasonal": true,
+      "rising_queries": [],
+      "top_queries": []
+    },
+    "paa_questions": [
+      "Which bank is best for home loan in Bangalore?",
+      "How much EMI for a 20 lakh home loan?",
+      "Who is eligible for 2.67 lakhs subsidy?",
+      "What is the current home loan interest rate in Bangalore?",
+      "Will home loan interest rates go down in 2026 in India?",
+      "Will home loan rates go down in 2026?",
+      "Which bank is best for home loan 2026?",
+      "What are the expectations of Budget 2026 for home loan?",
+      "How much home loan can I get on a RS 50,000 salary?",
+      "What is the 20 30 40 rule for home loan?",
+      "Which bank gives 7% interest on a home loan?",
+      "Which loan is best for a home?",
+      "Which bank gives the best home loan rate?",
+      "Who is eligible for 2.67 lakh subsidy?",
+      "Which bank is perfect for a home loan?",
+      "Which bank is best for a home loan with low interest in 2026?",
+      "Will interest rates increase in 2026?"
+    ],
+    "related_searches": [
+      "Home loan bangalore interest rate",
+      "Home loan bangalore apply online",
+      "Home loan bangalore contact number",
+      "Home loan EMI calculator",
+      "Home loan calculator",
+      "Best home loan bangalore",
+      "Sbi home loan bangalore",
+      "Home loan bangalore calculator",
+      "Sbi home loan in india 2026",
+      "Home loan in india 2026 interest rate",
+      "Home loan interest rates all banks",
+      "Government home loan in india 2026",
+      "Home loan in india 2026 eligibility",
+      "Best home loan in india 2026",
+      "Home loan in india 2026 calculator",
+      "Bank of India Home Loan interest rate",
+      "Home loan interest rate",
+      "SBI home loan calculator",
+      "Home loan eligibility calculator",
+      "Home loan calculator HDFC",
+      "Home loan calculator Canara Bank",
+      "SBI home loan EMI calculator",
+      "Home loan Calculator ICICI",
+      "Home Loan Calculator Axis Bank",
+      "Best home loan in india",
+      "Best home loan sbi",
+      "Best Home Loan app",
+      "Best home loan calculator",
+      "Top 10 banks for home loans in India",
+      "Best home loan Bank",
+      "Best home loan NBFC",
+      "Best home loan private Bank",
+      "Sbi home loan interest rate 2026",
+      "Hdfc home loan interest rate 2026",
+      "Home loan interest rate 2026 calculator",
+      "All Bank Home loan interest rate 2026",
+      "SBI home loan interest rates",
+      "RBI home loan interest rate 2026"
+    ],
+    "autocomplete": [
+      "home loan calculator",
+      "home loan emi calculator",
+      "home loan interest rate",
+      "home loan eligibility calculator",
+      "home loan interest rate sbi",
+      "home loan interest calculator",
+      "home loan calculator hdfc",
+      "home loan calculator sbi",
+      "home loan emi",
+      "home loan prepayment calculator",
+      "home loan emi calculator sbi",
+      "home loan eligibility",
+      "home loan interest",
+      "home loan rates",
+      "home loan emi calculator hdfc",
+      "home loan bangalore agent",
+      "home loan bangalore reddit",
+      "home loan bangalore interest rate",
+      "housing loan bangalore",
+      "home loan bengaluru photos",
+      "home loan bangalore reviews",
+      "hdfc home loan bangalore",
+      "basic home loan bangalore",
+      "sbi home loan bangalore",
+      "hdfc home loan bangalore branch",
+      "iifl home loan bangalore",
+      "home loan calculator bangalore",
+      "hdfc home loan bangalore customer care",
+      "hdfc home loan bangalore contact number",
+      "iifl home loan bangalore address",
+      "home loan 2026 interest rate",
+      "home loan 2026 budget",
+      "mortgage loan 2026",
+      "housing loan 2026 malaysia",
+      "home loan rates 2026",
+      "home loan subsidy 2026",
+      "home loan interest 2026",
+      "home loan predictions 2026",
+      "sbi home loan 2026",
+      "home loan subsidy 2026 gujarat",
+      "home loan calculator 2026",
+      "best home loan 2026",
+      "home loan changes 2026",
+      "home loan promo 2026",
+      "home loan offers 2026",
+      "best home loan interest rates",
+      "best home loan bank",
+      "best home loan rates",
+      "best home loan interest rates in india",
+      "best home loan in india",
+      "best home loan bank in india",
+      "best home loan rates in india",
+      "best home loan company",
+      "best home loan interest rate bank",
+      "best home loan finance company",
+      "best home loan provider in india",
+      "best home loan insurance plans",
+      "best home loan calculator",
+      "best home loan app",
+      "best home loan in kerala"
+    ],
+    "serp_results_summary": [
+      {
+        "query": "home loan Bangalore",
+        "top_results": [
+          {
+            "title": "Home Loans in Bangalore - Interest Rate, Eligibility & ...",
+            "link": "https://www.paisabazaar.com/home-loan/bangalore/",
+            "snippet": "Home loans in Bangalore metropolitan region start @ 7.10% p.a. onwards for loan amounts of up to 90% of property cost and for tenures of up to 30 years.",
+            "position": 1,
+            "domain": "www.paisabazaar.com"
+          },
+          {
+            "title": "Apply Home Loans in Bengaluru - Kotak Mahindra Bank",
+            "link": "https://www.kotak.bank.in/en/personal-banking/loans/home-loan/home-loans-in-bengaluru.html",
+            "snippet": "Apply for a Home Loan in Bengaluru with up to 90% property funding. Enjoy interest rates from 7.70%* p.a. & flexible tenure of up to 25 years for easy ...",
+            "position": 2,
+            "domain": "www.kotak.bank.in"
+          },
+          {
+            "title": "Home Loan in Bangalore up to Rs. 15 Crore* @7.49%* p.a.",
+            "link": "https://www.bajajfinserv.in/home-loan-in-bangalore",
+            "snippet": "Apply for a home loan in Bangalore online. Bajaj Finserv offers interest rates starting at 7.49% p.a. and loans up to Rs. 15 crore*. Get your dream home!",
+            "position": 3,
+            "domain": "www.bajajfinserv.in"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "housing.com"
+        ]
+      },
+      {
+        "query": "home loan in India 2026",
+        "top_results": [
+          {
+            "title": "Home Loan Interest Rates of All Banks 2026",
+            "link": "https://www.paisabazaar.com/home-loan/interest-rates/",
+            "snippet": "Current home loan interest rates start at 7.10%* p.a ; IDBI Bank, 7.35% p.a. onwards ; IDFC FIRST Bank, 8.85% p.a. onwards ; India Shelter Home Loan, 14.00% p.a..",
+            "position": 1,
+            "domain": "www.paisabazaar.com"
+          },
+          {
+            "title": "Home Loan Interest Rates (Mar 2026) Starting at 8.15%",
+            "link": "https://homeloans.hdfc.bank.in/checklist/home-loan-interest-rates",
+            "snippet": "HDFC Bank offers low home finance interest rates starting from 7.75*% p.a. This rate of interest is applicable to Home Loans, Balance Transfer Loans, ...",
+            "position": 2,
+            "domain": "homeloans.hdfc.bank.in"
+          },
+          {
+            "title": "Budget 2026 Impact: Easy Home Finance for Middle Class",
+            "link": "https://easyhomefinance.in/knowledge-hub/budget-2026-a-game-changer-for-middle-class-homeownership-with-increased-home-loan-deductions/",
+            "snippet": "The primary expectation from Budget 2026 is an increase in the Section 24(b) deduction limit from \u20b92 lakh to a more realistic \u20b94 lakh or ...",
+            "position": 3,
+            "domain": "easyhomefinance.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "housing.com"
+        ]
+      },
+      {
+        "query": "home loan calculator",
+        "top_results": [
+          {
+            "title": "Home Loan EMI Calculator",
+            "link": "https://homeloans.hdfc.bank.in/home-loan-emi-calculator",
+            "snippet": "The EMI calculator helps you arrive at the right home loan amount that best fits your monthly budget, by helping you decide the loan EMI and tenure most ...",
+            "position": 1,
+            "domain": "homeloans.hdfc.bank.in"
+          },
+          {
+            "title": "Home Loan EMI Calculator",
+            "link": "https://groww.in/calculators/home-loan-emi-calculator",
+            "snippet": "All you have to do is enter the loan amount, interest rate and the loan tenure in years. The exact EMI value will be calculated and displayed within seconds.",
+            "position": 2,
+            "domain": "groww.in"
+          },
+          {
+            "title": "Home Loan EMI Calculator - SBI",
+            "link": "https://homeloans.sbi.bank.in/calculators",
+            "snippet": "Home Loan EMI Calculator - SBI. Home Loan EMI calculator is a basic calculator that helps you to calculate the EMI, monthly interest and monthly reducing ...",
+            "position": 3,
+            "domain": "homeloans.sbi.bank.in"
+          }
+        ],
+        "serp_features": [
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "housing.com"
+        ]
+      },
+      {
+        "query": "best home loan",
+        "top_results": [
+          {
+            "title": "SBI Home Loan",
+            "link": "https://homeloans.sbi.bank.in/",
+            "snippet": "SBI Home Loans offers a one stop solution to a home buyer. You can browse through our range of home loan products, check your eligibility and apply online!",
+            "position": 1,
+            "domain": "homeloans.sbi.bank.in"
+          },
+          {
+            "title": "Home Loan Interest Rates of All Banks 2026",
+            "link": "https://www.paisabazaar.com/home-loan/interest-rates/",
+            "snippet": "Current home loan interest rates start at 7.10%* p.a ; Axis Bank, 8.00% - 11.90% p.a. ; Bajaj Housing Finance, 7.15% p.a. onwards ; Bank of India, 7.10% - 10.25% ...",
+            "position": 2,
+            "domain": "www.paisabazaar.com"
+          },
+          {
+            "title": "Best Home Loan in India 2025",
+            "link": "https://groww.in/blog/best-home-loan-in-india",
+            "snippet": "Top Home Loan Banks \u00b7 1. SBI Home Loan. 8.50% - 9.65% \u00b7 2. HDFC Home Loan. 8.75% - 9.65% \u00b7 3. Axis Bank Home Loan. 8.65% - 9.25% \u00b7 4. ICICI Home ...",
+            "position": 3,
+            "domain": "groww.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "housing.com"
+        ]
+      },
+      {
+        "query": "home loan interest rate 2026",
+        "top_results": [
+          {
+            "title": "Home Loan Interest Rates of All Banks 2026",
+            "link": "https://www.paisabazaar.com/home-loan/interest-rates/",
+            "snippet": "7.10% - 10.25% p.a.. Canara Bank, 7.15% - 10.00% p.a.. Easy Home Finance, 8.99% p.a. onwards. Federal Bank, 7.30% - 10.75% p.a.. Godrej ...",
+            "position": 1,
+            "domain": "www.paisabazaar.com"
+          },
+          {
+            "title": "Check the Home Loan Interest Rates 2026",
+            "link": "https://www.bankbazaar.com/home-loan-interest-rate.html",
+            "snippet": "Home Loan Interest Rates - Get the lowest Interest rate starting at 7.10% p.a. with minimum applicable processing fee starting from 0.25% of the loan ...",
+            "position": 2,
+            "domain": "www.bankbazaar.com"
+          },
+          {
+            "title": "w.e.f. 01.01.2026 LOANS ON FLOATING RATE OF INTEREST",
+            "link": "https://bankofindia.bank.in/documents/20121/0/Floating+ROI+wef+01.01.2026.pdf/7c100064-609b-6d9c-7f00-995d62849150?t=1767436652447",
+            "snippet": "Additional BSD of 0.10% is offered within BSD of 100 bps subject to minimum of 7.10%. \u2022 Home Loan takeover. \u2022 Home Loan to Central / State ...",
+            "position": 3,
+            "domain": "bankofindia.bank.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      }
+    ],
+    "aeo_scores": [
+      {
+        "query": "home loan Bangalore",
+        "score": 90,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "home loan calculator",
+        "score": 90,
+        "serp_features": [
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "home loan interest rate 2026",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "home loan in India 2026",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "best home loan",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      }
+    ]
+  },
+  "analysis": {
+    "topic": "home loan",
+    "topic_type": "finance",
+    "trend_direction": "declining_fast",
+    "trend_summary": "Home loan search interest in Bangalore is declining rapidly (41.5 vs 59.3 average), indicating seasonal downturn or market saturation. However, strong query volume and high AEO opportunities suggest sustained demand for specific financial information.",
+    "total_queries_discovered": 115,
+    "intent_clusters": [
+      {
+        "intent": "informational",
+        "queries": [
+          "What is the current home loan interest rate in Bangalore?",
+          "Will home loan interest rates go down in 2026 in India?",
+          "What are the expectations of Budget 2026 for home loan?",
+          "What is the 20 30 40 rule for home loan?",
+          "home loan interest rate",
+          "home loan in India 2026 interest rate",
+          "home loan interest rates all banks"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "transactional",
+        "queries": [
+          "Home loan bangalore apply online",
+          "Home loan bangalore contact number",
+          "Best home loan bangalore",
+          "Sbi home loan bangalore",
+          "home loan bangalore agent"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "medium"
+      },
+      {
+        "intent": "comparative",
+        "queries": [
+          "Which bank is best for home loan in Bangalore?",
+          "Which bank gives 7% interest on a home loan?",
+          "Which bank gives the best home loan rate?",
+          "Which bank is best for a home loan with low interest in 2026?",
+          "Best home loan in india 2026",
+          "home loan interest rates all banks"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "navigational",
+        "queries": [
+          "Sbi home loan in india 2026",
+          "Bank of India Home Loan interest rate",
+          "home loan calculator hdfc",
+          "home loan calculator sbi"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "low"
+      },
+      {
+        "intent": "calculational",
+        "queries": [
+          "How much EMI for a 20 lakh home loan?",
+          "Home loan EMI calculator",
+          "Home loan calculator",
+          "home loan eligibility calculator",
+          "home loan interest calculator",
+          "home loan prepayment calculator",
+          "How much home loan can I get on a RS 50,000 salary?"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      }
+    ],
+    "content_gaps": [
+      {
+        "gap": "No comprehensive Bangalore-specific home loan guide with current rates, bank comparisons, and eligibility criteria",
+        "queries": [
+          "home loan Bangalore",
+          "Best home loan bangalore",
+          "Home loan bangalore interest rate",
+          "home loan bangalore apply online"
+        ],
+        "opportunity": "Create a definitive Bangalore home loan hub page with real-time rate comparisons, bank-wise eligibility, and local-specific insights",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "No featured snippets or AI overviews for 'home loan calculator' despite massive search volume; competitors dominate with basic tools",
+        "queries": [
+          "home loan calculator",
+          "Home loan EMI calculator",
+          "home loan eligibility calculator",
+          "home loan interest calculator"
+        ],
+        "opportunity": "Build an interactive, AI-powered calculator hub with Bangalore-specific salary-to-loan-eligibility mapping and EMI breakdowns",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Budget 2026 and interest rate predictions lack authoritative sources; only generic AI overviews exist",
+        "queries": [
+          "Will home loan interest rates go down in 2026 in India?",
+          "What are the expectations of Budget 2026 for home loan?",
+          "home loan interest rate 2026",
+          "Will interest rates increase in 2026?"
+        ],
+        "opportunity": "Create expert-backed analysis on Budget 2026 impact, rate forecasts, and subsidy eligibility (2.67 lakh subsidy queries)",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "Eligibility and subsidy information scattered; no clear answer for '2.67 lakhs subsidy' queries (appears twice in PAA)",
+        "queries": [
+          "Who is eligible for 2.67 lakhs subsidy?",
+          "home loan eligibility",
+          "home loan in india 2026 eligibility"
+        ],
+        "opportunity": "Create FAQ and eligibility guide covering PMAY subsidy, income criteria, and Bangalore-specific government schemes",
+        "suggested_content_type": "faq",
+        "priority": "high"
+      },
+      {
+        "gap": "No content addressing the '20 30 40 rule' or other home loan financial planning principles",
+        "queries": [
+          "What is the 20 30 40 rule for home loan?",
+          "How much home loan can I get on a RS 50,000 salary?"
+        ],
+        "opportunity": "Create educational spoke on home loan financial planning rules, salary-to-EMI ratios, and affordability calculations",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "Bank-specific comparisons lack depth; queries for 'best bank' and '7% interest' have no clear winners",
+        "queries": [
+          "Which bank gives 7% interest on a home loan?",
+          "Which bank is perfect for a home loan?",
+          "home loan interest rate sbi",
+          "home loan calculator hdfc"
+        ],
+        "opportunity": "Create comparison matrix spoke with current rates, processing fees, and hidden charges for top 10 banks in Bangalore",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "No content addressing 'home loan vs other loans' comparison despite 'Which loan is best for a home?' query",
+        "queries": [
+          "Which loan is best for a home?"
+        ],
+        "opportunity": "Create comparative spoke on home loan vs personal loan vs loan against property",
+        "suggested_content_type": "spoke",
+        "priority": "low"
+      },
+      {
+        "gap": "Bangalore-specific Reddit/community insights missing; 'home loan bangalore reddit' query suggests demand for peer reviews",
+        "queries": [
+          "home loan bangalore reddit"
+        ],
+        "opportunity": "Create user testimonial/review section or community-sourced content on Canvas Homes platform",
+        "suggested_content_type": "sub_spoke",
+        "priority": "low"
+      }
+    ],
+    "aeo_targets": [
+      {
+        "query": "home loan Bangalore",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create a Canvas Homes-branded hub with Bangalore locality-wise rates, bank availability, and real property listings integrated. Include local pack optimization with branch locations and contact info.",
+        "content_type": "hub"
+      },
+      {
+        "query": "home loan calculator",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Build an advanced EMI calculator with AI-powered eligibility prediction, salary-to-loan mapping, and prepayment scenarios. Cite this in our hub to win AI overview citations.",
+        "content_type": "hub"
+      },
+      {
+        "query": "home loan interest rate 2026",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create expert-backed rate forecast article with monthly updates, Budget 2026 analysis, and RBI policy tracking. Position as the most current source to capture AI overview.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "best home loan",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Develop a comprehensive comparison guide with scoring methodology (rate, processing fee, documentation, approval time). Include Canvas Homes' unique value prop for property-linked loans.",
+        "content_type": "hub"
+      },
+      {
+        "query": "home loan in India 2026",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create a national guide with Bangalore deep-dive, covering eligibility, rates, subsidy schemes, and Budget 2026 impact. Optimize for AI overview with structured data.",
+        "content_type": "hub"
+      },
+      {
+        "query": "home loan eligibility calculator",
+        "current_answer_quality": "weak",
+        "our_strategy": "Build interactive tool that calculates eligibility based on salary, age, employment type, and existing loans. Integrate with Canvas Homes property listings for seamless UX.",
+        "content_type": "hub"
+      },
+      {
+        "query": "Who is eligible for 2.67 lakhs subsidy?",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create detailed FAQ on PMAY subsidy eligibility, application process, and Bangalore-specific implementation. Include step-by-step guide and document checklist.",
+        "content_type": "faq"
+      },
+      {
+        "query": "What is the 20 30 40 rule for home loan?",
+        "current_answer_quality": "none",
+        "our_strategy": "Create educational spoke explaining the 20% down payment, 30% EMI-to-income ratio, and 40-year loan tenure rule. Include calculator and real examples.",
+        "content_type": "spoke"
+      }
+    ],
+    "competitor_insights": [
+      {
+        "competitor": "paisabazaar.com",
+        "strength": "Dominates 'home loan interest rate' and 'best home loan' queries with comprehensive rate comparisons and bank listings. Strong brand authority in finance comparison space.",
+        "weakness": "Generic national content; lacks Bangalore-specific insights, locality-wise rates, and integration with property listings. No unique value for Canvas Homes users."
+      },
+      {
+        "competitor": "hdfc.bank.in / sbi.bank.in / kotak.bank.in",
+        "strength": "Own branded queries and have direct transactional intent. Strong for 'home loan calculator' and 'home loan EMI calculator' with native tools.",
+        "weakness": "Only promote their own products; no comparative analysis. Canvas Homes can position as neutral, comprehensive guide that helps users choose the best bank."
+      },
+      {
+        "competitor": "groww.in",
+        "strength": "Emerging player with 'best home loan' and 'home loan calculator' presence. Good content structure and user-friendly tools.",
+        "weakness": "Finance-only platform; no property integration. Canvas Homes can differentiate by linking home loans to actual Bangalore properties and neighborhoods."
+      },
+      {
+        "competitor": "housing.com",
+        "strength": "Present in 4 queries; likely leveraging property listings to cross-sell home loan content.",
+        "weakness": "Limited financial expertise compared to specialized finance sites. Canvas Homes can create deeper, more authoritative finance content while maintaining property advantage."
+      },
+      {
+        "competitor": "bankbazaar.com",
+        "strength": "Visible in rate comparison queries with structured data and bank partnerships.",
+        "weakness": "Generic content; no Bangalore localization. Canvas Homes can own Bangalore market with hyper-local insights."
+      }
+    ],
+    "top_5_priority_queries": [
+      {
+        "query": "home loan calculator",
+        "reason": "Massive search volume (60 autocomplete variations), high AEO score (90), no featured snippet, and direct transactional intent. Competitors have basic tools; Canvas Homes can build AI-powered calculator with eligibility prediction and property integration.",
+        "suggested_action": "Build interactive EMI calculator hub with salary-to-eligibility mapping, prepayment scenarios, and Bangalore property price integration. Optimize for AI overview with structured data."
+      },
+      {
+        "query": "home loan Bangalore",
+        "reason": "High AEO score (90), local pack opportunity, and direct market relevance. Currently dominated by generic national sites (Paisabazaar, bank sites). Canvas Homes can own this with locality-wise rates and property listings.",
+        "suggested_action": "Create definitive Bangalore home loan hub with bank comparisons, current rates, eligibility criteria, and integration with Canvas Homes property listings by locality."
+      },
+      {
+        "query": "home loan interest rate 2026",
+        "reason": "High AEO score (80), AI overview present but no clear winner, strong seasonal relevance (Budget 2026 expectations). Opportunity to become the authoritative source on rate forecasts.",
+        "suggested_action": "Create expert-backed rate forecast article with monthly updates, Budget 2026 analysis, RBI policy tracking, and subsidy impact. Position as most current source."
+      },
+      {
+        "query": "Who is eligible for 2.67 lakhs subsidy?",
+        "reason": "Appears twice in PAA (high intent), weak answer quality, direct government scheme relevance. High-intent query with low competition.",
+        "suggested_action": "Create comprehensive FAQ on PMAY subsidy eligibility, application process, Bangalore-specific implementation, and document checklist. Include step-by-step guide."
+      },
+      {
+        "query": "best home loan",
+        "reason": "High AEO score (70), high search volume, comparative intent, and AI overview present. Opportunity to create definitive comparison guide that beats generic finance sites.",
+        "suggested_action": "Develop comprehensive comparison hub with scoring methodology (rate, processing fee, documentation, approval time, customer service). Include Canvas Homes' unique value prop for property-linked loans."
+      }
+    ],
+    "related_topics_to_explore": [
+      "home loan prepayment and foreclosure",
+      "home loan balance transfer",
+      "home loan documentation and process",
+      "home loan insurance and protection",
+      "property valuation for home loans",
+      "home loan for self-employed and freelancers",
+      "home loan for NRI and expats",
+      "home loan for women",
+      "home loan for senior citizens",
+      "home loan fraud and scams",
+      "home loan tax benefits and deductions",
+      "home loan vs renting analysis",
+      "affordable housing schemes in Bangalore",
+      "PMAY subsidy and government schemes",
+      "home loan for under-construction properties"
+    ],
+    "seasonal_notes": "Search interest is declining_fast (41.5 vs 59.3 average), indicating strong seasonality. Likely peaks during: (1) Budget announcement season (Feb), (2) Financial year-end (Mar-Apr), (3) Post-monsoon property buying season (Oct-Nov). Current decline suggests off-season; recommend content refresh around Budget 2026 (Feb) and Q3 property season (Oct-Nov) for maximum visibility."
+  },
+  "competitor_tracker": {
+    "housing.com": 4
+  },
+  "serp_calls_used": 5,
+  "autocomplete_calls_used": 4,
+  "cost_usd": 0.01732
+}

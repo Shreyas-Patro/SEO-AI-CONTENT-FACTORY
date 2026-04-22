@@ -4,14 +4,11 @@ All agent LLM calls go through this module.
 """
 
 import json
-from pydoc import text
 import re
-
 import anthropic
 import time
 import hashlib
 
-from rich import text
 from config_loader import get_anthropic_key, get_model
 from db.sqlite_ops import cache_get, cache_set
 
@@ -68,7 +65,7 @@ def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
             response = client.messages.create(**kwargs)
 
             # Extract response
-            text = response.content[0].text
+            response_text = response.content[0].text
             tokens_in = response.usage.input_tokens
             tokens_out = response.usage.output_tokens
 
@@ -77,7 +74,7 @@ def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
             cost = (tokens_in * pricing["input"] + tokens_out * pricing["output"]) / 1_000_000
 
             result = {
-                "text": text,
+                "text": response_text,
                 "tokens_in": tokens_in,
                 "tokens_out": tokens_out,
                 "cost_usd": round(cost, 6),
@@ -106,70 +103,6 @@ def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
     raise Exception(f"Failed after {max_retries} retries")
 
 
-def call_llm_json(prompt, system="", model_role="bulk", max_tokens=4096):
-    """
-    Call LLM and parse response as JSON with strong fallback handling.
-    """
-    result = call_llm(
-        prompt,
-        system,
-        model_role,
-        max_tokens,
-        temperature=0.1,
-        use_cache=True
-    )
-
-    text = result["text"].strip()
-
-    # 🔧 Strip markdown fences
-    if text.startswith("```json"):
-        text = text[7:]
-    elif text.startswith("```"):
-        text = text[3:]
-    if text.endswith("```"):
-        text = text[:-3]
-    text = text.strip()
-
-    # 🔥 Try parsing
-    parsed = _safe_json_parse(text)
-
-    # 🔁 Retry once if failed (VERY IMPORTANT)
-    if not parsed:
-        print("⚠️ JSON parse failed — retrying with stricter prompt...")
-
-        repair_prompt = f"""
-Fix this JSON. Return ONLY valid JSON. Do not explain anything.
-
-{text}
-"""
-
-        retry = call_llm(
-    repair_prompt,
-    system="You are a JSON repair tool. Output ONLY valid JSON.",
-    model_role="bulk",
-    max_tokens=2048,
-    temperature=0,
-    use_cache=False   
-)
-
-        retry_text = retry["text"].strip()
-        parsed = _safe_json_parse(retry_text)
-
-    # ❌ Final fallback (never crash your agent)
-    if not parsed:
-        print("❌ JSON parsing failed — returning fallback structure")
-
-        parsed = {
-            "topic": "unknown",
-            "trend_direction": "unknown",
-            "trend_summary": "LLM parsing failed",
-            "intent_clusters": [],
-            "content_gaps": [],
-            "recommended_topics": []
-        }
-
-    result["parsed"] = parsed
-    return result
 def _safe_json_parse(text):
     """
     Robust JSON parser with multi-step repair logic.
@@ -178,9 +111,9 @@ def _safe_json_parse(text):
     # Step 1: Try direct parse
     try:
         return json.loads(text)
-    except json.JSONDecodeError as e:
-        pass  # Continue to repair attempts
-    
+    except json.JSONDecodeError:
+        pass
+
     # Step 2: Strip markdown code fences
     cleaned = text.strip()
     if cleaned.startswith("```json"):
@@ -190,38 +123,37 @@ def _safe_json_parse(text):
     if cleaned.endswith("```"):
         cleaned = cleaned[:-3]
     cleaned = cleaned.strip()
-    
+
     try:
         return json.loads(cleaned)
     except json.JSONDecodeError:
         pass
-    
+
     # Step 3: Extract JSON block if embedded in text
     match = re.search(r'\{[\s\S]*\}', cleaned)
     if not match:
         return None
-    
+
     extracted = match.group(0)
-    
+
     # Step 4: Apply repair fixes
     try:
         # Remove literal \n (common LLM error)
         repaired = extracted.replace('\\n', ' ')
-        
+
         # Fix trailing commas (very common)
         repaired = re.sub(r',(\s*[}\]])', r'\1', repaired)
-        
+
         # Fix single quotes to double quotes
         repaired = re.sub(r"([^\\])'([^'])'([^\\])", r'\1"\2"\3', repaired)
-        
+
         # Fix missing quotes around keys
         repaired = re.sub(r'(\{|,)\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*:', r'\1"\2":', repaired)
-        
-        # Try parse after repairs
+
         return json.loads(repaired)
     except json.JSONDecodeError:
         pass
-    
+
     # Step 5: Final attempt — try to extract just the first valid JSON object
     try:
         depth = 0
@@ -238,75 +170,76 @@ def _safe_json_parse(text):
                     return json.loads(potential_json)
     except json.JSONDecodeError:
         pass
-    
+
     # Parsing failed completely
     return None
+
+
 def call_llm_json(prompt, system="", model_role="bulk", max_tokens=4096, retries=2):
     """
     Call LLM and parse JSON with automatic retry and fallback.
-    
+
     Flow:
-    1. Call LLM
+    1. Call LLM at temperature 0.1
     2. Try to parse JSON
-    3. If fails, retry with simplified repair prompt
+    3. If fails, retry at temperature 0 with stricter repair prompt
     4. If still fails, return fallback structure
     """
-    
+    last_text = ""
+
     for attempt in range(retries):
         result = call_llm(
             prompt,
             system,
             model_role,
             max_tokens,
-            temperature=0.1,
-            use_cache=(attempt == 0)  # Don't cache retries
+            temperature=0.1 if attempt == 0 else 0,  # temp=0 on retry = much cleaner JSON
+            use_cache=(attempt == 0)                   # never cache repair attempts
         )
-        
-        text = result["text"].strip()
-        
-        # Try parsing
-        parsed = _safe_json_parse(text)
-        
+
+        last_text = result["text"].strip()
+
+        parsed = _safe_json_parse(last_text)
+
         if parsed:
             result["parsed"] = parsed
             result["parse_success"] = True
             return result
-        
-        # If first attempt failed, try repair prompt
-        if attempt < retries - 1:
-            print(f"⚠️  JSON parse failed on attempt {attempt + 1}/{retries}. Retrying with repair prompt...")
-            
-            # Create simplified repair prompt
-            repair_prompt = f"""Your previous response could not be parsed as JSON. 
 
-Return ONLY a valid JSON object. No markdown, no explanation, no preamble.
+        if attempt < retries - 1:
+            print(f"⚠️  JSON parse failed on attempt {attempt + 1}/{retries}. Retrying at temperature 0...")
+
+            repair_prompt = f"""Your previous response could not be parsed as JSON.
+
+Return ONLY a valid JSON object.
+Start your response with {{ and end with }}.
+No markdown fences, no explanation, no preamble.
 
 Original attempt:
-{text[:500]}...
+{last_text[:500]}
 
 Now return valid JSON ONLY:"""
-            
-            # Recursive call with repair prompt (don't retry infinitely)
+
             result = call_llm(
                 repair_prompt,
-                system="Return ONLY valid JSON. Nothing else.",
+                system="Return ONLY valid JSON. Start with { and end with }. Nothing else.",
                 model_role="bulk",
                 max_tokens=2048,
                 temperature=0,
                 use_cache=False
             )
-            
-            text = result["text"].strip()
-            parsed = _safe_json_parse(text)
-            
+
+            last_text = result["text"].strip()
+            parsed = _safe_json_parse(last_text)
+
             if parsed:
                 result["parsed"] = parsed
                 result["parse_success"] = True
                 return result
-    
-    # Final fallback — return safe empty structure
+
+    # Final fallback — never crash the agent
     print("❌ JSON parsing failed after all retries. Returning fallback structure.")
-    
+
     result["parsed"] = {
         "topic": "unknown",
         "trend_direction": "unknown",
@@ -315,10 +248,10 @@ Now return valid JSON ONLY:"""
         "content_gaps": [],
         "top_5_priority_queries": [],
         "analysis_status": "FAILED_PARSE",
-        "raw_llm_response": text[:500]  # Store for debugging
+        "raw_llm_response": last_text[:500]
     }
     result["parse_success"] = False
-    
+
     return result
 
 
@@ -330,4 +263,4 @@ if __name__ == "__main__":
     print(f"Tokens: {result['tokens_in']} in, {result['tokens_out']} out")
     print(f"Cost: ${result['cost_usd']}")
     print(f"Model: {result['model']}")
-    print(f"LLM output length: {len(text)}")
+    print(f"LLM output length: {len(result['text'])}")  # Fixed: use result['text'] not bare `text`
