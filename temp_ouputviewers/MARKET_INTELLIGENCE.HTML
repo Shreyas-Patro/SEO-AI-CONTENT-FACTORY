@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Homes — Layer 1 Intelligence Dashboard</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg:      #0a0a0f;
+    --surface: #111118;
+    --border:  #1e1e2e;
+    --accent:  #e8ff47;
+    --accent2: #47ffe8;
+    --accent3: #ff6b35;
+    --text:    #e8e8f0;
+    --muted:   #5a5a72;
+    --high:    #ff4444;
+    --med:     #ffaa00;
+    --low:     #44ff88;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+  }
+
+  /* ── DROP ZONE (shown when no file loaded) ── */
+  #dropZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 32px;
+    padding: 48px;
+  }
+
+  .drop-logo {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .drop-box {
+    width: 100%;
+    max-width: 560px;
+    border: 2px dashed var(--border);
+    border-radius: 4px;
+    padding: 64px 48px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    position: relative;
+  }
+
+  .drop-box:hover, .drop-box.over {
+    border-color: var(--accent);
+    background: rgba(232,255,71,0.03);
+  }
+
+  .drop-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .drop-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+  }
+
+  .drop-sub {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+
+  .drop-sub code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    background: var(--border);
+    padding: 2px 7px;
+    border-radius: 2px;
+    color: var(--accent2);
+  }
+
+  .drop-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #0a0a0f;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    padding: 12px 28px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s;
+  }
+
+  .drop-btn:hover { opacity: 0.85; }
+
+  #fileInput { display: none; }
+
+  .drop-error {
+    color: var(--high);
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 16px;
+    display: none;
+  }
+
+  .drop-examples {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .drop-examples span {
+    display: inline-block;
+    margin: 3px 6px;
+    padding: 3px 10px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+  }
+
+  /* ── DASHBOARD (hidden until file loaded) ── */
+  #dashboard { display: none; }
+
+  /* ── HEADER ── */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .logo {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .layer-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    background: var(--border);
+    padding: 4px 12px;
+    border-radius: 2px;
+  }
+
+  .reload-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 4px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .reload-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 40px 40px 28px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .topic-name {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+
+  .topic-name span { color: var(--accent); }
+
+  .meta-row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+
+  .meta-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .trend-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 4px 14px;
+    border-radius: 2px;
+    font-weight: 600;
+  }
+
+  .trend-declining { background:rgba(255,68,68,0.12); border:1px solid rgba(255,68,68,0.3); color:#ff6b6b; }
+  .trend-rising    { background:rgba(68,255,136,0.12); border:1px solid rgba(68,255,136,0.3); color:#44ff88; }
+  .trend-stable    { background:rgba(255,170,0,0.12);  border:1px solid rgba(255,170,0,0.3);  color:#ffaa00; }
+
+  /* ── STATS BAR ── */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .stat {
+    padding: 24px 28px;
+    border-right: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+  }
+
+  .stat:last-child { border-right: none; }
+
+  .stat-value {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .stat-note { font-size: 11px; color: var(--muted); line-height: 1.4; }
+
+  .stat::after {
+    content:'';
+    position:absolute; bottom:0; left:0;
+    width:100%; height:2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .stat:hover::after { transform: scaleX(1); }
+
+  /* ── AGENT GRID ── */
+  .agent-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .agent-panel { border-right: 1px solid var(--border); }
+  .agent-panel:last-child { border-right: none; }
+
+  .agent-header {
+    padding: 22px 28px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .agent-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    margin-bottom: 3px;
+  }
+
+  .agent-name {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .agent-purpose { font-size: 11px; color: var(--muted); line-height: 1.5; max-width: 240px; }
+
+  .agent-cost {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent2);
+    white-space: nowrap;
+    padding: 3px 10px;
+    border: 1px solid rgba(71,255,232,0.2);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* ── PANEL SECTIONS ── */
+  .panel-section {
+    padding: 18px 28px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .panel-section:last-child { border-bottom: none; }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .section-label::after { content:''; flex:1; height:1px; background:var(--border); }
+
+  .importance {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .imp-critical { background:rgba(255,68,68,0.15); color:#ff8888; border:1px solid rgba(255,68,68,0.25); }
+  .imp-high     { background:rgba(255,107,53,0.15); color:#ff9977; border:1px solid rgba(255,107,53,0.25); }
+  .imp-medium   { background:rgba(232,255,71,0.1);  color:#c8e830; border:1px solid rgba(232,255,71,0.2); }
+
+  .importance-note {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    border-left: 2px solid var(--border);
+  }
+
+  .data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+  }
+
+  .data-row:last-child { border-bottom: none; }
+  .data-row .key { color: var(--muted); }
+  .data-row .val { font-weight:600; font-family:'JetBrains Mono',monospace; font-size:11px; }
+
+  .trend-block { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+
+  .trend-number-block {
+    background: var(--border);
+    padding: 12px;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  .trend-number-block .n {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--accent);
+    display: block;
+    line-height: 1;
+  }
+
+  .trend-number-block .l {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .comp-row { margin-bottom: 9px; }
+
+  .comp-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .comp-name .count { color: var(--text); font-weight: 600; }
+
+  .comp-bar-track { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .comp-bar-fill  { height: 100%; border-radius: 2px; transition: width 0.8s ease; }
+  .comp-bar-fill.dominant { background: var(--high); }
+  .comp-bar-fill.strong   { background: var(--med); }
+  .comp-bar-fill.present  { background: var(--low); }
+
+  .aeo-item { padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .aeo-item:last-child { border-bottom: none; }
+  .aeo-query { font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+
+  .aeo-meta { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+
+  .quality-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 1px;
+    text-transform: uppercase;
+  }
+
+  .q-none     { background:rgba(255,68,68,0.2);  color:#ff8888; }
+  .q-weak     { background:rgba(255,107,53,0.2); color:#ffaa77; }
+  .q-moderate { background:rgba(255,170,0,0.2);  color:#ffcc55; }
+  .q-strong   { background:rgba(68,255,136,0.2); color:#66ff99; }
+
+  .aeo-strategy {
+    font-size: 10px;
+    color: var(--muted);
+    line-height: 1.4;
+    margin-top: 4px;
+  }
+
+  .aeo-type {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    text-transform: uppercase;
+    padding: 1px 6px;
+    background: var(--border);
+    border-radius: 1px;
+  }
+
+  .paa-item {
+    font-size: 11px;
+    color: var(--muted);
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    line-height: 1.4;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .paa-item:last-child { border-bottom: none; }
+  .paa-num { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--accent); flex-shrink:0; margin-top:2px; }
+
+  .rising-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 3px 9px;
+    background: rgba(232,255,71,0.07);
+    border: 1px solid rgba(232,255,71,0.15);
+    border-radius: 2px;
+    color: #c8e830;
+    margin: 2px;
+  }
+
+  .kw-group {
+    padding: 10px;
+    background: var(--border);
+    border-radius: 2px;
+    margin-bottom: 7px;
+    border-left: 3px solid var(--accent);
+  }
+
+  .kw-group-name { font-size: 12px; font-weight: 700; margin-bottom: 4px; }
+  .kw-primary { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--accent2); margin-bottom:6px; }
+
+  .kw-tags { display:flex; flex-wrap:wrap; gap:3px; }
+
+  .kw-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    padding: 2px 6px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 1px;
+    color: var(--muted);
+  }
+
+  .priority-item { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+  .priority-item:last-child { border-bottom: none; }
+  .priority-num { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--accent); margin-bottom:2px; }
+  .priority-query { font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+  .priority-action { font-size: 11px; color: var(--muted); line-height: 1.4; }
+
+  .gap-item {
+    padding: 9px;
+    background: rgba(255,68,68,0.05);
+    border: 1px solid rgba(255,68,68,0.15);
+    border-radius: 2px;
+    margin-bottom: 6px;
+  }
+
+  .gap-text { font-size: 11px; color: var(--text); margin-bottom: 4px; line-height: 1.4; }
+  .gap-opp  { font-size: 10px; color: var(--muted); line-height: 1.4; }
+
+  /* ── PACKET OUTPUT ── */
+  .packet-section {
+    padding: 32px 40px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .packet-header { font-size: 20px; font-weight: 800; margin-bottom: 6px; letter-spacing:-0.02em; }
+  .packet-sub    { font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+
+  .packet-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+
+  .packet-card {
+    background: var(--border);
+    padding: 18px;
+    border-radius: 2px;
+    border-top: 3px solid var(--accent);
+  }
+
+  .packet-card.faq  { border-top-color: var(--accent2); }
+  .packet-card.comp { border-top-color: var(--accent3); }
+  .packet-card.pri  { border-top-color: var(--high); }
+
+  .pc-title    { font-size: 12px; font-weight: 700; margin-bottom: 3px; }
+  .pc-receiver { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--accent); margin-bottom:10px; }
+  .pc-receiver.faq-r  { color:var(--accent2); }
+  .pc-receiver.comp-r { color:var(--accent3); }
+  .pc-receiver.pri-r  { color:var(--high); }
+
+  .pc-items { list-style:none; }
+
+  .pc-items li {
+    font-size: 10px;
+    color: var(--muted);
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    line-height: 1.4;
+  }
+
+  .pc-items li::before       { content:'→'; color:var(--accent);  flex-shrink:0; font-size:9px; }
+  .pc-items li.faq-li::before  { color:var(--accent2); }
+  .pc-items li.comp-li::before { color:var(--accent3); }
+  .pc-items li.pri-li::before  { color:var(--high); }
+
+  /* ── FULL JSON VIEWER ── */
+  .json-section {
+    padding: 28px 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .json-toggle {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .json-toggle:hover { color: var(--accent2); border-color: var(--accent2); }
+
+  #jsonViewer {
+    display: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent2);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 2px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    max-height: 500px;
+    overflow-y: auto;
+    line-height: 1.6;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 20px 40px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1100px) {
+    .agent-grid  { grid-template-columns: 1fr; }
+    .stats-bar   { grid-template-columns: repeat(3,1fr); }
+    .agent-panel { border-right:none; }
+    .packet-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── DROP ZONE ── -->
+<div id="dropZone">
+  <div class="drop-logo">Canvas Homes · Intelligence Platform</div>
+
+  <div class="drop-box" id="dropBox">
+    <span class="drop-icon">📂</span>
+    <div class="drop-title">Load Intelligence Report</div>
+    <div class="drop-sub">
+      Drag and drop any <code>architect_input_*.json</code> file here,<br>
+      or click the button to browse your <code>outputs/</code> folder.
+    </div>
+    <button class="drop-btn" onclick="document.getElementById('fileInput').click()">Choose File</button>
+    <div class="drop-error" id="dropError">⚠ Could not parse file — make sure it's a valid architect_input JSON.</div>
+    <input type="file" id="fileInput" accept=".json">
+  </div>
+
+  <div class="drop-examples">
+    <div style="margin-bottom:8px;color:var(--muted);font-size:10px;letter-spacing:0.1em;">EXAMPLE FILES</div>
+    <span>architect_input_hennur.json</span>
+    <span>architect_input_hsr_layout.json</span>
+    <span>architect_input_electronic_city_bangalore.json</span>
+    <span>architect_input_koramangala.json</span>
+  </div>
+</div>
+
+<!-- ── DASHBOARD ── -->
+<div id="dashboard">
+
+  <header>
+    <div class="logo">Canvas Homes · Intelligence Platform</div>
+    <div class="header-right">
+      <div class="layer-badge">LAYER 1 — MARKET INTELLIGENCE</div>
+      <button class="reload-btn" onclick="resetDashboard()">← Load another file</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-label">Analysed Topic</div>
+    <div class="topic-name" id="topicName"></div>
+    <div class="meta-row" id="metaRow"></div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-bar" id="statsBar"></div>
+
+  <!-- AGENTS -->
+  <div class="agent-grid">
+
+    <div class="agent-panel">
+      <div class="agent-header">
+        <div>
+          <div class="agent-number">AGENT 01 / 03</div>
+          <div class="agent-name">📡 Trend Scout</div>
+          <div class="agent-purpose">Runs 15 live Google searches + Google Trends. Classifies topic, scores AEO opportunities, finds rising micro-trends.</div>
+        </div>
+        <div class="agent-cost" id="trendCost">—</div>
+      </div>
+      <div id="trendContent"></div>
+    </div>
+
+    <div class="agent-panel">
+      <div class="agent-header">
+        <div>
+          <div class="agent-number">AGENT 02 / 03</div>
+          <div class="agent-name">🕵️ Competitor Spy</div>
+          <div class="agent-purpose">Searches MagicBricks, NoBroker, 99acres, Housing.com via site: operator. Finds what they publish and what they all miss.</div>
+        </div>
+        <div class="agent-cost" id="compCost">—</div>
+      </div>
+      <div id="compContent"></div>
+    </div>
+
+    <div class="agent-panel">
+      <div class="agent-header">
+        <div>
+          <div class="agent-number">AGENT 03 / 03</div>
+          <div class="agent-name">🗺️ Keyword Mapper</div>
+          <div class="agent-purpose">Merges every discovered query into keyword clusters. Each cluster = one article brief for Content Architect.</div>
+        </div>
+        <div class="agent-cost" id="kwCost">—</div>
+      </div>
+      <div id="kwContent"></div>
+    </div>
+
+  </div>
+
+  <!-- OUTPUT PACKET -->
+  <div class="packet-section">
+    <div class="packet-header">Output → Layer 2 Planning</div>
+    <div class="packet-sub">This JSON packet is passed directly to Content Architect and FAQ Architect. Every field drives a real decision in the next layer.</div>
+    <div class="packet-grid" id="packetGrid"></div>
+  </div>
+
+  <!-- JSON VIEWER -->
+  <div class="json-section">
+    <button class="json-toggle" onclick="toggleJSON()">{ } View full JSON packet</button>
+    <pre id="jsonViewer"></pre>
+  </div>
+
+  <footer>
+    <span>Canvas Homes AI Agent Swarm · Layer 1 Market Intelligence</span>
+    <span id="footerMeta">—</span>
+  </footer>
+
+</div>
+
+<script>
+// ── FILE LOADING ─────────────────────────────────────────────────────────────
+
+const dropBox   = document.getElementById('dropBox');
+const fileInput = document.getElementById('fileInput');
+const dropError = document.getElementById('dropError');
+
+dropBox.addEventListener('dragover', e => { e.preventDefault(); dropBox.classList.add('over'); });
+dropBox.addEventListener('dragleave', () => dropBox.classList.remove('over'));
+dropBox.addEventListener('drop', e => {
+  e.preventDefault();
+  dropBox.classList.remove('over');
+  const file = e.dataTransfer.files[0];
+  if (file) loadFile(file);
+});
+
+fileInput.addEventListener('change', e => {
+  if (e.target.files[0]) loadFile(e.target.files[0]);
+});
+
+function loadFile(file) {
+  dropError.style.display = 'none';
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const data = JSON.parse(e.target.result);
+      renderDashboard(data, file.name);
+    } catch {
+      dropError.style.display = 'block';
+    }
+  };
+  reader.readAsText(file);
+}
+
+function resetDashboard() {
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('dropZone').style.display  = 'flex';
+  fileInput.value = '';
+}
+
+function toggleJSON() {
+  const v = document.getElementById('jsonViewer');
+  v.style.display = v.style.display === 'none' ? 'block' : 'none';
+}
+
+// ── HELPERS ──────────────────────────────────────────────────────────────────
+
+function qualityClass(q) {
+  return { none:'q-none', weak:'q-weak', moderate:'q-moderate', strong:'q-strong' }[q] || 'q-weak';
+}
+
+function compClass(count, max) {
+  const pct = count / max;
+  if (pct >= 0.8) return 'dominant';
+  if (pct >= 0.5) return 'strong';
+  return 'present';
+}
+
+function safe(val, fallback='—') {
+  return (val !== undefined && val !== null && val !== '') ? val : fallback;
+}
+
+function trunc(str, n) {
+  if (!str) return '—';
+  return str.length > n ? str.substring(0, n) + '…' : str;
+}
+
+// ── MAIN RENDER ──────────────────────────────────────────────────────────────
+
+function renderDashboard(D, filename) {
+  document.getElementById('dropZone').style.display  = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+
+  const loc   = D.detected_locality || D.topic || 'Unknown';
+  const trend = D.trend || {};
+  const faq   = D.faq || {};
+  const comp  = D.competition || {};
+  const cp    = D.content_priorities || {};
+  const aeo   = D.aeo_targets || [];
+  const kgs   = D.keyword_groups || [];
+  const paa   = faq.paa_questions || [];
+  const rel   = faq.related_searches || [];
+  const auto  = faq.autocomplete || [];
+  const rising = trend.rising_queries || [];
+  const compPresence = comp.competitor_presence || {};
+  const maxComp = Math.max(...Object.values(compPresence), 1);
+
+  // ── Hero ──
+  document.title = `Layer 1 — ${loc}`;
+  document.getElementById('topicName').innerHTML = `${loc}<span>.</span>`;
+
+  const dir = (trend.direction || 'unknown').toLowerCase();
+  const dirClass = dir.includes('declining') ? 'trend-declining' : dir.includes('rising') ? 'trend-rising' : 'trend-stable';
+  const dirEmoji = dir.includes('declining') ? '📉' : dir.includes('rising') ? '📈' : '➡️';
+  const highAeo  = aeo.filter(t => ['none','weak'].includes(t.current_answer_quality)).length;
+
+  document.getElementById('metaRow').innerHTML = `
+    <div class="meta-pill">${safe(D.topic_type, 'locality')}</div>
+    <div class="trend-pill ${dirClass}">${dirEmoji} ${dir.toUpperCase()}</div>
+    ${trend.seasonal ? '<div class="meta-pill">🗓 Seasonal</div>' : ''}
+    <div class="meta-pill">⚡ ${highAeo} high AEO opps</div>
+    <div class="meta-pill">📁 ${filename}</div>
+  `;
+
+  // ── Stats bar ──
+  document.getElementById('statsBar').innerHTML = [
+    { value: paa.length,            label: 'PAA Questions',    note: 'Real questions people type into Google — become article titles and FAQ answers' },
+    { value: rel.length,            label: 'Related Searches', note: 'Keywords Google associates with this topic — your full content roadmap' },
+    { value: auto.length,           label: 'Autocomplete',     note: 'High-frequency queries — Google only autocompletes frequently searched terms' },
+    { value: highAeo,               label: 'AEO Opportunities',note: 'Queries where AI gives no/weak answer — we can become the cited source' },
+    { value: aeo.length,            label: 'AEO Targets',      note: 'Specific queries FAQ Architect will write optimised answers for' },
+    { value: D.total_keywords || 0, label: 'Keywords Mapped',  note: 'Total unique keywords clustered into article groups for Content Architect' },
+  ].map(s => `
+    <div class="stat">
+      <div class="stat-value">${s.value}</div>
+      <div class="stat-label">${s.label}</div>
+      <div class="stat-note">${s.note}</div>
+    </div>
+  `).join('');
+
+  // ── Trend Scout Panel ──
+  document.getElementById('trendCost').textContent = D.trend_cost ? `$${D.trend_cost.toFixed(4)}` : 'see run log';
+
+  const trendAvg    = trend.average_interest || '—';
+  const trendRecent = trend.recent_interest  || '—';
+
+  document.getElementById('trendContent').innerHTML = `
+
+    <div class="panel-section">
+      <div class="section-label">Google Trends Numbers</div>
+      <div class="importance imp-critical">⚠ CRITICAL INPUT</div>
+      <p class="importance-note">Sets the ANGLE of every article Content Architect writes. Declining = emphasise value and stability. Rising micro-queries = write about those topics NOW before competitors do.</p>
+      <div class="trend-block">
+        <div class="trend-number-block">
+          <span class="n">${trendAvg}</span>
+          <div class="l">12-month avg</div>
+        </div>
+        <div class="trend-number-block">
+          <span class="n">${trendRecent}</span>
+          <div class="l">Recent interest</div>
+        </div>
+      </div>
+      <div class="data-row"><span class="key">Scale</span><span class="val">0–100 (not raw volume)</span></div>
+      <div class="data-row"><span class="key">Direction</span><span class="val">${dir.toUpperCase()}</span></div>
+      <div class="data-row"><span class="key">Seasonal</span><span class="val">${trend.seasonal ? 'Yes — time publishing to peaks' : 'No'}</span></div>
+      <div class="data-row"><span class="key">Rising queries</span><span class="val">${rising.length} detected</span></div>
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Rising Micro-Trends</div>
+      <div class="importance imp-high">HIGH VALUE</div>
+      <p class="importance-note">Growing queries within this locality RIGHT NOW. Each one is a potential spoke article. Write before competitors notice.</p>
+      <div style="display:flex;flex-wrap:wrap;margin-top:4px;">
+        ${rising.length
+          ? rising.map(q => `<div class="rising-tag">↗ ${q}</div>`).join('')
+          : '<span style="color:var(--muted);font-size:11px;">No rising queries detected (topic may be stable or data unavailable)</span>'
+        }
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Top AEO Targets</div>
+      <div class="importance imp-critical">⚠ CRITICAL — passed to FAQ Architect</div>
+      <p class="importance-note">Queries where Google's AI gives a weak or no answer. Publish well-structured content here and your page gets cited in AI overviews. Highest-leverage content strategy available right now.</p>
+      ${aeo.slice(0,6).map(t => `
+        <div class="aeo-item">
+          <div class="aeo-query">${t.query}</div>
+          <div class="aeo-meta">
+            <span class="quality-badge ${qualityClass(t.current_answer_quality)}">${t.current_answer_quality}</span>
+            <span class="aeo-type">${t.content_type || '?'}</span>
+          </div>
+          <div class="aeo-strategy">${trunc(t.our_strategy, 90)}</div>
+        </div>
+      `).join('')}
+      ${aeo.length > 6 ? `<div style="color:var(--muted);font-size:10px;padding:6px 0;">... and ${aeo.length-6} more targets</div>` : ''}
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Competitor SERP Presence</div>
+      <div class="importance imp-high">HIGH VALUE</div>
+      <p class="importance-note">How many of the 15 SERP searches each competitor appeared in. 10/15 = they own this topic. We need more specific, better-structured content to enter these results.</p>
+      ${Object.entries(compPresence).sort((a,b)=>b[1]-a[1]).map(([comp, count]) => `
+        <div class="comp-row">
+          <div class="comp-name"><span>${comp}</span><span class="count">${count}/15</span></div>
+          <div class="comp-bar-track">
+            <div class="comp-bar-fill ${compClass(count, maxComp)}" style="width:${(count/15)*100}%"></div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">PAA Questions (first 10)</div>
+      <div class="importance imp-medium">MEDIUM VALUE — passed to FAQ Architect</div>
+      <p class="importance-note">Exact questions real users type into Google. Each should be answered directly in the article or FAQ page. They reveal user anxiety — what people need to be convinced of before transacting.</p>
+      ${paa.slice(0,10).map((q,i) => `
+        <div class="paa-item">
+          <span class="paa-num">${String(i+1).padStart(2,'0')}</span>${q}
+        </div>
+      `).join('')}
+      ${paa.length > 10 ? `<div class="paa-item" style="font-size:10px;">... and ${paa.length-10} more</div>` : ''}
+    </div>
+
+  `;
+
+  // ── Competitor Spy Panel ──
+  document.getElementById('compCost').textContent = D.comp_cost ? `$${D.comp_cost.toFixed(4)}` : 'see run log';
+
+  const compCoverage  = comp.competitor_coverage || [];
+  const coverageGaps  = comp.coverage_gaps || [];
+  const ourAdvantages = comp.our_advantages || [];
+  const totalArticles = Object.values(compPresence).reduce((s,v)=>s+v, 0);
+
+  document.getElementById('compContent').innerHTML = `
+
+    <div class="panel-section">
+      <div class="section-label">What Was Found</div>
+      <div class="importance imp-high">HIGH VALUE</div>
+      <p class="importance-note">Site-scoped Google searches — one per competitor. Results show exactly what content exists for this topic. If a competitor has 10 articles, they own this space. We need more specific, better-structured content to break in.</p>
+      <div class="data-row"><span class="key">Competitors analysed</span><span class="val">4</span></div>
+      <div class="data-row"><span class="key">Total articles found</span><span class="val">${totalArticles}</span></div>
+      <div class="data-row"><span class="key">Method</span><span class="val">site:domain query</span></div>
+      <div class="data-row"><span class="key">Classification</span><span class="val">hub / spoke / listing / faq</span></div>
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Articles Per Competitor</div>
+      <div class="importance imp-high">HIGH VALUE</div>
+      <p class="importance-note">Article count reveals how seriously each competitor treats this topic. 10 articles = full content cluster. Tells Content Architect how much content we need to produce to become competitive.</p>
+      ${Object.entries(compPresence).sort((a,b)=>b[1]-a[1]).map(([c, count]) => {
+        const block = compCoverage.find(x => x.competitor === c) || {};
+        const articles = block.articles_found || count;
+        return `
+          <div class="comp-row">
+            <div class="comp-name"><span>${c}</span><span class="count">${articles} articles</span></div>
+            <div class="comp-bar-track">
+              <div class="comp-bar-fill ${compClass(articles, 10)}" style="width:${Math.min((articles/10)*100,100)}%"></div>
+            </div>
+          </div>
+        `;
+      }).join('')}
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Competitor Content Breakdown</div>
+      <div class="importance imp-medium">MEDIUM VALUE</div>
+      <p class="importance-note">Knowing whether competitors publish hub pages or listing pages tells us what type of content is ranking. If they only have listing pages, a comprehensive guide would outrank them immediately.</p>
+      ${compCoverage.length > 0
+        ? compCoverage.slice(0,2).map(c => `
+            <div style="margin-bottom:12px;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--accent2);margin-bottom:5px;">${c.competitor}</div>
+              ${(c.articles||[]).slice(0,2).map(art => `
+                <div style="padding:8px;background:var(--border);border-radius:2px;margin-bottom:3px;">
+                  <div style="font-size:11px;font-weight:600;margin-bottom:3px;">${trunc(art.title,55)}</div>
+                  <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);">${art.content_type||'?'} · ~${art.estimated_word_count||'?'} words</div>
+                  ${art.strengths ? `<div style="font-size:10px;color:var(--low);margin-top:3px;">✓ ${trunc(art.strengths,60)}</div>` : ''}
+                  ${art.weaknesses ? `<div style="font-size:10px;color:var(--high);margin-top:2px;">✗ ${trunc(art.weaknesses,60)}</div>` : ''}
+                </div>
+              `).join('')}
+              ${(c.articles||[]).length > 2 ? `<div style="color:var(--muted);font-size:10px;padding:4px 0;">... +${c.articles.length-2} more articles</div>` : ''}
+            </div>
+          `).join('')
+        : '<div style="color:var(--muted);font-size:11px;">Competitor article details not available in this JSON. Re-run with latest llm.py.</div>'
+      }
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Coverage Gaps</div>
+      <div class="importance imp-critical">⚠ CRITICAL — goes to Content Architect</div>
+      <p class="importance-note">Topics ALL four competitors miss. This is where Canvas Homes publishes first, ranks first, and owns the AI-cited answer. Zero competition = faster ranking and higher AEO score.</p>
+      ${coverageGaps.length > 0
+        ? coverageGaps.slice(0,4).map(g => `
+            <div class="gap-item">
+              <div class="gap-text">${g.gap}</div>
+              <div class="gap-opp">→ ${g.opportunity || g.suggested_article_type || '?'}</div>
+            </div>
+          `).join('')
+        : `<div style="color:var(--muted);font-size:11px;padding:6px 0;line-height:1.5;">
+             No gaps identified on this run. This usually means the Competitor Spy LLM response was truncated.
+             Re-run with the latest <code style="font-family:'JetBrains Mono',monospace;font-size:10px;background:var(--border);padding:1px 5px;">llm.py</code> to get the full analysis.
+           </div>`
+      }
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Our Advantages</div>
+      <div class="importance imp-high">HIGH VALUE</div>
+      <p class="importance-note">Where Canvas Homes can differentiate from all four competitors. These points go into every article brief as the content differentiation angle — what makes our content worth reading over MagicBricks.</p>
+      ${ourAdvantages.length > 0
+        ? ourAdvantages.map(a => `<div style="font-size:11px;color:var(--text);padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04);">✨ ${a}</div>`).join('')
+        : `<div style="color:var(--muted);font-size:11px;">Not available — see Coverage Gaps note above.</div>`
+      }
+    </div>
+
+  `;
+
+  // ── Keyword Mapper Panel ──
+  document.getElementById('kwCost').textContent = D.kw_cost ? `$${D.kw_cost.toFixed(4)}` : 'see run log';
+  const qw = D.quick_win_keywords || [];
+  const sk = D.strategic_keywords || [];
+
+  document.getElementById('kwContent').innerHTML = `
+
+    <div class="panel-section">
+      <div class="section-label">Keyword Summary</div>
+      <div class="importance imp-critical">⚠ CRITICAL — primary input to Content Architect</div>
+      <p class="importance-note">Takes every query from Trend Scout (PAA, related, autocomplete) and every competitor article title, clusters them into groups. Each group = one article for Content Architect to brief. This is the direct instruction set for what Canvas Homes needs to publish.</p>
+      <div class="data-row"><span class="key">Total keywords</span><span class="val">${D.total_keywords || 0}</span></div>
+      <div class="data-row"><span class="key">Article groups</span><span class="val">${kgs.length}</span></div>
+      <div class="data-row"><span class="key">Articles to commission</span><span class="val">${kgs.length}</span></div>
+      <div class="data-row"><span class="key">Quick wins</span><span class="val">${qw.length}</span></div>
+      <div class="data-row"><span class="key">Strategic keywords</span><span class="val">${sk.length}</span></div>
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Keyword Groups (Articles to Write)</div>
+      <div class="importance imp-critical">⚠ CRITICAL</div>
+      <p class="importance-note">Each group = one article. Content Architect produces a full brief for each: title, angle, word count, structure, internal links, schema markup. Primary keyword = target ranking keyword. Secondary and long-tail go in subheadings and body copy.</p>
+      ${kgs.length > 0
+        ? kgs.map(g => `
+            <div class="kw-group">
+              <div class="kw-group-name">${g.group_name}</div>
+              <div class="kw-primary">▸ ${g.primary_keyword}</div>
+              <div class="kw-tags">
+                <span class="kw-tag" style="background:rgba(71,255,232,0.1);color:var(--accent2);">${g.suggested_article_type || '?'}</span>
+                ${(g.secondary_keywords||[]).slice(0,3).map(kw=>`<span class="kw-tag">${kw}</span>`).join('')}
+                ${(g.long_tail_keywords||[]).slice(0,2).map(kw=>`<span class="kw-tag" style="opacity:0.6;">${trunc(kw,28)}</span>`).join('')}
+              </div>
+            </div>
+          `).join('')
+        : '<div style="color:var(--muted);font-size:11px;">No keyword groups — run with latest llm.py.</div>'
+      }
+    </div>
+
+    ${qw.length > 0 ? `
+      <div class="panel-section">
+        <div class="section-label">⚡ Quick Wins</div>
+        <div class="importance imp-high">HIGH VALUE — write these first</div>
+        <p class="importance-note">Low difficulty + decent volume. These articles rank fastest and prove ROI earliest. Content Architect should brief these before any strategic keywords.</p>
+        ${qw.slice(0,8).map((kw,i) => `
+          <div class="paa-item"><span class="paa-num">${String(i+1).padStart(2,'0')}</span>${kw}</div>
+        `).join('')}
+      </div>
+    ` : ''}
+
+    ${sk.length > 0 ? `
+      <div class="panel-section">
+        <div class="section-label">♟ Strategic Keywords</div>
+        <div class="importance imp-medium">MEDIUM VALUE — need pillar content</div>
+        <p class="importance-note">High volume, high difficulty. These require comprehensive hub articles (3000+ words) to rank. Content Architect plans these as long-term investments after quick wins are live.</p>
+        ${sk.slice(0,8).map((kw,i) => `
+          <div class="paa-item"><span class="paa-num">${String(i+1).padStart(2,'0')}</span>${kw}</div>
+        `).join('')}
+      </div>
+    ` : ''}
+
+    <div class="panel-section">
+      <div class="section-label">Content Priorities (Top 5)</div>
+      <div class="importance imp-critical">⚠ CRITICAL — determines writing order</div>
+      <p class="importance-note">Ranked by AEO score × commercial intent × competitor gap. Content Architect writes briefs in this order. Highest-ROI articles get published first — maximising early traffic and revenue.</p>
+      ${(cp.top_5_queries || []).map((q,i) => `
+        <div class="priority-item">
+          <div class="priority-num">PRIORITY ${i+1}</div>
+          <div class="priority-query">${q.query}</div>
+          <div class="priority-action">${trunc(q.suggested_action, 100)}</div>
+        </div>
+      `).join('')}
+      ${(cp.top_5_queries||[]).length === 0 ? '<div style="color:var(--muted);font-size:11px;">No priorities — run with latest llm.py.</div>' : ''}
+    </div>
+
+    <div class="panel-section">
+      <div class="section-label">Content Gaps</div>
+      <div class="importance imp-high">HIGH VALUE — sets article angle</div>
+      <p class="importance-note">Tells Content Architect what ANGLE to take. If competitors have no healthcare guide, our article should be the most comprehensive one on the internet for this locality — that's how it ranks and gets AI-cited.</p>
+      ${(cp.content_gaps || []).slice(0,4).map(g => {
+        const pri  = (g.priority||'').toUpperCase();
+        const icon = {HIGH:'🔴',MEDIUM:'🟡',LOW:'🟢'}[pri]||'⚪';
+        return `
+          <div class="gap-item">
+            <div class="gap-text">${icon} ${g.gap}</div>
+            <div class="gap-opp">→ ${g.opportunity||''} (${g.suggested_content_type||''})</div>
+          </div>
+        `;
+      }).join('')}
+      ${(cp.content_gaps||[]).length === 0 ? '<div style="color:var(--muted);font-size:11px;">No gaps identified in this run.</div>' : ''}
+    </div>
+
+  `;
+
+  // ── Output Packet ──
+  document.getElementById('packetGrid').innerHTML = `
+    <div class="packet-card">
+      <div class="pc-title">Keyword Groups</div>
+      <div class="pc-receiver">→ CONTENT ARCHITECT</div>
+      <ul class="pc-items">
+        <li>${kgs.length} groups = ${kgs.length} article briefs to produce</li>
+        <li>Primary keyword sets the SEO target per article</li>
+        <li>Secondary keywords go in subheadings</li>
+        <li>Long-tail keywords go in body copy</li>
+        <li>Article type (hub/spoke) sets the structure</li>
+      </ul>
+    </div>
+    <div class="packet-card faq">
+      <div class="pc-title">FAQ Source Material</div>
+      <div class="pc-receiver faq-r">→ FAQ ARCHITECT</div>
+      <ul class="pc-items">
+        <li class="faq-li">${paa.length} PAA questions to answer directly</li>
+        <li class="faq-li">${rel.length} related searches as context</li>
+        <li class="faq-li">${auto.length} autocomplete queries</li>
+        <li class="faq-li">${aeo.length} AEO targets with strategies</li>
+        <li class="faq-li">Maps into structured FAQ sections with schema</li>
+      </ul>
+    </div>
+    <div class="packet-card comp">
+      <div class="pc-title">Competitive Context</div>
+      <div class="pc-receiver comp-r">→ BOTH ARCHITECTS</div>
+      <ul class="pc-items">
+        <li class="comp-li">${Object.keys(compPresence).length} competitors tracked across all searches</li>
+        <li class="comp-li">${coverageGaps.length} coverage gaps = differentiation angles</li>
+        <li class="comp-li">${ourAdvantages.length} our advantages = content positioning</li>
+        <li class="comp-li">Competitor presence per query type</li>
+        <li class="comp-li">Sets the "beat this" benchmark for each article</li>
+      </ul>
+    </div>
+    <div class="packet-card pri">
+      <div class="pc-title">Content Priorities</div>
+      <div class="pc-receiver pri-r">→ CONTENT ARCHITECT</div>
+      <ul class="pc-items">
+        <li class="pri-li">${(cp.top_5_queries||[]).length} priority queries with AEO scores</li>
+        <li class="pri-li">Determines the article writing order</li>
+        <li class="pri-li">${(cp.content_gaps||[]).length} content gaps identified</li>
+        <li class="pri-li">${(cp.related_topics||[]).length} related topics for next Layer 1 run</li>
+        <li class="pri-li">Trend direction sets the editorial angle</li>
+      </ul>
+    </div>
+  `;
+
+  // ── JSON viewer ──
+  document.getElementById('jsonViewer').textContent = JSON.stringify(D, null, 2);
+
+  // ── Footer ──
+  document.getElementById('footerMeta').textContent =
+    `${D.topic_type || 'locality'} · ${kgs.length} articles to write · ${aeo.length} AEO targets · ${paa.length} FAQ questions`;
+}
+</script>
+</body>
+</html>
