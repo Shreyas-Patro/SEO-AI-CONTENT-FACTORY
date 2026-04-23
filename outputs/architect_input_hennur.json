@@ -1,0 +1,383 @@
+{
+  "topic": "hennur",
+  "topic_type": "locality",
+  "detected_locality": "Hennur",
+  "trend": {
+    "direction": "declining",
+    "summary": "Hennur search interest is declining from a 12-month average of 71.6 to recent interest of 63.5, indicating softening demand. However, 6 rising related queries suggest emerging micro-trends around specific landmarks (Hennur Lake, Hennur Gardens) and healthcare facilities (Sparsh Hospital).",
+    "seasonal": true,
+    "rising_queries": [
+      "beige bangalore",
+      "sparsh hospital hennur",
+      "sparsh hospital bangalore",
+      "sparsh hennur",
+      "hennur gardens",
+      "hennur lake"
+    ]
+  },
+  "keyword_groups": [
+    {
+      "group_name": "Hennur Location & Geography",
+      "suggested_article_type": "hub",
+      "primary_keyword": "Hennur Bangalore",
+      "secondary_keywords": [
+        "Hennur location Bangalore",
+        "Is Hennur in North Bangalore or South",
+        "Hennur Bangalore map",
+        "Hennur pincode",
+        "Hennur Cross Bangalore"
+      ],
+      "long_tail_keywords": [
+        "How to reach Hennur from airport",
+        "Hennur to Whitefield distance",
+        "Hennur to Indiranagar distance",
+        "Hennur locality boundaries"
+      ]
+    },
+    {
+      "group_name": "Hennur Real Estate & Properties",
+      "suggested_article_type": "hub",
+      "primary_keyword": "Hennur properties",
+      "secondary_keywords": [
+        "Flats in Hennur",
+        "Hennur apartments",
+        "Hennur villas",
+        "Hennur house prices",
+        "Hennur property rates"
+      ],
+      "long_tail_keywords": [
+        "2BHK flats in Hennur price",
+        "3BHK apartments Hennur Bangalore",
+        "Luxury villas in Hennur",
+        "Affordable housing Hennur"
+      ]
+    }
+  ],
+  "quick_win_keywords": [],
+  "strategic_keywords": [],
+  "total_keywords": 187,
+  "aeo_targets": [
+    {
+      "query": "hospitals near Hennur",
+      "current_answer_quality": "weak",
+      "our_strategy": "Create comprehensive hospital directory with Sparsh Hospital details, specialties, contact info, and reviews. Include comparison with other nearby hospitals. Optimize for local pack and AI overview.",
+      "content_type": "spoke"
+    },
+    {
+      "query": "best restaurants Hennur",
+      "current_answer_quality": "weak",
+      "our_strategy": "Build restaurant guide with categorized listings (cafes, fine dining, casual), reviews, cuisines, and location maps. Target local pack and AI overview with structured data.",
+      "content_type": "spoke"
+    },
+    {
+      "query": "schools near Hennur",
+      "current_answer_quality": "weak",
+      "our_strategy": "Create schools directory with top schools, ratings, fees, specializations, and parent reviews. Optimize for local pack and featured snippet.",
+      "content_type": "spoke"
+    },
+    {
+      "query": "Hennur flat for sale",
+      "current_answer_quality": "moderate",
+      "our_strategy": "Create property listings hub with current market prices, project details, builder information, and investment analysis. Include price trends and comparison with nearby areas.",
+      "content_type": "hub"
+    },
+    {
+      "query": "Hennur rent",
+      "current_answer_quality": "moderate",
+      "our_strategy": "Build rental market guide with current rent prices by BHK, locality-wise breakdown, and rental trends. Include landlord/tenant guides.",
+      "content_type": "spoke"
+    },
+    {
+      "query": "2BHK rent Hennur",
+      "current_answer_quality": "weak",
+      "our_strategy": "Create specific rental guide for 2BHK apartments with price ranges, popular complexes, and neighborhood comparisons.",
+      "content_type": "sub_spoke"
+    },
+    {
+      "query": "things to do in Hennur",
+      "current_answer_quality": "moderate",
+      "our_strategy": "Expand AI overview content with detailed activities guide covering parks, lakes, restaurants, entertainment, and day-trip options. Include visitor reviews and ratings.",
+      "content_type": "hub"
+    },
+    {
+      "query": "Hennur Bangalore",
+      "current_answer_quality": "strong",
+      "our_strategy": "Enhance existing knowledge with Canvas Homes perspective: create comprehensive locality guide covering all aspects (location, property, lifestyle, infrastructure). Aim to be cited in AI overviews.",
+      "content_type": "hub"
+    },
+    {
+      "query": "Hennur Bangalore guide",
+      "current_answer_quality": "strong",
+      "our_strategy": "Create authoritative guide competing with KOTS and Puravankara. Include property market data, lifestyle, infrastructure, and investment potential. Optimize for AI overview citation.",
+      "content_type": "hub"
+    },
+    {
+      "query": "living in Hennur Bangalore",
+      "current_answer_quality": "moderate",
+      "our_strategy": "Create detailed living guide with pros/cons, cost of living, lifestyle factors, community insights, and family suitability. Include real resident perspectives and Canvas Homes data.",
+      "content_type": "hub"
+    }
+  ],
+  "faq": {
+    "paa_questions": [
+      "Is Hennur a good place to live?",
+      "Is Hennur in North Bangalore or South?",
+      "Is Metro available in Hennur?",
+      "What is the cost of land in Hennur?",
+      "Is Hennur a good area?",
+      "Does Hennur have a metro?",
+      "What are the 12 places to visit in Bangalore?",
+      "Is Hennur Bangalore north or south?",
+      "Which area of Bangalore is best to live in?",
+      "Is Hennur in north or south of Bangalore?",
+      "What salary is needed to live comfortably in Bangalore?",
+      "What is Hennur Cross known for?",
+      "Is Hennur in Bangalore north or south?",
+      "Is NRI layout a good place to live?",
+      "What is the price of Hennur land?",
+      "What is the cost of a 30 * 40 site in Bangalore?",
+      "Which is the cheapest area in Bangalore?",
+      "What is the price of Hennur Road land?",
+      "What is the price of flat in Bangalore?",
+      "Are there any shopping malls on Hennur Bagalur Road?",
+      "Where is the romantic place for couples in Bangalore?",
+      "Where can I spend a whole day in Bangalore?",
+      "What is North Bangalore famous for?",
+      "What are the top 3 hospitals?",
+      "Is Sparsh Hospital Hennur open?",
+      "Which doctor is best for bones and joints?",
+      "What are the top 6 hospitals?",
+      "Which is the most posh area in Bangalore?",
+      "Where do most CEOs live in Bangalore?",
+      "Which area is booming in Bangalore?"
+    ],
+    "related_searches": [
+      "Hennur bangalore map",
+      "Hennur bangalore distance",
+      "Hennur bangalore location",
+      "Hennur bangalore timings",
+      "Hennur Bangalore pin code",
+      "Hennur bangalore near railway station",
+      "Hennur bangalore to majestic distance",
+      "Hennur bangalore restaurants",
+      "Hennur bangalore guide map",
+      "Hennur Bangalore map",
+      "Hennur Bangalore nearest metro station",
+      "Hennur Cross Bangalore",
+      "Hennur is bangalore urban or rural",
+      "Hennur distance",
+      "Living in hennur bangalore reddit",
+      "Bangalore to hennur distance",
+      "Places to visit near Hennur",
+      "Hennur to whitefield",
+      "Hennur Gardens, Bangalore",
+      "Hennur review bangalore",
+      "Hennur review reddit",
+      "Hennur Bangalore",
+      "Hennur Gardens",
+      "Hennur Main Road, Bangalore",
+      "Hennur kere Biodiversity Park",
+      "Hennur property price per square feet",
+      "Hennur square feet rate",
+      "Independent House for sale in Hennur",
+      "Duplex House for sale in Hennur Road",
+      "Bangalore property prices"
+    ],
+    "autocomplete": [
+      "hennur cross",
+      "hennur pincode",
+      "hennur bangalore",
+      "hennur dmart",
+      "hennur police station",
+      "hennur bamboo forest",
+      "hennur road",
+      "hennur banaswadi cosmopolitan club",
+      "hennur gardens",
+      "hennur bande",
+      "hennur cross bus stop",
+      "hennur main road",
+      "hennur cross distance",
+      "hennur distance",
+      "hennur restaurants",
+      "hennur bangalore pin code",
+      "hennur bangalore location",
+      "hennur bangalore map",
+      "hennur bangalore one",
+      "hennur bangalore weather"
+    ]
+  },
+  "competition": {
+    "competitor_coverage": [
+      {
+        "competitor": "magicbricks.com",
+        "articles_found": 10,
+        "articles": [
+          {
+            "title": "Hennur, Bangalore: Map, Photo, Video, Price Trends",
+            "url": "https://www.magicbricks.com/Hennur-in-Bangalore-Overview",
+            "content_type": "hub",
+            "estimated_word_count": 1500,
+            "strengths": "Comprehensive locality overview with price trends, visual content, maps"
+          }
+        ]
+      }
+    ],
+    "coverage_gaps": [],
+    "our_advantages": [],
+    "competitor_presence": {
+      "magicbricks.com": 10,
+      "nobroker.in": 7,
+      "99acres.com": 10,
+      "housing.com": 5
+    }
+  },
+  "content_priorities": {
+    "top_5_queries": [
+      {
+        "query": "Hennur flat for sale",
+        "reason": "High transactional intent with 90 AEO score; competitors present but content quality is moderate; direct revenue opportunity for Canvas Homes; high search volume",
+        "suggested_action": "Create comprehensive property listings hub with current market prices, project details, builder information, investment analysis, and price trends. Include comparison with nearby areas and ROI potential."
+      },
+      {
+        "query": "hospitals near Hennur",
+        "reason": "Perfect AEO opportunity with score of 100; no featured snippet or AI overview; no competitor dominance; rising interest in Sparsh Hospital; high local intent",
+        "suggested_action": "Build detailed healthcare facilities guide covering Sparsh Hospital, other clinics, specialties, contact info, reviews, and emergency services. Optimize for local pack and AI overview with structured data."
+      },
+      {
+        "query": "living in Hennur Bangalore",
+        "reason": "High informational intent with 70 AEO score; AI overview present but content quality is moderate; strong user intent to understand lifestyle; opportunity to become primary source",
+        "suggested_action": "Create authoritative living guide with pros/cons, cost of living, community insights, family suitability, infrastructure, and real resident perspectives. Include Canvas Homes market data and investment potential."
+      },
+      {
+        "query": "Hennur rent",
+        "reason": "High transactional intent with 85 AEO score; competitors present but content gaps exist; direct revenue opportunity; high search volume for rental market",
+        "suggested_action": "Build rental market guide with current rent prices by BHK, locality-wise breakdown, rental trends, popular complexes, and landlord/tenant guides. Include price comparison with nearby areas."
+      },
+      {
+        "query": "things to do in Hennur",
+        "reason": "High informational intent with 80 AEO score; AI overview present but content can be expanded; rising interest in Hennur Lake and Hennur Gardens; lifestyle opportunity",
+        "suggested_action": "Create comprehensive lifestyle guide covering parks, lakes, restaurants, entertainment, shopping, and day-trip options. Include visitor reviews, ratings, and timings. Optimize for AI overview expansion."
+      }
+    ],
+    "content_gaps": [
+      {
+        "gap": "No comprehensive guide to hospitals and healthcare facilities in Hennur despite rising interest in Sparsh Hospital",
+        "queries": [
+          "hospitals near Hennur",
+          "Sparsh Hospital Hennur",
+          "Sparsh hospital bangalore",
+          "Is Sparsh Hospital Hennur open?",
+          "Which doctor is best for bones and joints?"
+        ],
+        "opportunity": "Create a detailed healthcare facilities guide for Hennur covering Sparsh Hospital, other clinics, and specialist doctors",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Limited content on lifestyle and leisure activities in Hennur; rising queries for Hennur Lake and Hennur Gardens lack dedicated guides",
+        "queries": [
+          "things to do in Hennur",
+          "Hennur lake",
+          "Hennur Gardens, Bangalore",
+          "Hennur bamboo forest",
+          "Where is the romantic place for couples in Bangalore?",
+          "Where can I spend a whole day in Bangalore?"
+        ],
+        "opportunity": "Create lifestyle hub covering parks, gardens, lakes, restaurants, and entertainment venues in Hennur with visitor guides",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "No featured snippets or AI overviews for transactional property queries; competitors dominate rental and sale listings",
+        "queries": [
+          "Hennur flat for sale",
+          "Hennur rent",
+          "2BHK rent Hennur",
+          "What is the cost of land in Hennur?",
+          "What is the price of Hennur Road land?"
+        ],
+        "opportunity": "Create detailed property pricing guides, rental market analysis, and investment guides for Hennur with current market data",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Weak content on infrastructure and connectivity; multiple queries about metro, railway, and distance lack clear answers",
+        "queries": [
+          "Is Metro available in Hennur?",
+          "Does Hennur have a metro?",
+          "Hennur bangalore nearest metro station",
+          "Hennur bangalore near railway station",
+          "Hennur bangalore to majestic distance",
+          "Hennur to whitefield"
+        ],
+        "opportunity": "Create infrastructure guide covering metro connectivity, bus routes, railway access, and distance to key Bangalore landmarks",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "No dedicated content on schools and educational institutions in Hennur despite being a family-oriented area",
+        "queries": [
+          "schools near Hennur",
+          "Why Families Choose Hennur 2026: Schools & Community"
+        ],
+        "opportunity": "Create schools and education guide for Hennur with details on top schools, colleges, and educational facilities",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "Limited restaurant and dining guides for Hennur despite search interest",
+        "queries": [
+          "best restaurants Hennur",
+          "Hennur bangalore restaurants",
+          "byg brewski bangalore hennur",
+          "byg brewski hennur"
+        ],
+        "opportunity": "Create dining and restaurants guide for Hennur with reviews, cuisines, and popular venues",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "No clear answers on Hennur's geographic location and administrative boundaries",
+        "queries": [
+          "Is Hennur in North Bangalore or South?",
+          "Is Hennur Bangalore north or south?",
+          "Hennur is bangalore urban or rural",
+          "Hennur Bangalore pin code"
+        ],
+        "opportunity": "Create foundational guide clarifying Hennur's location, pincode, administrative division, and geographic boundaries",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "No AI-optimized content for comparative queries about Bangalore neighborhoods",
+        "queries": [
+          "Which area of Bangalore is best to live in?",
+          "Which is the cheapest area in Bangalore?",
+          "Which is the most posh area in Bangalore?",
+          "Where do most CEOs live in Bangalore?",
+          "Which area is booming in Bangalore?"
+        ],
+        "opportunity": "Create comparative neighborhood analysis positioning Hennur against other Bangalore localities with pros/cons",
+        "suggested_content_type": "hub",
+        "priority": "medium"
+      }
+    ],
+    "related_topics": [
+      "Hennur Lake",
+      "Hennur Gardens",
+      "Sparsh Hospital Bangalore",
+      "Hennur Cross",
+      "North Bangalore localities",
+      "Bangalore metro connectivity",
+      "Hennur property investment",
+      "Bangalore rental market",
+      "Hennur schools and education",
+      "Bangalore neighborhood comparison",
+      "Hennur restaurants and dining",
+      "Bangalore cost of living",
+      "Hennur infrastructure development",
+      "Bangalore real estate trends",
+      "Hennur community and lifestyle"
+    ]
+  }
+}
