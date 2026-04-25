@@ -60,7 +60,6 @@ BANGALORE_LOCALITIES = [
     "Bellandur", "Kasavanahalli", "Kaikondrahalli",
     "Agara", "Parappana Agrahara", "Bommasandra",
     "Chandapura", "Anekal", "Madiwala", "Silk Board",
-
     "Whitefield", "Whitefield Main Road", "ITPL",
     "Brookefield", "AECS Layout", "Marathahalli",
     "KR Puram", "Krishnarajapuram", "Mahadevapura",
