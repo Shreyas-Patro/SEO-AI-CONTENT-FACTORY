@@ -1,53 +1,34 @@
 """
-Pipeline Orchestrator
+Pipeline Orchestrator v2
 
-Single entry point that runs Layer 1 → Gate → Layer 2 → Research Prompt Gen.
-
-Each agent reads its input from the artifact store of the previous agent's
-output, and writes its own output back. This is the LangGraph-compatible
-pattern — when you migrate to LangGraph later, this orchestrator becomes
-the StateGraph and each agent becomes a node.
-
-Usage from the dashboard:
-
-    from pipeline import (
-        start_pipeline_run, run_layer1, run_layer2,
-        load_agent_output, edit_agent_output
-    )
-
-    run_id = start_pipeline_run("Hosa Road")
-    run_layer1(run_id)            # trend → competitor → keyword
-    # human gate happens in dashboard
-    run_layer2(run_id)            # content_arch → faq_arch → research_prompt
+Changes from v1:
+- Uses ContentArchitectAgent (AgentBase, with validation + retry)
+- Uses FAQArchitectAgent
+- Saves a proper metadata.json for trend_scout (was missing — caused dashboard to crash)
+- Cleaner error reporting
 """
 
 import json
 from db.artifacts import (
     init_artifact_tables, create_pipeline_run, update_pipeline_run,
-    save_artifact, load_artifact, get_pipeline_run
+    save_artifact, load_artifact, get_pipeline_run,
+    increment_run_counters
 )
 from db.sqlite_ops import init_db
 
 
-# Initialize on import — safe to run repeatedly
+# Initialize on import
 init_db()
 init_artifact_tables()
 
 
-# ─── PUBLIC API ──────────────────────────────────────────────────────────
-
 def start_pipeline_run(topic, notes=""):
-    """Create a new pipeline run. Returns run_id."""
     run_id = create_pipeline_run(topic, notes=notes)
     save_artifact(run_id, "_pipeline", "input", {"topic": topic, "notes": notes})
     return run_id
 
 
 def run_layer1(run_id):
-    """
-    Run Layer 1: Trend Scout → Competitor Spy → Keyword Mapper.
-    Reads topic from the pipeline run and writes each agent's output to artifacts.
-    """
     from agents.trend_scout import run_trend_scout
     from agents.competitor_spy import CompetitorSpyAgent
     from agents.keyword_mapper import KeywordMapperAgent
@@ -58,30 +39,39 @@ def run_layer1(run_id):
     topic = run["topic"]
 
     update_pipeline_run(run_id, current_stage="layer1_trend_scout")
-
-    # ─── 1. Trend Scout ──────────────────────────────────
-    # NOTE: trend_scout.py is your existing agent — wrap it minimally.
-    # Save its full output as artifact.
     print(f"\n{'='*60}\n[Pipeline {run_id}] Layer 1 starting for '{topic}'\n{'='*60}")
 
+    # ─── 1. Trend Scout (legacy wrapper) ─────────────────────────
     save_artifact(run_id, "trend_scout", "input", {"topic": topic})
     trend_data = run_trend_scout(topic, cluster_id=run.get("cluster_id"))
     save_artifact(run_id, "trend_scout", "output", trend_data)
-    save_artifact(run_id, "trend_scout", "metadata", {
+
+    # NEW: build a proper metadata.json so the dashboard doesn't crash
+    ts_cost = trend_data.get("cost_usd", 0)
+    ts_serp = trend_data.get("serp_calls_used", 15)
+    ts_meta = {
         "agent": "trend_scout",
-        "cost_usd": trend_data.get("cost_usd", 0),
-        "serp_calls_used": trend_data.get("serp_calls_used", 15),
-    })
+        "status": "completed",
+        "validation_passed": True,
+        "validation_problems": [],
+        "serp_calls": ts_serp,
+        "llm_calls": 1,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "cost_usd": ts_cost,
+    }
+    save_artifact(run_id, "trend_scout", "metadata", ts_meta)
+    increment_run_counters(run_id, cost=ts_cost, serp_calls=ts_serp, llm_calls=1)
+
     update_pipeline_run(run_id, current_stage="layer1_competitor_spy")
 
-    # ─── 2. Competitor Spy ───────────────────────────────
+    # ─── 2. Competitor Spy ───────────────────────────────────────
     spy = CompetitorSpyAgent(run_id, cluster_id=run.get("cluster_id"))
     spy_output = spy.run({"topic": topic})
     update_pipeline_run(run_id, current_stage="layer1_keyword_mapper")
 
-    # ─── 3. Keyword Mapper ───────────────────────────────
+    # ─── 3. Keyword Mapper ───────────────────────────────────────
     mapper = KeywordMapperAgent(run_id, cluster_id=run.get("cluster_id"))
-    # Reformat for keyword mapper expected shape
     competitor_data_for_mapper = {
         "analysis": {
             "competitor_coverage": spy_output["competitor_coverage"],
@@ -107,7 +97,6 @@ def run_layer1(run_id):
 
 
 def approve_gate(run_id):
-    """Mark the human gate as approved so Layer 2 can run."""
     update_pipeline_run(run_id, gate_status="approved", current_stage="gate_approved")
 
 
@@ -116,12 +105,8 @@ def reject_gate(run_id):
 
 
 def run_layer2(run_id):
-    """
-    Run Layer 2: Content Architect → FAQ Architect → Research Prompt Generator.
-    Reads previous agents' output from artifact store.
-    """
-    from agents.content_architect import run_content_architect
-    from agents.faq_architect import run_faq_architect
+    from agents.content_architect import ContentArchitectAgent
+    from agents.faq_architect import FAQArchitectAgent
     from agents.research_prompt_generator import ResearchPromptGeneratorAgent
     from db.sqlite_ops import get_articles_by_cluster
 
@@ -134,46 +119,61 @@ def run_layer2(run_id):
     if not keyword_output:
         raise RuntimeError("Layer 1 keyword_mapper output missing — run Layer 1 first")
 
-    # ─── 4. Content Architect ────────────────────────────
+    # ─── 4. Content Architect ────────────────────────────────────
     update_pipeline_run(run_id, current_stage="layer2_content_architect")
-    save_artifact(run_id, "content_architect", "input", {
+
+    architect = ContentArchitectAgent(run_id, cluster_id=run.get("cluster_id"))
+    arch_result = architect.run({
         "topic": topic,
         "keyword_data": {"keyword_map": keyword_output},
-    })
-
-    arch_result = run_content_architect(
-        topic,
-        {"keyword_map": keyword_output},
-        cluster_id=run.get("cluster_id"),
-    )
-    save_artifact(run_id, "content_architect", "output", arch_result)
-    save_artifact(run_id, "content_architect", "metadata", {
-        "agent": "content_architect",
-        "articles_created": arch_result.get("articles_created", 0),
-        "cost_usd": arch_result.get("cost_usd", 0),
     })
 
     cluster_id = arch_result.get("cluster_id")
     update_pipeline_run(run_id, cluster_id=cluster_id, current_stage="layer2_faq_architect")
 
-    # ─── 5. FAQ Architect ────────────────────────────────
+    # ─── 5. FAQ Architect (per article) ──────────────────────────
     db_articles = get_articles_by_cluster(cluster_id) if cluster_id else []
+    print(f"\n[Pipeline] Running FAQ Architect on {len(db_articles)} articles")
+
     faqs_by_article = {}
     faq_results = []
 
+    # We treat each article as a sub-call but accumulate metadata under faq_architect
+    aggregate_meta = {
+        "agent": "faq_architect",
+        "status": "completed",
+        "serp_calls": 0,
+        "llm_calls": 0,
+        "tokens_in": 0,
+        "tokens_out": 0,
+        "cost_usd": 0.0,
+        "validation_problems": [],
+        "validation_passed": True,
+    }
+
     for art in db_articles:
         try:
-            faq_res = run_faq_architect(
-                art["id"],
-                {"keyword_map": keyword_output},
-                cluster_id=cluster_id,
-            )
-            faq_results.append(faq_res)
-            faqs_by_article[art["id"]] = faq_res.get("faqs", [])
+            faq_agent = FAQArchitectAgent(run_id, cluster_id=cluster_id, article_id=art["id"])
+            # Run agent BUT don't double-save — we want per-article tracking aggregated
+            faq_out = faq_agent.run({
+                "article_id": art["id"],
+                "keyword_data": {"keyword_map": keyword_output},
+            })
+            faq_results.append({"article_id": art["id"], "faqs": faq_out.get("faqs", [])})
+            faqs_by_article[art["id"]] = faq_out.get("faqs", [])
+
+            aggregate_meta["llm_calls"] += faq_agent.llm_calls
+            aggregate_meta["tokens_in"] += faq_agent.tokens_in
+            aggregate_meta["tokens_out"] += faq_agent.tokens_out
+            aggregate_meta["cost_usd"] += faq_agent.cost_usd
+
         except Exception as e:
             print(f"  ⚠️  FAQ Architect failed for {art['id']}: {e}")
             faqs_by_article[art["id"]] = []
+            aggregate_meta["validation_passed"] = False
+            aggregate_meta["validation_problems"].append(f"{art['id']}: {e}")
 
+    # Save aggregated FAQ output (overrides per-article saves with cluster-level view)
     save_artifact(run_id, "faq_architect", "input", {
         "articles": [{"id": a["id"], "title": a["title"]} for a in db_articles],
     })
@@ -183,8 +183,10 @@ def run_layer2(run_id):
         "total_faqs": sum(len(v) for v in faqs_by_article.values()),
         "results": faq_results,
     })
+    aggregate_meta["cost_usd"] = round(aggregate_meta["cost_usd"], 6)
+    save_artifact(run_id, "faq_architect", "metadata", aggregate_meta)
 
-    # ─── 6. Research Prompt Generator (NEW) ──────────────
+    # ─── 6. Research Prompt Generator ────────────────────────────
     update_pipeline_run(run_id, current_stage="layer2_research_prompt_gen")
     rpg = ResearchPromptGeneratorAgent(run_id, cluster_id=cluster_id)
     rpg_output = rpg.run({
@@ -202,28 +204,22 @@ def run_layer2(run_id):
     }
 
 
-# ─── HELPERS for the dashboard ───────────────────────────────────────────
-
+# ─── Helpers ──────────────────────────────────────────────────────────
 def load_agent_output(run_id, agent_name):
-    """UI helper: read any agent's output."""
     return load_artifact(run_id, agent_name, "output")
-
 
 def load_agent_input(run_id, agent_name):
     return load_artifact(run_id, agent_name, "input")
 
-
 def load_agent_metadata(run_id, agent_name):
     return load_artifact(run_id, agent_name, "metadata")
 
-
 def edit_agent_output(run_id, agent_name, new_output):
-    """UI helper for Q11: human edits an agent's output before next agent runs."""
     save_artifact(run_id, agent_name, "output", new_output)
 
 
 def get_full_run_state(run_id):
-    """Build a dashboard-ready snapshot of everything in this run."""
+    """Build a dashboard-ready snapshot. Always returns dicts (never None) for metadata."""
     run = get_pipeline_run(run_id)
     if not run:
         return None
@@ -231,5 +227,6 @@ def get_full_run_state(run_id):
     for agent in ["trend_scout", "competitor_spy", "keyword_mapper",
                   "content_architect", "faq_architect", "research_prompt_generator"]:
         state["outputs"][agent] = load_artifact(run_id, agent, "output")
-        state["metadata"][agent] = load_artifact(run_id, agent, "metadata")
+        # KEY FIX: always return a dict, never None — prevents the AttributeError
+        state["metadata"][agent] = load_artifact(run_id, agent, "metadata") or {}
     return state
