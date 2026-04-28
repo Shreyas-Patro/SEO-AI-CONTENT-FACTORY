@@ -1,127 +1,64 @@
 """
-Standalone Knowledge Graph Visualizer.
-
-Run independently:
-    python -m viz.graph_viewer
-
-OR launch interactive HTML:
-    python -m viz.graph_viewer --html graph.html
-
-OR view in dashboard via dashboard_components/graph_view.py
+viz/graph_viewer.py — export graph to interactive HTML.
 """
 
-import os
-import sys
-import argparse
-from pathlib import Path
-
-from db.graph_ops import load_graph, graph_stats, get_nodes_by_type
+from db.graph_ops import load_graph
 
 
-def export_to_html(output_file="graph.html", filter_node_type=None, max_nodes=500):
-    """
-    Render the graph to an interactive HTML page using pyvis.
-    """
-    try:
-        from pyvis.network import Network
-    except ImportError:
-        print("Install pyvis first: pip install pyvis")
-        return False
-
+def export_to_html(output_path, filter_node_type=None, max_nodes=200):
+    """Export the knowledge graph as an interactive HTML file using vis.js."""
     G = load_graph()
-    print(f"Loaded graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
-    if filter_node_type:
-        keep = [n for n in G.nodes if G.nodes[n].get("node_type") == filter_node_type]
-        keep = set(keep + list({m for n in keep for m in G.neighbors(n)}))
-        G = G.subgraph(keep).copy()
-        print(f"Filtered to {filter_node_type}: {G.number_of_nodes()} nodes")
+    nodes_data = []
+    edges_data = []
 
-    if G.number_of_nodes() > max_nodes:
-        print(f"Graph has {G.number_of_nodes()} nodes — truncating to {max_nodes}")
-        nodes_to_keep = list(G.nodes)[:max_nodes]
-        G = G.subgraph(nodes_to_keep).copy()
-
-    color_map = {
-        "location": "#00d4ff",
-        "topic": "#c8ff00",
-        "article": "#5a9fff",
-        "fact": "#aa88ff",
-        "keyword": "#ffcc44",
+    colors = {
+        "location": "#00d4ff", "topic": "#c8ff00", "article": "#ff6b6b",
+        "fact": "#aa88ff", "keyword": "#5a9fff",
     }
 
-    net = Network(
-        height="800px", width="100%",
-        bgcolor="#0f0f1a", font_color="#aaa",
-        notebook=False, directed=True,
-    )
-
-    for node, data in G.nodes(data=True):
+    count = 0
+    for node_id, data in G.nodes(data=True):
         ntype = data.get("node_type", "unknown")
-        label = data.get("label", node)[:50]
-        net.add_node(
-            node,
-            label=label,
-            color=color_map.get(ntype, "#888"),
-            title=f"{ntype}: {data.get('label', '')}",
-            size=20 if ntype in ("location", "topic") else 12,
-        )
+        if filter_node_type and ntype != filter_node_type:
+            continue
+        if count >= max_nodes:
+            break
+        nodes_data.append({
+            "id": node_id,
+            "label": data.get("label", node_id)[:30],
+            "color": colors.get(ntype, "#888"),
+            "title": f"{ntype}: {data.get('label', node_id)}",
+        })
+        count += 1
 
-    for s, t, data in G.edges(data=True):
-        net.add_edge(s, t, title=data.get("edge_type", ""), arrows="to")
+    node_ids = {n["id"] for n in nodes_data}
+    for src, tgt, data in G.edges(data=True):
+        if src in node_ids and tgt in node_ids:
+            edges_data.append({
+                "from": src, "to": tgt,
+                "label": data.get("edge_type", ""),
+            })
 
-    net.set_options("""
-    {
-      "physics": {"barnesHut": {"gravitationalConstant": -10000}},
-      "interaction": {"hover": true, "navigationButtons": true}
-    }
-    """)
-    net.write_html(output_file, notebook=False, open_browser=False)
-    print(f"✓ Graph rendered to {output_file}")
-    print(f"  Open in browser: file://{Path(output_file).absolute()}")
-    return True
+    import json
+    html = f"""<!DOCTYPE html>
+<html><head>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>body{{margin:0;background:#0f0f1a}}#graph{{width:100%;height:800px}}</style>
+</head><body>
+<div id="graph"></div>
+<script>
+var nodes = new vis.DataSet({json.dumps(nodes_data)});
+var edges = new vis.DataSet({json.dumps(edges_data)});
+var container = document.getElementById('graph');
+var data = {{nodes: nodes, edges: edges}};
+var options = {{
+    nodes: {{font: {{color: '#fff'}}, shape: 'dot', size: 12}},
+    edges: {{color: '#444', font: {{color: '#888', size: 9}}, arrows: 'to'}},
+    physics: {{solver: 'forceAtlas2Based', forceAtlas2Based: {{gravitationalConstant: -30}}}},
+}};
+new vis.Network(container, data, options);
+</script></body></html>"""
 
-
-def print_summary():
-    """CLI summary of the graph contents."""
-    G = load_graph()
-    stats = graph_stats(G)
-    print("\n" + "=" * 50)
-    print("KNOWLEDGE GRAPH SUMMARY")
-    print("=" * 50)
-    print(f"Total nodes: {stats['total_nodes']}")
-    print(f"Total edges: {stats['total_edges']}")
-
-    counts_by_type = {}
-    for node, data in G.nodes(data=True):
-        t = data.get("node_type", "unknown")
-        counts_by_type[t] = counts_by_type.get(t, 0) + 1
-
-    print("\nNodes by type:")
-    for ntype, count in sorted(counts_by_type.items(), key=lambda x: -x[1]):
-        print(f"  {ntype:15s} {count}")
-
-    print("\nSample locations:")
-    for loc in get_nodes_by_type(G, "location")[:10]:
-        print(f"  - {loc.get('label')}")
-
-    print("\nSample facts (first 5):")
-    for fact in get_nodes_by_type(G, "fact")[:5]:
-        print(f"  - {fact.get('label')[:80]}")
-
-
-def main():
-    parser = argparse.ArgumentParser(description="Knowledge Graph Viewer")
-    parser.add_argument("--html", help="Export interactive HTML to this file")
-    parser.add_argument("--filter", help="Filter to one node type (location, fact, etc.)")
-    parser.add_argument("--max-nodes", type=int, default=500)
-    args = parser.parse_args()
-
-    if args.html:
-        export_to_html(args.html, filter_node_type=args.filter, max_nodes=args.max_nodes)
-    else:
-        print_summary()
-
-
-if __name__ == "__main__":
-    main()
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(html)
