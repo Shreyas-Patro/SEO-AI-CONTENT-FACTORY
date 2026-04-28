@@ -28,8 +28,7 @@ from serpapi import GoogleSearch
 # Try to load API key from config (same way trend_scout does)
 def _get_serpapi_key():
     try:
-        from config_loader import get_config
-        cfg = get_config()
+        from config_loader import cfg
         return cfg.get("serpapi_key") or cfg.get("serpapi", {}).get("api_key")
     except Exception:
         pass

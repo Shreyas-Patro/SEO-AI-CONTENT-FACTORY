@@ -1,103 +1,128 @@
 """
-FAQ Architect v2 — wrapped in AgentBase.
+agents/faq_architect.py — v5 (cluster-level FAQ generation)
 
-Generates AEO-optimized FAQs per article.
+Generates FAQs for ALL articles in a cluster in one pass.
+This is cheaper than calling per-article.
 """
 
 import json
-from db.sqlite_ops import get_article, update_article
+from db.sqlite_ops import get_article, get_articles_by_cluster, update_article
+from db.pipeline_state import StateKeys, PipelineState
 from llm import call_llm_json
 from agents.base import AgentBase
 
 
+FAQ_SYSTEM_PROMPT = """You are an AEO (Answer Engine Optimization) specialist for Canvas Homes, a Bangalore real estate platform.
+
+Generate 5-8 FAQs per article that are optimized for:
+1. Google Featured Snippets (40-60 word answers)
+2. Voice search (question starts with who/what/where/when/why/how)
+3. AI answer engines (clear, factual, self-contained answers)
+
+Each FAQ must:
+- Be a real question people search for
+- Have a concise, factual answer (40-60 words)
+- Include at least one specific data point where possible
+- Target a unique long-tail keyword
+
+Return STRICT JSON:
+{
+  "faqs_by_article": {
+    "article_id_1": [
+      {"question": "What is...?", "answer": "...", "target_keyword": "..."}
+    ]
+  },
+  "total_faqs": 50,
+  "summary": "..."
+}"""
+
+
 class FAQArchitectAgent(AgentBase):
     NAME = "faq_architect"
-    INPUT_REQUIRED = ["article_id", "keyword_data"]
-    OUTPUT_REQUIRED = ["article_id", "faqs"]
-    OUTPUT_NON_EMPTY = ["faqs"]
+    READS_STATE = [StateKeys.KEYWORD_MAP, StateKeys.CLUSTER_PLAN]
+    WRITES_STATE = [StateKeys.FAQ_PLAN]
+    OUTPUT_REQUIRED = ["faqs_by_article", "total_faqs"]
+    OUTPUT_NON_EMPTY = ["faqs_by_article"]
 
-    def validate_output(self, output):
-        is_valid, problems = super().validate_output(output)
-        faqs = output.get("faqs", [])
-        if not isinstance(faqs, list):
-            problems.append("faqs is not a list")
-            return False, problems
-        for i, f in enumerate(faqs):
-            if not isinstance(f, dict):
-                problems.append(f"faqs[{i}] is not a dict")
-                is_valid = False
-                continue
-            if not f.get("question"):
-                problems.append(f"faqs[{i}] missing question")
-                is_valid = False
-            if not f.get("answer"):
-                problems.append(f"faqs[{i}] missing answer")
-                is_valid = False
-        return is_valid, problems
+    def _execute(self, state: PipelineState, agent_input: dict) -> dict:
+        cluster_id = agent_input.get("cluster_id") or self.cluster_id or state.cluster_id
+        topic = agent_input.get("topic") or state.topic or ""
 
-    def _execute(self, validated_input):
-        article_id = validated_input["article_id"]
-        keyword_data = validated_input["keyword_data"]
+        print(f"[{self.NAME}] Generating FAQs for cluster {cluster_id}")
 
-        article = get_article(article_id)
-        if not article:
-            raise ValueError(f"Article {article_id} not found")
+        # Get keyword data
+        kw_map = (
+            agent_input.get("keyword_map")
+            or state.get(StateKeys.KEYWORD_MAP, {})
+            or {}
+        )
+        kw_groups = kw_map.get("keyword_groups", [])
 
-        print(f"\n[{self.NAME}] Generating FAQs for: {article['title']}")
+        # Get cluster plan
+        cluster_plan = (
+            agent_input.get("cluster_plan")
+            or state.get(StateKeys.CLUSTER_PLAN, {})
+            or {}
+        )
 
-        prompt_template = open("prompts/faq_architect.md").read()
+        # Get articles from DB
+        articles = get_articles_by_cluster(cluster_id) if cluster_id else []
+        if not articles:
+            # Try from cluster plan
+            articles_from_plan = cluster_plan.get("articles", [])
+            print(f"  No DB articles, using {len(articles_from_plan)} from plan")
+        else:
+            print(f"  Found {len(articles)} articles in DB")
 
-        outline = json.loads(article.get("outline", "[]") or "[]")
-        target_keywords = json.loads(article.get("target_keywords", "{}") or "{}")
-        kw_groups = keyword_data.get("keyword_map", {}).get("keyword_groups", [])
+        # Build compact article list for the prompt
+        compact_articles = []
+        for art in articles:
+            outline = json.loads(art.get("outline", "[]") or "[]")
+            keywords = json.loads(art.get("target_keywords", "{}") or "{}")
+            compact_articles.append({
+                "id": art["id"],
+                "title": art["title"],
+                "type": art["article_type"],
+                "primary_keyword": keywords.get("primary", art["title"]) if isinstance(keywords, dict) else art["title"],
+                "outline_preview": outline[:8],
+            })
 
-        prompt = f"""Generate FAQs for this article:
+        prompt = f"""Generate FAQs for all articles in this content cluster about "{topic}".
 
-ARTICLE TITLE: {article['title']}
-ARTICLE TYPE: {article['article_type']}
-ARTICLE OUTLINE:
-{json.dumps(outline, indent=2)}
+ARTICLES ({len(compact_articles)}):
+{json.dumps(compact_articles, indent=2)[:5000]}
 
-TARGET KEYWORDS:
-{json.dumps(target_keywords, indent=2)}
-
-AVAILABLE KEYWORD DATA (top 5 groups):
+KEYWORD GROUPS (top 5):
 {json.dumps(kw_groups[:5], indent=2)[:3000]}
 
-Generate 5-10 FAQs optimized for featured snippets and voice search.
+Generate 5-8 FAQs per article. Return JSON with faqs_by_article keyed by article ID.
 """
+
         result = call_llm_json(
-            prompt,
-            system=prompt_template,
-            model_role="bulk",
-            max_tokens=4096,
-            cache_namespace=f"{article_id}:faq_architect",
+            prompt, system=FAQ_SYSTEM_PROMPT, model_role="bulk",
+            max_tokens=8000,
+            cache_namespace=f"{topic}:faq_architect{self._retry_suffix()}",
         )
         self._track_llm(result)
 
-        faq_data = result.get("parsed", {})
-        faqs = faq_data.get("faqs", [])
+        parsed = result.get("parsed", {})
+        faqs_by_article = parsed.get("faqs_by_article", {})
 
-        # Persist on the article
-        update_article(article_id, faq_json=json.dumps(faqs))
+        # Persist FAQs on each article in DB
+        total_faqs = 0
+        for art_id, faqs in faqs_by_article.items():
+            if isinstance(faqs, list):
+                total_faqs += len(faqs)
+                try:
+                    update_article(art_id, faq_json=json.dumps(faqs))
+                except Exception as e:
+                    print(f"  ⚠️  Could not save FAQs for {art_id}: {e}")
+
+        print(f"  ✅ Generated {total_faqs} FAQs across {len(faqs_by_article)} articles")
 
         return {
-            "article_id": article_id,
-            "faqs": faqs,
+            "faqs_by_article": faqs_by_article,
+            "total_faqs": total_faqs,
+            "total_articles": len(faqs_by_article),
+            "summary": parsed.get("summary", ""),
         }
-
-    def _output_summary(self, output):
-        return f"{len(output.get('faqs', []))} FAQs for {output.get('article_id','?')}"
-
-
-# ─── Backwards-compatible wrapper ─────────────────────────────────────────
-def run_faq_architect(article_id, keyword_data, cluster_id=None, pipeline_run_id=None):
-    from db.artifacts import create_pipeline_run
-    if pipeline_run_id is None:
-        pipeline_run_id = create_pipeline_run("faq_architect_solo", notes="standalone faq_architect run")
-
-    agent = FAQArchitectAgent(pipeline_run_id, cluster_id=cluster_id, article_id=article_id)
-    output = agent.run({"article_id": article_id, "keyword_data": keyword_data})
-    output["cost_usd"] = agent.cost_usd
-    output["pipeline_run_id"] = pipeline_run_id
-    return output
