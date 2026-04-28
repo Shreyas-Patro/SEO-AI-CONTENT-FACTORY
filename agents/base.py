@@ -1,32 +1,11 @@
 """
-agents/base.py — AgentBase v4.2
+agents/base.py — AgentBase v5.0 (FIXED)
 
-CHANGE FROM v4.1:
-    Auto-merge state values into agent_input BEFORE the agent's own
-    validation runs. This means agents that declare
-    READS_STATE = [TREND_DATA, COMPETITOR_DATA] will receive those values
-    inside their input dict automatically — no orchestrator-level data
-    plumbing needed.
-
-DESIGN CONTRACT:
-    Each agent declares:
-        READS_STATE       = [StateKey, ...]   # auto-injected into input
-        WRITES_STATE      = [StateKey, ...]   # output goes into state
-        OUTPUT_REQUIRED   = ["key", ...]      # output validation
-        OUTPUT_NON_EMPTY  = ["key", ...]      # output validation
-
-The framework (this base class) handles:
-    1. Loading PipelineState
-    2. Auto-injecting READS_STATE values into agent_input
-    3. Persisting input.json
-    4. Calling agent's _execute(state, agent_input)
-    5. Validating output against OUTPUT_REQUIRED / OUTPUT_NON_EMPTY
-    6. Retrying once on validation failure
-    7. Persisting output.json + metadata.json + console
-    8. Pushing WRITES_STATE values back into PipelineState
-    9. Updating SQL run record
-
-Drop into: agents/base.py
+FIXES FROM v4.2:
+    - Added _track_llm(result) convenience method that agents actually call
+    - Added _retry_suffix() for cache namespace differentiation
+    - validate_output is now _validate_output (consistent naming)
+    - Better error messages
 """
 
 import io
@@ -39,7 +18,6 @@ from datetime import datetime
 from db.artifacts import save_artifact
 from db.pipeline_state import PipelineState
 
-# SQL helpers are best-effort — wrap imports
 try:
     from db.sqlite_ops import start_agent_run, complete_agent_run
 except Exception:
@@ -49,16 +27,11 @@ except Exception:
         return None
 
 
-# ─── Exceptions ────────────────────────────────────────────────────────────
 class ValidationError(Exception):
-    """Raised when input/output validation fails after retries."""
     pass
 
 
-# ─── Console capture ───────────────────────────────────────────────────────
 class _ConsoleCapture(io.StringIO):
-    """Capture stdout while ALSO mirroring it to the original stream so the
-    dashboard's live log polling still sees output in real time."""
     def __init__(self, original):
         super().__init__()
         self.original = original
@@ -92,7 +65,6 @@ def _capture_console():
         sys.stderr = old_err
 
 
-# ─── AgentBase ─────────────────────────────────────────────────────────────
 class AgentBase:
     NAME = "base"
 
@@ -116,24 +88,11 @@ class AgentBase:
         self.tokens_out = 0
         self.cost_usd = 0.0
 
-        # Set during the run() lifecycle so agents can inspect their attempt
-        # number (e.g. for prompt tweaking on retry). Default to 0 so agents
-        # that reference it before run() starts don't crash.
         self._retry_attempt = 0
-        self._validation_problems = []  # last-validation problems, for prompt feedback
-        self._retry_problems = []       # alias used by some agents
+        self._validation_problems = []
+        self._retry_problems = []
 
     def __getattr__(self, name):
-        """
-        Forgiving fallback for a SHORT whitelist of private state attrs that
-        older agent code may reference. We deliberately do NOT use a broad
-        pattern match — that would mask method-name typos and create cryptic
-        'int object is not callable' errors when an agent calls
-        self.something_count() and we silently return 0.
-
-        If you hit AttributeError on a NEW private attr name, add it here.
-        """
-        # Only handle attributes starting with _ AND in our explicit allowlist.
         SAFE_DEFAULTS = {
             "_retry_attempt": 0,
             "_retry_problems": [],
@@ -151,6 +110,7 @@ class AgentBase:
             f"{type(self).__name__!r} object has no attribute {name!r}"
         )
 
+    # ─── Cost tracking ─────────────────────────────────────────────────
     def track_serp(self, cache_hit=False):
         if cache_hit:
             self.serp_cache_hits += 1
@@ -166,19 +126,26 @@ class AgentBase:
             self.tokens_out += tokens_out
             self.cost_usd += cost
 
+    def _track_llm(self, result):
+        """Convenience: extract cost info from call_llm_json wrapper dict."""
+        if not isinstance(result, dict):
+            return
+        self.track_llm(
+            tokens_in=result.get("tokens_in", 0) or 0,
+            tokens_out=result.get("tokens_out", 0) or 0,
+            cost=result.get("cost_usd", 0) or 0,
+            cache_hit=bool(result.get("cached")),
+        )
+
+    def _retry_suffix(self):
+        """Return a string to append to cache keys on retry, so we don't
+        get the same broken cached response."""
+        if self._retry_attempt > 1:
+            return f":retry{self._retry_attempt}"
+        return ""
+
+    # ─── Validation ────────────────────────────────────────────────────
     def _validate_and_merge_input(self, state, agent_input):
-        """
-        Core of v4.2: merge READS_STATE values into agent_input automatically.
-
-        For each key in READS_STATE:
-          - If state.shared has it, copy into agent_input under the same key.
-          - If neither state nor agent_input has it (and isn't already truthy),
-            raise ValidationError.
-
-        Result: agent's _execute() can read trend_data from EITHER
-        agent_input["trend_data"] OR state.get(StateKeys.TREND_DATA) — they
-        will be in sync.
-        """
         merged = dict(agent_input) if agent_input else {}
         missing = []
         for key in self.READS_STATE:
@@ -193,12 +160,13 @@ class AgentBase:
             available = list(state.shared.keys())
             raise ValidationError(
                 f"{self.NAME}: missing required state keys {missing}. "
-                f"Upstream agents may have failed. "
-                f"Available state keys: {available}"
+                f"Available: {available}"
             )
         return merged
 
     def _validate_output(self, output):
+        """Override this in subclasses for custom validation.
+        Must return a LIST of problem strings. Empty list = valid."""
         problems = []
         if not isinstance(output, dict):
             return [f"output is not a dict (got {type(output).__name__})"]
@@ -211,11 +179,8 @@ class AgentBase:
                 problems.append(f"output key {key!r} is empty")
         return problems
 
+    # ─── Execution ─────────────────────────────────────────────────────
     def _call_execute(self, state, agent_input):
-        """Subclasses may define _execute with one of two signatures:
-           - (self, agent_input)              # pre-v4 style
-           - (self, state, agent_input)       # v4+ style
-        """
         sig = inspect.signature(self._execute)
         n_params = len(sig.parameters)
         if n_params >= 2:
@@ -224,7 +189,7 @@ class AgentBase:
 
     def _execute(self, state, agent_input):
         raise NotImplementedError(
-            f"{self.NAME}._execute(state, agent_input) must be implemented by subclass"
+            f"{self.NAME}._execute() must be implemented by subclass"
         )
 
     def run(self, agent_input: dict) -> dict:
@@ -240,12 +205,8 @@ class AgentBase:
             print(f"└─ [{self.NAME}] INPUT VALIDATION FAILED: {e}")
             save_artifact(self.run_id, self.NAME, "input", agent_input or {})
             save_artifact(self.run_id, self.NAME, "metadata", {
-                "agent": self.NAME,
-                "status": "failed",
-                "validation_passed": False,
-                "validation_problems": [str(e)],
-                "reads_state": self.READS_STATE,
-                "writes_state": self.WRITES_STATE,
+                "agent": self.NAME, "status": "failed",
+                "validation_passed": False, "validation_problems": [str(e)],
                 "duration_seconds": round(time.time() - t_start, 2),
                 "completed_at": datetime.now().isoformat(),
             })
@@ -255,12 +216,11 @@ class AgentBase:
         # 2. Persist input
         save_artifact(self.run_id, self.NAME, "input", merged_input)
 
-        # 3. Start SQL record (best-effort)
+        # 3. SQL record
         sql_run_id = None
         try:
             sql_run_id = start_agent_run(
-                self.NAME,
-                cluster_id=self.cluster_id,
+                self.NAME, cluster_id=self.cluster_id,
                 article_id=self.article_id,
                 input_summary=str(list(merged_input.keys()))[:500],
             )
@@ -276,42 +236,42 @@ class AgentBase:
         with _capture_console() as (cap_out, cap_err):
             while attempt < self.MAX_VALIDATION_RETRIES:
                 attempt += 1
-                # Expose attempt + last problems to subclasses so they can
-                # adjust prompts on retry
                 self._retry_attempt = attempt
                 self._validation_problems = last_problems
                 self._retry_problems = last_problems
+
                 if attempt > 1:
                     print(f"   [{self.NAME}] retry {attempt}/{self.MAX_VALIDATION_RETRIES} "
-                          f"due to validation problems: {last_problems}")
+                          f"— problems: {last_problems}")
                 try:
                     output = self._call_execute(state, merged_input)
                 except Exception as e:
                     print(f"   [{self.NAME}] EXECUTION ERROR: {type(e).__name__}: {e}")
+                    # Save what we have before re-raising
+                    save_artifact(self.run_id, self.NAME, "console",
+                                  cap_out.getvalue() + cap_err.getvalue())
                     raise
+
                 last_problems = self._validate_output(output)
                 if last_problems:
                     problems_history.append(last_problems)
                 else:
                     break
+
             console_text = cap_out.getvalue() + cap_err.getvalue()
 
         validation_passed = (len(last_problems) == 0)
 
-        # 5. Push WRITES_STATE values into state
+        # 5. Push WRITES_STATE into PipelineState
         if validation_passed and self.WRITES_STATE and isinstance(output, dict):
             for key in self.WRITES_STATE:
                 if key in output:
                     state.set(key, output[key])
-            # If there's a single WRITES_STATE key and output doesn't nest it,
-            # push the whole output under that key.
-            if (
-                len(self.WRITES_STATE) == 1
-                and self.WRITES_STATE[0] not in output
-            ):
+            if (len(self.WRITES_STATE) == 1
+                    and self.WRITES_STATE[0] not in output):
                 state.set(self.WRITES_STATE[0], output)
 
-        # 6. Persist
+        # 6. Persist everything
         save_artifact(self.run_id, self.NAME, "output", output or {})
         save_artifact(self.run_id, self.NAME, "console", console_text)
 
@@ -339,10 +299,8 @@ class AgentBase:
         if sql_run_id:
             try:
                 complete_agent_run(
-                    sql_run_id,
-                    status=meta["status"],
-                    cost_usd=self.cost_usd,
-                    tokens_in=self.tokens_in,
+                    sql_run_id, status=meta["status"],
+                    cost_usd=self.cost_usd, tokens_in=self.tokens_in,
                     tokens_out=self.tokens_out,
                 )
             except Exception:
