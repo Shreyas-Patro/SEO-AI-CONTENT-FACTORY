@@ -1,0 +1,47 @@
+[06:04:34] [orchestrator] Starting layer1...
+[06:04:38] ============================================================
+[06:04:38] [?] ============================================================
+[06:04:38] [Pipeline prun-f1a71367-5fb] Layer 1 starting for 'yelahanka'
+[06:04:38] [pipeline_prun-f1a71367-5fb] [Pipeline prun-f1a71367-5fb] Layer 1 starting for 'yelahanka'
+[06:04:38] ============================================================
+[06:04:38] [?] ============================================================
+[06:04:39] ────────────────────────────────────────────────────────────
+[06:04:39] [?] ────────────────────────────────────────────────────────────
+[06:04:39] [Trend Scout v2] Analyzing: yelahanka
+[06:04:39] [trend_scout_v2] [Trend Scout v2] Analyzing: yelahanka
+[06:04:39] ────────────────────────────────────────────────────────────
+[06:04:39] [?] ────────────────────────────────────────────────────────────
+[06:04:39]   [1/6] Classifying topic...
+[06:04:39] [?]   [1/6] Classifying topic...
+[06:04:39]     Type: locality
+[06:04:39] [?]     Type: locality
+[06:04:39]     Categories: ['locality']
+[06:04:39] [?]     Categories: ['locality']
+[06:04:39]     Localities: ['Yelahanka']
+[06:04:39] [?]     Localities: ['Yelahanka']
+[06:04:39]   [2/6] Generating queries (budget: 15 SERP calls)...
+[06:04:39] [?]   [2/6] Generating queries (budget: 15 SERP calls)...
+[06:04:39]     Generated 15 unique queries across 4 groups
+[06:04:39] [?]     Generated 15 unique queries across 4 groups
+[06:04:39]   [3/6] Fetching Google Trends...
+[06:04:39] [?]   [3/6] Fetching Google Trends...
+[06:04:39]     (trends from cache)
+[06:04:39] [?]     (trends from cache)
+[06:04:39]     Direction: declining
+[06:04:39] [?]     Direction: declining
+[06:04:39]     Rising queries: 0
+[06:04:39] [?]     Rising queries: 0
+[06:04:39]   [4/6] Running 15 SERP searches...
+[06:04:39] [?]   [4/6] Running 15 SERP searches...
+[06:04:39]     [1/15] (core) Yelahanka Bangalore
+[06:04:39] [?]     [1/15] (core) Yelahanka Bangalore
+[06:05:00] Loading weights:   0%|                                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################################| 103/103 [00:00<00:00, 3045.14it/s]
+[06:05:00] [?] Loading weights:   0%|                                                                                                 
+[06:05:09]     [2/15] (core) Yelahanka Bangalore guide
+[06:05:09] [?]     [2/15] (core) Yelahanka Bangalore guide
+[06:05:19]     [3/15] (core) living in Yelahanka Bangalore
+[06:05:19] [?]     [3/15] (core) living in Yelahanka Bangalore
+[06:05:44]     [4/15] (core) Yelahanka review
+[06:05:44] [?]     [4/15] (core) Yelahanka review
+[06:05:47]   Stopping...
+[06:05:47] [?]   Stopping...

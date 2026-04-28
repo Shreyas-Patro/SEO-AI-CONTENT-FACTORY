@@ -1,0 +1,338 @@
+
+============================================================
+[Pipeline prun-9448195b-558] Layer 1 starting for 'Sarjapur'
+============================================================
+============================================================
+[Pipeline prun-9448195b-558] Layer 1 starting for 'Sarjapur'
+============================================================
+
+
+============================================================
+[Pipeline prun-9448195b-558] Layer 1 starting for 'Sarjapur'
+============================================================
+============================================================
+[Pipeline prun-9448195b-558] Layer 1 starting for 'Sarjapur'
+============================================================
+
+
+────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────
+
+[Trend Scout v2] Analyzing: Sarjapur[Trend Scout v2] Analyzing: Sarjapur
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  [1/6] Classifying topic...  [1/6] Classifying topic...
+
+    Type: locality    Type: locality
+
+    Categories: ['locality']    Categories: ['locality']
+
+    Localities: ['Sarjapur']    Localities: ['Sarjapur']
+
+  [2/6] Generating queries (budget: 15 SERP calls)...  [2/6] Generating queries (budget: 15 SERP calls)...
+
+    Generated 15 unique queries across 4 groups    Generated 15 unique queries across 4 groups
+
+  [3/6] Fetching Google Trends...  [3/6] Fetching Google Trends...
+
+────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────
+
+
+[Trend Scout v2] Analyzing: Sarjapur[Trend Scout v2] Analyzing: Sarjapur
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  [1/6] Classifying topic...  [1/6] Classifying topic...
+
+    Type: locality    Type: locality
+
+    Categories: ['locality']    Categories: ['locality']
+
+    Localities: ['Sarjapur']    Localities: ['Sarjapur']
+
+  [2/6] Generating queries (budget: 15 SERP calls)...  [2/6] Generating queries (budget: 15 SERP calls)...
+
+    Generated 15 unique queries across 4 groups    Generated 15 unique queries across 4 groups
+
+  [3/6] Fetching Google Trends...  [3/6] Fetching Google Trends...
+
+⚠️  SerpAPI Trends error: Expecting value: line 1 column 1 (char 0)⚠️  SerpAPI Trends error: Expecting value: line 1 column 1 (char 0)
+
+    Trends unavailable: Expecting value: line 1 column 1 (char 0)    Trends unavailable: Expecting value: line 1 column 1 (char 0)
+
+  [4/6] Running 15 SERP searches...  [4/6] Running 15 SERP searches...
+
+    [1/15] (core) Sarjapur Bangalore    [1/15] (core) Sarjapur Bangalore
+
+    [2/15] (core) Sarjapur Bangalore guide    [2/15] (core) Sarjapur Bangalore guide
+
+    [3/15] (core) living in Sarjapur Bangalore    [3/15] (core) living in Sarjapur Bangalore
+
+    [4/15] (core) Sarjapur review    [4/15] (core) Sarjapur review
+
+    SerpAPI error for 'Sarjapur review': Expecting value: line 1 column 1 (char 0)    SerpAPI error for 'Sarjapur review': Expecting value: line 1 column 1 (char 0)
+
+    [5/15] (property) Sarjapur property price    [5/15] (property) Sarjapur property price
+
+    [6/15] (property) Sarjapur rent    [6/15] (property) Sarjapur rent
+
+    [7/15] (property) 2BHK rent Sarjapur    [7/15] (property) 2BHK rent Sarjapur
+
+    [8/15] (property) Sarjapur flat for sale    [8/15] (property) Sarjapur flat for sale
+
+    [9/15] (property) Sarjapur property rate per sq ft    [9/15] (property) Sarjapur property rate per sq ft
+
+    [10/15] (property) Sarjapur new projects    [10/15] (property) Sarjapur new projects
+
+    [11/15] (lifestyle) things to do in Sarjapur    [11/15] (lifestyle) things to do in Sarjapur
+
+    [12/15] (lifestyle) best restaurants Sarjapur    [12/15] (lifestyle) best restaurants Sarjapur
+
+⚠️  SerpAPI Trends error: Expecting value: line 1 column 1 (char 0)⚠️  SerpAPI Trends error: Expecting value: line 1 column 1 (char 0)
+
+    Trends unavailable: Expecting value: line 1 column 1 (char 0)    Trends unavailable: Expecting value: line 1 column 1 (char 0)
+
+  [4/6] Running 15 SERP searches...  [4/6] Running 15 SERP searches...
+
+    [1/15] (core) Sarjapur Bangalore    [1/15] (core) Sarjapur Bangalore
+
+    [2/15] (core) Sarjapur Bangalore guide    [2/15] (core) Sarjapur Bangalore guide
+
+    [3/15] (core) living in Sarjapur Bangalore    [3/15] (core) living in Sarjapur Bangalore
+
+    [4/15] (core) Sarjapur review    [4/15] (core) Sarjapur review
+
+    [5/15] (property) Sarjapur property price    [5/15] (property) Sarjapur property price
+
+    [6/15] (property) Sarjapur rent    [6/15] (property) Sarjapur rent
+
+    [7/15] (property) 2BHK rent Sarjapur    [7/15] (property) 2BHK rent Sarjapur
+
+    [8/15] (property) Sarjapur flat for sale    [8/15] (property) Sarjapur flat for sale
+
+    [9/15] (property) Sarjapur property rate per sq ft    [9/15] (property) Sarjapur property rate per sq ft
+
+    [10/15] (property) Sarjapur new projects    [10/15] (property) Sarjapur new projects
+
+    [11/15] (lifestyle) things to do in Sarjapur    [11/15] (lifestyle) things to do in Sarjapur
+
+    [12/15] (lifestyle) best restaurants Sarjapur    [12/15] (lifestyle) best restaurants Sarjapur
+
+    SerpAPI error for 'best restaurants Sarjapur': Expecting value: line 1 column 1 (char 0)    SerpAPI error for 'best restaurants Sarjapur': Expecting value: line 1 column 1 (char 0)
+
+    [13/15] (lifestyle) schools near Sarjapur    [13/15] (lifestyle) schools near Sarjapur
+
+    [13/15] (lifestyle) schools near Sarjapur    [13/15] (lifestyle) schools near Sarjapur
+
+    [14/15] (lifestyle) hospitals near Sarjapur    [14/15] (lifestyle) hospitals near Sarjapur    [14/15] (lifestyle) hospitals near Sarjapur    [14/15] (lifestyle) hospitals near Sarjapur
+
+
+
+    SerpAPI error for 'hospitals near Sarjapur': Expecting value: line 1 column 1 (char 0)    SerpAPI error for 'hospitals near Sarjapur': Expecting value: line 1 column 1 (char 0)
+
+    [15/15] (comparison) Sarjapur vs Whitefield    [15/15] (comparison) Sarjapur vs Whitefield
+
+    Total PAA questions: 23    Total PAA questions: 23
+
+    Total related searches: 81    Total related searches: 81
+
+    Enriching trend data with SERP proxy signals...    Enriching trend data with SERP proxy signals...
+
+  [5/6] Fetching autocomplete (5 calls)...  [5/6] Fetching autocomplete (5 calls)...
+
+    SerpAPI error for 'hospitals near Sarjapur': Expecting value: line 1 column 1 (char 0)    SerpAPI error for 'hospitals near Sarjapur': Expecting value: line 1 column 1 (char 0)
+
+    [15/15] (comparison) Sarjapur vs Whitefield    [15/15] (comparison) Sarjapur vs Whitefield
+
+    Total PAA questions: 28    Total PAA questions: 28
+
+    Total related searches: 95    Total related searches: 95
+
+    Enriching trend data with SERP proxy signals...    Enriching trend data with SERP proxy signals...
+
+  [5/6] Fetching autocomplete (5 calls)...  [5/6] Fetching autocomplete (5 calls)...
+
+    Found 60 autocomplete suggestions    Found 60 autocomplete suggestions
+
+  [6/6] Running LLM analysis...  [6/6] Running LLM analysis...
+
+    Found 60 autocomplete suggestions    Found 60 autocomplete suggestions
+
+  [6/6] Running LLM analysis...  [6/6] Running LLM analysis...
+
+
+  ──────────────────────────────────────────────────
+  ──────────────────────────────────────────────────
+
+  ✅ Trend Scout v2 complete  ✅ Trend Scout v2 complete
+
+     Topic type: locality     Topic type: locality
+
+     PAA questions: 23     PAA questions: 23
+
+     Related searches: 81     Related searches: 81
+
+     Autocomplete: 60     Autocomplete: 60
+
+     High AEO opportunities: 15     High AEO opportunities: 15
+
+     Competitor coverage: {"nobroker.in": 6, "99acres.com": 7, "magicbricks.com": 7, "housing.com": 3}     Competitor coverage: {"nobroker.in": 6, "99acres.com": 7, "magicbricks.com": 7, "housing.com": 3}
+
+     SERP calls used: 15/15     SERP calls used: 15/15
+
+     Cost: $0.0187     Cost: $0.0187
+
+  ──────────────────────────────────────────────────  ──────────────────────────────────────────────────
+
+
+┌─ [competitor_spy] starting (run=prun-9448195b-558)
+┌─ [competitor_spy] starting (run=prun-9448195b-558)
+
+[competitor_spy] Analyzing: Sarjapur[competitor_spy] Analyzing: Sarjapur
+
+  Built 6 probe queries  Built 6 probe queries
+
+  [1/6] Sarjapur property  [1/6] Sarjapur property
+
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+
+
+  ──────────────────────────────────────────────────
+  ──────────────────────────────────────────────────
+
+  ✅ Trend Scout v2 complete  ✅ Trend Scout v2 complete
+
+     Topic type: locality     Topic type: locality
+
+     PAA questions: 28     PAA questions: 28
+
+     Related searches: 95     Related searches: 95
+
+     Autocomplete: 60     Autocomplete: 60
+
+     High AEO opportunities: 15     High AEO opportunities: 15
+
+     Competitor coverage: {"nobroker.in": 7, "99acres.com": 8, "magicbricks.com": 8, "housing.com": 3}     Competitor coverage: {"nobroker.in": 7, "99acres.com": 8, "magicbricks.com": 8, "housing.com": 3}
+
+     SERP calls used: 15/15     SERP calls used: 15/15
+
+     Cost: $0.0013     Cost: $0.0013
+
+  ──────────────────────────────────────────────────  ──────────────────────────────────────────────────
+
+
+┌─ [competitor_spy] starting (run=prun-9448195b-558)
+┌─ [competitor_spy] starting (run=prun-9448195b-558)
+
+[competitor_spy] Analyzing: Sarjapur[competitor_spy] Analyzing: Sarjapur
+
+  Built 6 probe queries  Built 6 probe queries
+
+  [1/6] Sarjapur property  [1/6] Sarjapur property
+
+  [2/6] Sarjapur apartments  [2/6] Sarjapur apartments
+
+  [2/6] Sarjapur apartments  [2/6] Sarjapur apartments
+
+  [3/6] Sarjapur 2bhk for sale  [3/6] Sarjapur 2bhk for sale  [3/6] Sarjapur 2bhk for sale  [3/6] Sarjapur 2bhk for sale
+
+
+
+  [4/6] buy flat in Sarjapur  [4/6] buy flat in Sarjapur
+  [4/6] buy flat in Sarjapur
+  [4/6] buy flat in Sarjapur
+
+  [5/6] Sarjapur real estate review  [5/6] Sarjapur real estate review  [5/6] Sarjapur real estate review
+
+  [5/6] Sarjapur real estate review
+
+  [6/6] living in Sarjapur  [6/6] living in Sarjapur  [6/6] living in Sarjapur  [6/6] living in Sarjapur
+
+
+
+  ✅ 'Sarjapur': magicbricks=6, nobroker=6, housing=2, 99acres=9 | 0 uncovered queries  ✅ 'Sarjapur': magicbricks=6, nobroker=6, housing=2, 99acres=9 | 0 uncovered queries  ✅ 'Sarjapur': magicbricks=6, nobroker=6, housing=2, 99acres=9 | 0 uncovered queries  ✅ 'Sarjapur': magicbricks=6, nobroker=6, housing=2, 99acres=9 | 0 uncovered queries
+
+
+
+└─ [competitor_spy] complete in 31.56s ($0.0000, 6 SERP, 0 LLM)└─ [competitor_spy] complete in 31.56s ($0.0000, 6 SERP, 0 LLM)
+
+└─ [competitor_spy] complete in 36.67s ($0.0000, 6 SERP, 0 LLM)└─ [competitor_spy] complete in 36.67s ($0.0000, 6 SERP, 0 LLM)
+
+
+┌─ [keyword_mapper] starting (run=prun-9448195b-558)
+┌─ [keyword_mapper] starting (run=prun-9448195b-558)
+
+
+┌─ [keyword_mapper] starting (run=prun-9448195b-558)
+┌─ [keyword_mapper] starting (run=prun-9448195b-558)
+
+[keyword_mapper] Mapping keywords for: Sarjapur[keyword_mapper] Mapping keywords for: Sarjapur
+
+  Calling LLM (payload size: 324 chars)  Calling LLM (payload size: 324 chars)
+
+[keyword_mapper] Mapping keywords for: Sarjapur[keyword_mapper] Mapping keywords for: Sarjapur
+
+  Calling LLM (payload size: 324 chars)  Calling LLM (payload size: 324 chars)
+
+  Got 0 keyword groups from LLM  Got 0 keyword groups from LLM
+
+  ✅ 0 clean keyword groups produced  ✅ 0 clean keyword groups produced
+
+   [keyword_mapper] retry 2/2 due to validation problems: ["output key 'keyword_groups' is empty"]   [keyword_mapper] retry 2/2 due to validation problems: ["output key 'keyword_groups' is empty"]
+
+[keyword_mapper] Mapping keywords for: Sarjapur[keyword_mapper] Mapping keywords for: Sarjapur
+
+  Calling LLM (payload size: 442 chars)  Calling LLM (payload size: 442 chars)  Got 0 keyword groups from LLM
+
+  Got 0 keyword groups from LLM
+
+  ✅ 0 clean keyword groups produced  ✅ 0 clean keyword groups produced
+
+   [keyword_mapper] retry 2/2 due to validation problems: ["output key 'keyword_groups' is empty"]   [keyword_mapper] retry 2/2 due to validation problems: ["output key 'keyword_groups' is empty"]
+
+[keyword_mapper] Mapping keywords for: Sarjapur[keyword_mapper] Mapping keywords for: Sarjapur
+
+  Calling LLM (payload size: 442 chars)  Calling LLM (payload size: 442 chars)
+
+  Got 0 keyword groups from LLM  Got 0 keyword groups from LLM
+
+  ✅ 0 clean keyword groups produced  ✅ 0 clean keyword groups produced
+
+  Got 0 keyword groups from LLM  Got 0 keyword groups from LLM
+
+  ✅ 0 clean keyword groups produced  ✅ 0 clean keyword groups produced
+
+└─ [keyword_mapper] FAILED validation: ["output key 'keyword_groups' is empty"]└─ [keyword_mapper] FAILED validation: ["output key 'keyword_groups' is empty"]
+
+
+
+❌ FATAL: ValidationError: keyword_mapper output validation failed: ["output key 'keyword_groups' is empty"]
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\temp_dash2.py", line 147, in _target
+    layer_fn(run_id)
+    ~~~~~~~~^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 111, in run_layer1
+    keyword_output = mapper.run({"topic": topic})
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 358, in run
+    raise ValidationError(
+        f"{self.NAME} output validation failed: {last_problems}"
+    )
+agents.base.ValidationError: keyword_mapper output validation failed: ["output key 'keyword_groups' is empty"]
+
+
+❌ FATAL: ValidationError: keyword_mapper output validation failed: ["output key 'keyword_groups' is empty"]
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\temp_dash2.py", line 147, in _target
+    layer_fn(run_id)
+    ~~~~~~~~^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 111, in run_layer1
+    keyword_output = mapper.run({"topic": topic})
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 358, in run
+    raise ValidationError(
+        f"{self.NAME} output validation failed: {last_problems}"
+    )
+agents.base.ValidationError: keyword_mapper output validation failed: ["output key 'keyword_groups' is empty"]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################| 103/103 [00:00<00:00, 1999.50it/s]

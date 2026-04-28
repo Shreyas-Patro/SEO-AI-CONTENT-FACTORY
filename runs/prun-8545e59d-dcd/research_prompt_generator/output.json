@@ -1,0 +1,4 @@
+{
+  "error": "research_prompt_generator execution failed: KeyError: 'cluster_plan'",
+  "agent": "research_prompt_generator"
+}

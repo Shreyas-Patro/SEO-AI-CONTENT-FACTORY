@@ -1,0 +1,18 @@
+[keyword_mapper] Mapping keywords for: Sarjapur
+  Calling LLM (payload size: 324 chars)
+[keyword_mapper] Mapping keywords for: Sarjapur
+  Calling LLM (payload size: 324 chars)
+  Got 0 keyword groups from LLM
+  ✅ 0 clean keyword groups produced
+   [keyword_mapper] retry 2/2 due to validation problems: ["output key 'keyword_groups' is empty"]
+[keyword_mapper] Mapping keywords for: Sarjapur
+  Calling LLM (payload size: 442 chars)
+  Got 0 keyword groups from LLM
+  ✅ 0 clean keyword groups produced
+   [keyword_mapper] retry 2/2 due to validation problems: ["output key 'keyword_groups' is empty"]
+[keyword_mapper] Mapping keywords for: Sarjapur
+  Calling LLM (payload size: 442 chars)
+  Got 0 keyword groups from LLM
+  ✅ 0 clean keyword groups produced
+  Got 0 keyword groups from LLM
+  ✅ 0 clean keyword groups produced

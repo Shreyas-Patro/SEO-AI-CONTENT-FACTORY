@@ -1,0 +1,2359 @@
+{
+  "run_id": "prun-a51029ca-3f2",
+  "topic": "jp nagar",
+  "stage": "migrated_completed",
+  "agents_completed": [
+    "competitor_spy",
+    "content_architect",
+    "faq_architect",
+    "keyword_mapper",
+    "research_prompt_generator",
+    "trend_scout"
+  ],
+  "agents_failed": [],
+  "shared": {
+    "competitor_data": {
+      "topic": "jp nagar",
+      "raw_results": {
+        "magicbricks.com": [
+          {
+            "title": "JP Nagar, Bangalore: Map, Photo, Video, Price Trends, ...",
+            "link": "https://www.magicbricks.com/JP-Nagar-in-Bangalore-Overview",
+            "snippet": "JP Nagar is a prime locality in South Bangalore located between Bannerghatta Road and Kanakpura road. Prime residential areas in proximity are Jayanagar, ..."
+          },
+          {
+            "title": "27+ Villas for Sale in JP Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/villa-for-sale-in-jp-nagar-bangalore-pppfs",
+            "snippet": "Explore villas for sale in JP Nagar Bangalore in the price range of \u20b975 Lac - \u20b97.93 Cr with 1-5 BHK options. You can choose luxury villas in JP Nagar from 29+ ..."
+          },
+          {
+            "title": "Property in JP Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/property-for-sale-in-jp-nagar-bangalore-pppfs",
+            "snippet": "You can get a property for sale in JP Nagar at a price range of \u20b969 Lac - \u20b98.65 Cr. Some of the popular localities around JP Nagar are Kanakapura Road, ..."
+          },
+          {
+            "title": "Phase 5 JP Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/Phase-5-JP-Nagar-in-Bangalore-Overview",
+            "snippet": "JP Nagar Phase 5 is an upmarket residential locality in the South of Bangalore, adjacent to the outer ring road. Vinayaka Nagar, Nanjundeswara Layout, Ayodhya ..."
+          },
+          {
+            "title": "721+ Flats for Sale in JP Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-jp-nagar-bangalore-for-sale-pppfs",
+            "snippet": "Discover 1-5 BHK flats for sale in JP Nagar priced between \u20b971.6 Lac - \u20b95.52 Cr. You can choose from 450+ resale flats, 518+ ready-to-move apartments, and 344+ ..."
+          },
+          {
+            "title": "Locality Review: JP Nagar, Bengaluru",
+            "link": "https://www.magicbricks.com/blog/locality-review-jp-nagar-bengaluru/130144.html",
+            "snippet": "JP Nagar, also known as Jayaprakash Narayan Nagar, is one of Bengaluru's oldest and most well-planned suburbs."
+          },
+          {
+            "title": "Phase 7 JP Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/Phase-7-JP-Nagar-in-Bangalore-Overview",
+            "snippet": "JP Nagar Phase 7 is a good locality. It has good connectivity to school, college, metro station, hospital, bank and market."
+          },
+          {
+            "title": "Flats for Rent in JP Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/flats-for-rent-in-jp-nagar-bangalore-pppfr",
+            "snippet": "Explore 1-5 BHK rental flats in JP Nagar priced within \u20b912,000 - \u20b92.6 Lac. The rent mostly depends on property size and the amenities provided in the flat."
+          },
+          {
+            "title": "Plots for Sale in JP Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/residential-plots-land-for-sale-in-jp-nagar-bangalore-pppfs",
+            "snippet": "Residential plots in JP Nagar are available at an average price of \u20b93.45 Cr and a median price of \u20b91.92 Cr, with a QoQ rise of -1.73%. The other popular nearby ..."
+          },
+          {
+            "title": "Phase 6 JP Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/Phase-6-JP-Nagar-in-Bangalore-Overview",
+            "snippet": "JP Nagar Phase 6 is a good locality. It has good connectivity to school, college, hospital, bank, market, very near JP Nagar Metro Station and Off Outer Ring ..."
+          }
+        ],
+        "nobroker.in": [
+          {
+            "title": "JP Nagar, Bangalore - Map, Pincode, Property Rates, ...",
+            "link": "https://www.nobroker.in/locality-iq/j-p-nagar-bangalore-liqlt",
+            "snippet": "JP Nagar is a prominent residential neighbourhood located in South Bangalore. Situated off NH44, it is one of the most sought-after locations in the city."
+          },
+          {
+            "title": "Flats for Sale in J. P. Nagar Bangalore",
+            "link": "https://www.nobroker.in/flats-for-sale-in-j_p_nagar_bangalore",
+            "snippet": "389 - Flats for Sale in J. P. Nagar Bangalore | Apartments for Sale in J. P. Nagar Bangalore \u00b7 3 BHK Apartment In Gokulam Complex, For Sale In Subramanyapura."
+          },
+          {
+            "title": "Independent House for Sale in J. P. Nagar , Bangalore",
+            "link": "https://www.nobroker.in/independent-house-for-sale-in-j-p-nagar-phase-5-j-p-nagar-bangalore",
+            "snippet": "In J p nagar phase 5, you'll discover 11 luxury houses for sale. These homes offer a blend of sophistication and comfort. With a diverse range to explore, you ..."
+          },
+          {
+            "title": "jp nagar bangalore",
+            "link": "https://www.nobroker.in/locality-iq/jp-nagar-bangalore-liqlt",
+            "snippet": "JP Nagar is a prominent residential neighbourhood located in South Bangalore. Situated off NH44, it is one of the most sought-after locations in the city."
+          },
+          {
+            "title": "Flats for Rent in J. P. Nagar , Bangalore",
+            "link": "https://www.nobroker.in/flats-for-rent-in-j_p_nagar_bangalore",
+            "snippet": "4 BHK Flats for Rent in J. P. Nagar. 4 BHK - 1,500 sq. ft. to 4,950 sq. ft. Monthly rent generally in J. P. Nagar falls between \u20b935,000 to \u20b9265,000 per month, ..."
+          },
+          {
+            "title": "95 - Residential Lands/ Plots For Sale in JP Nagar Bangalore",
+            "link": "https://www.nobroker.in/residential-land-plots-for-sale-in-j_p_nagar_bangalore",
+            "snippet": "Looking to buy residential plots/ lands for sale in J. P. Nagar Bangalore? Explore 95+ verified residential plots/ lands in J. P. Nagar Bangalore for sale ..."
+          },
+          {
+            "title": "Independent House for Sale in J. P. Nagar , Bangalore",
+            "link": "https://www.nobroker.in/independent-house-for-sale-in-jp-nagar-9th-phase-j-p-nagar-bangalore",
+            "snippet": "In Jp nagar 9th phase, you'll discover 15 luxury houses for sale. These homes offer a blend of sophistication and comfort. With a diverse range to explore, you ..."
+          },
+          {
+            "title": "Rental Houses in JP Nagar 1st Phase Karnataka Without ...",
+            "link": "https://www.nobroker.in/property/rent/bangalore/JP%20Nagar%201st%20Phase?searchParam=W3sibGF0IjoxMi45MTEyNDcsImxvbiI6NzcuNTc0MDgxOTk5OTk5OTksInNob3dNYXAiOmZhbHNlLCJwbGFjZUlkIjoiQ2hJSmkyZWFjbkFWcmpzUmZSNXF4c1lHTkZrIiwicGxhY2VOYW1lIjoiSlAgTmFnYXIgMXN0IFBoYXNlIiwiY2l0eSI6ImJhbmdhbG9yZSJ9XQ==",
+            "snippet": "Contact Owners Directly - Get Without Brokerage Flats for Rent in JP Nagar 1st Phase, Bangalore Karnataka along with Rent Agreement and BEST Trusted local ..."
+          },
+          {
+            "title": "Saidarshan Apartments in JP Nagar, Bangalore",
+            "link": "https://www.nobroker.in/saidarshan-apartments-jp-nagar_bangalore-prjt-63abedfa696fd2000159e96e",
+            "snippet": "Saidarshan Apartments residential project offers a range of amenities including a swimming pool, gym, children's play area, clubhouse, and more. Downloading the ..."
+          },
+          {
+            "title": "New Projects in J P Nagar Bangalore | Latest Residential ...",
+            "link": "https://www.nobroker.in/new-projects-in-j-p-nagar-bangalore",
+            "snippet": "Discover the best new projects in J P Nagar, Bangalore. Explore upcoming residential projects, pre-launch properties, ready-to-move-in projects and ..."
+          }
+        ],
+        "housing.com": [
+          {
+            "title": "JP Nagar, Bengaluru - Housing",
+            "link": "https://housing.com/jp-nagar-bengaluru-overview-P3yqqmgmdvlqoqz0n",
+            "snippet": "JP Nagar is a prime locality in South Bangalore. Prime residential areas in proximity are Jayanagar, Banashankari, Bannerghatta Road, and BTM Layout."
+          },
+          {
+            "title": "JP Nagar, Bengaluru Pin Code Number, Taluk / ... - Housing",
+            "link": "https://housing.com/pin-code/jp-nagar-bangalore-pin-code-560078",
+            "snippet": "JP Nagar is a prime locality in South Bangalore. Prime residential areas in proximity are Jayanagar, Banashankari, Bannerghatta Road, and BTM Layout."
+          },
+          {
+            "title": "310+ Apartments for Rent in JP Nagar, Bengaluru - Housing",
+            "link": "https://housing.com/rent/apartments-for-rent-in-jp-nagar-bengaluru-M1P3yqqmgmdvlqoqz0n",
+            "snippet": "Explore 310+ Apartments for Rent in JP Nagar, Bengaluru on Housing.com. Find Furnished, \u2713570+ Semi Furnished, \u271326+ UnFurnished Flats on rent."
+          },
+          {
+            "title": "JP Nagar, 4th Phase, JP Nagar, Bengaluru",
+            "link": "https://housing.com/jp-nagar-4th-phase-jp-nagar-bengaluru-overview-Pyij467cdkjrzs0g",
+            "snippet": "JP Nagar is an neighbourhood in 4th Phase, JP Nagar, South Bangalore, Bengaluru, Bangalore Urban District, Karnataka, India. JP Nagar (0.0 Km), ..."
+          },
+          {
+            "title": "Independent Houses for Sale in JP Nagar, Bengaluru",
+            "link": "https://housing.com/in/buy/bengaluru/jp-nagar-gid/house-fid/",
+            "snippet": "Explore 95+ Houses for Sale in JP Nagar, Bengaluru on Housing.com. Find 1 RK, \u27133+ 1 BHK, \u27132+ 2 BHK, \u271328+ 3 BHK. \u2713100% Verified Properties. Enquire Now!"
+          },
+          {
+            "title": "1 BHK Flats for Rent in JP Nagar, Bengaluru - Housing",
+            "link": "https://housing.com/rent/1bhk-flats-for-rent-in-jp-nagar-bengaluru-C2P3yqqmgmdvlqoqz0n",
+            "snippet": "The average price to rent a 1 BHK Flats in JP Nagar, Bangalore is Rs. 15,285. Know more. How many fully furnished Flats 1 BHK for rent are available in JP Nagar ..."
+          },
+          {
+            "title": "7th Phase, JP Nagar, Bengaluru - Housing",
+            "link": "https://housing.com/7th-phase-jp-nagar-bengaluru-overview-P6wk55t539u5si8bx",
+            "snippet": "JP Nagar Phase 7 is a residential area on Bangalore's southern outskirts. Suburbs of JP Nagar Phase 7 include Nrupathunga Nagar, Silver Oak Layout, ..."
+          },
+          {
+            "title": "Property Rates in J.P. Nagar Bengaluru",
+            "link": "https://housing.com/news/property-trends-j-p-nagar-bengaluru/",
+            "snippet": "JP Nagar is an established residential hub of Bangalore with many arterial roads providing excellent connectivity to other parts of the city."
+          },
+          {
+            "title": "Residential Land / Plots for sale in JP Nagar, Bengaluru",
+            "link": "https://housing.com/in/buy/bengaluru/jp-nagar-gid/plots-fid/",
+            "snippet": "for Plots in JP Nagar, Bangalore? The average price per sqft for Plots in JP Nagar, Bangalore is Rs. 14,418. The price range per sqft is Rs. 4,299 - ..."
+          },
+          {
+            "title": "4th Phase, JP Nagar, Bengaluru",
+            "link": "https://housing.com/4th-phase-jp-nagar-bengaluru-overview-P1t4rmifgy450ft6x",
+            "snippet": "4th Phase is an sublocality in JP Nagar, South Bangalore, Bengaluru, Bangalore Urban District, Karnataka, India. JP Nagar (0.0 Km), Jayanagar (2.32 Km) ..."
+          }
+        ],
+        "99acres.com": [
+          {
+            "title": "JP Nagar Bangalore",
+            "link": "https://www.99acres.com/jp-nagar-bangalore-south-overview-piffid",
+            "snippet": "JP Nagar is a mid segment locality situated in the southern part of Bangalore. This locality is near RBI Layout, Puttenahalli and 7th Phase JP Nagar. This ..."
+          },
+          {
+            "title": "Ratings & Reviews of JP Nagar, Bangalore",
+            "link": "https://www.99acres.com/jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "JP Nagar Bangalore has 4.4 star rating out of 5. Know positive and negative things about JP Nagar through 1322 tenants/owners genuine reviews."
+          },
+          {
+            "title": "Property in JP Nagar, Bangalore",
+            "link": "https://www.99acres.com/property-in-jp-nagar-bangalore-south-ffid",
+            "snippet": "Find 1040+ Properties for sale in JP Nagar, Bangalore on 99acres.com, India's No.1 Real Estate Portal. Buy Verified Property in JP Nagar, Bangalore with ..."
+          },
+          {
+            "title": "Apartments in JP Nagar, Bangalore - 576+ Flats for sale in ...",
+            "link": "https://www.99acres.com/flats-in-jp-nagar-bangalore-south-ffid",
+            "snippet": "Spacious 1,2,3 BHK apartments in 9th Phase JP Nagar are available for sale.Check out latest property options at Sattva Forest Ridge housing society."
+          },
+          {
+            "title": "Ratings & Reviews of 2nd Phase JP Nagar, Bangalore",
+            "link": "https://www.99acres.com/2nd-phase-jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "JP Nagar 2nd Phase area is very good. Infrastructure is much better than most locality with well built roads, drainage systems. Transportation system is also ..."
+          },
+          {
+            "title": "214+ Residential Land / Plots in JP Nagar, Bangalore",
+            "link": "https://www.99acres.com/residential-land-in-jp-nagar-bangalore-south-ffid",
+            "snippet": "Find Plots for sale in JP Nagar, Bangalore on 99acres.com, India's No.1 Real Estate Portal. Explore Verified Residential Land / Plots in JP Nagar, ..."
+          },
+          {
+            "title": "JP Nagar: A popular rental hub in Bangalore",
+            "link": "https://www.99acres.com/articles/jp-nagar-a-popular-rental-hub-in-bangalore.html",
+            "snippet": "Planned by the Bangalore Development Authority (BDA), it is a hit among tenants due to excellent connectivity via road and metro, proximity to ..."
+          },
+          {
+            "title": "Ratings & Reviews of 8th Phase JP Nagar, Bangalore",
+            "link": "https://www.99acres.com/8th-phase-jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "8th Phase JP Nagar Bangalore has 4.3 star rating out of 5. Know positive and negative things about 8th Phase JP Nagar through 114 tenants/owners genuine ..."
+          },
+          {
+            "title": "New Projects in JP Nagar Bangalore for Sale",
+            "link": "https://www.99acres.com/new-projects-in-jp-nagar-bangalore-south-ffid",
+            "snippet": "New Projects in JP Nagar Bangalore for Sale ; Sattva Forest Ridge. 9th Phase JP Nagar, Bangalore South. \u20b99.5K/sqft onwards. ~ (super built-up area) \u00b7 \u20b969.5 L+ ; HM ..."
+          },
+          {
+            "title": "Ratings & Reviews of 7th Phase JP Nagar, Bangalore",
+            "link": "https://www.99acres.com/7th-phase-jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "7th Phase JP Nagar Bangalore has 4.3 star rating out of 5. Know positive and negative things about 7th Phase JP Nagar through 196 tenants/owners genuine ..."
+          }
+        ]
+      },
+      "competitor_coverage": [
+        {
+          "competitor": "magicbricks.com",
+          "articles_found": 10,
+          "articles": [
+            {
+              "title": "JP Nagar, Bangalore: Map, Photo, Video, Price Trends, ...",
+              "url": "https://www.magicbricks.com/JP-Nagar-in-Bangalore-Overview",
+              "content_type": "hub",
+              "estimated_word_count": 2500,
+              "strengths": "Comprehensive locality overview with price trends, maps, and multimedia. Strong SEO foundation with broad keyword coverage.",
+              "weaknesses": "Generic overview lacks depth on specific phases, limited lifestyle/community insights, no investment analysis or ROI data."
+            },
+            {
+              "title": "27+ Villas for Sale in JP Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/villa-for-sale-in-jp-nagar-bangalore-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 1200,
+              "strengths": "Large inventory (27+ villas), price range transparency (\u20b975L-\u20b97.93Cr), BHK filtering options.",
+              "weaknesses": "Pure listing page, no editorial content on villa living, builder profiles, or villa-specific amenities comparison."
+            },
+            {
+              "title": "Property in JP Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/property-for-sale-in-jp-nagar-bangalore-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 1200,
+              "strengths": "Broad property listings across categories, wide price range (\u20b969L-\u20b98.65Cr), nearby locality cross-linking.",
+              "weaknesses": "Aggregated listing page without segmentation by property type or phase-specific insights."
+            },
+            {
+              "title": "Phase 5 JP Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/Phase-5-JP-Nagar-in-Bangalore-Overview",
+              "content_type": "spoke",
+              "estimated_word_count": 1500,
+              "strengths": "Phase-specific overview, mentions adjacent areas (Vinayaka Nagar, Nanjundeswara Layout), good for micro-location SEO.",
+              "weaknesses": "Minimal content depth, no phase comparison, lacks infrastructure/connectivity details specific to Phase 5."
+            },
+            {
+              "title": "721+ Flats for Sale in JP Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/flats-in-jp-nagar-bangalore-for-sale-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 1200,
+              "strengths": "Massive inventory (721+ flats), segmentation by resale/ready-to-move/under-construction, price transparency.",
+              "weaknesses": "No editorial guidance on flat selection, builder reputation, or phase-wise flat availability analysis."
+            },
+            {
+              "title": "Locality Review: JP Nagar, Bengaluru",
+              "url": "https://www.magicbricks.com/blog/locality-review-jp-nagar-bengaluru/130144.html",
+              "content_type": "blog",
+              "estimated_word_count": 1800,
+              "strengths": "Editorial content positioning JP Nagar as 'oldest and most well-planned suburb', good for brand authority.",
+              "weaknesses": "Generic review format, no data-driven insights, missing investment potential analysis, no phase comparisons."
+            },
+            {
+              "title": "Phase 7 JP Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/Phase-7-JP-Nagar-in-Bangalore-Overview",
+              "content_type": "spoke",
+              "estimated_word_count": 1200,
+              "strengths": "Phase-specific content, mentions proximity to metro station, schools, colleges, hospitals.",
+              "weaknesses": "Superficial amenity listing, no depth on connectivity metrics, traffic patterns, or phase-specific pricing trends."
+            },
+            {
+              "title": "Flats for Rent in JP Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/flats-for-rent-in-jp-nagar-bangalore-pppfr",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "Rental inventory with price range (\u20b912K-\u20b92.6L), acknowledges rent dependency on size/amenities.",
+              "weaknesses": "No rental yield analysis, tenant demographics, or lease term guidance."
+            },
+            {
+              "title": "Plots for Sale in JP Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/residential-plots-land-for-sale-in-jp-nagar-bangalore-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "Plot-specific pricing data (avg \u20b93.45Cr, median \u20b91.92Cr), QoQ trend analysis (-1.73%).",
+              "weaknesses": "No guidance on plot sizes, zoning regulations, or development potential."
+            },
+            {
+              "title": "Phase 6 JP Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/Phase-6-JP-Nagar-in-Bangalore-Overview",
+              "content_type": "spoke",
+              "estimated_word_count": 1200,
+              "strengths": "Phase-specific overview with metro proximity and ORR connectivity mentioned.",
+              "weaknesses": "Minimal differentiation from Phase 7 content, no phase-wise comparison matrix."
+            }
+          ]
+        },
+        {
+          "competitor": "nobroker.in",
+          "articles_found": 10,
+          "articles": [
+            {
+              "title": "JP Nagar, Bangalore - Map, Pincode, Property Rates, ...",
+              "url": "https://www.nobroker.in/locality-iq/j-p-nagar-bangalore-liqlt",
+              "content_type": "hub",
+              "estimated_word_count": 2000,
+              "strengths": "Locality IQ format with pincode, rates, and positioning as 'sought-after location off NH44'. Good for local SEO.",
+              "weaknesses": "Limited depth on infrastructure, no investment thesis, missing phase-wise breakdown."
+            },
+            {
+              "title": "Flats for Sale in J. P. Nagar Bangalore",
+              "url": "https://www.nobroker.in/flats-for-sale-in-j_p_nagar_bangalore",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "389 flats listed, specific project examples (Gokulam Complex, Subramanyapura), direct owner contact positioning.",
+              "weaknesses": "Minimal editorial content, no flat type comparison or builder analysis."
+            },
+            {
+              "title": "Independent House for Sale in J. P. Nagar , Bangalore",
+              "url": "https://www.nobroker.in/independent-house-for-sale-in-j-p-nagar-phase-5-j-p-nagar-bangalore",
+              "content_type": "listing",
+              "estimated_word_count": 900,
+              "strengths": "Phase 5 specific, 11 luxury houses listed, emphasis on 'sophistication and comfort'.",
+              "weaknesses": "No house-specific amenities, no price range, no comparison with other phases."
+            },
+            {
+              "title": "jp nagar bangalore",
+              "url": "https://www.nobroker.in/locality-iq/jp-nagar-bangalore-liqlt",
+              "content_type": "hub",
+              "estimated_word_count": 1500,
+              "strengths": "Duplicate/similar to first entry, reinforces locality positioning.",
+              "weaknesses": "Content duplication, no unique value addition."
+            },
+            {
+              "title": "Flats for Rent in J. P. Nagar , Bangalore",
+              "url": "https://www.nobroker.in/flats-for-rent-in-j_p_nagar_bangalore",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "Rental price range provided (\u20b935K-\u20b92.65L for 4BHK), size specifications (1,500-4,950 sqft).",
+              "weaknesses": "No rental yield analysis, tenant profile insights, or lease negotiation guidance."
+            },
+            {
+              "title": "95 - Residential Lands/ Plots For Sale in JP Nagar Bangalore",
+              "url": "https://www.nobroker.in/residential-land-plots-for-sale-in-j_p_nagar_bangalore",
+              "content_type": "listing",
+              "estimated_word_count": 900,
+              "strengths": "95+ verified plots, emphasis on verification and direct owner contact.",
+              "weaknesses": "No plot size specifications, zoning info, or development potential analysis."
+            },
+            {
+              "title": "Independent House for Sale in J. P. Nagar , Bangalore",
+              "url": "https://www.nobroker.in/independent-house-for-sale-in-jp-nagar-9th-phase-j-p-nagar-bangalore",
+              "content_type": "listing",
+              "estimated_word_count": 900,
+              "strengths": "Phase 9 specific, 15 luxury houses, direct owner positioning.",
+              "weaknesses": "Duplicate format from Phase 5 entry, no phase comparison."
+            },
+            {
+              "title": "Rental Houses in JP Nagar 1st Phase Karnataka Without ...",
+              "url": "https://www.nobroker.in/property/rent/bangalore/JP%20Nagar%201st%20Phase?searchParam=W3sibGF0IjoxMi45MTEyNDcsImxvbiI6NzcuNTc0MDgxOTk5OTk5OTksInNob3dNYXAiOmZhbHNlLCJwbGFjZUlkIjoiQ2hJSmkyZWFjbkFWcmpzUmZSNXF4c1lHTkZrIiwicGxhY2VOYW1lIjoiSlAgTmFnYXIgMXN0IFBoYXNlIiwiY2l0eSI6ImJhbmdhbG9yZSJ9XQ==",
+              "content_type": "listing",
+              "estimated_word_count": 800,
+              "strengths": "Phase 1 specific, brokerage-free positioning, rent agreement mention.",
+              "weaknesses": "No content depth, minimal phase-specific insights."
+            },
+            {
+              "title": "Saidarshan Apartments in JP Nagar, Bangalore",
+              "url": "https://www.nobroker.in/saidarshan-apartments-jp-nagar_bangalore-prjt-63abedfa696fd2000159e96e",
+              "content_type": "spoke",
+              "estimated_word_count": 1200,
+              "strengths": "Project-specific page with amenities (pool, gym, play area, clubhouse), good for project SEO.",
+              "weaknesses": "Limited to single project, no builder track record or project comparison."
+            },
+            {
+              "title": "New Projects in J P Nagar Bangalore | Latest Residential ...",
+              "url": "https://www.nobroker.in/new-projects-in-j-p-nagar-bangalore",
+              "content_type": "hub",
+              "estimated_word_count": 1500,
+              "strengths": "Pre-launch and ready-to-move segmentation, good for capturing early-stage buyers.",
+              "weaknesses": "No editorial on project selection criteria, no developer reputation analysis."
+            }
+          ]
+        },
+        {
+          "competitor": "housing.com",
+          "articles_found": 10,
+          "articles": [
+            {
+              "title": "JP Nagar, Bengaluru - Housing",
+              "url": "https://housing.com/jp-nagar-bengaluru-overview-P3yqqmgmdvlqoqz0n",
+              "content_type": "hub",
+              "estimated_word_count": 2000,
+              "strengths": "Comprehensive locality overview, mentions proximity to Jayanagar, Banashankari, BTM Layout, good for contextual SEO.",
+              "weaknesses": "Generic overview, no investment analysis, missing phase-wise breakdown."
+            },
+            {
+              "title": "JP Nagar, Bengaluru Pin Code Number, Taluk / ... - Housing",
+              "url": "https://housing.com/pin-code/jp-nagar-bangalore-pin-code-560078",
+              "content_type": "spoke",
+              "estimated_word_count": 1000,
+              "strengths": "Pincode-specific page (560078), administrative details, good for local search.",
+              "weaknesses": "Minimal content, no lifestyle or investment insights."
+            },
+            {
+              "title": "310+ Apartments for Rent in JP Nagar, Bengaluru - Housing",
+              "url": "https://housing.com/rent/apartments-for-rent-in-jp-nagar-bengaluru-M1P3yqqmgmdvlqoqz0n",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "Large rental inventory (310+), furnished/semi-furnished/unfurnished segmentation (570+ semi-furnished, 26+ unfurnished).",
+              "weaknesses": "No rental yield data, tenant demographics, or lease guidance."
+            },
+            {
+              "title": "JP Nagar, 4th Phase, JP Nagar, Bengaluru",
+              "url": "https://housing.com/jp-nagar-4th-phase-jp-nagar-bengaluru-overview-Pyij467cdkjrzs0g",
+              "content_type": "spoke",
+              "estimated_word_count": 1200,
+              "strengths": "Phase 4 specific, mentions distance to JP Nagar main area (0.0 Km), good for micro-location SEO.",
+              "weaknesses": "Minimal phase-specific content, no differentiation from other phases."
+            },
+            {
+              "title": "Independent Houses for Sale in JP Nagar, Bengaluru",
+              "url": "https://housing.com/in/buy/bengaluru/jp-nagar-gid/house-fid/",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "95+ houses listed, RK/BHK segmentation, '100% Verified Properties' badge.",
+              "weaknesses": "No house-specific amenities, no builder profiles, no price range."
+            },
+            {
+              "title": "1 BHK Flats for Rent in JP Nagar, Bengaluru - Housing",
+              "url": "https://housing.com/rent/1bhk-flats-for-rent-in-jp-nagar-bengaluru-C2P3yqqmgmdvlqoqz0n",
+              "content_type": "listing",
+              "estimated_word_count": 900,
+              "strengths": "1BHK specific, average rent data (\u20b915,285), furnished options mentioned.",
+              "weaknesses": "No rental yield analysis, no tenant profile insights."
+            },
+            {
+              "title": "7th Phase, JP Nagar, Bengaluru - Housing",
+              "url": "https://housing.com/7th-phase-jp-nagar-bengaluru-overview-P6wk55t539u5si8bx",
+              "content_type": "spoke",
+              "estimated_word_count": 1300,
+              "strengths": "Phase 7 specific, mentions nearby suburbs (Nrupathunga Nagar, Silver Oak Layout), good for micro-location SEO.",
+              "weaknesses": "Limited depth on phase-specific infrastructure, no comparison with other phases."
+            },
+            {
+              "title": "Property Rates in J.P. Nagar Bengaluru",
+              "url": "https://housing.com/news/property-trends-j-p-nagar-bengaluru/",
+              "content_type": "blog",
+              "estimated_word_count": 1500,
+              "strengths": "Trend-focused content, mentions 'arterial roads' and 'excellent connectivity', good for investment angle.",
+              "weaknesses": "No specific price data, no phase-wise trend analysis, no ROI projections."
+            },
+            {
+              "title": "Residential Land / Plots for sale in JP Nagar, Bengaluru",
+              "url": "https://housing.com/in/buy/bengaluru/jp-nagar-gid/plots-fid/",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "Plot-specific pricing (avg \u20b914,418/sqft, range \u20b94,299-higher), good for investment comparison.",
+              "weaknesses": "No zoning info, no development potential analysis, no plot size specifications."
+            },
+            {
+              "title": "4th Phase, JP Nagar, Bengaluru",
+              "url": "https://housing.com/4th-phase-jp-nagar-bengaluru-overview-P1t4rmifgy450ft6x",
+              "content_type": "spoke",
+              "estimated_word_count": 1200,
+              "strengths": "Phase 4 specific, distance metrics to nearby areas (Jayanagar 2.32 Km), good for micro-location SEO.",
+              "weaknesses": "Minimal phase-specific content, no infrastructure depth."
+            }
+          ]
+        },
+        {
+          "competitor": "99acres.com",
+          "articles_found": 10,
+          "articles": [
+            {
+              "title": "JP Nagar Bangalore",
+              "url": "https://www.99acres.com/jp-nagar-bangalore-south-overview-piffid",
+              "content_type": "hub",
+              "estimated_word_count": 1800,
+              "strengths": "Positions JP Nagar as 'mid segment locality', mentions nearby areas (RBI Layout, Puttenahalli, 7th Phase), good for contextual SEO.",
+              "weaknesses": "Generic overview, no investment analysis, limited lifestyle content."
+            },
+            {
+              "title": "Ratings & Reviews of JP Nagar, Bangalore",
+              "url": "https://www.99acres.com/jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+              "content_type": "spoke",
+              "estimated_word_count": 1500,
+              "strengths": "User-generated content (4.4/5 stars, 1322 reviews), authentic tenant/owner perspectives, strong social proof.",
+              "weaknesses": "No editorial curation, no response to negative reviews, no actionable insights from reviews."
+            },
+            {
+              "title": "Property in JP Nagar, Bangalore",
+              "url": "https://www.99acres.com/property-in-jp-nagar-bangalore-south-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "1040+ properties, 'India's No.1 Real Estate Portal' positioning, verified property badge.",
+              "weaknesses": "No editorial segmentation, no property type comparison."
+            },
+            {
+              "title": "Apartments in JP Nagar, Bangalore - 576+ Flats for sale in ...",
+              "url": "https://www.99acres.com/flats-in-jp-nagar-bangalore-south-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 1000,
+              "strengths": "576+ flats, specific project example (Sattva Forest Ridge in 9th Phase), BHK segmentation.",
+              "weaknesses": "No builder comparison, no amenity analysis, no price range."
+            },
+            {
+              "title": "Ratings & Reviews of 2nd Phase JP Nagar, Bangalore",
+              "url": "https://www.99acres.com/2nd-phase-jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+              "content_type": "spoke",
+              "estimated_word_count": 1200,
+              "strengths": "Phase-specific reviews with infrastructure praise ('well built roads, drainage systems'), good for phase comparison.",
+              "weaknesses": "No editorial analysis of reviews, no response mechanism, limited depth."
+            },
+            {
+              "title": "214+ Residential Land / Plots in JP Nagar, Bangalore",
+              "url": "https://www.99acres.com/residential-land-in-jp-nagar-bangalore-south-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 900,
+              "strengths": "214+ plots, verified property positioning, 'India's No.1' branding.",
+              "weaknesses": "No plot size specs, no zoning info, no development potential analysis."
+            },
+            {
+              "title": "JP Nagar: A popular rental hub in Bangalore",
+              "url": "https://www.99acres.com/articles/jp-nagar-a-popular-rental-hub-in-bangalore.html",
+              "content_type": "blog",
+              "estimated_word_count": 1600,
+              "strengths": "Editorial positioning JP Nagar as 'rental hub', mentions BDA planning, road/metro connectivity, good for rental angle.",
+              "weaknesses": "No rental yield data, no tenant demographics, no lease term guidance."
+            },
+            {
+              "title": "Ratings & Reviews of 8th Phase JP Nagar, Bangalore",
+              "url": "https://www.99acres.com/8th-phase-jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+              "content_type": "spoke",
+              "estimated_word_count": 1000,
+              "strengths": "Phase 8 specific, 4.3/5 stars from 114 reviews, phase-specific social proof.",
+              "weaknesses": "No editorial curation, limited phase comparison."
+            },
+            {
+              "title": "New Projects in JP Nagar Bangalore for Sale",
+              "url": "https://www.99acres.com/new-projects-in-jp-nagar-bangalore-south-ffid",
+              "content_type": "hub",
+              "estimated_word_count": 1200,
+              "strengths": "Project-specific pricing (Sattva Forest Ridge: \u20b99.5K/sqft, \u20b969.5L+), good for new buyer capture.",
+              "weaknesses": "No developer track record, no project comparison, no pre-launch guidance."
+            },
+            {
+              "title": "Ratings & Reviews of 7th Phase JP Nagar, Bangalore",
+              "url": "https://www.99acres.com/7th-phase-jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+              "content_type": "spoke",
+              "estimated_word_count": 1000,
+              "strengths": "Phase 7 specific, 4.3/5 stars from 196 reviews, phase-specific social proof.",
+              "weaknesses": "No editorial curation, limited phase comparison."
+            }
+          ]
+        }
+      ],
+      "coverage_gaps": [
+        {
+          "gap": "No comprehensive phase-wise comparison guide (Phases 1-9) with pricing, connectivity, and amenities matrix",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "Missing investment analysis: ROI potential, rental yield data, capital appreciation trends for JP Nagar vs. competing South Bangalore localities",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "No detailed infrastructure guide: metro connectivity timeline, ORR impact, traffic patterns, and commute times to IT hubs (Whitefield, Koramangala, Indiranagar)",
+          "priority": "high",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Missing buyer's guide: how to choose between phases, builder reputation analysis, legal documentation checklist for JP Nagar properties",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "No rental yield analysis: tenant demographics, lease term trends, furnished vs. unfurnished demand, and rental growth projections",
+          "priority": "high",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Missing school/education guide: proximity to top schools (GEAR, Inventure Academy, etc.), college connectivity, and impact on property values",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No lifestyle/community guide: restaurants, shopping, parks, healthcare facilities, and social infrastructure by phase",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Missing developer/builder profiles: track record, completed projects, ongoing projects, and customer reviews for major JP Nagar builders",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No legal/regulatory guide: BDA regulations, zoning laws, property tax, maintenance charges, and dispute resolution for JP Nagar",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Missing price trend analysis: historical price data (3-5 years), phase-wise appreciation, and future outlook with data visualization",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No first-time buyer guide: down payment options, loan eligibility, registration process, and hidden costs specific to JP Nagar",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Missing senior living/family guide: age-friendly amenities, healthcare proximity, and community features for different demographics",
+          "priority": "low",
+          "suggested_article_type": "spoke"
+        }
+      ],
+      "our_advantages": [
+        "Local Bangalore expertise: Can provide hyper-local insights on JP Nagar phases, micro-markets, and neighborhood dynamics that national portals miss",
+        "Phase-wise comparison matrix: Create the first comprehensive comparison of all 9 JP Nagar phases with pricing, connectivity, and amenity data in one place",
+        "Investment-focused content: Develop ROI calculators, rental yield analysis, and capital appreciation projections with actual transaction data from Canvas Homes",
+        "Commute time mapping: Leverage local knowledge to provide accurate commute times to major IT hubs (Whitefield, Koramangala, Indiranagar) vs. competitors' generic claims",
+        "Builder reputation database: Build proprietary database of JP Nagar builders with verified customer reviews, project completion rates, and quality metrics",
+        "Neighborhood guides by phase: Create lifestyle guides for each phase with specific restaurants, schools, hospitals, and parks (not generic locality info)",
+        "Legal/regulatory expertise: Provide JP Nagar-specific legal guides on BDA regulations, property tax, maintenance charges, and dispute resolution",
+        "Price trend visualization: Use Canvas Homes transaction data to create interactive price trend charts (3-5 years) with phase-wise breakdowns",
+        "Rental yield calculator: Build interactive tool for rental income projections based on actual JP Nagar rental data and occupancy rates",
+        "First-time buyer guides: Create step-by-step guides for JP Nagar purchases with Canvas Homes' loan partner information and registration process",
+        "Community reviews curation: Aggregate and editorially curate user reviews from all platforms with response mechanism (unlike 99acres' passive approach)",
+        "Mobile-first optimization: Optimize all content for mobile (competitors' pages are desktop-heavy) to capture on-the-go property searchers",
+        "AEO optimization: Structure content with FAQ schema, comparison tables, and decision trees to win featured snippets for 'JP Nagar phase comparison', 'best phase to buy', etc.",
+        "Video content: Create phase-specific walkthrough videos and builder interviews (competitors have minimal video content)",
+        "Hyperlocal SEO: Target long-tail keywords like 'JP Nagar Phase 5 near metro', 'JP Nagar rental yield', 'JP Nagar schools' with location-specific content"
+      ]
+    },
+    "cluster_plan": {
+      "cluster_id": "jp-nagar-bangalore",
+      "cluster_name": "JP Nagar Bangalore Complete Guide",
+      "total_articles": 12,
+      "articles": [
+        {
+          "id": "jp-nagar-bangalore-hub",
+          "title": "JP Nagar Bangalore: Complete Locality Guide 2026 - Property, Rent & Living",
+          "slug": "jp-nagar-bangalore-complete-guide",
+          "type": "hub",
+          "target_keywords": {
+            "primary": "JP Nagar Bangalore",
+            "secondary": [
+              "JP Nagar locality",
+              "JP Nagar area",
+              "JP Nagar location in Bangalore"
+            ]
+          },
+          "db_id": "art-ca8fb38a-fd5"
+        }
+      ]
+    },
+    "cluster_id": "cl-aad5be30-804",
+    "faq_plan": {
+      "faqs_by_article": {
+        "art-ca8fb38a-fd5": [
+          {
+            "question": "Which part of Bangalore is JP Nagar in?",
+            "answer": "JP Nagar is located in South Bangalore, approximately 15-20 km from the city center. It's situated in the Jayanagar assembly constituency and is well-connected via Bannerghatta Road. The locality spans multiple phases (1st to 9th) and serves as a major residential hub in South Bangalore.",
+            "target_keyword": "Which part of Bangalore is JP Nagar in",
+            "voice_search_variant": "Hey Google, where is JP Nagar located in Bangalore?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "Is JP Nagar a good place to stay in Bangalore?",
+            "answer": "Yes, JP Nagar is an excellent residential area known for its planned layout, green spaces, and established infrastructure. It offers good connectivity to IT parks, schools, hospitals, and shopping centers. The locality is popular among families and professionals seeking a balanced lifestyle with urban amenities.",
+            "target_keyword": "Is JP Nagar a good place to stay",
+            "voice_search_variant": "Is JP Nagar a good place to live in Bangalore?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "Is JP Nagar a posh area in Bangalore?",
+            "answer": "JP Nagar is considered an upscale residential locality with premium gated communities and well-maintained properties. While it's not the most expensive area, it's definitely a posh neighborhood with good infrastructure, security, and lifestyle amenities. Property prices range from mid to high depending on the phase.",
+            "target_keyword": "Is JP Nagar a posh area",
+            "voice_search_variant": "Is JP Nagar considered a posh area?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "Why is JP Nagar famous in Bangalore?",
+            "answer": "JP Nagar is famous for its well-planned residential layout, tree-lined streets, and vibrant community. It's known for hosting premium gated communities like Brigade Millennium and Adarsh Gardens. The area is also recognized for its excellent schools, restaurants, and proximity to major IT hubs, making it a preferred choice for families.",
+            "target_keyword": "Why is JP Nagar famous",
+            "voice_search_variant": "What is JP Nagar known for in Bangalore?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "What is the current property price in JP Nagar Bangalore?",
+            "answer": "JP Nagar property prices vary by phase and property type. As of 2026, prices range from \u20b945-65 lakhs for 2BHK apartments to \u20b91.5-3 crores for villas. Premium phases like 7th and 9th command higher rates. Land prices typically range from \u20b98,000-15,000 per square foot depending on location and phase.",
+            "target_keyword": "current property price in JP Nagar",
+            "voice_search_variant": "What are the property prices in JP Nagar right now?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "How much is rent in JP Nagar Bangalore?",
+            "answer": "Rental prices in JP Nagar vary by phase and property type. A 2BHK apartment typically rents for \u20b925,000-40,000 per month, while 1BHK flats range from \u20b915,000-25,000. Independent houses cost \u20b940,000-70,000 monthly. Premium gated communities command higher rates. PG accommodations start from \u20b98,000-12,000 per month.",
+            "target_keyword": "How much is rent in JP Nagar",
+            "voice_search_variant": "What's the average rent for a 2BHK in JP Nagar?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "Which JP Nagar phase is best to live in?",
+            "answer": "JP Nagar 7th and 9th phases are considered the most developed with premium amenities, better infrastructure, and established communities. However, 5th phase offers good value for money with decent connectivity. Choice depends on budget and preferences\u2014newer phases have modern facilities while older phases offer affordability and established neighborhoods.",
+            "target_keyword": "Which JP Nagar phase is best",
+            "voice_search_variant": "Which phase of JP Nagar should I choose to live in?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "What is the difference between JP Nagar phases?",
+            "answer": "JP Nagar phases differ in development stage, infrastructure maturity, and pricing. Earlier phases (1-3) are older with established communities but older buildings. Middle phases (4-6) offer balanced development. Later phases (7-9) are newer with modern amenities, better planning, and premium gated communities. Prices increase with phase number.",
+            "target_keyword": "What is the difference between JP Nagar phases",
+            "voice_search_variant": "How are the different phases of JP Nagar different from each other?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "Is JP Nagar expensive compared to other Bangalore localities?",
+            "answer": "JP Nagar is moderately priced for South Bangalore. It's more affordable than areas like Koramangala or Indiranagar but pricier than peripheral localities. Property prices are competitive for the infrastructure and amenities offered. It provides good value for families seeking a balance between affordability and lifestyle quality.",
+            "target_keyword": "Is JP Nagar expensive",
+            "voice_search_variant": "How expensive is JP Nagar compared to other areas in Bangalore?",
+            "schema_type": "FAQPage"
+          },
+          {
+            "question": "What are the best restaurants and cafes in JP Nagar?",
+            "answer": "JP Nagar has a vibrant food scene with diverse dining options ranging from casual cafes to fine dining restaurants. The area is known for its multicuisine restaurants, trendy cafes, and popular pubs. Notable establishments include celebrity-owned restaurants and local favorites. The locality offers everything from traditional South Indian to international cuisines.",
+            "target_keyword": "best restaurants and cafes in JP Nagar",
+            "voice_search_variant": "What are some good places to eat in JP Nagar?",
+            "schema_type": "FAQPage"
+          }
+        ]
+      },
+      "total_articles": 1,
+      "total_faqs": 10,
+      "results": [
+        {
+          "article_id": "art-ca8fb38a-fd5",
+          "faqs": [
+            {
+              "question": "Which part of Bangalore is JP Nagar in?",
+              "answer": "JP Nagar is located in South Bangalore, approximately 15-20 km from the city center. It's situated in the Jayanagar assembly constituency and is well-connected via Bannerghatta Road. The locality spans multiple phases (1st to 9th) and serves as a major residential hub in South Bangalore.",
+              "target_keyword": "Which part of Bangalore is JP Nagar in",
+              "voice_search_variant": "Hey Google, where is JP Nagar located in Bangalore?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "Is JP Nagar a good place to stay in Bangalore?",
+              "answer": "Yes, JP Nagar is an excellent residential area known for its planned layout, green spaces, and established infrastructure. It offers good connectivity to IT parks, schools, hospitals, and shopping centers. The locality is popular among families and professionals seeking a balanced lifestyle with urban amenities.",
+              "target_keyword": "Is JP Nagar a good place to stay",
+              "voice_search_variant": "Is JP Nagar a good place to live in Bangalore?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "Is JP Nagar a posh area in Bangalore?",
+              "answer": "JP Nagar is considered an upscale residential locality with premium gated communities and well-maintained properties. While it's not the most expensive area, it's definitely a posh neighborhood with good infrastructure, security, and lifestyle amenities. Property prices range from mid to high depending on the phase.",
+              "target_keyword": "Is JP Nagar a posh area",
+              "voice_search_variant": "Is JP Nagar considered a posh area?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "Why is JP Nagar famous in Bangalore?",
+              "answer": "JP Nagar is famous for its well-planned residential layout, tree-lined streets, and vibrant community. It's known for hosting premium gated communities like Brigade Millennium and Adarsh Gardens. The area is also recognized for its excellent schools, restaurants, and proximity to major IT hubs, making it a preferred choice for families.",
+              "target_keyword": "Why is JP Nagar famous",
+              "voice_search_variant": "What is JP Nagar known for in Bangalore?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "What is the current property price in JP Nagar Bangalore?",
+              "answer": "JP Nagar property prices vary by phase and property type. As of 2026, prices range from \u20b945-65 lakhs for 2BHK apartments to \u20b91.5-3 crores for villas. Premium phases like 7th and 9th command higher rates. Land prices typically range from \u20b98,000-15,000 per square foot depending on location and phase.",
+              "target_keyword": "current property price in JP Nagar",
+              "voice_search_variant": "What are the property prices in JP Nagar right now?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "How much is rent in JP Nagar Bangalore?",
+              "answer": "Rental prices in JP Nagar vary by phase and property type. A 2BHK apartment typically rents for \u20b925,000-40,000 per month, while 1BHK flats range from \u20b915,000-25,000. Independent houses cost \u20b940,000-70,000 monthly. Premium gated communities command higher rates. PG accommodations start from \u20b98,000-12,000 per month.",
+              "target_keyword": "How much is rent in JP Nagar",
+              "voice_search_variant": "What's the average rent for a 2BHK in JP Nagar?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "Which JP Nagar phase is best to live in?",
+              "answer": "JP Nagar 7th and 9th phases are considered the most developed with premium amenities, better infrastructure, and established communities. However, 5th phase offers good value for money with decent connectivity. Choice depends on budget and preferences\u2014newer phases have modern facilities while older phases offer affordability and established neighborhoods.",
+              "target_keyword": "Which JP Nagar phase is best",
+              "voice_search_variant": "Which phase of JP Nagar should I choose to live in?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "What is the difference between JP Nagar phases?",
+              "answer": "JP Nagar phases differ in development stage, infrastructure maturity, and pricing. Earlier phases (1-3) are older with established communities but older buildings. Middle phases (4-6) offer balanced development. Later phases (7-9) are newer with modern amenities, better planning, and premium gated communities. Prices increase with phase number.",
+              "target_keyword": "What is the difference between JP Nagar phases",
+              "voice_search_variant": "How are the different phases of JP Nagar different from each other?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "Is JP Nagar expensive compared to other Bangalore localities?",
+              "answer": "JP Nagar is moderately priced for South Bangalore. It's more affordable than areas like Koramangala or Indiranagar but pricier than peripheral localities. Property prices are competitive for the infrastructure and amenities offered. It provides good value for families seeking a balance between affordability and lifestyle quality.",
+              "target_keyword": "Is JP Nagar expensive",
+              "voice_search_variant": "How expensive is JP Nagar compared to other areas in Bangalore?",
+              "schema_type": "FAQPage"
+            },
+            {
+              "question": "What are the best restaurants and cafes in JP Nagar?",
+              "answer": "JP Nagar has a vibrant food scene with diverse dining options ranging from casual cafes to fine dining restaurants. The area is known for its multicuisine restaurants, trendy cafes, and popular pubs. Notable establishments include celebrity-owned restaurants and local favorites. The locality offers everything from traditional South Indian to international cuisines.",
+              "target_keyword": "best restaurants and cafes in JP Nagar",
+              "voice_search_variant": "What are some good places to eat in JP Nagar?",
+              "schema_type": "FAQPage"
+            }
+          ],
+          "cost_usd": 0.00842
+        }
+      ]
+    },
+    "keyword_map": {
+      "topic": "jp nagar",
+      "total_keywords": 187,
+      "keyword_groups": [
+        {
+          "group_name": "JP Nagar Core Locality Overview",
+          "suggested_article_type": "hub",
+          "primary_keyword": "JP Nagar Bangalore",
+          "secondary_keywords": [
+            "JP Nagar locality",
+            "JP Nagar area",
+            "JP Nagar location in Bangalore"
+          ],
+          "long_tail_keywords": [
+            "JP Nagar Bangalore map and directions",
+            "JP Nagar Bangalore pincode and location",
+            "Complete guide to JP Nagar Bangalore"
+          ],
+          "faq_keywords": [
+            "Which part of Bangalore is JP Nagar in?",
+            "Is JP Nagar a posh area?",
+            "Is JP Nagar a good place to stay?",
+            "Why is JP Nagar famous?"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "estimated_volume": "high",
+          "notes": "MagicBricks dominates with comprehensive hub. Opportunity: add investment analysis, demographic trends, and lifestyle insights."
+        },
+        {
+          "group_name": "JP Nagar Phase-Specific Guides",
+          "suggested_article_type": "spoke",
+          "primary_keyword": "JP Nagar phases",
+          "secondary_keywords": [
+            "JP Nagar 5th Phase",
+            "JP Nagar 7th Phase",
+            "JP Nagar 8th Phase",
+            "JP Nagar 9th Phase",
+            "JP Nagar 6th Phase",
+            "JP Nagar 2nd Phase",
+            "JP Nagar 1st Phase",
+            "JP Nagar 3rd Phase"
+          ],
+          "long_tail_keywords": [
+            "Is JP Nagar 5th Phase a good place to live?",
+            "Is JP Nagar 9th Phase a good place to live?",
+            "JP Nagar 7th Phase Bangalore property prices",
+            "JP Nagar 5th Phase Bangalore rent"
+          ],
+          "faq_keywords": [
+            "Which JP Nagar phase is best?",
+            "What is the difference between JP Nagar phases?",
+            "Which phase of JP Nagar is most expensive?"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "estimated_volume": "high",
+          "notes": "Strong search volume across phases. Create individual spoke articles for each phase with phase-specific pricing, connectivity, and amenities."
+        },
+        {
+          "group_name": "JP Nagar Rental Market",
+          "suggested_article_type": "spoke",
+          "primary_keyword": "rent in JP Nagar",
+          "secondary_keywords": [
+            "JP Nagar rent",
+            "JP Nagar Bangalore rent",
+            "2 BHK rent JP Nagar",
+            "1 BHK rent JP Nagar",
+            "House for rent JP Nagar",
+            "Flats for rent JP Nagar",
+            "Gated community JP Nagar rent"
+          ],
+          "long_tail_keywords": [
+            "2 BHK for rent in JP Nagar 7th Phase",
+            "2 BHK for rent in JP Nagar 5th Phase",
+            "2 BHK House for rent in JP Nagar 1st Phase",
+            "Gated society in JP Nagar rent",
+            "Brigade Millennium JP Nagar rent",
+            "Adarsh Gardens JP Nagar rent",
+            "Average rent for 2BHK in JP Nagar Bangalore 2026"
+          ],
+          "faq_keywords": [
+            "What is the rent of PG in JP Nagar Bangalore?",
+            "How much is rent in JP Nagar?",
+            "Is JP Nagar expensive to rent?"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "estimated_volume": "high",
+          "notes": "High commercial intent. Opportunity: create phase-wise rental guides with current rates, builder-specific rentals, and comparison with nearby areas."
+        },
+        {
+          "group_name": "JP Nagar Property Sales & Pricing",
+          "suggested_article_type": "spoke",
+          "primary_keyword": "JP Nagar property prices",
+          "secondary_keywords": [
+            "JP Nagar apartments for sale",
+            "JP Nagar flats for sale",
+            "JP Nagar villas for sale",
+            "JP Nagar land for sale",
+            "JP Nagar real estate",
+            "JP Nagar property rates"
+          ],
+          "long_tail_keywords": [
+            "JP Nagar property price per square foot",
+            "JP Nagar land price per square feet",
+            "What is the price of 2BHK in JP Nagar?",
+            "What is the price of flat in JP Nagar?",
+            "What is the land rate in JP Nagar?",
+            "What is the price of land in JP Nagar?",
+            "2 BHK in JP Nagar for sale",
+            "Flats for sale in JP Nagar 7th Phase",
+            "Independent House for sale in JP Nagar 7th Phase",
+            "House for sale in JP Nagar 2nd Phase"
+          ],
+          "faq_keywords": [
+            "What is the current property price in JP Nagar?",
+            "Is JP Nagar expensive?",
+            "What is the cost of a 30x40 site in JP Nagar?"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "estimated_volume": "high",
+          "notes": "Highly competitive. MagicBricks has strong listing pages. Opportunity: create editorial content on price trends, ROI analysis, builder reputation, and investment guides."
+        },
+        {
+          "group_name": "JP Nagar Lifestyle & Dining",
+          "suggested_article_type": "spoke",
+          "primary_keyword": "JP Nagar restaurants",
+          "secondary_keywords": [
+            "JP Nagar cafes",
+            "JP Nagar food",
+            "JP Nagar places to eat",
+            "JP Nagar pubs",
+            "JP Nagar dining"
+          ],
+          "long_tail_keywords": [
+            "Top-rated restaurants with live music in JP Nagar",
+            "What kind of food is JP Nagar known for?",
+            "Best restaurants in JP Nagar Bangalore",
+            "JP Nagar food review",
+            "Unique things to do in JP Nagar"
+          ],
+          "faq_keywords": [
+            "Which restaurant is owned by Virat Kohli in Bangalore?",
+            "Where is Virat Kohli's restaurant in Bangalore?",
+            "What are the best cafes in JP Nagar?"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "estimated_volume": "medium",
+          "notes": "Lower commercial intent but good for lifestyle positioning. Opportunity: create curated dining guides, celebrity restaurant features, and food scene reviews."
+        },
+        {
+          "group_name": "JP Nagar Things to Do & Entertainment",
+          "suggested_article_type": "spoke",
+          "primary_keyword": "things to do in JP Nagar",
+          "secondary_keywords": [
+            "JP Nagar places to visit",
+            "JP Nagar market",
+            "JP Nagar malls",
+            "JP Nagar hotels"
+          ],
+          "long_tail_keywords": [
+            "Places to visit in JP Nagar with friends",
+            "Places to visit in JP Nagar for couples",
+            "JP Nagar Market for clothes",
+            "How to spend 3 hours in JP Nagar",
+            "Where to take a girl on date in JP Nagar"
+          ],
+          "faq_keywords": [
+            "What are the best places to visit in JP Nagar?",
+            "Is JP Nagar good for dating?",
+            "What is JP Nagar Market known for?"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "estimated_volume": "medium",
+          "notes": "Lifestyle content with lower competition. Opportunity: create date guides, shopping guides, and entertainment roundups."
+        },
+        {
+          "group_name": "JP Nagar Infrastructure & Connectivity",
+          "suggested_article_type": "spoke",
+          "primary_keyword": "JP Nagar metro station",
+          "secondary_keywords": [
+            "JP Nagar distance",
+            "JP Nagar Bangalore distance",
+            "JP Nagar connectivity",
+            "JP Nagar nearest railway station"
+          ],
+          "long_tail_keywords": [
+            "JP Nagar to Koramangala distance",
+            "JP Nagar Bangalore distance from airport",
+            "JP Nagar metro station connectivity",
+            "JP Nagar nearest railway station"
+          ],
+          "faq_keywords": [
+            "How far is JP Nagar from Bangalore city center?",
+            "Is JP Nagar well connected by metro?",
+            "What is the nearest railway station to JP Nagar?"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "estimated_volume": "medium",
+          "notes": "Informational intent. Opportunity: create comprehensive connectivity guides with distance matrices, commute times, and transportation options."
+        },
+        {
+          "group_name": "JP Nagar Education & Schools",
+          "suggested_article_type": "sub_spoke",
+          "primary_keyword": "schools in JP Nagar",
+          "secondary_keywords": [
+            "JP Nagar schools",
+            "JP Nagar colleges"
+          ],
+          "long_tail_keywords": [
+            "St Paul's English School JP Nagar fees structure",
+            "Best schools in JP Nagar Bangalore",
+            "CBSE schools in JP Nagar"
+          ],
+          "faq_keywords": [
+            "What is the fees structure of St Paul's English School JP Nagar?",
+            "Which school is ranked no. 1 in JP Nagar?",
+            "Which is costly, CBSE or ICSE in JP Nagar?"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "estimated_volume": "low",
+          "notes": "Niche informational content. Opportunity: create school comparison guides and fees structure articles."
+        },
+        {
+          "group_name": "JP Nagar Healthcare & Hospitals",
+          "suggested_article_type": "sub_spoke",
+          "primary_keyword": "hospitals in JP Nagar",
+          "secondary_keywords": [
+            "JP Nagar hospitals",
+            "JP Nagar medical facilities"
+          ],
+          "long_tail_keywords": [
+            "Best hospitals near JP Nagar Bangalore",
+            "Vydehi Hospital JP Nagar",
+            "Apollo Hospital JP Nagar"
+          ],
+          "faq_keywords": [
+            "What are the top 3 hospitals in JP Nagar?",
+            "Which is costly, Manipal or Apollo in JP Nagar?",
+            "Is Vydehi Hospital free?"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "estimated_volume": "low",
+          "notes": "Niche informational content. Opportunity: create healthcare facility guides and hospital comparison articles."
+        },
+        {
+          "group_name": "JP Nagar Living Experience & Reviews",
+          "suggested_article_type": "spoke",
+          "primary_keyword": "living in JP Nagar Bangalore",
+          "secondary_keywords": [
+            "JP Nagar reviews",
+            "JP Nagar Bangalore reviews",
+            "JP Nagar living experience"
+          ],
+          "long_tail_keywords": [
+            "Living in JP Nagar Bangalore for rent",
+            "Living in JP Nagar Bangalore reviews",
+            "Living in JP Nagar Bangalore Reddit",
+            "JP Nagar review food",
+            "JP Nagar review in Bangalore"
+          ],
+          "faq_keywords": [
+            "Is JP Nagar a good area to live in?",
+            "What is it like living in JP Nagar?",
+            "Are JP Nagar and Jayanagar the same?"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "estimated_volume": "medium",
+          "notes": "User-generated content opportunity. Opportunity: create resident testimonials, lifestyle guides, and community reviews."
+        },
+        {
+          "group_name": "JP Nagar Miscellaneous Information",
+          "suggested_article_type": "faq",
+          "primary_keyword": "JP Nagar full form",
+          "secondary_keywords": [
+            "JP Nagar pincode",
+            "JP Nagar weather",
+            "JP Nagar history",
+            "JP Nagar demographics"
+          ],
+          "long_tail_keywords": [
+            "JP Nagar Bangalore full form",
+            "JP Nagar Bangalore pincode",
+            "JP Nagar Bangalore weather",
+            "JP Nagar history and development"
+          ],
+          "faq_keywords": [
+            "What does JP Nagar stand for?",
+            "What is the pincode of JP Nagar?",
+            "What is the weather like in JP Nagar?"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "estimated_volume": "low",
+          "notes": "Quick-win informational content. Opportunity: create FAQ pages and locality fact sheets."
+        },
+        {
+          "group_name": "JP Nagar PG & Student Housing",
+          "suggested_article_type": "sub_spoke",
+          "primary_keyword": "PG in JP Nagar",
+          "secondary_keywords": [
+            "JP Nagar PG for boys",
+            "JP Nagar PG for girls",
+            "JP Nagar student housing"
+          ],
+          "long_tail_keywords": [
+            "Best PG in JP Nagar Bangalore",
+            "Affordable PG in JP Nagar",
+            "PG rent in JP Nagar Bangalore"
+          ],
+          "faq_keywords": [
+            "What is the rent of PG in JP Nagar Bangalore?",
+            "Where is the cheapest rent in JP Nagar?"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "estimated_volume": "medium",
+          "notes": "Emerging niche. Opportunity: create student housing guides and PG comparison articles."
+        }
+      ],
+      "quick_win_keywords": [
+        "JP Nagar pincode",
+        "JP Nagar full form",
+        "JP Nagar weather",
+        "JP Nagar history",
+        "JP Nagar demographics",
+        "JP Nagar police station",
+        "JP Nagar market",
+        "JP Nagar cafes",
+        "JP Nagar pubs",
+        "things to do in JP Nagar",
+        "JP Nagar hotels",
+        "JP Nagar restaurants",
+        "schools in JP Nagar",
+        "hospitals in JP Nagar"
+      ],
+      "strategic_keywords": [
+        "JP Nagar Bangalore",
+        "JP Nagar property prices",
+        "rent in JP Nagar",
+        "JP Nagar apartments for sale",
+        "JP Nagar 7th Phase",
+        "JP Nagar 5th Phase",
+        "living in JP Nagar Bangalore"
+      ],
+      "content_strategy_recommendations": {
+        "hub_article": {
+          "title": "JP Nagar, Bangalore: Complete Locality Guide 2026",
+          "target_keywords": [
+            "JP Nagar Bangalore",
+            "JP Nagar locality"
+          ],
+          "sections": [
+            "Location & Geography",
+            "JP Nagar Phases Overview",
+            "Property Market (Sales & Rentals)",
+            "Lifestyle & Amenities",
+            "Infrastructure & Connectivity",
+            "Education & Healthcare",
+            "Investment Potential",
+            "Living Experience & Reviews",
+            "FAQ"
+          ],
+          "word_count": "3500-4000",
+          "priority": "critical"
+        },
+        "phase_specific_spokes": {
+          "template": "JP Nagar [Phase Number]: Prices, Rent, Amenities & Living Guide",
+          "target_phases": [
+            "5th",
+            "7th",
+            "8th",
+            "9th",
+            "6th",
+            "2nd",
+            "1st",
+            "3rd"
+          ],
+          "sections_per_phase": [
+            "Phase Overview & Location",
+            "Current Property Prices",
+            "Rental Rates",
+            "Key Amenities & Infrastructure",
+            "Nearby Schools & Hospitals",
+            "Connectivity & Distance",
+            "Popular Projects & Builders",
+            "Living Experience",
+            "Investment Analysis"
+          ],
+          "word_count": "2000-2500 per phase",
+          "priority": "high"
+        },
+        "commercial_intent_spokes": {
+          "articles": [
+            {
+              "title": "JP Nagar Property Prices 2026: Trends, Analysis & Investment Guide",
+              "target_keywords": [
+                "JP Nagar property prices",
+                "JP Nagar real estate"
+              ],
+              "word_count": "2500-3000"
+            },
+            {
+              "title": "Rent in JP Nagar: 1BHK, 2BHK Rates & Rental Market Analysis",
+              "target_keywords": [
+                "rent in JP Nagar",
+                "JP Nagar rent"
+              ],
+              "word_count": "2500-3000"
+            },
+            {
+              "title": "Living in JP Nagar Bangalore: Complete Resident's Guide",
+              "target_keywords": [
+                "living in JP Nagar Bangalore",
+                "JP Nagar reviews"
+              ],
+              "word_count": "2000-2500"
+            }
+          ],
+          "priority": "high"
+        },
+        "lifestyle_content": {
+          "articles": [
+            {
+              "title": "Best Restaurants & Cafes in JP Nagar: Dining Guide 2026",
+              "target_keywords": [
+                "JP Nagar restaurants",
+                "JP Nagar cafes"
+              ],
+              "word_count": "1500-2000"
+            },
+            {
+              "title": "Things to Do in JP Nagar: Entertainment, Shopping & Dating Guide",
+              "target_keywords": [
+                "things to do in JP Nagar",
+                "JP Nagar places to visit"
+              ],
+              "word_count": "1500-2000"
+            }
+          ],
+          "priority": "medium"
+        },
+        "informational_faq": {
+          "title": "JP Nagar Bangalore: FAQs & Quick Facts",
+          "target_keywords": [
+            "JP Nagar pincode",
+            "JP Nagar full form",
+            "JP Nagar distance"
+          ],
+          "word_count": "1000-1500",
+          "priority": "low"
+        }
+      },
+      "competitive_differentiation": {
+        "vs_magicbricks": [
+          "Add investment ROI analysis and price trend forecasting",
+          "Create phase-wise comparison matrices",
+          "Include builder reputation & project reviews",
+          "Add resident testimonials and Reddit insights",
+          "Create lifestyle-focused content beyond listings",
+          "Develop niche guides (student housing, PG, villas)"
+        ],
+        "vs_nobroker": [
+          "Deeper locality insights beyond rental listings",
+          "Comprehensive phase guides with historical data",
+          "Investment analysis and market trends",
+          "Community & lifestyle content integration"
+        ],
+        "vs_99acres": [
+          "Editorial depth on property market dynamics",
+          "Lifestyle and community integration",
+          "User-generated content and reviews",
+          "Niche segment guides (PG, student housing)"
+        ]
+      },
+      "trend_insights": {
+        "declining_trend_mitigation": "While overall JP Nagar search interest is declining (74.2 \u2192 68.5), focus on emerging micro-trends: specific phases (7th, 5th, 9th), rental market, and lifestyle content. Create evergreen content that captures long-tail queries.",
+        "rising_opportunities": [
+          "Phase-specific searches (7th, 5th, 9th Phase)",
+          "Rental market queries",
+          "Lifestyle & dining content",
+          "Student housing & PG market"
+        ],
+        "content_freshness": "Update price data quarterly, add seasonal lifestyle guides, and maintain current rental rate information to combat declining trend."
+      }
+    },
+    "research_prompt": {
+      "master_research_prompt": "You are a real estate research analyst conducting comprehensive market research on JP Nagar, Bangalore, Karnataka, India for a property investment platform. Provide detailed, citation-heavy analysis across all sections below. Every numeric claim, price range, distance, date, and named source MUST include a markdown link [Source Name](URL). Prioritize data from the last 18 months (2024-2026) and flag older information as [HISTORICAL]. When sources contradict each other, create separate 'Conflicting Data' subsections. SECTION 1: LOCATION & GEOGRAPHY - Which part of Bangalore is JP Nagar located in (cardinal direction, zone classification)? Provide exact boundaries and neighboring localities with distances in km. What are the different phases of JP Nagar and their specific boundaries? How is JP Nagar administratively classified (ward numbers, assembly constituency, parliamentary constituency)? SECTION 2: PROPERTY PRICING ANALYSIS - Current property prices per square foot for 1BHK, 2BHK, 3BHK apartments in each JP Nagar phase from MagicBricks, NoBroker, 99acres, Housing.com data. Price ranges for independent houses and villas. Year-over-year price appreciation rates for 2023-2024 and 2024-2025. Comparison with neighboring localities like Jayanagar, BTM Layout, Banashankari. Capital value trends from Knight Frank, JLL, Anarock, CBRE reports. SECTION 3: RENTAL MARKET DYNAMICS - Monthly rent ranges for 1BHK, 2BHK, 3BHK apartments across different JP Nagar phases. Rental yields and occupancy rates. Tenant demographics and demand patterns. Comparison with other South Bangalore localities. Security deposit norms and rental escalation trends. SECTION 4: CONNECTIVITY & TRANSPORTATION - Distance to major IT hubs (Electronic City, Bannerghatta Road, Koramangala) in km and travel time. Nearest metro stations with exact distances and expected completion dates for Phase 2/3 extensions. Bus connectivity (BMTC routes, frequency). Major roads and traffic congestion patterns during peak hours. Proximity to Kempegowda International Airport and railway stations. SECTION 5: INFRASTRUCTURE & AMENITIES - Educational institutions: top schools and colleges with ratings and admission criteria. Healthcare facilities: major hospitals, clinics, and specialty centers within 5km radius. Shopping and entertainment: malls, markets, restaurants, cafes, and recreational facilities. Banking and financial services availability. Power, water supply, and waste management infrastructure quality. SECTION 6: INVESTMENT OUTLOOK & MARKET SENTIMENT - Why is JP Nagar considered famous or notable in Bangalore's real estate landscape? Is it classified as a posh or premium locality compared to other areas? Future development projects and their impact on property values. RERA-approved projects and developer credibility. Market liquidity and resale potential. Expert opinions from real estate consultants and market analysts. SECTION 7: REGULATORY & LEGAL ASPECTS - BBMP approvals and building regulations specific to JP Nagar. RERA-Karnataka registered projects and compliance status. Property tax rates and municipal charges. Any legal disputes or development restrictions. Khata and title verification requirements. SECTION 8: QUALITY OF LIFE FACTORS - Safety and security ratings from resident surveys. Air quality index and environmental factors. Community facilities and resident associations. Cultural and social amenities. Traffic noise and congestion impact on daily life. Sources must include: Government (BBMP, BDA, BMRDA, RERA-Karnataka), Industry reports (Knight Frank, JLL, Anarock, CBRE), Real estate platforms (MagicBricks, NoBroker, 99acres, Housing.com), News media (Economic Times, Mint, Hindu BusinessLine, Reuters, Bloomberg, Moneycontrol), Local surveys and resident feedback platforms. End with a 'Confidence Notes' section identifying any claims with limited source verification or potential data gaps.",
+      "research_questions": {
+        "location_geography": [
+          "Which part of Bangalore is JP Nagar in?",
+          "What are the different JP Nagar phases and their boundaries?",
+          "Administrative classification and neighboring localities"
+        ],
+        "property_pricing": [
+          "Current property prices per sqft by apartment type and phase",
+          "Price appreciation trends 2023-2025",
+          "Comparison with neighboring localities"
+        ],
+        "rental_market": [
+          "Monthly rent ranges by apartment type and phase",
+          "Rental yields and market dynamics",
+          "Tenant demographics and demand patterns"
+        ],
+        "connectivity": [
+          "Distance to IT hubs and travel times",
+          "Metro connectivity and future extensions",
+          "Bus routes and traffic patterns"
+        ],
+        "infrastructure": [
+          "Educational institutions and ratings",
+          "Healthcare facilities within 5km",
+          "Shopping, dining, and entertainment options"
+        ],
+        "investment_outlook": [
+          "Why JP Nagar is famous in Bangalore",
+          "Premium locality classification",
+          "Future development impact on values"
+        ],
+        "regulatory": [
+          "BBMP approvals and building regulations",
+          "RERA compliance and registered projects",
+          "Property tax and legal requirements"
+        ],
+        "quality_of_life": [
+          "Safety ratings and environmental factors",
+          "Community facilities and resident satisfaction",
+          "Traffic and noise impact"
+        ]
+      },
+      "freshness_requirements": {
+        "property_prices": "2024-01-01",
+        "rental_rates": "2024-01-01",
+        "metro_connectivity": "2024-01-01",
+        "rera_projects": "2024-01-01",
+        "infrastructure_development": "2023-06-01",
+        "market_reports": "2024-01-01"
+      },
+      "source_priority": [
+        "rera.karnataka.gov.in",
+        "bbmp.gov.in",
+        "bda.kar.nic.in",
+        "bmrda.kar.nic.in",
+        "magicbricks.com",
+        "nobroker.in",
+        "99acres.com",
+        "housing.com",
+        "economictimes.indiatimes.com",
+        "livemint.com",
+        "thehindubusinessline.com",
+        "reuters.com",
+        "moneycontrol.com",
+        "knightfrank.co.in",
+        "jll.co.in",
+        "anarock.com",
+        "cbre.co.in"
+      ],
+      "estimated_perplexity_queries": 1,
+      "estimated_perplexity_cost_usd": 0.2
+    },
+    "trend_data": {
+      "topic": "jp nagar",
+      "classification": {
+        "categories": [
+          "locality"
+        ],
+        "primary_category": "locality",
+        "detected_localities": [
+          "JP Nagar"
+        ],
+        "is_locality": true,
+        "is_cross_cutting": false
+      },
+      "raw_data": {
+        "trends": {
+          "trend_available": true,
+          "average_interest": 74.2,
+          "recent_interest": 68.5,
+          "peak_interest": 100,
+          "direction": "declining",
+          "is_seasonal": true,
+          "rising_queries": [
+            "sector 144 jp nagar",
+            "sector 144 bangalore",
+            "sihi suprabhatam jp nagar bangalore",
+            "kalpaney jp nagar"
+          ],
+          "top_queries": [
+            "jp nagar in bangalore",
+            "jp nagar distance",
+            "jp nagar restaurants",
+            "restaurants bangalore",
+            "jp nagar 7th phase",
+            "restaurants in bangalore",
+            "restaurants in jp nagar",
+            "jp nagar metro station",
+            "jp nagar pin code bangalore",
+            "bangalore pin code"
+          ]
+        },
+        "paa_questions": [
+          "Is JP Nagar in Bangalore a posh area?",
+          "Why is JP Nagar famous?",
+          "Which part of Bangalore is JP Nagar in?",
+          "Is JP Nagar expensive?",
+          "Is JP Nagar a posh area in Bangalore?",
+          "Are JP Nagar and Jayanagar the same?",
+          "Is JP Nagar a good place to stay?",
+          "Is JP Nagar 5th Phase a good place to live?",
+          "Is JP Nagar a good area?",
+          "Is JP Nagar 9th Phase a good place to live?",
+          "What is the price of flat in JP Nagar?",
+          "What is the land rate in JP Nagar?",
+          "What is the price of land in JP Nagar?",
+          "What is the cost of a 30 * 40 site in Bangalore?",
+          "What is the price of 2bhk in JP Nagar?",
+          "What is the rent of PG in JP Nagar Bangalore?",
+          "Where is the cheapest rent in Bangalore?",
+          "How to spend 3 hours in Bangalore?",
+          "Where to take a girl on date in Bangalore?",
+          "What kind of food is JP Nagar known for?",
+          "Which restaurant is owned by Virat Kohli in Bangalore?",
+          "Where is Virat Kohli's restaurant in Bangalore?",
+          "What are the top-rated restaurants with live music in JP Nagar?",
+          "Which syllabus is easy?",
+          "Which school is ranked no. 1 in Bangalore?",
+          "Which is costly, CBSE or ICSE?",
+          "What is the fees structure of St Paul's English school JP Nagar?",
+          "What are the top 3 hospitals?",
+          "Which is costly, manipal or Apollo?",
+          "Which is the Ambani hospital?",
+          "Is Vydehi Hospital free?",
+          "Is Bannerghatta Road a posh area?"
+        ],
+        "related_searches": [
+          "Jp nagar bangalore rent",
+          "Jp nagar bangalore pincode",
+          "JP Nagar Bangalore distance",
+          "JP Nagar Bangalore directions",
+          "JP Nagar, Bangalore map",
+          "Jp nagar bangalore restaurants",
+          "Jp nagar bangalore full form",
+          "JP Nagar Bangalore Hotels",
+          "JP Nagar places to eat",
+          "Places to visit in JP Nagar with friends",
+          "JP Nagar Cafes",
+          "JP Nagar Market",
+          "Unique things to do in JP Nagar",
+          "Jp Nagar Market for clothes",
+          "JP Nagar malls",
+          "Places to visit in JP Nagar for Couples",
+          "Living in jp nagar bangalore for rent",
+          "Living in jp nagar bangalore reviews",
+          "Living in jp nagar bangalore reddit",
+          "JP Nagar 7th Phase, Bangalore",
+          "JP Nagar 5th Phase Bangalore",
+          "JP Nagar distance",
+          "Jp nagar review food",
+          "Jp nagar review in bangalore",
+          "Jp nagar review reddit",
+          "JP Nagar, Bangalore",
+          "Things to do JP Nagar",
+          "JP Nagar Metro Station",
+          "JP nagar social",
+          "Jp nagar property price per square foot",
+          "Jp nagar property price per square feet",
+          "JP Nagar land price per square Feet",
+          "Jp nagar property price in bangalore",
+          "Jp nagar property price per sq ft",
+          "Independent House for sale in JP Nagar 7th Phase",
+          "House in JP Nagar for rent",
+          "House for sale in JP Nagar 2nd Phase",
+          "Jp nagar rent 1 bhk",
+          "Jp nagar rent house",
+          "Jp nagar rent flats",
+          "Gated society in JP Nagar rent",
+          "JP Nagar rent House 2bhk",
+          "Brigade Millennium JP Nagar rent",
+          "Adarsh Gardens, JP Nagar rent",
+          "2 BHK Apartment for rent in JP Nagar 7th Phase",
+          "Gated community JP Nagar 2 BHK rent",
+          "2 BHK in JP Nagar 5th Phase for rent",
+          "2 BHK for rent in JP Nagar 2nd Phase",
+          "2 BHK for rent in JP Nagar 6th Phase",
+          "2 BHK House for rent in JP Nagar 7th Phase",
+          "2 BHK House for rent in JP Nagar 1st Phase",
+          "2 BHK for rent in JP Nagar 8th Phase",
+          "2 BHK in JP Nagar for sale",
+          "JP Nagar Flats for rent",
+          "Jp nagar flat for sale in bangalore",
+          "Jp nagar flat for sale near me",
+          "Flats for sale in JP Nagar 7th Phase",
+          "2 bhk jp nagar flat for sale",
+          "Ready to Move Flats in JP Nagar, Bangalore",
+          "Flat for sale in JP Nagar 1st Phase",
+          "Flats for sale in JP Nagar 5th Phase",
+          "JP Nagar 7th Phase square feet rate",
+          "Jp nagar property rate per sq ft in bangalore",
+          "Land rates in Bangalore per square feet",
+          "30 40 site for sale in JP Nagar 5th Phase",
+          "How to check per square feet Rate",
+          "Price per sq ft in my area",
+          "7,000 sq ft house price",
+          "Jp nagar new projects price",
+          "New Projects in JP Nagar 7th Phase",
+          "Jp nagar new projects in bangalore",
+          "Jp nagar new projects for sale",
+          "Upcoming Projects in JP Nagar 9th Phase",
+          "Ongoing Projects in JP Nagar",
+          "New apartment Projects in JP Nagar 8th Phase",
+          "New apartments for sale in JP Nagar, Bangalore",
+          "Unique things to do in jp nagar",
+          "Things to do in jp nagar for couples",
+          "Things to do in JP Nagar for kids",
+          "Things to do in jp nagar with friends",
+          "Things to do in jp nagar at night",
+          "Shopping in JP Nagar",
+          "JP Nagar shopping street",
+          "Best restaurants jp nagar bangalore",
+          "Best restaurants in JP Nagar for Lunch",
+          "Best restaurants in JP Nagar for family",
+          "Best restaurants in JP Nagar for couples",
+          "Restaurants in JP Nagar with good ambience",
+          "Veg restaurants in JP Nagar",
+          "Affordable restaurants in JP Nagar",
+          "Best restaurants in JP Nagar for dinner",
+          "Cbse schools near jp nagar",
+          "Schools near jp nagar bangalore",
+          "Schools near jp Nagar, Mysore",
+          "Top 10 schools in JP Nagar, Bangalore",
+          "Schools in JP Nagar 7th Phase",
+          "Best schools in JP Nagar 7th Phase",
+          "IGCSE Schools near jp nagar Bangalore",
+          "Top 10 Schools in JP Nagar, Bangalore with Fees",
+          "JP Nagar Hospitals list",
+          "Hospitals in JP Nagar 7th Phase",
+          "JP Nagar Hospital, Mysore",
+          "Multispeciality Hospital in JP Nagar",
+          "Aster RV Hospital, JP Nagar reviews",
+          "Deepasri multispeciality hospital jp nagar",
+          "Aster RV Hospital, JP Nagar contact number",
+          "Jp Nagar Clinic",
+          "Koramangala vs Indiranagar reddit",
+          "Jayanagar or malleswaram which is better for shopping",
+          "Best areas to live in Bangalore reddit",
+          "Best area to live in Bangalore for family",
+          "Sahakar nagar reddit",
+          "New Bel road reddit",
+          "Shivaji Nagar Bangalore reddit",
+          "NCC Urban Lake Springs"
+        ],
+        "autocomplete": [
+          "jp nagar pin code",
+          "jp nagar metro station",
+          "jp nagar bangalore",
+          "jp nagar restaurants",
+          "jp nagar social",
+          "jp nagar cafes",
+          "jp nagar 7th phase",
+          "jp nagar 8th phase",
+          "jp nagar distance",
+          "jp nagar mysore",
+          "jp nagar 9th phase",
+          "jp nagar pubs",
+          "jp nagar 5th phase",
+          "jp nagar 6th phase",
+          "jp nagar police station",
+          "jp nagar bangalore pin code",
+          "jp nagar bangalore one",
+          "jp nagar bangalore distance",
+          "jp nagar bangalore nearest railway station",
+          "jp nagar bangalore map",
+          "jp nagar bangalore metro station",
+          "jp nagar bangalore hotels",
+          "jp nagar bangalore pg for boys",
+          "jp nagar bangalore rent",
+          "jp nagar bangalore weather",
+          "jp nagar bangalore to koramangala distance",
+          "jp nagar bangalore full form",
+          "jp nagar bangalore house for rent",
+          "jp nagar bangalore restaurants",
+          "jp nagar bangalore hospitals",
+          "rent in jp nagar bangalore",
+          "rent in jp nagar 7th phase",
+          "rent in jp nagar 1st phase bangalore",
+          "rent in jp nagar 8th phase",
+          "rent in jp nagar 5th phase",
+          "rent in jp nagar 3rd phase",
+          "rent in jp nagar 2nd phase",
+          "rent in jp nagar mysore",
+          "rent in jp nagar 9th phase",
+          "rent in jp nagar 6th phase",
+          "apartments in jp nagar",
+          "apartments in jp nagar 7th phase",
+          "apartments in jp nagar bangalore",
+          "apartments in jp nagar 9th phase",
+          "apartments in jp nagar 8th phase",
+          "jp nagar property rates",
+          "jp nagar property for sale",
+          "jp nagar property dealer",
+          "jp nagar property value",
+          "jp nagar house for rent",
+          "jp nagar house for sale",
+          "jp nagar house of commons",
+          "jp nagar house",
+          "jp nagar house for lease",
+          "jp nagar house for sale price",
+          "jp nagar house for rent mysore",
+          "jp nagar house broker",
+          "jp nagar house for sale mysore",
+          "jp nagar house broker contact number",
+          "jp nagar house price"
+        ],
+        "serp_results_summary": [
+          {
+            "query": "JP Nagar Bangalore",
+            "top_results": [
+              {
+                "title": "Jayaprakash Nagar, Bengaluru",
+                "link": "https://en.wikipedia.org/wiki/Jayaprakash_Nagar,_Bengaluru",
+                "snippet": "Jayaprakash Nagara also known as J P Nagara, is an upscale residential neighbourhood located in the south of Bangalore, India. It is named after prominent ...",
+                "position": 1,
+                "domain": "en.wikipedia.org"
+              },
+              {
+                "title": "JP Nagar, Bangalore: Map, Photo, Video, Price Trends, ...",
+                "link": "https://www.magicbricks.com/JP-Nagar-in-Bangalore-Overview",
+                "snippet": "JP Nagar is a prime locality in South Bangalore located between Bannerghatta Road and Kanakpura road. Prime residential areas in proximity are Jayanagar, ...",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "https://www.google.com/maps/search/JP+Nagar%2C+Ban...",
+                "link": "https://www.google.com/maps/search/JP+Nagar%2C+Bangalore+560078%2C+India/?hl=en",
+                "snippet": "",
+                "position": 3,
+                "domain": "www.google.com"
+              }
+            ],
+            "serp_features": [
+              "knowledge_panel",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "JP Nagar Bangalore guide",
+            "top_results": [
+              {
+                "title": "Discover JP Nagar Bangalore : Top Places To Eat, Shop & See",
+                "link": "https://lbb.in/bangalore/locality/jp-nagar-bangalore/",
+                "snippet": "Discover JP Nagar in Bangalore with curated reviews and recommendations on top places to see, best shops, best cafes, restaurants, & bars, and markets & other ...",
+                "position": 1,
+                "domain": "lbb.in"
+              },
+              {
+                "title": "JP Nagar Travel Guide - Bengaluru",
+                "link": "https://www.expedia.co.in/Bengaluru-JP-Nagar.dx553248635493160322",
+                "snippet": "Popular places to visit \u00b7 Nandi Hills \u00b7 Bangalore Palace \u00b7 Manyata Tech Park \u00b7 Cubbon Park \u00b7 Lalbagh Botanical Gardens \u00b7 UB City \u00b7 ISKCON Temple \u00b7 Wonderla ...",
+                "position": 2,
+                "domain": "www.expedia.co.in"
+              },
+              {
+                "title": "JP Nagar Travel Guide 2026: Top Attractions, Things to do ...",
+                "link": "https://in.trip.com/travel-guide/destination/jp-nagar-2137589/",
+                "snippet": "Ready to explore JP Nagar? Discover must-see sights, fun things to do, and where to stay. Find exclusive deals on hotels, tours, and attraction tickets.",
+                "position": 3,
+                "domain": "in.trip.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "living in JP Nagar Bangalore",
+            "top_results": [
+              {
+                "title": "Which is the best place to live in JP Nagar, Bengaluru, and ...",
+                "link": "https://www.quora.com/Which-is-the-best-place-to-live-in-JP-Nagar-Bengaluru-and-things-to-do-around",
+                "snippet": "In general, if you want a better quality of life, JP Nagar will be better than Whitefield (Nallurhalli). If you want a place midway , HSR layout ...",
+                "position": 1,
+                "domain": "www.quora.com"
+              },
+              {
+                "title": "JP Nagar, Bangalore: Map, Photo, Video, Price Trends, ...",
+                "link": "https://www.magicbricks.com/JP-Nagar-in-Bangalore-Overview",
+                "snippet": "Living here is manageable day to day. Grocery shops, clinics and small eateries are always close. Evening walks, quick errands and school runs ...",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "Locality Review: JP Nagar, Bengaluru",
+                "link": "https://www.youtube.com/watch?v=ttHxVVBI25U",
+                "snippet": "Jayaprakash Narayan Nagar or JP Nagar is one of the oldest and well-planned localities in Bengaluru. JP Nagar comes right after Jayanagar ...",
+                "position": 3,
+                "domain": "www.youtube.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "JP Nagar review",
+            "top_results": [
+              {
+                "title": "Ratings & Reviews of JP Nagar, Bangalore",
+                "link": "https://www.99acres.com/jp-nagar-bangalore-south-reviews-and-ratings-wrffid",
+                "snippet": "JP Nagar Bangalore has 4.4 star rating out of 5. Know positive and negative things about JP Nagar through 1325 tenants/owners genuine reviews.",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "JP Nagar Reviews & Ratings - Localities in Bangalore",
+                "link": "https://www.magicbricks.com/real-estate-property-reviews/JP-Nagar-in-Bangalore",
+                "snippet": "JP Nagar is a good locality. I have lived in this locality for close to 2 years and I can say that the area is very peaceful, clean and family friendly. The ...",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "What do you think of JP Nagar? : r/bangalore",
+                "link": "https://www.reddit.com/r/bangalore/comments/vyd8m2/what_do_you_think_of_jp_nagar/",
+                "snippet": "I live in JP Nagar 1st phase, and it's boring af here. The crowd is mostly the halli crowd, roads are narrow and traffic is a nightmare. Most of ...",
+                "position": 3,
+                "domain": "www.reddit.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "JP Nagar property price",
+            "top_results": [
+              {
+                "title": "Property Rates in JP Nagar, Bangalore 2026",
+                "link": "https://www.99acres.com/property-rates-and-price-trends-in-jp-nagar-bangalore-south-prffid",
+                "snippet": "The average flat rates in JP Nagar, Bangalore is \u20b9 10,450 per sq ft. A 1 BHK flat is available at a price range of \u20b9 4,500,000-8,802,100. A 2 BHK flat is ...",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "Property in JP Nagar, Bangalore",
+                "link": "https://www.magicbricks.com/property-for-sale-in-jp-nagar-bangalore-pppfs",
+                "snippet": "The price of flats in JP Nagar range between \u20b9 35 lakhs - \u20b9 16.42 Cr, and houses price between \u20b9 45.7 lakhs - \u20b9 6.50 Cr, with 1-5 BHK options. However, land ...",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "Property Rates in JP Nagar, Bengaluru - 2026",
+                "link": "https://housing.com/price-trends/property-rates-for-buy-in-jp_nagar_bengaluru-P3yqqmgmdvlqoqz0n",
+                "snippet": "Starting price of properties in JP Nagar is Rs. 2,448 per sqft and the average price of properties in JP Nagar is Rs. 11,047 per sqft. Price trend recommends ...",
+                "position": 3,
+                "domain": "housing.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "JP Nagar rent",
+            "top_results": [
+              {
+                "title": "Flats for Rent in J. P. Nagar , Bangalore",
+                "link": "https://www.nobroker.in/flats-for-rent-in-j_p_nagar_bangalore",
+                "snippet": "3 BHK Flats for Rent in J. P. Nagar. 3 BHK - 500 sq. ft. to 3,000 sq. ft. Monthly rent generally in J. P. Nagar falls between \u20b921,050 to \u20b999,499 per month, ...",
+                "position": 1,
+                "domain": "www.nobroker.in"
+              },
+              {
+                "title": "Flats for Rent in JP Nagar, Bangalore",
+                "link": "https://www.magicbricks.com/flats-for-rent-in-jp-nagar-bangalore-pppfr",
+                "snippet": "Browse flats for rent in JP Nagar that fall within the \u20b98,650 - \u20b91.9 Lac budget, including 1-5 BHK types. Rent in the area changes based on apartment size and ...",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "318+ Apartments for Rent in JP Nagar, Bengaluru - Housing",
+                "link": "https://housing.com/rent/apartments-for-rent-in-jp-nagar-bengaluru-M1P3yqqmgmdvlqoqz0n",
+                "snippet": "Apartments for Rent in JP Nagar, Bengaluru \u00b7 1 BHK Flat for rent in 7th Phase, JP Nagar, Bengaluru \u00b7 Royal Apartment. 15,000. Price breakup. 600 sq.ft. Builtup ...",
+                "position": 3,
+                "domain": "housing.com"
+              }
+            ],
+            "serp_features": [
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "2BHK rent JP Nagar",
+            "top_results": [
+              {
+                "title": "2 BHK Flats for rent in JP Nagar, Bangalore",
+                "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-j_p_nagar_bangalore",
+                "snippet": "2 BHK Flats for Rent in J. P. Nagar. 2 BHK - 450 sq. ft. to 1,800 sq. ft. Monthly rent generally in J. P. Nagar falls between \u20b912,000 to \u20b938,000 per month, ...",
+                "position": 1,
+                "domain": "www.nobroker.in"
+              },
+              {
+                "title": "2 BHK Flats for Rent in JP Nagar, Bangalore",
+                "link": "https://www.magicbricks.com/2-bhk-flats-for-rent-in-jp-nagar-bangalore-pppfr",
+                "snippet": "Explore rental options for 2 BHK flats in JP Nagar, priced within \u20b922,000 - \u20b952,500. Rent varies based on the flat's size and the amenities inside the building.",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "bangalore",
+                "link": "https://www.nestaway.com/bangalore/2-bhk-flat-house-for-rent-in-jp-nagar",
+                "snippet": "Managed by Owner. 2 BHK semi furnished flat for Rent in Jp nagar phase 6, Bengaluru \u00b7 3 Houses. For boys, girls, family. 17,000. Rent. 1,00,000. Deposit.",
+                "position": 3,
+                "domain": "www.nestaway.com"
+              }
+            ],
+            "serp_features": [],
+            "competitor_presence": [
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "JP Nagar flat for sale",
+            "top_results": [
+              {
+                "title": "Flats for Sale in J. P. Nagar Bangalore",
+                "link": "https://www.nobroker.in/flats-for-sale-in-j_p_nagar_bangalore",
+                "snippet": "388 - Flats for Sale in J. P. Nagar Bangalore | Apartments for Sale in J. P. Nagar Bangalore \u00b7 3 BHK Flat In Nainika Primose For Sale In Kothanur \u00b7 2 BHK ...",
+                "position": 1,
+                "domain": "www.nobroker.in"
+              },
+              {
+                "title": "Apartments in JP Nagar, Bangalore - 575+ Flats for sale in ...",
+                "link": "https://www.99acres.com/flats-in-jp-nagar-bangalore-south-ffid",
+                "snippet": "Apartments in JP Nagar, Bangalore ; HM Indigo \u00b7 2 BHK Apartment. \u20b91.2 - 1.51 Cr. 3 BHK Apartment. \u20b91.62 - 1.9 Cr. \u20b910,300 /sqft ; JCSV Pride \u00b7 2 BHK Apartment. \u20b990 ...",
+                "position": 2,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "721+ Flats for Sale in JP Nagar, Bangalore",
+                "link": "https://www.magicbricks.com/flats-in-jp-nagar-bangalore-for-sale-pppfs",
+                "snippet": "Explore flats for sale in JP Nagar within the price range of \u20b971.6 Lac - \u20b95.52 Cr, offering 1-5 BHK options. Choose from 443+ resale flats, 511+ ...",
+                "position": 3,
+                "domain": "www.magicbricks.com"
+              }
+            ],
+            "serp_features": [],
+            "competitor_presence": [
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "JP Nagar property rate per sq ft",
+            "top_results": [
+              {
+                "title": "Property Rates in JP Nagar, Bangalore 2026",
+                "link": "https://www.99acres.com/property-rates-and-price-trends-in-jp-nagar-bangalore-south-prffid",
+                "snippet": "The average flat rates in JP Nagar, Bangalore is \u20b9 10,450 per sq ft. A 1 BHK flat is available at a price range of \u20b9 4,500,000-8,802,100. A 2 BHK flat is ...",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "Property Rates in JP Nagar, Bengaluru - 2026",
+                "link": "https://housing.com/price-trends/property-rates-for-buy-in-jp_nagar_bengaluru-P3yqqmgmdvlqoqz0n",
+                "snippet": "Starting price of properties in JP Nagar is Rs. 2,448 per sqft and the average price of properties in JP Nagar is Rs. 11,047 per sqft. Price trend recommends ...",
+                "position": 2,
+                "domain": "housing.com"
+              },
+              {
+                "title": "Property Rates in JP Nagar, Mysore 2026",
+                "link": "https://www.99acres.com/property-rates-and-price-trends-in-jp-nagar-mysore-prffid",
+                "snippet": "The average flat rates in JP Nagar, Mysore is \u20b9 5,900 per sq ft. A 2 BHK flat is available at a price range of \u20b9 6,613,500-7,010,000. A 3 BHK flat is available ...",
+                "position": 3,
+                "domain": "www.99acres.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "JP Nagar new projects",
+            "top_results": [
+              {
+                "title": "New Projects in JP Nagar Bangalore for Sale",
+                "link": "https://www.99acres.com/new-projects-in-jp-nagar-bangalore-south-ffid",
+                "snippet": "New Projects in JP Nagar Bangalore for Sale ; Sattva Forest Ridge. 9th Phase JP Nagar, Bangalore South. \u20b99.5K/sqft onwards \u00b7 \u20b969.5 L+. 2BHK. \u20b91.31 Cr+. 3BHK. \u20b9 ...",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "New Projects in J P Nagar Bangalore | Latest Residential ...",
+                "link": "https://www.nobroker.in/new-projects-in-j-p-nagar-bangalore",
+                "snippet": "New Projects in J P Nagar Bangalore | NoBroker \u00b7 Maia The Seven \u00b7 Sattva Aaranya \u00b7 Brigade Lumina \u00b7 Oakstone Sn Celeste \u00b7 Assetz Mizumi Reserve \u00b7 Goyal The ...",
+                "position": 2,
+                "domain": "www.nobroker.in"
+              },
+              {
+                "title": "New Projects in Jp Nagar, Bangalore",
+                "link": "https://www.magicbricks.com/new-projects-jp-nagar-hotspot-in-bangalore",
+                "snippet": "Projects in Jp Nagar, Bangalore \u00b7 SATTVA FOREST RIDGE \u00b7 Sattva Aqua Vista \u00b7 NCC Urban Lake Springs \u00b7 Arvind Skycrest \u00b7 Sobha Royal Crest \u00b7 Sobha Magnus \u00b7 SNN ...",
+                "position": 3,
+                "domain": "www.magicbricks.com"
+              }
+            ],
+            "serp_features": [
+              "local_pack"
+            ],
+            "competitor_presence": [
+              "magicbricks.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "things to do in JP Nagar",
+            "top_results": [
+              {
+                "title": "People who stays in JP Nagar, what's the attraction there? ...",
+                "link": "https://www.reddit.com/r/bangalore/comments/1hihyj6/people_who_stays_in_jp_nagar_whats_the_attraction/",
+                "snippet": "Visit Ragigudda, its a temple on a hill, there are good malls, temples around, jayanagar is closeby, 4th block has good shopping complex and showrooms, and ...",
+                "position": 1,
+                "domain": "www.reddit.com"
+              },
+              {
+                "title": "THE 10 BEST Things to Do in J.P. Nagar (2026)",
+                "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087496-Bengaluru_Bangalore_District_Karnataka.html",
+                "snippet": "Top Things to Do in J.P. Nagar \u00b7 1. Bannerughatta Biological Park \u00b7 2. Sree Tirumala Giri Lakshmi Venkateswara Swami Temple \u00b7 3. Sri Shirdi Sai Baba Temple \u00b7 4.",
+                "position": 2,
+                "domain": "www.tripadvisor.in"
+              },
+              {
+                "title": "Discover JP Nagar Bangalore : Top Places To Eat, Shop & See",
+                "link": "https://lbb.in/bangalore/locality/jp-nagar-bangalore/",
+                "snippet": "Discover JP Nagar in Bangalore with curated reviews and recommendations on top places to see, best shops, best cafes, restaurants, & bars, and markets & other ...",
+                "position": 3,
+                "domain": "lbb.in"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "best restaurants JP Nagar",
+            "top_results": [],
+            "serp_features": [
+              "local_pack",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "schools near JP Nagar",
+            "top_results": [
+              {
+                "title": "Top 7 Best Schools In JP Nagar, Bangalore 2026-27",
+                "link": "https://yellowslate.com/blog/best-schools-in-jp-nagar-bangalore",
+                "snippet": "Poorna Vikasa Vidyalaya and Sri Chaitanya Techno School are the most affordable quality options in JP Nagar. Poorna Vikasa Vidyalaya stands out for offering ...",
+                "position": 1,
+                "domain": "yellowslate.com"
+              },
+              {
+                "title": "JPNagar",
+                "link": "https://ekyaschools.com/jpnagar/",
+                "snippet": "At Ekya JP Nagar, our early years program, for ages 2.5 to 6, has a vibrant Montessori environment, where young learners enter an exciting journey of discovery.",
+                "position": 2,
+                "domain": "ekyaschools.com"
+              },
+              {
+                "title": "The Brigade School JP Nagar",
+                "link": "https://www.brigadeschools.edu.in/the-brigade-school-millenium-jp-nagar/",
+                "snippet": "The Brigade School @ J.P. Nagar has classes from Nursery to Grade 12. Our teachers take on many roles to make learning active and meaningful, going beyond just ...",
+                "position": 3,
+                "domain": "www.brigadeschools.edu.in"
+              }
+            ],
+            "serp_features": [
+              "local_pack",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "hospitals near JP Nagar",
+            "top_results": [
+              {
+                "title": "154 Hospitals in JP Nagar, Bangalore",
+                "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/jp-nagar",
+                "snippet": "154 Hospitals in JP Nagar, Bangalore \u00b7 Arka Anugraha Hospital \u00b7 Deepasri Multispecialities Hospital \u00b7 Partha Dental Skin Hair \u00b7 Apollo Hospital \u00b7 Manipal ...",
+                "position": 1,
+                "domain": "www.practo.com"
+              },
+              {
+                "title": "Best Hospitals in Jp Nagar, Bangalore",
+                "link": "https://www.justdial.com/Bangalore/Hospitals-in-Jp-Nagar/nct-10253670",
+                "snippet": "186 Hospitals in Jp Nagar,Bangalore. Homeocare International Pvt Ltd, Hcg Cancer Centre, Aster Rv Hospital etc. Find \u2713Multispeciality Hospitals, \u2713Private ...",
+                "position": 2,
+                "domain": "www.justdial.com"
+              },
+              {
+                "title": "Best Multispeciality Hospital in JP Nagar, Bangalore",
+                "link": "https://deepasrihospital.com/",
+                "snippet": "Welcome to Deepa Sri Hospital - Providing advanced healthcare services in Jp Nagar Bangalore with expert. WELCOME TO. DEEPASRI MULTISPECIALITIES HOSPITAL. At ...",
+                "position": 3,
+                "domain": "deepasrihospital.com"
+              }
+            ],
+            "serp_features": [
+              "local_pack",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "JP Nagar vs bannerghatta road",
+            "top_results": [
+              {
+                "title": "Why Does No One Talk About Property Investment in JP ...",
+                "link": "https://www.reddit.com/r/indianrealestate/comments/1mm9xxr/why_does_no_one_talk_about_property_investment_in/",
+                "snippet": "Rental yield is good. Why will someone buy property in jp nagar, Bannerghatta Road if they need to travel even 1-2 times a week to ORR.",
+                "position": 1,
+                "domain": "www.reddit.com"
+              },
+              {
+                "title": "Bengaluru property prices can rise by 20 to 40% in JP ...",
+                "link": "https://m.economictimes.com/wealth/real-estate/bengaluru-property-prices-can-rise-by-20-to-40-in-jp-nagar-bannerghatta-road-and-these-areas-due-to-yellow-line-pink-line-metro-report/amp_articleshow/130433426.cms",
+                "snippet": "Bengaluru property prices can rise by 20 to 40% in JP Nagar, Bannerghatta Road and these areas due to Yellow Line & Pink Line metro; report. ET ...",
+                "position": 2,
+                "domain": "m.economictimes.com"
+              },
+              {
+                "title": "Moving to bangalore good place to live near of ...",
+                "link": "https://www.indiamike.com/india/moving-to-bangalore-f100/moving-to-bangalore-good-place-to-live-near-of-bannerghatta-road-jp-nagar-t87166/",
+                "snippet": "Jp nagar is nice place to stay and even bannergatta road has some good apartments for rent, you might get a single bedroom apartment for rent ...",
+                "position": 3,
+                "domain": "www.indiamike.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          }
+        ],
+        "aeo_scores": [
+          {
+            "query": "best restaurants JP Nagar",
+            "score": 100,
+            "serp_features": [
+              "local_pack",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "schools near JP Nagar",
+            "score": 100,
+            "serp_features": [
+              "local_pack",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "hospitals near JP Nagar",
+            "score": 100,
+            "serp_features": [
+              "local_pack",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "JP Nagar Bangalore",
+            "score": 90,
+            "serp_features": [
+              "knowledge_panel",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": true
+          },
+          {
+            "query": "JP Nagar rent",
+            "score": 90,
+            "serp_features": [
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": true
+          },
+          {
+            "query": "2BHK rent JP Nagar",
+            "score": 85,
+            "serp_features": [],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": true
+          },
+          {
+            "query": "JP Nagar flat for sale",
+            "score": 85,
+            "serp_features": [],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": true
+          },
+          {
+            "query": "JP Nagar new projects",
+            "score": 85,
+            "serp_features": [
+              "local_pack"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": true
+          },
+          {
+            "query": "things to do in JP Nagar",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "JP Nagar vs bannerghatta road",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "JP Nagar Bangalore guide",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "living in JP Nagar Bangalore",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "JP Nagar review",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "JP Nagar property price",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "JP Nagar property rate per sq ft",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          }
+        ]
+      },
+      "analysis": {
+        "topic": "JP Nagar",
+        "topic_type": "locality",
+        "trend_direction": "declining",
+        "trend_summary": "JP Nagar search interest is declining from a 12-month average of 74.2 to recent interest of 68.5, indicating softening demand. However, 4 rising queries around specific sectors and new projects suggest emerging micro-trends worth capturing.",
+        "total_queries_discovered": 207,
+        "intent_clusters": [
+          {
+            "intent": "informational",
+            "queries": [
+              "Is JP Nagar a posh area?",
+              "JP Nagar location in Bangalore",
+              "JP Nagar demographics",
+              "JP Nagar history"
+            ]
+          },
+          {
+            "intent": "commercial",
+            "queries": [
+              "JP Nagar property prices",
+              "JP Nagar apartments for sale",
+              "JP Nagar rental rates",
+              "JP Nagar real estate"
+            ]
+          },
+          {
+            "intent": "navigational",
+            "queries": [
+              "JP Nagar Bangalore",
+              "JP Nagar sector 1",
+              "JP Nagar sector 2"
+            ]
+          }
+        ]
+      },
+      "competitor_tracker": {
+        "magicbricks.com": 10,
+        "99acres.com": 10,
+        "nobroker.in": 9,
+        "housing.com": 7
+      },
+      "serp_calls_used": 15,
+      "autocomplete_calls_used": 4,
+      "cost_usd": 0.001426
+    }
+  },
+  "cluster_id": "cl-aad5be30-804"
+}

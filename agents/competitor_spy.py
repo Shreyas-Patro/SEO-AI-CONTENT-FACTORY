@@ -1,163 +1,181 @@
 """
-Competitor Spy v3 — proper retry cache busting (uses _retry_suffix from base).
+agents/competitor_spy.py — Clean v3 implementation against AgentBase v4.2
+
+CONTRACT:
+    READS_STATE   = [TREND_DATA]
+    WRITES_STATE  = [COMPETITOR_DATA]
+    INPUT         = {"topic": str}  + auto-merged trend_data from state
+    OUTPUT        = {
+        "topic": str,
+        "competitor_coverage": {domain: count},
+        "raw_results": [...],
+        "uncovered_queries": [...],
+        "summary": str,
+    }
+
+The base class v4.2 handles validation, retries, persistence, state writes.
+This file is pure business logic — no _retry_* attribute references.
 """
 
-import json
-import time
-from serpapi import GoogleSearch
-from config_loader import get_serpapi_key, cfg
-from db.sqlite_ops import cache_get, cache_set
-from llm import call_llm_json
+import os
 from agents.base import AgentBase
+from db.pipeline_state import StateKeys, PipelineState
 
-SERPAPI_KEY = get_serpapi_key()
-COMPETITORS = cfg.get("competitors", ["magicbricks.com", "nobroker.in", "housing.com", "99acres.com"])
+# Same imports as trend_scout.py
+from serpapi import GoogleSearch
 
 
-def _search_competitor(competitor, topic):
-    cache_key = f"comp:{competitor}:{topic}"
-    cached = cache_get(cache_key)
-    if cached:
-        return cached, True
-
+# Try to load API key from config (same way trend_scout does)
+def _get_serpapi_key():
     try:
-        params = {
-            "engine": "google",
-            "q": f"site:{competitor} {topic} Bangalore",
-            "gl": "in",
-            "hl": "en",
-            "num": 10,
-            "api_key": SERPAPI_KEY,
-        }
-        search = GoogleSearch(params)
-        results = search.get_dict()
-        data = [
-            {"title": r.get("title", ""),
-             "link": r.get("link", ""),
-             "snippet": r.get("snippet", "")}
-            for r in results.get("organic_results", [])
-        ]
-        cache_set(cache_key, data, ttl_days=7)
-        time.sleep(1)
-        return data, False
-    except Exception as e:
-        print(f"  Error searching {competitor}: {e}")
-        return [], False
+        from config_loader import get_config
+        cfg = get_config()
+        return cfg.get("serpapi_key") or cfg.get("serpapi", {}).get("api_key")
+    except Exception:
+        pass
+    try:
+        import yaml
+        with open("config.yaml") as f:
+            cfg = yaml.safe_load(f)
+        return cfg.get("serpapi_key") or cfg.get("serpapi", {}).get("api_key")
+    except Exception:
+        pass
+    return os.environ.get("SERPAPI_KEY") or os.environ.get("SERPAPI_API_KEY")
+
+
+COMPETITOR_DOMAINS = [
+    "magicbricks.com",
+    "nobroker.in",
+    "housing.com",
+    "99acres.com",
+]
 
 
 class CompetitorSpyAgent(AgentBase):
     NAME = "competitor_spy"
-    INPUT_REQUIRED = ["topic"]
-    OUTPUT_REQUIRED = ["topic", "competitor_coverage", "coverage_gaps", "our_advantages", "raw_results"]
-    OUTPUT_NON_EMPTY = ["competitor_coverage", "raw_results"]
+    READS_STATE = [StateKeys.TREND_DATA]
+    WRITES_STATE = [StateKeys.COMPETITOR_DATA]
+    OUTPUT_REQUIRED = ["topic", "competitor_coverage", "raw_results"]
+    OUTPUT_NON_EMPTY = ["competitor_coverage"]
 
-    def validate_output(self, output):
-        is_valid, problems = super().validate_output(output)
-
-        raw = output.get("raw_results", {})
-        for comp in COMPETITORS:
-            if comp not in raw:
-                problems.append(f"raw_results missing competitor: {comp}")
-                is_valid = False
-
-        coverage_competitors = {c.get("competitor") for c in output.get("competitor_coverage", [])}
-        for comp in COMPETITORS:
-            if comp in raw and len(raw[comp]) > 0 and comp not in coverage_competitors:
-                problems.append(f"competitor_coverage missing analysis for: {comp}")
-                is_valid = False
-
-        return is_valid, problems
-
-    def _build_analysis_prompt(self, topic, all_results, retry_problems=None):
-        strict_clause = ""
-        if retry_problems:
-            strict_clause = (
-                "\n\n⚠️ YOUR PREVIOUS RESPONSE WAS INCOMPLETE. Issues:\n"
-                + "\n".join(f"  - {p}" for p in retry_problems)
-                + "\n\nYou MUST analyze ALL "
-                f"{len(COMPETITORS)} competitors below, even if some have few results. "
-                "Each competitor MUST appear in competitor_coverage.\n"
-            )
-        return f"""Analyze competitor coverage for "{topic}" in Bangalore.
-
-COMPETITOR SEARCH RESULTS (all {len(COMPETITORS)} competitors):
-{json.dumps(all_results, indent=2)}
-
-Analyze each competitor's coverage depth and identify gaps we can exploit.{strict_clause}
-"""
-
-    def _execute(self, validated_input):
-        topic = validated_input["topic"]
-        retry = self._retry_attempt
-        print(f"\n[{self.NAME}] Analyzing: {topic}{' (retry ' + str(retry) + ')' if retry else ''}")
-
-        # SERP only on first attempt; reuse results on retry
-        if retry == 0:
-            all_results = {}
-            for comp in COMPETITORS:
-                print(f"  Searching {comp}...")
-                results, was_cached = _search_competitor(comp, topic)
-                all_results[comp] = results
-                if not was_cached:
-                    self._track_serp(1)
-                print(f"    Found {len(results)} results ({'cached' if was_cached else 'fresh'})")
-            self._cached_serp_results = all_results
-        else:
-            all_results = getattr(self, "_cached_serp_results", {})
-            print(f"  Reusing SERP results from attempt 1")
-
-        print("  Analyzing with LLM...")
-        prompt_template = open("prompts/competitor_spy.md").read()
-        prompt = self._build_analysis_prompt(topic, all_results, retry_problems=self._retry_problems)
-
-        result = call_llm_json(
-            prompt,
-            system=prompt_template,
-            model_role="bulk",
-            max_tokens=8000,
-            cache_namespace=f"{topic}:competitor_spy{self._retry_suffix()}",
+    def _execute(self, state: PipelineState, agent_input: dict) -> dict:
+        topic = agent_input.get("topic") or state.topic or ""
+        trend_data = (
+            agent_input.get("trend_data")
+            or state.get(StateKeys.TREND_DATA, {})
+            or {}
         )
-        self._track_llm(result)
 
-        analysis = result.get("parsed", {})
+        print(f"[competitor_spy] Analyzing: {topic}")
+
+        api_key = _get_serpapi_key()
+        if not api_key:
+            print("  ⚠️  No SerpAPI key found — falling back to trend_scout's coverage")
+            existing = trend_data.get("competitor_coverage", {}) or {}
+            return self._fallback_result(topic, existing)
+
+        queries = self._build_queries(topic, trend_data)
+        print(f"  Built {len(queries)} probe queries")
+
+        raw_results = []
+        domain_hits = {d: 0 for d in COMPETITOR_DOMAINS}
+
+        for i, q in enumerate(queries, 1):
+            print(f"  [{i}/{len(queries)}] {q}")
+            try:
+                organic = self._search(q, api_key)
+                self.track_serp(cache_hit=False)
+                raw_results.append({
+                    "query": q,
+                    "results": [
+                        {"position": r.get("position"), "title": r.get("title", ""),
+                         "link": r.get("link", "")}
+                        for r in organic[:10]
+                    ],
+                })
+                for r in organic[:10]:
+                    link = r.get("link", "") if isinstance(r, dict) else ""
+                    for domain in COMPETITOR_DOMAINS:
+                        if domain in link:
+                            domain_hits[domain] += 1
+                            break
+            except Exception as e:
+                print(f"    SERP error: {e}")
+                raw_results.append({"query": q, "error": str(e)})
+
+        # Find queries where NO competitor ranks top-10 — gap opportunity
+        uncovered = []
+        for entry in raw_results:
+            if "error" in entry:
+                continue
+            results = entry.get("results") or []
+            covered = any(
+                any(d in (r.get("link", "") if isinstance(r, dict) else "")
+                    for d in COMPETITOR_DOMAINS)
+                for r in results
+            )
+            if not covered:
+                uncovered.append(entry["query"])
+
+        summary = (
+            f"{topic!r}: "
+            + ", ".join(f"{d.split('.')[0]}={c}" for d, c in domain_hits.items())
+            + f" | {len(uncovered)} uncovered queries"
+        )
+        print(f"  ✅ {summary}")
 
         return {
             "topic": topic,
-            "raw_results": all_results,
-            "competitor_coverage": analysis.get("competitor_coverage", []),
-            "coverage_gaps": analysis.get("coverage_gaps", []),
-            "our_advantages": analysis.get("our_advantages", []),
+            "competitor_coverage": domain_hits,
+            "raw_results": raw_results,
+            "uncovered_queries": uncovered,
+            "summary": summary,
         }
 
-    def _output_summary(self, output):
-        cov = len(output.get("competitor_coverage", []))
-        gaps = len(output.get("coverage_gaps", []))
-        return f"{cov} competitors analyzed, {gaps} gaps found"
+    # ─── Helpers ───────────────────────────────────────────────────────────
+    def _build_queries(self, topic: str, trend_data: dict) -> list:
+        base = [
+            f"{topic} property",
+            f"{topic} apartments",
+            f"{topic} 2bhk for sale",
+            f"buy flat in {topic}",
+            f"{topic} real estate review",
+            f"living in {topic}",
+        ]
+        # Add a couple PAA questions if available
+        paa = (
+            trend_data.get("paa_questions")
+            or trend_data.get("people_also_ask")
+            or []
+        )
+        for q in paa[:2]:
+            text = q.get("question") if isinstance(q, dict) else str(q)
+            if text and text not in base:
+                base.append(text)
+        return base
 
+    def _search(self, query: str, api_key: str) -> list:
+        """Run a SerpAPI search exactly like trend_scout does."""
+        params = {
+            "q": query,
+            "api_key": api_key,
+            "engine": "google",
+            "num": 10,
+            "gl": "in",
+            "hl": "en",
+            "location": "Bangalore, Karnataka, India",
+        }
+        search = GoogleSearch(params)
+        result = search.get_dict()
+        return result.get("organic_results", []) or []
 
-def run_competitor_spy(seed_topic, cluster_id=None, pipeline_run_id=None):
-    from db.artifacts import create_pipeline_run
-    if pipeline_run_id is None:
-        pipeline_run_id = create_pipeline_run(seed_topic, notes="standalone competitor_spy run")
-
-    agent = CompetitorSpyAgent(pipeline_run_id, cluster_id=cluster_id)
-    output = agent.run({"topic": seed_topic})
-
-    return {
-        "topic": seed_topic,
-        "raw_results": output["raw_results"],
-        "analysis": {
-            "competitor_coverage": output["competitor_coverage"],
-            "coverage_gaps": output["coverage_gaps"],
-            "our_advantages": output["our_advantages"],
-        },
-        "cost_usd": agent.cost_usd,
-        "pipeline_run_id": pipeline_run_id,
-    }
-
-
-if __name__ == "__main__":
-    import sys
-    topic = sys.argv[1] if len(sys.argv) > 1 else "HSR Layout"
-    result = run_competitor_spy(topic)
-    print(json.dumps(result["analysis"], indent=2))
+    def _fallback_result(self, topic: str, coverage: dict) -> dict:
+        """Used when SerpAPI is unavailable — return minimal valid output."""
+        normalized = {d: coverage.get(d, 0) for d in COMPETITOR_DOMAINS}
+        return {
+            "topic": topic,
+            "competitor_coverage": normalized,
+            "raw_results": [],
+            "uncovered_queries": [],
+            "summary": f"{topic!r}: fallback (no SERP) — used trend_scout's coverage data",
+        }

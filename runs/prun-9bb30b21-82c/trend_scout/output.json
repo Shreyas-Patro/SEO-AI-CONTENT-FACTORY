@@ -1,0 +1,1138 @@
+{
+  "topic": "harlur roard",
+  "classification": {
+    "categories": [
+      "locality"
+    ],
+    "primary_category": "locality",
+    "detected_localities": [
+      "Harlur"
+    ],
+    "is_locality": true,
+    "is_cross_cutting": false
+  },
+  "raw_data": {
+    "trends": {
+      "trend_available": false,
+      "reason": "using_serp_proxy",
+      "assumed_direction": "rising",
+      "serp_based_insights": {
+        "questions_in_paa": 28,
+        "assumed_rising_queries": [],
+        "pages_with_paa": 7
+      },
+      "fallback_strategy": "Derived from SERP People Also Ask signals"
+    },
+    "paa_questions": [
+      "Is Harlur a good place to live?",
+      "Is Harlur Bangalore urban or rural?",
+      "What is the PIN code of Harlur Road Bangalore?",
+      "Where do most billionaires live in Bangalore?",
+      "Which area of Bangalore is best to live in?",
+      "What will happen to a flat after 50 years?",
+      "Is Harlur a good area?",
+      "Is Sanjay Nagar a good place to live?",
+      "Is Ankur Vihar a good place to live?",
+      "What is the price of plot in Harlur?",
+      "What is the cost of a 30 * 40 site in Bangalore?",
+      "Which is the cheapest area in Bangalore?",
+      "What is the cost of 1 square foot?",
+      "Which part of Bangalore is growing fastest?",
+      "What are some hidden gems for couples in Bangalore?",
+      "How to spend 4 hours in Bangalore?",
+      "How to spend Friday night?",
+      "Which is the most beautiful area in Bangalore?",
+      "Which metro line goes to Whitefield?",
+      "Is Whitefield cheap or expensive?",
+      "Which BMTC bus goes to Whitefield?"
+    ],
+    "related_searches": [
+      "Harlur bangalore map",
+      "Harlur Bangalore pin code",
+      "Harlur bangalore rent",
+      "Harlur bangalore distance",
+      "Harlur bangalore safety",
+      "Haralur Road, Bangalore",
+      "Harlur bangalore directions",
+      "Harlur bangalore places to visit",
+      "Harlur bangalore guide map",
+      "Harlur Bangalore map",
+      "Haralur Road Bangalore",
+      "Harlur Main Road",
+      "Harlur to hsr layout",
+      "Haralur distance",
+      "Living in harlur bangalore reviews",
+      "Living in harlur bangalore reddit",
+      "Living in harlur bangalore for rent",
+      "Living in harlur bangalore for sale",
+      "Harlur Main Road, Bangalore",
+      "Haralur road bangalore distance",
+      "Harlur review in bangalore",
+      "Harlur review reddit",
+      "Harlur, Bangalore",
+      "Harlur to hsr",
+      "Haralur Road directions",
+      "Harlur property price per square feet",
+      "Harlur property price per sq ft",
+      "Harlur property price for rent",
+      "Harlur rent 2bhk",
+      "Harlur rent 1 bhk flat",
+      "Harlur rent 2bhk flat",
+      "1 BHK flat for rent in Haralur Road",
+      "Flats for rent in Haralur",
+      "Harlur rent flats",
+      "Independent House for rent in Haralur Road",
+      "Gated community in haralur for rent",
+      "2 BHK in Harlur",
+      "Apartments near Haralur Road",
+      "Eastwood Township Harlur",
+      "Ready to move Flats in Haralur Road",
+      "Harlur apartments for rent",
+      "New flats for sale in haralur road",
+      "2 BHK Flat for sale in Haralur Road",
+      "1 BHK Flat for sale in Haralur Road",
+      "DSR Ultima Flat for sale",
+      "Property for sale in haralur road bangalore",
+      "Flats for sale in HSR Layout",
+      "Harlur new projects price",
+      "Harlur new projects for sale",
+      "Godrej Lake Gardens",
+      "Unique things to do in harlur",
+      "Free things to do in harlur",
+      "Haralur",
+      "Haralur Road",
+      "HSR Layout",
+      "Cbse schools near harlur",
+      "Top 10 schools near harlur",
+      "Top schools near harlur",
+      "Schools near harlur with fees",
+      "Best schools near harlur",
+      "Government schools near harlur",
+      "TCIS Harlur",
+      "Best schools near Haralur Road",
+      "Harlur to whitefield metro",
+      "Harlur to whitefield metro route",
+      "Harlur to whitefield distance",
+      "Harlur to whitefield hsr layout",
+      "Harlur to whitefield train",
+      "Harlur to whitefield bus",
+      "Harlur to whitefield metro fare"
+    ],
+    "autocomplete": [
+      "haralur road",
+      "harlur road pincode",
+      "haralur road bangalore",
+      "harlur road restaurant",
+      "haralur road bangalore pin code",
+      "harlur road movie theatre",
+      "harlur road salon",
+      "haralur road theatre",
+      "harlur road cafe",
+      "haralur road mall",
+      "harlur road pvr",
+      "harlur road icici bank",
+      "harlur road brewery",
+      "harlur road spa",
+      "harlur road pubs",
+      "harlur bangalore pin code",
+      "harlur bangalore map",
+      "harlur bangalore apartments for rent",
+      "harlur bangalore rent",
+      "harlur bangalore directions",
+      "weather in haralur bangalore",
+      "harlur bangalore property for sale",
+      "harlur bangalore location",
+      "aqi bangalore haralur",
+      "haralur to bangalore distance",
+      "harlur bangalore south or north",
+      "haralur bangalore to whitefield distance",
+      "bangalore haralur traffic",
+      "haralur bangalore to indiranagar distance",
+      "rent in haralur",
+      "2bhk rent in harlur",
+      "1bhk rent in harlur",
+      "3bhk for rent in harlur",
+      "flat for rent in haralur road",
+      "apartments for rent in haralur road",
+      "2bhk for rent in harlur road",
+      "house for rent in haralur road",
+      "flats for rent in haralur bangalore",
+      "villa for rent in haralur",
+      "3 bhk for rent in haralur",
+      "2bhk flat for rent in harlur road",
+      "independent house for rent in haralur",
+      "harlur property rates",
+      "harlur properties",
+      "haralur road properties",
+      "harlur bangalore",
+      "harlur",
+      "harlur apartments"
+    ],
+    "serp_results_summary": [
+      {
+        "query": "Harlur Bangalore",
+        "top_results": [
+          {
+            "title": "Harlur, Bangalore: Map, Property Rates, Projects, Photos, ...",
+            "link": "https://www.magicbricks.com/Harlur-in-Bangalore-Overview",
+            "snippet": "Harlur is a very good location with all easy access city centers at walkable distance. It is near to schools, banks, ATM's, gas Stations, Clinics, eating ...",
+            "position": 1,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Harlur, Bangalore - Map, Pin Code, & Property Rates 2026",
+            "link": "https://www.nobroker.in/locality-iq/harlur-bangalore-liqlt",
+            "snippet": "Harlur is in Bangalore South, India. It is located on the Sarjapur Road, 10 kilometres from the city centre. Harlur is surrounded by KPC Layout, Harlur Road, ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Harlur Bangalore Overview",
+            "link": "https://www.99acres.com/harlur-bangalore-south-overview-piffid",
+            "snippet": "Harlur is a luxury locality situated in the southern part of Bangalore. The pincode of this locality is 560102. This locality is near KPC Layout, Haralur Road ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Harlur Bangalore guide",
+        "top_results": [
+          {
+            "title": "Harlur, Bangalore: Map, Property Rates, Projects, Photos, ...",
+            "link": "https://www.magicbricks.com/Harlur-in-Bangalore-Overview",
+            "snippet": "Harlur is a very good location with all easy access city centers at walkable distance. It is near to schools, banks, ATM's, gas Stations, Clinics, eating ...",
+            "position": 1,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Discover Harlur Bangalore : Top Places To Eat, Shop & See",
+            "link": "https://lbb.in/bangalore/locality/harlur-bangalore/",
+            "snippet": "Discover Harlur in Bangalore with curated reviews and recommendations on top places to see, best shops, best cafes, restaurants, & bars, and markets & other ...",
+            "position": 2,
+            "domain": "lbb.in"
+          },
+          {
+            "title": "Things to do in Harlur Karnataka, India | Explore with AI",
+            "link": "https://mindtrip.ai/location/harlur-karnataka/harlur/lo-QJ8beCBU",
+            "snippet": "Harlur is a rapidly developing locality in Bangalore, Karnataka, India. It is known for its residential complexes and is popular among professionals working ...",
+            "position": 3,
+            "domain": "mindtrip.ai"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "video_results"
+        ],
+        "competitor_presence": [
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "living in Harlur Bangalore",
+        "top_results": [
+          {
+            "title": "Buying an apartment in harlur road- good or bad?",
+            "link": "https://www.reddit.com/r/bangalore/comments/tho8pi/buying_an_apartment_in_harlur_road_good_or_bad/",
+            "snippet": "There is nothing worth living for in that area. There's a total lack of culture and everything that can possibly go wrong with unplanned urban ...",
+            "position": 1,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Harlur, Bangalore: Map, Property Rates, Projects, Photos, ...",
+            "link": "https://www.magicbricks.com/Harlur-in-Bangalore-Overview",
+            "snippet": "Harlur is a very good location with all easy access city centers at walkable distance. It is near to schools, banks, ATM's, gas Stations, Clinics, eating ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Ratings & Reviews of Harlur, Bangalore",
+            "link": "https://www.99acres.com/harlur-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "Harlur Bangalore has 3.9 star rating out of 5. Know positive and negative things about Harlur through 74 tenants/owners genuine reviews.",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "local_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Harlur review",
+        "top_results": [
+          {
+            "title": "Ratings & Reviews of Harlur, Bangalore",
+            "link": "https://www.99acres.com/harlur-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "Harlur Bangalore has 3.9 star rating out of 5. Know positive and negative things about Harlur through 74 tenants/owners genuine reviews.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Buying an apartment in harlur road- good or bad?",
+            "link": "https://www.reddit.com/r/bangalore/comments/tho8pi/buying_an_apartment_in_harlur_road_good_or_bad/",
+            "snippet": "The pros you have listed are the biggest cons. Yes, it's closer to ORR and Ecity, but that's when you consider a plain straight road with no traffic.",
+            "position": 2,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Harlur Reviews, Bangalore - Harlur Rating 4.4/5",
+            "link": "https://www.magicbricks.com/real-estate-property-reviews/Harlur-in-Bangalore",
+            "snippet": "Harlur is a very good location with all easy access city centers at walkable distance. It is near to schools, banks, ATM's, gas Stations, Clinics, eating ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Harlur property price",
+        "top_results": [
+          {
+            "title": "Property in Harlur Road, Bangalore",
+            "link": "https://www.99acres.com/property-in-harlur-road-bangalore-east-ffid",
+            "snippet": "Property in Harlur Road, Bangalore ; \u20b93.15 Cr. \u20b910,937 /sqft \u00b7 2,880 sqft(268 sqm) \u00b7 Owner ; \u20b92.5 Cr. \u20b98,928 /sqft \u00b7 2,800 sqft(260 sqm) \u00b7 Owner ; \u20b94.81 Cr. \u20b918,500 / ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property in Haralur Main Road, Bangalore",
+            "link": "https://www.magicbricks.com/property-for-sale-in-haralur-main-road-bangalore-pppfs",
+            "snippet": "The price of flats in Haralur Main Road range between \u20b9 35 lakhs - \u20b9 16.42 Cr, and houses price between \u20b9 45.7 lakhs - \u20b9 6.52 Cr, with 1-5 BHK options. However, ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Property Rates in Harlur Road, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-harlur-road-bangalore-east-prffid",
+            "snippet": "The average flat rates in Haralur Road, Bangalore is \u20b9 14,400 per sq ft. A 2 BHK flat is available at a price range of \u20b9 13,000,000-21,150,000. A 3 BHK flat is ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Harlur rent",
+        "top_results": [
+          {
+            "title": "Flats for Rent in Haralur , Bangalore - Bengaluru",
+            "link": "https://www.nobroker.in/flats-for-rent-in-harlur_bangalore",
+            "snippet": "2 BHK Flats for Rent in Haralur. 2 BHK - 650 sq. ft. to 1,600 sq. ft. Monthly rent generally in Haralur falls between \u20b918,000 to \u20b955,800 per month, influenced ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "142+ Flats for Rent in Harlur, Bangalore",
+            "link": "https://www.99acres.com/flats-for-rent-in-harlur-bangalore-south-ffid",
+            "snippet": "142+ Flats for rent in Harlur, Bangalore on 99acres.com. Search flats and apartments on rent in Harlur, Bangalore with 1/2/3/4 BHK configuration, ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Flats for Rent in Haralur Main Road, Bangalore",
+            "link": "https://www.magicbricks.com/flats-for-rent-in-haralur-main-road-bangalore-pppfr",
+            "snippet": "Search flats for rent in Haralur Main Road within \u20b917,700 - \u20b91.3 Lac, with several 1-5 BHK options. Rent rates differ based on flat size and the quality of ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "2BHK rent Harlur",
+        "top_results": [
+          {
+            "title": "2 BHK Flats for rent in Haralur, Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-harlur_bangalore",
+            "snippet": "2 BHK Flats for Rent in Haralur. 2 BHK - 650 sq. ft. to 1,600 sq. ft. Monthly rent generally in Haralur falls between \u20b918,000 to \u20b954,700 per month, influenced ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "2 BHK Flats for Rent in Harlur Road, Bangalore",
+            "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-harlur-road-bangalore-east-ffid",
+            "snippet": "2 BHK Flat for rent in Harlur Road, Bangalore ... Property has 838 sq.Ft. Carpet area with 2 bathrooms & 1 balcony attached. The flat is built on 1197 sq.Ft. Area ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "6237 Flats & Apartments for Rent in Harlur Road",
+            "link": "https://www.olx.in/harlur-road_g5457946/for-rent-houses-apartments_c1723",
+            "snippet": "For Rent: Houses & Apartments ; 2 BHK Apaerment for lease in Haraluru. \u20b9 20,90,000 ; Furnished 1RK with balcony green glen layout bellandur bangalore. \u20b9 21,000.",
+            "position": 3,
+            "domain": "www.olx.in"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "99acres.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Harlur flat for sale",
+        "top_results": [
+          {
+            "title": "Flats for Sale in Haralur Bangalore | Apartments in ...",
+            "link": "https://www.nobroker.in/flats-for-sale-in-harlur_bangalore",
+            "snippet": "135 - Flats for Sale in Haralur Bangalore | Apartments for Sale in Haralur Bangalore \u00b7 3 BHK Apartment In Assetz Mizumi Reserve For Sale near Haralur \u00b7 2 BHK ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Apartments in Harlur Road, Bangalore - 57+ Flats for sale ...",
+            "link": "https://www.99acres.com/flats-in-harlur-road-bangalore-east-ffid",
+            "snippet": "2bhk flat available for sale. The flat occupies a built up area of 1200 sq.Ft. That consists of 2 bedrooms, 2 bathrooms and 1 balcony. This flat is situated on ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "500+ Flats for Sale in Haralur Main Road, Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-haralur-main-road-bangalore-for-sale-pppfs",
+            "snippet": "Explore Haralur Main Road for flats on sale within the price range of \u20b948.8 Lac - \u20b94.29 Cr, offering flexible 1-5 BHK layouts. Choose from 352+ resale ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Harlur property rate per sq ft",
+        "top_results": [
+          {
+            "title": "Property Rates in Harlur Road, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-harlur-road-bangalore-east-prffid",
+            "snippet": "The average flat rates in Haralur Road, Bangalore is \u20b9 14,400 per sq ft. A 2 BHK flat is available at a price range of \u20b9 13,000,000-21,150,000. A 3 BHK flat is ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property Rates in Harlur, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-harlur-bangalore-south-prffid",
+            "snippet": "Flat prices in Harlur, Bangalore are in the range of Rs 12050-18100 per square feet (sq ft). Land rates in Harlur, Bangalore are around Rs 14950-17450 per sq ft ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property Rates in Haralur Main Road Bangalore",
+            "link": "https://www.magicbricks.com/Property-Rates-Trends/Multistorey-Apartment-rates-Haralur-Main-Road-in-Bangalore",
+            "snippet": "Multistorey Apartment (Average Price Rs./Sq-ft). For Sale: 12,633 ; Residential Plot (Average Price Rs./Sq-Yrd). For Sale: 1,33,768 ; Residential House (Average ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "Harlur new projects",
+        "top_results": [
+          {
+            "title": "New Projects in Harlur Road, Bangalore",
+            "link": "https://www.99acres.com/new-projects-in-harlur-road-bangalore-east-ffid",
+            "snippet": "New Projects in Haralur Road Bangalore for Sale ; Prestige Ferns Residency \u00b7 2BHK. \u20b91.74 Cr+. 3BHK. \u20b92.1 Cr+. 4BHK. Price on Request \u00b7 Since Sep, 2017 ; Reliaable ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "New Projects in Haralur Main Road, Bangalore",
+            "link": "https://www.magicbricks.com/new-projects-Haralur-Main-Road-in-Bangalore",
+            "snippet": "Projects in Bangalore \u00b7 Prestige Ferns Residency \u00b7 Essem18 Alaya \u00b7 Iconest 5 \u00b7 SNN Raj Etternia \u00b7 Abhee Sunrise \u00b7 Pariwar Wise Palm Springs \u00b7 ND Passion \u00b7 Bren ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "New Projects in Bangalore | Latest Residential ...",
+            "link": "https://www.nobroker.in/new-projects-in-harlur-bangalore",
+            "snippet": "When exploring new residential projects in Harlur, focus on key factors like the developer's reputation, location advantages, amenities, and pricing. NoBroker ...",
+            "position": 3,
+            "domain": "www.nobroker.in"
+          }
+        ],
+        "serp_features": [
+          "local_pack"
+        ],
+        "competitor_presence": [
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in"
+        ]
+      },
+      {
+        "query": "things to do in Harlur",
+        "top_results": [
+          {
+            "title": "Tourist Attraction - Must-Visit Places in Haralur Hsr Layout",
+            "link": "https://www.justdial.com/Bangalore/Tourist-Attraction-in-Haralur-Hsr-Layout/nct-10596038",
+            "snippet": "Explore Top Tourist Attractions in Haralur Hsr Layout, Bangalore \u00b7 Kaikondrahalli Lake \u00b7 Kasavanahalli Lake \u00b7 Agara Lake View Point \u00b7 Kudlu Lake Park \u00b7 Hosa Lake.",
+            "position": 1,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "The Best of Bengaluru on or around Haralur main road",
+            "link": "https://www.nativeplanet.com/travel-guide/the-best-of-bengaluru-attractions-on-or-around-haralur-main-road-008064.html",
+            "snippet": "XtremeZone is an adventure sports park located near Haralur Main Road. The park offers a variety of activities, including ziplining, rock ...",
+            "position": 2,
+            "domain": "www.nativeplanet.com"
+          },
+          {
+            "title": "Any good sight seeing places near harlur/HSR layout ...",
+            "link": "https://www.reddit.com/r/bangalore/comments/up8lyr/any_good_sight_seeing_places_near_harlurhsr/",
+            "snippet": "Vintage car park in Electronic City, HAL museum and Shivoham shiva temple both on old airport road. If u want adventure games then there is play arena in ...",
+            "position": 3,
+            "domain": "www.reddit.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "best restaurants Harlur",
+        "top_results": [
+          {
+            "title": "Restaurants around Harlur, Bengaluru",
+            "link": "https://www.zomato.com/bangalore/dine-out-in-harlur",
+            "snippet": "Restaurants around Harlur, Bengaluru \u00b7 Roxie \u00b7 The Bier Library \u00b7 Long Boat Brewing Co. \u00b7 Gladia Brewery & Kitchen \u00b7 Tropika Brewing Co \u00b7 Casa Piccosa \u00b7 Hoot Craftwork ...",
+            "position": 1,
+            "domain": "www.zomato.com"
+          },
+          {
+            "title": "Best Restaurants In Haralur, Bangalore 2025",
+            "link": "https://www.swiggy.com/city/bangalore/haralur-restaurants",
+            "snippet": "Discover All Restaurants Serving In Haralur! Explore Menus, Reviews, Ratings, Prices, Locations, Cuisines, Offers, And More For A Perfect Dining Experience.",
+            "position": 2,
+            "domain": "www.swiggy.com"
+          },
+          {
+            "title": "The 20 Best Restaurants in Haralur Main RoadApr 2026",
+            "link": "https://www.eazydiner.com/restaurants?location=haralur-main-road",
+            "snippet": "Haralur Main Road Restaurants \u00b7 To Be Continued Sky Lounge TBC \u00b7 BLR Brewing Co \u00b7 Atlantis - Brewpub, Cocktails & Kitchen \u00b7 Kampot \u00b7 The Coco Club \u00b7 Piro \u00b7 Brik Oven - ...",
+            "position": 3,
+            "domain": "www.eazydiner.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "schools near Harlur",
+        "top_results": [
+          {
+            "title": "20+ Schools in Haralur Hsr Layout - Bangalore - Justdial",
+            "link": "https://www.justdial.com/Bangalore/Schools-in-Haralur-Hsr-Layout/nct-10422444",
+            "snippet": "TOP 30 Schools in Haralur Hsr Layout, Bangalore \u00b7 MS Dhoni Global School \u00b7 Gnan Srishti School Of Excellence \u00b7 Lawrence High School \u00b7 Euroschool Hsr Icse School ...",
+            "position": 1,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "68 Best Schools in Haralur Road, Bangalore 2026-2027",
+            "link": "https://www.edustoke.com/bengaluru/schools-in-haralur-road",
+            "snippet": "Find the list of best schools in Haralur Road, Bangalore 2026-2027 with fees, reviews, admission procedures, board & curriculum, rating, ...",
+            "position": 2,
+            "domain": "www.edustoke.com"
+          },
+          {
+            "title": "Best CBSE Schools in Haralur",
+            "link": "https://www.vibgyorhigh.com/school/bengaluru/cbse/haralur",
+            "snippet": "A leading CBSE school in Haralur, Bengaluru, VIBGYOR High - Haralur is celebrated for its academic excellence, holistic approach to education, and ...",
+            "position": 3,
+            "domain": "www.vibgyorhigh.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "hospitals near Harlur",
+        "top_results": [
+          {
+            "title": "66 Hospitals in Harlur, Bangalore",
+            "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/harlur",
+            "snippet": "66 Hospitals in Harlur, Bangalore \u00b7 Minchu Health Care \u00b7 Sunlife Hospital \u00b7 Motherhood Hospital \u00b7 Manipal Hospital \u00b7 Cloudnine Fertility - IVF Centre, Bellandur.",
+            "position": 1,
+            "domain": "www.practo.com"
+          },
+          {
+            "title": "Best Hospitals in Haralur Hsr Layout, Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Hospitals-in-Haralur-Hsr-Layout/nct-10253670",
+            "snippet": "134 Hospitals in Haralur Hsr Layout,Bangalore. Homeocare International Pvt Ltd, Hcg Cancer Centre, Hcg Cancer Centre, Aster Hospital Whitefield etc.",
+            "position": 2,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "Narayana Clinic, Harlur Road, Bangalore",
+            "link": "https://www.narayanahealth.org/hospitals/bangalore/narayana-clinic-harlur-road",
+            "snippet": "Visit Narayana Clinic on Harlur Road, Bangalore, for quality healthcare services in a convenient neighborhood setting.",
+            "position": 3,
+            "domain": "www.narayanahealth.org"
+          }
+        ],
+        "serp_features": [
+          "local_pack"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "Harlur vs Whitefield",
+        "top_results": [
+          {
+            "title": "Distance between Off Harlur Road and Whitefield",
+            "link": "https://alldistancebetween.com/in/distance-between/off-harlur-road-whitefield-15d3da88d1b5d130aaa707f8abbb4b40/",
+            "snippet": "Distance between Off Harlur Road and Whitefield is 15.00 kms or 9.32 miles or 8.10 nautical miles. Origin. Off Harlur Road, Sector 1, Hsr Layout, Bangalore ...",
+            "position": 1,
+            "domain": "alldistancebetween.com"
+          },
+          {
+            "title": "Haralur to Whitefield | Rapido Bike Taxi, Auto, & Cabs",
+            "link": "https://rapido.bike/bangalore/routes/Haralur-Whitefield",
+            "snippet": "Book bike, auto, & cabs rides from Haralur to Whitefield using Rapido App. Rapido provides low-price, comfortable and quick rides at your doorstep.",
+            "position": 2,
+            "domain": "rapido.bike"
+          },
+          {
+            "title": "Map from Haralur Road to Whitefield",
+            "link": "https://www.distancesfrom.com/map-from-Haralur-Road-to-Whitefield-Bengaluru/MapHistory/12264731.aspx",
+            "snippet": "Map from Haralur Road to Whitefield \u00b7 How far is Whitefield from Haralur Road? \u00b7 Total Driving Distance Travelled is 18 Km \u00b7 FAQ about Map from Haralur Road to ...",
+            "position": 3,
+            "domain": "www.distancesfrom.com"
+          }
+        ],
+        "serp_features": [
+          "featured_snippet",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      }
+    ],
+    "aeo_scores": [
+      {
+        "query": "best restaurants Harlur",
+        "score": 95,
+        "serp_features": [
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "schools near Harlur",
+        "score": 95,
+        "serp_features": [
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "hospitals near Harlur",
+        "score": 95,
+        "serp_features": [
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "Harlur Bangalore",
+        "score": 90,
+        "serp_features": [
+          "knowledge_panel",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "Harlur rent",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "2BHK rent Harlur",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "Harlur flat for sale",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "Harlur new projects",
+        "score": 85,
+        "serp_features": [
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "Harlur vs Whitefield",
+        "score": 85,
+        "serp_features": [
+          "featured_snippet",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": true,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "things to do in Harlur",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "living in Harlur Bangalore",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "local_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Harlur review",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Harlur property price",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Harlur property rate per sq ft",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Harlur Bangalore guide",
+        "score": 65,
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "video_results"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      }
+    ]
+  },
+  "analysis": {
+    "topic": "Harlur Road, Bangalore",
+    "topic_type": "locality",
+    "trend_direction": "rising",
+    "trend_summary": "Harlur is experiencing growing search interest driven by residential property inquiries, lifestyle amenities, and comparative location analysis. Users are actively researching livability, pricing, and infrastructure connectivity.",
+    "total_queries_discovered": 139,
+    "intent_clusters": [
+      {
+        "intent": "informational",
+        "queries": [
+          "Is Harlur a good place to live?",
+          "Is Harlur Bangalore urban or rural?",
+          "Which part of Bangalore is growing fastest?",
+          "Harlur bangalore map",
+          "Harlur bangalore guide map",
+          "things to do in Harlur",
+          "Harlur bangalore places to visit",
+          "best restaurants Harlur",
+          "schools near Harlur",
+          "hospitals near Harlur"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "transactional",
+        "queries": [
+          "Harlur rent",
+          "2BHK rent Harlur",
+          "Harlur flat for sale",
+          "Harlur bangalore rent",
+          "Living in harlur bangalore for rent",
+          "Living in harlur bangalore for sale",
+          "What is the price of plot in Harlur?",
+          "Harlur property price"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "navigational",
+        "queries": [
+          "Harlur Bangalore",
+          "Haralur Road, Bangalore",
+          "Harlur Main Road",
+          "What is the PIN code of Harlur Road Bangalore?",
+          "Harlur bangalore directions",
+          "Harlur to hsr layout",
+          "Harlur bangalore distance"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "medium"
+      },
+      {
+        "intent": "comparative",
+        "queries": [
+          "Harlur vs Whitefield",
+          "Which area of Bangalore is best to live in?",
+          "Is Sanjay Nagar a good place to live?",
+          "Is Ankur Vihar a good place to live?",
+          "Which is the cheapest area in Bangalore?",
+          "Is Whitefield cheap or expensive?"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "medium"
+      }
+    ],
+    "content_gaps": [
+      {
+        "gap": "No comprehensive locality guide covering livability factors, infrastructure, and lifestyle amenities for Harlur",
+        "queries": [
+          "Is Harlur a good place to live?",
+          "Is Harlur a good area?",
+          "Living in harlur bangalore reviews",
+          "Harlur bangalore guide map"
+        ],
+        "opportunity": "Create a definitive 'Harlur Locality Guide' hub covering safety, connectivity, schools, hospitals, restaurants, entertainment, and resident reviews",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Missing detailed property pricing and market analysis content; competitors dominate but lack depth on price trends and ROI",
+        "queries": [
+          "What is the price of plot in Harlur?",
+          "What is the cost of a 30 * 40 site in Bangalore?",
+          "What is the cost of 1 square foot?",
+          "Harlur property price"
+        ],
+        "opportunity": "Create 'Harlur Property Price Guide 2024-2025' with price per sqft, plot costs, apartment rates, and price trend analysis",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "No AI-optimized comparison content between Harlur and competing localities (Whitefield, HSR Layout, Sanjay Nagar, Ankur Vihar)",
+        "queries": [
+          "Harlur vs Whitefield",
+          "Which area of Bangalore is best to live in?",
+          "Is Sanjay Nagar a good place to live?",
+          "Is Ankur Vihar a good place to live?"
+        ],
+        "opportunity": "Create comparison spokes: 'Harlur vs Whitefield', 'Harlur vs HSR Layout', 'Harlur vs Sanjay Nagar' with pros/cons and pricing",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "Lifestyle and amenities content is fragmented; no single source for restaurants, cafes, entertainment, and shopping in Harlur",
+        "queries": [
+          "best restaurants Harlur",
+          "harlur road restaurant",
+          "harlur road cafe",
+          "harlur road pubs",
+          "harlur road brewery",
+          "harlur road movie theatre",
+          "harlur road pvr",
+          "things to do in Harlur",
+          "Harlur bangalore places to visit"
+        ],
+        "opportunity": "Create 'Things to Do in Harlur' hub with restaurant reviews, cafes, pubs, entertainment venues, and shopping destinations",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Infrastructure and connectivity information lacks depth; no comprehensive guide on metro access, bus routes, and distance to key areas",
+        "queries": [
+          "Which metro line goes to Whitefield?",
+          "Which BMTC bus goes to Whitefield?",
+          "Harlur bangalore distance",
+          "Harlur to hsr layout",
+          "Haralur distance"
+        ],
+        "opportunity": "Create 'Harlur Connectivity Guide' covering metro lines, BMTC routes, distances to IT hubs, and travel times",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "No FAQ addressing common concerns about property longevity, urban/rural classification, and investment viability",
+        "queries": [
+          "What will happen to a flat after 50 years?",
+          "Is Harlur Bangalore urban or rural?",
+          "Which part of Bangalore is growing fastest?"
+        ],
+        "opportunity": "Create FAQ addressing property durability, area classification, growth potential, and investment returns",
+        "suggested_content_type": "faq",
+        "priority": "medium"
+      },
+      {
+        "gap": "Rental market information is sparse; no dedicated content on rental rates, lease terms, and rental demand",
+        "queries": [
+          "Harlur rent",
+          "2BHK rent Harlur",
+          "Harlur bangalore rent",
+          "Living in harlur bangalore for rent"
+        ],
+        "opportunity": "Create 'Harlur Rental Market Guide' with 1BHK, 2BHK, 3BHK rates, lease terms, and rental demand trends",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "New projects and developments lack dedicated coverage; no content on upcoming residential projects in Harlur",
+        "queries": [
+          "Harlur new projects"
+        ],
+        "opportunity": "Create 'New Projects in Harlur' spoke listing upcoming developments, builders, amenities, and launch dates",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      }
+    ],
+    "aeo_targets": [
+      {
+        "query": "Is Harlur a good place to live?",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create comprehensive answer covering safety ratings, infrastructure, schools, hospitals, job proximity, cost of living, and resident testimonials. Structure with clear pros/cons and comparison to other areas.",
+        "content_type": "hub"
+      },
+      {
+        "query": "Harlur Bangalore",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Develop authoritative locality overview with knowledge panel optimization, covering geography, demographics, connectivity, property market, and lifestyle. Include video content and interactive map.",
+        "content_type": "hub"
+      },
+      {
+        "query": "best restaurants Harlur",
+        "current_answer_quality": "none",
+        "our_strategy": "Create curated restaurant guide with reviews, cuisines, price ranges, and ratings. Optimize for local pack and include photos, menus, and booking links.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "schools near Harlur",
+        "current_answer_quality": "none",
+        "our_strategy": "Build comprehensive school directory with ratings, fees, distance, and reviews. Include CBSE, ICSE, and state board schools with contact information.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "hospitals near Harlur",
+        "current_answer_quality": "none",
+        "our_strategy": "Create hospital and healthcare facility guide with specialties, emergency services, ratings, and distance. Optimize for local pack.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "Harlur vs Whitefield",
+        "current_answer_quality": "weak",
+        "our_strategy": "Develop detailed comparison table covering pricing, connectivity, job opportunities, lifestyle, safety, and investment potential. Include pros/cons for each area.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "Harlur rent",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create rental market analysis with current rates by BHK, price trends, lease terms, and demand patterns. Include comparison with nearby areas.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "What is the price of plot in Harlur?",
+        "current_answer_quality": "weak",
+        "our_strategy": "Develop pricing guide with per-sqft rates, plot sizes, price ranges, and market trends. Include comparison with other Bangalore localities.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "things to do in Harlur",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Expand existing AI overview with comprehensive activities guide covering restaurants, cafes, entertainment, shopping, parks, and weekend activities.",
+        "content_type": "hub"
+      },
+      {
+        "query": "Harlur new projects",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create projects database with builder details, amenities, pricing, launch dates, and reviews. Keep updated with new launches.",
+        "content_type": "spoke"
+      }
+    ],
+    "competitor_insights": [
+      {
+        "competitor": "magicbricks.com",
+        "strength": "Dominates 'Harlur Bangalore' and property-related queries with strong locality pages, property listings, and reviews. High domain authority and established presence.",
+        "weakness": "Content lacks depth on lifestyle amenities, restaurants, and entertainment. Limited comparison content with other areas. No comprehensive guides on connectivity and infrastructure."
+      },
+      {
+        "competitor": "nobroker.in",
+        "strength": "Strong presence in rental and property transaction queries. Good property database and pricing information.",
+        "weakness": "Limited lifestyle and amenities content. Weak on comparative analysis and locality guides. No entertainment or restaurant guides."
+      },
+      {
+        "competitor": "99acres.com",
+        "strength": "Established presence with property listings and ratings. Good coverage of property prices and reviews.",
+        "weakness": "Lacks comprehensive locality guides. Limited lifestyle content. No detailed comparison with competing areas. Weak on entertainment and dining guides."
+      },
+      {
+        "competitor": "lbb.in",
+        "strength": "Strong lifestyle and entertainment content for Harlur with restaurant and activity recommendations.",
+        "weakness": "Not a real estate platform. Limited property market information. No pricing or investment analysis. Cannot compete on transactional queries."
+      }
+    ],
+    "top_5_priority_queries": [
+      {
+        "query": "Is Harlur a good place to live?",
+        "reason": "High search volume, high intent (decision-making), weak current answers, and directly addresses buyer/renter concerns. Winning this query establishes authority and drives qualified traffic.",
+        "suggested_action": "Create comprehensive 'Is Harlur a Good Place to Live?' guide covering safety, infrastructure, schools, hospitals, job proximity, cost of living, and resident reviews with pros/cons comparison."
+      },
+      {
+        "query": "Harlur Bangalore",
+        "reason": "Highest search volume, navigational intent, moderate competition, and foundational query for all Harlur searches. Winning this establishes locality authority and feeds into all other queries.",
+        "suggested_action": "Develop authoritative 'Harlur, Bangalore: Complete Locality Guide' hub with overview, map, connectivity, property market, lifestyle, and investment potential. Optimize for knowledge panel."
+      },
+      {
+        "query": "Harlur rent",
+        "reason": "High transactional intent, significant search volume, weak current answers, and directly drives rental inquiries. High commercial value for Canvas Homes.",
+        "suggested_action": "Create 'Harlur Rental Market Guide 2024-2025' with current rates by BHK, price trends, lease terms, demand analysis, and comparison with nearby areas."
+      },
+      {
+        "query": "What is the price of plot in Harlur?",
+        "reason": "High transactional intent, significant search volume, weak current answers, and directly addresses investment queries. High commercial value.",
+        "suggested_action": "Develop 'Harlur Property Price Guide' with per-sqft rates, plot costs, apartment pricing, price trends, and ROI analysis compared to other Bangalore areas."
+      },
+      {
+        "query": "best restaurants Harlur",
+        "reason": "Zero current answers (AEO score 95), high lifestyle intent, no featured snippet, and establishes Canvas Homes as lifestyle authority. Differentiates from property-only competitors.",
+        "suggested_action": "Create 'Best Restaurants & Cafes in Harlur' guide with curated reviews, cuisines, price ranges, ratings, photos, and booking links. Optimize for local pack."
+      }
+    ],
+    "related_topics_to_explore": [
+      "Harlur infrastructure and connectivity",
+      "Harlur schools and education",
+      "Harlur healthcare facilities",
+      "Harlur lifestyle and entertainment",
+      "Harlur vs other Bangalore localities",
+      "Harlur investment and ROI analysis",
+      "Harlur new residential projects",
+      "Harlur safety and security",
+      "Harlur demographics and population",
+      "Harlur commercial and retail spaces"
+    ],
+    "seasonal_notes": null
+  },
+  "competitor_tracker": {
+    "99acres.com": 9,
+    "housing.com": 9,
+    "magicbricks.com": 10,
+    "nobroker.in": 9
+  },
+  "serp_calls_used": 15,
+  "autocomplete_calls_used": 4,
+  "cost_usd": 0.017745
+}

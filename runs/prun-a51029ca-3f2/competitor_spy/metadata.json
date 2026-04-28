@@ -1,0 +1,13 @@
+{
+  "agent": "competitor_spy",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "serp_calls": 4,
+  "llm_calls": 1,
+  "tokens_in": 5447,
+  "tokens_out": 7285,
+  "cost_usd": 0.033498,
+  "completed_at": "2026-04-25T12:15:25.276139"
+}

@@ -1,0 +1,74 @@
+{
+  "master_research_prompt": "You are a real estate research analyst conducting comprehensive market research on JP Nagar, Bangalore, Karnataka, India for a property investment platform. Provide detailed, citation-heavy analysis across all sections below. Every numeric claim, price range, distance, date, and named source MUST include a markdown link [Source Name](URL). Prioritize data from the last 18 months (2024-2026) and flag older information as [HISTORICAL]. When sources contradict each other, create separate 'Conflicting Data' subsections. SECTION 1: LOCATION & GEOGRAPHY - Which part of Bangalore is JP Nagar located in (cardinal direction, zone classification)? Provide exact boundaries and neighboring localities with distances in km. What are the different phases of JP Nagar and their specific boundaries? How is JP Nagar administratively classified (ward numbers, assembly constituency, parliamentary constituency)? SECTION 2: PROPERTY PRICING ANALYSIS - Current property prices per square foot for 1BHK, 2BHK, 3BHK apartments in each JP Nagar phase from MagicBricks, NoBroker, 99acres, Housing.com data. Price ranges for independent houses and villas. Year-over-year price appreciation rates for 2023-2024 and 2024-2025. Comparison with neighboring localities like Jayanagar, BTM Layout, Banashankari. Capital value trends from Knight Frank, JLL, Anarock, CBRE reports. SECTION 3: RENTAL MARKET DYNAMICS - Monthly rent ranges for 1BHK, 2BHK, 3BHK apartments across different JP Nagar phases. Rental yields and occupancy rates. Tenant demographics and demand patterns. Comparison with other South Bangalore localities. Security deposit norms and rental escalation trends. SECTION 4: CONNECTIVITY & TRANSPORTATION - Distance to major IT hubs (Electronic City, Bannerghatta Road, Koramangala) in km and travel time. Nearest metro stations with exact distances and expected completion dates for Phase 2/3 extensions. Bus connectivity (BMTC routes, frequency). Major roads and traffic congestion patterns during peak hours. Proximity to Kempegowda International Airport and railway stations. SECTION 5: INFRASTRUCTURE & AMENITIES - Educational institutions: top schools and colleges with ratings and admission criteria. Healthcare facilities: major hospitals, clinics, and specialty centers within 5km radius. Shopping and entertainment: malls, markets, restaurants, cafes, and recreational facilities. Banking and financial services availability. Power, water supply, and waste management infrastructure quality. SECTION 6: INVESTMENT OUTLOOK & MARKET SENTIMENT - Why is JP Nagar considered famous or notable in Bangalore's real estate landscape? Is it classified as a posh or premium locality compared to other areas? Future development projects and their impact on property values. RERA-approved projects and developer credibility. Market liquidity and resale potential. Expert opinions from real estate consultants and market analysts. SECTION 7: REGULATORY & LEGAL ASPECTS - BBMP approvals and building regulations specific to JP Nagar. RERA-Karnataka registered projects and compliance status. Property tax rates and municipal charges. Any legal disputes or development restrictions. Khata and title verification requirements. SECTION 8: QUALITY OF LIFE FACTORS - Safety and security ratings from resident surveys. Air quality index and environmental factors. Community facilities and resident associations. Cultural and social amenities. Traffic noise and congestion impact on daily life. Sources must include: Government (BBMP, BDA, BMRDA, RERA-Karnataka), Industry reports (Knight Frank, JLL, Anarock, CBRE), Real estate platforms (MagicBricks, NoBroker, 99acres, Housing.com), News media (Economic Times, Mint, Hindu BusinessLine, Reuters, Bloomberg, Moneycontrol), Local surveys and resident feedback platforms. End with a 'Confidence Notes' section identifying any claims with limited source verification or potential data gaps.",
+  "research_questions": {
+    "location_geography": [
+      "Which part of Bangalore is JP Nagar in?",
+      "What are the different JP Nagar phases and their boundaries?",
+      "Administrative classification and neighboring localities"
+    ],
+    "property_pricing": [
+      "Current property prices per sqft by apartment type and phase",
+      "Price appreciation trends 2023-2025",
+      "Comparison with neighboring localities"
+    ],
+    "rental_market": [
+      "Monthly rent ranges by apartment type and phase",
+      "Rental yields and market dynamics",
+      "Tenant demographics and demand patterns"
+    ],
+    "connectivity": [
+      "Distance to IT hubs and travel times",
+      "Metro connectivity and future extensions",
+      "Bus routes and traffic patterns"
+    ],
+    "infrastructure": [
+      "Educational institutions and ratings",
+      "Healthcare facilities within 5km",
+      "Shopping, dining, and entertainment options"
+    ],
+    "investment_outlook": [
+      "Why JP Nagar is famous in Bangalore",
+      "Premium locality classification",
+      "Future development impact on values"
+    ],
+    "regulatory": [
+      "BBMP approvals and building regulations",
+      "RERA compliance and registered projects",
+      "Property tax and legal requirements"
+    ],
+    "quality_of_life": [
+      "Safety ratings and environmental factors",
+      "Community facilities and resident satisfaction",
+      "Traffic and noise impact"
+    ]
+  },
+  "freshness_requirements": {
+    "property_prices": "2024-01-01",
+    "rental_rates": "2024-01-01",
+    "metro_connectivity": "2024-01-01",
+    "rera_projects": "2024-01-01",
+    "infrastructure_development": "2023-06-01",
+    "market_reports": "2024-01-01"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "bda.kar.nic.in",
+    "bmrda.kar.nic.in",
+    "magicbricks.com",
+    "nobroker.in",
+    "99acres.com",
+    "housing.com",
+    "economictimes.indiatimes.com",
+    "livemint.com",
+    "thehindubusinessline.com",
+    "reuters.com",
+    "moneycontrol.com",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "anarock.com",
+    "cbre.co.in"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.2
+}

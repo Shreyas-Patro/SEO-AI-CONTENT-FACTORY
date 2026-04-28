@@ -1,0 +1,406 @@
+{
+  "cluster_id": "cl-4cb2484d-eaf",
+  "cluster_plan": {
+    "cluster_id": "mg-road-bangalore",
+    "cluster_name": "MG Road Bangalore Real Estate Guide",
+    "topic": "MG Road, Bangalore",
+    "rationale": "With only 1 keyword group provided, creating 2 articles: one comprehensive hub covering MG Road's identity and real estate landscape, and one spoke focusing on living/investment aspects. No FAQ hub needed for such a small cluster.",
+    "total_articles": 2,
+    "hub_count": 1,
+    "spoke_count": 1,
+    "sub_spoke_count": 0,
+    "writing_priority_order": [
+      "mg-road-bangalore-complete-guide",
+      "living-in-mg-road-bangalore-2026"
+    ],
+    "articles": [
+      {
+        "id": "mg-road-bangalore-complete-guide",
+        "title": "MG Road Bangalore: Complete Guide to India's Most Famous Street",
+        "slug": "mg-road-bangalore-complete-guide",
+        "type": "hub",
+        "from_keyword_group": "MG Road Core Identity & Overview",
+        "target_keywords": {
+          "primary": "MG Road Bangalore",
+          "secondary": [
+            "Mahatma Gandhi Road Bangalore",
+            "MG Road location",
+            "MG Road Bangalore location"
+          ],
+          "long_tail": [
+            "What is MG Road in Bangalore famous for",
+            "Why is MG Road so famous"
+          ]
+        },
+        "word_count_target": 3500,
+        "writer_brief": {
+          "angle": "Comprehensive authority piece positioning MG Road as Bangalore's commercial and cultural epicenter, with real estate implications for investors and residents",
+          "target_reader": "Property investors, potential residents, and business owners researching MG Road's significance and opportunities",
+          "search_intent": "informational",
+          "must_answer": [
+            "What makes MG Road Bangalore's most famous street?",
+            "What are the key landmarks and commercial establishments on MG Road?",
+            "How is MG Road connected to other parts of Bangalore?",
+            "What are the real estate opportunities and property types available?",
+            "What is the historical and cultural significance of MG Road?"
+          ],
+          "must_include": [
+            "Distance from major Bangalore localities (CBD, airport, railway stations)",
+            "BMTC bus connectivity details",
+            "Metro connectivity plans for 2026-2027",
+            "Auto-rickshaw fare structure (\u20b925 base + \u20b96.5/km)",
+            "Transportation cost ranges for different budgets"
+          ],
+          "must_avoid": [
+            "Generic Bangalore city information not specific to MG Road",
+            "Detailed property listings (save for the spoke article)"
+          ],
+          "tone_notes": "Authoritative yet accessible, emphasizing MG Road's prestige and commercial importance while being practical about real estate realities",
+          "outline": [
+            {
+              "level": "H2",
+              "heading": "What Makes MG Road Bangalore's Most Iconic Street",
+              "covers": "Historical significance, cultural importance, and why it's famous"
+            },
+            {
+              "level": "H2",
+              "heading": "MG Road Location and Connectivity",
+              "covers": "Exact location, distances to key areas, transportation options"
+            },
+            {
+              "level": "H3",
+              "heading": "Public Transportation Access",
+              "covers": "BMTC routes, metro plans, auto-rickshaw connectivity"
+            },
+            {
+              "level": "H3",
+              "heading": "Distance from Key Bangalore Areas",
+              "covers": "CBD, airport, railway stations, major residential hubs"
+            },
+            {
+              "level": "H2",
+              "heading": "Key Landmarks and Commercial Establishments",
+              "covers": "Major buildings, shopping centers, restaurants, offices"
+            },
+            {
+              "level": "H2",
+              "heading": "MG Road Real Estate Landscape",
+              "covers": "Property types available, commercial vs residential mix, investment potential"
+            },
+            {
+              "level": "H2",
+              "heading": "Living and Working on MG Road",
+              "covers": "Lifestyle aspects, cost considerations, who should consider MG Road"
+            },
+            {
+              "level": "H2",
+              "heading": "Future Development and Growth Prospects",
+              "covers": "Upcoming infrastructure, metro impact, long-term outlook"
+            }
+          ]
+        },
+        "internal_links": [
+          {
+            "target_slug": "living-in-mg-road-bangalore-2026",
+            "anchor_text": "living on MG Road",
+            "context": "in the H2 about real estate landscape"
+          }
+        ],
+        "embedded_faq_count": 8,
+        "db_id": "art-8ff5651d-f63"
+      },
+      {
+        "id": "living-in-mg-road-bangalore-2026",
+        "title": "Living in MG Road Bangalore: Complete Resident Guide 2026",
+        "slug": "living-in-mg-road-bangalore-2026",
+        "type": "spoke",
+        "from_keyword_group": "MG Road Core Identity & Overview",
+        "target_keywords": {
+          "primary": "living in MG Road Bangalore",
+          "secondary": [
+            "MG Road residential",
+            "MG Road apartments",
+            "MG Road lifestyle"
+          ],
+          "long_tail": [
+            "cost of living in MG Road Bangalore",
+            "is MG Road good for families",
+            "MG Road residential properties"
+          ]
+        },
+        "word_count_target": 2800,
+        "writer_brief": {
+          "angle": "Practical resident-focused guide covering the realities of living on Bangalore's busiest commercial street, balancing prestige with practical considerations",
+          "target_reader": "Professionals and families considering moving to MG Road area, wanting to understand lifestyle, costs, and daily living aspects",
+          "search_intent": "informational",
+          "must_answer": [
+            "What is it actually like to live on or near MG Road?",
+            "What are the monthly living costs including transportation?",
+            "What residential options are available on MG Road?",
+            "How suitable is MG Road for families vs working professionals?",
+            "What are the pros and cons of MG Road residential living?"
+          ],
+          "must_include": [
+            "Monthly transportation costs (\u20b94,000-6,000 budget, \u20b96,000-9,000 mid-range)",
+            "Commute times to major areas during peak/off-peak hours",
+            "Auto-rickshaw costs for daily commuting",
+            "Upcoming metro connectivity benefits for 2026-2027"
+          ],
+          "must_avoid": [
+            "Repeating general MG Road history covered in the hub article",
+            "Generic Bangalore living advice not specific to MG Road area"
+          ],
+          "tone_notes": "Honest and practical, acknowledging both the prestige and challenges of living in such a central, busy location",
+          "outline": [
+            {
+              "level": "H2",
+              "heading": "MG Road Residential Reality Check",
+              "covers": "What it's really like living in the heart of commercial Bangalore"
+            },
+            {
+              "level": "H2",
+              "heading": "Housing Options on and Around MG Road",
+              "covers": "Apartment types, rental vs purchase options, nearby residential areas"
+            },
+            {
+              "level": "H2",
+              "heading": "Cost of Living Breakdown",
+              "covers": "Rent, utilities, transportation, dining, entertainment costs"
+            },
+            {
+              "level": "H3",
+              "heading": "Transportation Costs and Options",
+              "covers": "Daily commute expenses, public transport, private vehicle costs"
+            },
+            {
+              "level": "H2",
+              "heading": "Daily Life and Amenities",
+              "covers": "Shopping, dining, healthcare, entertainment within walking distance"
+            },
+            {
+              "level": "H2",
+              "heading": "Who Should Consider MG Road Living",
+              "covers": "Ideal resident profiles, family suitability, professional advantages"
+            },
+            {
+              "level": "H2",
+              "heading": "Pros and Cons of MG Road Residence",
+              "covers": "Honest assessment of benefits vs drawbacks"
+            },
+            {
+              "level": "H2",
+              "heading": "Making the Move: Practical Tips",
+              "covers": "Finding properties, negotiating rent, settling in advice"
+            }
+          ]
+        },
+        "internal_links": [
+          {
+            "target_slug": "mg-road-bangalore-complete-guide",
+            "anchor_text": "MG Road's commercial significance",
+            "context": "in the H2 about residential reality check"
+          }
+        ],
+        "embedded_faq_count": 6,
+        "db_id": "art-9052ced9-178"
+      }
+    ],
+    "linking_matrix": {
+      "mg-road-bangalore-complete-guide": [
+        "living-in-mg-road-bangalore-2026"
+      ],
+      "living-in-mg-road-bangalore-2026": [
+        "mg-road-bangalore-complete-guide"
+      ]
+    }
+  },
+  "article_briefs": [
+    {
+      "article_id": "art-8ff5651d-f63",
+      "title": "MG Road Bangalore: Complete Guide to India's Most Famous Street",
+      "slug": "mg-road-bangalore-complete-guide",
+      "type": "hub",
+      "word_count_target": 3500,
+      "target_keywords": {
+        "primary": "MG Road Bangalore",
+        "secondary": [
+          "Mahatma Gandhi Road Bangalore",
+          "MG Road location",
+          "MG Road Bangalore location"
+        ],
+        "long_tail": [
+          "What is MG Road in Bangalore famous for",
+          "Why is MG Road so famous"
+        ]
+      },
+      "internal_links": [
+        {
+          "target_slug": "living-in-mg-road-bangalore-2026",
+          "anchor_text": "living on MG Road",
+          "context": "in the H2 about real estate landscape"
+        }
+      ],
+      "embedded_faq_count": 8,
+      "angle": "Comprehensive authority piece positioning MG Road as Bangalore's commercial and cultural epicenter, with real estate implications for investors and residents",
+      "target_reader": "Property investors, potential residents, and business owners researching MG Road's significance and opportunities",
+      "search_intent": "informational",
+      "must_answer": [
+        "What makes MG Road Bangalore's most famous street?",
+        "What are the key landmarks and commercial establishments on MG Road?",
+        "How is MG Road connected to other parts of Bangalore?",
+        "What are the real estate opportunities and property types available?",
+        "What is the historical and cultural significance of MG Road?"
+      ],
+      "must_include": [
+        "Distance from major Bangalore localities (CBD, airport, railway stations)",
+        "BMTC bus connectivity details",
+        "Metro connectivity plans for 2026-2027",
+        "Auto-rickshaw fare structure (\u20b925 base + \u20b96.5/km)",
+        "Transportation cost ranges for different budgets"
+      ],
+      "must_avoid": [
+        "Generic Bangalore city information not specific to MG Road",
+        "Detailed property listings (save for the spoke article)"
+      ],
+      "tone_notes": "Authoritative yet accessible, emphasizing MG Road's prestige and commercial importance while being practical about real estate realities",
+      "outline": [
+        {
+          "level": "H2",
+          "heading": "What Makes MG Road Bangalore's Most Iconic Street",
+          "covers": "Historical significance, cultural importance, and why it's famous"
+        },
+        {
+          "level": "H2",
+          "heading": "MG Road Location and Connectivity",
+          "covers": "Exact location, distances to key areas, transportation options"
+        },
+        {
+          "level": "H3",
+          "heading": "Public Transportation Access",
+          "covers": "BMTC routes, metro plans, auto-rickshaw connectivity"
+        },
+        {
+          "level": "H3",
+          "heading": "Distance from Key Bangalore Areas",
+          "covers": "CBD, airport, railway stations, major residential hubs"
+        },
+        {
+          "level": "H2",
+          "heading": "Key Landmarks and Commercial Establishments",
+          "covers": "Major buildings, shopping centers, restaurants, offices"
+        },
+        {
+          "level": "H2",
+          "heading": "MG Road Real Estate Landscape",
+          "covers": "Property types available, commercial vs residential mix, investment potential"
+        },
+        {
+          "level": "H2",
+          "heading": "Living and Working on MG Road",
+          "covers": "Lifestyle aspects, cost considerations, who should consider MG Road"
+        },
+        {
+          "level": "H2",
+          "heading": "Future Development and Growth Prospects",
+          "covers": "Upcoming infrastructure, metro impact, long-term outlook"
+        }
+      ]
+    },
+    {
+      "article_id": "art-9052ced9-178",
+      "title": "Living in MG Road Bangalore: Complete Resident Guide 2026",
+      "slug": "living-in-mg-road-bangalore-2026",
+      "type": "spoke",
+      "word_count_target": 2800,
+      "target_keywords": {
+        "primary": "living in MG Road Bangalore",
+        "secondary": [
+          "MG Road residential",
+          "MG Road apartments",
+          "MG Road lifestyle"
+        ],
+        "long_tail": [
+          "cost of living in MG Road Bangalore",
+          "is MG Road good for families",
+          "MG Road residential properties"
+        ]
+      },
+      "internal_links": [
+        {
+          "target_slug": "mg-road-bangalore-complete-guide",
+          "anchor_text": "MG Road's commercial significance",
+          "context": "in the H2 about residential reality check"
+        }
+      ],
+      "embedded_faq_count": 6,
+      "angle": "Practical resident-focused guide covering the realities of living on Bangalore's busiest commercial street, balancing prestige with practical considerations",
+      "target_reader": "Professionals and families considering moving to MG Road area, wanting to understand lifestyle, costs, and daily living aspects",
+      "search_intent": "informational",
+      "must_answer": [
+        "What is it actually like to live on or near MG Road?",
+        "What are the monthly living costs including transportation?",
+        "What residential options are available on MG Road?",
+        "How suitable is MG Road for families vs working professionals?",
+        "What are the pros and cons of MG Road residential living?"
+      ],
+      "must_include": [
+        "Monthly transportation costs (\u20b94,000-6,000 budget, \u20b96,000-9,000 mid-range)",
+        "Commute times to major areas during peak/off-peak hours",
+        "Auto-rickshaw costs for daily commuting",
+        "Upcoming metro connectivity benefits for 2026-2027"
+      ],
+      "must_avoid": [
+        "Repeating general MG Road history covered in the hub article",
+        "Generic Bangalore living advice not specific to MG Road area"
+      ],
+      "tone_notes": "Honest and practical, acknowledging both the prestige and challenges of living in such a central, busy location",
+      "outline": [
+        {
+          "level": "H2",
+          "heading": "MG Road Residential Reality Check",
+          "covers": "What it's really like living in the heart of commercial Bangalore"
+        },
+        {
+          "level": "H2",
+          "heading": "Housing Options on and Around MG Road",
+          "covers": "Apartment types, rental vs purchase options, nearby residential areas"
+        },
+        {
+          "level": "H2",
+          "heading": "Cost of Living Breakdown",
+          "covers": "Rent, utilities, transportation, dining, entertainment costs"
+        },
+        {
+          "level": "H3",
+          "heading": "Transportation Costs and Options",
+          "covers": "Daily commute expenses, public transport, private vehicle costs"
+        },
+        {
+          "level": "H2",
+          "heading": "Daily Life and Amenities",
+          "covers": "Shopping, dining, healthcare, entertainment within walking distance"
+        },
+        {
+          "level": "H2",
+          "heading": "Who Should Consider MG Road Living",
+          "covers": "Ideal resident profiles, family suitability, professional advantages"
+        },
+        {
+          "level": "H2",
+          "heading": "Pros and Cons of MG Road Residence",
+          "covers": "Honest assessment of benefits vs drawbacks"
+        },
+        {
+          "level": "H2",
+          "heading": "Making the Move: Practical Tips",
+          "covers": "Finding properties, negotiating rent, settling in advice"
+        }
+      ]
+    }
+  ],
+  "n_articles": 2,
+  "n_keyword_groups": 1,
+  "hub_count": 1,
+  "spoke_count": 1,
+  "sub_spoke_count": 0
+}

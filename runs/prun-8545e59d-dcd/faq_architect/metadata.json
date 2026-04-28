@@ -1,0 +1,24 @@
+{
+  "agent": "faq_architect",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "reads_state": [
+    "keyword_map",
+    "cluster_plan",
+    "article_briefs"
+  ],
+  "writes_state": [
+    "faq_plan"
+  ],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 1,
+  "llm_cache_hits": 0,
+  "tokens_in": 2803,
+  "tokens_out": 1752,
+  "cost_usd": 0.00925,
+  "completed_at": "2026-04-28T06:32:49.233523",
+  "retry_count": 0
+}

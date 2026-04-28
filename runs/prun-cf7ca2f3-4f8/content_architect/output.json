@@ -1,0 +1,638 @@
+{
+  "cluster_id": "cl-fe93642e-d5c",
+  "cluster_plan": {
+    "cluster_id": "sadashivanagar-bangalore",
+    "cluster_name": "Sadashivanagar Bangalore Real Estate Guide",
+    "total_articles": 12,
+    "articles": [
+      {
+        "id": "sadashivanagar-bangalore-guide",
+        "title": "Sadashivanagar Bangalore: Complete Neighborhood Guide 2024 - Location, Properties & Lifestyle",
+        "slug": "sadashivanagar-bangalore-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "Sadashivanagar Bangalore",
+          "secondary": [
+            "Sadashivanagar location",
+            "Sadashivanagar area",
+            "Sadashiva Nagar Bangalore overview"
+          ]
+        },
+        "word_count_target": 2800,
+        "outline": [
+          "H2: What Makes Sadashivanagar One of Bangalore's Most Prestigious Neighborhoods?",
+          "  H3: Historical Background and Development",
+          "  H3: Geographic Location and Boundaries",
+          "H2: Where is Sadashivanagar Located in Bangalore?",
+          "  H3: Central Bangalore Positioning",
+          "  H3: Nearby Prominent Areas",
+          "H2: Why is Sadashivanagar Considered a Posh Area?",
+          "  H3: Upscale Residential Character",
+          "  H3: Green Spaces and Tree-Lined Streets",
+          "H2: Transportation and Connectivity from Sadashivanagar",
+          "  H3: Road Network and Major Routes",
+          "  H3: Public Transportation Options",
+          "H2: Real Estate Landscape in Sadashivanagar",
+          "  H3: Property Types and Architecture",
+          "  H3: Investment Potential and Market Trends",
+          "H2: Living in Sadashivanagar: Lifestyle and Amenities",
+          "  H3: Shopping and Dining Options",
+          "  H3: Recreation and Entertainment",
+          "H2: Is Sadashivanagar a Good Place to Live in 2024?"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-property-prices-2024",
+            "anchor_text": "current property prices in Sadashivanagar",
+            "context": "In the real estate landscape section when discussing market trends"
+          },
+          {
+            "target_slug": "flats-for-sale-sadashivanagar",
+            "anchor_text": "apartments available for sale",
+            "context": "When discussing property types and residential options"
+          },
+          {
+            "target_slug": "independent-houses-sale-sadashivanagar",
+            "anchor_text": "independent houses and villas",
+            "context": "In the property types section"
+          },
+          {
+            "target_slug": "rental-properties-sadashivanagar",
+            "anchor_text": "rental options in the area",
+            "context": "When discussing living options for different budgets"
+          },
+          {
+            "target_slug": "sadashivanagar-restaurants-lifestyle",
+            "anchor_text": "dining and entertainment venues",
+            "context": "In the lifestyle and amenities section"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "Hub article should establish topical authority with comprehensive coverage. Include local insights and recent developments.",
+        "db_id": "art-65068912-c5e"
+      },
+      {
+        "id": "sadashivanagar-property-prices-2024",
+        "title": "Sadashivanagar Property Prices 2024: Land Rates, Square Foot Prices & Investment Analysis",
+        "slug": "sadashivanagar-property-prices-2024",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Sadashivanagar property price",
+          "secondary": [
+            "Sadashivanagar square feet rate",
+            "Sadashivanagar land price",
+            "Property rates in Sadashivanagar Bangalore"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: What is the Current Property Price in Sadashivanagar?",
+          "  H3: Per Square Foot Rates for Different Property Types",
+          "  H3: Land Price Variations by Location",
+          "H2: How Much Does a 30x40 Site Cost in Sadashivanagar?",
+          "  H3: Standard Plot Sizes and Pricing",
+          "  H3: Factors Affecting Land Prices",
+          "H2: Why is Sadashivanagar So Expensive?",
+          "  H3: Premium Location Factors",
+          "  H3: Infrastructure and Amenities Premium",
+          "H2: Sadashivanagar Property Price Trends 2024",
+          "  H3: Year-over-Year Growth Analysis",
+          "  H3: Market Predictions and Future Outlook",
+          "H2: Investment Potential in Sadashivanagar Real Estate"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "prestigious Sadashivanagar neighborhood",
+            "context": "When introducing the area's premium status"
+          },
+          {
+            "target_slug": "flats-for-sale-sadashivanagar",
+            "anchor_text": "apartment prices in the area",
+            "context": "When comparing different property types"
+          },
+          {
+            "target_slug": "independent-houses-sale-sadashivanagar",
+            "anchor_text": "independent house pricing",
+            "context": "In the property types pricing section"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include current market data, price comparisons with nearby areas, and investment ROI analysis",
+        "db_id": "art-ab884b9b-a91"
+      },
+      {
+        "id": "flats-for-sale-sadashivanagar",
+        "title": "Flats for Sale in Sadashivanagar: 2BHK, 3BHK Apartments & Luxury Options 2024",
+        "slug": "flats-for-sale-sadashivanagar",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "flats for sale in Sadashivanagar",
+          "secondary": [
+            "apartments for sale in Sadashivanagar Bangalore",
+            "luxury apartments in Sadashivanagar",
+            "3 BHK flat for sale in Sadashivanagar"
+          ]
+        },
+        "word_count_target": 1900,
+        "outline": [
+          "H2: What Types of Flats are Available for Sale in Sadashivanagar?",
+          "  H3: 2BHK Apartment Options and Pricing",
+          "  H3: 3BHK Flat Configurations and Costs",
+          "H2: Where Can I Find Luxury Apartments in Sadashivanagar?",
+          "  H3: Premium Apartment Complexes",
+          "  H3: High-End Amenities and Features",
+          "H2: What is the Price Range for 3BHK Flats in Sadashivanagar?",
+          "  H3: Budget-Friendly Options",
+          "  H3: Mid-Range and Premium Segments",
+          "H2: Best Apartment Complexes in Sadashivanagar",
+          "  H3: Top-Rated Residential Projects",
+          "  H3: Builder Reputation and Quality",
+          "H2: Ready-to-Move vs Under-Construction Flats"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "Sadashivanagar neighborhood overview",
+            "context": "When introducing the locality's appeal"
+          },
+          {
+            "target_slug": "sadashivanagar-property-prices-2024",
+            "anchor_text": "current property pricing trends",
+            "context": "When discussing apartment prices"
+          },
+          {
+            "target_slug": "rental-properties-sadashivanagar",
+            "anchor_text": "rental yields for investors",
+            "context": "In the investment potential section"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Focus on specific apartment listings, builder details, and buyer guidance",
+        "db_id": "art-f8d474af-d7a"
+      },
+      {
+        "id": "independent-houses-sale-sadashivanagar",
+        "title": "Independent Houses for Sale in Sadashivanagar: Villas, Bungalows & Premium Homes 2024",
+        "slug": "independent-houses-sale-sadashivanagar",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "independent house for sale in Sadashivanagar",
+          "secondary": [
+            "house for sale in Sadashivanagar Bangalore",
+            "villas for sale in Sadashivanagar",
+            "Sadashivanagar house price"
+          ]
+        },
+        "word_count_target": 1750,
+        "outline": [
+          "H2: How Much Does an Independent House Cost in Sadashivanagar?",
+          "  H3: Price Range by House Size",
+          "  H3: Factors Influencing House Prices",
+          "H2: What Types of Independent Houses are Available?",
+          "  H3: Traditional Bungalows and Heritage Homes",
+          "  H3: Modern Villas and Contemporary Designs",
+          "H2: Where Can I Find Villas for Sale in Sadashivanagar?",
+          "  H3: Premium Villa Locations",
+          "  H3: Garden Villas and Spacious Properties",
+          "H2: Best Areas Within Sadashivanagar for House Purchase",
+          "H2: Legal Considerations for Buying Houses in Sadashivanagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "upscale Sadashivanagar locality",
+            "context": "When describing the area's residential character"
+          },
+          {
+            "target_slug": "sadashivanagar-property-prices-2024",
+            "anchor_text": "land prices and property rates",
+            "context": "When discussing house pricing factors"
+          },
+          {
+            "target_slug": "flats-for-sale-sadashivanagar",
+            "anchor_text": "apartment alternatives",
+            "context": "When comparing housing options"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Emphasize luxury housing options, architectural styles, and investment benefits",
+        "db_id": "art-c7ef161a-adf"
+      },
+      {
+        "id": "rental-properties-sadashivanagar",
+        "title": "Rent in Sadashivanagar: 1BHK, 2BHK, 3BHK Flats & Houses for Rent 2024",
+        "slug": "rental-properties-sadashivanagar",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "rent in Sadashivanagar",
+          "secondary": [
+            "Sadashivanagar rent flats",
+            "house for rent in Sadashivanagar",
+            "apartments for rent in Sadashivanagar Bangalore"
+          ]
+        },
+        "word_count_target": 1850,
+        "outline": [
+          "H2: What is the Average Rent in Sadashivanagar?",
+          "  H3: 1BHK Rental Rates and Options",
+          "  H3: 2BHK and 3BHK Apartment Rents",
+          "H2: How Much is Rent for Different Property Types?",
+          "  H3: Independent House Rental Costs",
+          "  H3: Furnished vs Unfurnished Rental Rates",
+          "H2: Where Can I Find Flats for Rent in Sadashivanagar?",
+          "  H3: Popular Rental Locations",
+          "  H3: Amenity-Rich Rental Properties",
+          "H2: What are Typical Lease Terms in Sadashivanagar?",
+          "  H3: Security Deposits and Advance Payments",
+          "  H3: Rental Agreement Considerations",
+          "H2: Tips for Finding the Best Rental in Sadashivanagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "living in Sadashivanagar",
+            "context": "When discussing the area's residential appeal"
+          },
+          {
+            "target_slug": "sadashivanagar-connectivity-transport",
+            "anchor_text": "transportation connectivity",
+            "context": "When highlighting location advantages for renters"
+          },
+          {
+            "target_slug": "sadashivanagar-restaurants-lifestyle",
+            "anchor_text": "lifestyle amenities nearby",
+            "context": "When describing rental location benefits"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include practical rental advice, tenant rights, and area-specific rental market insights",
+        "db_id": "art-8cd5c594-4dd"
+      },
+      {
+        "id": "sadashivanagar-restaurants-lifestyle",
+        "title": "Sadashivanagar Restaurants, Cafes & Lifestyle: Dining, Entertainment & Recreation Guide",
+        "slug": "sadashivanagar-restaurants-lifestyle",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Sadashivanagar restaurants",
+          "secondary": [
+            "Sadashivanagar cafes",
+            "Sadashivanagar hotels",
+            "Sadashivanagar parks and recreation"
+          ]
+        },
+        "word_count_target": 1700,
+        "outline": [
+          "H2: What are the Best Restaurants in Sadashivanagar?",
+          "  H3: Fine Dining and Upscale Restaurants",
+          "  H3: Casual Dining and Family Restaurants",
+          "H2: Where Can I Find Cafes in Sadashivanagar?",
+          "  H3: Coffee Shops and Breakfast Spots",
+          "  H3: Co-working Cafes and Study Spaces",
+          "H2: Recreation and Entertainment Options",
+          "  H3: Parks and Green Spaces",
+          "  H3: Sports and Fitness Facilities",
+          "H2: Is There a Swimming Pool in Sadashivanagar?",
+          "  H3: Club Facilities and Timings",
+          "  H3: Membership and Access Information",
+          "H2: Shopping and Commercial Areas"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "Sadashivanagar's upscale character",
+            "context": "When introducing the area's lifestyle offerings"
+          },
+          {
+            "target_slug": "rental-properties-sadashivanagar",
+            "anchor_text": "rental properties with easy access",
+            "context": "When discussing convenience for residents"
+          },
+          {
+            "target_slug": "flats-for-sale-sadashivanagar",
+            "anchor_text": "apartments near entertainment hubs",
+            "context": "When highlighting location benefits for buyers"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Focus on local favorites, hidden gems, and lifestyle amenities that make the area attractive",
+        "db_id": "art-2fb81e04-c67"
+      },
+      {
+        "id": "sadashivanagar-connectivity-transport",
+        "title": "Sadashivanagar Distance & Connectivity: Metro, Airport, IT Hubs & Transportation Guide",
+        "slug": "sadashivanagar-connectivity-transport",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Sadashivanagar distance",
+          "secondary": [
+            "Sadashivanagar to Indiranagar distance",
+            "Sadashivanagar to Koramangala distance",
+            "Majestic to Sadashivanagar distance"
+          ]
+        },
+        "word_count_target": 1200,
+        "outline": [
+          "H2: How Far is Sadashivanagar from Major Bangalore Locations?",
+          "  H3: Distance to IT Hubs and Business Districts",
+          "  H3: Distance to Popular Residential Areas",
+          "H2: Which is the Nearest Metro Station to Sadashivanagar?",
+          "  H3: Metro Connectivity and Routes",
+          "  H3: Future Metro Expansion Plans",
+          "H2: How Far is Sadashivanagar from Bangalore Airport?",
+          "  H3: Travel Time and Route Options",
+          "  H3: Transportation Modes to Airport",
+          "H2: Public Transportation from Sadashivanagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "central Bangalore location",
+            "context": "When discussing strategic positioning"
+          },
+          {
+            "target_slug": "rental-properties-sadashivanagar",
+            "anchor_text": "rental appeal due to connectivity",
+            "context": "When highlighting transportation benefits"
+          },
+          {
+            "target_slug": "sadashivanagar-property-prices-2024",
+            "anchor_text": "property values influenced by connectivity",
+            "context": "When discussing location premium factors"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Include specific distances, travel times, and transportation costs for practical planning",
+        "db_id": "art-467d3915-bbc"
+      },
+      {
+        "id": "schools-sadashivanagar-education",
+        "title": "Schools in Sadashivanagar: NPS, CBSE Schools & Educational Institutions Guide 2024",
+        "slug": "schools-sadashivanagar-education",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "schools in Sadashivanagar",
+          "secondary": [
+            "NPS Sadashivanagar",
+            "colleges near Sadashivanagar",
+            "top schools in Sadashivanagar Bangalore"
+          ]
+        },
+        "word_count_target": 1300,
+        "outline": [
+          "H2: What are the Top Schools in Sadashivanagar?",
+          "  H3: CBSE and ICSE Board Schools",
+          "  H3: International Schools and Curricula",
+          "H2: NPS Sadashivanagar: Fees, Admission & Details",
+          "  H3: Admission Process and Requirements",
+          "  H3: Fee Structure and Academic Programs",
+          "H2: Which Schools are Ranked Best in Sadashivanagar?",
+          "  H3: Academic Performance and Recognition",
+          "  H3: Extracurricular Activities and Facilities",
+          "H2: Colleges and Higher Education Near Sadashivanagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "family-friendly Sadashivanagar neighborhood",
+            "context": "When discussing residential appeal for families"
+          },
+          {
+            "target_slug": "flats-for-sale-sadashivanagar",
+            "anchor_text": "family apartments near good schools",
+            "context": "When highlighting educational proximity benefits"
+          },
+          {
+            "target_slug": "independent-houses-sale-sadashivanagar",
+            "anchor_text": "family homes with school access",
+            "context": "When discussing family housing options"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Include admission procedures, fee structures, and school comparison data",
+        "db_id": "art-0b107bd6-f50"
+      },
+      {
+        "id": "hospitals-healthcare-sadashivanagar",
+        "title": "Hospitals Near Sadashivanagar: Healthcare Facilities, Clinics & Medical Services Guide",
+        "slug": "hospitals-healthcare-sadashivanagar",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "hospitals near Sadashivanagar",
+          "secondary": [
+            "healthcare in Sadashivanagar",
+            "medical facilities Sadashivanagar",
+            "clinics near Sadashivanagar"
+          ]
+        },
+        "word_count_target": 1100,
+        "outline": [
+          "H2: What are the Best Hospitals Near Sadashivanagar?",
+          "  H3: Multi-Specialty Hospitals",
+          "  H3: Specialty Clinics and Medical Centers",
+          "H2: Emergency Medical Services in Sadashivanagar Area",
+          "  H3: 24/7 Emergency Care Options",
+          "  H3: Ambulance Services and Response Times",
+          "H2: Healthcare Accessibility from Sadashivanagar",
+          "  H3: Distance to Major Medical Hubs",
+          "  H3: Insurance and Payment Options",
+          "H2: Pharmacies and Medical Stores"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "healthcare infrastructure in Sadashivanagar",
+            "context": "When discussing area amenities"
+          },
+          {
+            "target_slug": "sadashivanagar-connectivity-transport",
+            "anchor_text": "easy access to medical facilities",
+            "context": "When highlighting transportation to hospitals"
+          },
+          {
+            "target_slug": "rental-properties-sadashivanagar",
+            "anchor_text": "healthcare proximity for residents",
+            "context": "When discussing residential benefits"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Focus on practical healthcare information, emergency services, and medical facility quality",
+        "db_id": "art-7e29a9fb-f2a"
+      },
+      {
+        "id": "sadashivanagar-investment-guide",
+        "title": "Sadashivanagar Real Estate Investment Guide: ROI, Growth Potential & Market Analysis 2024",
+        "slug": "sadashivanagar-investment-guide",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Sadashivanagar investment",
+          "secondary": [
+            "Sadashivanagar property investment",
+            "real estate ROI Sadashivanagar",
+            "Sadashivanagar market analysis"
+          ]
+        },
+        "word_count_target": 1400,
+        "outline": [
+          "H2: Why Should You Invest in Sadashivanagar Real Estate?",
+          "  H3: Location Advantages and Premium Appeal",
+          "  H3: Historical Price Appreciation",
+          "H2: What is the ROI for Property Investment in Sadashivanagar?",
+          "  H3: Rental Yield Analysis",
+          "  H3: Capital Appreciation Potential",
+          "H2: Market Analysis: Sadashivanagar vs Other Premium Areas",
+          "  H3: Comparative Investment Performance",
+          "  H3: Future Growth Projections",
+          "H2: Investment Risks and Considerations",
+          "H2: Best Investment Strategies for Sadashivanagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-property-prices-2024",
+            "anchor_text": "current property pricing trends",
+            "context": "When analyzing investment potential"
+          },
+          {
+            "target_slug": "rental-properties-sadashivanagar",
+            "anchor_text": "rental market dynamics",
+            "context": "When discussing rental yield calculations"
+          },
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "prestigious Sadashivanagar location",
+            "context": "When establishing investment rationale"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Include data-driven analysis, market comparisons, and practical investment advice",
+        "db_id": "art-c0ee9298-76f"
+      },
+      {
+        "id": "sadashivanagar-faq-complete-guide",
+        "title": "Sadashivanagar FAQ: Complete Guide to Living, Buying & Investing in Bangalore's Premium Locality",
+        "slug": "sadashivanagar-faq-complete-guide",
+        "type": "faq",
+        "target_keywords": {
+          "primary": "Sadashivanagar FAQ",
+          "secondary": [
+            "Sadashivanagar questions",
+            "Sadashivanagar guide",
+            "Sadashivanagar information"
+          ]
+        },
+        "word_count_target": 2200,
+        "outline": [
+          "H2: General Information About Sadashivanagar",
+          "  H3: Location and Geography FAQs",
+          "  H3: History and Development FAQs",
+          "H2: Property and Real Estate FAQs",
+          "  H3: Buying Property in Sadashivanagar",
+          "  H3: Rental Market Questions",
+          "H2: Living in Sadashivanagar FAQs",
+          "  H3: Lifestyle and Amenities",
+          "  H3: Transportation and Connectivity",
+          "H2: Investment and Market FAQs",
+          "  H3: Property Investment Questions",
+          "  H3: Market Trends and Predictions",
+          "H2: Practical Living FAQs",
+          "  H3: Schools, Healthcare, and Services",
+          "  H3: Safety and Community"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sadashivanagar-bangalore-guide",
+            "anchor_text": "comprehensive Sadashivanagar guide",
+            "context": "For detailed neighborhood information"
+          },
+          {
+            "target_slug": "sadashivanagar-property-prices-2024",
+            "anchor_text": "current property prices",
+            "context": "For pricing-related questions"
+          },
+          {
+            "target_slug": "flats-for-sale-sadashivanagar",
+            "anchor_text": "apartment buying options",
+            "context": "For property purchase queries"
+          },
+          {
+            "target_slug": "rental-properties-sadashivanagar",
+            "anchor_text": "rental market information",
+            "context": "For rental-related questions"
+          },
+          {
+            "target_slug": "sadashivanagar-restaurants-lifestyle",
+            "anchor_text": "lifestyle and dining options",
+            "context": "For lifestyle-related queries"
+          }
+        ],
+        "faq_count": 25,
+        "notes": "Comprehensive FAQ covering all aspects of Sadashivanagar. Include questions from all other articles in the cluster.",
+        "db_id": "art-76460b6b-412"
+      }
+    ],
+    "linking_matrix": {
+      "sadashivanagar-bangalore-guide": [
+        "sadashivanagar-property-prices-2024",
+        "flats-for-sale-sadashivanagar",
+        "independent-houses-sale-sadashivanagar",
+        "rental-properties-sadashivanagar",
+        "sadashivanagar-restaurants-lifestyle"
+      ],
+      "sadashivanagar-property-prices-2024": [
+        "sadashivanagar-bangalore-guide",
+        "flats-for-sale-sadashivanagar",
+        "independent-houses-sale-sadashivanagar"
+      ],
+      "flats-for-sale-sadashivanagar": [
+        "sadashivanagar-bangalore-guide",
+        "sadashivanagar-property-prices-2024",
+        "rental-properties-sadashivanagar"
+      ],
+      "independent-houses-sale-sadashivanagar": [
+        "sadashivanagar-bangalore-guide",
+        "sadashivanagar-property-prices-2024",
+        "flats-for-sale-sadashivanagar"
+      ],
+      "rental-properties-sadashivanagar": [
+        "sadashivanagar-bangalore-guide",
+        "sadashivanagar-connectivity-transport",
+        "sadashivanagar-restaurants-lifestyle"
+      ],
+      "sadashivanagar-restaurants-lifestyle": [
+        "sadashivanagar-bangalore-guide",
+        "rental-properties-sadashivanagar",
+        "flats-for-sale-sadashivanagar"
+      ],
+      "sadashivanagar-connectivity-transport": [
+        "sadashivanagar-bangalore-guide",
+        "rental-properties-sadashivanagar",
+        "sadashivanagar-property-prices-2024"
+      ],
+      "schools-sadashivanagar-education": [
+        "sadashivanagar-bangalore-guide",
+        "flats-for-sale-sadashivanagar",
+        "independent-houses-sale-sadashivanagar"
+      ],
+      "hospitals-healthcare-sadashivanagar": [
+        "sadashivanagar-bangalore-guide",
+        "sadashivanagar-connectivity-transport",
+        "rental-properties-sadashivanagar"
+      ],
+      "sadashivanagar-investment-guide": [
+        "sadashivanagar-property-prices-2024",
+        "rental-properties-sadashivanagar",
+        "sadashivanagar-bangalore-guide"
+      ],
+      "sadashivanagar-faq-complete-guide": [
+        "sadashivanagar-bangalore-guide",
+        "sadashivanagar-property-prices-2024",
+        "flats-for-sale-sadashivanagar",
+        "rental-properties-sadashivanagar",
+        "sadashivanagar-restaurants-lifestyle"
+      ]
+    }
+  },
+  "articles_created": 11,
+  "articles_failed": 0
+}

@@ -1,0 +1,110 @@
+[06:19:44] [orchestrator] Starting layer1...
+[06:19:44] ============================================================
+[06:19:44] [?] ============================================================
+[06:19:44] [Pipeline prun-9bb30b21-82c] Layer 1 starting for 'harlur roard'
+[06:19:44] [pipeline_prun-9bb30b21-82c] [Pipeline prun-9bb30b21-82c] Layer 1 starting for 'harlur roard'
+[06:19:44] ============================================================
+[06:19:44] [?] ============================================================
+[06:19:44] ────────────────────────────────────────────────────────────
+[06:19:44] [?] ────────────────────────────────────────────────────────────
+[06:19:44] [Trend Scout v2] Analyzing: harlur roard
+[06:19:44] [trend_scout_v2] [Trend Scout v2] Analyzing: harlur roard
+[06:19:44] ────────────────────────────────────────────────────────────
+[06:19:44] [?] ────────────────────────────────────────────────────────────
+[06:19:44]   [1/6] Classifying topic...
+[06:19:44] [?]   [1/6] Classifying topic...
+[06:19:44]     Type: locality
+[06:19:44] [?]     Type: locality
+[06:19:44]     Categories: ['locality']
+[06:19:44] [?]     Categories: ['locality']
+[06:19:44]     Localities: ['Harlur']
+[06:19:44] [?]     Localities: ['Harlur']
+[06:19:44]   [2/6] Generating queries (budget: 15 SERP calls)...
+[06:19:44] [?]   [2/6] Generating queries (budget: 15 SERP calls)...
+[06:19:44]     Generated 15 unique queries across 4 groups
+[06:19:44] [?]     Generated 15 unique queries across 4 groups
+[06:19:44]   [3/6] Fetching Google Trends...
+[06:19:44] [?]   [3/6] Fetching Google Trends...
+[06:20:27] ⚠️  SerpAPI Trends error: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_trends&q=harlur+roard+Bangalore&geo=IN-KA&date=today+12-m&api_key=56f251adfd5bcf30bf2d7828adadbb0e5f9771c3008bbf1ea9611f8ea1ef885f&output=json&source=python (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001D2FD2865D0>, 'Connection to serpapi.com timed out. (connect timeout=60000)'))
+[06:20:27] [?] ⚠️  SerpAPI Trends error: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engi
+[06:20:27]     Trends unavailable: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_trends&q=harlur+roard+Bangalore&geo=IN-KA&date=today+12-m&api_key=56f251adfd5bcf30bf2d7828adadbb0e5f9771c3008bbf1ea9611f8ea1ef885f&output=json&source=python (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001D2FD2865D0>, 'Connection to serpapi.com timed out. (connect timeout=60000)'))
+[06:20:27] [?]     Trends unavailable: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine
+[06:20:27]   [4/6] Running 15 SERP searches...
+[06:20:27] [?]   [4/6] Running 15 SERP searches...
+[06:20:27]     [1/15] (core) Harlur Bangalore
+[06:20:27] [?]     [1/15] (core) Harlur Bangalore
+[06:20:27]     [2/15] (core) Harlur Bangalore guide
+[06:20:27] [?]     [2/15] (core) Harlur Bangalore guide
+[06:20:27]     [3/15] (core) living in Harlur Bangalore
+[06:20:27] [?]     [3/15] (core) living in Harlur Bangalore
+[06:20:27]     [4/15] (core) Harlur review
+[06:20:27] [?]     [4/15] (core) Harlur review
+[06:20:27]     [5/15] (property) Harlur property price
+[06:20:27] [?]     [5/15] (property) Harlur property price
+[06:20:27]     [6/15] (property) Harlur rent
+[06:20:27] [?]     [6/15] (property) Harlur rent
+[06:20:27]     [7/15] (property) 2BHK rent Harlur
+[06:20:27] [?]     [7/15] (property) 2BHK rent Harlur
+[06:20:27]     [8/15] (property) Harlur flat for sale
+[06:20:27] [?]     [8/15] (property) Harlur flat for sale
+[06:20:27]     [9/15] (property) Harlur property rate per sq ft
+[06:20:28] [?]     [9/15] (property) Harlur property rate per sq ft
+[06:20:28]     [10/15] (property) Harlur new projects
+[06:20:28] [?]     [10/15] (property) Harlur new projects
+[06:20:28]     [11/15] (lifestyle) things to do in Harlur
+[06:20:28] [?]     [11/15] (lifestyle) things to do in Harlur
+[06:20:28]     [12/15] (lifestyle) best restaurants Harlur
+[06:20:28] [?]     [12/15] (lifestyle) best restaurants Harlur
+[06:20:28]     [13/15] (lifestyle) schools near Harlur
+[06:20:28] [?]     [13/15] (lifestyle) schools near Harlur
+[06:20:28]     [14/15] (lifestyle) hospitals near Harlur
+[06:20:28] [?]     [14/15] (lifestyle) hospitals near Harlur
+[06:20:28]     [15/15] (comparison) Harlur vs Whitefield
+[06:20:28] [?]     [15/15] (comparison) Harlur vs Whitefield
+[06:20:28]     Total PAA questions: 21
+[06:20:28] [?]     Total PAA questions: 21
+[06:20:28]     Total related searches: 70
+[06:20:28] [?]     Total related searches: 70
+[06:20:28]     Enriching trend data with SERP proxy signals...
+[06:20:28] [?]     Enriching trend data with SERP proxy signals...
+[06:20:28]   [5/6] Fetching autocomplete (5 calls)...
+[06:20:28] [?]   [5/6] Fetching autocomplete (5 calls)...
+[06:20:45]     Found 48 autocomplete suggestions
+[06:20:46] [?]     Found 48 autocomplete suggestions
+[06:20:46]   [6/6] Running LLM analysis...
+[06:20:46] [?]   [6/6] Running LLM analysis...
+[06:21:15]   ──────────────────────────────────────────────────
+[06:21:15] [?]   ──────────────────────────────────────────────────
+[06:21:15]   ✅ Trend Scout v2 complete
+[06:21:15] [?]   ✅ Trend Scout v2 complete
+[06:21:15]      Topic type: locality
+[06:21:15] [?]      Topic type: locality
+[06:21:15]      PAA questions: 21
+[06:21:15] [?]      PAA questions: 21
+[06:21:15]      Related searches: 70
+[06:21:15] [?]      Related searches: 70
+[06:21:15]      Autocomplete: 48
+[06:21:15] [?]      Autocomplete: 48
+[06:21:15]      High AEO opportunities: 14
+[06:21:15] [?]      High AEO opportunities: 14
+[06:21:15]      Competitor coverage: {"99acres.com": 9, "housing.com": 9, "magicbricks.com": 10, "nobroker.in": 9}
+[06:21:15] [?]      Competitor coverage: {"99acres.com": 9, "housing.com": 9, "magicbricks.com": 10, "nobroker.in": 9}
+[06:21:15]      SERP calls used: 15/15
+[06:21:15] [?]      SERP calls used: 15/15
+[06:21:15]      Cost: $0.0177
+[06:21:15] [?]      Cost: $0.0177
+[06:21:15]   ──────────────────────────────────────────────────
+[06:21:15] [?]   ──────────────────────────────────────────────────
+[06:21:15]   ❌ competitor_spy execution failed: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given
+[06:21:15] [?]   ❌ competitor_spy execution failed: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were gi
+[06:21:15] FAILED: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given
+[06:21:16] Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\background_runner.py", line 111, in _run_in_thread
+    run_layer1(run_id)
+    ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 96, in run_layer1
+    spy_output = spy.run({"topic": topic})
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 179, in run
+TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given
+
+[06:21:16] [orchestrator] FAILED: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given

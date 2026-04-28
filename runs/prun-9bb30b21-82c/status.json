@@ -1,0 +1,8 @@
+{
+  "agent": "orchestrator",
+  "message": "FAILED: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given",
+  "sub_task": null,
+  "progress": null,
+  "timestamp": "2026-04-28T06:21:16.030186",
+  "epoch": 1777357276.030198
+}

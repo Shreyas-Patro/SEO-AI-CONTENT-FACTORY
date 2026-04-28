@@ -1,0 +1,11 @@
+{
+  "run_id": "prun-bd401881-c66",
+  "topic": "south end circle",
+  "stage": "migrated",
+  "cluster_id": null,
+  "agents_completed": [
+    "ingestion"
+  ],
+  "agents_failed": [],
+  "shared": {}
+}

@@ -1,0 +1,156 @@
+{
+  "faqs_by_article": {
+    "art-ca8fb38a-fd5": [
+      {
+        "question": "Which part of Bangalore is JP Nagar in?",
+        "answer": "JP Nagar is located in South Bangalore, approximately 15-20 km from the city center. It's situated in the Jayanagar assembly constituency and is well-connected via Bannerghatta Road. The locality spans multiple phases (1st to 9th) and serves as a major residential hub in South Bangalore.",
+        "target_keyword": "Which part of Bangalore is JP Nagar in",
+        "voice_search_variant": "Hey Google, where is JP Nagar located in Bangalore?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "Is JP Nagar a good place to stay in Bangalore?",
+        "answer": "Yes, JP Nagar is an excellent residential area known for its planned layout, green spaces, and established infrastructure. It offers good connectivity to IT parks, schools, hospitals, and shopping centers. The locality is popular among families and professionals seeking a balanced lifestyle with urban amenities.",
+        "target_keyword": "Is JP Nagar a good place to stay",
+        "voice_search_variant": "Is JP Nagar a good place to live in Bangalore?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "Is JP Nagar a posh area in Bangalore?",
+        "answer": "JP Nagar is considered an upscale residential locality with premium gated communities and well-maintained properties. While it's not the most expensive area, it's definitely a posh neighborhood with good infrastructure, security, and lifestyle amenities. Property prices range from mid to high depending on the phase.",
+        "target_keyword": "Is JP Nagar a posh area",
+        "voice_search_variant": "Is JP Nagar considered a posh area?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "Why is JP Nagar famous in Bangalore?",
+        "answer": "JP Nagar is famous for its well-planned residential layout, tree-lined streets, and vibrant community. It's known for hosting premium gated communities like Brigade Millennium and Adarsh Gardens. The area is also recognized for its excellent schools, restaurants, and proximity to major IT hubs, making it a preferred choice for families.",
+        "target_keyword": "Why is JP Nagar famous",
+        "voice_search_variant": "What is JP Nagar known for in Bangalore?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "What is the current property price in JP Nagar Bangalore?",
+        "answer": "JP Nagar property prices vary by phase and property type. As of 2026, prices range from ₹45-65 lakhs for 2BHK apartments to ₹1.5-3 crores for villas. Premium phases like 7th and 9th command higher rates. Land prices typically range from ₹8,000-15,000 per square foot depending on location and phase.",
+        "target_keyword": "current property price in JP Nagar",
+        "voice_search_variant": "What are the property prices in JP Nagar right now?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "How much is rent in JP Nagar Bangalore?",
+        "answer": "Rental prices in JP Nagar vary by phase and property type. A 2BHK apartment typically rents for ₹25,000-40,000 per month, while 1BHK flats range from ₹15,000-25,000. Independent houses cost ₹40,000-70,000 monthly. Premium gated communities command higher rates. PG accommodations start from ₹8,000-12,000 per month.",
+        "target_keyword": "How much is rent in JP Nagar",
+        "voice_search_variant": "What's the average rent for a 2BHK in JP Nagar?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "Which JP Nagar phase is best to live in?",
+        "answer": "JP Nagar 7th and 9th phases are considered the most developed with premium amenities, better infrastructure, and established communities. However, 5th phase offers good value for money with decent connectivity. Choice depends on budget and preferences—newer phases have modern facilities while older phases offer affordability and established neighborhoods.",
+        "target_keyword": "Which JP Nagar phase is best",
+        "voice_search_variant": "Which phase of JP Nagar should I choose to live in?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "What is the difference between JP Nagar phases?",
+        "answer": "JP Nagar phases differ in development stage, infrastructure maturity, and pricing. Earlier phases (1-3) are older with established communities but older buildings. Middle phases (4-6) offer balanced development. Later phases (7-9) are newer with modern amenities, better planning, and premium gated communities. Prices increase with phase number.",
+        "target_keyword": "What is the difference between JP Nagar phases",
+        "voice_search_variant": "How are the different phases of JP Nagar different from each other?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "Is JP Nagar expensive compared to other Bangalore localities?",
+        "answer": "JP Nagar is moderately priced for South Bangalore. It's more affordable than areas like Koramangala or Indiranagar but pricier than peripheral localities. Property prices are competitive for the infrastructure and amenities offered. It provides good value for families seeking a balance between affordability and lifestyle quality.",
+        "target_keyword": "Is JP Nagar expensive",
+        "voice_search_variant": "How expensive is JP Nagar compared to other areas in Bangalore?",
+        "schema_type": "FAQPage"
+      },
+      {
+        "question": "What are the best restaurants and cafes in JP Nagar?",
+        "answer": "JP Nagar has a vibrant food scene with diverse dining options ranging from casual cafes to fine dining restaurants. The area is known for its multicuisine restaurants, trendy cafes, and popular pubs. Notable establishments include celebrity-owned restaurants and local favorites. The locality offers everything from traditional South Indian to international cuisines.",
+        "target_keyword": "best restaurants and cafes in JP Nagar",
+        "voice_search_variant": "What are some good places to eat in JP Nagar?",
+        "schema_type": "FAQPage"
+      }
+    ]
+  },
+  "total_articles": 1,
+  "total_faqs": 10,
+  "results": [
+    {
+      "article_id": "art-ca8fb38a-fd5",
+      "faqs": [
+        {
+          "question": "Which part of Bangalore is JP Nagar in?",
+          "answer": "JP Nagar is located in South Bangalore, approximately 15-20 km from the city center. It's situated in the Jayanagar assembly constituency and is well-connected via Bannerghatta Road. The locality spans multiple phases (1st to 9th) and serves as a major residential hub in South Bangalore.",
+          "target_keyword": "Which part of Bangalore is JP Nagar in",
+          "voice_search_variant": "Hey Google, where is JP Nagar located in Bangalore?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "Is JP Nagar a good place to stay in Bangalore?",
+          "answer": "Yes, JP Nagar is an excellent residential area known for its planned layout, green spaces, and established infrastructure. It offers good connectivity to IT parks, schools, hospitals, and shopping centers. The locality is popular among families and professionals seeking a balanced lifestyle with urban amenities.",
+          "target_keyword": "Is JP Nagar a good place to stay",
+          "voice_search_variant": "Is JP Nagar a good place to live in Bangalore?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "Is JP Nagar a posh area in Bangalore?",
+          "answer": "JP Nagar is considered an upscale residential locality with premium gated communities and well-maintained properties. While it's not the most expensive area, it's definitely a posh neighborhood with good infrastructure, security, and lifestyle amenities. Property prices range from mid to high depending on the phase.",
+          "target_keyword": "Is JP Nagar a posh area",
+          "voice_search_variant": "Is JP Nagar considered a posh area?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "Why is JP Nagar famous in Bangalore?",
+          "answer": "JP Nagar is famous for its well-planned residential layout, tree-lined streets, and vibrant community. It's known for hosting premium gated communities like Brigade Millennium and Adarsh Gardens. The area is also recognized for its excellent schools, restaurants, and proximity to major IT hubs, making it a preferred choice for families.",
+          "target_keyword": "Why is JP Nagar famous",
+          "voice_search_variant": "What is JP Nagar known for in Bangalore?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "What is the current property price in JP Nagar Bangalore?",
+          "answer": "JP Nagar property prices vary by phase and property type. As of 2026, prices range from ₹45-65 lakhs for 2BHK apartments to ₹1.5-3 crores for villas. Premium phases like 7th and 9th command higher rates. Land prices typically range from ₹8,000-15,000 per square foot depending on location and phase.",
+          "target_keyword": "current property price in JP Nagar",
+          "voice_search_variant": "What are the property prices in JP Nagar right now?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "How much is rent in JP Nagar Bangalore?",
+          "answer": "Rental prices in JP Nagar vary by phase and property type. A 2BHK apartment typically rents for ₹25,000-40,000 per month, while 1BHK flats range from ₹15,000-25,000. Independent houses cost ₹40,000-70,000 monthly. Premium gated communities command higher rates. PG accommodations start from ₹8,000-12,000 per month.",
+          "target_keyword": "How much is rent in JP Nagar",
+          "voice_search_variant": "What's the average rent for a 2BHK in JP Nagar?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "Which JP Nagar phase is best to live in?",
+          "answer": "JP Nagar 7th and 9th phases are considered the most developed with premium amenities, better infrastructure, and established communities. However, 5th phase offers good value for money with decent connectivity. Choice depends on budget and preferences—newer phases have modern facilities while older phases offer affordability and established neighborhoods.",
+          "target_keyword": "Which JP Nagar phase is best",
+          "voice_search_variant": "Which phase of JP Nagar should I choose to live in?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "What is the difference between JP Nagar phases?",
+          "answer": "JP Nagar phases differ in development stage, infrastructure maturity, and pricing. Earlier phases (1-3) are older with established communities but older buildings. Middle phases (4-6) offer balanced development. Later phases (7-9) are newer with modern amenities, better planning, and premium gated communities. Prices increase with phase number.",
+          "target_keyword": "What is the difference between JP Nagar phases",
+          "voice_search_variant": "How are the different phases of JP Nagar different from each other?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "Is JP Nagar expensive compared to other Bangalore localities?",
+          "answer": "JP Nagar is moderately priced for South Bangalore. It's more affordable than areas like Koramangala or Indiranagar but pricier than peripheral localities. Property prices are competitive for the infrastructure and amenities offered. It provides good value for families seeking a balance between affordability and lifestyle quality.",
+          "target_keyword": "Is JP Nagar expensive",
+          "voice_search_variant": "How expensive is JP Nagar compared to other areas in Bangalore?",
+          "schema_type": "FAQPage"
+        },
+        {
+          "question": "What are the best restaurants and cafes in JP Nagar?",
+          "answer": "JP Nagar has a vibrant food scene with diverse dining options ranging from casual cafes to fine dining restaurants. The area is known for its multicuisine restaurants, trendy cafes, and popular pubs. Notable establishments include celebrity-owned restaurants and local favorites. The locality offers everything from traditional South Indian to international cuisines.",
+          "target_keyword": "best restaurants and cafes in JP Nagar",
+          "voice_search_variant": "What are some good places to eat in JP Nagar?",
+          "schema_type": "FAQPage"
+        }
+      ],
+      "cost_usd": 0.00842
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "agent": "keyword_mapper",
+  "status": "failed",
+  "validation_passed": false,
+  "validation_problems": [
+    "output key 'keyword_groups' is empty"
+  ],
+  "problems_history": [
+    [
+      "output key 'keyword_groups' is empty"
+    ],
+    [
+      "output key 'keyword_groups' is empty"
+    ]
+  ],
+  "reads_state": [
+    "trend_data",
+    "competitor_data"
+  ],
+  "writes_state": [
+    "keyword_map"
+  ],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 2,
+  "llm_cache_hits": 0,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": 0.002,
+  "duration_seconds": 14.56,
+  "completed_at": "2026-04-28T18:36:50.058925",
+  "attempts": 2
+}

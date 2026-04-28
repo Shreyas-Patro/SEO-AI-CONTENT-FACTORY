@@ -1,0 +1,38 @@
+{
+  "agent": "keyword_mapper",
+  "status": "completed",
+  "validation_passed": false,
+  "validation_problems": [
+    "missing required field: quick_win_keywords",
+    "missing required field: strategic_keywords"
+  ],
+  "problems_history": [
+    {
+      "attempt": 1,
+      "problems": [
+        "missing required field: quick_win_keywords",
+        "missing required field: strategic_keywords"
+      ]
+    },
+    {
+      "attempt": 2,
+      "problems": [
+        "missing required field: quick_win_keywords",
+        "missing required field: strategic_keywords"
+      ]
+    },
+    {
+      "attempt": 3,
+      "problems": [
+        "missing required field: quick_win_keywords",
+        "missing required field: strategic_keywords"
+      ]
+    }
+  ],
+  "serp_calls": 0,
+  "llm_calls": 3,
+  "tokens_in": 711,
+  "tokens_out": 504,
+  "cost_usd": 0.002586,
+  "completed_at": "2026-04-25T12:39:22.913354"
+}

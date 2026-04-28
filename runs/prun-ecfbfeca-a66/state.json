@@ -1,0 +1,865 @@
+{
+  "run_id": "prun-ecfbfeca-a66",
+  "topic": "HOSKOTE",
+  "stage": "migrated",
+  "cluster_id": null,
+  "agents_completed": [
+    "competitor_spy",
+    "trend_scout"
+  ],
+  "agents_failed": [
+    {
+      "agent": "competitor_spy",
+      "error": "competitor_spy execution failed: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given"
+    }
+  ],
+  "shared": {
+    "trend_data": {
+      "topic": "HOSKOTE",
+      "classification": {
+        "categories": [
+          "locality"
+        ],
+        "primary_category": "locality",
+        "detected_localities": [
+          "HOSKOTE"
+        ],
+        "is_locality": true,
+        "is_cross_cutting": false
+      },
+      "raw_data": {
+        "trends": {
+          "trend_available": true,
+          "average_interest": 79.3,
+          "recent_interest": 75.2,
+          "peak_interest": 100,
+          "direction": "declining",
+          "is_seasonal": true,
+          "rising_queries": [
+            "kayaking bangalore",
+            "godrej parkshire",
+            "sobha hoskote",
+            "godrej hoskote",
+            "kr puram to hoskote metro",
+            "bangalore news",
+            "strr bangalore"
+          ],
+          "top_queries": [
+            "bangalore to hoskote",
+            "hoskote distance",
+            "bangalore to hoskote distance",
+            "hoskote biryani bangalore",
+            "hoskote biryani",
+            "hoskote metro",
+            "hoskote pin code",
+            "hoskote bangalore pin code",
+            "kateramma temple hoskote",
+            "weather bangalore"
+          ]
+        },
+        "paa_questions": [
+          "What is Hoskote famous for?",
+          "Is Hoskote worth visiting?",
+          "What kind of activities can I do in Hoskote?",
+          "Is metro available in Hoskote?",
+          "Is Hoskote a good place to live?",
+          "Will Hoskote get a metro?",
+          "Is Hoskote, Bangalore rural or urban?",
+          "Is it good to invest in Hoskote?",
+          "What is the price of land in Hoskote?",
+          "What is the cost of a 30 * 40 site in Bangalore?",
+          "What is the price of Sobha Hoskote per square foot?",
+          "Is 2bhk enough for 3 people?",
+          "What is the cost of 2 BHK in Bangalore?",
+          "What is the cost of land in Hoskote?",
+          "Which is the cheapest area in Bangalore for rent?",
+          "Is it good to invest in hoskote?",
+          "What is the cost of 1 square foot?",
+          "What is coming in Hoskote?",
+          "What is the new growth corridor Hoskote?",
+          "What is Sobha Hoskote master plan?",
+          "Why is Hoskote growing?",
+          "Where is Virat Kohli's restaurant in Bangalore?",
+          "What is a 10 top in a restaurant?",
+          "Which restaurant is owned by Allu Arjun?",
+          "What is the bus number from Hoskote to Whitefield?",
+          "How much is the bus ticket from Whitefield to Hoskote?",
+          "Which metro line goes to Whitefield?",
+          "Which BMTC bus goes to Whitefield?"
+        ],
+        "related_searches": [
+          "Hoskote to Bangalore",
+          "Hoskote Lake",
+          "One day trip places near Hoskote",
+          "Hoskote Fort",
+          "Tourist places near Hoskote within 50 kms",
+          "Places to visit near Hoskote Bangalore",
+          "Hoskote Hills",
+          "Hoskote famous food",
+          "Hoskote review quora",
+          "Hoskote review reddit",
+          "Hoskote location",
+          "Bangalore Hoskote Map",
+          "Hoskote Pin Code",
+          "Godrej Hoskote",
+          "Hoskote property price per square foot",
+          "Hoskote property price per square feet",
+          "Hoskote land price per square foot",
+          "1 Acre land for sale in Hoskote",
+          "Hoskote Real Estate Agents",
+          "House for sale in Hoskote for 20 lakhs",
+          "Hoskote land price per acre",
+          "Hoskote House for sale",
+          "Hoskote rent house",
+          "Hoskote room rent",
+          "1 BHK House for rent in Hoskote",
+          "Hoskote rent 2bhk",
+          "Hoskote rent 1 bhk",
+          "Hoskote rent House low price",
+          "2 BHK House for rent in Hoskote",
+          "Hoskote rent House for female",
+          "2 BHK House for rent in Hoskote without brokerage",
+          "Independent House for rent in Hoskote",
+          "3 BHK House for rent in Hoskote",
+          "2 BHK Flats in Hoskote for sale",
+          "Independent House for rent in Hoskote without brokerage",
+          "Flats for rent in Hoskote",
+          "2 BHK Flat for sale in Hoskote",
+          "Hoskote apartments for rent",
+          "New apartments in Hoskote",
+          "Ready to move flats in Hoskote",
+          "Apartments near Hoskote Toll Gate",
+          "2 BHK Flats in Hoskote for rent",
+          "1 BHK for sale in Hoskote",
+          "Hoskote property rate per sq ft in bangalore",
+          "Hoskote property price",
+          "Plots near Hoskote Toll Gate",
+          "Site for sale in Hoskote by owner",
+          "Upcoming government projects in Hoskote",
+          "Hoskote new projects for sale",
+          "Pre Launch Projects near Hoskote",
+          "Upcoming villa Projects in Hoskote",
+          "Sobha Hoskote new project",
+          "Prestige projects in Hoskote",
+          "Hoskote development",
+          "Sobha Hoskote location",
+          "Best restaurants hoskote bangalore",
+          "Best restaurants hoskote for lunch",
+          "Restaurants in Hoskote highway",
+          "Best veg restaurants in Hoskote",
+          "Non Veg Restaurants Near Hoskote",
+          "Hoskote Restaurants",
+          "Best Non Veg Hotel in Hoskote",
+          "Top 10 schools near hoskote",
+          "Cbse schools near hoskote",
+          "Top 10 schools in Hoskote with fees",
+          "Best schools near hoskote",
+          "Schools near hoskote bangalore",
+          "Hoskote schools list with fees",
+          "Hoskote Schools List pdf",
+          "ICSE schools in Hoskote",
+          "Hoskote Hospital list",
+          "Sparsha Hospital - Hoskote",
+          "Sparsha Hospital - Hoskote contact Number",
+          "Arvi Hospital - Hoskote",
+          "Sparsh Hospital Hoskote address",
+          "Sparsha Hospital - Hoskote photos",
+          "Arvi Hospital - Hoskote contact number",
+          "Hoskote Government Hospital",
+          "Hoskote to Whitefield Metro",
+          "Hoskote to Whitefield bus number",
+          "Hoskote to whitefield bus",
+          "Hoskote to whitefield bus timings",
+          "Hoskote to whitefield train",
+          "Hoskote to whitefield bmtc bus timings",
+          "Hoskote to Whitefield Road",
+          "Hoskote to Whitefield distance"
+        ],
+        "autocomplete": [
+          "hoskote biryani",
+          "hoskote pin code",
+          "hoskote kateramma temple",
+          "hoskote bangalore",
+          "hoskote distance",
+          "hoskote to bangalore distance",
+          "hoskote toll",
+          "hoskote bus stand",
+          "hoskote 4am biryani",
+          "hoskote weather",
+          "hoskote to kolar distance",
+          "hoskote temple",
+          "hoskote biryani timings",
+          "hoskote dum biryani",
+          "hoskote accident",
+          "hoskote bangalore pin code",
+          "hoskote bangalore rural",
+          "hoskote bangalore rural or urban",
+          "hoskote bangalore map",
+          "hoskote bangalore kateramma temple hoskote",
+          "hoskote bangalore to whitefield distance",
+          "hoskote bangalore distance",
+          "hoskote bangalore news",
+          "hoskote bangalore east",
+          "hoskote bangalore rent house",
+          "hoskote bangalore north or south",
+          "hoskote bangalore one",
+          "hoskote bangalore karnataka",
+          "hoskote bangalore nearest metro station",
+          "hoskote bangalore accident",
+          "rent house in hoskote",
+          "room rent in hoskote bangalore",
+          "rent house in hoskote mv extension",
+          "rent house in hoskote bangalore",
+          "1bhk rent in hoskote",
+          "bike rent in hoskote",
+          "room rent in hoskote",
+          "2bhk rent in hoskote",
+          "apartment rent in hoskote",
+          "flat rent in hoskote",
+          "car rent in hoskote",
+          "rent dress in hoskote",
+          "pg rent in hoskote",
+          "warehouse rent in hoskote",
+          "1rk for rent in hoskote",
+          "hoskote property tax",
+          "hoskote property rates",
+          "hoskote property price",
+          "hoskote property tax online",
+          "hoskote property tax payment online",
+          "hoskote property for sale",
+          "sobha hoskote property",
+          "godrej hoskote property",
+          "commercial property hoskote"
+        ],
+        "serp_results_summary": [
+          {
+            "query": "HOSKOTE Bangalore",
+            "top_results": [],
+            "serp_features": [],
+            "competitor_presence": []
+          },
+          {
+            "query": "HOSKOTE Bangalore guide",
+            "top_results": [
+              {
+                "title": "Hoskote Tourism: All You Need to Know Before ...",
+                "link": "https://www.tripadvisor.in/Tourism-g1143918-Hoskote_Bangalore_Rural_District_Karnataka-Vacations.html",
+                "snippet": "Hoskote Tourism: Tripadvisor has 85 reviews of Hoskote Hotels, Attractions, and Restaurants making it your best Hoskote Tourism resource.",
+                "position": 1,
+                "domain": "www.tripadvisor.in"
+              },
+              {
+                "title": "Hoskote - Tourist Places & Top Things to Do in 2026",
+                "link": "https://www.makemytrip.com/tripideas/places/hoskote",
+                "snippet": "Hoskote is a popular South Indian town that is barely 27 kilometres from Bangalore, the country's capital. This city features beautiful lakes, well-known ...",
+                "position": 2,
+                "domain": "www.makemytrip.com"
+              },
+              {
+                "title": "Hoskote Travel Guide - Bengaluru",
+                "link": "https://www.expedia.co.in/Hoskote.dx6129109",
+                "snippet": "Popular places to visit \u00b7 Nandi Hills \u00b7 Bangalore Palace \u00b7 Manyata Tech Park \u00b7 Cubbon Park \u00b7 Lalbagh Botanical Gardens \u00b7 UB City \u00b7 ISKCON Temple \u00b7 Wonderla Amusement ...",
+                "position": 3,
+                "domain": "www.expedia.co.in"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "living in HOSKOTE Bangalore",
+            "top_results": [],
+            "serp_features": [],
+            "competitor_presence": []
+          },
+          {
+            "query": "HOSKOTE review",
+            "top_results": [
+              {
+                "title": "Ratings & Reviews of Hoskote, Bangalore",
+                "link": "https://www.99acres.com/hoskote-bangalore-east-reviews-and-ratings-wrffid",
+                "snippet": "Hoskote Bangalore has 4.2 star rating out of 5. Know positive and negative things about Hoskote through 108 tenants/owners genuine reviews.",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "Thoughts on Sobha Hoskote @ 15k : r/indianrealestate",
+                "link": "https://www.reddit.com/r/indianrealestate/comments/1qf7cnh/thoughts_on_sobha_hoskote_15k/",
+                "snippet": "15k seems really absurd pricing that too in Hoskote. ... Prestige raintree looks better option they are offering at same price too. ... Sobha has ...",
+                "position": 2,
+                "domain": "www.reddit.com"
+              },
+              {
+                "title": "Is Hoskote in Bangalore Posh Area - Sobha World City",
+                "link": "https://www.sobhaworldcity.info/hoskote/is-hoskote-in-bangalore-posh-area.html",
+                "snippet": "New homes, villas, and apartments are changing the area. Hoskote is not one of the top posh areas. But it is a good choice for people who want value for money.",
+                "position": 3,
+                "domain": "www.sobhaworldcity.info"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "nobroker.in",
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "HOSKOTE property price",
+            "top_results": [
+              {
+                "title": "Property in Hoskote, Bangalore",
+                "link": "https://www.99acres.com/property-in-hoskote-bangalore-east-ffid",
+                "snippet": "* pricing* * 2 bhk starts from 58 lakhs* * 3 bhk starts from 80 lakhs* Why a1 adarsh paradise Rera & bmrda approved 3-Acre premium community 238 units | no ...",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "Property in Hoskote, Bangalore",
+                "link": "https://www.magicbricks.com/property-for-sale-in-hoskote-bangalore-pppfs",
+                "snippet": "The price of flats in Hoskote range between \u20b9 35 lakhs - \u20b9 16.42 Cr, and houses price between \u20b9 45.7 lakhs - \u20b9 6.52 Cr, with 1-5 BHK options. However, land ...",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "Property Price & Trends in Hoskote, Bengaluru - Housing.com",
+                "link": "https://housing.com/price-trends/property-rates-for-buy-in-hoskote_bengaluru-P702h78x2ynz7vvzq",
+                "snippet": "Starting price of properties in Hoskote stands at Rs. 794 per sqft. On average, the price of properties in Hoskote is Rs. 8,258 per sqft.",
+                "position": 3,
+                "domain": "housing.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "nobroker.in",
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "HOSKOTE rent",
+            "top_results": [
+              {
+                "title": "Flats for Rent in Hoskote , Bangalore",
+                "link": "https://www.nobroker.in/flats-for-rent-in-hoskote_bangalore",
+                "snippet": "3 BHK Flats for Rent in Hoskote. 3 BHK - 1,000 sq. ft. to 1,800 sq. ft. Monthly rent generally in Hoskote falls between \u20b915,000 to \u20b939,250 per month, especially ...",
+                "position": 1,
+                "domain": "www.nobroker.in"
+              },
+              {
+                "title": "6007 Flats & Apartments for Rent in Hoskote",
+                "link": "https://www.olx.in/hoskote_g5395225/for-rent-houses-apartments_c1723",
+                "snippet": "Explore flats for rent in Hoskote in the price range of \u20b91000 - \u20b93 Crores. OLX provides you options ranging from 1-5 BHK flats for rent in Hoskote.",
+                "position": 2,
+                "domain": "www.olx.in"
+              },
+              {
+                "title": "29+ Flats for Rent in Hoskote, Bangalore",
+                "link": "https://www.99acres.com/flats-for-rent-in-hoskote-bangalore-east-ffid",
+                "snippet": "29+ Flats for rent in Hoskote, Bangalore on 99acres.com. Search flats and apartments on rent in Hoskote, Bangalore with 1/2/3/4 BHK configuration, ...",
+                "position": 3,
+                "domain": "www.99acres.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "image_pack"
+            ],
+            "competitor_presence": [
+              "nobroker.in",
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "2BHK rent HOSKOTE",
+            "top_results": [
+              {
+                "title": "2 BHK Flats for rent in Hoskote, Bangalore",
+                "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-hoskote_bangalore",
+                "snippet": "2 BHK Flats for Rent in Hoskote. 2 BHK - 500 sq. ft. to 2,000 sq. ft. Monthly rent generally in Hoskote falls between \u20b99,450 to \u20b935,299 per month, influenced by ...",
+                "position": 1,
+                "domain": "www.nobroker.in"
+              },
+              {
+                "title": "2 BHK Flats for Rent in Hoskote, Bangalore",
+                "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-hoskote-bangalore-east-ffid",
+                "snippet": "2 BHK Flat for rent in Hoskote, Bangalore ... Property has 850 sq.Ft. Carpet area with 2 bathrooms & 3 balconies attached. Flat is constructed on 1250 sq.Ft.",
+                "position": 2,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "2 BHK Flats for Rent in Hoskote, Bangalore",
+                "link": "https://www.magicbricks.com/2-bhk-flats-for-rent-in-hoskote-bangalore-pppfr",
+                "snippet": "Looking for 2 BHK flats on rent in Hoskote? Browse options in the \u20b912,600 - \u20b938,000 range. The rent usually varies with the apartment's size and the amenities ...",
+                "position": 3,
+                "domain": "www.magicbricks.com"
+              }
+            ],
+            "serp_features": [
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "nobroker.in",
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "HOSKOTE flat for sale",
+            "top_results": [
+              {
+                "title": "Apartments in Hoskote, Bangalore - 112+ Flats for sale in ...",
+                "link": "https://www.99acres.com/flats-in-hoskote-bangalore-east-ffid",
+                "snippet": "The project offers an exclusive range of 3 BHK flats in Hoskote, Bangalore East at a price range of Rs. 1.07 Crore - Rs. 1.13 Crore. These flats have a super ...",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "Flats for Sale in Hoskote Bangalore | Apartments in ...",
+                "link": "https://www.nobroker.in/flats-for-sale-in-hoskote_bangalore",
+                "snippet": "79 - Flats for Sale in Hoskote Bangalore | Apartments for Sale in Hoskote Bangalore \u00b7 2 BHK Apartment In Sanjeevini Aarna For Sale In Hoskote \u00b7 3 BHK Apartment ...",
+                "position": 2,
+                "domain": "www.nobroker.in"
+              },
+              {
+                "title": "1891 Flats & Apartments for Sale in Hoskote",
+                "link": "https://www.olx.in/en-in/hoskote_g5395225/for-sale-houses-apartments_c1725",
+                "snippet": "Explore flats for sale in Hoskote in the price range of \u20b910,000 - \u20b985 Crores. OLX provides you options ranging from 1-5 BHK flats for sale in Hoskote. Currently ...",
+                "position": 3,
+                "domain": "www.olx.in"
+              }
+            ],
+            "serp_features": [],
+            "competitor_presence": [
+              "nobroker.in",
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "HOSKOTE property rate per sq ft",
+            "top_results": [
+              {
+                "title": "Property Rates in Hoskote, Bangalore 2026",
+                "link": "https://www.99acres.com/property-rates-and-price-trends-in-hoskote-bangalore-east-prffid",
+                "snippet": "Flat prices in Hoskote, Bangalore are in the range of Rs 5700-9450 per square feet (sq ft). Land rates in Hoskote, Bangalore are around Rs 3000-4250 per sq ft.",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "Plots for Sale in Hoskote, Bangalore",
+                "link": "https://www.magicbricks.com/residential-plots-land-for-sale-in-hoskote-bangalore-pppfs",
+                "snippet": "\u20b9 3619/ sq.ft-20% QoQ*. Nearby Locality (Avg. Price / sq.ft). Whitefield. \u20b9 7493/ sq.ft6% QoQ*. Thanisandra Main Road. \u20b9 12165/ sq.ft1% QoQ*. Horamavu. \u20b9 8562/ ...",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "Property Price & Trends in Hoskote, Bengaluru - Housing.com",
+                "link": "https://housing.com/price-trends/property-rates-for-buy-in-hoskote_bengaluru-P702h78x2ynz7vvzq",
+                "snippet": "Starting price of properties in Hoskote stands at Rs. 794 per sqft. On average, the price of properties in Hoskote is Rs. 8,258 per sqft. The most expensive ...",
+                "position": 3,
+                "domain": "housing.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "nobroker.in",
+              "housing.com",
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "HOSKOTE new projects",
+            "top_results": [
+              {
+                "title": "New Projects in Hoskote Bangalore for Sale",
+                "link": "https://www.99acres.com/new-projects-in-hoskote-bangalore-east-ffid",
+                "snippet": "New Projects in Hoskote Bangalore for Sale ; Peram Eco City \u00b7 \u20b98.4K/sqft onwards. ~ (built-up area). 4BHK Villa. \u20b92.18 Cr+ ; House of Sapiens \u00b7 \u20b98.6K/sqft. ~ (super ...",
+                "position": 1,
+                "domain": "www.99acres.com"
+              },
+              {
+                "title": "New Projects in Hoskote, Bangalore",
+                "link": "https://www.squareyards.com/projects-in-hoskote-bangalore",
+                "snippet": "New Projects in Hoskote, Bangalore: Discover 191 options, including Pre Launch and Upcoming Projects in Hoskote, Bangalore, Experience high-class amenities ...",
+                "position": 2,
+                "domain": "www.squareyards.com"
+              },
+              {
+                "title": "Sobha Hoskote Bangalore | Upcoming 300-acres ...",
+                "link": "https://sobhaupcoming.com/hoskote/",
+                "snippet": "Sobha Hoskote is a 300-acres upcoming township in East Bangalore with 1, 2 & 3 BHK apartments across 18 high-rise towers, retail, and commercial spaces.",
+                "position": 3,
+                "domain": "sobhaupcoming.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "things to do in HOSKOTE",
+            "top_results": [],
+            "serp_features": [],
+            "competitor_presence": []
+          },
+          {
+            "query": "best restaurants HOSKOTE",
+            "top_results": [
+              {
+                "title": "THE 10 BEST Restaurants in Hoskote (Updated April 2026)",
+                "link": "https://www.tripadvisor.in/Restaurants-g1143918-Hoskote_Bangalore_Rural_District_Karnataka.html",
+                "snippet": "Restaurants in Hoskote \u00b7 1. The Terminal. 4.0. (28 reviews) \u00b7 2. Sri Guru Nalapaka Restaurant. 3.2. (18 reviews) \u00b7 3. NH 75 Restaurant Bangalore. 3.6. (18 ...",
+                "position": 1,
+                "domain": "www.tripadvisor.in"
+              },
+              {
+                "title": "Best Restaurants In Hoskote, Bangalore 2025",
+                "link": "https://www.swiggy.com/city/bangalore/hoskote-restaurants",
+                "snippet": "Discover All Restaurants Serving In Hoskote! Explore Menus, Reviews, Ratings, Prices, Locations, Cuisines, Offers, And More For A Perfect Dining Experience.",
+                "position": 2,
+                "domain": "www.swiggy.com"
+              },
+              {
+                "title": "Hoskote Restaurants, Bangalore",
+                "link": "https://www.zomato.com/bangalore/hoskote-restaurants?sort=best",
+                "snippet": "Hoskote Restaurants, Bangalore \u00b7 Red Rhino \u00b7 Geist Brewing Co. \u00b7 Barley & Grapes Cafe \u00b7 Starbucks Coffee \u00b7 Punjab Beat \u00b7 Tall Oaks \u00b7 Original Burger Co. \u00b7 Peturam.",
+                "position": 3,
+                "domain": "www.zomato.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "schools near HOSKOTE",
+            "top_results": [
+              {
+                "title": "15 Best Schools in Hoskote, Bangalore 2026-2027",
+                "link": "https://www.edustoke.com/bengaluru/schools-in-hoskote",
+                "snippet": "Best Schools in Hoskote, Bangalore \u00b7 OM SHREE PUBLIC SCHOOL \u00b7 SRI GNANA GANGOTHRI SCHOOL \u00b7 SRI VIVEKANANDA VIDYA KENDRA \u00b7 Uzma English School.",
+                "position": 1,
+                "domain": "www.edustoke.com"
+              },
+              {
+                "title": "6 Best Schools in Hoskote, Bengaluru: 2026-27",
+                "link": "https://yellowslate.com/blog/best-schools-in-hoskote-bengaluru",
+                "snippet": "6 Best Schools in Hoskote, Bengaluru: 2026-27: Fee, Curriculums, Facilities, Reviews and more \u00b7 1. The Polaris International School \u00b7 2. Capstone High School.",
+                "position": 2,
+                "domain": "yellowslate.com"
+              },
+              {
+                "title": "Top CBSE Schools in Hoskote, Bangalore",
+                "link": "https://www.justdial.com/Bangalore/CBSE-Schools-in-Hoskote/nct-10083838",
+                "snippet": "Leading Educational Institutions : Top CBSE Schools in Hoskote, Bangalore \u00b7 Green Eden Public School and Pu College \u00b7 Skoolz \u00b7 Clarus International School.",
+                "position": 3,
+                "domain": "www.justdial.com"
+              }
+            ],
+            "serp_features": [
+              "local_pack"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "hospitals near HOSKOTE",
+            "top_results": [
+              {
+                "title": "Sparsha Hospital And Neuro Center in Hoskote,Bangalore",
+                "link": "https://www.justdial.com/Bangalore/Sparsha-Hospital-And-Neuro-Center-Next-To-Novacher-Hoskote/080PXX80-XX80-240523201348-I7D4_BZDET",
+                "snippet": "Sparsha Hospital And Neuro Center is a dedicated hospital in Hoskote, Bangalore, that offers high-quality healthcare services to patients of all ages. The ...",
+                "position": 1,
+                "domain": "www.justdial.com"
+              },
+              {
+                "title": "Hoskote",
+                "link": "https://www.ovumhospitals.com/centers/hoskote",
+                "snippet": "The Hoskote Centre is the third branch of Ovum Hospitals, established in 2017. With a capacity of 30 beds, it provides comprehensive healthcare services for ...",
+                "position": 2,
+                "domain": "www.ovumhospitals.com"
+              },
+              {
+                "title": "Best Hospitals in Hoskote, Bangalore",
+                "link": "https://www.justdial.com/Bangalore/Hospitals-in-Hoskote/nct-10253670",
+                "snippet": "51 Hospitals in Hoskote,Bangalore. Homeocare International Pvt Ltd, Hcg Cancer Centre, Aster Hospital Whitefield etc. Find \u2713Multispeciality Hospitals ...",
+                "position": 3,
+                "domain": "www.justdial.com"
+              }
+            ],
+            "serp_features": [
+              "local_pack",
+              "image_pack"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "HOSKOTE vs Whitefield",
+            "top_results": [
+              {
+                "title": "Hoskote to Whitefield - 3 ways to travel via bus, taxi, and car",
+                "link": "https://www.rome2rio.com/s/Hoskote/Whitefield-India",
+                "snippet": "BMTC operates a bus from Hosakote Bus Station to White Field Post Office every 20 minutes. Tickets cost \u20b918\u201326 and the journey takes 42 min.",
+                "position": 1,
+                "domain": "www.rome2rio.com"
+              },
+              {
+                "title": "Hoskote to Whitefield | Rapido Bike Taxi, Auto, & Cabs",
+                "link": "https://rapido.bike/bangalore/routes/Hoskote-Whitefield",
+                "snippet": "Book bike, auto, & cabs rides from Hoskote to Whitefield using Rapido App. Rapido provides low-price, comfortable and quick rides at your doorstep.",
+                "position": 2,
+                "domain": "rapido.bike"
+              },
+              {
+                "title": "Hoskote to Whitefield (Kadugodi) Station - 4 ways to travel ...",
+                "link": "https://www.rome2rio.com/s/Hoskote/Whitefield-Kadugodi-Station",
+                "snippet": "Bmtc operates a bus from Hosakote Bus Station to Kadugodi Bridge every 20 minutes, and the journey takes 32 min. Bus operators. bus Bmtc. Website: mybmtc.",
+                "position": 3,
+                "domain": "www.rome2rio.com"
+              }
+            ],
+            "serp_features": [
+              "featured_snippet",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          }
+        ],
+        "aeo_scores": [
+          {
+            "query": "HOSKOTE Bangalore",
+            "score": 95,
+            "serp_features": [],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "living in HOSKOTE Bangalore",
+            "score": 95,
+            "serp_features": [],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "things to do in HOSKOTE",
+            "score": 95,
+            "serp_features": [],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "schools near HOSKOTE",
+            "score": 95,
+            "serp_features": [
+              "local_pack"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "hospitals near HOSKOTE",
+            "score": 95,
+            "serp_features": [
+              "local_pack",
+              "image_pack"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "2BHK rent HOSKOTE",
+            "score": 90,
+            "serp_features": [
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": true
+          },
+          {
+            "query": "HOSKOTE flat for sale",
+            "score": 85,
+            "serp_features": [],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": true
+          },
+          {
+            "query": "HOSKOTE vs Whitefield",
+            "score": 85,
+            "serp_features": [
+              "featured_snippet",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": true,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "HOSKOTE Bangalore guide",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "best restaurants HOSKOTE",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "HOSKOTE review",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "HOSKOTE property price",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "HOSKOTE property rate per sq ft",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "HOSKOTE new projects",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "HOSKOTE rent",
+            "score": 65,
+            "serp_features": [
+              "ai_overview",
+              "image_pack"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          }
+        ]
+      },
+      "analysis": {
+        "topic": "HOSKOTE",
+        "topic_type": "locality",
+        "trend_direction": "declining",
+        "trend_summary": "Hoskote search interest is declining from a 12-month average of 79.3 to recent interest of 75.2, but shows seasonal patterns with 7 rising related queries indicating emerging micro-trends around specific projects and infrastructure.",
+        "total_queries_discovered": 168,
+        "intent_clusters": [
+          {
+            "intent": "informational",
+            "queries": [
+              "Hoskote location",
+              "Hoskote area",
+              "Hoskote properties"
+            ]
+          },
+          {
+            "intent": "commercial",
+            "queries": [
+              "Hoskote real estate",
+              "Hoskote apartments",
+              "Hoskote projects"
+            ]
+          },
+          {
+            "intent": "navigational",
+            "queries": [
+              "Hoskote metro",
+              "Hoskote connectivity",
+              "Hoskote infrastructure"
+            ]
+          }
+        ]
+      },
+      "competitor_tracker": {
+        "nobroker.in": 6,
+        "magicbricks.com": 7,
+        "99acres.com": 7,
+        "housing.com": 5
+      },
+      "serp_calls_used": 15,
+      "autocomplete_calls_used": 4,
+      "cost_usd": 0.001149
+    },
+    "competitor_data": {
+      "error": "competitor_spy execution failed: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given",
+      "agent": "competitor_spy"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[keyword_mapper] Mapping keywords for: mg road
+  Payload contains: 0 PAA, 0 related, 0 autocomplete, 0 uncovered
+  LLM prompt size: 325 chars
+  LLM signature that worked: kwargs: prompt+system
+  LLM returned type: dict
+  LLM returned keys: ['text', 'tokens_in', 'tokens_out', 'cost_usd', 'model', 'cached', 'parsed', 'parse_success']
+  Extracted 0 keyword groups from LLM response
+  ❌ FULL LLM RESPONSE: {
+  "text": "{\n  \"topic\": \"mg road\",\n  \"keyword_groups\": [\n    {\n      \"group_name\": \"MG Road Location Overview\",\n      \"primary_keyword\": \"MG Road Bangalore\",\n      \"supporting_keywords\": [\n        \"MG Road location\",\n        \"where is MG Road\",\n        \"MG Road area\",\n        \"MG Road neighborhood\",\n        \"MG Road locality\"\n      ],\n      \"intent\": \"informational\",\n      \"estimated_volume\": \"high\",\n      \"competition\": \"high\",\n      \"opportunity_score\": 35\n    },\n    {\n      \"group_name\": \"MG Road Property Listings\",\n      \"primary_keyword\": \"flats for sale MG Road\",\n      \"supporting_keywords\": [\n        \"apartments MG Road Bangalore\",\n        \"properties MG Road\",\n        \"residential MG Road\",\n        \"buy apartment MG Road\",\n        \"MG Road real estate\"\n      ],\n      \"intent\": \"transactional\",\n      \"estimated_volume\": \"high\",\n      \"competition\": \"high\",\n      \"opportunity_score\": 32\n    },\n    {\n      \"group_name\": \"MG Road Rental Market\",\n      \"primary_keyword\": \"flats for rent MG Road\",\n      \"supporting_keywords\": [\n        \"apartments on rent MG Road\",\n        \"rental properties MG Road\",\n        \"MG Road rental market\",\n        \"rent apartment MG Road Bangalore\",\n        \"paying guest MG Road\"\n      ],\n      \"intent\": \"transactional\",\n      \"estimated_volume\": \"medium\",\n      \"competition\": \"high\",\n      \"op
+  ✅ 0 clean keyword groups produced
+   [keyword_mapper] retry 2/2 due to validation problems: ["output key 'keyword_groups' is empty"]
+[keyword_mapper] Mapping keywords for: mg road
+  Payload contains: 0 PAA, 0 related, 0 autocomplete, 0 uncovered
+  LLM prompt size: 443 chars
+  LLM signature that worked: kwargs: prompt+system
+  LLM returned type: dict
+  LLM returned keys: ['text', 'tokens_in', 'tokens_out', 'cost_usd', 'model', 'cached', 'parsed', 'parse_success']
+  Extracted 0 keyword groups from LLM response
+  ❌ FULL LLM RESPONSE: {
+  "text": "{\n  \"topic\": \"mg road\",\n  \"keyword_groups\": [\n    {\n      \"group_name\": \"MG Road Location Overview\",\n      \"primary_keyword\": \"MG Road Bangalore\",\n      \"supporting_keywords\": [\n        \"MG Road location\",\n        \"where is MG Road\",\n        \"MG Road area\",\n        \"MG Road neighborhood\",\n        \"MG Road Bangalore map\"\n      ],\n      \"intent\": \"informational\",\n      \"estimated_volume\": \"high\",\n      \"competition\": \"high\",\n      \"opportunity_score\": 35\n    },\n    {\n      \"group_name\": \"MG Road Real Estate & Properties\",\n      \"primary_keyword\": \"properties on MG Road Bangalore\",\n      \"supporting_keywords\": [\n        \"flats on MG Road\",\n        \"apartments MG Road\",\n        \"residential properties MG Road\",\n        \"MG Road real estate\",\n        \"buy property MG Road\"\n      ],\n      \"intent\": \"transactional\",\n      \"estimated_volume\": \"high\",\n      \"competition\": \"high\",\n      \"opportunity_score\": 40\n    },\n    {\n      \"group_name\": \"MG Road Rental & Lease\",\n      \"primary_keyword\": \"rent on MG Road Bangalore\",\n      \"supporting_keywords\": [\n        \"flats for rent MG Road\",\n        \"apartments for rent MG Road\",\n        \"rental properties MG Road\",\n        \"lease MG Road\",\n        \"MG Road rental market\"\n      ],\n      \"intent\": \"transactional\",\n      \"estimated_volume\": \"medium\",\n      \"competition\": \"high\",\n   
+  ✅ 0 clean keyword groups produced

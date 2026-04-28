@@ -1,0 +1,27 @@
+{
+  "cluster_id": "cl-aad5be30-804",
+  "cluster_plan": {
+    "cluster_id": "jp-nagar-bangalore",
+    "cluster_name": "JP Nagar Bangalore Complete Guide",
+    "total_articles": 12,
+    "articles": [
+      {
+        "id": "jp-nagar-bangalore-hub",
+        "title": "JP Nagar Bangalore: Complete Locality Guide 2026 - Property, Rent & Living",
+        "slug": "jp-nagar-bangalore-complete-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "JP Nagar Bangalore",
+          "secondary": [
+            "JP Nagar locality",
+            "JP Nagar area",
+            "JP Nagar location in Bangalore"
+          ]
+        },
+        "db_id": "art-ca8fb38a-fd5"
+      }
+    ]
+  },
+  "articles_created": 1,
+  "cost_usd": 0.000938
+}

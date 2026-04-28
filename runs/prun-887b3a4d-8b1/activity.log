@@ -1,0 +1,39 @@
+[05:51:29] [orchestrator] Starting layer1...
+[05:51:29] ============================================================
+[05:51:29] [?] ============================================================
+[05:51:29] [Pipeline prun-887b3a4d-8b1] Layer 1 starting for 'Hosa Road'
+[05:51:29] [pipeline_prun-887b3a4d-8b1] [Pipeline prun-887b3a4d-8b1] Layer 1 starting for 'Hosa Road'
+[05:51:29] ============================================================
+[05:51:29] [?] ============================================================
+[05:51:29] ────────────────────────────────────────────────────────────
+[05:51:30] [?] ────────────────────────────────────────────────────────────
+[05:51:30] [Trend Scout v2] Analyzing: Hosa Road
+[05:51:30] [trend_scout_v2] [Trend Scout v2] Analyzing: Hosa Road
+[05:51:30] ────────────────────────────────────────────────────────────
+[05:51:30] [?] ────────────────────────────────────────────────────────────
+[05:51:30]   [1/6] Classifying topic...
+[05:51:30] [?]   [1/6] Classifying topic...
+[05:51:30]     Type: locality
+[05:51:30] [?]     Type: locality
+[05:51:30]     Categories: ['locality', 'infrastructure']
+[05:51:30] [?]     Categories: ['locality', 'infrastructure']
+[05:51:30]     Localities: ['Hosa Road']
+[05:51:30] [?]     Localities: ['Hosa Road']
+[05:51:30]   [2/6] Generating queries (budget: 15 SERP calls)...
+[05:51:30] [?]   [2/6] Generating queries (budget: 15 SERP calls)...
+[05:51:30]     Generated 15 unique queries across 4 groups
+[05:51:30] [?]     Generated 15 unique queries across 4 groups
+[05:51:30]   [3/6] Fetching Google Trends...
+[05:51:30] [?]   [3/6] Fetching Google Trends...
+[05:51:31]     Direction: declining
+[05:51:31] [?]     Direction: declining
+[05:51:31]     Rising queries: 0
+[05:51:31] [?]     Rising queries: 0
+[05:51:31]   [4/6] Running 15 SERP searches...
+[05:51:31] [?]   [4/6] Running 15 SERP searches...
+[05:51:32]     [1/15] (core) Yelahanka Bangalore
+[05:51:32] [?]     [1/15] (core) Yelahanka Bangalore
+[05:51:41] Loading weights:   0%|                                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################################| 103/103 [00:00<00:00, 4421.29it/s]
+[05:51:41] [?] Loading weights:   0%|                                                                                                 
+[05:51:46]   Stopping...
+[05:51:46] [?]   Stopping...

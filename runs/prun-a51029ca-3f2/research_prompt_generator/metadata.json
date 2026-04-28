@@ -1,0 +1,13 @@
+{
+  "agent": "research_prompt_generator",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "serp_calls": 0,
+  "llm_calls": 1,
+  "tokens_in": 1473,
+  "tokens_out": 1588,
+  "cost_usd": 0.028239,
+  "completed_at": "2026-04-25T12:22:28.255783"
+}

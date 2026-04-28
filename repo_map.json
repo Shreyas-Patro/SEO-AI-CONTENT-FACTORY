@@ -1,0 +1,4140 @@
+{
+  "name": ".",
+  "type": "folder",
+  "children": [
+    {
+      "name": ".gitignore",
+      "type": "file"
+    },
+    {
+      "name": ".streamlit",
+      "type": "folder",
+      "children": [
+        {
+          "name": "config.toml",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "Layer_Documentation",
+      "type": "folder",
+      "children": []
+    },
+    {
+      "name": "TRENDSCOUT_OUTPUT.PY",
+      "type": "file"
+    },
+    {
+      "name": "agents",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        },
+        {
+          "name": "base.py",
+          "type": "file"
+        },
+        {
+          "name": "competitor_spy.py",
+          "type": "file"
+        },
+        {
+          "name": "content_architect.py",
+          "type": "file"
+        },
+        {
+          "name": "faq_architect.py",
+          "type": "file"
+        },
+        {
+          "name": "keyword_mapper.py",
+          "type": "file"
+        },
+        {
+          "name": "research_prompt_generator.py",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "artifacts",
+      "type": "folder",
+      "children": []
+    },
+    {
+      "name": "background_runner.py",
+      "type": "file"
+    },
+    {
+      "name": "canvas.db",
+      "type": "file"
+    },
+    {
+      "name": "changes.diff",
+      "type": "file"
+    },
+    {
+      "name": "cleanup.py",
+      "type": "file"
+    },
+    {
+      "name": "cleanup_runs.py",
+      "type": "file"
+    },
+    {
+      "name": "clear_cache.py",
+      "type": "file"
+    },
+    {
+      "name": "config.yaml",
+      "type": "file"
+    },
+    {
+      "name": "config.yaml.example",
+      "type": "file"
+    },
+    {
+      "name": "config_loader.py",
+      "type": "file"
+    },
+    {
+      "name": "dashboard",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        },
+        {
+          "name": "components",
+          "type": "folder",
+          "children": [
+            {
+              "name": "__init__.py",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "pages",
+          "type": "folder",
+          "children": [
+            {
+              "name": "__init__.py",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dashboard_components",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        },
+        {
+          "name": "graph_view.py",
+          "type": "file"
+        },
+        {
+          "name": "ingestion_view.py",
+          "type": "file"
+        },
+        {
+          "name": "opportunity_view.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "type": "folder",
+      "children": [
+        {
+          "name": "artifacts",
+          "type": "folder",
+          "children": [
+            {
+              "name": "prun-019cadd4-ef8",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-22f0fc68-5a3",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-2e18467b-22b",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "prun-39799dd8-955",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-45cf7a60-ec7",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-53a01055-314",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-556a12b9-d19",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-922623b7-947",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-94d5c9d6-cf7",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-9dd4d052-6b1",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "prun-9dec3a94-c94",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-dc227e9e-9c8",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-dcc3c302-0c0",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "prun-eb2dfd15-a86",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "artifacts_legacy_backup",
+          "type": "folder",
+          "children": [
+            {
+              "name": "prun-0dcf0d39-5f5",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-37d59567-035",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prun-8eae1848-012",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": []
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "prun-a51029ca-3f2",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "prun-cf7ca2f3-4f8",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "_pipeline",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "competitor_spy",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "content_architect",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "faq_architect",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "keyword_mapper",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "research_prompt_generator",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "trend_scout",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "input.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "metadata.json",
+                      "type": "file"
+                    },
+                    {
+                      "name": "output.json",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "cache",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "name": "canvas.db",
+          "type": "file"
+        },
+        {
+          "name": "chroma",
+          "type": "folder",
+          "children": [
+            {
+              "name": "2668f052-311a-430b-8a1d-4b3856b5c917",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "data_level0.bin",
+                  "type": "file"
+                },
+                {
+                  "name": "header.bin",
+                  "type": "file"
+                },
+                {
+                  "name": "length.bin",
+                  "type": "file"
+                },
+                {
+                  "name": "link_lists.bin",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "8263c874-5e21-479c-9d26-1958e04701ab",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "data_level0.bin",
+                  "type": "file"
+                },
+                {
+                  "name": "header.bin",
+                  "type": "file"
+                },
+                {
+                  "name": "index_metadata.pickle",
+                  "type": "file"
+                },
+                {
+                  "name": "length.bin",
+                  "type": "file"
+                },
+                {
+                  "name": "link_lists.bin",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "chroma.sqlite3",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "graph.graphml",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "db",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        },
+        {
+          "name": "activity.py",
+          "type": "file"
+        },
+        {
+          "name": "artifacts.py",
+          "type": "file"
+        },
+        {
+          "name": "chroma_ops.py",
+          "type": "file"
+        },
+        {
+          "name": "graph_ops.py",
+          "type": "file"
+        },
+        {
+          "name": "pipeline_state.py",
+          "type": "file"
+        },
+        {
+          "name": "sqlite_ops.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "db_viewer.py",
+      "type": "file"
+    },
+    {
+      "name": "diagnose_db.py",
+      "type": "file"
+    },
+    {
+      "name": "export",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "fix_db.py",
+      "type": "file"
+    },
+    {
+      "name": "graph_viewer.py",
+      "type": "file"
+    },
+    {
+      "name": "ingest",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        },
+        {
+          "name": "chunk.py",
+          "type": "file"
+        },
+        {
+          "name": "extract.py",
+          "type": "file"
+        },
+        {
+          "name": "pipeline.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "ingestion",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        },
+        {
+          "name": "chunk.py",
+          "type": "file"
+        },
+        {
+          "name": "extract.py",
+          "type": "file"
+        },
+        {
+          "name": "pipeline.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "layer2_test.py",
+      "type": "file"
+    },
+    {
+      "name": "lib",
+      "type": "folder",
+      "children": [
+        {
+          "name": "bindings",
+          "type": "folder",
+          "children": [
+            {
+              "name": "utils.js",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "tom-select",
+          "type": "folder",
+          "children": [
+            {
+              "name": "tom-select.complete.min.js",
+              "type": "file"
+            },
+            {
+              "name": "tom-select.css",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "vis-9.1.2",
+          "type": "folder",
+          "children": [
+            {
+              "name": "vis-network.css",
+              "type": "file"
+            },
+            {
+              "name": "vis-network.min.js",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "llm.py",
+      "type": "file"
+    },
+    {
+      "name": "logs",
+      "type": "folder",
+      "children": []
+    },
+    {
+      "name": "migrate.py",
+      "type": "file"
+    },
+    {
+      "name": "migrate_sharedstate.py",
+      "type": "file"
+    },
+    {
+      "name": "orchestrator.py",
+      "type": "file"
+    },
+    {
+      "name": "orchestrator_console_patch.py",
+      "type": "file"
+    },
+    {
+      "name": "outputs",
+      "type": "folder",
+      "children": [
+        {
+          "name": "architect_input_hennur.json",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout_ekhata_in_bangalore.json",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout_home_loan.json",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout_hosa_road.json",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout_hsr_layout.json",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout_koramangala.json",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout_kr_puram.json",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout_property_registration_in_bangalore.json",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout_varthur.json",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "pipeline",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "pipeline.py",
+      "type": "file"
+    },
+    {
+      "name": "pipeline_init",
+      "type": "file"
+    },
+    {
+      "name": "pipeline_init_.py",
+      "type": "file"
+    },
+    {
+      "name": "prompts",
+      "type": "folder",
+      "children": [
+        {
+          "name": "competitor_spy.md",
+          "type": "file"
+        },
+        {
+          "name": "content_architect.md",
+          "type": "file"
+        },
+        {
+          "name": "fact_extractor.md",
+          "type": "file"
+        },
+        {
+          "name": "fact_plausibility.md",
+          "type": "file"
+        },
+        {
+          "name": "faq_architect.md",
+          "type": "file"
+        },
+        {
+          "name": "keyword_mapper.md",
+          "type": "file"
+        },
+        {
+          "name": "trend_scout.md",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "quick_fix.py",
+      "type": "file"
+    },
+    {
+      "name": "repo_structure.py",
+      "type": "file"
+    },
+    {
+      "name": "requirements.txt",
+      "type": "file"
+    },
+    {
+      "name": "research_docs",
+      "type": "folder",
+      "children": [
+        {
+          "name": "sample_hsr_layout.md",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "runs",
+      "type": "folder",
+      "children": [
+        {
+          "name": "prun-019cadd4-ef8",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-03964648-e1e",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-08ce6994-4a4",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-0bab4f55-959",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-0dcf0d39-5f5",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-166aca00-f49",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-1dcad8fe-799",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-22f0fc68-5a3",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-2ab2ae4c-4dd",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-2c0c394e-5ad",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-2e18467b-22b",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-3200bf34-479",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-33efbc9b-509",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-37d59567-035",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-39799dd8-955",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-3f2164b9-8f0",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-4251746f-7f6",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "keyword_mapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-4341cb85-ff1",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-45cf7a60-ec7",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-53a01055-314",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-556a12b9-d19",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-5f83a99c-716",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-6fc18725-15f",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "keyword_mapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-72fb48be-a94",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-8545e59d-dcd",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "activity.log",
+              "type": "file"
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "content_architect",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "faq_architect",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "keyword_mapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "research_prompt_generator",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "status.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-88629756-a0b",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-887b3a4d-8b1",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "activity.log",
+              "type": "file"
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "status.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-8a170893-251",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-8eae1848-012",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "content_architect",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "keyword_mapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-922623b7-947",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-9448195b-558",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "keyword_mapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-94d5c9d6-cf7",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-9636503e-c98",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-99b5e763-a9e",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-9bb30b21-82c",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "activity.log",
+              "type": "file"
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "status.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-9dd4d052-6b1",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-9dec3a94-c94",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-a0766239-8a8",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-a33e2cd4-408",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-a51029ca-3f2",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "content_architect",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "faq_architect",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "keyword_mapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "research_prompt_generator",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-a6c216eb-2d5",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-a806cce9-ea1",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-b8e261a6-14d",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-bcd9288d-926",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-bd401881-c66",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "ingestion",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-c3b38374-5c1",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-c3e0f418-447",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-c59cb2b0-b08",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "activity.log",
+              "type": "file"
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "status.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-cf7ca2f3-4f8",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "content_architect",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "faq_architect",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "ingestion",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "keyword_mapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "research_prompt_generator",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-d16e00f5-a53",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-d450cf72-3bd",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-d661bbc1-919",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "ingestion",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-dc227e9e-9c8",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-dcc3c302-0c0",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-e4dd4a33-cf6",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-eb2dfd15-a86",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-ecfbfeca-a66",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "activity.log",
+              "type": "file"
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "console.log",
+                  "type": "file"
+                },
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "status.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-edddcc51-60a",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "keyword_mapper",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-ede00171-957",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-f05f2241-6bb",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "prun-f1a71367-5fb",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "activity.log",
+              "type": "file"
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "status.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-f3428706-6d7",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_live.log",
+              "type": "file"
+            },
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "competitor_spy",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            },
+            {
+              "name": "trend_scout",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                },
+                {
+                  "name": "metadata.json",
+                  "type": "file"
+                },
+                {
+                  "name": "output.json",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "prun-ffb6507d-66a",
+          "type": "folder",
+          "children": [
+            {
+              "name": "_pipeline",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "input.json",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "run.json",
+              "type": "file"
+            },
+            {
+              "name": "state.json",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "state.py",
+      "type": "file"
+    },
+    {
+      "name": "temp_dash.py",
+      "type": "file"
+    },
+    {
+      "name": "temp_dash2.py",
+      "type": "file"
+    },
+    {
+      "name": "temp_ouputviewers",
+      "type": "folder",
+      "children": [
+        {
+          "name": "MARKET_INTELLIGENCE.HTML",
+          "type": "file"
+        },
+        {
+          "name": "layer1_demo.html",
+          "type": "file"
+        },
+        {
+          "name": "layer2_demo.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "type": "folder",
+      "children": []
+    },
+    {
+      "name": "tests",
+      "type": "folder",
+      "children": [
+        {
+          "name": "test_architects.py",
+          "type": "file"
+        },
+        {
+          "name": "test_chroma.py",
+          "type": "file"
+        },
+        {
+          "name": "test_commit.txt",
+          "type": "file"
+        },
+        {
+          "name": "test_graph.py",
+          "type": "file"
+        },
+        {
+          "name": "test_ingestion.py",
+          "type": "file"
+        },
+        {
+          "name": "test_llm.py",
+          "type": "file"
+        },
+        {
+          "name": "test_market_intel.py",
+          "type": "file"
+        },
+        {
+          "name": "test_sqlite.py",
+          "type": "file"
+        },
+        {
+          "name": "test_trendscout.py",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "tsouput.py",
+      "type": "file"
+    },
+    {
+      "name": "vix",
+      "type": "folder",
+      "children": []
+    },
+    {
+      "name": "viz",
+      "type": "folder",
+      "children": [
+        {
+          "name": "__init__.py",
+          "type": "file"
+        },
+        {
+          "name": "graph_viewer.py",
+          "type": "file"
+        },
+        {
+          "name": "opportunity_matrix.py",
+          "type": "file"
+        },
+        {
+          "name": "opportunity_viewer.py",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}

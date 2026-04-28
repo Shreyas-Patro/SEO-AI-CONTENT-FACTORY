@@ -1,0 +1,85 @@
+
+============================================================
+[Pipeline prun-9636503e-c98] Layer 1 starting for 'Sarjapur'
+============================================================
+
+────────────────────────────────────────────────────────────
+[Trend Scout v2] Analyzing: Sarjapur
+────────────────────────────────────────────────────────────
+  [1/6] Classifying topic...
+    Type: locality
+    Categories: ['locality']
+    Localities: ['Sarjapur']
+  [2/6] Generating queries (budget: 15 SERP calls)...
+    Generated 15 unique queries across 4 groups
+  [3/6] Fetching Google Trends...
+⚠️  SerpAPI Trends error: Expecting value: line 1 column 1 (char 0)
+    Trends unavailable: Expecting value: line 1 column 1 (char 0)
+  [4/6] Running 15 SERP searches...
+    [1/15] (core) Sarjapur Bangalore
+    [2/15] (core) Sarjapur Bangalore guide
+    [3/15] (core) living in Sarjapur Bangalore
+    [4/15] (core) Sarjapur review
+    SerpAPI error for 'Sarjapur review': Expecting value: line 1 column 1 (char 0)
+    [5/15] (property) Sarjapur property price
+    [6/15] (property) Sarjapur rent
+    SerpAPI error for 'Sarjapur rent': Expecting value: line 1 column 1 (char 0)
+    [7/15] (property) 2BHK rent Sarjapur
+    [8/15] (property) Sarjapur flat for sale
+    [9/15] (property) Sarjapur property rate per sq ft
+    [10/15] (property) Sarjapur new projects
+    [11/15] (lifestyle) things to do in Sarjapur
+    SerpAPI error for 'things to do in Sarjapur': Expecting value: line 1 column 1 (char 0)
+    [12/15] (lifestyle) best restaurants Sarjapur
+    SerpAPI error for 'best restaurants Sarjapur': Expecting value: line 1 column 1 (char 0)
+    [13/15] (lifestyle) schools near Sarjapur
+    SerpAPI error for 'schools near Sarjapur': Expecting value: line 1 column 1 (char 0)
+    [14/15] (lifestyle) hospitals near Sarjapur
+    SerpAPI error for 'hospitals near Sarjapur': Expecting value: line 1 column 1 (char 0)
+    [15/15] (comparison) Sarjapur vs Whitefield
+    Total PAA questions: 17
+    Total related searches: 60
+    Enriching trend data with SERP proxy signals...
+  [5/6] Fetching autocomplete (5 calls)...
+    Autocomplete error for 'Sarjapur Bangalore': Expecting value: line 1 column 1 (char 0)
+    Autocomplete error for 'rent in Sarjapur': Expecting value: line 1 column 1 (char 0)
+    Autocomplete error for 'Sarjapur property': Expecting value: line 1 column 1 (char 0)
+    Found 15 autocomplete suggestions
+  [6/6] Running LLM analysis...
+
+  ──────────────────────────────────────────────────
+  ✅ Trend Scout v2 complete
+     Topic type: locality
+     PAA questions: 17
+     Related searches: 60
+     Autocomplete: 15
+     High AEO opportunities: 15
+     Competitor coverage: {"nobroker.in": 5, "99acres.com": 6, "magicbricks.com": 6, "housing.com": 2}
+     SERP calls used: 15/15
+     Cost: $0.0166
+  ──────────────────────────────────────────────────
+
+┌─ [competitor_spy] starting (run=prun-9636503e-c98)
+
+[competitor_spy] Analyzing: Sarjapur (retry 1)
+  Reusing SERP results from attempt 1
+  Analyzing with LLM...
+   [competitor_spy] EXECUTION ERROR: TypeError: 'str' object is not callable
+
+
+❌ FATAL: TypeError: 'str' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\temp_dash2.py", line 147, in _target
+    layer_fn(run_id)
+    ~~~~~~~~^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 104, in run_layer1
+    spy_output = spy.run({"topic": topic})
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 288, in run
+    output = self._call_execute(state, merged_input)
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 223, in _call_execute
+    return self._execute(agent_input)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\competitor_spy.py", line 118, in _execute
+    cache_namespace=f"{topic}:competitor_spy{self._retry_suffix()}",
+                                             ~~~~~~~~~~~~~~~~~~^^
+TypeError: 'str' object is not callable

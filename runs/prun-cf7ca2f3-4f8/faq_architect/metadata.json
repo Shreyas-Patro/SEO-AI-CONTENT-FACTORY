@@ -1,0 +1,11 @@
+{
+  "agent": "faq_architect",
+  "status": "completed",
+  "serp_calls": 0,
+  "llm_calls": 33,
+  "tokens_in": 54779,
+  "tokens_out": 46958,
+  "cost_usd": 0.231655,
+  "validation_problems": [],
+  "validation_passed": true
+}

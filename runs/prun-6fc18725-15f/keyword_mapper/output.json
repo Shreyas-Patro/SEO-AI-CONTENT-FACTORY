@@ -1,0 +1,96 @@
+{
+  "topic": "Hosa Road",
+  "keyword_groups": [
+    {
+      "group_name": "Hosa Road Property Listings",
+      "primary_keyword": "properties in Hosa Road",
+      "supporting_keywords": [
+        "flats in Hosa Road",
+        "apartments in Hosa Road",
+        "houses for sale Hosa Road",
+        "residential properties Hosa Road",
+        "buy property Hosa Road"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "medium",
+      "competition": "high",
+      "opportunity_score": 45
+    },
+    {
+      "group_name": "Hosa Road Rental Market",
+      "primary_keyword": "rent in Hosa Road",
+      "supporting_keywords": [
+        "flats for rent Hosa Road",
+        "apartments on rent Hosa Road",
+        "rental properties Hosa Road",
+        "PG in Hosa Road",
+        "paying guest Hosa Road"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "medium",
+      "competition": "high",
+      "opportunity_score": 48
+    },
+    {
+      "group_name": "Hosa Road Location Guide",
+      "primary_keyword": "Hosa Road Bangalore",
+      "supporting_keywords": [
+        "Hosa Road location",
+        "where is Hosa Road",
+        "Hosa Road area guide",
+        "Hosa Road neighborhood",
+        "Hosa Road locality information"
+      ],
+      "intent": "informational",
+      "estimated_volume": "medium",
+      "competition": "medium",
+      "opportunity_score": 62
+    },
+    {
+      "group_name": "Hosa Road Price & Market Analysis",
+      "primary_keyword": "Hosa Road property prices",
+      "supporting_keywords": [
+        "price per sqft Hosa Road",
+        "property rates Hosa Road",
+        "Hosa Road real estate market",
+        "average price Hosa Road",
+        "cost of living Hosa Road"
+      ],
+      "intent": "informational",
+      "estimated_volume": "medium",
+      "competition": "medium",
+      "opportunity_score": 58
+    },
+    {
+      "group_name": "Hosa Road Amenities & Infrastructure",
+      "primary_keyword": "Hosa Road amenities",
+      "supporting_keywords": [
+        "schools near Hosa Road",
+        "hospitals Hosa Road",
+        "shopping malls Hosa Road",
+        "metro connectivity Hosa Road",
+        "transportation Hosa Road"
+      ],
+      "intent": "informational",
+      "estimated_volume": "low",
+      "competition": "medium",
+      "opportunity_score": 65
+    },
+    {
+      "group_name": "Hosa Road Investment Potential",
+      "primary_keyword": "invest in Hosa Road",
+      "supporting_keywords": [
+        "Hosa Road investment opportunity",
+        "property investment Hosa Road",
+        "ROI Hosa Road real estate",
+        "best area to invest Hosa Road",
+        "future development Hosa Road"
+      ],
+      "intent": "informational",
+      "estimated_volume": "low",
+      "competition": "medium",
+      "opportunity_score": 68
+    }
+  ],
+  "summary": "Hosa Road keyword strategy focuses on transactional property searches (buy/rent) with high competition, balanced by informational content on location, amenities, pricing, and investment potential where opportunity gaps exist. Content should target both buyers/renters and investors seeking Bangalore real estate information."
+}

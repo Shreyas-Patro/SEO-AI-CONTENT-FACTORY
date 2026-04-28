@@ -1,0 +1,27 @@
+{
+  "filepath": "C:\\Users\\Shrey\\AppData\\Local\\Temp\\tmpiy2avwhq.pdf",
+  "topic": "south end circle",
+  "started_at": "2026-04-27T13:08:09.425399",
+  "stages": {
+    "extract": {
+      "char_count": 77731,
+      "word_count": 10655
+    },
+    "chunk": {
+      "chunk_count": 135
+    },
+    "fact_extract": {
+      "facts_extracted": 732,
+      "duplicates_skipped": 0,
+      "cost_usd": 0.479
+    },
+    "plausibility": {
+      "checked": 20,
+      "flagged": 7,
+      "cost_usd": 0.0136
+    }
+  },
+  "completed_at": "2026-04-27T13:21:11.877729",
+  "total_facts": 732,
+  "total_cost_usd": 0.4926
+}

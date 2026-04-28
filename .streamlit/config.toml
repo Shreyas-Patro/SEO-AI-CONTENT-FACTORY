@@ -1,0 +1,10 @@
+[server]
+fileWatcherType = "none"
+runOnSave = false
+ 
+[browser]
+gatherUsageStats = false
+ 
+[logger]
+level = "warning"
+ 

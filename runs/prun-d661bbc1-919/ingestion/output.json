@@ -1,0 +1,27 @@
+{
+  "filepath": "C:\\Users\\Shrey\\AppData\\Local\\Temp\\tmpxncjgrfo.txt",
+  "topic": "Hosa Road",
+  "started_at": "2026-04-28T10:51:25.214638",
+  "stages": {
+    "extract": {
+      "char_count": 13459,
+      "word_count": 1858
+    },
+    "chunk": {
+      "chunk_count": 21
+    },
+    "fact_extract": {
+      "facts_extracted": 84,
+      "duplicates_skipped": 0,
+      "cost_usd": 0.0614
+    },
+    "plausibility": {
+      "checked": 20,
+      "flagged": 0,
+      "cost_usd": 0.017
+    }
+  },
+  "completed_at": "2026-04-28T10:55:00.049162",
+  "total_facts": 84,
+  "total_cost_usd": 0.0783
+}

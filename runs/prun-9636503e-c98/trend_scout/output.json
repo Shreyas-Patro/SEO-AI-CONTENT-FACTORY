@@ -1,0 +1,909 @@
+{
+  "topic": "Sarjapur",
+  "classification": {
+    "categories": [
+      "locality"
+    ],
+    "primary_category": "locality",
+    "detected_localities": [
+      "Sarjapur"
+    ],
+    "is_locality": true,
+    "is_cross_cutting": false
+  },
+  "raw_data": {
+    "trends": {
+      "trend_available": false,
+      "reason": "using_serp_proxy",
+      "assumed_direction": "rising",
+      "serp_based_insights": {
+        "questions_in_paa": 24,
+        "assumed_rising_queries": [],
+        "pages_with_paa": 6
+      },
+      "fallback_strategy": "Derived from SERP People Also Ask signals"
+    },
+    "paa_questions": [
+      "Is Sarjapura posh area in Bangalore?",
+      "How far is Sarjapur from the airport?",
+      "What is Sarjapur Bangalore famous for?",
+      "Is Sarjapur expensive?",
+      "Which is better, Sarjapur or Electronic City?",
+      "Why is Sarjapur booming?",
+      "Does Sarjapur get flooded?",
+      "How is the nightlife in Sarjapur?",
+      "What is the cost of land in Sarjapur?",
+      "What is the price of 2 BHK in Sarjapur?",
+      "What is the price of 3 BHK in Sarjapur?",
+      "What is the land rate in Sarjapur?",
+      "What is the cost of a 30 * 40 site in Bangalore?",
+      "Is Sarjapur a posh area in Bangalore?",
+      "Where do most CEOs live in Bangalore?",
+      "Which area is booming in Bangalore?",
+      "Which are the posh areas in Bangalore?"
+    ],
+    "related_searches": [
+      "Sarjapur bangalore map",
+      "Sarjapur bangalore to Whitefield distance",
+      "Sarjapur bangalore distance",
+      "Sarjapur Bangalore Hotels",
+      "Sarjapur Bangalore near railway Station",
+      "Sarjapur Bangalore schools",
+      "Sarjapur Bangalore Pincode",
+      "Sarjapur bangalore wipro",
+      "Sarjapur bangalore guide map",
+      "Sarjapur Bangalore map",
+      "Sarjapur Fort",
+      "Sarjapur Marathahalli Road",
+      "Sarjapur Metro station",
+      "Sarjapur Fort location",
+      "Sarjapur to Whitefield distance",
+      "Living in sarjapur bangalore reddit",
+      "Cost of living in sarjapur bangalore",
+      "Sarjapur Road Bangalore",
+      "Sarjapur Bangalore 1 BHK rent",
+      "Sarjapur Main Road Bangalore",
+      "Sarjapur Bangalore restaurants",
+      "Sarjapur Road Bangalore location",
+      "Sarjapur property price per square foot",
+      "Sarjapur property price per square feet",
+      "Sarjapur property price per sq ft",
+      "Sarjapur per square feet rate",
+      "Sarjapur Real Estate Agents",
+      "Independent House for sale in Sarjapur Road",
+      "1 acre land for sale in Sarjapur Road",
+      "Prestige City Sarjapur",
+      "2 BHK for rent in Sarjapur Road near Wipro",
+      "2 BHK Gated Community Flats for rent in Sarjapur",
+      "2 BHK independent House for rent in Sarjapur Road, Bangalore",
+      "2 BHK House for rent near Sarjapur Police Station",
+      "Flats for rent in Sarjapur Road near Wipro",
+      "2 BHK in Sarjapur Road for sale",
+      "2bhk flat in sarjapur",
+      "Sarjapur 1 BHK rent",
+      "Sarjapur Property rates",
+      "Sarjapur circle rate",
+      "Price per sq ft in my area",
+      "How to check per square feet Rate",
+      "Sarjapur price trend",
+      "Government rate per square feet in Bangalore",
+      "Upcoming government projects in Sarjapur Road",
+      "Sarjapur new projects latest",
+      "Sarjapur new projects for sale",
+      "Pre Launch projects in Sarjapur Road",
+      "Ready to Move Projects in Sarjapur Road",
+      "New villa projects in Sarjapur Road",
+      "Upcoming commercial projects in sarjapur road",
+      "Best pre Launch Projects in Sarjapur Road",
+      "Sarjapur vs whitefield which is better",
+      "Sarjapur to Whitefield Metro",
+      "Sarjapur vs whitefield reddit",
+      "Sarjapur vs whitefield rent",
+      "Sarjapur road to whitefield distance",
+      "Sarjapur vs whitefield price",
+      "Sarjapur vs whitefield cost",
+      "Whitefield electronic city distance"
+    ],
+    "autocomplete": [
+      "sarjapura",
+      "sarjapur social",
+      "sarjapur road",
+      "sarjapur pincode",
+      "sarjapur police station",
+      "sarjapur signal",
+      "sarjapur metro",
+      "sarjapur restaurants",
+      "sarjapur road pin code",
+      "sarjapur distance",
+      "sarjapur to whitefield",
+      "sarjapur social menu",
+      "sarjapur metro station",
+      "sarjapur nearest metro station",
+      "sarjapur main road"
+    ],
+    "serp_results_summary": [
+      {
+        "query": "Sarjapur Bangalore",
+        "top_results": [
+          {
+            "title": "Sarjapura",
+            "link": "https://en.wikipedia.org/wiki/Sarjapura",
+            "snippet": "Sarjapura (also spelled Sarjapur) is a small town on the outskirts of Bengaluru, Karnataka, India. It is a hobli of Anekal taluk, Bengaluru Urban district.",
+            "position": 1,
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "Sarjapur, Bangalore: Map, Photo, Video, Price Trends ...",
+            "link": "https://www.magicbricks.com/Sarjapur-in-Bangalore-Overview",
+            "snippet": "Located on the south-east part of Bangalore, Sarjapur is one of the prime residential and commercial hotspots of Bangalore with high-end social ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Is sarjapur part of Bangalore - Bengaluru",
+            "link": "https://www.reddit.com/r/bangalore/comments/1gt8ygi/is_sarjapur_part_of_bangalore/",
+            "snippet": "Coming to Sarjapura, before the IT infestation, Sarjapura was a village located off the Bangalore-Chennai road. The locals of Sarjapura are ...",
+            "position": 3,
+            "domain": "www.reddit.com"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "Sarjapur Bangalore guide",
+        "top_results": [
+          {
+            "title": "Sarjapur Travel Guide - Bengaluru",
+            "link": "https://www.expedia.co.in/Bengaluru-Sarjapur.dx553248628939902931",
+            "snippet": "Popular places to visit \u00b7 Nandi Hills \u00b7 Bangalore Palace \u00b7 Manyata Tech Park \u00b7 Cubbon Park \u00b7 Lalbagh Botanical Gardens \u00b7 UB City \u00b7 ISKCON Temple \u00b7 Wonderla Amusement ...",
+            "position": 1,
+            "domain": "www.expedia.co.in"
+          },
+          {
+            "title": "Sarjapur, Bangalore - Everything you need to know - KOTS",
+            "link": "https://www.kots.world/blog/sarjapur-bangalore-everything-you-need-to-know",
+            "snippet": "Sarjapur is a rapidly developing residential and commercial area with the advantage of urban living that is complemented with ease of access at a strategic ...",
+            "position": 2,
+            "domain": "www.kots.world"
+          },
+          {
+            "title": "Discover Sarjapur Road Bangalore - LBB",
+            "link": "https://lbb.in/goa/locality/sarjapur-road-bangalore/",
+            "snippet": "Discover Sarjapur Road in Bangalore with curated reviews and recommendations on top places to see, best shops, best cafes, restaurants, & bars, and markets & ...",
+            "position": 3,
+            "domain": "lbb.in"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "living in Sarjapur Bangalore",
+        "top_results": [
+          {
+            "title": "How is living in Sarjapur : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/1f6ucsr/how_is_living_in_sarjapur/",
+            "snippet": "If commute and bad roads won't bother you, like if you have permanent wfh, you can go for it. Else mental sanity will go for a toss. Also no ...",
+            "position": 1,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Advantages and Disadvantages of living in Sarjapur - KOTS",
+            "link": "https://www.kots.world/blog/advanatages-and-disadvantages-of-living-in-sarjapur",
+            "snippet": "Sarjapur has good connectivity to major IT parks, new-age housing with good amenities, quality schools and hospitals, and good real estate ...",
+            "position": 2,
+            "domain": "www.kots.world"
+          },
+          {
+            "title": "Why Sarjapur Road is One of the Best Places to Live in ...",
+            "link": "https://www.magicbricks.com/blog/sarjapur-road-bangalore-best-place-to-live-invest/144907.html",
+            "snippet": "Pros and Cons of living in Sarjapur Road ; High-end schools, healthcare, gyms, and parks. Water supply issues in select pockets ; Modern ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "Sarjapur review",
+        "top_results": [],
+        "serp_features": [],
+        "competitor_presence": []
+      },
+      {
+        "query": "Sarjapur property price",
+        "top_results": [
+          {
+            "title": "Property Rates in Sarjapur Road, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-sarjapur-road-bangalore-east-prffid",
+            "snippet": "The average flat rates in Sarjapur Road, Bangalore is \u20b9 12,150 per sq ft. A 1 BHK flat is available at a price range of \u20b9 7,500,000-9,375,000. A 2 BHK flat is ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property in Sarjapur Road, Bangalore",
+            "link": "https://www.magicbricks.com/property-for-sale-in-sarjapur-road-bangalore-pppfs",
+            "snippet": "The price of flats in Sarjapur Road range between \u20b9 35 lakhs - \u20b9 16.42 Cr, and houses price between \u20b9 45.7 lakhs - \u20b9 6.52 Cr, with 1-5 BHK options. However, ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Property Rates in Sarjapur, Bengaluru - 2026 - Housing",
+            "link": "https://housing.com/price-trends/property-rates-for-buy-in-sarjapur_bengaluru-P525pianpmibkwg5t",
+            "snippet": "Starting price of properties in Sarjapur stands at Rs. 800 per sqft. On average, the price of properties in Sarjapur is Rs. 10,364 per sqft.",
+            "position": 3,
+            "domain": "housing.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "Sarjapur rent",
+        "top_results": [],
+        "serp_features": [],
+        "competitor_presence": []
+      },
+      {
+        "query": "2BHK rent Sarjapur",
+        "top_results": [
+          {
+            "title": "2 BHK Flats for rent in Sarjapur Main Road, Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-sarjapur_main_road_bangalore",
+            "snippet": "2 BHK Flats for Rent in Sarjapur Main Road. 2 BHK - 425 sq. ft. to 1,950 sq. ft. Monthly rent generally in Sarjapur Main Road falls between \u20b915,000 to \u20b955,000 ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "2 BHK Flats for Rent in Sarjapur Road, Bangalore",
+            "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-sarjapur-road-bangalore-east-ffid",
+            "snippet": "2 BHK Flat for rent in Sarjapur Road, Bangalore ... Property has 984 sq.Ft. Super built-Up area with 2 bathrooms & 1 balcony attached. The flat is built on 984 sq ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Apartments and House for Rent in sarjapur road",
+            "link": "https://www.nestaway.com/bangalore/2-bhk-flat-house-for-rent-in-sarjapur-road",
+            "snippet": "136+ 2 Bedroom Flats for Rent in sarjapur road, Bangalore. Semi/Full Furnished 2BHK House Rentals with \u2713WiFi \u2713Appliances \u2713Furniture. No Broker Apartments.",
+            "position": 3,
+            "domain": "www.nestaway.com"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "Sarjapur flat for sale",
+        "top_results": [],
+        "serp_features": [],
+        "competitor_presence": []
+      },
+      {
+        "query": "Sarjapur property rate per sq ft",
+        "top_results": [
+          {
+            "title": "Property Rates in Sarjapur Road, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-sarjapur-road-bangalore-east-prffid",
+            "snippet": "The average transaction rate of a flat in Sarjapur Road is Rs 9427 per sq ft. For an independent house, property buyers paid Rs 4981 per sq ft on average.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Property Rates in Sarjapur Road Bangalore",
+            "link": "https://www.magicbricks.com/Property-Rates-Trends/Multistorey-Apartment-rates-Sarjapur-Road-in-Bangalore",
+            "snippet": "Multistorey Apartment (Average Price Rs./Sq-ft). For Sale: 11,993. 1% Trends Up ; Builder Floor Apartment (Average Price Rs./Sq-ft). For Sale: 10,288. 1% Trends ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Property Rates in Sarjapur, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-sarjapur-bangalore-east-prffid",
+            "snippet": "The average flat rates in Sarjapur, Bangalore is \u20b9 12,150 per sq ft. A 1 BHK flat is available at a price range of \u20b9 7,400,000-8,463,900. A 2 BHK flat is ...",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "housing.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "Sarjapur new projects",
+        "top_results": [
+          {
+            "title": "New Projects in Sarjapur Road Bangalore for Sale",
+            "link": "https://www.99acres.com/new-projects-in-sarjapur-road-bangalore-east-ffid",
+            "snippet": "Find upcoming new housing residential real estate projects in Sarjapur Road, Bangalore within your budget on 99acres.com, India's No.1 Real Estate Portal.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "New Projects in Sarjapur Main Road Bangalore",
+            "link": "https://www.nobroker.in/new-projects-in-sarjapur-main-road-bangalore",
+            "snippet": "New Projects in Sarjapur Main Road Bangalore | NoBroker \u00b7 KMB La Palazzo \u00b7 Inner Meadow In The Sun \u00b7 Sobha Altair \u00b7 Birla Evara \u00b7 Binary Temple Tree \u00b7 Ramsons ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "New Projects in Sarjapur, bangalore with detailed pricing ...",
+            "link": "https://housiey.com/in/bangalore/sarjapur",
+            "snippet": "Explore upcoming and under-construction residential projects in Sarjapur, bangalore. Find verified new homes with Housiey today.",
+            "position": 3,
+            "domain": "housiey.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack"
+        ],
+        "competitor_presence": [
+          "nobroker.in",
+          "99acres.com",
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "things to do in Sarjapur",
+        "top_results": [],
+        "serp_features": [],
+        "competitor_presence": []
+      },
+      {
+        "query": "best restaurants Sarjapur",
+        "top_results": [],
+        "serp_features": [],
+        "competitor_presence": []
+      },
+      {
+        "query": "schools near Sarjapur",
+        "top_results": [],
+        "serp_features": [],
+        "competitor_presence": []
+      },
+      {
+        "query": "hospitals near Sarjapur",
+        "top_results": [],
+        "serp_features": [],
+        "competitor_presence": []
+      },
+      {
+        "query": "Sarjapur vs Whitefield",
+        "top_results": [
+          {
+            "title": "Apartment buy - Whitefield vs Sharjapur : r/indianrealestate",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1lmkf18/apartment_buy_whitefield_vs_sharjapur/",
+            "snippet": "Although prices are much higher in Whitefield but I guess you can look at it as premium for the improved quality of life compared to Sarjapur.",
+            "position": 1,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Whitefield vs Sarjapur Road: Which Area is Better to Buy ...",
+            "link": "https://www.sobha.com/blog/whitefield-vs-sarjapur-road/",
+            "snippet": "Whitefield has well-established infrastructure and proximity to IT hubs, while Sarjapur Road is more affordable, rapidly developing, and holds ...",
+            "position": 2,
+            "domain": "www.sobha.com"
+          },
+          {
+            "title": "Whitefield vs Sarjapur: Which Bangalore Suburb is Right for ...",
+            "link": "https://www.kots.world/blog/whitefield-vs-sarjapur-which-bangalore-suburb-is-right-for-you",
+            "snippet": "Key Takeaways: \u00b7 Whitefield is a mature suburb with robust infrastructure and connectivity. \u00b7 Sarjapur is fast growing, providing cheap housing ...",
+            "position": 3,
+            "domain": "www.kots.world"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      }
+    ],
+    "aeo_scores": [
+      {
+        "query": "Sarjapur review",
+        "score": 95,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "Sarjapur rent",
+        "score": 95,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "Sarjapur flat for sale",
+        "score": 95,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "things to do in Sarjapur",
+        "score": 95,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "best restaurants Sarjapur",
+        "score": 95,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "schools near Sarjapur",
+        "score": 95,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "hospitals near Sarjapur",
+        "score": 95,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "Sarjapur Bangalore",
+        "score": 90,
+        "serp_features": [
+          "knowledge_panel",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "2BHK rent Sarjapur",
+        "score": 85,
+        "serp_features": [
+          "knowledge_panel"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "Sarjapur new projects",
+        "score": 85,
+        "serp_features": [
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "Sarjapur Bangalore guide",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "Sarjapur vs Whitefield",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "living in Sarjapur Bangalore",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Sarjapur property price",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "Sarjapur property rate per sq ft",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      }
+    ]
+  },
+  "analysis": {
+    "topic": "Sarjapur",
+    "topic_type": "locality",
+    "trend_direction": "rising",
+    "trend_summary": "Sarjapur is experiencing rising search interest driven by real estate demand, lifestyle queries, and comparative analysis against other Bangalore localities. Strong transactional intent signals indicate active buyer/renter interest.",
+    "total_queries_discovered": 92,
+    "intent_clusters": [
+      {
+        "intent": "informational",
+        "queries": [
+          "Is Sarjapura posh area in Bangalore?",
+          "What is Sarjapur Bangalore famous for?",
+          "Why is Sarjapur booming?",
+          "Does Sarjapur get flooded?",
+          "How is the nightlife in Sarjapur?",
+          "What is the cost of living in sarjapur bangalore?",
+          "Sarjapur Bangalore guide map",
+          "things to do in Sarjapur",
+          "best restaurants Sarjapur",
+          "Living in sarjapur bangalore reddit"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "transactional",
+        "queries": [
+          "What is the price of 2 BHK in Sarjapur?",
+          "What is the price of 3 BHK in Sarjapur?",
+          "What is the cost of land in Sarjapur?",
+          "What is the land rate in Sarjapur?",
+          "Sarjapur Bangalore 1 BHK rent",
+          "Sarjapur rent",
+          "Sarjapur flat for sale",
+          "2BHK rent Sarjapur",
+          "Sarjapur new projects",
+          "Sarjapur property price"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "navigational",
+        "queries": [
+          "Sarjapur bangalore map",
+          "Sarjapur Bangalore map",
+          "Sarjapur Road Bangalore",
+          "Sarjapur Main Road Bangalore",
+          "Sarjapur Pincode",
+          "Sarjapur road pin code",
+          "Sarjapur police station",
+          "Sarjapur signal",
+          "Sarjapur metro",
+          "Sarjapur metro station",
+          "Sarjapur nearest metro station"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "medium"
+      },
+      {
+        "intent": "comparative",
+        "queries": [
+          "Which is better, Sarjapur or Electronic City?",
+          "Where do most CEOs live in Bangalore?",
+          "Which area is booming in Bangalore?",
+          "Which are the posh areas in Bangalore?",
+          "Sarjapur bangalore to Whitefield distance",
+          "Sarjapur to Whitefield distance",
+          "How far is Sarjapur from the airport?"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "high"
+      }
+    ],
+    "content_gaps": [
+      {
+        "gap": "No comprehensive locality review or rating content for Sarjapur",
+        "queries": [
+          "Sarjapur review",
+          "Living in sarjapur bangalore reddit",
+          "Advantages and Disadvantages of living in Sarjapur"
+        ],
+        "opportunity": "Create a detailed locality review hub covering pros/cons, demographics, lifestyle, infrastructure, and resident testimonials",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Limited lifestyle and amenity content (restaurants, nightlife, entertainment)",
+        "queries": [
+          "How is the nightlife in Sarjapur?",
+          "best restaurants Sarjapur",
+          "things to do in Sarjapur",
+          "Sarjapur Social menu",
+          "Sarjapur restaurants"
+        ],
+        "opportunity": "Create lifestyle guide with curated restaurant reviews, entertainment venues, cafes, and nightlife recommendations",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "Weak infrastructure and connectivity content",
+        "queries": [
+          "Sarjapur Metro station",
+          "Sarjapur nearest metro station",
+          "Sarjapur Bangalore near railway Station",
+          "How far is Sarjapur from the airport?",
+          "Sarjapur bangalore to Whitefield distance"
+        ],
+        "opportunity": "Create detailed connectivity guide covering metro access, airport distance, road connectivity, and commute times to major IT hubs",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "Missing education and healthcare amenity guides",
+        "queries": [
+          "schools near Sarjapur",
+          "Sarjapur Bangalore schools",
+          "hospitals near Sarjapur"
+        ],
+        "opportunity": "Create sub-spokes listing top schools and hospitals with ratings, fees, and proximity information",
+        "suggested_content_type": "sub_spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "No comprehensive price trend and market analysis content",
+        "queries": [
+          "What is the price of 2 BHK in Sarjapur?",
+          "What is the price of 3 BHK in Sarjapur?",
+          "What is the cost of land in Sarjapur?",
+          "What is the land rate in Sarjapur?",
+          "Is Sarjapur expensive?",
+          "Why is Sarjapur booming?"
+        ],
+        "opportunity": "Create market analysis hub with current price trends, ROI analysis, price comparisons with nearby areas, and growth projections",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Weak comparative locality analysis",
+        "queries": [
+          "Which is better, Sarjapur or Electronic City?",
+          "Which area is booming in Bangalore?",
+          "Which are the posh areas in Bangalore?",
+          "Where do most CEOs live in Bangalore?"
+        ],
+        "opportunity": "Create comparison guides (Sarjapur vs Electronic City, Sarjapur vs Whitefield, etc.) and tier-based locality rankings",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "Missing flood risk and environmental concerns content",
+        "queries": [
+          "Does Sarjapur get flooded?"
+        ],
+        "opportunity": "Create FAQ addressing flood history, drainage infrastructure, and climate resilience",
+        "suggested_content_type": "faq",
+        "priority": "medium"
+      },
+      {
+        "gap": "Limited new project and development pipeline content",
+        "queries": [
+          "Sarjapur new projects"
+        ],
+        "opportunity": "Create ongoing project tracker with details on upcoming residential and commercial developments",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      }
+    ],
+    "aeo_targets": [
+      {
+        "query": "Sarjapur review",
+        "current_answer_quality": "none",
+        "our_strategy": "Create comprehensive locality review with verified resident feedback, ratings across 8-10 dimensions (safety, connectivity, cost, lifestyle, schools, hospitals, traffic, growth potential), and comparison matrix",
+        "content_type": "hub"
+      },
+      {
+        "query": "Sarjapur rent",
+        "current_answer_quality": "weak",
+        "our_strategy": "Build detailed rental guide with current market rates by BHK type, locality micro-segments, price trends, and rental yield analysis",
+        "content_type": "spoke"
+      },
+      {
+        "query": "Sarjapur flat for sale",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create sales guide with current inventory, price ranges by micro-location, builder reputation, and investment potential analysis",
+        "content_type": "spoke"
+      },
+      {
+        "query": "things to do in Sarjapur",
+        "current_answer_quality": "weak",
+        "our_strategy": "Develop lifestyle guide with categorized venues (restaurants, cafes, parks, entertainment, shopping), ratings, and recommendations",
+        "content_type": "spoke"
+      },
+      {
+        "query": "best restaurants Sarjapur",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create curated restaurant guide with reviews, cuisine types, price ranges, and user ratings",
+        "content_type": "sub_spoke"
+      },
+      {
+        "query": "schools near Sarjapur",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Build comprehensive school directory with ratings, fees, distance, and parent reviews",
+        "content_type": "sub_spoke"
+      },
+      {
+        "query": "hospitals near Sarjapur",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create healthcare facility guide with hospital names, specialties, distance, and emergency services",
+        "content_type": "sub_spoke"
+      },
+      {
+        "query": "Sarjapur Bangalore",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Strengthen main locality hub with updated information, better structure, and integration of all sub-topics",
+        "content_type": "hub"
+      },
+      {
+        "query": "2BHK rent Sarjapur",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create specific rental guide for 2BHK segment with current rates, best micro-locations, and landlord/tenant insights",
+        "content_type": "sub_spoke"
+      },
+      {
+        "query": "Sarjapur new projects",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Build dynamic project tracker with ongoing and upcoming developments, builder details, and investment analysis",
+        "content_type": "spoke"
+      }
+    ],
+    "competitor_insights": [
+      {
+        "competitor": "magicbricks.com",
+        "strength": "Strong presence in property price queries, established locality pages with price trends, good SERP visibility for transactional queries",
+        "weakness": "Limited lifestyle and amenity content, weak review/rating system, no comprehensive locality comparison guides"
+      },
+      {
+        "competitor": "99acres.com",
+        "strength": "Detailed property rate information, good coverage of price trends and market data",
+        "weakness": "Minimal lifestyle content, no restaurant/entertainment guides, weak on connectivity and infrastructure details"
+      },
+      {
+        "competitor": "nobroker.in",
+        "strength": "Strong rental marketplace presence, good for transactional queries",
+        "weakness": "Limited informational content, no locality guides, weak on comparative analysis"
+      },
+      {
+        "competitor": "housing.com",
+        "strength": "Property listings and price data",
+        "weakness": "Minimal presence in Sarjapur searches, weak on locality-specific content"
+      },
+      {
+        "competitor": "kots.world",
+        "strength": "Good lifestyle and travel guide content, covers restaurants and entertainment",
+        "weakness": "Not a real estate platform, limited property/investment information"
+      },
+      {
+        "competitor": "lbb.in",
+        "strength": "Strong lifestyle and entertainment content",
+        "weakness": "Not a real estate platform, no property or investment focus"
+      }
+    ],
+    "top_5_priority_queries": [
+      {
+        "query": "Sarjapur review",
+        "reason": "Zero current answers (AEO score 95), high informational intent, directly influences buyer/renter decisions, no competitor dominance",
+        "suggested_action": "Create comprehensive 2000+ word locality review hub with verified resident feedback, multi-dimensional ratings, pros/cons analysis, and comparison matrix"
+      },
+      {
+        "query": "What is the price of 2 BHK in Sarjapur?",
+        "reason": "High transactional intent, directly tied to purchase decisions, currently weak answers from competitors, high search volume implied",
+        "suggested_action": "Create detailed pricing guide with current market rates, micro-location breakdowns, price trends, and ROI analysis"
+      },
+      {
+        "query": "things to do in Sarjapur",
+        "reason": "AEO score 95, high informational intent, lifestyle-focused, no current strong answers, differentiates Canvas from property-only competitors",
+        "suggested_action": "Build comprehensive lifestyle guide with categorized venues, ratings, recommendations, and user reviews"
+      },
+      {
+        "query": "Which is better, Sarjapur or Electronic City?",
+        "reason": "High comparative intent, influences locality choice decisions, currently no dedicated comparison content, AEO opportunity",
+        "suggested_action": "Create detailed comparison guide covering price, connectivity, lifestyle, growth potential, and suitability for different buyer profiles"
+      },
+      {
+        "query": "Sarjapur Bangalore guide",
+        "reason": "High informational intent, currently fragmented answers across travel and real estate sites, opportunity to create authoritative hub, strong SERP visibility potential",
+        "suggested_action": "Create comprehensive locality guide integrating property, lifestyle, infrastructure, and investment information in one resource"
+      }
+    ],
+    "related_topics_to_explore": [
+      "Sarjapur Road micro-markets and sub-localities",
+      "Sarjapur Fort and historical significance",
+      "Sarjapur to IT hub connectivity (Whitefield, Electronic City, Marathahalli)",
+      "Sarjapur metro connectivity and future expansion",
+      "Sarjapur flood history and drainage infrastructure",
+      "Sarjapur builder reputation and project quality",
+      "Sarjapur vs Whitefield vs Electronic City comparison",
+      "Sarjapur rental yield and investment returns",
+      "Sarjapur schools and educational institutions",
+      "Sarjapur healthcare facilities and hospitals",
+      "Sarjapur restaurants and nightlife scene",
+      "Sarjapur cost of living analysis",
+      "Sarjapur property appreciation trends",
+      "Sarjapur traffic and commute patterns",
+      "Sarjapur gated communities and premium projects"
+    ],
+    "seasonal_notes": null
+  },
+  "competitor_tracker": {
+    "nobroker.in": 5,
+    "99acres.com": 6,
+    "magicbricks.com": 6,
+    "housing.com": 2
+  },
+  "serp_calls_used": 15,
+  "autocomplete_calls_used": 4,
+  "cost_usd": 0.016642
+}

@@ -1,0 +1,77 @@
+{
+  "master_research_prompt": "You are a real estate research analyst specializing in Bangalore property markets. Provide comprehensive research on Sadashivanagar, Bangalore, Karnataka, India covering all aspects below. Every numeric claim, price figure, distance, and named entity must include a markdown citation [Source Name](URL). Prioritize sources from the last 18 months (2024-2026) and flag older data as [HISTORICAL]. When sources contradict each other, create separate 'Conflicting Data:' subsections. End with a 'Confidence Notes:' section flagging any weak or unverified claims.\n\nREQUIRED RESEARCH SECTIONS:\n\n1. LOCATION AND GEOGRAPHY\n- Exact boundaries of Sadashivanagar with neighboring areas (Malleswaram, Rajajinagar, Seshadripuram, etc.)\n- Distance in km to major landmarks: Bangalore Airport, Majestic Railway Station, MG Road, Brigade Road, Cubbon Park\n- Ward number and BBMP zone classification\n- Historical development timeline and why it's considered prestigious\n\n2. PROPERTY PRICING ANALYSIS (2024-2025)\n- Current price per square foot for: apartments, independent houses, commercial properties\n- Cost of standard plot sizes: 30x40, 40x60, 50x80 sites in INR lakhs\n- 2BHK apartment price ranges (budget/mid/premium segments)\n- 3BHK apartment price ranges with specific project examples\n- Independent house/villa price ranges by size (2000-5000 sq ft)\n- Year-over-year price appreciation rates 2023-2024\n- Price comparison with nearby areas: Malleswaram, Basavanagudi, Jayanagar\n\n3. RENTAL MARKET DATA (2024-2025)\n- Monthly rent ranges for: 1BHK (₹X-Y), 2BHK (₹X-Y), 3BHK (₹X-Y)\n- Independent house rental rates by size\n- Furnished vs unfurnished rental premiums\n- Security deposit norms (months of rent)\n- Rental yield percentages for investors\n- Popular rental micro-locations within Sadashivanagar\n\n4. CONNECTIVITY AND TRANSPORTATION\n- Distance in km and travel time to IT hubs: Electronic City, Whitefield, Outer Ring Road, Hebbal\n- Nearest metro stations with walking distance in meters\n- Major bus routes and BMTC connectivity\n- Traffic congestion patterns during peak hours\n- Upcoming metro line extensions affecting the area\n\n5. INFRASTRUCTURE AND AMENITIES\n- Top-rated schools within 2km radius with CBSE/ICSE/IB board details\n- Major hospitals and healthcare facilities with specializations\n- Shopping centers, malls, and commercial complexes\n- Parks, recreational facilities, and green cover percentage\n- Power supply reliability, water supply sources, sewage systems\n\n6. LIFESTYLE AND DINING\n- Popular restaurants, cafes, and dining establishments with cuisine types\n- Entertainment venues, clubs, and recreational facilities\n- Cultural centers, libraries, and community spaces\n- Sports facilities including swimming pools, gyms, tennis courts\n\n7. LEGAL AND REGULATORY STATUS\n- RERA registration requirements for new projects\n- BBMP approval processes and typical timelines\n- Property tax rates and calculation methods\n- Any ongoing legal disputes or development restrictions\n- Zoning regulations and construction guidelines\n\n8. INVESTMENT OUTLOOK AND MARKET TRENDS\n- Capital appreciation trends over last 5 years\n- Rental demand patterns and tenant demographics\n- Upcoming infrastructure projects impacting property values\n- Developer activity and new project launches\n- Market expert predictions for 2025-2026\n\n9. COMPARATIVE ANALYSIS\n- How Sadashivanagar ranks among Bangalore's premium localities\n- Advantages and disadvantages compared to similar areas\n- Target buyer/tenant demographics and preferences\n\nSOURCE REQUIREMENTS:\nMust include citations from: BBMP official data, BDA records, RERA-Karnataka, Karnataka government notifications, Knight Frank reports, JLL India research, Anarock data, CBRE market reports, MagicBricks listings, NoBroker analytics, 99acres trends, Housing.com data, Economic Times articles, Mint reports, Hindu BusinessLine coverage, Moneycontrol analysis, Reuters India, Bloomberg India, Times of India Bangalore edition, Deccan Herald, and local Bangalore real estate consultants.\n\nFor each conflicting data point between sources, create subsections like:\nConflicting Data - Property Prices:\n- MagicBricks reports ₹X per sq ft [citation]\n- NoBroker shows ₹Y per sq ft [citation]\n- Knight Frank indicates ₹Z per sq ft [citation]\n\nEnd with Confidence Notes identifying any claims that lack recent authoritative sources or show significant data gaps.",
+  "research_questions": {
+    "location_geography": [
+      "What are the exact boundaries of Sadashivanagar?",
+      "How far is it from major Bangalore landmarks?",
+      "What is its historical significance and development timeline?"
+    ],
+    "property_pricing": [
+      "What is the current price per square foot for different property types?",
+      "How much does a 30x40 site cost?",
+      "What are 2BHK and 3BHK apartment price ranges?",
+      "What is the year-over-year price appreciation?"
+    ],
+    "rental_market": [
+      "What are monthly rent ranges for 1BHK, 2BHK, 3BHK?",
+      "What are security deposit norms?",
+      "What is the rental yield for investors?"
+    ],
+    "connectivity": [
+      "How far is it from major IT hubs?",
+      "What is the metro connectivity?",
+      "What are the traffic patterns?"
+    ],
+    "amenities": [
+      "What are the top schools and hospitals nearby?",
+      "What shopping and recreational facilities exist?",
+      "What is the infrastructure quality?"
+    ],
+    "lifestyle": [
+      "What restaurants and cafes are popular?",
+      "What entertainment options exist?",
+      "What sports and recreational facilities are available?"
+    ],
+    "legal_regulatory": [
+      "What are RERA and BBMP requirements?",
+      "What are property tax rates?",
+      "What zoning regulations apply?"
+    ],
+    "investment_outlook": [
+      "What are capital appreciation trends?",
+      "What upcoming projects will impact values?",
+      "What do market experts predict?"
+    ]
+  },
+  "freshness_requirements": {
+    "property_prices": "2024-01-01",
+    "rental_rates": "2024-01-01",
+    "infrastructure_projects": "2023-06-01",
+    "regulatory_changes": "2023-01-01",
+    "market_predictions": "2024-01-01",
+    "connectivity_updates": "2023-06-01"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "bda.kar.nic.in",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "anarock.com",
+    "cbre.co.in",
+    "magicbricks.com",
+    "nobroker.in",
+    "99acres.com",
+    "housing.com",
+    "economictimes.indiatimes.com",
+    "livemint.com",
+    "thehindubusinessline.com",
+    "moneycontrol.com",
+    "reuters.com",
+    "bloomberg.com",
+    "timesofindia.indiatimes.com",
+    "deccanherald.com"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.2
+}

@@ -1,0 +1,9 @@
+
+[Keyword Mapper] Mapping keywords for: Mg road
+Loading weights:   0%|                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################| 103/103 [00:00<00:00, 2851.22it/s]
+Loading weights:   0%|                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################| 103/103 [00:00<00:00, 2307.12it/s]
+Loading weights:   0%|                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################| 103/103 [00:00<00:00, 2099.42it/s]
+Loading weights:   0%|                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################| 103/103 [00:00<00:00, 2328.22it/s]
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Keyword Mapper complete. 87 keywords across 1 groups.
+  ✅ keyword_mapper output valid (attempt 1, 26.7s)

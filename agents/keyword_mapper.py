@@ -1,156 +1,264 @@
 """
-Keyword Mapper v3.
+agents/keyword_mapper.py — v3.2 (handles call_llm_json wrapper response)
 
-Fixes from round 2:
-- Validator was too strict — required quick_win_keywords + strategic_keywords
-  fields that the LLM sometimes packed under different names like
-  'content_strategy_recommendations'. Relaxed: only keyword_groups is required.
-- Retry now actually re-calls the LLM (uses _retry_suffix() in cache_namespace).
-- On retry, prompt explicitly tells the LLM what was missing.
+Your call_llm_json returns:
+    {
+      "text": "<raw JSON string>",
+      "parsed": <pre-parsed dict>,
+      "parse_success": bool,
+      "tokens_in": int, "tokens_out": int,
+      "cost_usd": float, "model": str, "cached": bool
+    }
+
+This version:
+- Reads the actual content from `parsed` (or parses `text` as fallback)
+- Tracks the REAL cost/tokens from the wrapper
+- Looks at all known keys trend_scout might use for PAA/related/autocomplete
+- Logs what's in trend_data so we can see why payload is empty
+
+CONTRACT:
+    READS_STATE   = [TREND_DATA, COMPETITOR_DATA]
+    WRITES_STATE  = [KEYWORD_MAP]
+    OUTPUT        = {topic, keyword_groups[], summary}
 """
 
 import json
-from llm import call_llm_json
 from agents.base import AgentBase
+from db.pipeline_state import StateKeys, PipelineState
+
+from llm import call_llm_json
+
+
+SYSTEM_PROMPT = """You are a senior SEO strategist analyzing keyword data for Bangalore real estate content.
+
+Your job: take raw search data (PAA questions, related searches, autocomplete suggestions, competitor coverage) and organize it into 4-8 cohesive KEYWORD GROUPS that should each become a distinct piece of content.
+
+A good keyword group:
+- Has ONE primary keyword (the head term) and 3-7 supporting keywords (related long-tails, questions, variants)
+- Targets a SINGLE search intent (informational, transactional, navigational, comparison)
+- Has clear topical coherence
+- Avoids overlap with other groups
+- Has an opportunity_score reflecting (search interest) - (competitor strength)
+
+CRITICAL: You MUST produce at least 4 keyword groups. Do not return an empty array.
+
+Return STRICT JSON only:
+{
+  "topic": "<topic>",
+  "keyword_groups": [
+    {
+      "group_name": "Short label (3-5 words)",
+      "primary_keyword": "head term",
+      "supporting_keywords": ["term1", "term2"],
+      "intent": "informational|transactional|navigational|comparison",
+      "estimated_volume": "high|medium|low",
+      "competition": "high|medium|low",
+      "opportunity_score": 0-100
+    }
+  ],
+  "summary": "1-2 sentences"
+}
+
+NO markdown, NO commentary, JUST the JSON object."""
 
 
 class KeywordMapperAgent(AgentBase):
     NAME = "keyword_mapper"
-    INPUT_REQUIRED = ["topic", "trend_data", "competitor_data"]
-    # RELAXED: only keyword_groups + total_keywords are truly required.
-    # quick_win_keywords/strategic_keywords are nice-to-have; we'll auto-fill.
+    READS_STATE = [StateKeys.TREND_DATA, StateKeys.COMPETITOR_DATA]
+    WRITES_STATE = [StateKeys.KEYWORD_MAP]
     OUTPUT_REQUIRED = ["topic", "keyword_groups"]
     OUTPUT_NON_EMPTY = ["keyword_groups"]
 
-    def validate_output(self, output):
-        is_valid, problems = super().validate_output(output)
-
-        groups = output.get("keyword_groups", [])
-        if not isinstance(groups, list) or len(groups) < 3:
-            problems.append(f"keyword_groups too few ({len(groups) if isinstance(groups,list) else 0}); expected ≥3")
-            is_valid = False
-
-        # Each group must have group_name + primary_keyword + suggested_article_type
-        for i, g in enumerate(groups):
-            if not isinstance(g, dict):
-                problems.append(f"keyword_groups[{i}] is not a dict")
-                is_valid = False
-                continue
-            for required in ("group_name", "primary_keyword", "suggested_article_type"):
-                if not g.get(required):
-                    problems.append(f"keyword_groups[{i}] missing/empty: {required}")
-                    is_valid = False
-
-        return is_valid, problems
-
-    def _execute(self, validated_input):
-        topic = validated_input["topic"]
-        trend_data = validated_input["trend_data"]
-        competitor_data = validated_input["competitor_data"]
-
-        retry = self._retry_attempt
-        retry_msg = ""
-        if retry > 0 and self._retry_problems:
-            retry_msg = (
-                "\n\n⚠️ YOUR PREVIOUS RESPONSE WAS INVALID. Issues:\n"
-                + "\n".join(f"  - {p}" for p in self._retry_problems)
-                + "\n\nFix these in this response. Make sure 'keyword_groups' is a list of "
-                "at least 6 dicts, each with 'group_name', 'primary_keyword', and "
-                "'suggested_article_type' fields populated.\n"
-            )
-
-        print(f"\n[{self.NAME}] Mapping keywords for: {topic}{' (retry ' + str(retry) + ')' if retry else ''}")
-
-        prompt_template = open("prompts/keyword_mapper.md").read()
-
-        trend_analysis = trend_data.get("analysis", trend_data)
-        raw = trend_data.get("raw_data", {})
-        comp_analysis = competitor_data.get("analysis", competitor_data)
-
-        prompt = f"""Create a keyword strategy for "{topic}" in Bangalore.
-
-TOPIC: {topic}
-
-TREND DATA:
-{json.dumps(trend_analysis, indent=2)[:5000]}
-
-RAW SEARCH QUERIES FOUND:
-- PAA Questions: {json.dumps(raw.get("paa_questions", []), indent=2)[:2000]}
-- Related Searches: {json.dumps(raw.get("related_searches", []), indent=2)[:2000]}
-- Autocomplete: {json.dumps(raw.get("autocomplete", []), indent=2)[:1500]}
-
-COMPETITOR ANALYSIS:
-{json.dumps(comp_analysis, indent=2)[:2500]}
-
-REQUIRED OUTPUT FIELDS (all must be present):
-- "topic": "{topic}"
-- "total_keywords": integer
-- "keyword_groups": list of 6+ groups, each with group_name, primary_keyword, secondary_keywords[],
-  long_tail_keywords[], faq_keywords[], suggested_article_type, difficulty, priority, estimated_volume
-- "quick_win_keywords": list of 5+ low-difficulty keywords
-- "strategic_keywords": list of 5+ high-value keywords
-
-Map all discovered queries into a structured keyword plan FOR THE TOPIC: {topic}{retry_msg}
-"""
-        result = call_llm_json(
-            prompt,
-            system=prompt_template,
-            model_role="bulk",
-            max_tokens=8000,
-            cache_namespace=f"{topic}:keyword_mapper{self._retry_suffix()}",   # retry busts cache
+    def _execute(self, state: PipelineState, agent_input: dict) -> dict:
+        topic = agent_input.get("topic") or state.topic or ""
+        trend_data = (
+            agent_input.get("trend_data")
+            or state.get(StateKeys.TREND_DATA, {})
+            or {}
         )
-        self._track_llm(result)
+        competitor_data = (
+            agent_input.get("competitor_data")
+            or state.get(StateKeys.COMPETITOR_DATA, {})
+            or {}
+        )
 
-        analysis = result.get("parsed", {})
-        analysis["topic"] = topic
+        print(f"[keyword_mapper] Mapping keywords for: {topic}")
 
-        # Auto-fill missing convenience fields if model didn't include them
-        if "total_keywords" not in analysis:
-            total = sum(
-                len(g.get("secondary_keywords", [])) + len(g.get("long_tail_keywords", [])) + len(g.get("faq_keywords", []))
-                for g in analysis.get("keyword_groups", [])
+        # ── DIAGNOSTIC: show what trend_data has so we can fix payload extraction ─
+        if trend_data:
+            print(f"  trend_data keys: {list(trend_data.keys())}")
+        else:
+            print(f"  ⚠️  trend_data is EMPTY")
+        if competitor_data:
+            print(f"  competitor_data keys: {list(competitor_data.keys())}")
+
+        payload = self._build_payload(topic, trend_data, competitor_data)
+        print(f"  Payload contains: "
+              f"{len(payload['paa_questions'])} PAA, "
+              f"{len(payload['related_searches'])} related, "
+              f"{len(payload['autocomplete_suggestions'])} autocomplete, "
+              f"{len(payload['uncovered_queries'])} uncovered")
+
+        retry_note = ""
+        if self._retry_attempt > 1 and self._validation_problems:
+            retry_note = (
+                f"\n\nIMPORTANT: previous attempt had problems: "
+                f"{self._validation_problems}. Fix them."
             )
-            analysis["total_keywords"] = total
 
-        if "quick_win_keywords" not in analysis:
-            # Pull low-difficulty keywords from groups
-            qw = []
-            for g in analysis.get("keyword_groups", []):
-                if g.get("difficulty", "").lower() in ("low", "easy"):
-                    qw.append(g.get("primary_keyword", ""))
-                    qw.extend(g.get("secondary_keywords", [])[:2])
-            analysis["quick_win_keywords"] = [k for k in qw if k][:15]
+        user_prompt = (
+            f"Topic: {topic}\n\n"
+            f"Raw search data:\n{json.dumps(payload, indent=2, default=str)}"
+            f"{retry_note}"
+        )
 
-        if "strategic_keywords" not in analysis:
-            sk = []
-            for g in analysis.get("keyword_groups", []):
-                if g.get("priority", "").lower() in ("high", "critical"):
-                    sk.append(g.get("primary_keyword", ""))
-            analysis["strategic_keywords"] = [k for k in sk if k][:10]
+        print(f"  Calling LLM (prompt: {len(user_prompt)} chars)")
 
-        return analysis
+        # call_llm_json returns a WRAPPER dict
+        wrapper = call_llm_json(prompt=user_prompt, system=SYSTEM_PROMPT)
 
-    def _output_summary(self, output):
-        groups = output.get("keyword_groups", [])
-        kw = output.get("total_keywords", 0)
-        return f"{kw} keywords across {len(groups)} article groups"
+        # Track real cost/tokens from the wrapper
+        if isinstance(wrapper, dict):
+            self.track_llm(
+                tokens_in=wrapper.get("tokens_in", 0) or 0,
+                tokens_out=wrapper.get("tokens_out", 0) or 0,
+                cost=wrapper.get("cost_usd", 0) or 0,
+                cache_hit=bool(wrapper.get("cached")),
+            )
+            print(f"  LLM: ${wrapper.get('cost_usd', 0):.4f} "
+                  f"({wrapper.get('tokens_in', 0)}→{wrapper.get('tokens_out', 0)} tokens, "
+                  f"model={wrapper.get('model', '?')})")
 
+        # Extract the actual JSON content
+        result = self._extract_content(wrapper)
 
-def run_keyword_mapper(seed_topic, trend_data, competitor_data, cluster_id=None, pipeline_run_id=None):
-    from db.artifacts import create_pipeline_run
-    if pipeline_run_id is None:
-        pipeline_run_id = create_pipeline_run(seed_topic, notes="standalone keyword_mapper run")
+        if not isinstance(result, dict):
+            raise RuntimeError(
+                f"Could not extract dict from LLM wrapper. "
+                f"Got {type(result).__name__}: {str(result)[:300]}"
+            )
 
-    agent = KeywordMapperAgent(pipeline_run_id, cluster_id=cluster_id)
-    output = agent.run({
-        "topic": seed_topic,
-        "trend_data": trend_data,
-        "competitor_data": competitor_data,
-    })
+        groups_raw = (
+            result.get("keyword_groups")
+            or result.get("groups")
+            or result.get("keywords")
+            or []
+        )
+        print(f"  Extracted {len(groups_raw)} keyword groups")
 
-    return {
-        "topic": seed_topic,
-        "keyword_map": output,
-        "cost_usd": agent.cost_usd,
-        "pipeline_run_id": pipeline_run_id,
-    }
+        if not groups_raw:
+            print(f"  ❌ Result keys were: {list(result.keys())}")
+            print(f"  ❌ Result preview: {json.dumps(result, default=str)[:500]}")
+
+        clean_groups = []
+        for g in groups_raw:
+            if not isinstance(g, dict):
+                continue
+            clean_groups.append({
+                "group_name":          g.get("group_name") or g.get("name") or "Untitled group",
+                "primary_keyword":     g.get("primary_keyword") or g.get("primary") or "",
+                "supporting_keywords": g.get("supporting_keywords") or g.get("supporting") or [],
+                "intent":              g.get("intent", "informational"),
+                "estimated_volume":    g.get("estimated_volume") or g.get("volume") or "medium",
+                "competition":         g.get("competition", "medium"),
+                "opportunity_score":   g.get("opportunity_score") or g.get("score") or 50,
+            })
+
+        print(f"  ✅ {len(clean_groups)} clean keyword groups produced")
+
+        return {
+            "topic": topic,
+            "keyword_groups": clean_groups,
+            "summary": result.get("summary", ""),
+        }
+
+    # ─── Helpers ───────────────────────────────────────────────────────────
+    def _extract_content(self, wrapper):
+        """Pull the actual JSON content out of call_llm_json's wrapper response."""
+        if not isinstance(wrapper, dict):
+            return wrapper
+
+        # Path 1: pre-parsed dict (most common when parse_success=True)
+        if wrapper.get("parsed") and isinstance(wrapper["parsed"], dict):
+            return wrapper["parsed"]
+
+        # Path 2: parse the `text` field ourselves
+        text = wrapper.get("text") or ""
+        if isinstance(text, str) and text.strip():
+            stripped = text.strip()
+            # Strip markdown code fences if present
+            if stripped.startswith("```"):
+                lines = stripped.split("\n")
+                # drop first line ```json and last line ```
+                if lines[-1].strip().startswith("```"):
+                    lines = lines[1:-1]
+                else:
+                    lines = lines[1:]
+                stripped = "\n".join(lines).strip()
+            try:
+                return json.loads(stripped)
+            except Exception as e:
+                print(f"  Failed to parse text field: {e}")
+
+        # Path 3: maybe the wrapper IS the content (unlikely but defensive)
+        if "keyword_groups" in wrapper or "groups" in wrapper:
+            return wrapper
+
+        return None
+
+    def _build_payload(self, topic, trend_data, competitor_data):
+        """Compress upstream data into a tight LLM-friendly summary.
+        Tries multiple keys per field since trend_scout v2 uses various names.
+        """
+        # Try every known key name for each piece of trend data
+        paa = (
+            trend_data.get("paa_questions")
+            or trend_data.get("people_also_ask")
+            or trend_data.get("paa")
+            or []
+        )
+        related = (
+            trend_data.get("related_searches")
+            or trend_data.get("related")
+            or []
+        )
+        autocomplete = (
+            trend_data.get("autocomplete_suggestions")
+            or trend_data.get("autocomplete")
+            or trend_data.get("suggestions")
+            or []
+        )
+        high_aeo = (
+            trend_data.get("high_aeo_opportunities")
+            or trend_data.get("aeo_opportunities")
+            or trend_data.get("opportunities")
+            or []
+        )
+
+        def to_text(items, key=None):
+            seen, out = set(), []
+            for it in items:
+                if isinstance(it, dict):
+                    text = (it.get(key or "question")
+                            or it.get("query")
+                            or it.get("text")
+                            or it.get("value")
+                            or it.get("title")
+                            or "")
+                else:
+                    text = str(it)
+                text = text.strip() if isinstance(text, str) else ""
+                if text and text.lower() not in seen:
+                    seen.add(text.lower())
+                    out.append(text)
+            return out
+
+        return {
+            "topic": topic,
+            "paa_questions":            to_text(paa, key="question")[:25],
+            "related_searches":         to_text(related)[:25],
+            "autocomplete_suggestions": to_text(autocomplete)[:20],
+            "high_aeo_opportunities":   high_aeo[:15] if isinstance(high_aeo, list) else [],
+            "competitor_coverage":      competitor_data.get("competitor_coverage", {}),
+            "uncovered_queries":        competitor_data.get("uncovered_queries", [])[:15],
+        }

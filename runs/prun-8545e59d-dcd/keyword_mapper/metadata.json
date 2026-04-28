@@ -1,0 +1,23 @@
+{
+  "agent": "keyword_mapper",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "reads_state": [
+    "trend_data",
+    "competitor_data"
+  ],
+  "writes_state": [
+    "keyword_map"
+  ],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 1,
+  "llm_cache_hits": 0,
+  "tokens_in": 238,
+  "tokens_out": 167,
+  "cost_usd": 0.000858,
+  "completed_at": "2026-04-28T06:30:44.393091",
+  "retry_count": 0
+}

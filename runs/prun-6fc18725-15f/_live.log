@@ -1,0 +1,96 @@
+Loading weights:   0%|                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################| 103/103 [00:00<00:00, 5152.58it/s]
+
+
+❌ FATAL: AttributeError: '_TeeToFile' object has no attribute 'isatty'
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\temp_dash2.py", line 147, in _target
+    layer_fn(run_id)
+    ~~~~~~~~^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 129, in run_layer2
+    from agents.content_architect import ContentArchitectAgent
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\content_architect.py", line 19, in <module>
+    from db.chroma_ops import search_facts
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\db\chroma_ops.py", line 15, in <module>
+    ef = embedding_functions.SentenceTransformerEmbeddingFunction(
+        model_name="all-MiniLM-L6-v2"
+    )
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\chromadb\utils\embedding_functions\sentence_transformer_embedding_function.py", line 44, in __init__
+    self.models[model_name] = SentenceTransformer(
+                              ~~~~~~~~~~~~~~~~~~~^
+        model_name_or_path=model_name, device=device, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 183, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        model_name_or_path=model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        default_prompt_name=default_prompt_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\base\model.py", line 198, in __init__
+    modules, self.module_kwargs = self._load_modules(
+                                  ~~~~~~~~~~~~~~~~~~^
+        model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        config_kwargs=config_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\base\model.py", line 974, in _load_modules
+    return self._load_config_modules(model_name_or_path, **load_kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\base\model.py", line 1165, in _load_config_modules
+    module = module_class.load(
+        model_name_or_path,
+    ...<11 lines>...
+        backend=self.backend,
+    )
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\base\modules\transformer.py", line 1708, in load
+    return cls(model_name_or_path=model_name_or_path, **init_kwargs)
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 87, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\base\modules\transformer.py", line 642, in __init__
+    self.model = self._load_model(
+                 ~~~~~~~~~~~~~~~~^
+        model_name_or_path, transformer_task, config, backend, is_peft_model, **model_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\sentence_transformers\base\modules\transformer.py", line 1414, in _load_model
+    return model_cls.from_pretrained(model_name_or_path, config=config, **model_kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\transformers\models\auto\auto_factory.py", line 387, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\transformers\modeling_utils.py", line 4136, in from_pretrained
+    loading_info = cls._finalize_model_loading(model, load_config, loading_info)
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\transformers\modeling_utils.py", line 4298, in _finalize_model_loading
+    log_state_dict_report(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        logger=logger,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\transformers\utils\loading_report.py", line 262, in log_state_dict_report
+    report = loading_info.create_loading_report()
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\transformers\utils\loading_report.py", line 181, in create_loading_report
+    tips += f"\n- {_style('UNEXPECTED:', 'orange')}\t" + _style(
+                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\transformers\utils\loading_report.py", line 123, in _style
+    if sys.stdout.isatty():
+       ^^^^^^^^^^^^^^^^^
+AttributeError: '_TeeToFile' object has no attribute 'isatty'

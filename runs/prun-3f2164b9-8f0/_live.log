@@ -1,0 +1,76 @@
+
+============================================================
+[Pipeline prun-3f2164b9-8f0] Layer 1 starting for 'mg road'
+============================================================
+
+────────────────────────────────────────────────────────────
+[Trend Scout v2] Analyzing: mg road
+────────────────────────────────────────────────────────────
+  [1/6] Classifying topic...
+    Type: locality
+    Categories: ['locality', 'infrastructure']
+    Localities: ['MG Road']
+  [2/6] Generating queries (budget: 15 SERP calls)...
+    Generated 15 unique queries across 4 groups
+  [3/6] Fetching Google Trends...
+    (trends from cache)
+    Direction: declining_fast
+    Rising queries: 15
+  [4/6] Running 15 SERP searches...
+    [1/15] (core) MG Road Bangalore
+    [2/15] (core) MG Road Bangalore guide
+    [3/15] (core) living in MG Road Bangalore
+    [4/15] (core) MG Road review
+    [5/15] (property) MG Road property price
+    [6/15] (property) MG Road rent
+    [7/15] (property) 2BHK rent MG Road
+    [8/15] (property) MG Road flat for sale
+    [9/15] (property) MG Road property rate per sq ft
+    [10/15] (property) MG Road new projects
+    [11/15] (lifestyle) things to do in MG Road
+    [12/15] (lifestyle) best restaurants MG Road
+    [13/15] (lifestyle) schools near MG Road
+    [14/15] (lifestyle) hospitals near MG Road
+    [15/15] (comparison) MG Road vs Whitefield
+    Total PAA questions: 38
+    Total related searches: 87
+  [5/6] Fetching autocomplete (5 calls)...
+    Found 56 autocomplete suggestions
+  [6/6] Running LLM analysis...
+
+  ──────────────────────────────────────────────────
+  ✅ Trend Scout v2 complete
+     Topic type: locality
+     PAA questions: 38
+     Related searches: 87
+     Autocomplete: 56
+     High AEO opportunities: 15
+     Competitor coverage: {"magicbricks.com": 8, "99acres.com": 8, "nobroker.in": 6, "housing.com": 3}
+     SERP calls used: 15/15
+     Cost: $0.0185
+  ──────────────────────────────────────────────────
+
+┌─ [competitor_spy] starting (run=prun-3f2164b9-8f0)
+
+[competitor_spy] Analyzing: mg road (retry 1)
+  Reusing SERP results from attempt 1
+  Analyzing with LLM...
+   [competitor_spy] EXECUTION ERROR: TypeError: 'int' object is not callable
+
+
+❌ FATAL: TypeError: 'int' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\temp_dash2.py", line 147, in _target
+    layer_fn(run_id)
+    ~~~~~~~~^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 104, in run_layer1
+    spy_output = spy.run({"topic": topic})
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 286, in run
+    output = self._call_execute(state, merged_input)
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 221, in _call_execute
+    return self._execute(agent_input)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\competitor_spy.py", line 118, in _execute
+    cache_namespace=f"{topic}:competitor_spy{self._retry_suffix()}",
+                                             ~~~~~~~~~~~~~~~~~~^^
+TypeError: 'int' object is not callable

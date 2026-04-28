@@ -1,0 +1,132 @@
+├── .gitignore
+├── .streamlit
+│   └── config.toml
+├── Layer_Documentation
+├── TRENDSCOUT_OUTPUT.PY
+├── agents
+│   ├── __init__.py
+│   ├── base.py
+│   ├── competitor_spy.py
+│   ├── content_architect.py
+│   ├── faq_architect.py
+│   ├── keyword_mapper.py
+│   ├── research_prompt_generator.py
+│   └── trend_scout.py
+├── artifacts
+├── background_runner.py
+├── canvas.db
+├── changes.diff
+├── cleanup.py
+├── cleanup_runs.py
+├── clear_cache.py
+├── config.yaml
+├── config.yaml.example
+├── config_loader.py
+├── dashboard_components
+│   ├── __init__.py
+│   ├── graph_view.py
+│   ├── ingestion_view.py
+│   └── opportunity_view.py
+├── data
+│   ├── artifacts
+│   │   ├── prun-019cadd4-ef8
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   
+│   ├── cache
+│   ├── canvas.db
+│   ├── chroma
+│   │   ├── 2668f052-311a-430b-8a1d-4b3856b5c917
+│   │   │   ├── data_level0.bin
+│   │   │   ├── header.bin
+│   │   │   ├── length.bin
+│   │   │   └── link_lists.bin
+│   │   
+│   │   └── chroma.sqlite3
+│   └── graph.graphml
+├── db
+│   ├── __init__.py
+│   ├── activity.py
+│   ├── artifacts.py
+│   ├── chroma_ops.py
+│   ├── graph_ops.py
+│   ├── pipeline_state.py
+│   └── sqlite_ops.py
+├── db_viewer.py
+├── diagnose_db.py
+├── export
+│   └── __init__.py
+├── fix_db.py
+├── graph_viewer.py
+├── ingestion
+│   ├── __init__.py
+│   ├── chunk.py
+│   ├── extract.py
+│   └── pipeline.py
+├── layer2_test.py
+├── lib
+│   
+├── llm.py
+├── logs
+
+├── migrate_sharedstate.py
+├── orchestrator.py
+├── orchestrator_console_patch.py
+├── outputs
+│   ├── architect_input_hennur.json
+│   ├── trend_scout_ekhata_in_bangalore.json
+│   ├── trend_scout_home_loan.json
+│   └── __init__.py
+├── pipeline.py
+├── pipeline_init
+├── pipeline_init_.py
+├── prompts
+│   ├── competitor_spy.md
+│   ├── content_architect.md
+│   ├── fact_extractor.md
+│   ├── fact_plausibility.md
+│   ├── faq_architect.md
+│   ├── keyword_mapper.md
+│   └── trend_scout.md
+├── requirements.txt
+├── research_docs
+│   └── sample_hsr_layout.md
+├── runs
+│   ├── prun-019cadd4-ef8
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-03964648-e1e
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├
+├── state.py
+├
+├── temp_dash2.py
+├── temp_ouputviewers
+│   
+├── test
+├── tests
+│   ├── test_architects.py
+│   ├── test_chroma.py
+│   ├── test_commit.txt
+│   ├── test_graph.py
+│   ├── test_ingestion.py
+│   ├── test_llm.py
+│   ├── test_market_intel.py
+│   ├── test_sqlite.py
+│   └── test_trendscout.py
+├── tsouput.py
+├── vix
+└── viz
+    ├── __init__.py
+    ├── graph_viewer.py
+    ├── opportunity_matrix.py
+    └── opportunity_viewer.py

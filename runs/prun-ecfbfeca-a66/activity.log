@@ -1,0 +1,133 @@
+[06:07:04] [orchestrator] Starting layer1...
+[06:07:09] ============================================================
+[06:07:09] [?] ============================================================
+[06:07:09] [Pipeline prun-ecfbfeca-a66] Layer 1 starting for 'HOSKOTE'
+[06:07:09] [pipeline_prun-ecfbfeca-a66] [Pipeline prun-ecfbfeca-a66] Layer 1 starting for 'HOSKOTE'
+[06:07:09] ============================================================
+[06:07:09] [?] ============================================================
+[06:07:09] ────────────────────────────────────────────────────────────
+[06:07:09] [?] ────────────────────────────────────────────────────────────
+[06:07:09] [Trend Scout v2] Analyzing: HOSKOTE
+[06:07:09] [trend_scout_v2] [Trend Scout v2] Analyzing: HOSKOTE
+[06:07:09] ────────────────────────────────────────────────────────────
+[06:07:09] [?] ────────────────────────────────────────────────────────────
+[06:07:09]   [1/6] Classifying topic...
+[06:07:09] [?]   [1/6] Classifying topic...
+[06:07:09]     Type: locality
+[06:07:09] [?]     Type: locality
+[06:07:09]     Categories: ['locality']
+[06:07:09] [?]     Categories: ['locality']
+[06:07:09]     Localities: ['HOSKOTE']
+[06:07:09] [?]     Localities: ['HOSKOTE']
+[06:07:09]   [2/6] Generating queries (budget: 15 SERP calls)...
+[06:07:09] [?]   [2/6] Generating queries (budget: 15 SERP calls)...
+[06:07:09]     Generated 15 unique queries across 4 groups
+[06:07:09] [?]     Generated 15 unique queries across 4 groups
+[06:07:09]   [3/6] Fetching Google Trends...
+[06:07:09] [?]   [3/6] Fetching Google Trends...
+[06:07:16]     Direction: declining
+[06:07:17] [?]     Direction: declining
+[06:07:17]     Rising queries: 7
+[06:07:17] [?]     Rising queries: 7
+[06:07:17]   [4/6] Running 15 SERP searches...
+[06:07:17] [?]   [4/6] Running 15 SERP searches...
+[06:07:17]     [1/15] (core) HOSKOTE Bangalore
+[06:07:17] [?]     [1/15] (core) HOSKOTE Bangalore
+[06:07:34] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[06:07:34] [?] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and 
+[06:07:37] Loading weights:   0%|                                                                                                 | 0/103 [00:00<?, ?it/s]Loading weights: 100%|#####################################################################################| 103/103 [00:00<00:00, 3021.92it/s]
+[06:07:37] [?] Loading weights:   0%|                                                                                                 
+[06:07:37] [1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+[06:07:37] [?] [1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+[06:07:37] Key                     | Status     |  |
+[06:07:37] [?] Key                     | Status     |  |
+[06:07:37] ------------------------+------------+--+-
+[06:07:37] [?] ------------------------+------------+--+-
+[06:07:37] embeddings.position_ids | UNEXPECTED |  |
+[06:07:37] [?] embeddings.position_ids | UNEXPECTED |  |
+[06:07:38] Notes:
+[06:07:38] [?] Notes:
+[06:07:38] - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[06:07:38] [?] - UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[06:07:59]     SerpAPI error for 'HOSKOTE Bangalore': HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google&q=HOSKOTE+Bangalore&location=Bangalore%2C+Karnataka%2C+India&gl=in&hl=en&num=10&api_key=56f251adfd5bcf30bf2d7828adadbb0e5f9771c3008bbf1ea9611f8ea1ef885f&output=json&source=python (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001D2AA3342D0>, 'Connection to serpapi.com timed out. (connect timeout=60000)'))
+[06:07:59] [?]     SerpAPI error for 'HOSKOTE Bangalore': HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with 
+[06:07:59]     [2/15] (core) HOSKOTE Bangalore guide
+[06:07:59] [?]     [2/15] (core) HOSKOTE Bangalore guide
+[06:08:28]     [3/15] (core) living in HOSKOTE Bangalore
+[06:08:28] [?]     [3/15] (core) living in HOSKOTE Bangalore
+[06:09:10]     SerpAPI error for 'living in HOSKOTE Bangalore': HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google&q=living+in+HOSKOTE+Bangalore&location=Bangalore%2C+Karnataka%2C+India&gl=in&hl=en&num=10&api_key=56f251adfd5bcf30bf2d7828adadbb0e5f9771c3008bbf1ea9611f8ea1ef885f&output=json&source=python (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001D2D12F6210>, 'Connection to serpapi.com timed out. (connect timeout=60000)'))
+[06:09:10] [?]     SerpAPI error for 'living in HOSKOTE Bangalore': HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exce
+[06:09:10]     [4/15] (core) HOSKOTE review
+[06:09:10] [?]     [4/15] (core) HOSKOTE review
+[06:09:14]     [5/15] (property) HOSKOTE property price
+[06:09:15] [?]     [5/15] (property) HOSKOTE property price
+[06:09:34]     [6/15] (property) HOSKOTE rent
+[06:09:34] [?]     [6/15] (property) HOSKOTE rent
+[06:09:53]     [7/15] (property) 2BHK rent HOSKOTE
+[06:09:53] [?]     [7/15] (property) 2BHK rent HOSKOTE
+[06:10:00]     [8/15] (property) HOSKOTE flat for sale
+[06:10:00] [?]     [8/15] (property) HOSKOTE flat for sale
+[06:10:33]     [9/15] (property) HOSKOTE property rate per sq ft
+[06:10:33] [?]     [9/15] (property) HOSKOTE property rate per sq ft
+[06:10:42]     [10/15] (property) HOSKOTE new projects
+[06:10:42] [?]     [10/15] (property) HOSKOTE new projects
+[06:10:48]     [11/15] (lifestyle) things to do in HOSKOTE
+[06:10:48] [?]     [11/15] (lifestyle) things to do in HOSKOTE
+[06:11:30]     SerpAPI error for 'things to do in HOSKOTE': HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google&q=things+to+do+in+HOSKOTE&location=Bangalore%2C+Karnataka%2C+India&gl=in&hl=en&num=10&api_key=56f251adfd5bcf30bf2d7828adadbb0e5f9771c3008bbf1ea9611f8ea1ef885f&output=json&source=python (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001D2AA23FB10>, 'Connection to serpapi.com timed out. (connect timeout=60000)'))
+[06:11:30] [?]     SerpAPI error for 'things to do in HOSKOTE': HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded
+[06:11:30]     [12/15] (lifestyle) best restaurants HOSKOTE
+[06:11:30] [?]     [12/15] (lifestyle) best restaurants HOSKOTE
+[06:11:34]     [13/15] (lifestyle) schools near HOSKOTE
+[06:11:34] [?]     [13/15] (lifestyle) schools near HOSKOTE
+[06:11:38]     [14/15] (lifestyle) hospitals near HOSKOTE
+[06:11:38] [?]     [14/15] (lifestyle) hospitals near HOSKOTE
+[06:11:51]     [15/15] (comparison) HOSKOTE vs Whitefield
+[06:11:51] [?]     [15/15] (comparison) HOSKOTE vs Whitefield
+[06:11:54]     Total PAA questions: 28
+[06:11:54] [?]     Total PAA questions: 28
+[06:11:54]     Total related searches: 86
+[06:11:54] [?]     Total related searches: 86
+[06:11:54]   [5/6] Fetching autocomplete (5 calls)...
+[06:11:54] [?]   [5/6] Fetching autocomplete (5 calls)...
+[06:12:21]     Found 54 autocomplete suggestions
+[06:12:21] [?]     Found 54 autocomplete suggestions
+[06:12:21]   [6/6] Running LLM analysis...
+[06:12:21] [?]   [6/6] Running LLM analysis...
+[06:12:53] ⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+[06:12:53] [?] ⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+[06:12:55]   ──────────────────────────────────────────────────
+[06:12:55] [?]   ──────────────────────────────────────────────────
+[06:12:55]   ✅ Trend Scout v2 complete
+[06:12:55] [?]   ✅ Trend Scout v2 complete
+[06:12:55]      Topic type: locality
+[06:12:55] [?]      Topic type: locality
+[06:12:55]      PAA questions: 28
+[06:12:55] [?]      PAA questions: 28
+[06:12:55]      Related searches: 86
+[06:12:55] [?]      Related searches: 86
+[06:12:55]      Autocomplete: 54
+[06:12:55] [?]      Autocomplete: 54
+[06:12:55]      High AEO opportunities: 14
+[06:12:55] [?]      High AEO opportunities: 14
+[06:12:55]      Competitor coverage: {"nobroker.in": 6, "magicbricks.com": 7, "99acres.com": 7, "housing.com": 5}
+[06:12:55] [?]      Competitor coverage: {"nobroker.in": 6, "magicbricks.com": 7, "99acres.com": 7, "housing.com": 5}
+[06:12:55]      SERP calls used: 15/15
+[06:12:55] [?]      SERP calls used: 15/15
+[06:12:55]      Cost: $0.0011
+[06:12:55] [?]      Cost: $0.0011
+[06:12:55]   ──────────────────────────────────────────────────
+[06:12:56] [?]   ──────────────────────────────────────────────────
+[06:12:56]   ❌ competitor_spy execution failed: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given
+[06:12:56] [?]   ❌ competitor_spy execution failed: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were gi
+[06:12:57] FAILED: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given
+[06:12:57] Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\background_runner.py", line 111, in _run_in_thread
+    run_layer1(run_id)
+    ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 96, in run_layer1
+    spy_output = spy.run({"topic": topic})
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 179, in run
+    output = self._execute(state, agent_input)
+TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given
+
+[06:12:57] [orchestrator] FAILED: TypeError: CompetitorSpyAgent._execute() takes 2 positional arguments but 3 were given

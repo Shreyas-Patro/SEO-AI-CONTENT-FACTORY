@@ -1,0 +1,31 @@
+[06:32:01] [orchestrator] Starting layer2...
+[06:32:01]   Keyword groups: 1
+[06:32:01] [?]   Keyword groups: 1
+[06:32:01]   Topic: Mg road
+[06:32:01] [?]   Topic: Mg road
+[06:32:36]   ✅ content_architect output valid (attempt 1, 35.2s)
+[06:32:36] [?]   ✅ content_architect output valid (attempt 1, 35.2s)
+[06:32:36]   Collected 30 candidate questions across cluster
+[06:32:36] [?]   Collected 30 candidate questions across cluster
+[06:32:49]   ✅ faq_architect output valid (attempt 1, 12.3s)
+[06:32:49] [?]   ✅ faq_architect output valid (attempt 1, 12.3s)
+[06:32:49]   ❌ research_prompt_generator execution failed: KeyError: 'cluster_plan'
+[06:32:49] [?]   ❌ research_prompt_generator execution failed: KeyError: 'cluster_plan'
+[06:32:50] FAILED: KeyError: 'cluster_plan'
+[06:32:50] Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\background_runner.py", line 113, in _run_in_thread
+    run_layer2(run_id)
+    ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 149, in run_layer2
+    rpg_output = rpg.run({"topic": run["topic"]})
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 168, in run
+    output = self._call_execute(state, agent_input)
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 134, in _call_execute
+    return self._execute(agent_input)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\research_prompt_generator.py", line 91, in _execute
+    cluster_plan = validated_input["cluster_plan"]
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'cluster_plan'
+
+[06:32:50] [orchestrator] FAILED: KeyError: 'cluster_plan'

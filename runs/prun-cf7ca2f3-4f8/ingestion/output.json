@@ -1,0 +1,27 @@
+{
+  "filepath": "C:\\Users\\Shrey\\AppData\\Local\\Temp\\tmphw9xwzn8.txt",
+  "topic": "Sadashivanagar",
+  "started_at": "2026-04-27T14:02:01.412526",
+  "stages": {
+    "extract": {
+      "char_count": 13459,
+      "word_count": 1858
+    },
+    "chunk": {
+      "chunk_count": 21
+    },
+    "fact_extract": {
+      "facts_extracted": 84,
+      "duplicates_skipped": 0,
+      "cost_usd": 0.0614
+    },
+    "plausibility": {
+      "checked": 20,
+      "flagged": 0,
+      "cost_usd": 0.017
+    }
+  },
+  "completed_at": "2026-04-27T14:06:51.036447",
+  "total_facts": 84,
+  "total_cost_usd": 0.0783
+}

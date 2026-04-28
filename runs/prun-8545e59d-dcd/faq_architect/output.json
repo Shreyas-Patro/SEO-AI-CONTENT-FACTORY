@@ -1,0 +1,138 @@
+{
+  "topic": "Mg road",
+  "total_input_questions": 30,
+  "kept_questions": 12,
+  "deduplicated_questions": 18,
+  "dropped_count": 6,
+  "allocation_by_article": {
+    "mg-road-bangalore-complete-guide": [
+      {
+        "question": "What is MG Road Bangalore famous for?",
+        "intent": "definition",
+        "aeo_value": "high",
+        "expected_answer_length": "snippet",
+        "target_keyword": "MG Road Bangalore famous",
+        "source": "paa"
+      },
+      {
+        "question": "What are the key landmarks and commercial establishments on MG Road?",
+        "intent": "list",
+        "aeo_value": "high",
+        "expected_answer_length": "medium",
+        "target_keyword": "MG Road landmarks",
+        "source": "must_answer"
+      },
+      {
+        "question": "Which area is near to MG Road?",
+        "intent": "fact",
+        "aeo_value": "medium",
+        "expected_answer_length": "snippet",
+        "target_keyword": "areas near MG Road",
+        "source": "paa"
+      },
+      {
+        "question": "What is the red building in MG Road?",
+        "intent": "fact",
+        "aeo_value": "medium",
+        "expected_answer_length": "snippet",
+        "target_keyword": "MG Road red building landmark",
+        "source": "paa"
+      },
+      {
+        "question": "Is MG Road a posh area?",
+        "intent": "opinion",
+        "aeo_value": "high",
+        "expected_answer_length": "snippet",
+        "target_keyword": "MG Road posh upscale",
+        "source": "paa"
+      },
+      {
+        "question": "What is the price of land in MG Road Bangalore?",
+        "intent": "price",
+        "aeo_value": "high",
+        "expected_answer_length": "snippet",
+        "target_keyword": "MG Road land price",
+        "source": "paa"
+      },
+      {
+        "question": "Why is MG Road closed?",
+        "intent": "fact",
+        "aeo_value": "low",
+        "expected_answer_length": "short",
+        "target_keyword": "MG Road closure",
+        "source": "paa"
+      },
+      {
+        "question": "Is MG Road worth visiting?",
+        "intent": "opinion",
+        "aeo_value": "medium",
+        "expected_answer_length": "snippet",
+        "target_keyword": "MG Road visit worth",
+        "source": "paa"
+      }
+    ],
+    "living-in-mg-road-bangalore-2026": [
+      {
+        "question": "Is MG Road safe at night?",
+        "intent": "opinion",
+        "aeo_value": "high",
+        "expected_answer_length": "snippet",
+        "target_keyword": "MG Road safety night",
+        "source": "paa"
+      },
+      {
+        "question": "What is it actually like to live on or near MG Road?",
+        "intent": "opinion",
+        "aeo_value": "high",
+        "expected_answer_length": "medium",
+        "target_keyword": "living MG Road experience",
+        "source": "must_answer"
+      },
+      {
+        "question": "How suitable is MG Road for families vs working professionals?",
+        "intent": "comparison",
+        "aeo_value": "high",
+        "expected_answer_length": "medium",
+        "target_keyword": "MG Road families professionals",
+        "source": "must_answer"
+      },
+      {
+        "question": "Is a 30k salary enough to live in Bangalore?",
+        "intent": "opinion",
+        "aeo_value": "medium",
+        "expected_answer_length": "snippet",
+        "target_keyword": "living costs Bangalore salary",
+        "source": "paa"
+      },
+      {
+        "question": "What are the pros and cons of MG Road residential living?",
+        "intent": "comparison",
+        "aeo_value": "high",
+        "expected_answer_length": "medium",
+        "target_keyword": "MG Road pros cons",
+        "source": "must_answer"
+      },
+      {
+        "question": "Is it worth buying a 10 year old apartment in Bangalore?",
+        "intent": "opinion",
+        "aeo_value": "medium",
+        "expected_answer_length": "snippet",
+        "target_keyword": "buying old apartment Bangalore",
+        "source": "paa"
+      }
+    ]
+  },
+  "cluster_faq_summary": {
+    "total_faqs_planned": 14,
+    "high_aeo_count": 9,
+    "medium_aeo_count": 4,
+    "low_aeo_count": 1,
+    "snippet_length_count": 8,
+    "medium_length_count": 6
+  },
+  "cross_article_concerns": [
+    "Note: 'Is MG Road a posh area?' allocated to hub article\u2014could also fit spoke (living experience), but hub is broader and better positioned for landmark/character questions. Spoke focuses on resident lifestyle.",
+    "Note: 'Is a 30k salary enough to live in Bangalore?' is generic Bangalore question, not MG Road-specific. Allocated to spoke because it supports 'monthly living costs' must_answer. Consider whether this should be replaced with MG Road-specific cost data.",
+    "Note: 'Why is MG Road closed?' is low-value (likely temporary/news-driven). Kept because it appears in PAA, but monitor for relevance\u2014may need replacement if closure is resolved."
+  ]
+}

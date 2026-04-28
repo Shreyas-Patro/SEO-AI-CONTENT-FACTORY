@@ -1,0 +1,1580 @@
+{
+  "topic": "Sadashivanagar",
+  "trend_data": {
+    "topic": "Sadashivanagar",
+    "classification": {
+      "categories": [
+        "locality"
+      ],
+      "primary_category": "locality",
+      "detected_localities": [
+        "Sadashivanagar"
+      ],
+      "is_locality": true,
+      "is_cross_cutting": false
+    },
+    "raw_data": {
+      "trends": {
+        "trend_available": true,
+        "average_interest": 51.8,
+        "recent_interest": 44.0,
+        "peak_interest": 100,
+        "direction": "declining_fast",
+        "is_seasonal": true,
+        "rising_queries": [
+          "sadashivanagar club"
+        ],
+        "top_queries": [
+          "sadashivanagar club"
+        ]
+      },
+      "paa_questions": [
+        "Which celebrities live in Sadashivanagar, Bangalore?",
+        "Why is Sadashiv Nagar famous?",
+        "What is the price of land in Sadashivanagar?",
+        "Is Sadashivanagar a posh area?",
+        "Is Sadashivanagar a good place to live?",
+        "Why is Sadashivanagar so expensive?",
+        "How safe is Sadashivanagar?",
+        "Who lives in Sadashivanagar, Bangalore?",
+        "Is Sadashiv Nagar a posh area?",
+        "What is the cost of a 30 * 40 site in Bangalore?",
+        "Which area has the cheapest rent in Bangalore?",
+        "Is Sadashivanagar a green neighborhood?",
+        "What is the cost of 1 square foot?",
+        "What is the price of land in Sadashivanagar Bangalore?",
+        "Which area is growing fastest in Bangalore?",
+        "Where to take a girl on date in Bangalore?",
+        "Where is Virat Kohli's restaurant in Bangalore?",
+        "Who owns 50 best restaurants?",
+        "Which name is best for a restaurant?",
+        "Which school is ranked no. 1 in Bangalore?",
+        "Who is the owner of NPS Sadashivanagar?",
+        "What is the old name of CBSE?",
+        "What are the top five schools?",
+        "What are the top 3 hospitals?",
+        "Which is costly, manipal or Apollo?",
+        "Which hospital is free treatment in Bangalore?",
+        "Which is the Ambani hospital?",
+        "Which area comes under Whitefield?",
+        "Which side is Whitefield on?",
+        "Which zone is Whitefield?"
+      ],
+      "related_searches": [
+        "Sadashivanagar bangalore map",
+        "Sadashivanagar bangalore rent",
+        "Sadashivanagar bangalore distance",
+        "Sadashivanagar bangalore famous for",
+        "Sadashivanagar Bangalore Pin Code",
+        "Sadashivanagar from my location",
+        "Sadashivanagar bangalore to indiranagar distance",
+        "Sadashivanagar Bangalore House",
+        "Sadashivanagar bangalore guide map",
+        "Sadashivanagar bangalore guide 2021",
+        "Sadashivanagar Bangalore map",
+        "Majestic to Sadashivanagar Distance",
+        "Sadashivanagar restaurants",
+        "Sadashivanagar to Malleswaram distance",
+        "Sadashivanagar directions",
+        "Living in sadashivanagar bangalore reviews",
+        "Sadashivanagar Bangalore rent",
+        "Sadashivanagar, Bangalore properties for sale",
+        "Sadashivanagar nearby areas",
+        "Sadashivanagar Bangalore square feet rate",
+        "Sadashivanagar review 2021",
+        "Sadashivanagar Bangalore",
+        "Sadashivanagar lake",
+        "SADASHIVANAGAR Pincode",
+        "Sadashiva nagar location",
+        "Sadashivanagar property price per square foot",
+        "Sadashivanagar property price per square feet",
+        "Sadashivanagar Land price per square feet",
+        "Sadashivanagar House for sale",
+        "Independent house for sale in Sadashivanagar, Bangalore",
+        "Property rates in Sadashivanagar Bangalore",
+        "Sadashivanagar Apartment for sale",
+        "Sadashivanagar villas for sale",
+        "Sadashivanagar rent house",
+        "Sadashivanagar rent 1 bhk",
+        "Sadashivanagar rent 2 bhk",
+        "Sadashivanagar rent flats",
+        "1 BHK for rent in Sadashiva Nagar, Bangalore",
+        "Independent House for rent in Sadashivanagar",
+        "3 BHK flat for rent in Sadashiva Nagar, Bangalore",
+        "Flats for rent in Sadashivanagar Bangalore",
+        "2 BHK apartment in sadashivanagar",
+        "Sadashivanagar houses for rent",
+        "Independent House for sale in Sadashivanagar, Bangalore",
+        "Sadashivanagar flat for sale price",
+        "Sadashivanagar flat for sale 3bhk",
+        "Luxury apartments in Sadashivanagar Bangalore",
+        "3 BHK flat for sale in Sadashiva Nagar, Bangalore",
+        "House for sale in Sadashivanagar, Bangalore",
+        "Sadashivanagar plot for sale",
+        "Malleshwaram square feet rate",
+        "Dollars Colony, Bangalore land price per square Feet",
+        "Highest land Price in Bangalore",
+        "Sadashivanagar new projects in bangalore",
+        "Sadashivanagar new projects for sale",
+        "Things to do in sadashivanagar today",
+        "Things to do in sadashivanagar with friends",
+        "Free things to do in sadashivanagar",
+        "Places to eat in sadashivanagar",
+        "Cafes in Sadashivanagar",
+        "Sadashivanagar Park",
+        "Best Veg Restaurants in sadashivanagar",
+        "Best restaurants sadashivanagar for lunch",
+        "Best restaurants sadashivanagar for family",
+        "Non Veg restaurants in Sadashivanagar",
+        "Sattvam restaurant Sadashivanagar",
+        "Shetty Lunch Home sadashivanagar",
+        "Kailash Parbat Sadashivanagar",
+        "Cbse schools near sadashivanagar",
+        "Schools near sadashivanagar bangalore",
+        "Best schools near sadashivanagar",
+        "NPS Sadashivanagar",
+        "Poorna prajna School Sadashivanagar",
+        "Hospitals near Kalyan Nagar",
+        "Hosmat Hospital is govt or private",
+        "Hotspot hospital in Bangalore",
+        "Is Hosmat hospital expensive",
+        "Best ortho hospital in Bangalore",
+        "Hosmat Hospital careers",
+        "Hosmat Hospital location",
+        "Orthopedic Hospital Kalyan Nagar",
+        "Sadashivanagar to whitefield metro",
+        "Sadashivanagar to whitefield distance",
+        "Nearest metro to sadashivanagar from bangalore",
+        "Srirampura to sadashivanagar distance",
+        "Majestic to sadashivanagar metro",
+        "Mantri square to sadashivanagar distance",
+        "Yeshwanthpur to sadashivanagar distance"
+      ],
+      "autocomplete": [
+        "sadashivanagar bangalore",
+        "sadashivanagar swimming pool",
+        "sadashivanagar club",
+        "sadashivanagar tumkur",
+        "sadashivanagar police station",
+        "sadashivanagar swimming pool timings",
+        "sadashivanagar tumkur pin code",
+        "sadashivanagar bangalore pin code",
+        "sadashivanagar cafes",
+        "sadashivanagar park",
+        "sadashivanagar pincode",
+        "sadashivanagar belgaum",
+        "sadashivanagar cult",
+        "sadashivanagar bodycraft",
+        "sadashivanagar swimming pool price",
+        "sadashivanagar bangalore rent",
+        "sadashivanagar bangalore house for sale",
+        "sadashivanagar bangalore nearest metro station",
+        "sadashivanagar bangalore map",
+        "sadashivanagar bangalore distance",
+        "sadashivanagar bangalore square feet rate",
+        "sadashivanagar bangalore site price",
+        "sadashivanagar bangalore properties for sale",
+        "sadashivanagar bangalore mla",
+        "sadashivanagar bangalore north or south",
+        "sadashivanagar bangalore weather",
+        "sadashivanagar bangalore mla name",
+        "sadashivanagar bangalore to koramangala distance",
+        "sadashivanagar bangalore hotels",
+        "rentals in sadashivanagar bangalore",
+        "rent house in sadashivanagar bangalore",
+        "rent house in sadashivanagar belgaum",
+        "room rent in sadashivanagar",
+        "house rent in sadashivanagar",
+        "flats for rent in sadashivanagar bangalore",
+        "apartments for rent in sadashivanagar bangalore",
+        "flat for rent in sadashivanagar",
+        "house for rent in sadashivanagar tumkur",
+        "1 bhk rent in sadashivanagar",
+        "shop for rent in sadashivanagar",
+        "office for rent in sadashivanagar",
+        "3bhk for rent in sadashivanagar bangalore",
+        "apartments for rent in sadashivanagar",
+        "villa for rent in sadashivanagar",
+        "sadashivanagar property rates",
+        "sadashivanagar property for sale",
+        "property details example",
+        "property mark example",
+        "sadashiv nagar property for sale",
+        "sadashivanagar house for sale",
+        "sadashivanagar houses"
+      ],
+      "serp_results_summary": [
+        {
+          "query": "Sadashivanagar Bangalore",
+          "top_results": [
+            {
+              "title": "Sadashivanagar",
+              "link": "https://en.wikipedia.org/wiki/Sadashivanagar",
+              "snippet": "Sadashivanagara is an affluent residential neighbourhood in the northwestern part of Bangalore in the Indian state of Karnataka.",
+              "position": 1,
+              "domain": "en.wikipedia.org"
+            },
+            {
+              "title": "Sadashiva Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/Sadashiva-Nagar-in-Bangalore-Overview",
+              "snippet": "Sadashiva Nagar is a nice locality. It has good connectivity to school, college, hotels, mall, hospital, bank, market, close to the International airport and ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "13.0103 77.5796 Sadashiv Nagar, Bangalore 560080, India",
+              "link": "https://www.google.com/maps/search/Sadashiv+Nagar%2C+Bangalore+560080%2C+India/?hl=en",
+              "snippet": "",
+              "position": 3,
+              "domain": "www.google.com"
+            }
+          ],
+          "serp_features": [
+            "knowledge_panel",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "99acres.com",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Sadashivanagar Bangalore guide",
+          "top_results": [
+            {
+              "title": "Top Things to Do in Malleswaram/Sadashivnagar",
+              "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087383-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Top Things to Do in Malleswaram/Sadashivnagar · 1. Malleswaram · 2. Venkateshwara Temple · 3. Dakshina Mukha Nandi Teertha Kalyani Kshetra · 4. DakshinaMukhy ...",
+              "position": 1,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Explore Sadashiva Nagar - Bangalore - LBB",
+              "link": "https://lbb.in/bangalore/locality/sadashiva-nagar-bangalore/",
+              "snippet": "Discover Sadashiva Nagar in Bangalore with curated reviews and recommendations on top places to see, best shops, best cafes, restaurants, & bars, and markets & ...",
+              "position": 2,
+              "domain": "lbb.in"
+            },
+            {
+              "title": "I Belong to Everywhere: Sadashivanagar | The Lost Lander",
+              "link": "https://thelostlander.com/2022/03/12/i-belong-to-everywhere-sadashivanagar/",
+              "snippet": "For those unfamiliar with Bangalore's demography, Sadashivanagar is rather known as a VIP and VVIP haven and a high security residential area.",
+              "position": 3,
+              "domain": "thelostlander.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "living in Sadashivanagar Bangalore",
+          "top_results": [
+            {
+              "title": "Sadashiva Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/Sadashiva-Nagar-in-Bangalore-Overview",
+              "snippet": "Sadashiva Nagar is a nice locality. It has good connectivity to school, college, hotels, mall, hospital, bank, market, close to the International airport and ...",
+              "position": 1,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Sadashivanagar",
+              "link": "https://en.wikipedia.org/wiki/Sadashivanagar",
+              "snippet": "Sadashivanagara is an affluent residential neighbourhood in the northwestern part of Bangalore in the Indian state of Karnataka.",
+              "position": 2,
+              "domain": "en.wikipedia.org"
+            },
+            {
+              "title": "Sadashiva Nagar, Bangalore North",
+              "link": "https://www.99acres.com/sadashiva-nagar-bangalore-north-overview-piffid",
+              "snippet": "It is the clean & good locality to live.. Very good roads & infrastructures, A well built homes & super markets near by.. Many temples in sadashiv nagar are ...",
+              "position": 3,
+              "domain": "www.99acres.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "housing.com",
+            "99acres.com",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Sadashivanagar review",
+          "top_results": [
+            {
+              "title": "Ratings & Reviews of Sadashiva Nagar, Bangalore",
+              "link": "https://www.99acres.com/sadashiva-nagar-bangalore-north-reviews-and-ratings-wrffid",
+              "snippet": "It is the clean & good locality to live.. Very good roads & infrastructures, A well built homes & super markets near by.. Many temples in sadashiv nagar are ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Sadashiva Nagar review",
+              "link": "https://www.instagram.com/reel/DId6msWPlU_/",
+              "snippet": "The walking paths are wide. The greenery is perfectly trimmed. The man made lake is pretty but that was not even the best thing about my visit ...",
+              "position": 2,
+              "domain": "www.instagram.com"
+            },
+            {
+              "title": "Sadashiva Nagar Reviews & Ratings",
+              "link": "https://www.magicbricks.com/real-estate-property-reviews/Sadashiva-Nagar-in-Bangalore",
+              "snippet": "Sadavshiva Nagar is very good locality. It is very nice and beautiful locality. All basic amenities like hospitals, schools, colleges and markets are available ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "99acres.com",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Sadashivanagar property price",
+          "top_results": [
+            {
+              "title": "Property in Sadashiva Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/property-for-sale-in-sadashiva-nagar-bangalore-pppfs",
+              "snippet": "The price of flats in Sadashiva Nagar range between ₹ 35 lakhs - ₹ 16.42 Cr, and houses price between ₹ 45.7 lakhs - ₹ 6.50 Cr, with 1-5 BHK options. However, ...",
+              "position": 1,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Property in Sadashiva Nagar, Bangalore North",
+              "link": "https://www.99acres.com/property-in-sadashiva-nagar-bangalore-north-ffid",
+              "snippet": "The approximate cost of 1 BHK property in Sadashiva Nagar is ₹ Rs 1.2Cr. The buying price of 2 BHK property in Sadashiva Nagar is ₹ Rs 2.5Cr. For 3 BHK ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Property Rates in Sadashivanagar, Tumkur - 2026",
+              "link": "https://housing.com/price-trends/property-rates-for-buy-in-sadashivanagar_tumkur-P4x0sa1sc9euvjs3n",
+              "snippet": "Starting price of properties in Sadashivanagar stands at Rs. 3,171 per sqft. On average, the price of properties in Sadashivanagar is Rs. 3,995 per sqft.",
+              "position": 3,
+              "domain": "housing.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "housing.com",
+            "99acres.com",
+            "magicbricks.com",
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "Sadashivanagar rent",
+          "top_results": [
+            {
+              "title": "Property for rent in Sadashiva Nagar, Bangalore North",
+              "link": "https://www.99acres.com/property-for-rent-in-sadashiva-nagar-bangalore-north-ffid",
+              "snippet": "This builder floor for rent in sadashiva nagar, bangalore north is now available at a monthly rent of 3.5 lac negotiable. Electricity & water charges to be paid ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Flats for Rent in Sadashiva Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/flats-for-rent-in-sadashiva-nagar-bangalore-pppfr",
+              "snippet": "Discover flats for rent in Sadashiva Nagar under the ₹48,200 - ₹3.9 Lac range, with choices from 1 to 5 BHK. Rental prices in this locality vary depending on ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "72 Flats for Rent in Sadashiva Nagar, Bangalore ...",
+              "link": "https://www.nobroker.in/property/rent/bangalore/Sadashiva%20Nagar?searchParam=W3sibGF0IjoxMy4wMDcxOTIxLCJsb24iOjc3LjU4MTAyNDUsInNob3dNYXAiOmZhbHNlLCJwbGFjZUlkIjoiQ2hJSmlaN1pmVE1XcmpzUm1ITWlJZG9MbW13IiwicGxhY2VOYW1lIjoiU2FkYXNoaXZhIE5hZ2FyIiwiY2l0eSI6ImJhbmdhbG9yZSJ9XQ==&lat_lng=13.006818200000000000,77.581284900000010000",
+              "snippet": "Contact Owners Directly - Get Without Brokerage Flats for Rent in Sadashiva Nagar, Bangalore Karnataka along with Rent Agreement and BEST Trusted local ...",
+              "position": 3,
+              "domain": "www.nobroker.in"
+            }
+          ],
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "housing.com",
+            "99acres.com",
+            "magicbricks.com",
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "2BHK rent Sadashivanagar",
+          "top_results": [
+            {
+              "title": "2 BHK Flats for Rent in Sadashiva Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/2-bhk-flats-for-rent-in-sadashiva-nagar-bangalore-pppfr",
+              "snippet": "2 BHK Flats for Rent in Sadashiva Nagar, Bangalore. Add Budget for better results. Verified on Site. 10. 2 BHK flat for rent in Krishna Glade Apartments in ...",
+              "position": 1,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Property for rent in Sadashiva Nagar, Bangalore North",
+              "link": "https://www.99acres.com/property-for-rent-in-sadashiva-nagar-bangalore-north-ffid",
+              "snippet": "2 BHK Flat for rent in Sadashiva Nagar, Bangalore North. NAISA APARTMENT. 2 BHK Flat for rent in Sadashiva Nagar, Bangalore North. ₹40,000 / month. + Deposit ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "75 Flats for Rent in Sadashiva Nagar, Bangalore ...",
+              "link": "https://www.nobroker.in/property/rent/bangalore/Sadashiva%20Nagar?searchParam=W3sibGF0IjoxMy4wMDY4MTgyLCJsb24iOjc3LjU4MTI4NDksInNob3dNYXAiOmZhbHNlLCJwbGFjZUlkIjoiQ2hJSmlaN1pmVE1XcmpzUm1ITWlJZG9MbW13IiwicGxhY2VOYW1lIjoiU2FkYXNoaXZhIE5hZ2FyIiwiY2l0eSI6ImJhbmdhbG9yZSJ9XQ==&lat_lng=13.006818200000000000,77.581284900000010000",
+              "snippet": "75 - Apartments, Flats for Rent in Sadashiva Nagar, Bangalore Karnataka ... 2 BHK Apartment In Apartment for Rent In New Tippasandra. ₹28,000. + 1,500 ...",
+              "position": 3,
+              "domain": "www.nobroker.in"
+            }
+          ],
+          "serp_features": [
+            "local_pack"
+          ],
+          "competitor_presence": [
+            "housing.com",
+            "99acres.com",
+            "magicbricks.com",
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "Sadashivanagar flat for sale",
+          "top_results": [
+            {
+              "title": "13+ Flats for sale in Sadashiva Nagar, Bangalore North",
+              "link": "https://www.99acres.com/flats-in-sadashiva-nagar-bangalore-north-ffid",
+              "snippet": "Find Apartments in Sadashiva Nagar, Bangalore North on 99acres.com, India's No.1 Real Estate Portal. Buy 1/2/3/4 BHK Flats for sale in Sadashiva Nagar, ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "11+ Flats for Sale in Sadashiva Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/flats-in-sadashiva-nagar-bangalore-for-sale-pppfs",
+              "snippet": "Browse flats in Sadashiva Nagar for sale within a price range of ₹1.59 Cr - ₹13.07 Cr, covering 1-5 BHK configurations. Explore from 9+ resale flats, 12+ ready- ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "133+ Flats / Apartments for Sale near Sadashiva Nagar , ...",
+              "link": "https://www.nobroker.in/flats-for-sale-near-sadhashivanagar_armane_nagar_bangalore",
+              "snippet": "133 - Flats, Apartments for Sale near Sadashiva Nagar , Bangalore Without Brokerage · 4 BHK Apartment In Vista The 450 Rmv For Sale In Sadashiva Nagara · 3 BHK ...",
+              "position": 3,
+              "domain": "www.nobroker.in"
+            }
+          ],
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "99acres.com",
+            "magicbricks.com",
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "Sadashivanagar property rate per sq ft",
+          "top_results": [
+            {
+              "title": "Property Rates in Sadashiva Nagar, Bangalore 2026",
+              "link": "https://www.99acres.com/property-rates-and-price-trends-in-sadashiva-nagar-bangalore-north-prffid",
+              "snippet": "The average flat rates in Sadashiva Nagar, Bangalore is ₹ 24,200 per sq ft. A 3 BHK flat is available at a price range of ₹ 46,050,000-105,670,000. A 4 BHK flat ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Plots for Sale in Sadashiva Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/residential-plots-land-for-sale-in-sadashiva-nagar-bangalore-pppfs",
+              "snippet": "Residential land/plots in Sadashiva Nagar Bangalore are available for sale in the price range of ₹16.62 Cr - ₹65.52 Cr. Other nearby areas ideal for buying plot ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Property Rates in Sadashivanagar, Tumkur - 2026",
+              "link": "https://housing.com/price-trends/property-rates-for-buy-in-sadashivanagar_tumkur-P4x0sa1sc9euvjs3n",
+              "snippet": "Starting price of properties in Sadashivanagar is Rs. 3,171 per sqft and the average price of properties in Sadashivanagar is Rs. 3,995 per sqft. Price ...",
+              "position": 3,
+              "domain": "housing.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "housing.com",
+            "99acres.com",
+            "magicbricks.com",
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "Sadashivanagar new projects",
+          "top_results": [
+            {
+              "title": "New Projects in Sadashiva Nagar, Bangalore North",
+              "link": "https://www.99acres.com/new-projects-in-sadashiva-nagar-bangalore-north-ffid",
+              "snippet": "New Projects in Sadashiva Nagar Bangalore for Sale ; Legacy Adonia ; Silver Sky Apartments ; Sterling Sankey Apartments · Since Dec, 1985 ; Rubis · Since Apr, 2020.",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "New Projects in Sadashiva Nagar, Bangalore",
+              "link": "https://www.squareyards.com/projects-in-sadashiva-nagar-bangalore",
+              "snippet": "New Projects in Sadashiva Nagar, Bangalore: Discover 42 options, including Pre Launch and Upcoming Projects in Sadashiva Nagar, Bangalore, ...",
+              "position": 2,
+              "domain": "www.squareyards.com"
+            },
+            {
+              "title": "49 New Projects in Sadashiva Nagar, Bangalore",
+              "link": "https://www.commonfloor.com/all-apartments-in-sadashiva-nagar/psl-qfafht",
+              "snippet": "49 New Projects in Sadashiva Nagar, Bangalore · Supartha Court · Legacy Adonia · Vista The 450 RMV · Gardencity Iconica Nitesh Knightsbridge · Nitesh Knights ...",
+              "position": 3,
+              "domain": "www.commonfloor.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "housing.com",
+            "99acres.com",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "things to do in Sadashivanagar",
+          "top_results": [
+            {
+              "title": "Top Things to Do in Malleswaram/Sadashivnagar",
+              "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087383-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Top Things to Do in Malleswaram/Sadashivnagar · 1. Malleswaram · 2. Venkateshwara Temple · 3. Dakshina Mukha Nandi Teertha Kalyani Kshetra · 4. DakshinaMukhy ...",
+              "position": 1,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Top Tourist Attractions in Sadashivanagar - Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Tourist-Attraction-in-Sadashivanagar/nct-10596038",
+              "snippet": "Explore Top Tourist Attractions in Sadashivanagar, Bangalore · Bangalore Palace · Jayamahal Park · Bengaluru Palace · Dr. Rajkumar Park · Kenny'S Gutter.",
+              "position": 2,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "Explore Sadashiva Nagar - Bangalore - LBB",
+              "link": "https://lbb.in/bangalore/locality/sadashiva-nagar-bangalore/",
+              "snippet": "Discover Sadashiva Nagar in Bangalore with curated reviews and recommendations on top places to see, best shops, best cafes, restaurants, & bars, and markets & ...",
+              "position": 3,
+              "domain": "lbb.in"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "best restaurants Sadashivanagar",
+          "top_results": [
+            {
+              "title": "Sadashiv Nagar Restaurants, Bangalore",
+              "link": "https://www.zomato.com/bangalore/best-sadashiv-nagar-restaurants",
+              "snippet": "Republic Of Noodles - Lemon Tree Premier · The Konkan - Seafood Restaurant · O.G. Variar & Sons · Truffles · Yataii - Shangri-La Hotel · FOO Asian Tapas · Edo ...",
+              "position": 1,
+              "domain": "www.zomato.com"
+            },
+            {
+              "title": "Best Restaurants In Sadashiva Nagar, Bangalore 2025",
+              "link": "https://www.swiggy.com/city/bangalore/sadashiva-nagar-restaurants",
+              "snippet": "Discover All Restaurants Serving In Sadashiva Nagar! Explore Menus, Reviews, Ratings, Prices, Locations, Cuisines, Offers, And More For A Perfect Dining ...",
+              "position": 2,
+              "domain": "www.swiggy.com"
+            },
+            {
+              "title": "THE 10 BEST Restaurants Near Sankey Tank, Bengaluru",
+              "link": "https://www.tripadvisor.in/RestaurantsNear-g297628-d4138665-Sankey_Tank-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "1. Sattvam · (364 reviews). Indian, Asian ; 2. Shri Sagar (C.T.R) · (659 reviews). Indian, Healthy ; 3. Cuppa Redefined - HSR · (25 reviews).",
+              "position": 3,
+              "domain": "www.tripadvisor.in"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "schools near Sadashivanagar",
+          "top_results": [
+            {
+              "title": "Top Schools in Sadashivanagar, Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Schools-in-Sadashivanagar/nct-10422444",
+              "snippet": "Leading Educational Institutions : Top Schools in Sadashivanagar, Bangalore · Kool Star Play Home · Grv Public School · Orchids The International School.",
+              "position": 1,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "157 Best Schools in Sadashiva Nagar, Bangalore 2026-2027",
+              "link": "https://www.edustoke.com/bengaluru/schools-in-sadashiva-nagar",
+              "snippet": "Best Schools in Sadashiva Nagar, Bangalore · Poornaprajna Education Centre · Stella Maris School · Thirumala Vidya Nikethan · LITTLE ANGELS ...",
+              "position": 2,
+              "domain": "www.edustoke.com"
+            },
+            {
+              "title": "NPS Sadashivanagar: Home |",
+              "link": "https://www.npssadashivanagar.com/",
+              "snippet": "At NPS Sadashivanagar, we are proud to provide a structured and holistic education aligned with the prestigious standards of CBSE (Central Board of Secondary ...",
+              "position": 3,
+              "domain": "www.npssadashivanagar.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "hospitals near Sadashivanagar",
+          "top_results": [
+            {
+              "title": "Best Hospitals in Sadashivanagar, Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Hospitals-in-Sadashivanagar/nct-10253670",
+              "snippet": "25 Hospitals in Sadashivanagar,Bangalore. Homeocare International Pvt Ltd, Fortis Hospital, Hcg Cancer Centre, Manipal North Side Hospital etc.",
+              "position": 1,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "Best Hospitals Near Me in Sadashivanagar, Bangalore",
+              "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/sadashivanagar",
+              "snippet": "117 Hospitals in Sadashivanagar, Bangalore · Manipal Hospital Malleshwaram · Motherhood Hospital · Blue Bliss Hospital · Manipal Hospitals · Cloudnine Hospital.",
+              "position": 2,
+              "domain": "www.practo.com"
+            },
+            {
+              "title": "HOSMAT Hospital Sadashivanagar – Advanced Multi ...",
+              "link": "https://hosmathospitals.com/hosmat-hospital-sadashivanagar/",
+              "snippet": "One of India's largest and best-equipped hospitals for Orthopedics and sub-specialities, Accident-Trauma, Neuro & spine, Plastic & reconstructive surgery. The ...",
+              "position": 3,
+              "domain": "hosmathospitals.com"
+            }
+          ],
+          "serp_features": [
+            "knowledge_panel",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "Sadashivanagar vs Whitefield",
+          "top_results": [
+            {
+              "title": "Distance between Whitefield and Sadashivanagar Club",
+              "link": "https://alldistancebetween.com/in/distance-between/whitefield-sadashivanagar-club-21497b7d65ff1e7cf0c6d88c83d635bf/",
+              "snippet": "Distance between Whitefield and Sadashivanagar Club is 19.00 kms or 11.81 miles or 10.26 nautical miles. Origin. Whitefield, Bengaluru, Karnataka, India.",
+              "position": 1,
+              "domain": "alldistancebetween.com"
+            },
+            {
+              "title": "Sadashiva Nagar, Armane Nagar Bangalore Nearest Metro ...",
+              "link": "https://yometro.com/metro-station-near-sadashiva-nagar-armane-nagar-bangalore",
+              "snippet": "Find the metro station near Sadashiva Nagar, Armane Nagar Bangalore with complete route details like distance, first metro, last metro, metro line, ...",
+              "position": 2,
+              "domain": "yometro.com"
+            },
+            {
+              "title": "Tag: Sadashiv Nagar & Whitefield in Bangalore.",
+              "link": "https://www.projectsmonitor.com/tag/sadashiv-nagar-whitefield-in-bangalore/",
+              "snippet": "Tag: Sadashiv Nagar & Whitefield in Bangalore. Furniture start-up WoodenStreet Announced 3 New Stores in Bangalore, Invests $1M! admin - February 23, 2022.",
+              "position": 3,
+              "domain": "www.projectsmonitor.com"
+            }
+          ],
+          "serp_features": [
+            "featured_snippet",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        }
+      ],
+      "aeo_scores": [
+        {
+          "query": "best restaurants Sadashivanagar",
+          "score": 100,
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "schools near Sadashivanagar",
+          "score": 100,
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "hospitals near Sadashivanagar",
+          "score": 100,
+          "serp_features": [
+            "knowledge_panel",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "Sadashivanagar Bangalore",
+          "score": 90,
+          "serp_features": [
+            "knowledge_panel",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Sadashivanagar rent",
+          "score": 90,
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Sadashivanagar flat for sale",
+          "score": 90,
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "2BHK rent Sadashivanagar",
+          "score": 85,
+          "serp_features": [
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Sadashivanagar vs Whitefield",
+          "score": 85,
+          "serp_features": [
+            "featured_snippet",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": true,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "things to do in Sadashivanagar",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "Sadashivanagar Bangalore guide",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "living in Sadashivanagar Bangalore",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Sadashivanagar review",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Sadashivanagar property price",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Sadashivanagar property rate per sq ft",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Sadashivanagar new projects",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        }
+      ]
+    },
+    "analysis": {
+      "topic": "Sadashivanagar",
+      "topic_type": "locality",
+      "trend_direction": "declining_fast",
+      "trend_summary": "Search interest in Sadashivanagar has declined 15% from the 12-month average (51.8 to 44.0), indicating weakening demand. However, the locality remains a recognized Bangalore neighborhood with seasonal patterns and one emerging micro-trend around 'Sadashivanagar club'.",
+      "total_queries_discovered": 169,
+      "intent_clusters": [
+        {
+          "intent": "informational",
+          "queries": [
+            "Sadashivanagar Bangalore",
+            "Sadashivanagar location",
+            "Sadashivanagar area"
+          ]
+        },
+        {
+          "intent": "commercial",
+          "queries": [
+            "Sadashivanagar properties",
+            "Sadashivanagar rent",
+            "Sadashivanagar flats"
+          ]
+        },
+        {
+          "intent": "local",
+          "queries": [
+            "Sadashivanagar club",
+            "Sadashivanagar restaurants",
+            "Sadashivanagar schools"
+          ]
+        }
+      ]
+    },
+    "competitor_tracker": {
+      "99acres.com": 9,
+      "magicbricks.com": 10,
+      "housing.com": 6,
+      "nobroker.in": 5
+    },
+    "serp_calls_used": 15,
+    "autocomplete_calls_used": 4,
+    "cost_usd": 0.001304
+  },
+  "competitor_data": {
+    "analysis": {
+      "competitor_coverage": [
+        {
+          "competitor": "magicbricks.com",
+          "articles_found": 10,
+          "articles": [
+            {
+              "title": "Sadashiva Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/Sadashiva-Nagar-in-Bangalore-Overview",
+              "content_type": "hub",
+              "estimated_word_count": 1500,
+              "strengths": "Comprehensive locality overview covering connectivity to schools, colleges, hospitals, malls, and airport proximity. Good foundational content.",
+              "weaknesses": "Lacks depth on neighborhood character, demographics, investment potential, and lifestyle aspects. No historical context or future development plans."
+            },
+            {
+              "title": "Property in Sadashiva Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/property-for-sale-in-sadashiva-nagar-bangalore-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 800,
+              "strengths": "Clear price range data (₹1.59 Cr - ₹18.95 Cr) and mentions nearby localities. Good for quick price reference.",
+              "weaknesses": "Minimal context on price trends, ROI potential, or what drives pricing variations in the area."
+            },
+            {
+              "title": "11+ Flats for Sale in Sadashiva Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/flats-in-sadashiva-nagar-bangalore-for-sale-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Segmented by BHK configuration (1-5 BHK) and property status (resale, ready-to-move). Useful filtering.",
+              "weaknesses": "No guidance on which BHK types offer best value or investment returns. Missing micro-location insights."
+            },
+            {
+              "title": "House for Rent in Sadashiva Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/independent-house-for-rent-in-sadashiva-nagar-bangalore-pppfr",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Rental price ranges (₹1.4 Lac - ₹3 Lac) and mentions advance/upkeep charges.",
+              "weaknesses": "No rental yield analysis, tenant demographics, or lease term guidance."
+            },
+            {
+              "title": "House for Sale in Sadashiva Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/independent-house-for-sale-in-sadashiva-nagar-bangalore-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Price range for independent houses (₹10.30 Cr - ₹18.89 Cr) with BHK options.",
+              "weaknesses": "No comparison with apartment ROI or guidance on independent house vs. apartment investment."
+            },
+            {
+              "title": "2 BHK Flats for Rent in Sadashiva Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/2-bhk-flats-for-rent-in-sadashiva-nagar-bangalore-pppfr",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Specific property details (furnishing, floor, orientation, amenities).",
+              "weaknesses": "Limited to listing snippets; no market analysis or rental demand trends."
+            },
+            {
+              "title": "BDA Plots in Sadashiva Nagar, Bangalore - MagicBricks",
+              "url": "https://www.magicbricks.com/bda-plots-in-sadashiva-nagar-bangalore-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Covers niche segment (BDA plots) with specific dimensions and use cases.",
+              "weaknesses": "No guidance on BDA plot investment, approval timelines, or construction feasibility."
+            },
+            {
+              "title": "Residential Properties for Sale in Sadashiva Nagar",
+              "url": "https://www.magicbricks.com/duplex-houses-for-sale-in-sadashiva-nagar-bangalore-pppfs",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Covers premium segment (duplex/villa) with high price points (₹45 Cr+).",
+              "weaknesses": "No differentiation between duplex and villa; missing luxury segment analysis."
+            },
+            {
+              "title": "Sadashiva Nagar Reviews & Ratings",
+              "url": "https://www.magicbricks.com/real-estate-property-reviews/Sadashiva-Nagar-in-Bangalore",
+              "content_type": "hub",
+              "estimated_word_count": 1200,
+              "strengths": "Geographic context (north-western Bangalore, bounded by Malleshwaram). Good for understanding locality position.",
+              "weaknesses": "Lacks resident reviews, safety ratings, community feedback, or quality-of-life metrics."
+            },
+            {
+              "title": "4 BHK Flats for Rent in Sadashiva Nagar, Bangalore",
+              "url": "https://www.magicbricks.com/4-bhk-flats-for-rent-in-sadashiva-nagar-bangalore-pppfr",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Specific property details with occupancy restrictions mentioned.",
+              "weaknesses": "No analysis of 4 BHK rental demand or target tenant profiles."
+            }
+          ]
+        },
+        {
+          "competitor": "nobroker.in",
+          "articles_found": 10,
+          "articles": [
+            {
+              "title": "72 Flats for Rent in Sadashiva Nagar, Bangalore",
+              "url": "https://www.nobroker.in/property/rent/bangalore/Sadashiva%20Nagar",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Large inventory (72+ flats), direct owner contact model, rent agreement support. Strong for renters seeking brokerage-free options.",
+              "weaknesses": "No locality insights or rental market analysis. Purely transactional."
+            },
+            {
+              "title": "Sadashiva Nagar, Bangalore - Map, Pincode, Property",
+              "url": "https://www.nobroker.in/locality-iq/sadashiva-nagar-armane-nagar-bangalore-liqlt",
+              "content_type": "hub",
+              "estimated_word_count": 2000,
+              "strengths": "Comprehensive 'Locality IQ' format covering pincode, map, schools, hospitals, amenities, and property rates. Best-in-class locality guide.",
+              "weaknesses": "Snippet doesn't reveal depth on investment analysis, neighborhood character, or future development potential."
+            },
+            {
+              "title": "133+ Flats / Apartments for Sale near Sadashiva Nagar",
+              "url": "https://www.nobroker.in/flats-for-sale-near-sadhashivanagar_armane_nagar_bangalore",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Large inventory (133+ properties), brokerage-free model, specific project mentions (Vista The 450).",
+              "weaknesses": "No price analysis or investment guidance."
+            },
+            {
+              "title": "492 Flats for Rent in Sadashiv Nagar, Bangalore",
+              "url": "https://www.nobroker.in/property/rent/bangalore/Sadashiv%20Nagar",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Massive inventory (492 flats), direct owner contact, rent agreement support.",
+              "weaknesses": "Duplicate/variant spelling suggests data quality issues. No market insights."
+            },
+            {
+              "title": "1 BHK Flats for Rent near Sadashiva Nagar, Bangalore",
+              "url": "https://www.nobroker.in/1bhk-flats-for-rent-near-sadhashivanagar_armane_nagar_bangalore",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Segmented by BHK type, brokerage-free model.",
+              "weaknesses": "No rental yield or affordability analysis."
+            },
+            {
+              "title": "85 Flats for Rent in Sadashiva Nagar, Bangalore",
+              "url": "https://www.nobroker.in/property/rent/bangalore/Sadhashivanagar",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Inventory-focused, direct owner contact.",
+              "weaknesses": "Duplicate listing with variant spelling. No differentiation."
+            },
+            {
+              "title": "PG Near 12th Main Road Bangalore",
+              "url": "https://www.nobroker.in/pg-near-orchards_pride_sadashivnagar_bangalore",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Covers PG segment (underserved by competitors), mentions nearby localities.",
+              "weaknesses": "Limited to PG listings; no analysis of student/young professional demographics."
+            },
+            {
+              "title": "Century Cityview in Sadashiva Nagar, Bangalore",
+              "url": "https://www.nobroker.in/century-cityview-sadashiva-nagar_bangalore-prjt-63a95cc88cbb730001b6cbb9",
+              "content_type": "spoke",
+              "estimated_word_count": 800,
+              "strengths": "Project-specific page with amenities (pool, gym, play area, clubhouse). Good for project research.",
+              "weaknesses": "No project review, pricing history, or investment analysis."
+            },
+            {
+              "title": "PG Near Sadashiva Nagar Bangalore 3",
+              "url": "https://www.nobroker.in/pg-near-sadhashivanagar_armane_nagar_bangalore-page-3",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Pagination suggests large PG inventory.",
+              "weaknesses": "Duplicate content; no unique insights."
+            },
+            {
+              "title": "Supartha Court Sadashiva Nagar - Bangalore",
+              "url": "https://www.nobroker.in/supartha-court-sadashiva-nagar-sadashiva-nagar_bangalore-prjt-5ba009ad714b568105766b64",
+              "content_type": "spoke",
+              "estimated_word_count": 800,
+              "strengths": "Project-specific amenities and details.",
+              "weaknesses": "No project reviews, pricing trends, or investment returns."
+            }
+          ]
+        },
+        {
+          "competitor": "housing.com",
+          "articles_found": 10,
+          "articles": [
+            {
+              "title": "3 BHK Flats for Rent in Sadashiva Nagar, Armane Nagar",
+              "url": "https://housing.com/rent/3bhk-flats-for-rent-in-sadashiva-nagar-armane-nagar-bengaluru-C8P5zi9brvt82503m71",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Verified property listings, specific BHK segmentation.",
+              "weaknesses": "Minimal inventory (only 4 properties), no market analysis."
+            },
+            {
+              "title": "Luxury Projects in Sadashiva Nagar, Armane Nagar - Housing",
+              "url": "https://housing.com/in/buy/bengaluru/sadashiva-nagar-armane-nagar-gid/luxury-fid/",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Focuses on luxury segment with verified properties.",
+              "weaknesses": "No definition of 'luxury' or comparison with mid-segment properties."
+            },
+            {
+              "title": "3+ Apartments for Rent in Sadashiva Nagar, Armane Nagar",
+              "url": "https://housing.com/rent/apartments-for-rent-in-sadashiva-nagar-armane-nagar-bengaluru-M1P5zi9brvt82503m71",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Furnished apartment filtering.",
+              "weaknesses": "Very limited inventory (only 2 properties). No market insights."
+            },
+            {
+              "title": "Sri Sadashivanagar - Chikkaballapura Town - Housing",
+              "url": "https://housing.com/in/buy/projects/page/304604-sri-sadashivanagar-by-sri-krishna-sai-developers-in-chikkaballapura-town",
+              "content_type": "spoke",
+              "estimated_word_count": 600,
+              "strengths": "Project-specific details (16.79 acres).",
+              "weaknesses": "Wrong location (Chikkaballapura, not Bangalore Sadashiva Nagar). Confusing for users."
+            },
+            {
+              "title": "2 BHK House for rent in Sadashiva Nagar, Armane Nagar - Housing",
+              "url": "https://housing.com/rent/2bhk-independent-house-villa-in-sadashiva-nagar-armane-nagar-bengaluru-C4M2P5zi9brvt82503m71",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Independent house segment with furnishing details.",
+              "weaknesses": "Limited inventory, no rental yield analysis."
+            },
+            {
+              "title": "3 bhk Houses in Sadashiva Nagar, Armane Nagar, Bengaluru",
+              "url": "https://housing.com/in/buy/bangalore/3bhk-independent-house-villa-in-sadashiva_nagar-C8M2P5zi9brvt82503m71",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Price per sq.ft. data (₹14.4K/sq.ft.), carpet area details.",
+              "weaknesses": "Limited inventory, no comparison with apartment pricing."
+            },
+            {
+              "title": "1 BHK House for rent in Sadashiva Nagar, Armane Nagar, Bangalore",
+              "url": "https://housing.com/rent/1bhk-independent-house-villa-in-sadashiva-nagar-armane-nagar-bangalore-C2M2P5zi9brvt82503m71",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Furnishing options and price variations shown.",
+              "weaknesses": "Very limited inventory, no market trends."
+            },
+            {
+              "title": "Buy Rowhouses in Sadashiva Nagar, Armane Nagar, Bengaluru",
+              "url": "https://housing.com/in/buy/bangalore/rowhouse-sadashiva_nagar",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Covers niche segment (rowhouses).",
+              "weaknesses": "Minimal inventory, no rowhouse-specific analysis."
+            },
+            {
+              "title": "Luxury Apartments in Sadashiva Nagar, Armane Nagar - Housing",
+              "url": "https://housing.com/in/buy/bangalore/luxury-apartments-in-sadashiva_nagar-M1P5zi9brvt82503m71Z2",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Luxury segment focus with BHK segmentation.",
+              "weaknesses": "No definition of luxury criteria or premium features."
+            },
+            {
+              "title": "Duplex Houses for Sale in Sadashiva Nagar, Armane Nagar, Bengaluru",
+              "url": "https://housing.com/in/buy/bengaluru/sadashiva-nagar-armane-nagar-gid/duplex-house-fid/",
+              "content_type": "listing",
+              "estimated_word_count": 500,
+              "strengths": "Premium segment coverage.",
+              "weaknesses": "No inventory details or pricing information."
+            }
+          ]
+        },
+        {
+          "competitor": "99acres.com",
+          "articles_found": 10,
+          "articles": [
+            {
+              "title": "Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/sadashiva-nagar-bangalore-north-overview-piffid",
+              "content_type": "hub",
+              "estimated_word_count": 1500,
+              "strengths": "Describes locality as 'luxury' with geographic context (near Swimming Pool Extension, Armane Nagar, Lower Palace). Good positioning.",
+              "weaknesses": "Lacks depth on demographics, lifestyle, investment potential, and future development."
+            },
+            {
+              "title": "Property in Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/property-in-sadashiva-nagar-bangalore-north-ffid",
+              "content_type": "hub",
+              "estimated_word_count": 1200,
+              "strengths": "Describes as 'affluent residential neighbourhood' in north-western Bangalore. Good positioning.",
+              "weaknesses": "Minimal content depth; mostly descriptive without actionable insights."
+            },
+            {
+              "title": "House for Sale in Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/independent-house-in-sadashiva-nagar-bangalore-north-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Specific property details (60x90 dimensions, G+3 floors, 8 car parks, orientation).",
+              "weaknesses": "Single property example; no market analysis or pricing trends."
+            },
+            {
+              "title": "13+ Flats for sale in Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/flats-in-sadashiva-nagar-bangalore-north-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Inventory-focused (13+ flats), BHK segmentation.",
+              "weaknesses": "No price analysis or investment guidance."
+            },
+            {
+              "title": "Ratings & Reviews of Sadashiva Nagar, Bangalore",
+              "url": "https://www.99acres.com/sadashiva-nagar-bangalore-north-reviews-and-ratings-wrffid",
+              "content_type": "hub",
+              "estimated_word_count": 1000,
+              "strengths": "Describes locality as 'prestigious and well-established' with 'heritage, serenity and modern conveniences'. Good positioning.",
+              "weaknesses": "No actual resident reviews or ratings data. Purely promotional language."
+            },
+            {
+              "title": "Residential land / Plot in Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/residential-land-in-sadashiva-nagar-bangalore-north-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Specific plot details (5400 sqft, 90x60, east-facing). Covers land segment.",
+              "weaknesses": "No guidance on plot investment, approval timelines, or development potential."
+            },
+            {
+              "title": "Property for rent in Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/property-for-rent-in-sadashiva-nagar-bangalore-north-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Specific property details (4 bathrooms, 2 balconies, 3000 sq.ft. carpet area).",
+              "weaknesses": "No rental yield or market analysis."
+            },
+            {
+              "title": "Villas for Sale in Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/villas-in-sadashiva-nagar-bangalore-north-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Premium villa segment with specific property details.",
+              "weaknesses": "No villa-specific analysis or comparison with independent houses."
+            },
+            {
+              "title": "13+ Luxury Apartments in Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/luxury-apartments-flats-in-sadashiva-nagar-bangalore-north-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Luxury segment focus with inventory (13+).",
+              "weaknesses": "No definition of luxury criteria or premium feature analysis."
+            },
+            {
+              "title": "5+ 3 BHK Flats in Sadashiva Nagar, Bangalore North",
+              "url": "https://www.99acres.com/3-bhk-flats-in-sadashiva-nagar-bangalore-north-ffid",
+              "content_type": "listing",
+              "estimated_word_count": 600,
+              "strengths": "Specific property details (4100 sq.ft. super built-up, 3 bedrooms, 3 bathrooms, 2 balconies).",
+              "weaknesses": "No market analysis or investment guidance."
+            }
+          ]
+        }
+      ],
+      "coverage_gaps": [
+        {
+          "gap": "No comprehensive investment guide comparing ROI across property types (flats vs. independent houses vs. villas vs. plots)",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "No price trend analysis or historical pricing data for Sadashiva Nagar (year-over-year appreciation, market cycles)",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "No detailed neighborhood character guide covering lifestyle, demographics, community, safety ratings, and resident reviews",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "No guide to micro-locations within Sadashiva Nagar (12th Main, 13th Main, etc.) with specific pricing and investment potential",
+          "priority": "high",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No rental yield analysis or comparison of rental returns across different property types and configurations",
+          "priority": "high",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No future development and infrastructure planning guide (metro expansion, road projects, commercial development)",
+          "priority": "high",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No legal and documentation guide specific to buying/renting in Sadashiva Nagar (registration, taxes, lease agreements)",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No school and education guide with ratings and proximity analysis for families",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No hospital and healthcare facility guide with quality ratings and emergency services",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No comparison guide between Sadashiva Nagar and competing luxury localities (Indiranagar, Koramangala, Whitefield)",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No project-specific deep dives with reviews, pricing history, and resident feedback for major developments",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No guide to BDA plots, approval timelines, and construction feasibility in Sadashiva Nagar",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No buyer/renter persona guide (first-time buyers, investors, families, young professionals)",
+          "priority": "low",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "No FAQ addressing common concerns (traffic, parking, water supply, power backup, property taxes)",
+          "priority": "low",
+          "suggested_article_type": "faq"
+        }
+      ],
+      "our_advantages": [
+        "Local Bangalore expertise: Can provide hyper-local insights on micro-locations (12th Main, 13th Main, etc.) that competitors miss with generic locality guides",
+        "Investment-focused content: Competitors focus on listings; we can create ROI comparison guides, rental yield analysis, and price trend reports specific to Sadashiva Nagar",
+        "Neighborhood character and lifestyle content: Competitors lack resident reviews and community insights; we can create authentic guides on safety, demographics, and quality of life",
+        "Future development intelligence: Can provide exclusive insights on metro expansion, infrastructure projects, and commercial development plans affecting property values",
+        "Comparative analysis: Create guides comparing Sadashiva Nagar with competing luxury localities (Indiranagar, Koramangala, Whitefield) to help buyers make informed decisions",
+        "Project-specific deep dives: While competitors list projects, we can create detailed reviews with pricing history, resident feedback, and investment analysis for Century Cityview, Supartha Court, etc.",
+        "Legal and documentation guides: Competitors lack locality-specific legal content; we can create guides on registration, taxes, and lease agreements for Sadashiva Nagar",
+        "Buyer persona guides: Create targeted content for first-time buyers, investors, families, and young professionals with specific recommendations for Sadashiva Nagar",
+        "Data-driven pricing insights: Leverage transaction data to provide accurate price per sq.ft. trends, appreciation rates, and rental yield benchmarks",
+        "AEO optimization: Target long-tail keywords like 'best 3 BHK in Sadashiva Nagar for investment' and 'Sadashiva Nagar vs. Indiranagar' that competitors don't optimize for",
+        "Content depth: Competitors rely on snippets and listings; we can create comprehensive 2000+ word guides on investment, lifestyle, and neighborhood guides",
+        "Mobile-first content: Optimize for mobile users searching for 'Sadashiva Nagar flats near metro' or 'Sadashiva Nagar schools' with location-based insights"
+      ]
+    },
+    "raw_results": {
+      "magicbricks.com": [
+        {
+          "title": "Sadashiva Nagar, Bangalore",
+          "link": "https://www.magicbricks.com/Sadashiva-Nagar-in-Bangalore-Overview",
+          "snippet": "Sadashiva Nagar is a nice locality. It has good connectivity to school, college, hotels, mall, hospital, bank, market, close to the International airport and ..."
+        },
+        {
+          "title": "Property in Sadashiva Nagar, Bangalore",
+          "link": "https://www.magicbricks.com/property-for-sale-in-sadashiva-nagar-bangalore-pppfs",
+          "snippet": "You can get a property for sale in Sadashiva Nagar at a price range of ₹1.59 Cr - ₹18.95 Cr. Some of the popular localities around Sadashiva Nagar are Hennur ..."
+        },
+        {
+          "title": "11+ Flats for Sale in Sadashiva Nagar, Bangalore",
+          "link": "https://www.magicbricks.com/flats-in-sadashiva-nagar-bangalore-for-sale-pppfs",
+          "snippet": "Browse flats in Sadashiva Nagar for sale within a price range of ₹1.59 Cr - ₹13.07 Cr, covering 1-5 BHK configurations. Explore from 9+ resale flats, 12+ ready- ..."
+        },
+        {
+          "title": "House for Rent in Sadashiva Nagar, Bangalore",
+          "link": "https://www.magicbricks.com/independent-house-for-rent-in-sadashiva-nagar-bangalore-pppfr",
+          "snippet": "Browse houses for rent in Sadashiva Nagar within ₹1.4 Lac - ₹3 Lac, and review details on the advance deposit and upkeep charges. Rental prices depend on the ..."
+        },
+        {
+          "title": "House for Sale in Sadashiva Nagar, Bangalore",
+          "link": "https://www.magicbricks.com/independent-house-for-sale-in-sadashiva-nagar-bangalore-pppfs",
+          "snippet": "Browse through houses for sale in Sadashiva Nagar Bangalore across the ₹10.30 Cr - ₹18.89 Cr price range with multiple 1-5 BHK options. You can explore 7+ ..."
+        },
+        {
+          "title": "2 BHK Flats for Rent in Sadashiva Nagar, Bangalore",
+          "link": "https://www.magicbricks.com/2-bhk-flats-for-rent-in-sadashiva-nagar-bangalore-pppfr",
+          "snippet": "3 BHK Apartment for Rent in Sadashiva Nagar Bangalore ... 3 bhk 2 baths 3 balconies1 servant room and servant bathroomNorth facing, 1st floor, Partial furnished, ..."
+        },
+        {
+          "title": "BDA Plots in Sadashiva Nagar, Bangalore - MagicBricks",
+          "link": "https://www.magicbricks.com/bda-plots-in-sadashiva-nagar-bangalore-pppfs",
+          "snippet": "Plot/Land for Sale in Sadashiva Nagar Bangalore ... 4800 sqft residential plot for sale in Sadashivanagar, posh and calm location, suitable for bungalow or ..."
+        },
+        {
+          "title": "Residential Properties for Sale in Sadashiva Nagar",
+          "link": "https://www.magicbricks.com/duplex-houses-for-sale-in-sadashiva-nagar-bangalore-pppfs",
+          "snippet": "This ready to move house in Sadashiva Nagar can be purchased at price of ₹45 Cr. Visit the property at Sadashivanagar, Sadashiva Nagar, Bangalore - Central, ..."
+        },
+        {
+          "title": "Sadashiva Nagar Reviews & Ratings",
+          "link": "https://www.magicbricks.com/real-estate-property-reviews/Sadashiva-Nagar-in-Bangalore",
+          "snippet": "Sadashiva Nagara is an affluent residential neighbourhood in the north-western part of Bangalore in the Indian state of Karnataka. It is bounded by Malleshwaram ..."
+        },
+        {
+          "title": "4 BHK Flats for Rent in Sadashiva Nagar, Bangalore",
+          "link": "https://www.magicbricks.com/4-bhk-flats-for-rent-in-sadashiva-nagar-bangalore-pppfr",
+          "snippet": "Sadashivanagar 12th mainApartment. 3bhk semi furnished.3 bathroom. 1st floor east face carparking lift available.3 members only allowed. If you are planning to ..."
+        }
+      ],
+      "nobroker.in": [
+        {
+          "title": "72 Flats for Rent in Sadashiva Nagar, Bangalore ...",
+          "link": "https://www.nobroker.in/property/rent/bangalore/Sadashiva%20Nagar?searchParam=W3sibGF0IjoxMy4wMDcxOTIxLCJsb24iOjc3LjU4MTAyNDUsInNob3dNYXAiOmZhbHNlLCJwbGFjZUlkIjoiQ2hJSmlaN1pmVE1XcmpzUm1ITWlJZG9MbW13IiwicGxhY2VOYW1lIjoiU2FkYXNoaXZhIE5hZ2FyIiwiY2l0eSI6ImJhbmdhbG9yZSJ9XQ==&lat_lng=13.006818200000000000,77.581284900000010000",
+          "snippet": "Contact Owners Directly - Get Without Brokerage Flats for Rent in Sadashiva Nagar, Bangalore Karnataka along with Rent Agreement and BEST Trusted local ..."
+        },
+        {
+          "title": "Sadashiva Nagar, Bangalore - Map, Pincode, Property ...",
+          "link": "https://www.nobroker.in/locality-iq/sadashiva-nagar-armane-nagar-bangalore-liqlt",
+          "snippet": "Explore Sadashiva Nagar, Bangalore with NoBroker Locality IQ. Check out the pin code, map, photos, school, hospital connectivity, amenities, property rates, ..."
+        },
+        {
+          "title": "133+ Flats / Apartments for Sale near Sadashiva Nagar , ...",
+          "link": "https://www.nobroker.in/flats-for-sale-near-sadhashivanagar_armane_nagar_bangalore",
+          "snippet": "133 - Flats, Apartments for Sale near Sadashiva Nagar , Bangalore Without Brokerage · 4 BHK Apartment In Vista The 450 Rmv For Sale In Sadashiva Nagara · 3 BHK ..."
+        },
+        {
+          "title": "492 Flats for Rent in Sadashiv Nagar, Bangalore ...",
+          "link": "https://www.nobroker.in/property/rent/bangalore/Sadashiv%20Nagar?searchParam=W3sicGxhY2VOYW1lIjoiU2FkYXNoaXYgTmFnYXIiLCJwbGFjZUlkIjoiQ2hJSkI5UFNselFXcmpzUi1DekVQUlVRdzV3IiwibGF0IjoiMTMuMDA5IiwibG9uIjoiNzcuNTgxIn1d&sharedAccomodation=0",
+          "snippet": "Contact Owners Directly - Get Without Brokerage Flats for Rent in Sadashiv Nagar, Bangalore Karnataka along with Rent Agreement and BEST Trusted local ..."
+        },
+        {
+          "title": "1 BHK Flats for Rent near Sadashiva Nagar, Bangalore ...",
+          "link": "https://www.nobroker.in/1bhk-flats-for-rent-near-sadhashivanagar_armane_nagar_bangalore",
+          "snippet": "Contact Property Owners Directly - Get Without Brokerage 1 BHK Flats for Rent near Sadashiva Nagar, Bangalore along with Rent Agreement and BEST Trusted ..."
+        },
+        {
+          "title": "85 Flats for Rent in Sadashiva Nagar, Bangalore ...",
+          "link": "https://www.nobroker.in/property/rent/bangalore/Sadhashivanagar?searchParam=W3sibGF0IjoxMy4wMDcxOTIxLCJsb24iOjc3LjU4MTAyNDUsInNob3dNYXAiOmZhbHNlLCJwbGFjZUlkIjoiQ2hJSmlaN1pmVE1XcmpzUm1ITWlJZG9MbW13IiwicGxhY2VOYW1lIjoiU2FkYXNoaXZhIE5hZ2FyIiwiY2l0eSI6ImJhbmdhbG9yZSJ9XQ==",
+          "snippet": "Contact Owners Directly - Get Without Brokerage Flats for Rent in Sadashiva Nagar, Bangalore Karnataka along with Rent Agreement and BEST Trusted local ..."
+        },
+        {
+          "title": "PG Near 12th Main Road Bangalore",
+          "link": "https://www.nobroker.in/pg-near-orchards_pride_sadashivnagar_bangalore",
+          "snippet": "Orchards pride sadashivnagar is surrounded by many other well-developed localities like Bellary Road-Armane Nagar, Armane Nagar, Malleswaram, Guttahalli, ..."
+        },
+        {
+          "title": "Century Cityview in Sadashiva Nagar, Bangalore",
+          "link": "https://www.nobroker.in/century-cityview-sadashiva-nagar_bangalore-prjt-63a95cc88cbb730001b6cbb9",
+          "snippet": "Century Cityview residential project offers a range of amenities including a swimming pool, gym, children's play area, clubhouse, and more. Downloading the ..."
+        },
+        {
+          "title": "PG Near Sadashiva Nagar Bangalore 3",
+          "link": "https://www.nobroker.in/pg-near-sadhashivanagar_armane_nagar_bangalore-page-3",
+          "snippet": "Looking for PG Near Sadashiva Nagar Bangalore? Check NoBroker 1000+ paying guest options near Sadashiva Nagar to choose from. Click here now."
+        },
+        {
+          "title": "Supartha Court Sadashiva Nagar - Bangalore",
+          "link": "https://www.nobroker.in/supartha-court-sadashiva-nagar-sadashiva-nagar_bangalore-prjt-5ba009ad714b568105766b64",
+          "snippet": "Supartha Court Sadashiva Nagar residential project offers a range of amenities including a swimming pool, gym, children's play area, clubhouse, and more."
+        }
+      ],
+      "housing.com": [
+        {
+          "title": "3 BHK Flats for Rent in Sadashiva Nagar, Armane ...",
+          "link": "https://housing.com/rent/3bhk-flats-for-rent-in-sadashiva-nagar-armane-nagar-bengaluru-C8P5zi9brvt82503m71",
+          "snippet": "There are 4 3 BHK Flats available for rent in Sadashiva Nagar, Bangalore. Part of. REA Group. Housing.com."
+        },
+        {
+          "title": "Luxury Projects in Sadashiva Nagar, Armane ... - Housing",
+          "link": "https://housing.com/in/buy/bengaluru/sadashiva-nagar-armane-nagar-gid/luxury-fid/",
+          "snippet": "Browse New Luxury Residential Projects in Sadashiva Nagar, Armane Nagar, Bengaluru for Sale. Get 100% Verified Property details for all the ..."
+        },
+        {
+          "title": "3+ Apartments for Rent in Sadashiva Nagar, Armane Nagar ...",
+          "link": "https://housing.com/rent/apartments-for-rent-in-sadashiva-nagar-armane-nagar-bengaluru-M1P5zi9brvt82503m71",
+          "snippet": "There are 2 fully furnished Apartment available for rent in Sadashiva Nagar, Bangalore. Which are the most searched localities for renting a ..."
+        },
+        {
+          "title": "Sri Sadashivanagar - Chikkaballapura Town - Housing",
+          "link": "https://housing.com/in/buy/projects/page/304604-sri-sadashivanagar-by-sri-krishna-sai-developers-in-chikkaballapura-town",
+          "snippet": "Sri Sadashivanagar is a residential project in Chikkaballapura, Bangalore. It is set in an area of 16.79 Acres ."
+        },
+        {
+          "title": "2 BHK House for rent in Sadashiva Nagar, Armane ... - Housing",
+          "link": "https://housing.com/rent/2bhk-independent-house-villa-in-sadashiva-nagar-armane-nagar-bengaluru-C4M2P5zi9brvt82503m71",
+          "snippet": "2 BHK Independent House for rent in Sadashiva Nagar, Armane Nagar, Bengaluru on Housing.com. Find ✓Semi Furnished. 2 BHK Independent House for rent in ..."
+        },
+        {
+          "title": "3 bhk Houses in Sadashiva Nagar, Armane Nagar, Bengaluru",
+          "link": "https://housing.com/in/buy/bangalore/3bhk-independent-house-villa-in-sadashiva_nagar-C8M2P5zi9brvt82503m71",
+          "snippet": "3 bhk Houses in Sadashiva Nagar, Armane Nagar, Bengaluru ; in 3rd Phase, Basaveshwara Nagar, Bengaluru. 3.6 Cr. @ ₹14.4K/sq.ft. 2500 sq.ft · Private Garden/ ..."
+        },
+        {
+          "title": "1 BHK House for rent in Sadashiva Nagar, Armane Nagar, Bangalore",
+          "link": "https://housing.com/rent/1bhk-independent-house-villa-in-sadashiva-nagar-armane-nagar-bangalore-C2M2P5zi9brvt82503m71",
+          "snippet": "1 bhk House for rent in Sadashiva Nagar, Armane Nagar, Bangalore ; 8,000 · 153 sq.ft · Un-furnished ; 7,500 · 200 sq.ft · Un-furnished ; 10,000 · 500 sq.ft · Semi ..."
+        },
+        {
+          "title": "Buy Rowhouses in Sadashiva Nagar, Armane Nagar, Bengaluru",
+          "link": "https://housing.com/in/buy/bangalore/rowhouse-sadashiva_nagar",
+          "snippet": "Explore Rowhouses for Sale in Sadashiva Nagar, Armane Nagar, Bengaluru on Housing.com. Find 1 RK, 1 BHK, 2 BHK, 3 BHK. ✓100% Verified Properties."
+        },
+        {
+          "title": "Luxury Apartments in Sadashiva Nagar, Armane ... - Housing",
+          "link": "https://housing.com/in/buy/bangalore/luxury-apartments-in-sadashiva_nagar-M1P5zi9brvt82503m71Z2",
+          "snippet": "Luxury Apartments in Sadashiva Nagar, Armane Nagar, Bengaluru for sale. 100% Verified Listings on Housing.com. Find ✓1 BHK. ✓2 BHK. ✓3 BHK. ✓4 BHK."
+        },
+        {
+          "title": "Duplex Houses for Sale in Sadashiva Nagar, Armane ...",
+          "link": "https://housing.com/in/buy/bengaluru/sadashiva-nagar-armane-nagar-gid/duplex-house-fid/",
+          "snippet": "Explore Duplex for Sale in Sadashiva Nagar, Armane Nagar, Bengaluru on Housing.com. Find 1 RK, 1 BHK, 2 BHK, 3 BHK."
+        }
+      ],
+      "99acres.com": [
+        {
+          "title": "Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/sadashiva-nagar-bangalore-north-overview-piffid",
+          "snippet": "Sadashiva Nagar is a luxury locality situated in the northern part of Bangalore. This locality is near Swimming Pool Extension, Armane Nagar and Lower Palace ..."
+        },
+        {
+          "title": "Property in Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/property-in-sadashiva-nagar-bangalore-north-ffid",
+          "snippet": "Sadashivanagara is an affluent residential neighbourhood in the northwestern part of bangalore in the indian state of karnataka."
+        },
+        {
+          "title": "House for Sale in Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/independent-house-in-sadashiva-nagar-bangalore-north-ffid",
+          "snippet": "Sadashivnagar: Independent beautiful house/bungalow for sale. Site dimensions: 60x90. West facing site and east facing main doors. G+3 floors. 8 car parks on ..."
+        },
+        {
+          "title": "13+ Flats for sale in Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/flats-in-sadashiva-nagar-bangalore-north-ffid",
+          "snippet": "Find Apartments in Sadashiva Nagar, Bangalore North on 99acres.com, India's No.1 Real Estate Portal. Buy 1/2/3/4 BHK Flats for sale in Sadashiva Nagar, ..."
+        },
+        {
+          "title": "Ratings & Reviews of Sadashiva Nagar, Bangalore",
+          "link": "https://www.99acres.com/sadashiva-nagar-bangalore-north-reviews-and-ratings-wrffid",
+          "snippet": "Sadhashiva Nagar, one of the Bangalore's best prestigious and well established neighbouring offers a unique blend of heritage,serenity and modern convinces."
+        },
+        {
+          "title": "Residential land / Plot in Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/residential-land-in-sadashiva-nagar-bangalore-north-ffid",
+          "snippet": "Beautiful residential plot , located at one of the posh location in bangalore, i'e sadashiva nagar, total 5400 sqft east facing, i'e 90 x60 , property is ..."
+        },
+        {
+          "title": "Property for rent in Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/property-for-rent-in-sadashiva-nagar-bangalore-north-ffid",
+          "snippet": "3 BHK Flat for rent in Sadashiva Nagar, Bangalore North ... Property has attached 4 bathrooms & 2 balconies with 3 rooms set in 3000 sq.Ft. Carpet area. This ..."
+        },
+        {
+          "title": "Villas for Sale in Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/villas-in-sadashiva-nagar-bangalore-north-ffid",
+          "snippet": "Sadashivnagar: Independent beautiful house/bungalow for sale. Site dimensions: 60x90. West facing site and east facing main doors. G+3 floors. 8 car parks on ..."
+        },
+        {
+          "title": "13+ Luxury Apartments in Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/luxury-apartments-flats-in-sadashiva-nagar-bangalore-north-ffid",
+          "snippet": "Find Luxury Apartments in Sadashiva Nagar, Bangalore North on 99acres.com, India's No.1 Real Estate Portal. Explore 2/3/4 BHK Luxury Flats in in Sadashiva ..."
+        },
+        {
+          "title": "5+ 3 BHK Flats in Sadashiva Nagar, Bangalore North",
+          "link": "https://www.99acres.com/3-bhk-flats-in-sadashiva-nagar-bangalore-north-ffid",
+          "snippet": "The flat is east-Facing. Constructed on a super built up area of 4100 sq.Ft., the flat comprises 3 bedroom(s), 3 bathrooms and 2 balconies."
+        }
+      ]
+    }
+  }
+}
