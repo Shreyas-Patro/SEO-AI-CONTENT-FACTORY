@@ -1,0 +1,23 @@
+{
+  "agent": "competitor_spy",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "reads_state": [
+    "trend_data"
+  ],
+  "writes_state": [
+    "competitor_data"
+  ],
+  "serp_calls": 6,
+  "serp_cache_hits": 0,
+  "llm_calls": 0,
+  "llm_cache_hits": 0,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": 0.0,
+  "duration_seconds": 37.25,
+  "completed_at": "2026-04-29T00:16:08.573368",
+  "attempts": 1
+}

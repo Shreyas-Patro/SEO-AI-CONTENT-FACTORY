@@ -1,0 +1,1161 @@
+{
+  "topic": "Hosa Road",
+  "trend_data": {
+    "topic": "Hosa Road",
+    "classification": {
+      "categories": [
+        "locality",
+        "infrastructure"
+      ],
+      "primary_category": "locality",
+      "detected_localities": [
+        "Hosa Road"
+      ],
+      "is_locality": true,
+      "is_cross_cutting": true
+    },
+    "raw_data": {
+      "trends": {
+        "trend_available": true,
+        "average_interest": 53.3,
+        "recent_interest": 48.2,
+        "peak_interest": 100,
+        "direction": "declining",
+        "is_seasonal": true,
+        "rising_queries": [
+          "bangalore metro map",
+          "hosa road metro station"
+        ],
+        "top_queries": [
+          "hosa road metro station",
+          "hosa road pin code",
+          "bangalore metro map"
+        ]
+      },
+      "paa_questions": [
+        "Is Hosa Road a good place to live?",
+        "Is Hosa Road urban or rural?",
+        "What is the pin code of Hosa Road Bangalore?",
+        "Which is the most famous street in Bangalore?",
+        "Where do most billionaires live in Bangalore?",
+        "Are there public transport options on Hosa Road?",
+        "How developed is Hosa Road?",
+        "Is Hosa Road Bangalore urban or rural?",
+        "Which area is best for living in Bangalore?",
+        "Where do most CEOs live in Bangalore?",
+        "How safe is Hosa Road at night?",
+        "What is Hosa Road?",
+        "What is the price of Hosa Road land?",
+        "What is the cost of a 30 * 40 site in Bangalore?",
+        "What is the cost of 1 square foot?",
+        "Is it worth buying a 10 year old apartment in Bangalore?",
+        "Which is the cheapest area in Bangalore?",
+        "Where to take a girl on date in Bangalore?",
+        "How to spend time in Church Street?",
+        "Is MG Road worth visiting?",
+        "How to spend 4 hours in Bangalore?",
+        "Is Whitefield, Bangalore a posh area?",
+        "Which is the costliest area in Bangalore?"
+      ],
+      "related_searches": [
+        "Hosa road bangalore distance",
+        "Hosa road bangalore map",
+        "Hosa Road directions",
+        "Hosa Road pin code",
+        "Hosa road bangalore timings",
+        "Hosa road parappana agrahara pin code",
+        "Hosa Road metro station",
+        "Hosa road singasandra",
+        "Hosa road bangalore guide map",
+        "Hosa Road Junction",
+        "Hosa Road signal",
+        "Living in hosa road bangalore reviews",
+        "Living in hosa road bangalore price",
+        "Affordable living in hosa road bangalore",
+        "Living in hosa road bangalore for sale",
+        "Hosa Road Apartments for rent",
+        "Hosa road review bangalore",
+        "Hosa road review reddit",
+        "Hosa Road, Bangalore",
+        "Hosa Road location",
+        "Hosa road property price per square feet",
+        "Bangalore hosa road property price",
+        "Independent House for sale in Hosa Road, Bangalore for 30 lakhs",
+        "Property Rates near me",
+        "Bangalore real estate builder prices",
+        "Bangalore property prices",
+        "Bangalore property prices falling",
+        "E Bangalore Property price list",
+        "1 bhk hosa road rent",
+        "2 bedroom hosa road rent",
+        "Hosa road rent flats",
+        "2 BHK House for rent in Hosa Road",
+        "1 BHK for rent in Hosa Road olx",
+        "1bhk house for rent near hosa road bangalore",
+        "Villa for rent in hosa road",
+        "1 BHK for rent in Hosa Road",
+        "House for rent in Hosa Road",
+        "2 BHK Flats in Hosa Road",
+        "Villa for rent in Hosa Road",
+        "Room for rent in Hosa Road, Bangalore",
+        "Gated Community Plots in Hosa Road",
+        "Price per sq ft in my area",
+        "How to check per square feet Rate",
+        "House for sale in Hosa Road, Bangalore",
+        "Plot for sale in Hosa Road",
+        "Land Square feet rate",
+        "Plots for sale in Meenakshi Layout, Hosa Road",
+        "Property Rates in North Bangalore",
+        "Hosa road new projects phase 2",
+        "Hosa road new projects in bangalore",
+        "Hosa road new projects for sale",
+        "New apartments in hosa road",
+        "Hosa Road widening",
+        "Things to do in hosa road in bangalore",
+        "Singasandra Lake",
+        "Begur fort",
+        "Best restaurants hosa road bangalore",
+        "Best restaurants hosa road near me",
+        "Restaurants near hosa road Metro Station",
+        "Restaurants in Hosa Road",
+        "Mangrove hosa road",
+        "Restaurants near me",
+        "Schools near hosa road bangalore",
+        "CBSE schools near Hosa Road, Bangalore",
+        "SCK Public School hosa Road",
+        "Green Globe Academy",
+        "Hosa Road Government Hospital phone Number",
+        "Natus Hospital Hosa Road",
+        "Vinayaka Hospital Hosa Road contact Number",
+        "Natus Hospital, Hosa Road Reviews",
+        "Government Hospital hosa road",
+        "Apollo Hospital Hosa Road contact number",
+        "Natus hospital Hosa Road appointment",
+        "Natus hospital Hosa Road pediatrician",
+        "Hosa road vs whitefield reviews",
+        "Hosa road vs whitefield rent",
+        "Hosa road vs whitefield reddit",
+        "Hosa road vs whitefield price",
+        "Whitefield distance",
+        "Sarjapur road distance"
+      ],
+      "autocomplete": [
+        "hosa road metro station",
+        "hosa road pin code",
+        "hosa road bangalore",
+        "hosa road bus stop",
+        "hosa road metro",
+        "hosa road to majestic metro",
+        "hosa road to electronic city",
+        "hosa road directions",
+        "hosa road distance",
+        "hosa road junction",
+        "hosa road metro timings",
+        "hosa road to majestic distance",
+        "hosa road to whitefield distance",
+        "hosa road signal",
+        "hosa road government hospital",
+        "hosa road bangalore pin code",
+        "hosa road bangalore one",
+        "hosa road bangalore map",
+        "hosa road bangalore rural or urban",
+        "hosa road bangalore distance",
+        "hosa road bangalore metro station",
+        "hosa road bangalore to whitefield distance",
+        "hosa road bangalore directions",
+        "hosa road bangalore south",
+        "hosa road bangalore weather today",
+        "hosa road bangalore to electronic city",
+        "weather bengaluru hosa road",
+        "hosa road bangalore to koramangala distance",
+        "hosa road bangalore location",
+        "hosa road bangalore to marathahalli distance",
+        "apartments in hosa road",
+        "apartments in hosa road bangalore",
+        "rent in hosur road",
+        "rent house in hosa road bangalore",
+        "2bhk rent in hosa road",
+        "house rent in hosa road",
+        "1bhk rent in hosa road",
+        "rental agreement in hosa road",
+        "flats for rent in hosa road",
+        "room for rent in hosa road bangalore",
+        "shop for rent in hosa road",
+        "flat for rent in hosa road bangalore",
+        "apartment for rent in hosa road",
+        "1rk for rent in hosa road",
+        "apartments for rent in hosa road bangalore",
+        "hosa road property for sale",
+        "hosa road real estate",
+        "hosa road property rates",
+        "hosa road house for sale"
+      ],
+      "serp_results_summary": [
+        {
+          "query": "Hosa Road Bangalore",
+          "top_results": [
+            {
+              "title": "Hosa Road, Bangalore",
+              "link": "https://www.magicbricks.com/Hosa-Road-in-Bangalore-Overview",
+              "snippet": "Hosa Road is the major road near to connecting Hosur Road and Sarjapur Main Road. The roadway starts from Sarjapur road near Kaikondrahalli and stretches all ...",
+              "position": 1,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Hosa Road, Bangalore - Map, Pincode, Property Rates ...",
+              "link": "https://www.nobroker.in/locality-iq/hosa-road-bangalore-liqlt",
+              "snippet": "Hosa Road is a burgeoning locality in the southern part of Bangalore. It is located in the bustling IT corridor. Hosa Road PIN codes are 560100 and 560068.",
+              "position": 2,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "Hosa Road metro station",
+              "link": "https://en.wikipedia.org/wiki/Hosa_Road_metro_station",
+              "snippet": "Hosa Road is an elevated metro station on the north\u2013south corridor of the Yellow Line of Namma Metro in Bengaluru, India.",
+              "position": 3,
+              "domain": "en.wikipedia.org"
+            }
+          ],
+          "serp_features": [
+            "knowledge_panel",
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Hosa Road Bangalore guide",
+          "top_results": [
+            {
+              "title": "Hosa Road, Bangalore",
+              "link": "https://www.magicbricks.com/Hosa-Road-in-Bangalore-Overview",
+              "snippet": "Hosa Road is the major road near to connecting Hosur Road and Sarjapur Main Road. The roadway starts from Sarjapur road near Kaikondrahalli and stretches ...",
+              "position": 1,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Apartments in Hosa Road, Electronic City: 2026 Price & ...",
+              "link": "https://www.puravankara.com/real-estate-blog/apartments-in-hosa-road-electronic-city-2026-price-and-liveability-guide",
+              "snippet": "The Hosa Road metro station sits right on the Yellow Line between Singasandra and Electronic City-I, on a 19 km elevated stretch with 16 ...",
+              "position": 2,
+              "domain": "www.puravankara.com"
+            },
+            {
+              "title": "Hosa Road metro station",
+              "link": "https://en.wikipedia.org/wiki/Hosa_Road_metro_station",
+              "snippet": "Hosa Road is an elevated metro station on the north\u2013south corridor of the Yellow Line of Namma Metro in Bengaluru, India.",
+              "position": 3,
+              "domain": "en.wikipedia.org"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "living in Hosa Road Bangalore",
+          "top_results": [
+            {
+              "title": "Hosa Road of South East Bangalore is one strong ...",
+              "link": "https://www.reddit.com/r/bangalore/comments/1nl67hq/hosa_road_of_south_east_bangalore_is_one_strong/",
+              "snippet": "Hosa Road of South East Bangalore is one strong contender for the worst road in city ... So today I had to visit a place close to the PES ...",
+              "position": 1,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "Benefits of Living in Hosa Road Bangalore",
+              "link": "https://addressadvisors.com/blog/benefits-of-living-in-hosa-road-bangalore",
+              "snippet": "Hosa Road in Bangalore is a prime residential area offering excellent connectivity, proximity to IT parks, and a peaceful living environment. The neighborhood ...",
+              "position": 2,
+              "domain": "addressadvisors.com"
+            },
+            {
+              "title": "Hosa Road, Bangalore: Map, Property Rates, Projects ...",
+              "link": "https://www.magicbricks.com/Hosa-Road-Area-in-Bangalore-Overview",
+              "snippet": "Hosa Road Area is a good locality. It has good connectivity to markets, metro, Sarjapur Road, Electronics City, HSR layout, Bellandur and park.",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Hosa Road review",
+          "top_results": [
+            {
+              "title": "Ratings & Reviews of Hosa Road, Bangalore",
+              "link": "https://www.99acres.com/hosa-road-bangalore-south-reviews-and-ratings-wrffid",
+              "snippet": "Hosa Road Bangalore has 4.1 star rating out of 5. Know positive and negative things about Hosa Road through 319 tenants/owners genuine reviews.",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Hosa Road Reviews & Ratings",
+              "link": "https://www.magicbricks.com/real-estate-property-reviews/Hosa-Road-in-Bangalore",
+              "snippet": "Hosa Road is very good locality. It is very nice and beautiful locality. All basic amenities like hospitals, schools, colleges and markets are available nearby.",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Hosa Road, Bangalore Reviews - Ratings, Pros & Cons by ...",
+              "link": "https://www.nobroker.in/locality-iq/hosa-road-bangalore-liqlt/reviews",
+              "snippet": "Hosa Road is a family-friendly locality. Here you get good hospitals, grocery markets, malls and all other basic amenities. Plus, there are both CBSE and ICSE ...",
+              "position": 3,
+              "domain": "www.nobroker.in"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Hosa Road property price",
+          "top_results": [
+            {
+              "title": "Property Rates in Hosa Road, Bangalore 2026",
+              "link": "https://www.99acres.com/property-rates-and-price-trends-in-hosa-road-bangalore-south-prffid",
+              "snippet": "The average flat rates in Hosa Road, Bangalore is \u20b9 11,550 per sq ft. A 1 BHK flat is available at a price range of \u20b9 6,700,000-10,031,500. A 2 BHK flat is ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Property in Hosa Road, Bangalore",
+              "link": "https://www.magicbricks.com/property-for-sale-in-hosa-road-bangalore-pppfs",
+              "snippet": "The price of flats in Hosa Road range between \u20b9 35 lakhs - \u20b9 16.42 Cr, and houses price between \u20b9 45.7 lakhs - \u20b9 6.52 Cr, with 1-5 BHK options. However, land ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Property in Hosa Road, Bangalore",
+              "link": "https://www.99acres.com/property-in-hosa-road-bangalore-south-ffid",
+              "snippet": "This society offers apartments in the price range of Rs. 1.92 - 7.17 Cr ... Hosa Road property prices have changed +26.2% in 1 year & +143.2% in last 5 ...",
+              "position": 3,
+              "domain": "www.99acres.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Hosa Road rent",
+          "top_results": [
+            {
+              "title": "Flats for Rent in Hosa Road , Bangalore",
+              "link": "https://www.nobroker.in/flats-for-rent-in-hosa_road_bangalore",
+              "snippet": "1 BHK Flats for Rent in Hosa Road. 1 BHK - 200 sq. ft. to 700 sq. ft. Monthly rent generally in Hosa Road falls between \u20b97,000 to \u20b914,549 per month, with higher ...",
+              "position": 1,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "356+ Flats for Rent in Hosa Road, Bangalore",
+              "link": "https://www.99acres.com/flats-for-rent-in-hosa-road-bangalore-south-ffid",
+              "snippet": "2 BHK Flat for rent in Choodasandra, Hosa Road ... Semi furnish 2 bhk flat (1065 sqft, ist floor with all interior work ) 2 bathroom, balcony, utility, kitchen, ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "6254 Flats & Apartments for Rent in Hosa Road",
+              "link": "https://www.olx.in/hosa-road_g5461401/for-rent-houses-apartments_c1723",
+              "snippet": "Explore flats for rent in Hosa Road in the price range of \u20b91000 - \u20b93 Crores. OLX provides you options ranging from 1-5 BHK flats for rent in Hosa Road.",
+              "position": 3,
+              "domain": "www.olx.in"
+            }
+          ],
+          "serp_features": [
+            "featured_snippet"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "2BHK rent Hosa Road",
+          "top_results": [
+            {
+              "title": "2 BHK Flats for rent in Hosa Road, Bangalore",
+              "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-hosa_road_bangalore",
+              "snippet": "2 BHK Flats for Rent in Hosa Road. 2 BHK - 450 sq. ft. to 1,235 sq. ft. Monthly rent generally in Hosa Road falls between \u20b910,800 to \u20b943,000 per month, ...",
+              "position": 1,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "2 BHK Flats for Rent in Hosa Road, Bangalore",
+              "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-hosa-road-bangalore-south-ffid",
+              "snippet": "2 BHK Flat for rent in Choodasandra, Hosa Road ... Property has 2 bathrooms & 1 balcony attached. The flat consists of 2 bedrooms, built on 1130 sq.Ft. Society ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "6254 Flats & Apartments for Rent in Hosa Road",
+              "link": "https://www.olx.in/hosa-road_g5461401/for-rent-houses-apartments_c1723",
+              "snippet": "2BHK Available For Lease. \u20b9 18,00,000. Beautiful 2BHK SOBHA SILICON OASIS, for LEASE in HOSA ROAD. \u20b9 57,000. Beautiful 2BHK Builder Floor for LEASE in Hosa road ...",
+              "position": 3,
+              "domain": "www.olx.in"
+            }
+          ],
+          "serp_features": [],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Hosa Road flat for sale",
+          "top_results": [
+            {
+              "title": "374+ Luxury Apartments in Hosa Road, Bangalore",
+              "link": "https://www.99acres.com/luxury-apartments-flats-in-hosa-road-bangalore-south-ffid",
+              "snippet": "Located in mahaveer ranches, hosa road, this 1-5 year old 3 bhk apartment on the 1st floor of a 14-Story high-Rise offers 1565 sq.Ft. Of living space. Ready for ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "2 BHK Flats For Sale in Hosa Road , Bangalore",
+              "link": "https://www.nobroker.in/2bhk-flats-for-sale-in-siddartha-solitaire-hosa-road-bangalore-prjtl",
+              "snippet": "170+ 2 BHK Apartments/flats available for sale in Hosa Road, , Bangalore within your budget & no brokerage. Contact property owners directly for 2 BHK flats ...",
+              "position": 2,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "2 BHK Flats under 70 Lakhs in Hosa Road Bangalore",
+              "link": "https://www.magicbricks.com/2-bhk-flats-in-hosa-road-bangalore-for-sale-price-60-lakhs-to-70-lakhs-pppfs",
+              "snippet": "Choose from 27+ 2 BHK Flats for sale in Hosa Road Bangalore under 70 lakhs. Buy 2 BHK Ready to move, Resale, Single room, studio apartments/flats in Hosa ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Hosa Road property rate per sq ft",
+          "top_results": [
+            {
+              "title": "Property Rates in Hosa Road, Bangalore 2026",
+              "link": "https://www.99acres.com/property-rates-and-price-trends-in-hosa-road-bangalore-south-prffid",
+              "snippet": "The average flat rates in Hosa Road, Bangalore is \u20b9 11,550 per sq ft. A 1 BHK flat is available at a price range of \u20b9 6,700,000-10,031,500. A 2 BHK flat is ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Property Rates in Hosa Road Bangalore",
+              "link": "https://www.magicbricks.com/Property-Rates-Trends/Multistorey-Apartment-rates-Hosa-Road-in-Bangalore",
+              "snippet": "Multistorey Apartment (Average Price Rs./Sq-ft). For Sale: 10,196. 4% ; Residential Plot (Average Price Rs./Sq-Yrd). For Sale: 85,390. 5% ; Residential House ( ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Apartments in Hosa Road, Electronic City: 2026 Price & ...",
+              "link": "https://www.puravankara.com/real-estate-blog/apartments-in-hosa-road-electronic-city-2026-price-and-liveability-guide",
+              "snippet": "Housing.com's price-trend page for flats in Hosa Road shows an average flat price of about \u20b910,019 per sq ft, with the lowest around \u20b93,833 and ...",
+              "position": 3,
+              "domain": "www.puravankara.com"
+            }
+          ],
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com",
+            "housing.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Hosa Road new projects",
+          "top_results": [
+            {
+              "title": "New Projects in Hosa Road Bangalore for Sale",
+              "link": "https://www.99acres.com/new-projects-in-hosa-road-bangalore-south-ffid",
+              "snippet": "New Projects in Hosa Road Bangalore for Sale ; Lodha Haven \u00b7 \u20b914.2K/sqft onwards. ~ (super built-up area) \u00b7 \u20b91.92 Cr+. 4BHK. \u20b94.69 Cr+. Completion in Jun, 2030.",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "New Projects in Hosa Road Bangalore",
+              "link": "https://www.nobroker.in/new-projects-in-hosa-road-bangalore",
+              "snippet": "New Projects in Hosa Road Bangalore | NoBroker \u00b7 Abhee Celestial City \u00b7 Suraksha Whispering Waves \u00b7 Akshaya Sai Orchid \u00b7 Ramky Lumina \u00b7 Amberstone Elanza.",
+              "position": 2,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "New Projects in Hosa Road, Bangalore",
+              "link": "https://www.magicbricks.com/new-projects-Hosa-Road-in-Bangalore",
+              "snippet": "Projects in Bangalore \u00b7 GR Sitara \u00b7 Sobha Silicon Oasis \u00b7 Evershine Northeast Apartments \u00b7 Ahad Serenity \u00b7 TG Ascent \u00b7 DS MAX Sahara \u00b7 Janapriya Pine Grove.",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com",
+            "housing.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "things to do in Hosa Road",
+          "top_results": [
+            {
+              "title": "Top Tourist Attractions in Hosa Road Naganathapura",
+              "link": "https://www.justdial.com/Bangalore/Tourist-Attraction-in-Hosa-Road-Naganathapura/nct-10596038",
+              "snippet": "Explore Top Tourist Attractions in Hosa Road Naganathapura, Bangalore \u00b7 Singasandra Lake \u00b7 Maragondanahalli Lake \u00b7 Hosa Lake \u00b7 Thirupalya Lake \u00b7 Veerasandra ...",
+              "position": 1,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "Things to Do near ibis Bengaluru Hosur Road",
+              "link": "https://www.tripadvisor.in/AttractionsNear-g297628-d2339446-Ibis_Bengaluru_Hosur_Road-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Things to Do near ibis Bengaluru Hosur Road ; Tattva Wellness Spa \u00b7 (109 reviews). Novotel Prestige Hotel, Outer Ring Road, Road, near ...",
+              "position": 2,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Restaurants around Hosa Road, Bengaluru",
+              "link": "https://www.zomato.com/bangalore/hosa-road-restaurants",
+              "snippet": "Restaurants around Hosa Road, Bengaluru \u00b7 Shift Lounge & Bar \u00b7 Macaw By Stories \u00b7 House Of Commons \u00b7 PiRo Kitchens \u00b7 Club Destini - Destini Bar & Kitchen \u00b7 Gladia ...",
+              "position": 3,
+              "domain": "www.zomato.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "best restaurants Hosa Road",
+          "top_results": [
+            {
+              "title": "Restaurants around Hosa Road, Bengaluru",
+              "link": "https://www.zomato.com/bangalore/hosa-road-restaurants",
+              "snippet": "Restaurants around Hosa Road, Bengaluru \u00b7 Shift Lounge & Bar \u00b7 Macaw By Stories \u00b7 House Of Commons \u00b7 PiRo Kitchens \u00b7 Club Destini - Destini Bar & Kitchen \u00b7 Gladia ...",
+              "position": 1,
+              "domain": "www.zomato.com"
+            },
+            {
+              "title": "The 20 Best Restaurants in Hosa Road, Bengaluru, South ...",
+              "link": "https://www.eazydiner.com/restaurants?location=hosa-road-bengaluru",
+              "snippet": "La Casa Brewery + Kitchen \u00b7 Beijing Bites \u00b7 PLaY Arena \u00b7 Yuki Cocktail Bar and Kitchen \u00b7 The Soda Factory - Brew & Kitchen \u00b7 The Bier Library \u00b7 Publik Bar and Kitchen.",
+              "position": 2,
+              "domain": "www.eazydiner.com"
+            },
+            {
+              "title": "Best Restaurants in Hosa Road Naganathapura, Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Restaurants-in-Hosa-Road-Naganathapura/nct-10408936",
+              "snippet": "Sri Matha Sagar is a delightful restaurant with great service. The staff is attentive and friendly, ensuring a pleasant dining experience.",
+              "position": 3,
+              "domain": "www.justdial.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "video_results"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "schools near Hosa Road",
+          "top_results": [
+            {
+              "title": "20+ Schools in Hosa Road Naganathapura - Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Schools-in-Hosa-Road-Naganathapura/nct-10422444",
+              "snippet": "Leading Educational Institutions : Top Schools in Hosa Road Naganathapura, Bangalore \u00b7 MS Dhoni Global School \u00b7 Gnan Srishti School Of Excellence \u00b7 Genius Kids ...",
+              "position": 1,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "48 Best Schools in Hosa Road, Bangalore 2026-2027",
+              "link": "https://www.edustoke.com/bengaluru/schools-in-hosa-road",
+              "snippet": "Best Schools in Hosa Road, Bangalore \u00b7 THE AMAATRA ACADEMY \u00b7 aurinko academy \u00b7 The Cambridge International School \u00b7 Notre Dame Academy \u00b7 Sadguru ...",
+              "position": 2,
+              "domain": "www.edustoke.com"
+            },
+            {
+              "title": "Top 8 Schools Near Hosa Road for Outstanding Learning",
+              "link": "https://www.homes247.in/blogs/top-8-schools-near-hosa-road-1588",
+              "snippet": "Here are few of the top 8 schools in the vicinity: \u00b7 1. Mount Carmel School \u00b7 2. Harvest International School \u00b7 3. Lawrence High School ICSE \u00b7 4 ...",
+              "position": 3,
+              "domain": "www.homes247.in"
+            }
+          ],
+          "serp_features": [
+            "local_pack"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "hospitals near Hosa Road",
+          "top_results": [
+            {
+              "title": "Best Hospitals in Hosa Road Naganathapura, Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Hospitals-in-Hosa-Road-Naganathapura/nct-10253670",
+              "snippet": "125 Hospitals in Hosa Road Naganathapura,Bangalore. Homeocare International Pvt Ltd, Hcg Cancer Centre, Springleaf Healthcare, Ak Ayurvedic Clinic etc.",
+              "position": 1,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "Best Hospitals in Hosa Road, Bangalore \u2013 Aarogya Hastha",
+              "link": "https://aarogyahastha.com/best-hospital-in-hosa-road-bangalore",
+              "snippet": "Looking for the best hospitals in Hosa Road? Aarogya Hastha is a trusted multi-speciality hospital near Hosa Road offering expert doctors, ...",
+              "position": 2,
+              "domain": "aarogyahastha.com"
+            },
+            {
+              "title": "Hospitals in Hosa Road Bangalore - Bengaluru",
+              "link": "https://www.proptiger.com/bangalore/hosa-road-51451/hospitals",
+              "snippet": "Best Hospitals in Hosa Road Bangalore \u00b7 Pranav Nature Cure And Yoga Centre \u00b7 SREE LAKSHMI RANGANATHA MEDICALS \u00b7 Blossom Multispecialty Hospital \u00b7 Dr Swami ...",
+              "position": 3,
+              "domain": "www.proptiger.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "Hosa Road vs Whitefield",
+          "top_results": [
+            {
+              "title": "Hosur Road vs Whitefield vs Sarjapur: Where to Invest in ...",
+              "link": "https://www.brigadegroup.com/blog/residential/hosur-road-vs-whitefield-vs-sarjapur",
+              "snippet": "Hosur Road is best for affordability, Whitefield for stability and rental demand, and Sarjapur for future growth potential. The best location in ...",
+              "position": 1,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "Whitefield vs Hosur Road: Bengaluru's Prime Investment ...",
+              "link": "https://propertywala.com/blog/trends/whitefield-vs-hosur-road-bengalurus-prime-investment-corridors-post-2025",
+              "snippet": "Detailed comparison of Whitefield and Hosur Road investment potential, analyzing price trends, infrastructure development, and growth ...",
+              "position": 2,
+              "domain": "propertywala.com"
+            },
+            {
+              "title": "BMTC Bus Routes from Hosa Road to Whitefield Club",
+              "link": "http://www.onefivenine.com/india/distance-and-route/Bengaluru/Hosa-Road-to-Whitefield-Club",
+              "snippet": "Distance from Hosa Road to Whitefield Club is 42 KM approx. Auto fare from Hosa Road to Whitefield Club is 464 rs. approx.",
+              "position": 3,
+              "domain": "www.onefivenine.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "magicbricks.com"
+          ]
+        }
+      ],
+      "aeo_scores": [
+        {
+          "query": "best restaurants Hosa Road",
+          "score": 95,
+          "serp_features": [
+            "local_pack",
+            "video_results"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "schools near Hosa Road",
+          "score": 95,
+          "serp_features": [
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "hospitals near Hosa Road",
+          "score": 95,
+          "serp_features": [
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "Hosa Road property rate per sq ft",
+          "score": 90,
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "2BHK rent Hosa Road",
+          "score": 85,
+          "serp_features": [],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Hosa Road Bangalore",
+          "score": 70,
+          "serp_features": [
+            "knowledge_panel",
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Hosa Road Bangalore guide",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "living in Hosa Road Bangalore",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Hosa Road review",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Hosa Road property price",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Hosa Road rent",
+          "score": 70,
+          "serp_features": [
+            "featured_snippet"
+          ],
+          "has_featured_snippet": true,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "things to do in Hosa Road",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Hosa Road vs Whitefield",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Hosa Road flat for sale",
+          "score": 65,
+          "serp_features": [
+            "ai_overview"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Hosa Road new projects",
+          "score": 65,
+          "serp_features": [
+            "ai_overview",
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        }
+      ]
+    },
+    "analysis": {
+      "topic": "Hosa Road, Bangalore",
+      "topic_type": "locality",
+      "trend_direction": "declining",
+      "trend_summary": "Hosa Road search interest is declining from a 12-month average of 53.3 to recent interest of 48.2, indicating weakening demand. However, two rising queries (metro-related) suggest infrastructure development is driving renewed interest in specific aspects.",
+      "total_queries_discovered": 152,
+      "intent_clusters": [
+        {
+          "intent": "informational",
+          "queries": [
+            "Is Hosa Road a good place to live?",
+            "Is Hosa Road urban or rural?",
+            "What is Hosa Road?",
+            "How developed is Hosa Road?",
+            "How safe is Hosa Road at night?",
+            "Hosa Road Bangalore guide",
+            "living in Hosa Road Bangalore",
+            "Hosa Road review",
+            "Hosa road review reddit",
+            "Hosa road bangalore guide map"
+          ],
+          "estimated_volume": "high",
+          "aeo_opportunity": "high"
+        },
+        {
+          "intent": "transactional",
+          "queries": [
+            "Living in hosa road bangalore for sale",
+            "Hosa Road Apartments for rent",
+            "2BHK rent Hosa Road",
+            "Hosa Road property price",
+            "Hosa Road property rate per sq ft",
+            "What is the price of Hosa Road land?",
+            "What is the cost of a 30 * 40 site in Bangalore?"
+          ],
+          "estimated_volume": "medium",
+          "aeo_opportunity": "high"
+        },
+        {
+          "intent": "navigational",
+          "queries": [
+            "Hosa road bangalore distance",
+            "Hosa road bangalore map",
+            "Hosa Road directions",
+            "Hosa Road pin code",
+            "Hosa road parappana agrahara pin code",
+            "Hosa Road metro station",
+            "Hosa road singasandra",
+            "Hosa Road Junction",
+            "Hosa Road signal",
+            "hosa road to majestic metro",
+            "hosa road to electronic city",
+            "hosa road to whitefield distance"
+          ],
+          "estimated_volume": "high",
+          "aeo_opportunity": "medium"
+        },
+        {
+          "intent": "comparative",
+          "queries": [
+            "Which area is best for living in Bangalore?",
+            "Which is the cheapest area in Bangalore?",
+            "Which is the costliest area in Bangalore?",
+            "Is Whitefield, Bangalore a posh area?",
+            "Where do most billionaires live in Bangalore?",
+            "Where do most CEOs live in Bangalore?"
+          ],
+          "estimated_volume": "medium",
+          "aeo_opportunity": "medium"
+        }
+      ],
+      "content_gaps": [
+        {
+          "gap": "Infrastructure amenities (schools, hospitals, restaurants) near Hosa Road lack dedicated content with no featured snippets or AI overviews",
+          "queries": [
+            "best restaurants Hosa Road",
+            "schools near Hosa Road",
+            "hospitals near Hosa Road",
+            "Hosa road government hospital"
+          ],
+          "opportunity": "Create comprehensive locality guide with embedded amenity directories, ratings, and proximity information. Build local pack optimization content.",
+          "suggested_content_type": "hub",
+          "priority": "high"
+        },
+        {
+          "gap": "Metro connectivity and transportation options are rising queries but lack dedicated Canvas Homes content; competitors dominate with generic results",
+          "queries": [
+            "hosa road metro station",
+            "bangalore metro map",
+            "hosa road metro timings",
+            "hosa road to majestic metro",
+            "hosa road bus stop",
+            "Are there public transport options on Hosa Road?"
+          ],
+          "opportunity": "Create detailed transportation guide covering metro station details, bus routes, distance to key locations, and connectivity benefits for property buyers/renters.",
+          "suggested_content_type": "spoke",
+          "priority": "high"
+        },
+        {
+          "gap": "Property pricing and affordability data lacks structured, AI-friendly content; competitors (99acres, MagicBricks) dominate with basic price listings",
+          "queries": [
+            "Hosa Road property rate per sq ft",
+            "What is the price of Hosa Road land?",
+            "What is the cost of a 30 * 40 site in Bangalore?",
+            "What is the cost of 1 square foot?",
+            "Living in hosa road bangalore price"
+          ],
+          "opportunity": "Create detailed pricing analysis hub with historical trends, rate comparisons, ROI projections, and affordability breakdowns by property type.",
+          "suggested_content_type": "hub",
+          "priority": "high"
+        },
+        {
+          "gap": "Livability and lifestyle content is fragmented across Reddit and generic guides; no Canvas Homes authority content on living experience",
+          "queries": [
+            "Is Hosa Road a good place to live?",
+            "How developed is Hosa Road?",
+            "How safe is Hosa Road at night?",
+            "Living in hosa road bangalore reviews",
+            "Hosa road review reddit"
+          ],
+          "opportunity": "Create comprehensive livability guide with safety data, development status, community insights, and resident testimonials. Target AI overview inclusion.",
+          "suggested_content_type": "hub",
+          "priority": "high"
+        },
+        {
+          "gap": "Urban vs. rural classification queries lack clear, authoritative answers; multiple variations suggest user confusion",
+          "queries": [
+            "Is Hosa Road urban or rural?",
+            "Is Hosa Road Bangalore urban or rural?",
+            "hosa road bangalore rural or urban"
+          ],
+          "opportunity": "Create FAQ content clarifying Hosa Road's classification with supporting data on infrastructure, population density, and development status.",
+          "suggested_content_type": "faq",
+          "priority": "medium"
+        },
+        {
+          "gap": "Comparative locality content missing; users searching for best areas, billionaire neighborhoods, and CEO residences find no Canvas Homes perspective",
+          "queries": [
+            "Which area is best for living in Bangalore?",
+            "Where do most billionaires live in Bangalore?",
+            "Where do most CEOs live in Bangalore?",
+            "Which is the cheapest area in Bangalore?",
+            "Which is the costliest area in Bangalore?"
+          ],
+          "opportunity": "Create comparative locality analysis content positioning Hosa Road within Bangalore's neighborhood hierarchy. Target high-intent buyer segments.",
+          "suggested_content_type": "spoke",
+          "priority": "medium"
+        }
+      ],
+      "aeo_targets": [
+        {
+          "query": "best restaurants Hosa Road",
+          "current_answer_quality": "none",
+          "our_strategy": "Create curated restaurant guide with ratings, cuisines, distance from key Hosa Road landmarks, and integration with local pack data. Include user reviews and recommendations.",
+          "content_type": "spoke"
+        },
+        {
+          "query": "schools near Hosa Road",
+          "current_answer_quality": "none",
+          "our_strategy": "Build comprehensive school directory with ratings, distance, fees, and parent reviews. Structure data for local pack and AI overview inclusion.",
+          "content_type": "spoke"
+        },
+        {
+          "query": "hospitals near Hosa Road",
+          "current_answer_quality": "none",
+          "our_strategy": "Create medical facilities guide with specializations, emergency services, distance, and ratings. Optimize for local pack and health-related AI queries.",
+          "content_type": "spoke"
+        },
+        {
+          "query": "Hosa Road property rate per sq ft",
+          "current_answer_quality": "weak",
+          "our_strategy": "Develop detailed pricing analysis with current rates, historical trends, comparison with nearby areas, and ROI calculations. Use structured data for AI overview.",
+          "content_type": "hub"
+        },
+        {
+          "query": "2BHK rent Hosa Road",
+          "current_answer_quality": "weak",
+          "our_strategy": "Create rental market analysis with current rates, availability, amenities comparison, and neighborhood insights. Integrate with Canvas Homes listings.",
+          "content_type": "spoke"
+        },
+        {
+          "query": "Hosa Road Bangalore",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Enhance existing AI overview presence with comprehensive locality guide covering geography, infrastructure, amenities, pricing, and livability. Become primary Canvas Homes citation.",
+          "content_type": "hub"
+        },
+        {
+          "query": "living in Hosa Road Bangalore",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Create authoritative livability guide with development status, safety data, community insights, and resident experiences. Target AI overview with structured content.",
+          "content_type": "hub"
+        },
+        {
+          "query": "Hosa Road review",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Develop comprehensive review aggregation with pros/cons, ratings by category, and Canvas Homes user insights. Differentiate from competitor review pages.",
+          "content_type": "hub"
+        },
+        {
+          "query": "hosa road metro station",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Create detailed metro connectivity guide with station details, timings, distance from properties, and impact on property values. Capitalize on rising search trend.",
+          "content_type": "spoke"
+        },
+        {
+          "query": "Hosa Road pin code",
+          "current_answer_quality": "weak",
+          "our_strategy": "Create locality information hub with pin codes, postal details, and administrative boundaries. Include sub-locality pin codes (Parappana Agrahara, Singasandra).",
+          "content_type": "faq"
+        }
+      ],
+      "competitor_insights": [
+        {
+          "competitor": "magicbricks.com",
+          "strength": "Dominates 'Hosa Road Bangalore' and 'Hosa Road guide' queries with comprehensive locality pages; strong AI overview presence; established authority on property listings.",
+          "weakness": "Generic locality content lacks depth on livability, safety, and community insights; limited transportation and amenity guides; no differentiated Canvas Homes perspective."
+        },
+        {
+          "competitor": "nobroker.in",
+          "strength": "Strong presence in property price and map queries; good local pack optimization; integrated property listings with locality information.",
+          "weakness": "Limited lifestyle and amenity content; weak on comparative locality analysis; no unique livability insights or community-focused content."
+        },
+        {
+          "competitor": "99acres.com",
+          "strength": "Dominates property price and review queries; comprehensive pricing data; strong in transactional intent queries.",
+          "weakness": "Limited informational content on livability; weak on infrastructure and amenity guides; no AI overview optimization strategy visible."
+        },
+        {
+          "competitor": "housing.com",
+          "strength": "Minimal presence suggests low priority for this locality; may indicate opportunity gap.",
+          "weakness": "Underrepresented in Hosa Road searches; weak competitive threat; opportunity for Canvas Homes to establish authority."
+        },
+        {
+          "competitor": "reddit.com",
+          "strength": "Dominates 'living in Hosa Road' queries with authentic user experiences and community discussions; high trust factor for lifestyle questions.",
+          "weakness": "Unstructured content; no commercial intent; difficult to monetize; Canvas Homes can create more organized, authoritative alternative."
+        }
+      ],
+      "top_5_priority_queries": [
+        {
+          "query": "best restaurants Hosa Road",
+          "reason": "AEO score 95 with zero competitor presence and no featured snippet/AI overview. Highest-impact opportunity to establish Canvas Homes as authoritative source for lifestyle amenities. Directly supports property buyer decision-making.",
+          "suggested_action": "Create curated restaurant guide with ratings, cuisines, distance mapping, and user reviews. Optimize for local pack and AI overview inclusion. Integrate with property listings to show proximity benefits."
+        },
+        {
+          "query": "schools near Hosa Road",
+          "reason": "AEO score 95 with zero competitor presence. Critical for family-focused property buyers. No existing authoritative content creates opportunity to dominate this high-intent query.",
+          "suggested_action": "Build comprehensive school directory with ratings, fees, distance, and parent reviews. Structure data for local pack optimization. Create sub-spokes for specific school types (CBSE, ICSE, international)."
+        },
+        {
+          "query": "hosa road metro station",
+          "reason": "Rising query from Google Trends (infrastructure development driver). Score 70 but growing relevance. Metro connectivity is key property value driver. Opportunity to capitalize on emerging trend before competitors optimize.",
+          "suggested_action": "Create detailed metro connectivity guide covering station details, timings, distance from key properties, impact on commute times, and property value implications. Target AI overview with structured data."
+        },
+        {
+          "query": "Hosa Road property rate per sq ft",
+          "reason": "AEO score 90 with weak current answers. High transactional intent from property buyers. Competitors present but content quality is poor. Opportunity to become authoritative pricing source with detailed analysis.",
+          "suggested_action": "Develop comprehensive pricing hub with current rates, historical trends, comparison with nearby areas (Electronic City, Parappana Agrahara), ROI projections, and affordability analysis by property type."
+        },
+        {
+          "query": "living in Hosa Road Bangalore",
+          "reason": "AEO score 70 with moderate competition but high search volume. Informational intent from serious prospects. AI overview present but content quality varies. Opportunity to create definitive livability guide.",
+          "suggested_action": "Create authoritative livability hub covering development status, safety data, infrastructure maturity, community insights, resident testimonials, and comparison with other Bangalore localities. Target AI overview inclusion."
+        }
+      ],
+      "related_topics_to_explore": [
+        "Electronic City Bangalore",
+        "Parappana Agrahara Bangalore",
+        "Singasandra Bangalore",
+        "Bangalore metro expansion",
+        "South East Bangalore localities",
+        "Affordable housing Bangalore",
+        "Property investment Bangalore",
+        "Bangalore neighborhood comparison",
+        "Commute times Bangalore",
+        "School ratings Bangalore"
+      ],
+      "seasonal_notes": "Google Trends indicates seasonal patterns in Hosa Road search interest. Likely peaks during property buying seasons (post-monsoon September-October and pre-summer March-April). Metro-related queries show rising trend independent of seasonality, suggesting infrastructure development is driving sustained interest. Recommend monitoring metro project milestones for content refresh opportunities."
+    },
+    "competitor_tracker": {
+      "nobroker.in": 9,
+      "magicbricks.com": 12,
+      "99acres.com": 9,
+      "housing.com": 2
+    },
+    "serp_calls_used": 15,
+    "autocomplete_calls_used": 4,
+    "cost_usd": 0.017478
+  }
+}

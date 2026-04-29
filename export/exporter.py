@@ -1,6 +1,3 @@
-cd ~/canvas-ai
-
-cat > export/exporter.py << 'PYEOF'
 """
 Export system — generate downloadable files from the database.
 """

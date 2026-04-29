@@ -1,0 +1,10 @@
+{
+  "agent": "content_architect",
+  "status": "failed",
+  "validation_passed": false,
+  "validation_problems": [
+    "content_architect: missing required state keys ['keyword_map']. Available: ['trend_data']"
+  ],
+  "duration_seconds": 0.03,
+  "completed_at": "2026-04-29T00:23:59.395367"
+}

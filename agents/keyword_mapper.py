@@ -207,44 +207,45 @@ class KeywordMapperAgent(AgentBase):
         return None
 
     def _build_payload(self, topic, trend_data, competitor_data):
-        """Compress upstream data into a tight LLM-friendly summary.
-        Tries multiple keys per field since trend_scout v2 uses various names.
-        """
-        # Try every known key name for each piece of trend data
+        """Extract data from trend_scout's nested output structure."""
+        # Trend scout nests data under 'raw_data'
+        raw = trend_data.get("raw_data", {}) or {}
+
         paa = (
-            trend_data.get("paa_questions")
+            raw.get("paa_questions")
+            or trend_data.get("paa_questions")
             or trend_data.get("people_also_ask")
-            or trend_data.get("paa")
             or []
         )
         related = (
-            trend_data.get("related_searches")
-            or trend_data.get("related")
+            raw.get("related_searches")
+            or trend_data.get("related_searches")
             or []
         )
         autocomplete = (
-            trend_data.get("autocomplete_suggestions")
+            raw.get("autocomplete")
+            or trend_data.get("autocomplete_suggestions")
             or trend_data.get("autocomplete")
-            or trend_data.get("suggestions")
             or []
         )
-        high_aeo = (
-            trend_data.get("high_aeo_opportunities")
-            or trend_data.get("aeo_opportunities")
-            or trend_data.get("opportunities")
+        aeo_scores = (
+            raw.get("aeo_scores")
+            or trend_data.get("aeo_scores")
             or []
         )
+
+        # Also pull from the LLM analysis
+        analysis = trend_data.get("analysis", {}) or {}
+        intent_clusters = analysis.get("intent_clusters", [])
+        content_gaps = analysis.get("content_gaps", [])
 
         def to_text(items, key=None):
             seen, out = set(), []
             for it in items:
                 if isinstance(it, dict):
                     text = (it.get(key or "question")
-                            or it.get("query")
-                            or it.get("text")
-                            or it.get("value")
-                            or it.get("title")
-                            or "")
+                            or it.get("query") or it.get("text")
+                            or it.get("value") or it.get("title") or "")
                 else:
                     text = str(it)
                 text = text.strip() if isinstance(text, str) else ""
@@ -253,12 +254,24 @@ class KeywordMapperAgent(AgentBase):
                     out.append(text)
             return out
 
+        # Extract queries from intent clusters
+        all_queries_from_analysis = []
+        for cluster in intent_clusters:
+            for q in cluster.get("queries", []):
+                if q not in all_queries_from_analysis:
+                    all_queries_from_analysis.append(q)
+
+        # High AEO opportunities
+        high_aeo = [s for s in aeo_scores if isinstance(s, dict) and s.get("score", 0) >= 60]
+
         return {
             "topic": topic,
             "paa_questions":            to_text(paa, key="question")[:25],
             "related_searches":         to_text(related)[:25],
             "autocomplete_suggestions": to_text(autocomplete)[:20],
-            "high_aeo_opportunities":   high_aeo[:15] if isinstance(high_aeo, list) else [],
+            "queries_from_analysis":    all_queries_from_analysis[:20],
+            "high_aeo_opportunities":   high_aeo[:15],
+            "content_gaps":             content_gaps[:10],
             "competitor_coverage":      competitor_data.get("competitor_coverage", {}),
             "uncovered_queries":        competitor_data.get("uncovered_queries", [])[:15],
         }

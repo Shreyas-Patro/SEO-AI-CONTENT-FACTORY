@@ -1,0 +1,7 @@
+
+============================================================
+[Pipeline prun-9ea608c4-63b] Layer 2 for 'Hosa Road'
+============================================================
+
+┌─ [content_architect] starting (run=prun-9ea608c4-63b)
+└─ [content_architect] INPUT VALIDATION FAILED: content_architect: missing required state keys ['keyword_map']. Available: ['trend_data']
