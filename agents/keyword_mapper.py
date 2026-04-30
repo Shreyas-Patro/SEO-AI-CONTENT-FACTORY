@@ -114,8 +114,13 @@ class KeywordMapperAgent(AgentBase):
 
         print(f"  Calling LLM (prompt: {len(user_prompt)} chars)")
 
-        # call_llm_json returns a WRAPPER dict
-        wrapper = call_llm_json(prompt=user_prompt, system=SYSTEM_PROMPT)
+        wrapper = call_llm_json(
+            prompt=user_prompt,
+            system=SYSTEM_PROMPT,
+            model_role="bulk",
+            max_tokens=4096,
+            cache_namespace=f"{topic}:keyword_mapper{self._retry_suffix()}",
+        )
 
         # Track real cost/tokens from the wrapper
         if isinstance(wrapper, dict):
