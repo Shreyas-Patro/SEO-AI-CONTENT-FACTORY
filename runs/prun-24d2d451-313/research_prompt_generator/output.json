@@ -1,0 +1,91 @@
+{
+  "master_research_prompt": "I need comprehensive, current research on Hosa Road, Bangalore for a real estate content cluster. Provide detailed information with authoritative citations for each section below. All data must be from 2024-2026 unless specifically historical context is needed. Include source URLs in markdown format.\n\n**SECTION 1: LOCATION & ADMINISTRATIVE DETAILS**\nResearch Hosa Road's exact geographic location, boundaries, pin codes, and administrative classification. Is it officially classified as urban or rural by BBMP/government authorities? What are the municipal corporation boundaries? Provide historical development timeline of the area.\n\n**SECTION 2: PROPERTY MARKET ANALYSIS**\nFind current property rates per square foot for residential, commercial, and land/plots in Hosa Road as of 2024. What does a 30x40 site cost? Get market trends, price appreciation data, and factors influencing property values. Include data from Knight Frank, JLL, PropTiger, or similar real estate research firms.\n\n**SECTION 3: RENTAL MARKET DATA**\nResearch current rental prices for 1BHK, 2BHK, 3BHK apartments in Hosa Road. What are budget, mid-range, and premium rental rates? Which sub-areas within Hosa Road offer best rental value?\n\n**SECTION 4: TRANSPORTATION & CONNECTIVITY**\nDetailed information on Hosa Road Metro Station: exact location, operating hours, first/last train timings, routes, connectivity to major areas like Majestic. Distance and travel time to Electronic City, Whitefield, and other IT hubs. Best transportation routes and options.\n\n**SECTION 5: INFRASTRUCTURE & AMENITIES**\nList top schools (CBSE, international, government) near Hosa Road with distances. Healthcare facilities including government and private hospitals, clinics. Shopping centers, malls, entertainment options. Quality of roads, utilities, basic services.\n\n**SECTION 6: SAFETY & LIVABILITY**\nCrime statistics, police presence, safety during day/night. Resident demographics, community culture, quality of life indicators. Real resident reviews and experiences from online platforms.\n\n**SECTION 7: COMPARATIVE ANALYSIS**\nCompare Hosa Road vs Whitefield on property prices, rental costs, connectivity, amenities, cost of living, investment potential.\n\n**SECTION 8: DEVELOPMENT STATUS**\nCurrent infrastructure development projects, population density, commercial vs residential development ratio, urban amenities vs rural characteristics.\n\nFor each fact, provide citations from authoritative sources like RERA Karnataka, BBMP, Karnataka government websites, established real estate research firms (Knight Frank, JLL, CBRE), reputable property portals (99acres, Housing.com, PropTiger), and local news sources. Include exact URLs in markdown format [Source Name](URL).",
+  "research_questions": [
+    {
+      "section": "Location & Administrative",
+      "questions": [
+        "What is Hosa Road's official pin code?",
+        "Is Hosa Road classified as urban or rural by BBMP?",
+        "What are the exact geographic boundaries?"
+      ]
+    },
+    {
+      "section": "Property Market",
+      "questions": [
+        "Current property rates per sq ft in Hosa Road 2024?",
+        "30x40 site cost in Hosa Road?",
+        "Property price trends and appreciation data?"
+      ]
+    },
+    {
+      "section": "Rental Market",
+      "questions": [
+        "1BHK, 2BHK, 3BHK rental prices in Hosa Road?",
+        "Best sub-areas for rentals?",
+        "Budget vs premium rental options?"
+      ]
+    },
+    {
+      "section": "Transportation",
+      "questions": [
+        "Hosa Road Metro station timings and routes?",
+        "Distance to Electronic City and travel time?",
+        "Connectivity to major IT hubs?"
+      ]
+    },
+    {
+      "section": "Amenities",
+      "questions": [
+        "Top schools near Hosa Road with distances?",
+        "Hospitals and healthcare facilities?",
+        "Shopping and entertainment options?"
+      ]
+    },
+    {
+      "section": "Safety & Living",
+      "questions": [
+        "How safe is Hosa Road for residents?",
+        "Crime statistics and police presence?",
+        "Resident reviews and experiences?"
+      ]
+    },
+    {
+      "section": "Comparative Analysis",
+      "questions": [
+        "Hosa Road vs Whitefield property prices?",
+        "Connectivity comparison?",
+        "Cost of living differences?"
+      ]
+    },
+    {
+      "section": "Development Status",
+      "questions": [
+        "Infrastructure development projects in Hosa Road?",
+        "Population density and demographics?",
+        "Urban vs rural characteristics?"
+      ]
+    }
+  ],
+  "freshness_requirements": {
+    "default": "last 18 months",
+    "property_prices": "2024 data only",
+    "metro_timings": "current schedules",
+    "rental_rates": "2024 market rates"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "cbre.co.in",
+    "99acres.com",
+    "housing.com",
+    "proptiger.com",
+    "bmrcl.com",
+    "deccanherald.com",
+    "thehindu.com",
+    "timesofindia.indiatimes.com"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.2
+}

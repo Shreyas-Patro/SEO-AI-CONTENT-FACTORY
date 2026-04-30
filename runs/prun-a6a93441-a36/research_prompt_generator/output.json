@@ -1,0 +1,64 @@
+{
+  "master_research_prompt": "I need comprehensive, current research on Hosa Road, Bangalore for a real estate content cluster. Provide detailed information with authoritative citations for each section below. All data must be from 2024-2026 unless specifically historical context is needed. Include source URLs in markdown format.\n\n**SECTION 1: LOCATION & ADMINISTRATIVE DETAILS**\n- Exact geographic location, boundaries, and coordinates of Hosa Road Bangalore\n- Official pin codes and administrative ward details under BBMP\n- Historical development timeline and transformation from rural to urban area\n- Current official classification (urban/rural) by Karnataka government and BBMP\n- Municipal corporation boundaries and jurisdiction details\n\n**SECTION 2: PROPERTY MARKET ANALYSIS**\n- Current property rates per square foot for residential properties (1BHK, 2BHK, 3BHK apartments)\n- Commercial property rates per square foot\n- Land/plot prices, specifically 30x40 site costs\n- Year-over-year price trends (2022-2024) with percentage changes\n- Market demand-supply dynamics and factors influencing prices\n- Investment potential analysis and ROI projections\n\n**SECTION 3: RENTAL MARKET DATA**\n- Average rental prices for 1BHK, 2BHK, 3BHK apartments\n- Rental yield percentages and trends\n- Most sought-after areas within Hosa Road for rentals\n- Occupancy rates and tenant demographics\n- Rental price variations by proximity to metro station\n\n**SECTION 4: TRANSPORTATION & CONNECTIVITY**\n- Hosa Road Metro Station details: exact location, operating hours, first/last train timings\n- Metro line connectivity and routes to major destinations (Majestic, MG Road, etc.)\n- Distance and travel time to key areas: Electronic City, Whitefield, Koramangala, BTM Layout\n- Public transport options (buses, auto-rickshaws) and frequency\n- Road infrastructure quality and traffic conditions\n\n**SECTION 5: AMENITIES & INFRASTRUCTURE**\n- Complete list of schools (CBSE, ICSE, international) with ratings and distances\n- Hospitals and healthcare facilities (government and private) within 5km radius\n- Shopping centers, malls, and commercial establishments\n- Banks, ATMs, and financial services availability\n- Utilities status: water supply, electricity, sewage, internet connectivity\n\n**SECTION 6: SAFETY & LIVABILITY**\n- Crime statistics and safety ratings for day/night time\n- Police station locations and response times\n- Street lighting and security infrastructure\n- Resident satisfaction surveys and community feedback\n- Air quality index and environmental factors\n\n**SECTION 7: COMPARATIVE ANALYSIS**\n- Detailed comparison with Whitefield: property prices, amenities, connectivity, lifestyle\n- Advantages and disadvantages of each location\n- Target demographic preferences for each area\n\n**SECTION 8: DEMOGRAPHICS & COMMUNITY**\n- Population density and growth trends\n- Resident demographics: age groups, income levels, occupations\n- Community culture and lifestyle characteristics\n- Quality of life indicators and resident testimonials\n\nFor each data point, provide:\n1. Specific numerical values with units\n2. Source citations from RERA, BBMP, Knight Frank, JLL, Magicbricks, 99acres, or other authoritative real estate sources\n3. Date of data collection\n4. Source URLs in [text](URL) markdown format\n\nPrioritize government sources, established real estate consultancies, and verified property portals. Ensure all information is current as of 2024.",
+  "research_questions": [
+    {
+      "section": "Location & Administrative",
+      "questions": [
+        "What are the exact boundaries and pin codes of Hosa Road Bangalore?",
+        "Is Hosa Road officially classified as urban or rural by BBMP?",
+        "What is the historical development timeline of Hosa Road area?"
+      ]
+    },
+    {
+      "section": "Property Market",
+      "questions": [
+        "What are current property rates per sq ft in Hosa Road for different property types?",
+        "How much does a 30x40 site cost in Hosa Road in 2024?",
+        "What are the year-over-year price trends and growth projections?"
+      ]
+    },
+    {
+      "section": "Transportation",
+      "questions": [
+        "What are Hosa Road Metro station timings and connectivity details?",
+        "What is the distance and travel time from Hosa Road to Electronic City?",
+        "What are the best routes and transport options to major IT hubs?"
+      ]
+    },
+    {
+      "section": "Amenities",
+      "questions": [
+        "What are the top-rated schools near Hosa Road with distances?",
+        "Which hospitals and healthcare facilities are available within 5km?",
+        "What shopping and entertainment options exist in the area?"
+      ]
+    },
+    {
+      "section": "Livability",
+      "questions": [
+        "How safe is Hosa Road for residents based on crime statistics?",
+        "What do current residents say about living in Hosa Road?",
+        "What are the quality of life indicators and community characteristics?"
+      ]
+    }
+  ],
+  "freshness_requirements": {
+    "default": "last 18 months",
+    "property_prices": "2024 data mandatory",
+    "metro_timings": "current operational schedule",
+    "infrastructure": "latest development status"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "magicbricks.com",
+    "99acres.com",
+    "housing.com",
+    "nammametro.com",
+    "karnataka.gov.in"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.2
+}

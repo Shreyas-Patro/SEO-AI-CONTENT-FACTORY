@@ -1,0 +1,81 @@
+{
+  "article_id": "art-aafe8562-21c",
+  "meta": {
+    "meta_title": "Things to Do in Hosa Road Bangalore | Entertainment & Dining",
+    "meta_description": "Explore things to do in Hosa Road\u2014best restaurants, entertainment, shopping & recreation. Your complete guide to Hosa Road attractions.",
+    "og_title": "Things to Do in Hosa Road Bangalore: Entertainment & Dining Guide",
+    "og_description": "Discover the best entertainment, dining, and recreation options in Hosa Road. Complete guide to attractions for residents and visitors.",
+    "canonical_url": "https://canvas-homes.com/things-to-do-hosa-road-bangalore-2",
+    "schema_article": {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Things to Do in Hosa Road Bangalore: Entertainment, Dining & Recreation Guide",
+      "author": {
+        "@type": "Person",
+        "name": "Canvas Homes Editorial"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Canvas Homes",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://canvas-homes.com/logo.png"
+        }
+      },
+      "datePublished": "2024-01-15",
+      "dateModified": "2024-01-15",
+      "description": "Complete guide to entertainment, dining, and recreation options in Hosa Road, Bangalore with insider tips and venue details."
+    },
+    "schema_breadcrumb": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://canvas-homes.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bangalore",
+          "item": "https://canvas-homes.com/bangalore/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hosa Road",
+          "item": "https://canvas-homes.com/hosa-road-bangalore/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Things to Do"
+        }
+      ]
+    },
+    "image_alt_suggestions": [
+      {
+        "position": "hero",
+        "alt": "Busy Hosa Road corridor in South Bangalore showing commercial establishments and traffic during daytime"
+      },
+      {
+        "position": "section_malls",
+        "alt": "Forum Neighborhood Mall exterior with retail storefronts and multiplex cinema signage"
+      },
+      {
+        "position": "section_parks",
+        "alt": "Hosa Road Lake with walking path surrounded by green spaces and residential buildings in background"
+      },
+      {
+        "position": "section_dining",
+        "alt": "Restaurant storefronts and food court seating areas along Hosa Road commercial stretch"
+      },
+      {
+        "position": "section_shopping",
+        "alt": "Hosa Road Commercial Complex near Kaikondrahalli junction with various retail outlets"
+      }
+    ]
+  }
+}

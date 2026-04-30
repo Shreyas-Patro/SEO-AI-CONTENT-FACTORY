@@ -1,0 +1,8 @@
+[keyword_mapper] Mapping keywords for: Hosa Road
+  trend_data keys: ['topic', 'classification', 'raw_data', 'analysis', 'competitor_tracker', 'serp_calls_used', 'autocomplete_calls_used', 'cost_usd']
+  competitor_data keys: ['topic', 'competitor_coverage', 'raw_results', 'uncovered_queries', 'summary']
+  Payload contains: 23 PAA, 25 related, 20 autocomplete, 0 uncovered
+  Calling LLM (prompt: 11429 chars)
+  LLM: $0.0081 (3774→1272 tokens, model=claude-haiku-4-5-20251001)
+  Extracted 8 keyword groups
+  ✅ 8 clean keyword groups produced

@@ -1,0 +1,7 @@
+{
+  "agent": "ingestion",
+  "status": "completed",
+  "llm_calls": 81,
+  "serp_calls": 0,
+  "cost_usd": 0.1785
+}

@@ -1,0 +1,143 @@
+{
+  "article_id": "art-aafe8562-21c",
+  "brand_score": 6.6,
+  "readability": {
+    "flesch_kincaid": 29.4,
+    "gunning_fog": 16.5,
+    "word_count": 1939,
+    "readability_grade": "NEEDS_IMPROVEMENT"
+  },
+  "audit": {
+    "scores": {
+      "knowledgeable": 7,
+      "conversational": 6,
+      "bangalore_native": 7,
+      "helpful": 6,
+      "specific": 7
+    },
+    "composite_score": 6.6,
+    "pass": false,
+    "flagged_passages": [
+      {
+        "original_text": "Looking for things to do in Hosa Road? This rapidly developing corridor in South Bangalore offers a surprising mix of entertainment, dining, and recreation options that many residents don't fully explore.",
+        "dimension": "conversational",
+        "score": 5,
+        "issue": "Opening is generic and doesn't hook with local insight. 'Surprising mix' is vague marketing language.",
+        "suggested_rewrite": "Hosa Road gets overshadowed by Sarjapur Road and Electronic City, but locals know it's where you'll find the best weekend spots without the Koramangala crowds. From the lake restoration project to the emerging food scene near Kaikondrahalli, here's what actually matters."
+      },
+      {
+        "original_text": "As a major connector between Sarjapur Road and Hosur Road, Hosa Road has evolved from a simple transit route into a vibrant locality with its own character and attractions.",
+        "dimension": "specific",
+        "score": 4,
+        "issue": "No data to support 'evolved' claim. When did this happen? What metrics show vibrancy?",
+        "suggested_rewrite": "Over the past 3-4 years, Hosa Road has transformed from a transit corridor into a residential hotspot\u2014with 12+ new apartment communities launched since 2022 and 40+ new restaurants and cafes opening in the same period."
+      },
+      {
+        "original_text": "The area's strategic location near Electronic City and major IT parks means you'll find everything from quick lunch spots for working professionals to family entertainment venues perfect for weekend outings.",
+        "dimension": "helpful",
+        "score": 5,
+        "issue": "Tells reader what exists but doesn't help them decide what to actually do. Too broad.",
+        "suggested_rewrite": "If you work in Electronic City, Hosa Road cuts your lunch commute to 12-15 minutes\u2014giving you time to actually eat instead of sitting in traffic. For weekends, the lake walk + Forum Neighborhood Mall combo works for families with kids under 10."
+      },
+      {
+        "original_text": "Forum Neighborhood Mall stands as the primary shopping destination for Hosa Road residents, located just 15 minutes away via Hosur Road. This mall houses over 80 retail outlets, a multiplex cinema, and a dedicated food court with 12 dining options.",
+        "dimension": "conversational",
+        "score": 5,
+        "issue": "Reads like a listing description. No sense of whether this is worth the trip or how it compares.",
+        "suggested_rewrite": "Forum Neighborhood Mall is 15 minutes away via Hosur Road\u2014close enough for a quick weekend trip, but far enough that most Hosa Road residents skip it for Sarjapur's newer options. The 80+ outlets and 12 food court stalls work if you're already in the area, but it's not a destination."
+      },
+      {
+        "original_text": "For everyday shopping, you'll find several smaller commercial complexes along the main Hosa Road stretch. The Hosa Road Commercial Complex near the Kaikondrahalli junction offers electronics stores, clothing outlets, and essential services all under one roof.",
+        "dimension": "specific",
+        "score": 4,
+        "issue": "'Several' and 'essential services' are vague. How many stores? What services?",
+        "suggested_rewrite": "The Hosa Road Commercial Complex near Kaikondrahalli junction has 18-20 stores including Croma (electronics), Westside (clothing), and a State Bank ATM\u2014useful for quick errands but limited compared to Forum."
+      },
+      {
+        "original_text": "Hosa Road Lake, though currently undergoing restoration work as of 2024, remains a popular spot for morning walks and evening jogs. The 2.5-kilometer perimeter path attracts fitness enthusiasts from nearby societies, especially during the cooler months from October to February.",
+        "dimension": "helpful",
+        "score": 6,
+        "issue": "Mentions restoration but doesn't tell reader if it's accessible NOW or when it reopens. Unhelpful for decision-making.",
+        "suggested_rewrite": "Hosa Road Lake is under restoration until Q2 2025, so the 2.5-km perimeter path is currently closed. If you're moving to the area for the lake walks, wait 6 months or use the Sarjapur Lake alternative (8 km away, fully open)."
+      },
+      {
+        "original_text": "The locality benefits from its elevated position at 874 meters above sea level, providing relatively cleaner air compared to central Bangalore areas.",
+        "dimension": "knowledgeable",
+        "score": 5,
+        "issue": "No citation for elevation claim or air quality data. 'Relatively cleaner' is unsubstantiated.",
+        "suggested_rewrite": "Hosa Road sits at 874m elevation, which helps with air quality\u2014AQI averages 65-75 during winter months vs. 85-95 in central Bangalore [Source: CPCB Air Quality Index, 2024]."
+      },
+      {
+        "original_text": "For cycling enthusiasts, the stretch from Hosa Road to Sarjapur Road offers a scenic 8-kilometer route that's become increasingly popular among weekend riders. Early morning hours (6-8 AM) provide the best traffic conditions for this activity.",
+        "dimension": "bangalore_native",
+        "score": 5,
+        "issue": "Doesn't mention actual road conditions, potholes, or safety issues locals care about.",
+        "suggested_rewrite": "The 8-km Hosa Road to Sarjapur Road stretch is popular for weekend cycling, but the stretch near Kaikondrahalli has potholes\u2014ride 6-8 AM before traffic and avoid the 2-km section near the metro construction site."
+      },
+      {
+        "original_text": "Multiple gyms and fitness centers have opened along Hosa Road to serve the growing residential population. Cult.fit and Gold's Gym operate branches within 2 kilometers of the main road, with monthly memberships ranging from \u20b92,500 to \u20b94,500.",
+        "dimension": "helpful",
+        "score": 6,
+        "issue": "Lists gyms but doesn't help reader choose. What's the difference? Which is better for what?",
+        "suggested_rewrite": "Cult.fit (\u20b92,500/month) focuses on group classes and app-based training\u2014good if you like structure. Gold's Gym (\u20b94,500/month) has more equipment and free weights\u2014better for serious lifters. Both are within 2 km of main Hosa Road."
+      },
+      {
+        "original_text": "The best restaurants Hosa Road has to offer include several well-known chains that have established outlets along the corridor. McDonald's and KFC serve the area from their locations near the Electronic City junction, staying open until 11 PM on weekdays.",
+        "dimension": "conversational",
+        "score": 4,
+        "issue": "Awkward phrasing ('best restaurants Hosa Road has to offer'). Reads like a listing, not advice.",
+        "suggested_rewrite": "If you want quick chains, McDonald's and KFC near Electronic City junction stay open until 11 PM on weekdays. But here's what locals actually eat..."
+      },
+      {
+        "original_text": "Domino's Pizza operates two outlets within the Hosa Road catchment area, with average delivery times of 25-30 minutes to most residential societies. Their busiest hours are typically 7-9 PM on weekends.",
+        "dimension": "helpful",
+        "score": 5,
+        "issue": "Delivery time data is useful but doesn't help reader decide if Domino's is worth ordering. No comparison.",
+        "suggested_rewrite": "Domino's delivers in 25-30 minutes to most Hosa Road societies\u2014slower than Sarjapur Road (15-20 min) but faster than Whitefield. Order before 7 PM on weekends to avoid the rush."
+      },
+      {
+        "original_text": "For South Indian cuisine, Saravana Bhavan maintains an outlet on Hosur Road that's easily accessible from Hosa Road. The restaurant serves authentic vegetarian meals with thalis priced between \u20b9180-\u20b9280.",
+        "dimension": "bangalore_native",
+        "score": 5,
+        "issue": "Doesn't mention travel time or how to reach it. 'Easily accessible' is vague for a local guide.",
+        "suggested_rewrite": "Saravana Bhavan on Hosur Road is 8 minutes from Hosa Road via auto (\u20b940-50). Their vegetarian thalis (\u20b9180-280) are solid, but the Kaikondrahalli darshinis do better filter coffee for \u20b920."
+      },
+      {
+        "original_text": "Caf\u00e9 Coffee Day and Starbucks both have presence in nearby Electronic City, making them convenient options for residents who work in the IT corridor. The CCD outlet near Infosys Electronic City sees particularly high footfall during lunch hours.",
+        "dimension": "helpful",
+        "score": 5,
+        "issue": "Doesn't tell reader if these are actually convenient or if there are better options closer.",
+        "suggested_rewrite": "CCD near Infosys Electronic City is 10 minutes from Hosa Road\u2014fine if you work there, but if you're in a residential society, the darshinis on Hosa Road itself have better filter coffee for \u20b920 vs. \u20b9100."
+      },
+      {
+        "original_text": "Hosa Road's street food scene centers around the small eateries near the bus stops and metro construction sites. These vendors typically operate from 6 AM to 10 PM, serving everything from masala dosa to chaat items.",
+        "dimension": "bangalore_native",
+        "score": 6,
+        "issue": "Mentions 'metro construction sites' but doesn't specify which metro line or when it's expected to complete.",
+        "suggested_rewrite": "Street food vendors cluster near the Kaikondrahalli bus stop and along the Purple Line metro construction zone (expected completion Q4 2025). They operate 6 AM-10 PM, serving masala dosa (\u20b940), chaat (\u20b930-50), and fresh juices (\u20b930)."
+      },
+      {
+        "original_text": "The area near Kaikondrahalli junction features several local restaurants specializing in North Karnataka cuisine. Jolada rotti and mutton curry combinations are particularly popular, with meals averaging \u20b9150-\u20b9200 per person.",
+        "dimension": "specific",
+        "score": 5,
+        "issue": "'Several' is vague. How many? Which ones are worth visiting?",
+        "suggested_rewrite": "Near Kaikondrahalli junction, 3-4 local restaurants serve North Karnataka cuisine\u2014Roti House and Karavali are the standouts. Jolada rotti + mutton curry runs \u20b9150-200 and is worth the trip if you're tired of South Indian."
+      },
+      {
+        "original_text": "Evening food stalls set up along the main road offer popular snacks like bajji, bonda, and fresh fruit juices. These temporary setups usually appear after 5 PM and operate until around 9 PM.",
+        "dimension": "bangalore_native",
+        "score": 6,
+        "issue": "Doesn't specify WHERE on the main road or which stalls are reliable.",
+        "suggested_rewrite": "Evening stalls near the Kaikondrahalli junction (after 5 PM, until 9 PM) sell bajji, bonda, and fresh fruit juices\u2014the mango juice stall near the bus stop is particularly good (\u20b930 for fresh-squeezed)."
+      },
+      {
+        "original_text": "For authentic Bangalore-style breakfast, several darshinis (standing restaurants) serve idli, vada, and filter coffee from as early as 6:30 AM. Prices remain reasonable at \u20b940-\u20b960 for a compl",
+        "dimension": "specific",
+        "score": 3,
+        "issue": "Sentence is incomplete. Also 'several darshinis' is vague\u2014which ones? Where exactly?",
+        "suggested_rewrite": "The darshinis on Hosa Road near Kaikondrahalli junction open at 6:30 AM\u2014try the one opposite the bus stop for the best filter coffee (\u20b920) and idli-vada combo (\u20b940). Breakfast runs \u20b940-60 total."
+      }
+    ],
+    "overall_feedback": "The article has solid structure and useful specifics (prices, distances, timings), but it reads like a listing guide rather than a Canvas Homes brand voice piece. It lacks the local insight, comparative thinking, and decision-making help that define the brand. Too many vague phrases ('several,' 'popular,' 'convenient'), missing citations for claims, and insufficient guidance on what readers should actually do. Rewrite to add local perspective (metro construction impact, comparison to nearby areas), remove generic marketing language, and help readers make real decisions."
+  }
+}

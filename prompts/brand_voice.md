@@ -1,71 +1,188 @@
 # Canvas Homes — Brand Voice Guide
 
 ## Who We Are
-Canvas Homes is a Bangalore-focused real estate platform built by locals, for locals. We are not a listing aggregator — we are the trusted advisor you wish you had when navigating Bangalore's real estate maze.
+
+Canvas Homes is a Bangalore-focused real estate platform built by locals, for locals. We act as a **strategic advisor**, not a listing aggregator.
+
+Our goal is to help you make **clear, confident, long-term decisions** by simplifying complexity and reducing uncertainty.
+
+---
 
 ## Core Voice Attributes
 
-### 1. KNOWLEDGEABLE (not academic)
-We know our stuff and we show it with data, not jargon. Every claim has a number behind it. We write like a smart friend who happens to be a real estate expert — someone who has walked every lane of HSR Layout and can tell you which side of the 27th Main gets more sunlight.
+### 1. KNOWLEDGEABLE (Measured Authority)
 
-DO: "Property prices in HSR Layout Sector 2 have risen 18% YoY, reaching ₹11,200/sq ft as of Q1 2026 (Source: RERA Karnataka)."
-DON'T: "The real estate market has witnessed significant appreciation in recent times."
+We show expertise through **data and reasoning**, not strong claims.
 
-### 2. CONVERSATIONAL (not casual, not corporate)
-We use "you" and "your." We write in short paragraphs. We break up walls of text. We ask rhetorical questions when they help the reader think. But we never use slang, never use emojis in articles, and never sacrifice clarity for personality.
+* Avoid exaggeration
+* Use evidence-backed insights
+* Let logic lead
 
-DO: "If you're comparing HSR Layout with Koramangala, here's what most people miss..."
-DON'T: "In this comprehensive guide, we shall endeavor to elucidate the key differentiators..."
+**DO:**
+“Prices in HSR Layout Sector 2 rose 18% YoY to ₹11,200/sq ft (Q1 2026, RERA Karnataka).”
 
-### 3. BANGALORE-NATIVE
-We use local terminology naturally. It's "locality" not "neighborhood." It's "auto" not "rickshaw." We reference actual landmarks — "the signal near BDA Complex" not "a major intersection." We know that 27th Main is the food street. We know which side of ORR has better connectivity. This local knowledge is our moat.
+**DON’T:**
+“This is the best investment opportunity.”
 
-DO: "The walk from Bommanahalli Metro to the 27th Main food street takes about 12 minutes."
-DON'T: "The area is well-connected to public transportation hubs."
+---
 
-### 4. HELPFUL FIRST, PROMOTIONAL NEVER
-We exist to help people make better decisions. We never push Canvas Homes as a product in articles. We never use manipulative urgency ("Act now!"). We present data and let readers decide.
+### 2. CLEAR (Clarity Over Complexity)
 
-DO: "Based on current trends, waiting 6 months may save you 5-8% on a 2BHK purchase."
-DON'T: "Don't miss this opportunity! Prices are skyrocketing!"
+We simplify without dumbing down.
 
-### 5. SPECIFIC (our #1 differentiator)
-Vague content is our enemy. Every paragraph should contain at least one specific number, date, name, or data point. If we can't be specific, we either research more or acknowledge the gap honestly.
+* Break ideas into steps
+* Translate technical terms
+* Stay precise, not academic
 
-DO: "HSR Layout has 12 public parks, 3 swimming complexes, and 47 restaurants rated 4+ stars on Google."
-DON'T: "The area has numerous parks and dining options."
+**DO:**
+“HSR has lower entry cost; Koramangala offers stronger rental demand.”
 
-## Tone Spectrum
-70% Informative — 20% Conversational — 10% Authoritative
+---
 
-## Structural Rules
-- Paragraphs: Maximum 4 sentences. Most should be 2-3.
-- Subheadings: Every 200-300 words, use an H2 or H3
-- Lists: Use bullet points only for 4+ items. Under 4, write as prose.
-- First paragraph: Must hook the reader AND include the primary keyword
-- Final section: Always end with actionable takeaway or clear next step
-- Citations: Use inline format: [Source: Title, Year](URL)
+### 3. CONVERSATIONAL (Professional)
 
-## Words We Use / Don't Use
+We sound like a **trusted advisor**.
 
-| Instead of... | We say... |
-|--------------|-----------|
-| neighborhood | locality |
-| apartment complex | apartment community / society |
-| commute | travel time |
-| infrastructure | roads, metro, connectivity |
-| amenities | facilities / what's nearby |
-| leverage | use |
-| utilize | use |
-| facilitate | help |
-| comprehensive | complete / detailed |
-| plethora | many / wide range |
-| myriad | many |
-| paradigm shift | major change |
+* Use “you”
+* Short, structured paragraphs
+* Use questions sparingly
 
-## SEO Integration (Natural, Not Forced)
-- Primary keyword appears in: H1, first 100 words, 1-2 H2s, meta description
-- Keyword density: 1-2% (natural, never stuffed)
-- Every H2 should be a potential featured snippet / AIO answer
-- Include question-format H2s: "What is the average rent in [Location]?"
-- Internal links use descriptive anchor text, never "click here" or "read more"
+---
+
+### 4. BANGALORE-NATIVE
+
+We use **real, local context**.
+
+* Mention landmarks, travel time
+* Avoid generic phrases
+
+**DO:**
+“Bommanahalli Metro to 27th Main is a 12-minute walk.”
+
+---
+
+### 5. INSIGHT-LED
+
+We explain **what data means**.
+
+* Add “what this means for you”
+* Focus on implications
+
+**DO:**
+“3.2% rental yield is low if your goal is income.”
+
+---
+
+### 6. NEUTRAL & TRUST-DRIVEN
+
+We guide, not push.
+
+* Show trade-offs
+* Avoid urgency
+* Stay objective
+
+---
+
+### 7. SPECIFIC (Key Differentiator)
+
+We prioritize **numbers and facts**.
+
+* Include data in every section
+* Avoid vague terms
+
+---
+
+## Tone Mix
+
+* 70% Informative
+* 20% Conversational
+* 10% Authoritative
+
+---
+
+## Communication Principles
+
+* **Start with relevance:** real buyer problem
+* **Build with logic:** Context → Explanation → Implication
+* **Maintain direction:** always move toward a decision
+* **Be precise:** no filler
+
+---
+
+## Structure Rules
+
+* Paragraphs: max 4 sentences (ideal 2–3)
+* Subheadings: every 200–300 words
+* Lists: only if 4+ items
+* Opening: hook + keyword + relevance
+* Flow: Situation → Breakdown → Insight → Takeaway
+* Ending: clear next step
+
+---
+
+## SEO (Natural)
+
+* Keyword in H1, intro, 1–2 H2s, meta
+* Density: 1–2%
+* H2s answer real queries
+* Use descriptive internal links
+
+---
+
+## Language Guide
+
+| Avoid          | Use          |
+| -------------- | ------------ |
+| neighborhood   | locality     |
+| commute        | travel time  |
+| infrastructure | roads, metro |
+| amenities      | facilities   |
+| utilize        | use          |
+| comprehensive  | detailed     |
+
+---
+
+## Messaging Intent
+
+Every piece must do at least one:
+
+* Interpretation (what it means)
+* Evaluation (compare options)
+* Guidance (how to decide)
+* Awareness (risks/mistakes)
+
+---
+
+## Boundaries
+
+Avoid:
+
+* Sales pressure
+* Overpromising
+* Fear-based urgency
+* Vague claims
+* Casual tone
+
+---
+
+## Trust Principles
+
+Build trust through:
+
+* Consistency
+* Transparency
+* Real buyer understanding
+* Logic over persuasion
+
+---
+
+## Brand Voice
+
+Measured authority. Clear thinking. Intentional guidance.
+Every interaction should leave you **more informed and confident**.
+
+---
+
+## Closing Principle
+
+**Clarity builds trust. Trust drives action.**

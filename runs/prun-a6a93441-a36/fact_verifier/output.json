@@ -1,0 +1,286 @@
+{
+  "article_id": "art-aafe8562-21c",
+  "fact_check_score": 0.58,
+  "verification": {
+    "article_id": "hosa_road_guide_2024",
+    "total_claims": 28,
+    "claims": [
+      {
+        "claim_text": "Forum Neighborhood Mall stands as the primary shopping destination for Hosa Road residents, located just 15 minutes away via Hosur Road",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for distance/travel time claim",
+        "reasoning": "Travel time estimates are subjective and depend on traffic conditions. No source provided. Plausible but unverified."
+      },
+      {
+        "claim_text": "Forum Neighborhood Mall houses over 80 retail outlets, a multiplex cinema, and a dedicated food court with 12 dining options",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify exact number of outlets and dining options with mall management",
+        "reasoning": "Specific numbers (80 outlets, 12 dining options) lack citation. These details may have changed and need verification."
+      },
+      {
+        "claim_text": "Hosa Road Lake has a 2.5-kilometer perimeter path",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify lake perimeter measurement",
+        "reasoning": "Specific measurement lacks source. Plausible but unverified."
+      },
+      {
+        "claim_text": "Hosa Road is located at 874 meters above sea level",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Matches knowledge base: 'Hosa Road and its layouts are located at approximately 874 metres above sea level in Bengaluru South taluk.'"
+      },
+      {
+        "claim_text": "The elevated position at 874 meters above sea level provides relatively cleaner air compared to central Bangalore areas",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide air quality data or environmental study",
+        "reasoning": "Causal claim about air quality lacks scientific support. Knowledge base notes 'Hosa Road's proximity to major arterial roads exposes it to vehicular pollution similar to other Bangalore corridors,' which contradicts this claim."
+      },
+      {
+        "claim_text": "The stretch from Hosa Road to Sarjapur Road offers a scenic 8-kilometer route for cycling",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify exact distance",
+        "reasoning": "Specific distance claim lacks source. Plausible given KB mentions Hosa Road connects to Sarjapur Road, but unverified."
+      },
+      {
+        "claim_text": "Cult.fit and Gold's Gym operate branches within 2 kilometers of the main road",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current gym locations",
+        "reasoning": "Specific location claims lack citation. Gym locations may have changed. Plausible but unverified."
+      },
+      {
+        "claim_text": "Monthly gym memberships range from \u20b92,500 to \u20b94,500",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current pricing with gym chains",
+        "reasoning": "Pricing information lacks source and may be outdated. Gym membership costs fluctuate regularly."
+      },
+      {
+        "claim_text": "Prestige Shantiniketan and Sobha Dream Acres have well-regarded sports facilities",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide resident reviews or facility documentation",
+        "reasoning": "Subjective quality claim lacks supporting evidence. Plausible but unverified."
+      },
+      {
+        "claim_text": "Open grounds near Electronic City Phase 1 are about 10 minutes from Hosa Road",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify travel time",
+        "reasoning": "Travel time estimate lacks source and depends on traffic conditions."
+      },
+      {
+        "claim_text": "McDonald's and KFC serve the area from locations near the Electronic City junction, staying open until 11 PM on weekdays",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current operating hours",
+        "reasoning": "Operating hours may have changed. No source provided. Plausible but unverified."
+      },
+      {
+        "claim_text": "Domino's Pizza operates two outlets within the Hosa Road catchment area",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify number of outlets",
+        "reasoning": "Specific outlet count lacks source. Store locations may have changed."
+      },
+      {
+        "claim_text": "Domino's average delivery times are 25-30 minutes to most residential societies",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide delivery time data",
+        "reasoning": "Delivery times vary by location and time. Claim lacks supporting data."
+      },
+      {
+        "claim_text": "Saravana Bhavan maintains an outlet on Hosur Road with thalis priced between \u20b9180-\u20b9280",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current pricing and outlet status",
+        "reasoning": "Pricing and outlet information lacks source. Prices may have changed since article writing."
+      },
+      {
+        "claim_text": "Caf\u00e9 Coffee Day and Starbucks both have presence in nearby Electronic City",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current outlet locations",
+        "reasoning": "Outlet locations may have changed. No source provided."
+      },
+      {
+        "claim_text": "Street food vendors near bus stops and metro construction sites typically operate from 6 AM to 10 PM",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify vendor operating hours",
+        "reasoning": "Operating hours for informal vendors are variable and lack documentation."
+      },
+      {
+        "claim_text": "North Karnataka cuisine restaurants near Kaikondrahalli junction serve meals averaging \u20b9150-\u20b9200 per person",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current pricing",
+        "reasoning": "Price averages lack source and may be outdated."
+      },
+      {
+        "claim_text": "Evening food stalls set up along the main road offer snacks and operate until around 9 PM",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify vendor operating patterns",
+        "reasoning": "Informal vendor operations are variable and lack documentation."
+      },
+      {
+        "claim_text": "Darshinis serve idli, vada, and filter coffee from as early as 6:30 AM with prices at \u20b940-\u20b960 for a complete breakfast",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current pricing",
+        "reasoning": "Specific pricing lacks source and may be outdated."
+      },
+      {
+        "claim_text": "Fine dining options like Toit and Arbor Brewing Company in Koramangala are within 20 minutes' reach",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify travel time",
+        "reasoning": "Travel time estimate lacks source and depends on traffic conditions."
+      },
+      {
+        "claim_text": "The Leela Palace Bangalore is located about 25 minutes away via ORR",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify travel time",
+        "reasoning": "Travel time estimate lacks source and depends on traffic conditions."
+      },
+      {
+        "claim_text": "The Leela Palace Bangalore offers Jamavar for Indian cuisine and Le Cirque for international fare",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current restaurant names and offerings",
+        "reasoning": "Restaurant names and menus may have changed. No source provided."
+      },
+      {
+        "claim_text": "PVR Cinemas at Forum Mall features 8 screens",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify number of screens",
+        "reasoning": "Specific screen count lacks source. Theater configurations may change."
+      },
+      {
+        "claim_text": "Hosa Road is a major connector between Sarjapur Road and Hosur Road",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Matches knowledge base: 'Hosa Road is a major corridor in South/Southeast Bengaluru connecting Sarjapur Main Road near Kaikondrahalli to Hosur Road near Dream Paradise Layout and Electronic City.'"
+      },
+      {
+        "claim_text": "Hosa Road has evolved from a simple transit route into a vibrant locality with its own character and attractions",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide development timeline or documentation",
+        "reasoning": "Qualitative claim about area evolution lacks supporting evidence."
+      },
+      {
+        "claim_text": "Hosa Road is strategically located near Electronic City and major IT parks",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Matches knowledge base: 'Hosa Road in southern Bengaluru is a high-demand residential\u2013commercial corridor linking Hosur Road and Sarjapur Road with connectivity to Electronic City, ORR, and major IT parks.'"
+      },
+      {
+        "claim_text": "Hosa Road Lake is currently undergoing restoration work as of 2024",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current restoration status",
+        "reasoning": "Time-sensitive claim about ongoing work lacks source. Status may have changed."
+      }
+    ],
+    "summary": {
+      "verified": 3,
+      "flagged": 24,
+      "unverifiable": 1,
+      "overall_score": 0.58
+    }
+  }
+}

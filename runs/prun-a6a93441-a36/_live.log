@@ -1,0 +1,280 @@
+
+============================================================
+[Pipeline prun-a6a93441-a36] Layer 3 — 12 articles
+============================================================
+
+--- [1/12] Hosa Road Bangalore FAQ: 25+ Common Questions About Living, Property & Amenities ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Hosa Road Bangalore FAQ: 25+ Common Questions About Living, Property & Amenities
+  ✅ Written 1816 words
+└─ [lead_writer] complete in 53.33s ($0.0491, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Hosa Road Bangalore FAQ: 25+ Common Questions About Living, Property & Amenities
+  ✅ Score: 0.42
+└─ [fact_verifier] complete in 21.65s ($0.0149, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Hosa Road Bangalore FAQ: 25+ Common Questions About Living, Property & Amenities
+  Readability: 17.5
+  ✅ Brand score: 7.0
+└─ [brand_auditor] complete in 32.53s ($0.0135, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Hosa Road Bangalore FAQ: 25+ Common Questions About Living, Property & Amenities
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 5.94s ($0.0055, 0 SERP, 1 LLM)
+
+--- [2/12] Hosa Road Bangalore: Complete Guide to Living, Property Prices & Amenities 2024 ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Hosa Road Bangalore: Complete Guide to Living, Property Prices & Amenities 2024
+  ✅ Written 2470 words
+└─ [lead_writer] complete in 85.83s ($0.0683, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Hosa Road Bangalore: Complete Guide to Living, Property Prices & Amenities 2024
+  ✅ Score: 0.58
+└─ [fact_verifier] complete in 23.77s ($0.0160, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Hosa Road Bangalore: Complete Guide to Living, Property Prices & Amenities 2024
+  Readability: 23.9
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 16.82s ($0.0096, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Hosa Road Bangalore: Complete Guide to Living, Property Prices & Amenities 2024
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 10.08s ($0.0069, 0 SERP, 1 LLM)
+
+--- [3/12] Living in Hosa Road Bangalore: Safety, Reviews & Resident Experiences 2024 ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Living in Hosa Road Bangalore: Safety, Reviews & Resident Experiences 2024
+  ✅ Written 1848 words
+└─ [lead_writer] complete in 64.96s ($0.0490, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Living in Hosa Road Bangalore: Safety, Reviews & Resident Experiences 2024
+  ✅ Score: 0.62
+└─ [fact_verifier] complete in 22.38s ($0.0151, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Living in Hosa Road Bangalore: Safety, Reviews & Resident Experiences 2024
+  Readability: 23.3
+  ✅ Brand score: 7.6
+└─ [brand_auditor] complete in 13.84s ($0.0089, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Living in Hosa Road Bangalore: Safety, Reviews & Resident Experiences 2024
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 5.82s ($0.0044, 0 SERP, 1 LLM)
+
+--- [4/12] Hosa Road Property Prices 2024: Land Rates, Apartment Costs & Investment Analysis ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Hosa Road Property Prices 2024: Land Rates, Apartment Costs & Investment Analysis
+  ✅ Written 1732 words
+└─ [lead_writer] complete in 59.57s ($0.0505, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Hosa Road Property Prices 2024: Land Rates, Apartment Costs & Investment Analysis
+  ✅ Score: 0.58
+└─ [fact_verifier] complete in 21.68s ($0.0155, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Hosa Road Property Prices 2024: Land Rates, Apartment Costs & Investment Analysis
+  Readability: 33.7
+  ✅ Brand score: 7.4
+└─ [brand_auditor] complete in 15.46s ($0.0090, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Hosa Road Property Prices 2024: Land Rates, Apartment Costs & Investment Analysis
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 5.32s ($0.0041, 0 SERP, 1 LLM)
+
+--- [5/12] Hosa Road Apartments for Rent: 2BHK, 3BHK Options & Rental Guide 2024 ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Hosa Road Apartments for Rent: 2BHK, 3BHK Options & Rental Guide 2024
+  ✅ Written 1710 words
+└─ [lead_writer] complete in 102.08s ($0.0521, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Hosa Road Apartments for Rent: 2BHK, 3BHK Options & Rental Guide 2024
+  ✅ Score: 0.62
+└─ [fact_verifier] complete in 24.65s ($0.0179, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Hosa Road Apartments for Rent: 2BHK, 3BHK Options & Rental Guide 2024
+  Readability: 28.4
+  ✅ Brand score: 6.2
+└─ [brand_auditor] complete in 24.13s ($0.0128, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Hosa Road Apartments for Rent: 2BHK, 3BHK Options & Rental Guide 2024
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 5.39s ($0.0043, 0 SERP, 1 LLM)
+
+--- [6/12] Hosa Road Metro Station: Timings, Routes & Complete Transportation Guide 2024 ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Hosa Road Metro Station: Timings, Routes & Complete Transportation Guide 2024
+  ✅ Written 1518 words
+└─ [lead_writer] complete in 50.93s ($0.0435, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Hosa Road Metro Station: Timings, Routes & Complete Transportation Guide 2024
+  ✅ Score: 0.79
+└─ [fact_verifier] complete in 20.52s ($0.0153, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Hosa Road Metro Station: Timings, Routes & Complete Transportation Guide 2024
+  Readability: 31.6
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 21.64s ($0.0127, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Hosa Road Metro Station: Timings, Routes & Complete Transportation Guide 2024
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 5.06s ($0.0043, 0 SERP, 1 LLM)
+
+--- [7/12] Schools & Hospitals Near Hosa Road: Complete Amenities Guide for Families 2024 ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Schools & Hospitals Near Hosa Road: Complete Amenities Guide for Families 2024
+  ✅ Written 1627 words
+└─ [lead_writer] complete in 54.22s ($0.0465, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Schools & Hospitals Near Hosa Road: Complete Amenities Guide for Families 2024
+  ✅ Score: 0.62
+└─ [fact_verifier] complete in 22.15s ($0.0159, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Schools & Hospitals Near Hosa Road: Complete Amenities Guide for Families 2024
+  Readability: 21.4
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 18.25s ($0.0105, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Schools & Hospitals Near Hosa Road: Complete Amenities Guide for Families 2024
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 4.95s ($0.0041, 0 SERP, 1 LLM)
+
+--- [8/12] Hosa Road vs Whitefield: Which Bangalore Area is Better for Living & Investment? ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Hosa Road vs Whitefield: Which Bangalore Area is Better for Living & Investment?
+  ✅ Written 1573 words
+└─ [lead_writer] complete in 51.3s ($0.0465, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Hosa Road vs Whitefield: Which Bangalore Area is Better for Living & Investment?
+  ✅ Score: 0.68
+└─ [fact_verifier] complete in 22.68s ($0.0162, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Hosa Road vs Whitefield: Which Bangalore Area is Better for Living & Investment?
+  Readability: 19.1
+  ✅ Brand score: 7.2
+└─ [brand_auditor] complete in 24.0s ($0.0151, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Hosa Road vs Whitefield: Which Bangalore Area is Better for Living & Investment?
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 7.77s ($0.0058, 0 SERP, 1 LLM)
+
+--- [9/12] Is Hosa Road Urban or Rural? Development Status & Infrastructure Analysis 2024 ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Is Hosa Road Urban or Rural? Development Status & Infrastructure Analysis 2024
+  ✅ Written 1278 words
+└─ [lead_writer] complete in 46.58s ($0.0388, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Is Hosa Road Urban or Rural? Development Status & Infrastructure Analysis 2024
+  ✅ Score: 0.72
+└─ [fact_verifier] complete in 19.41s ($0.0145, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Is Hosa Road Urban or Rural? Development Status & Infrastructure Analysis 2024
+  Readability: 28.8
+  ✅ Brand score: 7.4
+└─ [brand_auditor] complete in 12.55s ($0.0075, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Is Hosa Road Urban or Rural? Development Status & Infrastructure Analysis 2024
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 4.61s ($0.0039, 0 SERP, 1 LLM)
+
+--- [10/12] Hosa Road to Electronic City: Distance, Travel Time & Best Routes 2024 ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Hosa Road to Electronic City: Distance, Travel Time & Best Routes 2024
+  ✅ Written 1565 words
+└─ [lead_writer] complete in 54.2s ($0.0493, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Hosa Road to Electronic City: Distance, Travel Time & Best Routes 2024
+  ✅ Score: 0.68
+└─ [fact_verifier] complete in 24.37s ($0.0170, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Hosa Road to Electronic City: Distance, Travel Time & Best Routes 2024
+  Readability: 30.0
+  ✅ Brand score: 7.8
+└─ [brand_auditor] complete in 9.14s ($0.0060, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Hosa Road to Electronic City: Distance, Travel Time & Best Routes 2024
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 6.89s ($0.0051, 0 SERP, 1 LLM)
+
+--- [11/12] Hosa Road Pin Code, Location Map & Address Details - Complete Guide ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Hosa Road Pin Code, Location Map & Address Details - Complete Guide
+  ✅ Written 1396 words
+└─ [lead_writer] complete in 46.8s ($0.0402, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Hosa Road Pin Code, Location Map & Address Details - Complete Guide
+  ✅ Score: 0.78
+└─ [fact_verifier] complete in 21.58s ($0.0153, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Hosa Road Pin Code, Location Map & Address Details - Complete Guide
+  Readability: 36.9
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 19.1s ($0.0115, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Hosa Road Pin Code, Location Map & Address Details - Complete Guide
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 6.73s ($0.0059, 0 SERP, 1 LLM)
+
+--- [12/12] Things to Do in Hosa Road Bangalore: Entertainment, Dining & Recreation Guide ---
+
+┌─ [lead_writer] starting (run=prun-a6a93441-a36)
+[lead_writer] Writing: Things to Do in Hosa Road Bangalore: Entertainment, Dining & Recreation Guide
+  ✅ Written 1939 words
+└─ [lead_writer] complete in 69.11s ($0.0507, 0 SERP, 1 LLM)
+
+┌─ [fact_verifier] starting (run=prun-a6a93441-a36)
+[fact_verifier] Checking: Things to Do in Hosa Road Bangalore: Entertainment, Dining & Recreation Guide
+  ✅ Score: 0.58
+└─ [fact_verifier] complete in 22.96s ($0.0158, 0 SERP, 1 LLM)
+
+┌─ [brand_auditor] starting (run=prun-a6a93441-a36)
+[brand_auditor] Auditing: Things to Do in Hosa Road Bangalore: Entertainment, Dining & Recreation Guide
+  Readability: 29.4
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 27.41s ($0.0151, 0 SERP, 1 LLM)
+
+┌─ [meta_tagger] starting (run=prun-a6a93441-a36)
+[meta_tagger] Tagging: Things to Do in Hosa Road Bangalore: Entertainment, Dining & Recreation Guide
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 5.22s ($0.0042, 0 SERP, 1 LLM)

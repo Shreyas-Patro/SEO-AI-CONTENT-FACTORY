@@ -1,38 +1,35 @@
 """
-agents/faq_architect.py — v5 (cluster-level FAQ generation)
-
-Generates FAQs for ALL articles in a cluster in one pass.
-This is cheaper than calling per-article.
+agents/faq_architect.py — v5.1 (generates FAQs for ALL articles reliably)
 """
 
 import json
-from db.sqlite_ops import get_article, get_articles_by_cluster, update_article
+from db.sqlite_ops import get_articles_by_cluster, update_article
 from db.pipeline_state import StateKeys, PipelineState
 from llm import call_llm_json
 from agents.base import AgentBase
 
 
-FAQ_SYSTEM_PROMPT = """You are an AEO (Answer Engine Optimization) specialist for Canvas Homes, a Bangalore real estate platform.
+FAQ_SYSTEM = """You are an AEO specialist for Canvas Homes, a Bangalore real estate platform.
 
-Generate 5-8 FAQs per article that are optimized for:
-1. Google Featured Snippets (40-60 word answers)
-2. Voice search (question starts with who/what/where/when/why/how)
-3. AI answer engines (clear, factual, self-contained answers)
+You MUST generate 5-8 FAQs for EVERY article listed below. Do NOT skip any article.
 
 Each FAQ must:
-- Be a real question people search for
-- Have a concise, factual answer (40-60 words)
+- Be a real question people search for (start with who/what/where/when/why/how)
+- Have a factual answer of 40-60 words (featured snippet sweet spot)
 - Include at least one specific data point where possible
 - Target a unique long-tail keyword
 
-Return STRICT JSON:
+CRITICAL: Your response MUST contain an entry for EVERY article_id provided.
+If you have 12 articles, you must return 12 keys in faqs_by_article.
+
+Return STRICT JSON only — no markdown, no commentary:
 {
   "faqs_by_article": {
-    "article_id_1": [
-      {"question": "What is...?", "answer": "...", "target_keyword": "..."}
+    "art-xxxxx": [
+      {"question": "...", "answer": "...", "target_keyword": "..."}
     ]
   },
-  "total_faqs": 50,
+  "total_faqs": 72,
   "summary": "..."
 }"""
 
@@ -44,13 +41,23 @@ class FAQArchitectAgent(AgentBase):
     OUTPUT_REQUIRED = ["faqs_by_article", "total_faqs"]
     OUTPUT_NON_EMPTY = ["faqs_by_article"]
 
+    def _validate_output(self, output):
+        problems = super()._validate_output(output)
+        if isinstance(output, dict):
+            fba = output.get("faqs_by_article", {})
+            if isinstance(fba, dict) and len(fba) < 3:
+                problems.append(
+                    f"Only {len(fba)} articles have FAQs — expected at least 6. "
+                    f"LLM likely truncated. Will retry with stronger prompt."
+                )
+        return problems
+
     def _execute(self, state: PipelineState, agent_input: dict) -> dict:
         cluster_id = agent_input.get("cluster_id") or self.cluster_id or state.cluster_id
         topic = agent_input.get("topic") or state.topic or ""
 
         print(f"[{self.NAME}] Generating FAQs for cluster {cluster_id}")
 
-        # Get keyword data
         kw_map = (
             agent_input.get("keyword_map")
             or state.get(StateKeys.KEYWORD_MAP, {})
@@ -58,7 +65,6 @@ class FAQArchitectAgent(AgentBase):
         )
         kw_groups = kw_map.get("keyword_groups", [])
 
-        # Get cluster plan
         cluster_plan = (
             agent_input.get("cluster_plan")
             or state.get(StateKeys.CLUSTER_PLAN, {})
@@ -67,41 +73,49 @@ class FAQArchitectAgent(AgentBase):
 
         # Get articles from DB
         articles = get_articles_by_cluster(cluster_id) if cluster_id else []
-        if not articles:
-            # Try from cluster plan
-            articles_from_plan = cluster_plan.get("articles", [])
-            print(f"  No DB articles, using {len(articles_from_plan)} from plan")
-        else:
-            print(f"  Found {len(articles)} articles in DB")
+        print(f"  Found {len(articles)} articles in DB")
 
-        # Build compact article list for the prompt
-        compact_articles = []
+        if not articles:
+            return {"faqs_by_article": {}, "total_faqs": 0, "total_articles": 0, "summary": "No articles found"}
+
+        # Build article list with IDs prominently displayed
+        article_lines = []
         for art in articles:
             outline = json.loads(art.get("outline", "[]") or "[]")
             keywords = json.loads(art.get("target_keywords", "{}") or "{}")
-            compact_articles.append({
-                "id": art["id"],
-                "title": art["title"],
-                "type": art["article_type"],
-                "primary_keyword": keywords.get("primary", art["title"]) if isinstance(keywords, dict) else art["title"],
-                "outline_preview": outline[:8],
-            })
+            pk = keywords.get("primary", art["title"]) if isinstance(keywords, dict) else art["title"]
+            article_lines.append(
+                f'  - ID: "{art["id"]}" | Title: "{art["title"]}" | Type: {art["article_type"]} | Primary KW: "{pk}"'
+            )
 
-        prompt = f"""Generate FAQs for all articles in this content cluster about "{topic}".
+        articles_block = "\n".join(article_lines)
 
-ARTICLES ({len(compact_articles)}):
-{json.dumps(compact_articles, indent=2)[:5000]}
+        # Retry-aware prompt
+        retry_note = ""
+        if self._retry_attempt > 1:
+            retry_note = f"""
 
-KEYWORD GROUPS (top 5):
-{json.dumps(kw_groups[:5], indent=2)[:3000]}
+WARNING: YOUR PREVIOUS RESPONSE ONLY HAD FAQs FOR A FEW ARTICLES.
+YOU MUST GENERATE FAQs FOR ALL {len(articles)} ARTICLES.
+Every article ID listed below MUST appear as a key in faqs_by_article."""
 
-Generate 5-8 FAQs per article. Return JSON with faqs_by_article keyed by article ID.
-"""
+        prompt = f"""Generate 5-8 FAQs for EACH of these {len(articles)} articles about "{topic}".
 
+ARTICLES (you MUST generate FAQs for every single one):
+{articles_block}
+
+KEYWORD GROUPS for context:
+{json.dumps(kw_groups[:5], indent=2, default=str)[:2000]}
+{retry_note}
+
+Return JSON with faqs_by_article containing ALL {len(articles)} article IDs as keys."""
+
+        # Use architect model (Sonnet) for reliability on large structured output
         result = call_llm_json(
-            prompt, system=FAQ_SYSTEM_PROMPT, model_role="bulk",
+            prompt, system=FAQ_SYSTEM,
+            model_role="architect",
             max_tokens=8000,
-            cache_namespace=f"{topic}:faq_architect{self._retry_suffix()}",
+            cache_namespace=f"{topic}:faq_v2{self._retry_suffix()}",
         )
         self._track_llm(result)
 
@@ -116,13 +130,13 @@ Generate 5-8 FAQs per article. Return JSON with faqs_by_article keyed by article
                 try:
                     update_article(art_id, faq_json=json.dumps(faqs))
                 except Exception as e:
-                    print(f"  ⚠️  Could not save FAQs for {art_id}: {e}")
+                    print(f"  Warning: Could not save FAQs for {art_id}: {e}")
 
-        print(f"  ✅ Generated {total_faqs} FAQs across {len(faqs_by_article)} articles")
+        print(f"  Done: {total_faqs} FAQs across {len(faqs_by_article)} articles")
 
         return {
             "faqs_by_article": faqs_by_article,
             "total_faqs": total_faqs,
             "total_articles": len(faqs_by_article),
-            "summary": parsed.get("summary", ""),
+            "summary": parsed.get("summary", f"{total_faqs} FAQs for {len(faqs_by_article)} articles"),
         }

@@ -1,0 +1,130 @@
+{
+  "topic": "Hosa Road",
+  "keyword_map": {
+    "topic": "Hosa Road",
+    "keyword_groups": [
+      {
+        "group_name": "Hosa Road Livability & Safety",
+        "primary_keyword": "Is Hosa Road a good place to live",
+        "supporting_keywords": [
+          "living in Hosa Road Bangalore",
+          "How safe is Hosa Road at night",
+          "How developed is Hosa Road",
+          "Living in hosa road bangalore reviews",
+          "Hosa road review reddit",
+          "Hosa Road Bangalore guide"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "Hosa Road Property Pricing & Costs",
+        "primary_keyword": "Hosa Road property rate per sq ft",
+        "supporting_keywords": [
+          "What is the price of Hosa Road land",
+          "Hosa Road property price",
+          "Living in hosa road bangalore price",
+          "What is the cost of a 30 * 40 site in Bangalore",
+          "Bangalore hosa road property price"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 68
+      },
+      {
+        "group_name": "Hosa Road Rentals & Apartments",
+        "primary_keyword": "Hosa Road Apartments for rent",
+        "supporting_keywords": [
+          "2BHK rent Hosa Road",
+          "Hosa Road rent",
+          "Hosa Road flat for sale",
+          "Living in hosa road bangalore for sale",
+          "Affordable living in hosa road bangalore"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "medium",
+        "competition": "high",
+        "opportunity_score": 65
+      },
+      {
+        "group_name": "Hosa Road Location & Navigation",
+        "primary_keyword": "Hosa Road Bangalore",
+        "supporting_keywords": [
+          "What is Hosa Road",
+          "Hosa road bangalore map",
+          "Hosa Road directions",
+          "Hosa road bangalore distance",
+          "What is the pin code of Hosa Road Bangalore",
+          "Hosa Road location"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 70
+      },
+      {
+        "group_name": "Hosa Road Metro & Transportation",
+        "primary_keyword": "hosa road metro station",
+        "supporting_keywords": [
+          "Are there public transport options on Hosa Road",
+          "hosa road metro timings",
+          "hosa road to majestic metro",
+          "hosa road bus stop",
+          "hosa road to electronic city",
+          "hosa road to whitefield distance"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "Hosa Road Amenities & Facilities",
+        "primary_keyword": "schools near Hosa Road",
+        "supporting_keywords": [
+          "hospitals near Hosa Road",
+          "best restaurants Hosa Road",
+          "hosa road government hospital",
+          "things to do in Hosa Road"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 92
+      },
+      {
+        "group_name": "Hosa Road Urban Classification",
+        "primary_keyword": "Is Hosa Road urban or rural",
+        "supporting_keywords": [
+          "Is Hosa Road Bangalore urban or rural",
+          "hosa road bangalore rural or urban",
+          "How developed is Hosa Road"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 75
+      },
+      {
+        "group_name": "Hosa Road vs Other Bangalore Areas",
+        "primary_keyword": "Hosa Road vs Whitefield",
+        "supporting_keywords": [
+          "Which area is best for living in Bangalore",
+          "Is Whitefield, Bangalore a posh area",
+          "Which is the cheapest area in Bangalore",
+          "Which is the costliest area in Bangalore",
+          "Where do most billionaires live in Bangalore",
+          "Where do most CEOs live in Bangalore"
+        ],
+        "intent": "comparison",
+        "estimated_volume": "medium",
+        "competition": "high",
+        "opportunity_score": 68
+      }
+    ],
+    "summary": "Eight keyword groups targeting Hosa Road real estate searches across livability, pricing, rentals, navigation, transportation, amenities, classification, and comparative analysis. Highest opportunity lies in amenities content (92 score) and metro/transportation guides (78 score) with low competitor coverage."
+  }
+}

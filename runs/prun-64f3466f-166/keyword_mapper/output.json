@@ -1,0 +1,123 @@
+{
+  "topic": "Sarjapur",
+  "keyword_groups": [
+    {
+      "group_name": "Sarjapur Property Pricing & Costs",
+      "primary_keyword": "Sarjapur property price",
+      "supporting_keywords": [
+        "cost of land in Sarjapur",
+        "Sarjapur property rate per sq ft",
+        "price of 2 BHK in Sarjapur",
+        "price of 3 BHK in Sarjapur",
+        "land rate in Sarjapur",
+        "cost of 30 * 40 site in Bangalore"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "high",
+      "opportunity_score": 65
+    },
+    {
+      "group_name": "Sarjapur Rental Market & Living Costs",
+      "primary_keyword": "Sarjapur rent",
+      "supporting_keywords": [
+        "2BHK rent Sarjapur",
+        "rent of room in Sarjapur",
+        "cost of living in Sarjapur Bangalore",
+        "Sarjapur Bangalore 1 BHK rent",
+        "living in Sarjapur Bangalore"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "medium",
+      "opportunity_score": 72
+    },
+    {
+      "group_name": "Sarjapur Area Guide & Lifestyle",
+      "primary_keyword": "Sarjapur Bangalore guide",
+      "supporting_keywords": [
+        "Is Sarjapur good for living",
+        "Is Sarjapur a posh area in Bangalore",
+        "Why is Sarjapur booming",
+        "Sarjapur review",
+        "living in Sarjapur Bangalore reddit",
+        "things to do in Sarjapur"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "medium",
+      "opportunity_score": 75
+    },
+    {
+      "group_name": "Sarjapur Location & Connectivity",
+      "primary_keyword": "Sarjapur Bangalore",
+      "supporting_keywords": [
+        "How far is Sarjapur from the airport",
+        "Sarjapur to Whitefield distance",
+        "Sarjapur metro station",
+        "Sarjapur near railway station",
+        "Sarjapur Road Bangalore",
+        "Sarjapur pincode"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "high",
+      "opportunity_score": 68
+    },
+    {
+      "group_name": "Sarjapur vs Other Bangalore Areas",
+      "primary_keyword": "Sarjapur vs Whitefield",
+      "supporting_keywords": [
+        "Which is better Sarjapur or Electronic City",
+        "Sarjapur Bangalore comparison",
+        "Is Sarjapur expensive"
+      ],
+      "intent": "comparison",
+      "estimated_volume": "medium",
+      "competition": "low",
+      "opportunity_score": 80
+    },
+    {
+      "group_name": "Sarjapur Amenities & Services",
+      "primary_keyword": "hospitals near Sarjapur",
+      "supporting_keywords": [
+        "schools near Sarjapur",
+        "best restaurants Sarjapur",
+        "Sarjapur Bangalore restaurants",
+        "Sarjapur Bangalore hotels"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "low",
+      "opportunity_score": 85
+    },
+    {
+      "group_name": "Sarjapur Real Estate Opportunities",
+      "primary_keyword": "Sarjapur flat for sale",
+      "supporting_keywords": [
+        "Sarjapur new projects",
+        "Sarjapur property",
+        "Sarjapur real estate"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "medium",
+      "competition": "high",
+      "opportunity_score": 70
+    },
+    {
+      "group_name": "Sarjapur Attractions & Things to Do",
+      "primary_keyword": "What to do in Sarjapur Road",
+      "supporting_keywords": [
+        "What is Sarjapur famous for",
+        "Sarjapur Fort",
+        "Sarjapur attractions",
+        "things to do in Sarjapur"
+      ],
+      "intent": "informational",
+      "estimated_volume": "medium",
+      "competition": "low",
+      "opportunity_score": 78
+    }
+  ],
+  "summary": "Sarjapur keyword data reveals strong demand across property pricing, rental markets, lifestyle guides, and location-based queries. High-opportunity gaps exist in amenities/services content and area comparisons with minimal competitor coverage, while transactional property queries face established competition from major portals."
+}

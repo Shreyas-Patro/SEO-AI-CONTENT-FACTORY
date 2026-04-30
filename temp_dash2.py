@@ -369,7 +369,7 @@ with st.sidebar:
 # ══════════════════════════════════════════════════════════════════════════
 st.markdown("# 🏠 Canvas Homes AI Pipeline")
 
-tabs = st.tabs(["🚀 Pipeline", "📝 Articles", "📊 Opportunity", "📥 Ingestion", "🕸️ Graph", "🗂️ Artifacts"])
+tabs = st.tabs(["🚀 Pipeline", "📝 Articles", "📊 Opportunity", "📥 Ingestion", "🕸️ Graph", "🗂️ Artifacts","🔗 Interlinking"])
 
 # ─── TAB 1: Pipeline ──────────────────────────────────────────────────────
 with tabs[0]:
@@ -637,3 +637,66 @@ with tabs[5]:
             with st.expander(f"📁 {agent_name} ({len(files)} files)"):
                 for f in files:
                     st.caption(f"`{f['kind']}` · {f['byte_size']} bytes · `{f['file_path']}`")
+
+# ─── TAB 7: Interlinking ──────────────────────────────────────────────
+with tabs[6]:
+    st.markdown("### 🔗 Internal Link Engine")
+    st.caption("Process written articles through the interlinking pipeline to add cross-links.")
+
+    rid = st.session_state.viewing_run_id
+    if not rid:
+        st.info("Open a run first.")
+    else:
+        run = m["get_pipeline_run"](rid)
+        cluster_id = run.get("cluster_id") if run else None
+
+        if not cluster_id:
+            st.info("Run Layer 2 first to create articles.")
+        else:
+            st.markdown("#### How Interlinking Works")
+            st.markdown("""
+1. **Export** written articles as .md files to a folder
+2. **Run** the link engine on that folder (finds semantic matches between articles)
+3. **Review** suggested links in the link engine dashboard
+4. **Inject** approved links back into the markdown files
+            """)
+
+            # Export articles for interlinking
+            if st.button("📦 Export articles for interlinking", key="export_for_links"):
+                try:
+                    from db.sqlite_ops import get_articles_by_cluster
+                    import os
+                    articles = get_articles_by_cluster(cluster_id)
+                    written = [a for a in articles if a.get("content_md")]
+
+                    export_dir = os.path.join("outputs", "interlink_export")
+                    os.makedirs(export_dir, exist_ok=True)
+
+                    count = 0
+                    for art in written:
+                        slug = art.get("slug", "untitled")
+                        keywords = art.get("target_keywords", "{}") or "{}"
+                        frontmatter = f"""---
+title: "{art['title']}"
+slug: "{slug}"
+url: "/{slug}"
+---
+
+"""
+                        filepath = os.path.join(export_dir, f"{slug}.md")
+                        with open(filepath, "w", encoding="utf-8") as f:
+                            f.write(frontmatter + (art.get("content_md") or ""))
+                        count += 1
+
+                    st.success(f"✅ Exported {count} articles to `{export_dir}/`")
+                    st.code(f"python -m link_engine.cli run {export_dir}", language="bash")
+                    st.caption("Run the command above, then launch the link engine dashboard to review.")
+
+                except Exception as e:
+                    st.error(f"Export failed: {e}")
+
+            # Link to link_engine dashboard
+            st.markdown("---")
+            st.markdown("#### Launch Link Engine Dashboard")
+            st.code("python -m link_engine.cli dashboard", language="bash")
+            st.caption("This opens the link engine's own Streamlit dashboard for reviewing and approving links.")                    

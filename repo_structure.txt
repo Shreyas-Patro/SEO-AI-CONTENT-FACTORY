@@ -6,10 +6,14 @@
 ├── agents
 │   ├── __init__.py
 │   ├── base.py
+│   ├── brand_auditor.py
 │   ├── competitor_spy.py
 │   ├── content_architect.py
+│   ├── fact_verifier.py
 │   ├── faq_architect.py
 │   ├── keyword_mapper.py
+│   ├── lead_writer.py
+│   ├── meta_tagger.py
 │   ├── research_prompt_generator.py
 │   └── trend_scout.py
 ├── artifacts
@@ -22,6 +26,12 @@
 ├── config.yaml
 ├── config.yaml.example
 ├── config_loader.py
+├── dashboard
+│   ├── __init__.py
+│   ├── components
+│   │   └── __init__.py
+│   └── pages
+│       └── __init__.py
 ├── dashboard_components
 │   ├── __init__.py
 │   ├── graph_view.py
@@ -38,7 +48,206 @@
 │   │   │   ├── keyword_mapper
 │   │   │   ├── research_prompt_generator
 │   │   │   └── trend_scout
-│   │   
+│   │   ├── prun-22f0fc68-5a3
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-2e18467b-22b
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   │   └── input.json
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   │       ├── input.json
+│   │   │       ├── metadata.json
+│   │   │       └── output.json
+│   │   ├── prun-39799dd8-955
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-45cf7a60-ec7
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-53a01055-314
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-556a12b9-d19
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-922623b7-947
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-94d5c9d6-cf7
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-9dd4d052-6b1
+│   │   │   └── _pipeline
+│   │   │       └── input.json
+│   │   ├── prun-9dec3a94-c94
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-dc227e9e-9c8
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-dcc3c302-0c0
+│   │   │   └── _pipeline
+│   │   │       └── input.json
+│   │   └── prun-eb2dfd15-a86
+│   │       ├── _pipeline
+│   │       │   └── input.json
+│   │       ├── competitor_spy
+│   │       ├── content_architect
+│   │       ├── faq_architect
+│   │       ├── keyword_mapper
+│   │       ├── research_prompt_generator
+│   │       └── trend_scout
+│   ├── artifacts_legacy_backup
+│   │   ├── prun-0dcf0d39-5f5
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-37d59567-035
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   ├── content_architect
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   ├── prun-8eae1848-012
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   │   ├── input.json
+│   │   │   │   ├── metadata.json
+│   │   │   │   └── output.json
+│   │   │   ├── content_architect
+│   │   │   │   └── input.json
+│   │   │   ├── faq_architect
+│   │   │   ├── keyword_mapper
+│   │   │   │   ├── input.json
+│   │   │   │   ├── metadata.json
+│   │   │   │   └── output.json
+│   │   │   ├── research_prompt_generator
+│   │   │   └── trend_scout
+│   │   │       ├── input.json
+│   │   │       ├── metadata.json
+│   │   │       └── output.json
+│   │   ├── prun-a51029ca-3f2
+│   │   │   ├── _pipeline
+│   │   │   │   └── input.json
+│   │   │   ├── competitor_spy
+│   │   │   │   ├── input.json
+│   │   │   │   ├── metadata.json
+│   │   │   │   └── output.json
+│   │   │   ├── content_architect
+│   │   │   │   ├── input.json
+│   │   │   │   ├── metadata.json
+│   │   │   │   └── output.json
+│   │   │   ├── faq_architect
+│   │   │   │   ├── input.json
+│   │   │   │   └── output.json
+│   │   │   ├── keyword_mapper
+│   │   │   │   ├── input.json
+│   │   │   │   ├── metadata.json
+│   │   │   │   └── output.json
+│   │   │   ├── research_prompt_generator
+│   │   │   │   ├── input.json
+│   │   │   │   ├── metadata.json
+│   │   │   │   └── output.json
+│   │   │   └── trend_scout
+│   │   │       ├── input.json
+│   │   │       ├── metadata.json
+│   │   │       └── output.json
+│   │   └── prun-cf7ca2f3-4f8
+│   │       ├── _pipeline
+│   │       │   └── input.json
+│   │       ├── competitor_spy
+│   │       │   ├── input.json
+│   │       │   ├── metadata.json
+│   │       │   └── output.json
+│   │       ├── content_architect
+│   │       │   ├── input.json
+│   │       │   ├── metadata.json
+│   │       │   └── output.json
+│   │       ├── faq_architect
+│   │       │   ├── input.json
+│   │       │   ├── metadata.json
+│   │       │   └── output.json
+│   │       ├── keyword_mapper
+│   │       │   ├── input.json
+│   │       │   ├── metadata.json
+│   │       │   └── output.json
+│   │       ├── research_prompt_generator
+│   │       │   ├── input.json
+│   │       │   ├── metadata.json
+│   │       │   └── output.json
+│   │       └── trend_scout
+│   │           ├── input.json
+│   │           ├── metadata.json
+│   │           └── output.json
 │   ├── cache
 │   ├── canvas.db
 │   ├── chroma
@@ -47,7 +256,12 @@
 │   │   │   ├── header.bin
 │   │   │   ├── length.bin
 │   │   │   └── link_lists.bin
-│   │   
+│   │   ├── 8263c874-5e21-479c-9d26-1958e04701ab
+│   │   │   ├── data_level0.bin
+│   │   │   ├── header.bin
+│   │   │   ├── index_metadata.pickle
+│   │   │   ├── length.bin
+│   │   │   └── link_lists.bin
 │   │   └── chroma.sqlite3
 │   └── graph.graphml
 ├── db
@@ -61,9 +275,15 @@
 ├── db_viewer.py
 ├── diagnose_db.py
 ├── export
-│   └── __init__.py
+│   ├── __init__.py
+│   └── exporter.py
 ├── fix_db.py
 ├── graph_viewer.py
+├── ingest
+│   ├── __init__.py
+│   ├── chunk.py
+│   ├── extract.py
+│   └── pipeline.py
 ├── ingestion
 │   ├── __init__.py
 │   ├── chunk.py
@@ -71,29 +291,77 @@
 │   └── pipeline.py
 ├── layer2_test.py
 ├── lib
-│   
+│   ├── bindings
+│   │   └── utils.js
+│   ├── tom-select
+│   │   ├── tom-select.complete.min.js
+│   │   └── tom-select.css
+│   └── vis-9.1.2
+│       ├── vis-network.css
+│       └── vis-network.min.js
+├── link_engine
+│   ├── __init__.py
+│   ├── cli.py
+│   ├── config.py
+│   ├── dashboard
+│   │   └── app.py
+│   ├── db
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   └── session.py
+│   ├── reports
+│   │   ├── __init__.py
+│   │   └── reporter.py
+│   └── stages
+│       ├── __init__.py
+│       ├── anchor.py
+│       ├── article_ops.py
+│       ├── chunk.py
+│       ├── embed.py
+│       ├── extract_phrases.py
+│       ├── ingest.py
+│       ├── inject.py
+│       ├── match.py
+│       └── title_phrases.py
 ├── llm.py
 ├── logs
-
+├── migrate.py
 ├── migrate_sharedstate.py
 ├── orchestrator.py
 ├── orchestrator_console_patch.py
 ├── outputs
 │   ├── architect_input_hennur.json
+│   ├── interlink_export
 │   ├── trend_scout_ekhata_in_bangalore.json
 │   ├── trend_scout_home_loan.json
+│   ├── trend_scout_hosa_road.json
+│   ├── trend_scout_hsr_layout.json
+│   ├── trend_scout_koramangala.json
+│   ├── trend_scout_kr_puram.json
+│   ├── trend_scout_property_registration_in_bangalore.json
+│   └── trend_scout_varthur.json
+├── pipeline
 │   └── __init__.py
 ├── pipeline.py
 ├── pipeline_init
 ├── pipeline_init_.py
 ├── prompts
+│   ├── brand_auditor.md
+│   ├── brand_voice.md
 │   ├── competitor_spy.md
 │   ├── content_architect.md
 │   ├── fact_extractor.md
 │   ├── fact_plausibility.md
+│   ├── fact_verifier.md
 │   ├── faq_architect.md
 │   ├── keyword_mapper.md
+│   ├── lead_writer.md
+│   ├── meta_tagger.md
 │   └── trend_scout.md
+├── quick_fix.py
+├── repo_map.json
+├── repo_structure.py
+├── repo_structure.txt
 ├── requirements.txt
 ├── research_docs
 │   └── sample_hsr_layout.md
@@ -106,12 +374,651 @@
 │   │   │   └── input.json
 │   │   ├── run.json
 │   │   └── state.json
-│   ├
+│   ├── prun-08ce6994-4a4
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-0bab4f55-959
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-0dcf0d39-5f5
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-166aca00-f49
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-1dcad8fe-799
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-22f0fc68-5a3
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-24d2d451-313
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── content_architect
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── faq_architect
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── research_prompt_generator
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-2ab2ae4c-4dd
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-2c0c394e-5ad
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-2e18467b-22b
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   └── input.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-3200bf34-479
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-33efbc9b-509
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-37d59567-035
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-39799dd8-955
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-3f2164b9-8f0
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-4251746f-7f6
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-4341cb85-ff1
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-45cf7a60-ec7
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-53a01055-314
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-556a12b9-d19
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-5f83a99c-716
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-6fc18725-15f
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-72fb48be-a94
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-8545e59d-dcd
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── activity.log
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── content_architect
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── faq_architect
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── research_prompt_generator
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   ├── status.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-88629756-a0b
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-887b3a4d-8b1
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── activity.log
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   ├── status.json
+│   │   └── trend_scout
+│   │       └── input.json
+│   ├── prun-8a170893-251
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-8eae1848-012
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── content_architect
+│   │   │   └── input.json
+│   │   ├── keyword_mapper
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-922623b7-947
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-9448195b-558
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-94d5c9d6-cf7
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-9636503e-c98
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-99b5e763-a9e
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-9bb30b21-82c
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── activity.log
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   ├── status.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-9dd4d052-6b1
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-9dec3a94-c94
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-9ea608c4-63b
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── content_architect
+│   │   │   ├── input.json
+│   │   │   └── metadata.json
+│   │   ├── keyword_mapper
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-a0766239-8a8
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-a33e2cd4-408
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-a51029ca-3f2
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── content_architect
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── faq_architect
+│   │   │   ├── input.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── research_prompt_generator
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-a6a93441-a36
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── brand_auditor
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── content_architect
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── fact_verifier
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── faq_architect
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── ingestion
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── layer3_summary
+│   │   │   └── output.json
+│   │   ├── lead_writer
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── meta_tagger
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── research_prompt_generator
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-a6c216eb-2d5
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-a806cce9-ea1
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-b8e261a6-14d
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-bcd9288d-926
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-bd401881-c66
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── ingestion
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-c3b38374-5c1
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-c3e0f418-447
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-c59cb2b0-b08
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── activity.log
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   ├── status.json
+│   │   └── trend_scout
+│   │       └── input.json
+│   ├── prun-cf7ca2f3-4f8
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── content_architect
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── faq_architect
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── ingestion
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── research_prompt_generator
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-d16e00f5-a53
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-d450cf72-3bd
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-d661bbc1-919
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── ingestion
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-dc227e9e-9c8
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-dcc3c302-0c0
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-e37aca7e-4ec
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-e4dd4a33-cf6
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-eb2dfd15-a86
+│   │   └── _pipeline
+│   │       └── input.json
+│   ├── prun-ecfbfeca-a66
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── activity.log
+│   │   ├── competitor_spy
+│   │   │   ├── console.log
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   ├── status.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-edddcc51-60a
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   ├── input.json
+│   │   │   ├── metadata.json
+│   │   │   └── output.json
+│   │   ├── keyword_mapper
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   ├── prun-ede00171-957
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-f05f2241-6bb
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   └── state.json
+│   ├── prun-f1a71367-5fb
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── activity.log
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   ├── status.json
+│   │   └── trend_scout
+│   │       └── input.json
+│   ├── prun-f3428706-6d7
+│   │   ├── _live.log
+│   │   ├── _pipeline
+│   │   │   └── input.json
+│   │   ├── competitor_spy
+│   │   │   └── input.json
+│   │   ├── run.json
+│   │   ├── state.json
+│   │   └── trend_scout
+│   │       ├── input.json
+│   │       ├── metadata.json
+│   │       └── output.json
+│   └── prun-ffb6507d-66a
+│       ├── _pipeline
+│       │   └── input.json
+│       ├── run.json
+│       └── state.json
 ├── state.py
-├
+├── temp_dash.py
 ├── temp_dash2.py
 ├── temp_ouputviewers
-│   
+│   ├── MARKET_INTELLIGENCE.HTML
+│   ├── layer1_demo.html
+│   └── layer2_demo.py
 ├── test
 ├── tests
 │   ├── test_architects.py

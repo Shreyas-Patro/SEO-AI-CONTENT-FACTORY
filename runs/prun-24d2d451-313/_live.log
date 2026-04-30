@@ -1,0 +1,25 @@
+
+============================================================
+[Pipeline prun-24d2d451-313] Layer 2 for 'Hosa Road'
+============================================================
+
+┌─ [content_architect] starting (run=prun-24d2d451-313)
+
+[content_architect] Designing cluster for: Hosa Road
+  8 keyword groups, expecting ≥5 articles
+Loading weights:   0%|                                                                                            | 0/103 [00:00<?, ?it/s]Loading weights: 100%|################################################################################| 103/103 [00:00<00:00, 1904.21it/s]
+  Inserted 12/12 articles
+└─ [content_architect] complete in 220.13s ($0.1245, 0 SERP, 1 LLM)
+
+┌─ [faq_architect] starting (run=prun-24d2d451-313)
+[faq_architect] Generating FAQs for cluster cl-1d2576ef-8ec
+  Found 12 articles in DB
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Generated 2 FAQs across 1 articles
+└─ [faq_architect] complete in 63.56s ($0.0010, 0 SERP, 1 LLM)
+
+┌─ [research_prompt_generator] starting (run=prun-24d2d451-313)
+[research_prompt_generator] Building research prompt for: Hosa Road
+└─ [research_prompt_generator] complete in 23.38s ($0.0269, 0 SERP, 1 LLM)
+
+[Pipeline prun-24d2d451-313] Layer 2 complete.
