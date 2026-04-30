@@ -132,11 +132,50 @@ Return JSON with faqs_by_article containing ALL {len(articles)} article IDs as k
                 except Exception as e:
                     print(f"  Warning: Could not save FAQs for {art_id}: {e}")
 
-        print(f"  Done: {total_faqs} FAQs across {len(faqs_by_article)} articles")
+       # ── Gap-fill: re-prompt for any article with no FAQs ──────────
+        all_article_ids = {a["id"] for a in articles}
+        missing_ids = all_article_ids - set(faqs_by_article.keys())
+
+        if missing_ids:
+            print(f"  Gap-fill: {len(missing_ids)} articles still missing FAQs")
+            missing_articles = [a for a in articles if a["id"] in missing_ids]
+
+            gap_block = "\n".join([
+                f'  - ID: "{a["id"]}" | Title: "{a["title"]}" | Type: {a["article_type"]}'
+                for a in missing_articles
+            ])
+
+            gap_prompt = f"""You previously missed FAQs for these {len(missing_articles)} articles. Generate 5-8 FAQs for EACH:
+
+{gap_block}
+
+Return JSON with faqs_by_article keyed by these exact IDs.
+"""
+            gap_result = call_llm_json(
+                gap_prompt, system=FAQ_SYSTEM,
+                model_role="architect", max_tokens=6000,
+                cache_namespace=f"{topic}:faq_gapfill{self._retry_suffix()}",
+            )
+            self._track_llm(gap_result)
+
+            gap_parsed = gap_result.get("parsed", {})
+            gap_faqs = gap_parsed.get("faqs_by_article", {})
+            for art_id, faqs in gap_faqs.items():
+                if isinstance(faqs, list) and faqs:
+                    faqs_by_article[art_id] = faqs
+                    total_faqs += len(faqs)
+                    try:
+                        update_article(art_id, faq_json=json.dumps(faqs))
+                    except Exception:
+                        pass
+
+        print(f"  Done: {total_faqs} FAQs across {len(faqs_by_article)}/{len(articles)} articles")
 
         return {
             "faqs_by_article": faqs_by_article,
             "total_faqs": total_faqs,
             "total_articles": len(faqs_by_article),
+            "expected_articles": len(articles),
+            "coverage_pct": round(100 * len(faqs_by_article) / max(len(articles), 1), 1),
             "summary": parsed.get("summary", f"{total_faqs} FAQs for {len(faqs_by_article)} articles"),
         }

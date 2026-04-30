@@ -81,8 +81,29 @@ class ContentArchitectAgent(AgentBase):
 
         kw_groups = kw_map.get("keyword_groups", [])
         if not kw_groups:
-            print(f"  ⚠️  No keyword_groups — using fallback for {topic}")
+            print(f"  ⚠️  No keyword_groups — building enriched fallback for {topic}")
+            # Enrich fallback with PAA + related searches if available
+            trend_state = state.get(StateKeys.TREND_DATA, {}) or {}
+            raw = trend_state.get("raw_data", {}) or {}
+            paa = (raw.get("paa_questions") or [])[:8]
+            related = (raw.get("related_searches") or [])[:8]
             kw_groups = self._build_fallback_keyword_groups(topic)
+            if paa:
+                kw_groups.append({
+                    "group_name": f"{topic} FAQs from SERPs",
+                    "primary_keyword": f"{topic} questions",
+                    "supporting_keywords": [str(p) if not isinstance(p, dict) else p.get("question", "") for p in paa],
+                    "intent": "informational", "estimated_volume": "medium",
+                    "competition": "low", "opportunity_score": 75,
+                })
+            if related:
+                kw_groups.append({
+                    "group_name": f"{topic} Related Topics",
+                    "primary_keyword": f"{topic} related",
+                    "supporting_keywords": related,
+                    "intent": "informational", "estimated_volume": "medium",
+                    "competition": "medium", "opportunity_score": 60,
+                })
             kw_map = {**kw_map, "keyword_groups": kw_groups}
 
         self._expected_min_articles = max(int(len(kw_groups) * 0.6), 5)
