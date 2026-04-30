@@ -77,9 +77,18 @@ Score all 5 dimensions and flag passages needing improvement."""
                            f"Readability: {readability.get('flesch_kincaid', '?')}, Brand: {composite}", "")
 
         print(f"  ✅ Brand score: {composite}")
+       # Compute needs_rewrite signal for the supervisor
+        needs_rewrite = (
+            composite < 7.0
+            or readability.get("flesch_kincaid", 0) < 55
+            or len(audit.get("flagged_passages", [])) > 3
+        )
+
         return {
             "article_id": article_id,
             "brand_score": composite,
             "readability": readability,
             "audit": audit,
+            "needs_rewrite": needs_rewrite,
+            "flagged_passages": audit.get("flagged_passages", []),
         }
