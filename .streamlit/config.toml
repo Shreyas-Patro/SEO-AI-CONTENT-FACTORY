@@ -1,10 +1,18 @@
 [server]
-fileWatcherType = "none"
+headless = true
 runOnSave = false
- 
+fileWatcherType = "poll"
+
 [browser]
 gatherUsageStats = false
- 
-[logger]
-level = "warning"
- 
+
+[client]
+showErrorDetails = true
+toolbarMode = "minimal"
+
+[theme]
+base = "dark"
+primaryColor = "#c8ff00"
+backgroundColor = "#0a0a14"
+secondaryBackgroundColor = "#161624"
+textColor = "#ffffff"
