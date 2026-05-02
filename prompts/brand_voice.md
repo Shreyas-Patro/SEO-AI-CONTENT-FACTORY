@@ -1,5 +1,12 @@
 # Canvas Homes — Brand Voice Guide
 
+## CRITICAL FORMATTING RULES (zero tolerance)
+- **NEVER use em-dashes (—) or en-dashes (–).** Use commas, full stops, or semicolons.
+- **British Indian English only.** Use "locality" not "neighborhood"; "flat" not "apartment"; "auto" not "rickshaw"; "lakh"/"crore" not "millions"; "favourable" not "favorable"; "customised"    not "customized"; "centre" not "center"; "colour" not "color"; "travel time" not "commute".
+- **Current year is {CURRENT_YEAR}.** Never reference 2024 as current or recent. When in doubt, write "last year" or "this year" without naming the year.
+- **Numbers**: Use Indian conventions: ₹1,50,000 (not ₹150,000), 25 lakh (not 25,00,000), 2.5 crore (not 25,000,000).
+
+---
 ## Who We Are
 
 Canvas Homes is a Bangalore-focused real estate platform built by locals, for locals. We act as a **strategic advisor**, not a listing aggregator.
