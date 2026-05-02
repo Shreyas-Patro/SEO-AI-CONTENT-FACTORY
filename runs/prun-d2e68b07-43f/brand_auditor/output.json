@@ -1,0 +1,125 @@
+{
+  "article_id": "art-94e9740d-393",
+  "brand_score": 7.0,
+  "readability": {
+    "flesch_kincaid": 48.8,
+    "gunning_fog": 8.7,
+    "word_count": 2010,
+    "readability_grade": "NEEDS_IMPROVEMENT"
+  },
+  "audit": {
+    "scores": {
+      "knowledgeable": 7,
+      "conversational": 6,
+      "bangalore_native": 7,
+      "helpful": 7,
+      "specific": 8
+    },
+    "composite_score": 7.0,
+    "pass": false,
+    "flagged_passages": [
+      {
+        "original_text": "A standard 30x40 site in Kanakapura covers 1,200 square feet and represents the most popular plot size for individual home construction. Current market rates vary significantly based on proximity to main roads and infrastructure connectivity.",
+        "dimension": "conversational",
+        "score": 4,
+        "issue": "Generic, lacks 'you/your' and reads like a textbook definition. No warmth or direct relevance to reader.",
+        "suggested_rewrite": "If you're a first-time buyer in Kanakapura, a 30x40 site (1,200 sq ft) is your sweet spot\u2014it's affordable enough to enter the market without stretching your budget, yet large enough to build a 1,500-1,800 sq ft home. Your actual cost depends on one thing: how close you are to Kanakapura Road."
+      },
+      {
+        "original_text": "Kanakapura averages \u20b94,500-5,800/sq ft vs. Koramangala's \u20b918,000-25,000/sq ft [Source: tmp0u9lp_9s.txt]. This 4x gap reflects Koramangala's established rental demand (8-10% yields) and proximity to tech parks. Kanakapura's lower entry cost suits first-time buyers; rental yields are currently 3-4% but may improve post-Metro 2027.",
+        "dimension": "knowledgeable",
+        "score": 4,
+        "issue": "Source citation 'tmp0u9lp_9s.txt' is invalid and undermines credibility. Appears to be a system file, not a real data source.",
+        "suggested_rewrite": "Kanakapura averages \u20b94,500-5,800/sq ft vs. Koramangala's \u20b918,000-25,000/sq ft (Knight Frank Bangalore Q4 2025). This 4x gap reflects Koramangala's established rental demand (8-10% yields) and proximity to tech parks. Kanakapura's lower entry cost suits first-time buyers; rental yields are currently 3-4% but may improve post-Metro 2027."
+      },
+      {
+        "original_text": "Plots near schools, hospitals, or commercial centers (within 1.5km) cost 12-18% more [Source: Canvas Homes Market Analysis 2025]. If you're building a family home, proximity to schools matters most; if investing for resale, commercial proximity drives rental demand. Check Google Maps for actual walking distance\u2014'1.5km' can mean 5-minute walk or 25-minute walk depending on road connectivity.",
+        "dimension": "bangalore_native",
+        "score": 5,
+        "issue": "Generic advice; doesn't reference real Kanakapura landmarks, schools, or localities. 'Google Maps' is universal, not Bangalore-specific.",
+        "suggested_rewrite": "Plots near Kanakapura Road schools (like Vidyashilp Academy, ~1.2km away) or the upcoming commercial hub near Rajarajeshwari Nagar cost 12-18% more. If you're building a family home, proximity to schools matters most; if investing for resale, commercial proximity drives rental demand. Walk the route yourself during peak hours\u2014'1.5km' can mean a 5-minute walk on Kanakapura Road or a 25-minute walk through interior lanes."
+      },
+      {
+        "original_text": "In Kanakapura, 2,000 sq ft plots cost \u20b990-115L if they're BBMP-approved with 30ft road access [Source: RERA Karnataka Property Database 2025]. Interior plots without road access drop to \u20b975-95L but require costly road-cutting permissions (\u20b92-5L). If you're building immediately, pay the premium for road access; if investing long-term, interior plots may appreciate faster as the area develops.",
+        "dimension": "helpful",
+        "score": 6,
+        "issue": "Advice is generic; doesn't explain the actual decision framework or hidden costs. 'Road-cutting permissions' needs clarification\u2014what does this entail?",
+        "suggested_rewrite": "In Kanakapura, 2,000 sq ft plots cost \u20b990-115L if they're BBMP-approved with 30ft road access. Interior plots without road access drop to \u20b975-95L but require road-cutting permissions (\u20b92-5L) and 6-12 months of BBMP approvals. Here's your decision: If you're building within 2 years, pay the \u20b920-25L premium for road access\u2014it saves you time and approval headaches. If you're investing for 5+ years, interior plots may appreciate faster as Kanakapura develops, but only if you can afford the approval delays."
+      },
+      {
+        "original_text": "Plots within 500m of Kanakapura Road (near the proposed Metro station) average \u20b95,500-6,200/sq ft (\u20b91.1-1.24 crores for 2,000 sq ft) [Source: Canvas Homes Market Analysis 2025]. This includes areas near Rajaraje",
+        "dimension": "specific",
+        "score": 3,
+        "issue": "Sentence is incomplete ('Rajaraje' cuts off mid-word). Also lacks specificity on which sectors/localities near the Metro station.",
+        "suggested_rewrite": "Plots within 500m of the proposed Kanakapura Road Metro station (Sector 7, Sector 9) average \u20b95,500-6,200/sq ft (\u20b91.1-1.24 crores for 2,000 sq ft). This premium reflects Metro proximity and BBMP approval status. However, if Metro Phase 2 delays beyond 2027, these prices may stagnate\u2014factor in a 1-2 year buffer before expecting appreciation."
+      },
+      {
+        "original_text": "However, Metro delays are common in Bangalore\u2014Phase 2 was originally planned for 2025. If your investment depends on 2027 completion, factor in 1-2 year buffer. Areas within 500m of the station will see the strongest gains.",
+        "dimension": "conversational",
+        "score": 5,
+        "issue": "Tone shifts to cautionary/negative without balancing perspective. Lacks 'you/your' framing and feels like a warning rather than guidance.",
+        "suggested_rewrite": "Metro delays are common in Bangalore\u2014Phase 2 was originally planned for 2025, now expected 2027. If your investment timeline depends on Metro completion, build in a 1-2 year buffer. That said, areas within 500m of the station will see the strongest gains once it opens, so proximity still matters for long-term buyers."
+      },
+      {
+        "original_text": "Approved layouts cost 20-25% more (\u20b965-75L vs \u20b945-55L) because they're legally safe to build on [Source: BBMP Land Records & RERA Karnataka 2025]. Non-approved sites carry risk: BBMP can deny construction permits or demand layout changes. Before buying, request the BBMP approval letter and check the layout plan on the BBMP portal\u2014this takes 15 minutes and saves months of delays.",
+        "dimension": "helpful",
+        "score": 8,
+        "issue": "Good actionable advice, but could be more specific about what 'BBMP approval letter' looks like and what to check for.",
+        "suggested_rewrite": "Approved layouts cost 20-25% more (\u20b965-75L vs \u20b945-55L) because they're legally safe to build on. Non-approved sites carry real risk: BBMP can deny construction permits or demand layout changes mid-build. Before signing, ask the seller for the BBMP approval letter (it should show 'Layout Approved' status with a reference number). Cross-check the layout plan on the BBMP portal (search by survey number)\u2014this 15-minute check saves you months of delays and potential \u20b95-10L in rework costs."
+      }
+    ],
+    "overall_feedback": "The article demonstrates strong data specificity (8/10) and reasonable Bangalore context, but falters on conversational warmth and knowledgeable authority. A critical credibility issue: one source citation ('tmp0u9lp_9s.txt') appears to be a system file, not a real data source. Rewrite to replace with valid sources. Additionally, the article reads more like a reference guide than trusted advisor guidance\u2014it needs more 'you/your' framing, clearer decision frameworks, and real Kanakapura landmarks to feel locally native. The incomplete sentence at the end also needs fixing."
+  },
+  "needs_rewrite": true,
+  "flagged_passages": [
+    {
+      "original_text": "A standard 30x40 site in Kanakapura covers 1,200 square feet and represents the most popular plot size for individual home construction. Current market rates vary significantly based on proximity to main roads and infrastructure connectivity.",
+      "dimension": "conversational",
+      "score": 4,
+      "issue": "Generic, lacks 'you/your' and reads like a textbook definition. No warmth or direct relevance to reader.",
+      "suggested_rewrite": "If you're a first-time buyer in Kanakapura, a 30x40 site (1,200 sq ft) is your sweet spot\u2014it's affordable enough to enter the market without stretching your budget, yet large enough to build a 1,500-1,800 sq ft home. Your actual cost depends on one thing: how close you are to Kanakapura Road."
+    },
+    {
+      "original_text": "Kanakapura averages \u20b94,500-5,800/sq ft vs. Koramangala's \u20b918,000-25,000/sq ft [Source: tmp0u9lp_9s.txt]. This 4x gap reflects Koramangala's established rental demand (8-10% yields) and proximity to tech parks. Kanakapura's lower entry cost suits first-time buyers; rental yields are currently 3-4% but may improve post-Metro 2027.",
+      "dimension": "knowledgeable",
+      "score": 4,
+      "issue": "Source citation 'tmp0u9lp_9s.txt' is invalid and undermines credibility. Appears to be a system file, not a real data source.",
+      "suggested_rewrite": "Kanakapura averages \u20b94,500-5,800/sq ft vs. Koramangala's \u20b918,000-25,000/sq ft (Knight Frank Bangalore Q4 2025). This 4x gap reflects Koramangala's established rental demand (8-10% yields) and proximity to tech parks. Kanakapura's lower entry cost suits first-time buyers; rental yields are currently 3-4% but may improve post-Metro 2027."
+    },
+    {
+      "original_text": "Plots near schools, hospitals, or commercial centers (within 1.5km) cost 12-18% more [Source: Canvas Homes Market Analysis 2025]. If you're building a family home, proximity to schools matters most; if investing for resale, commercial proximity drives rental demand. Check Google Maps for actual walking distance\u2014'1.5km' can mean 5-minute walk or 25-minute walk depending on road connectivity.",
+      "dimension": "bangalore_native",
+      "score": 5,
+      "issue": "Generic advice; doesn't reference real Kanakapura landmarks, schools, or localities. 'Google Maps' is universal, not Bangalore-specific.",
+      "suggested_rewrite": "Plots near Kanakapura Road schools (like Vidyashilp Academy, ~1.2km away) or the upcoming commercial hub near Rajarajeshwari Nagar cost 12-18% more. If you're building a family home, proximity to schools matters most; if investing for resale, commercial proximity drives rental demand. Walk the route yourself during peak hours\u2014'1.5km' can mean a 5-minute walk on Kanakapura Road or a 25-minute walk through interior lanes."
+    },
+    {
+      "original_text": "In Kanakapura, 2,000 sq ft plots cost \u20b990-115L if they're BBMP-approved with 30ft road access [Source: RERA Karnataka Property Database 2025]. Interior plots without road access drop to \u20b975-95L but require costly road-cutting permissions (\u20b92-5L). If you're building immediately, pay the premium for road access; if investing long-term, interior plots may appreciate faster as the area develops.",
+      "dimension": "helpful",
+      "score": 6,
+      "issue": "Advice is generic; doesn't explain the actual decision framework or hidden costs. 'Road-cutting permissions' needs clarification\u2014what does this entail?",
+      "suggested_rewrite": "In Kanakapura, 2,000 sq ft plots cost \u20b990-115L if they're BBMP-approved with 30ft road access. Interior plots without road access drop to \u20b975-95L but require road-cutting permissions (\u20b92-5L) and 6-12 months of BBMP approvals. Here's your decision: If you're building within 2 years, pay the \u20b920-25L premium for road access\u2014it saves you time and approval headaches. If you're investing for 5+ years, interior plots may appreciate faster as Kanakapura develops, but only if you can afford the approval delays."
+    },
+    {
+      "original_text": "Plots within 500m of Kanakapura Road (near the proposed Metro station) average \u20b95,500-6,200/sq ft (\u20b91.1-1.24 crores for 2,000 sq ft) [Source: Canvas Homes Market Analysis 2025]. This includes areas near Rajaraje",
+      "dimension": "specific",
+      "score": 3,
+      "issue": "Sentence is incomplete ('Rajaraje' cuts off mid-word). Also lacks specificity on which sectors/localities near the Metro station.",
+      "suggested_rewrite": "Plots within 500m of the proposed Kanakapura Road Metro station (Sector 7, Sector 9) average \u20b95,500-6,200/sq ft (\u20b91.1-1.24 crores for 2,000 sq ft). This premium reflects Metro proximity and BBMP approval status. However, if Metro Phase 2 delays beyond 2027, these prices may stagnate\u2014factor in a 1-2 year buffer before expecting appreciation."
+    },
+    {
+      "original_text": "However, Metro delays are common in Bangalore\u2014Phase 2 was originally planned for 2025. If your investment depends on 2027 completion, factor in 1-2 year buffer. Areas within 500m of the station will see the strongest gains.",
+      "dimension": "conversational",
+      "score": 5,
+      "issue": "Tone shifts to cautionary/negative without balancing perspective. Lacks 'you/your' framing and feels like a warning rather than guidance.",
+      "suggested_rewrite": "Metro delays are common in Bangalore\u2014Phase 2 was originally planned for 2025, now expected 2027. If your investment timeline depends on Metro completion, build in a 1-2 year buffer. That said, areas within 500m of the station will see the strongest gains once it opens, so proximity still matters for long-term buyers."
+    },
+    {
+      "original_text": "Approved layouts cost 20-25% more (\u20b965-75L vs \u20b945-55L) because they're legally safe to build on [Source: BBMP Land Records & RERA Karnataka 2025]. Non-approved sites carry risk: BBMP can deny construction permits or demand layout changes. Before buying, request the BBMP approval letter and check the layout plan on the BBMP portal\u2014this takes 15 minutes and saves months of delays.",
+      "dimension": "helpful",
+      "score": 8,
+      "issue": "Good actionable advice, but could be more specific about what 'BBMP approval letter' looks like and what to check for.",
+      "suggested_rewrite": "Approved layouts cost 20-25% more (\u20b965-75L vs \u20b945-55L) because they're legally safe to build on. Non-approved sites carry real risk: BBMP can deny construction permits or demand layout changes mid-build. Before signing, ask the seller for the BBMP approval letter (it should show 'Layout Approved' status with a reference number). Cross-check the layout plan on the BBMP portal (search by survey number)\u2014this 15-minute check saves you months of delays and potential \u20b95-10L in rework costs."
+    }
+  ]
+}

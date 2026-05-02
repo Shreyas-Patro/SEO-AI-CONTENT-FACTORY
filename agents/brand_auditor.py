@@ -1,6 +1,6 @@
 """
 agents/brand_auditor.py — v5 (AgentBase)
-Two-part: algorithmic readability (free) + LLM brand scoring.
+Two-part: algorithmic readability + LLM brand scoring.
 """
 
 import json
@@ -11,7 +11,7 @@ from llm import call_llm_json
 
 
 def _compute_readability(text):
-    """Free readability scoring — no LLM needed."""
+    """Free readability scoring — no LLM Called."""
     try:
         import textstat
         return {
@@ -50,8 +50,8 @@ class BrandAuditorAgent(AgentBase):
 
         # Part B: LLM brand scoring
         try:
-            system = open("prompts/brand_auditor.md").read()
-            brand_voice = open("prompts/brand_voice.md").read()
+            system = open("prompts/brand_auditor.md", encoding="utf-8").read()
+            brand_voice = open("prompts/brand_voice.md", encoding="utf-8").read()
             system = f"{system}\n\nBRAND VOICE REFERENCE:\n{brand_voice}"
         except FileNotFoundError:
             system = "Score this article on brand voice compliance (1-10 each): knowledgeable, conversational, bangalore_native, helpful, specific. Return JSON."

@@ -1,0 +1,1532 @@
+{
+  "topic": "Koramangala",
+  "trend_data": {
+    "topic": "Koramangala",
+    "classification": {
+      "categories": [
+        "locality"
+      ],
+      "primary_category": "locality",
+      "detected_localities": [
+        "Koramangala"
+      ],
+      "is_locality": true,
+      "is_cross_cutting": false
+    },
+    "raw_data": {
+      "trends": {
+        "trend_available": true,
+        "average_interest": 79.0,
+        "recent_interest": 67.8,
+        "peak_interest": 100,
+        "direction": "declining",
+        "is_seasonal": false,
+        "rising_queries": [
+          "sephora bangalore",
+          "subko bangalore",
+          "subko koramangala",
+          "beige bangalore",
+          "sarathi koramangala durga puja",
+          "pregame koramangala",
+          "rage room bangalore",
+          "dave and busters",
+          "the bier library brewery & kitchen, koramangala",
+          "bao bangalore",
+          "toit indiranagar",
+          "dialogues cafe",
+          "bodycraft koramangala"
+        ],
+        "top_queries": [
+          "koramangala distance",
+          "koramangala restaurants",
+          "nexus koramangala",
+          "bangalore metro",
+          "nexus mall bangalore",
+          "restaurants in koramangala",
+          "koramangala nexus mall",
+          "cafe in koramangala",
+          "hsr layout",
+          "forum koramangala"
+        ]
+      },
+      "paa_questions": [
+        "What is Koramangala Bangalore famous for?",
+        "Is Koramangala a good area?",
+        "Is Koramangala costly?",
+        "What is the price of 3 BHK in Koramangala?",
+        "How do I spend a day in Koramangala?",
+        "Is Koramangala a good area in Bangalore?",
+        "What to do in Koramangala with friends?",
+        "Is Koramangala a good area to live in?",
+        "Is 60,000 a good salary in Bangalore?",
+        "Where do most billionaires live in Bangalore?",
+        "What is the cost of living in Koramangala Bangalore?",
+        "Is Koramangala better than Indiranagar?",
+        "Why is Koramangala so expensive?",
+        "How to spend a day in Koramangala?",
+        "What is the price of land in Koramangala?",
+        "What is the cost of 30x40 site in Bangalore?",
+        "What is the price of flat in Koramangala?",
+        "What is the price of land in Koramangala per square foot?",
+        "What is the cost of a 30 * 40 site in Bangalore?",
+        "What is the price of 2000 square feet of land in Bangalore?",
+        "What are the upcoming projects in Bangalore?",
+        "Which is the richest block in Koramangala?",
+        "Which area is growing fastest in Bangalore?",
+        "Where is the cheapest place to live in Bangalore?",
+        "What can I do with my boyfriend in Bangalore?",
+        "Which school is ranked no. 1 in Bangalore?",
+        "Is Koramangala a good place to live?",
+        "Why is Bishop Cotton school famous?",
+        "What is the fee structure of Chinmaya Vidyalaya Koramangala?",
+        "Which is the number one hospital in Bangalore?",
+        "Which is costly, manipal or Apollo?",
+        "Where is Apollo Cradle hospital in Koramangala?",
+        "What are the top 5 hospitals?",
+        "Which is the nicest area of Bangalore?",
+        "Where do most CEOs live in Bangalore?",
+        "Is Indiranagar a posh area in Bangalore?"
+      ],
+      "related_searches": [
+        "Koramangala bangalore distance",
+        "Koramangala Bangalore nightlife",
+        "Koramangala bangalore directions",
+        "Koramangala bangalore pincode",
+        "Koramangala, Bangalore rent",
+        "Koramangala bangalore map",
+        "Koramangala bangalore restaurants",
+        "Koramangala bangalore places to visit",
+        "Top 10 places in Koramangala",
+        "Unique places to visit in Koramangala",
+        "Koramangala Bangalore visiting places",
+        "Koramangala places to eat",
+        "Places to visit in Koramangala for Couples",
+        "Koramangala flea market",
+        "Places to visit in Koramangala for friends",
+        "Pros and cons of living in koramangala bangalore",
+        "Living in koramangala bangalore reddit",
+        "Koramangala, Bangalore Hotels",
+        "Koramangala distance",
+        "Koramangala Bangalore PIN Code",
+        "Koramangala pubs",
+        "Things to do in Koramangala",
+        "Koramangala review quora",
+        "Koramangala Zudio",
+        "Koramangala, Bangalore",
+        "Koramangala Map",
+        "Koramangala location",
+        "Koramangala restaurants",
+        "Koramangala property price per square foot",
+        "Koramangala property price per square feet",
+        "Koramangala land price per square foot",
+        "Individual House for sale in Koramangala",
+        "Koramangala property for sale",
+        "Koramangala Flats for sale",
+        "Koramangala 4th Block land Price",
+        "House for sale in Koramangala 3rd Block",
+        "Koramangala rent house",
+        "Koramangala rent 1 bhk",
+        "Koramangala rent 2bhk",
+        "Cheap flats for rent in Koramangala",
+        "Koramangala rent flats",
+        "3 BHK Flats in Koramangala for rent",
+        "Flats for rent in koramangala gated community",
+        "PG for rent in Koramangala, Bangalore",
+        "2 BHK for rent in Koramangala without broker",
+        "2 BHK for rent in Koramangala 5th block",
+        "2 BHK independent House for rent in Koramangala",
+        "2 BHK for rent in Koramangala 6th Block",
+        "2 BHK in Koramangala for sale",
+        "2 BHK fully furnished flat for rent in Koramangala",
+        "2 BHK for rent in Koramangala 4th Block",
+        "2 BHK rent in NGV Koramangala",
+        "Koramangala flat for sale price",
+        "Koramangala flat for sale 2bhk",
+        "Flats in Koramangala for rent",
+        "Koramangala flat for sale olx",
+        "1 BHK Flats in Koramangala for sale",
+        "1 BHK Flats in Koramangala for rent",
+        "3 BHK Flats in Koramangala for sale",
+        "Flats for sale in Koramangala 4th Block",
+        "Koramangala per square Feet rate",
+        "Koramangala highest per Square feet",
+        "HSR Layout per square feet rate",
+        "Koramangala Property Rates",
+        "Indiranagar per Square Feet rate",
+        "Highest square feet rate in Bangalore",
+        "Koramangala new projects phase 2",
+        "Koramangala new projects price",
+        "Koramangala new projects for sale",
+        "New Flats for sale in Koramangala, Bangalore",
+        "Raheja Koramangala new project",
+        "New Launch projects in Bangalore",
+        "Radiance Platinum Koramangala",
+        "Raheja Vivarea Koramangala",
+        "Things to do in koramangala for couples",
+        "Things to do in koramangala for adults",
+        "Unique things to do in koramangala",
+        "Things to do in Koramangala for Kids",
+        "Things to do in koramangala with friends",
+        "Things to do in koramangala at night",
+        "Things to do in Koramangala for free",
+        "Best restaurants koramangala for lunch",
+        "Best restaurants in Koramangala for family dinner",
+        "Best restaurants in Koramangala for friends",
+        "Best restaurants in Koramangala for couples",
+        "Best restaurants in Koramangala for dinner",
+        "Best restaurants in Koramangala for Breakfast",
+        "Best restaurants koramangala for family",
+        "Cbse schools near koramangala",
+        "Top 10 schools near koramangala",
+        "Top 10 schools in Koramangala",
+        "Private schools near koramangala",
+        "Koramangala schools list with fees",
+        "Government schools near koramangala",
+        "Best schools near koramangala",
+        "Best CBSE schools near Koramangala",
+        "Koramangala Hospital list",
+        "Best Hospital in Koramangala",
+        "Government hospital in Koramangala",
+        "New hospital in Koramangala",
+        "Apollo hospital Koramangala",
+        "Superhealth hospital Koramangala",
+        "Apollo Spectra hospitals koramangala",
+        "Manipal Hospital Koramangala",
+        "Koramangala vs indiranagar which is better",
+        "Koramangala vs indiranagar reddit",
+        "Koramangala vs indiranagar live",
+        "Koramangala to Indiranagar distance",
+        "Jayanagar or malleswaram which is better for shopping",
+        "Best area to stay in Bangalore for tourist",
+        "Indiranagar, Bangalore"
+      ],
+      "autocomplete": [
+        "koramangala pin code",
+        "koramangala social",
+        "koramangala pubs",
+        "koramangala club",
+        "koramangala weather",
+        "koramangala bangalore",
+        "koramangala food street",
+        "koramangala restaurants",
+        "koramangala cafes",
+        "koramangala distance",
+        "koramangala police station",
+        "koramangala passport office",
+        "koramangala forum mall",
+        "koramangala nexus mall",
+        "koramangala social menu",
+        "koramangala bangalore pin code",
+        "koramangala bangalore north or south",
+        "koramangala bangalore pg",
+        "koramangala bangalore hotels",
+        "koramangala bangalore pubs",
+        "koramangala bangalore mall",
+        "koramangala bangalore one",
+        "koramangala bangalore pg for girls",
+        "koramangala bangalore rent",
+        "koramangala bangalore distance",
+        "koramangala bangalore nearest railway station",
+        "koramangala bangalore clubs",
+        "koramangala bangalore nightlife",
+        "koramangala bangalore urban or rural",
+        "koramangala bangalore map",
+        "rent in koramangala bangalore",
+        "rent in koramangala 4th block",
+        "rent in koramangala 8th block",
+        "rent in koramangala 2bhk",
+        "rent in koramangala 1st block",
+        "rent in koramangala 3rd block",
+        "rent in koramangala 6th block",
+        "rent in koramangala reddit",
+        "rent in koramangala 1 bhk",
+        "rentals in koramangala",
+        "rent house in koramangala",
+        "room rent in koramangala",
+        "flat rent in koramangala",
+        "1rk rent in koramangala",
+        "pg rent in koramangala",
+        "koramangala property for sale",
+        "koramangala property rates",
+        "koramangala property price",
+        "koramangala property dealer",
+        "koramangala property registration office",
+        "koramangala property for rent",
+        "koramangala commercial property for sale",
+        "koramangala bangalore property for sale",
+        "koramangala commercial property for rent",
+        "koramangala 3rd block property"
+      ],
+      "serp_results_summary": [
+        {
+          "query": "Koramangala Bangalore",
+          "top_results": [
+            {
+              "title": "Koramangala",
+              "link": "https://en.wikipedia.org/wiki/Koramangala",
+              "snippet": "Koramangala is a southeastern neighbourhood of the Indian city of Bengaluru. One of the largest in that metropolis, it is a residential locality with wide, ...",
+              "position": 1,
+              "domain": "en.wikipedia.org"
+            },
+            {
+              "title": "THE 10 BEST Things to Do in Koramangala (2026)",
+              "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087478-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Koramangala the IT hub and one of the poshest suburbs of Bangalore, is also home to the Footworks Lounge. Our Chinese Foot Reflexology lounge is a haven for the ...",
+              "position": 2,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Koramangala, Bangalore: Map, Photo, Video, Price Trends, ...",
+              "link": "https://www.magicbricks.com/Koramangala-in-Bangalore-Overview",
+              "snippet": "Koramangala is an upscale residential-cum-commercial locality. The locality is adjacent to Hosur Road and surrounded by the areas of Adugodi, HSR Layout, BTM ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "knowledge_panel",
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Koramangala Bangalore guide",
+          "top_results": [
+            {
+              "title": "THE 10 BEST Things to Do in Koramangala (2026)",
+              "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087478-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Top Things to Do in Koramangala \u00b7 1. The Grid \u00b7 2. VR Room \u00b7 3. Escape Room \u00b7 4. Asian Woman Spa \u00b7 5. PVR Koramangla - Gold Cinemas \u00b7 6. Mystery Junkies \u00b7 7.",
+              "position": 1,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Things to Do in Koramangala - A Local's Guide to Eating, ...",
+              "link": "https://oliveliving.com/blog/things-to-do-in-koramangala/",
+              "snippet": "Explore Koramangala's best caf\u00e9s, markets, nightlife, and local experiences with this insider guide to Bangalore's liveliest neighborhood.",
+              "position": 2,
+              "domain": "oliveliving.com"
+            },
+            {
+              "title": "Koramangala Travel Guide - Bengaluru",
+              "link": "https://www.expedia.co.in/Bengaluru-Koramangala.dx6126933",
+              "snippet": "Popular places to visit \u00b7 Nandi Hills \u00b7 Bangalore Palace \u00b7 Manyata Tech Park \u00b7 Cubbon Park \u00b7 Lalbagh Botanical Gardens \u00b7 UB City \u00b7 ISKCON Temple \u00b7 Wonderla Amusement ...",
+              "position": 3,
+              "domain": "www.expedia.co.in"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "living in Koramangala Bangalore",
+          "top_results": [
+            {
+              "title": "why Koramangala is the best place to live in Bangalore - KOTS",
+              "link": "https://www.kots.world/blog/why-koramangala-is-the-best-place-to-live-in-bangalore",
+              "snippet": "Koramangala is a well-known and lively locality in Bangalore that offers a perfect mix of urban lifestyle, incredible connectivity, ...",
+              "position": 1,
+              "domain": "www.kots.world"
+            },
+            {
+              "title": "What is it like to live in Koramangala?",
+              "link": "https://www.quora.com/What-is-it-like-to-live-in-Koramangala",
+              "snippet": "Great weather, good schools and education institutions, decent cost of living, relatively safe environment, lots of greenery, affordable public ...",
+              "position": 2,
+              "domain": "www.quora.com"
+            },
+            {
+              "title": "Why Koramangala is the Best Place to Live in Bangalore",
+              "link": "https://www.sobha.com/blog/why-koramangala-best-place-live-bangalore/",
+              "snippet": "Koramangala is the best place to live in Bangalore as it offers seamless connectivity, premium housing, top educational & healthcare institutions, and thriving ...",
+              "position": 3,
+              "domain": "www.sobha.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "Koramangala review",
+          "top_results": [
+            {
+              "title": "Ratings & Reviews of Koramangala, Bangalore",
+              "link": "https://www.99acres.com/koramangala-bangalore-south-reviews-and-ratings-wrffid",
+              "snippet": "Excellent residential amenities, Aesthetically pleasing and well planned locale, Vibrant niebourhood culture and recreation, Proximity to essential and leisure ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Koramangala Reviews & Ratings",
+              "link": "https://www.magicbricks.com/real-estate-property-reviews/Koramangala-in-Bangalore",
+              "snippet": "Koramangala is a good locality. It has good connectivity to school, college, hospital, bank and market. S. Syed wasim Ahmed. Agent. 06/02/ ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Koramangala, Bangalore Reviews - Ratings, Pros & Cons ...",
+              "link": "https://www.nobroker.in/locality-iq/koramangala-bangalore-liqlt/reviews",
+              "snippet": "The locality offers really good lifestyle, with all essentials nearby. The commercial spaces, including malls, shopping zones and restaurents are a big plus.",
+              "position": 3,
+              "domain": "www.nobroker.in"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Koramangala property price",
+          "top_results": [
+            {
+              "title": "Property in Koramangala, Bangalore",
+              "link": "https://www.magicbricks.com/property-for-sale-in-koramangala-bangalore-pppfs",
+              "snippet": "The price of flats in Koramangala range between \u20b9 35 lakhs - \u20b9 17 Cr, and houses price between \u20b9 40 lakhs - \u20b9 6.72 Cr, with 1-5 BHK options. However, land ...",
+              "position": 1,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Property Rates in Koramangala, Bangalore 2026",
+              "link": "https://www.99acres.com/property-rates-and-price-trends-in-koramangala-bangalore-south-prffid",
+              "snippet": "The average flat rates in Koramangala, Bangalore is \u20b9 17,000 per sq ft. A 2 BHK flat is available at a price range of \u20b9 12,370,200-22,997,450. A 3 BHK flat is ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Independent House for Sale in Koramangala , Bangalore",
+              "link": "https://www.nobroker.in/independent-house-for-sale-in-koramangala-5th-block-bangalore",
+              "snippet": "5 - House for Sale in Koramangala , Bangalore - NoBroker ; 1 BHK House For Sale In Koramangala \u00b7 35 Lacs. \u20b97,000/sq.ft \u00b7 Unfurnished. 500 sqft ; 4+ BHK House For ...",
+              "position": 3,
+              "domain": "www.nobroker.in"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Koramangala rent",
+          "top_results": [
+            {
+              "title": "Flats for Rent in Koramangala , Bangalore",
+              "link": "https://www.nobroker.in/flats-for-rent-in-koramangala_bangalore",
+              "snippet": "4 BHK Flats for Rent in Koramangala. 4 BHK - 1,201 sq. ft. to 2,600 sq. ft. Monthly rent generally in Koramangala falls between \u20b928,750 to \u20b9220,001 per month, ...",
+              "position": 1,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "Flats for Rent in Koramangala, Bengaluru - Housing",
+              "link": "https://housing.com/rent/flats-for-rent-in-koramangala-bengaluru-P5s2sntlyr4a7izpb",
+              "snippet": "Looking for Rental Property in Koramangala? Housing.com offers 837+ Flats for rent & 128 Houses/Villas for rent. Search from 467 2 & 3 BHK flats for rent in ...",
+              "position": 2,
+              "domain": "housing.com"
+            },
+            {
+              "title": "Flats for Rent in Koramangala, Bangalore",
+              "link": "https://www.magicbricks.com/flats-for-rent-in-koramangala-bangalore-pppfr",
+              "snippet": "Explore flats for rent in Koramangala in the price range of \u20b912,000 - \u20b92.9 Lac, with options from 1-5 BHK apartment types. The rent of a flat in Koramangala is ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com",
+            "magicbricks.com",
+            "housing.com"
+          ]
+        },
+        {
+          "query": "2BHK rent Koramangala",
+          "top_results": [
+            {
+              "title": "2 BHK Flats for rent in Koramangala, Bangalore",
+              "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-koramangala_bangalore",
+              "snippet": "2 BHK Flats for Rent in Koramangala. 2 BHK - 400 sq. ft. to 1,740 sq. ft. Monthly rent generally in Koramangala falls between \u20b915,650 to \u20b950,000 per month, ...",
+              "position": 1,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "2 BHK Flats for Rent in Koramangala, Bangalore",
+              "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-koramangala-bangalore-south-ffid",
+              "snippet": "Well designed 2 bhk apartment, 1280 sqft carpet area, is available in koramangala. Its in gp aditya. It is furnished. There are 2 bathrooms and 2 balconies.The ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Flats for Rent in Koramangala Bangalore \ud835\udc2e\ud835\udc27\ud835\udc1d\ud835\udc1e\ud835\udc2b \u20b9\ud835\udfd1\ud835\udfce\ud835\udfce\ud835\udfce\ud835\udfce",
+              "link": "https://www.magicbricks.com/flats-for-rent-in-koramangala-bangalore-price-20000-to-30000-pppfr",
+              "snippet": "\u20b922,000 | 2 BHK. 2 BHK Flat for Rent in Block 6th Koramangala, Koramangala. Furnishing. Furnished. Carpet Area. 500 sqft. Multistorey apartment is available for ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com",
+            "magicbricks.com",
+            "housing.com"
+          ]
+        },
+        {
+          "query": "Koramangala flat for sale",
+          "top_results": [
+            {
+              "title": "Flats for Sale in Koramangala Bangalore | Apartments in ...",
+              "link": "https://www.nobroker.in/flats-for-sale-in-koramangala_bangalore",
+              "snippet": "85 - Flats for Sale in Koramangala Bangalore | Apartments for Sale in Koramangala Bangalore \u00b7 3 BHK Apartment In Kuteers Arcade, Koramangala For Sale In Kuteers ...",
+              "position": 1,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "157+ Flats for sale in Koramangala, Bangalore",
+              "link": "https://www.99acres.com/flats-in-koramangala-bangalore-south-ffid",
+              "snippet": "Choose your dream home from the wide variety of 3,4 BHK apartments in Koramangala, available for sale in Radiance Platinum.",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "355+ Flats for Sale in Koramangala, Bangalore",
+              "link": "https://www.magicbricks.com/flats-in-koramangala-bangalore-for-sale-pppfs",
+              "snippet": "Explore Koramangala for flats on sale within the price range of \u20b91.07 Cr - \u20b920.40 Cr, offering flexible 1-5 BHK layouts. Choose from 215+ resale properties, 252 ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com",
+            "magicbricks.com",
+            "housing.com"
+          ]
+        },
+        {
+          "query": "Koramangala property rate per sq ft",
+          "top_results": [
+            {
+              "title": "Property Rates in Koramangala, Bangalore 2026",
+              "link": "https://www.99acres.com/property-rates-and-price-trends-in-koramangala-bangalore-south-prffid",
+              "snippet": "The average flat rates in Koramangala, Bangalore is \u20b9 17,000 per sq ft. A 2 BHK flat is available at a price range of \u20b9 12,370,200-22,997,450. A 3 BHK flat is ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Property Rates in Koramangala Bangalore",
+              "link": "https://www.magicbricks.com/Property-Rates-Trends/Multistorey-Apartment-rates-Koramangala-in-Bangalore",
+              "snippet": "Multistorey Apartment (Average Price Rs./Sq-ft). For Sale: 15,587 ; Residential Plot (Average Price Rs./Sq-Yrd). For Sale: 2,70,639 ; Residential House (Average ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Property Rates in Koramangala, Bengaluru - 2026 - Housing",
+              "link": "https://housing.com/price-trends/property-rates-for-buy-in-koramangala_bengaluru-P5s2sntlyr4a7izpb",
+              "snippet": "On average, the price of properties in Koramangala is Rs. 18,222 per sqft. The most expensive property listed in Koramangala is priced at Rs. 50,769 per sqft.",
+              "position": 3,
+              "domain": "housing.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com",
+            "magicbricks.com",
+            "housing.com"
+          ]
+        },
+        {
+          "query": "Koramangala new projects",
+          "top_results": [
+            {
+              "title": "New Projects in Koramangala, Bangalore - 99acres.com",
+              "link": "https://www.99acres.com/new-projects-in-koramangala-bangalore-south-ffid",
+              "snippet": "New Projects in Koramangala Bangalore for Sale ; Prestige PineWood \u00b7 Srinivagilu, Bangalore South. \u20b920.0K/sqft onwards. ~ (super built-up area) \u00b7 \u20b93.74 Cr+ ; Sobha ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "New Projects in Koramangala, Bangalore",
+              "link": "https://www.magicbricks.com/new-projects-Koramangala-in-Bangalore",
+              "snippet": "Projects in Koramangala, Bangalore \u00b7 Prestige Pinewood \u00b7 K Raheja Vivarea \u00b7 Sterling Infinia \u00b7 Raja Four Squares \u00b7 Raheja Residency \u00b7 DNR Spring Leaf \u00b7 G Corp ...",
+              "position": 2,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "New Projects in Bangalore | Latest Residential ...",
+              "link": "https://www.nobroker.in/new-projects-in-koramangala-bangalore",
+              "snippet": "1,708+ New Projects in Bangalore for Sale | NoBroker \u00b7 Nikhar Celio \u00b7 Adarsh Sanctuary \u00b7 NBR Soul Of The Seasons \u00b7 MSR Passion Square \u00b7 Elegant Tranquility \u00b7 Codename ...",
+              "position": 3,
+              "domain": "www.nobroker.in"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "things to do in Koramangala",
+          "top_results": [
+            {
+              "title": "THE 10 BEST Things to Do in Koramangala (2026)",
+              "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087478-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Top Things to Do in Koramangala \u00b7 1. The Grid \u00b7 2. VR Room \u00b7 3. Escape Room \u00b7 4. Asian Woman Spa \u00b7 5. PVR Koramangla - Gold Cinemas \u00b7 6. Mystery Junkies \u00b7 7.",
+              "position": 1,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Fun things to do in Koramangala? : r/bangalore",
+              "link": "https://www.reddit.com/r/bangalore/comments/5ib9gf/fun_things_to_do_in_koramangala/",
+              "snippet": "Shopping, movies, bowling at Forum mall and adjacent streets. Lunch at truffles. Five mins walk and dessert at Bangalore's oldest ice cream ...",
+              "position": 2,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "Things to Do in Koramangala - A Local's Guide to Eating, ...",
+              "link": "https://oliveliving.com/blog/things-to-do-in-koramangala/",
+              "snippet": "Places like Lahe Lahe and similar community hubs regularly host open-mic nights, storytelling sessions, theatre rehearsals, art workshops, dance ...",
+              "position": 3,
+              "domain": "oliveliving.com"
+            }
+          ],
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "best restaurants Koramangala",
+          "top_results": [
+            {
+              "title": "The 10 Best Restaurants in Koramangala Bengaluru",
+              "link": "https://www.tripadvisor.in/Restaurants-g297628-zfn13087478-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Koramangala Restaurants \u00b7 1. The Reservoire. 4.6. (67 reviews). Bars & Pubs, Italian\u20b9\u20b9\u20b9\u20b9 \u00b7 2. Dyu Art Cafe. 4.2. (116 reviews). Cafe\u20b9\u20b9 - \u20b9\u20b9 ...",
+              "position": 1,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Koramangala restaurants",
+              "link": "https://www.zomato.com/bangalore/koramangala-restaurants",
+              "snippet": "Koramangala Restaurants \u00b7 Magique \u00b7 The Reservoire \u00b7 Maffei Kitchen \u00b7 House Of Commons \u00b7 Naked & Famous \u00b7 Brooks And Bonds Brewery \u00b7 Dave and Busters \u00b7 YUKI.",
+              "position": 2,
+              "domain": "www.zomato.com"
+            },
+            {
+              "title": "Totally amazing food youve had in and around ...",
+              "link": "https://www.reddit.com/r/bangalorefoodies/comments/1lfeep8/totally_amazing_food_youve_had_in_and_around/",
+              "snippet": "Pizza 4P - Indiranagar - Gourmet Pizzas. - 23rd Street Pizza - Central BLR - Casual Pizzas. - Maffei Kitchen - Koramangala / Central - ...",
+              "position": 3,
+              "domain": "www.reddit.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "schools near Koramangala",
+          "top_results": [
+            {
+              "title": "Top 12 Best Schools in Koramangala, Bangalore 2026-27",
+              "link": "https://yellowslate.com/blog/best-schools-in-koramangala-bangalore",
+              "snippet": "Top 12 Best Schools in Koramangala, Bangalore 2026-27: Fees, Reviews, Admissions, Facilities, and more \u00b7 1. Chinmaya Vidyalaya \u00b7 2. National Public School \u00b7 3.",
+              "position": 1,
+              "domain": "yellowslate.com"
+            },
+            {
+              "title": "20+ Schools in Koramangala - Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Schools-in-Koramangala/nct-10422444",
+              "snippet": "TOP 30 Schools in Koramangala, Bangalore \u00b7 Euroschool Hsr Icse School \u00b7 Gnan Srishti School Of Excellence \u00b7 Kids Castle Preschool Koramangala \u00b7 The Green Lawns ...",
+              "position": 2,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "Chinmaya Vidyalaya Koramangala",
+              "link": "https://cvkoramangala.org/",
+              "snippet": "Chinmaya Vidyalaya, Koramangala is an independent school established and managed by Chinmaya Mission. School has ICSE & ISC syllabus and offers Nursery to 12th ...",
+              "position": 3,
+              "domain": "cvkoramangala.org"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "hospitals near Koramangala",
+          "top_results": [
+            {
+              "title": "137 Hospitals in Koramangala, Bangalore",
+              "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/koramangala",
+              "snippet": "137 Hospitals in Koramangala, Bangalore \u00b7 Apollo Cradle & Children's Hospital \u00b7 Apollo Dental \u00b7 Partha Dental Skin Hair \u00b7 Varalakshmi Hospital \u00b7 Keva Ayurveda ...",
+              "position": 1,
+              "domain": "www.practo.com"
+            },
+            {
+              "title": "Best Hospitals in Koramangala, Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Hospitals-in-Koramangala/nct-10253670",
+              "snippet": "176 Hospitals in Koramangala,Bangalore. Homeocare International Pvt Ltd, Hcg Cancer Centre, Aster Hospital Whitefield, Aster Rv Hospital etc.",
+              "position": 2,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "Multi Speciality Hospital in Koramangala, Bangalore",
+              "link": "https://www.apollospectra.com/bangalore/koramangala/our-hospitals/multi-speciality-hospital-in-koramangala-bangalore",
+              "snippet": "The hospital offers expert care in a wide range of surgical specialities including Bariatric Surgery, ENT, General & Laparoscopic Surgery, Orthopaedics & Spine, ...",
+              "position": 3,
+              "domain": "www.apollospectra.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "Koramangala vs indiranagar",
+          "top_results": [
+            {
+              "title": "Which is better, Koramangala or Indiranagar, in terms of ...",
+              "link": "https://www.quora.com/Which-is-better-Koramangala-or-Indiranagar-in-terms-of-the-cost-of-living",
+              "snippet": "Koramangala used to be called the outskirts of the city, and is slightly more in distance when compared to Indiranagar. The same Pub and ...",
+              "position": 1,
+              "domain": "www.quora.com"
+            },
+            {
+              "title": "Bangalore: My 2 Favorite Neighborhoods and 7 Great ...",
+              "link": "https://nickgray.net/bangalore/",
+              "snippet": "I spent 11 days walking around the neighborhoods of Koramangala, Indiranagar, and Cubbon Park. Now you'll meet my new friends, learn about the best ...",
+              "position": 2,
+              "domain": "nickgray.net"
+            },
+            {
+              "title": "controversial but what do you think is the best locality in ...",
+              "link": "https://www.reddit.com/r/bangalore/comments/10so0v0/controversial_but_what_do_you_think_is_the_best/",
+              "snippet": "Koramangala vs Indiranagar comparison. Underrated places to visit in Bangalore. Best street food spots in Bangalore. Top parks and green spaces ...",
+              "position": 3,
+              "domain": "www.reddit.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        }
+      ],
+      "aeo_scores": [
+        {
+          "query": "things to do in Koramangala",
+          "score": 100,
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "schools near Koramangala",
+          "score": 100,
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "hospitals near Koramangala",
+          "score": 100,
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "best restaurants Koramangala",
+          "score": 95,
+          "serp_features": [
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "Koramangala new projects",
+          "score": 90,
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Koramangala rent",
+          "score": 85,
+          "serp_features": [],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "2BHK rent Koramangala",
+          "score": 85,
+          "serp_features": [],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Koramangala flat for sale",
+          "score": 85,
+          "serp_features": [
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Koramangala Bangalore guide",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "living in Koramangala Bangalore",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "Koramangala vs indiranagar",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "Koramangala Bangalore",
+          "score": 70,
+          "serp_features": [
+            "knowledge_panel",
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Koramangala review",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Koramangala property price",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Koramangala property rate per sq ft",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        }
+      ]
+    },
+    "analysis": {
+      "topic": "Koramangala",
+      "topic_type": "locality",
+      "trend_direction": "declining",
+      "trend_summary": "Koramangala search interest is declining from a 12-month average of 79.0 to recent interest of 67.8, indicating reduced overall search volume. However, 13 rising queries focused on lifestyle, dining, and entertainment venues suggest a shift in user intent toward experiential content rather than property/relocation queries.",
+      "total_queries_discovered": 212,
+      "intent_clusters": [
+        {
+          "cluster_name": "Lifestyle and Dining",
+          "query_count": 13,
+          "trend": "rising"
+        }
+      ]
+    },
+    "competitor_tracker": {
+      "nobroker.in": 8,
+      "magicbricks.com": 8,
+      "99acres.com": 7,
+      "housing.com": 4
+    },
+    "serp_calls_used": 15,
+    "autocomplete_calls_used": 4,
+    "cost_usd": 0.000881
+  },
+  "competitor_data": {
+    "topic": "Koramangala",
+    "competitor_coverage": {
+      "magicbricks.com": 8,
+      "nobroker.in": 8,
+      "housing.com": 3,
+      "99acres.com": 8
+    },
+    "raw_results": [
+      {
+        "query": "Koramangala property",
+        "results": [
+          {
+            "position": 1,
+            "title": "Property in Koramangala, Bangalore",
+            "link": "https://www.99acres.com/property-in-koramangala-bangalore-south-ffid",
+            "snippet": "Find 266+ Properties for sale in Koramangala, Bangalore on 99acres.com, India's No.1 Real Estate Portal. Buy Verified Property in Koramangala, ..."
+          },
+          {
+            "position": 2,
+            "title": "Property in Koramangala, Bangalore",
+            "link": "https://www.magicbricks.com/property-for-sale-in-koramangala-bangalore-pppfs",
+            "snippet": "Property rates in Koramangala Bangalore vary significantly by property types. The price of flats in Koramangala range between \u20b9 35 lakhs - \u20b9 17 Cr, and houses ..."
+          },
+          {
+            "position": 3,
+            "title": "Properties for Sale in Koramangala Bangalore",
+            "link": "https://www.nobroker.in/properties-for-sale-in-koramangala-bangalore",
+            "snippet": "Koramangala might offer a range of property types including apartments, houses, penthouses, and more. The availability depends on the local real estate market."
+          },
+          {
+            "position": 4,
+            "title": "Houses for Sale in Koramangala Bangalore",
+            "link": "https://www.squareyards.com/sale/independent-houses-for-sale-in-koramangala-bangalore",
+            "snippet": "Independent houses in Koramangala range from compact 2-3 BHK homes to large multi-floor properties, offering options for buyers with different ..."
+          },
+          {
+            "position": 5,
+            "title": "Apartments for sale in Koramangala, Bangalore",
+            "link": "https://www.housingman.com/bangalore/flats-for-sale-in-koramangala-bangalore",
+            "snippet": "New Flats for Sale in Koramangala, Bangalore. Great Deals on all Apartments for Sale in Koramangala. \u2713Completely Verified Flats in Koramangala, Bangalore."
+          },
+          {
+            "position": 6,
+            "title": "Koramangala, Bangalore Review: Price of Houses ...",
+            "link": "https://www.youtube.com/watch?v=CoQ_AC7X5ls",
+            "snippet": "Koramangala is one of the largest neighborhood which offers mix of luxury apartments commercial structures and premium bungalows."
+          },
+          {
+            "position": 7,
+            "title": "Independent House for Sale in Koramangala , Bangalore",
+            "link": "https://www.nobroker.in/independent-house-for-sale-in-koramangala-bangalore",
+            "snippet": "Buy an Independent house in Koramangala,Bangalore on NoBroker. Check house prices in Koramangala , Bangalore and contact the property owner directly."
+          },
+          {
+            "position": 8,
+            "title": "Property in 1st Block Koramangala, Bangalore",
+            "link": "https://www.99acres.com/property-in-1st-block-koramangala-bangalore-south-ffid",
+            "snippet": "Property for sale in koramangala 1st block, bda allotted, measuring 4000 sft, 50x80, north facing , 40 ft road width, with old house for sale at rs.14.80 crores ..."
+          },
+          {
+            "position": 9,
+            "title": "7 Flats & Apartments for Sale in Koramangala",
+            "link": "https://www.olx.in/koramangala_g5313995/for-sale-houses-apartments_c1725",
+            "snippet": "Explore flats for sale in Koramangala in the price range of \u20b910,000 - \u20b955 Crores. OLX provides you options ranging from 1-5 BHK flats for sale in Koramangala."
+          },
+          {
+            "position": 10,
+            "title": "Property in Koramangala Bangalore, Real Estate in ...",
+            "link": "https://www.360realtors.com/property-in-koramangala-bangalore-lid-186",
+            "snippet": "Looking for property in Koramangala Bangalore. Find all the details of residential and commercial India properties with its specifications & related ..."
+          }
+        ]
+      },
+      {
+        "query": "Koramangala apartments",
+        "results": [
+          {
+            "position": 1,
+            "title": "157+ Flats for sale in Koramangala, Bangalore",
+            "link": "https://www.99acres.com/flats-in-koramangala-bangalore-south-ffid",
+            "snippet": "Choose your dream home from the wide variety of 3,4 BHK apartments in Koramangala, available for sale in Radiance Platinum."
+          },
+          {
+            "position": 2,
+            "title": "Flats for Sale in Koramangala Bangalore | Apartments in ...",
+            "link": "https://www.nobroker.in/flats-for-sale-in-koramangala_bangalore",
+            "snippet": "85 - Flats for Sale in Koramangala Bangalore | Apartments for Sale in Koramangala Bangalore \u00b7 3 BHK Apartment In Kuteers Arcade, Koramangala For Sale In Kuteers ..."
+          },
+          {
+            "position": 3,
+            "title": "Flats for Rent in Koramangala, Bangalore",
+            "link": "https://www.magicbricks.com/flats-for-rent-in-koramangala-bangalore-pppfr",
+            "snippet": "Explore flats for rent in Koramangala in the price range of \u20b912,000 - \u20b92.9 Lac, with options from 1-5 BHK apartment types. The rent of a flat in Koramangala is ..."
+          },
+          {
+            "position": 4,
+            "title": "Flats for Rent in Koramangala, Bengaluru - Housing",
+            "link": "https://housing.com/rent/flats-for-rent-in-koramangala-bengaluru-P5s2sntlyr4a7izpb",
+            "snippet": "Looking for Rental Property in Koramangala? Housing.com offers 837+ Flats for rent & 128 Houses/Villas for rent. Search from 467 2 & 3 BHK flats for rent in ..."
+          },
+          {
+            "position": 5,
+            "title": "Apartments for Sale in Koramangala",
+            "link": "https://homeraaga.com/apartments-for-sale-in-koramangala/",
+            "snippet": "Apartments for Sale In Kormangala \u00b7 5 BHK Apartment Prestige Acropolis, Koramang... \u00b7 3 BHK Penthouse , Koramangala \u00b7 3 BHK Penthouse , Koramangala \u00b7 4 BHK ..."
+          },
+          {
+            "position": 6,
+            "title": "Short Stay / Long Stay Apartments in Koramangala, ...",
+            "link": "https://www.makemytrip.com/hotels/area-apartments-in-koramangala-bangalore.html",
+            "snippet": "Great location near groceries and caf\u00e9s, close to Christ University, spacious and clean rooms. Overall rating is:4.1Very GoodSee More. Check Availability. 4.4 ..."
+          },
+          {
+            "position": 7,
+            "title": "Flats/Apartments for Rent in Koramangala | Live Premium",
+            "link": "https://www.kots.world/bangalore/flats-for-rent-in-koramangala",
+            "snippet": "Explore Flats for Rent in Koramangala. Find studios, 1BHK & 2BHK apartments for rent. Enjoy zero hidden charges and hassle-free living."
+          },
+          {
+            "position": 8,
+            "title": "Serviced apartment holiday rentals in Koramangala",
+            "link": "https://www.airbnb.co.in/koramangala-bengaluru-india/stays/serviced-apartments",
+            "snippet": "Top-rated serviced apartment rentals in Koramangala. Guests agree: these serviced apartment rentals are highly rated for location, cleanliness and more."
+          },
+          {
+            "position": 9,
+            "title": "Apartments for sale in Koramangala, Bangalore",
+            "link": "https://www.housingman.com/bangalore/flats-for-sale-in-koramangala-bangalore",
+            "snippet": "Apartments for sale in Koramangala, Bangalore \u00b7 3 BHK Apartment in Koramangala \u00b7 3 BHK Apartment in Koramangala \u00b7 4 BHK Apartment in Koramangala. \u20b97.48 Cr* ..."
+          }
+        ]
+      },
+      {
+        "query": "Koramangala 2bhk for sale",
+        "results": [
+          {
+            "position": 1,
+            "title": "2 BHK Flat for Sale in Koramangala, Bangalore",
+            "link": "https://www.magicbricks.com/2-bhk-flats-in-koramangala-bangalore-for-sale-pppfs",
+            "snippet": "Find 2 BHK flats for sale in Koramangala within the price of \u20b91.02 Cr - \u20b92.90 Cr. Explore 52+ resale flats, 59+ ready-to-move homes, and 36+ apartments posted ..."
+          },
+          {
+            "position": 2,
+            "title": "2 BHK Flats For Sale in Koramangala , Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-sale-in-koramangala_bangalore",
+            "snippet": "27+ 2 BHK Apartments/flats available for sale in Koramangala, , Bangalore within your budget & no brokerage. Contact property owners directly for 2 BHK ..."
+          },
+          {
+            "position": 3,
+            "title": "28+ 2 BHK Flats in Koramangala, Bangalore",
+            "link": "https://www.99acres.com/2-bhk-flats-in-koramangala-bangalore-south-ffid",
+            "snippet": "2 BHK Flats in Koramangala, Bangalore ; KMJ AVENUE \u00b7 \u20b92.29 Cr. \u20b917,500 /sqft ; ESTEEM SPLENDOR \u00b7 \u20b92 Cr. \u20b915,735 /sqft ; MADHUBAN BRINDAVAN APAR... \u00b7 \u20b91.9 Cr. \u20b914,514 ..."
+          },
+          {
+            "position": 4,
+            "title": "2 BHK Flats for Sale in Koramangala Bangalore",
+            "link": "https://www.housingman.com/bangalore/2bhk-flats-for-sale-in-koramangala-bangalore",
+            "snippet": "Prestige Pine Wood. Koramangala. 2 BHK Apartment in Koramangala. \u20b91.61 Cr* Onwards. Base Price: \u20b911993/ Sqft. 2 BHK's 1249 Sqft Apartment."
+          },
+          {
+            "position": 5,
+            "title": "7 Flats & Apartments for Sale in Koramangala",
+            "link": "https://www.olx.in/koramangala_g5313995/for-sale-houses-apartments_c1725",
+            "snippet": "Koramangala, BengaluruApr 17. 2 bhk NAVEEN TERRACES Koramangala Bangalore. \u20b9 99,00,0002 BHK - 2 Bathroom - 1150 sqft. 2 bhk NAVEEN TERRACES Koramangala ..."
+          },
+          {
+            "position": 6,
+            "title": "5+ 2 BHK Flats For Sale in Koramangala, Bangalore",
+            "link": "https://www.squareyards.com/sale/2-bhk-for-sale-in-koramangala-bangalore",
+            "snippet": "House for sale in Ashwini layout Ejipura close to Koramangala Bangalore 2.bhk 1Nobar 1bhk 4Nabar immediate sale price .1cr 10 Lhaks contact. Read More. Prime ..."
+          },
+          {
+            "position": 7,
+            "title": "2 BHK Flats in Koramangala, Bangalore from 75 lakhs to 1 ...",
+            "link": "https://www.99acres.com/2-bhk-flats-in-koramangala-bangalore-south-75-lakhs-to-1-crore-ffid",
+            "snippet": "The flat is south-West-Facing. The flat is over 1150 sq.Ft. Carpet area and comes with 2 bedroom(s), 2 bathrooms and 2 balconies. This flat is situated on the ..."
+          },
+          {
+            "position": 8,
+            "title": "Top 16+ 2 BHK Apartments For Sale In Bangalore",
+            "link": "https://www.commonfloor.com/bangalore/property/apartment-ht/sale/2-bhk/in-koramangala-r4e4cf2c2e13bc",
+            "snippet": "Best 16+ 2 BHK Apartments For Sale In Koramangala, Koramangala, Bangalore ; 1.90 Cr. 20299 per sq.ft. Carpet Area \u00b7 936 sq.ft (86.96 sq.m) ; 1.06 Cr. 8972 per sq."
+          },
+          {
+            "position": 9,
+            "title": "2 BHK Apartments/Flats For Sale in Kormangala, , Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-sale-in-shinivagalu_tank_bed_layout_ejipura_bangalore",
+            "snippet": "2 BHK Apartment In Lumbini Residency For Sale In Koramangala. \u20b91 Cr. \u20b910,000/sq.ft. Lumbini Residency ..."
+          },
+          {
+            "position": 10,
+            "title": "Flats under 30 Lakhs near Koramangala Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-koramangala-bangalore-for-sale-price-20-lakhs-to-30-lakhs-pppfs",
+            "snippet": "Flats under 30 Lakhs near Koramangala Bangalore ; 2 BHK Flat for Sale in Stage 2 Hoysala Nagar Bangalore. Sri Nilaya \u00b7 1195 sqft \u00b7 26 April 2026 \u00b7 Transaction : ..."
+          }
+        ]
+      },
+      {
+        "query": "buy flat in Koramangala",
+        "results": [
+          {
+            "position": 1,
+            "title": "Flats for Sale in Koramangala Bangalore | Apartments in ...",
+            "link": "https://www.nobroker.in/flats-for-sale-in-koramangala_bangalore",
+            "snippet": "3 BHK Apartment In Zaanz Apartment For Sale In Koramangala \u00b7 3.30 Cr. \u20b923,741/sq.ft ; 3 BHK Apartment In Sterling Infinia For Sale In Koramangala \u00b7 5.04 Cr. \u20b9 ..."
+          },
+          {
+            "position": 2,
+            "title": "355+ Flats for Sale in Koramangala, Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-koramangala-bangalore-for-sale-pppfs",
+            "snippet": "The price of a flat in Koramangala is between \u20b9 1.07 Cr - \u20b9 20.40 Cr. Does Koramangala have a metro? Yes, the Koramangala is connected to the Metro through the ..."
+          },
+          {
+            "position": 3,
+            "title": "157+ Flats for sale in Koramangala, Bangalore",
+            "link": "https://www.99acres.com/flats-in-koramangala-bangalore-south-ffid",
+            "snippet": "Apartments in Koramangala, Bangalore ; 3, 4, 5 BHK Flat in 3rd Block Koramangala, Bangalore \u00b7 \u20b94.13 - 4.52 Cr \u00b7 5 BHK Apartment. \u20b96.97 - 7.22 Cr ; 3 ..."
+          },
+          {
+            "position": 4,
+            "title": "Apartments for sale in Koramangala, Bangalore",
+            "link": "https://www.housingman.com/bangalore/flats-for-sale-in-koramangala-bangalore",
+            "snippet": "VKC Chourasia Signature \u00b7 2, 3 BHK Apartment in Koramangala. \u20b91.89 Cr* - \u20b92.57 Cr* ; Sobha Morzaria Grandeur \u00b7 3 BHK Apartment in Koramangala. \u20b93.65 Cr* Onwards."
+          },
+          {
+            "position": 5,
+            "title": "Apartments for Sale in Koramangala",
+            "link": "https://homeraaga.com/apartments-for-sale-in-koramangala/",
+            "snippet": "Apartments for Sale In Kormangala ; 2 BHK Penthouse Shree Lakshmi Grand, Koraman... \u20b9 1,20,00,000 (1.2 Cr) \u00b7 900 ft ; 2 BHK Penthouse Shree Lakshmi Grand, Koraman."
+          },
+          {
+            "position": 6,
+            "title": "7 Flats & Apartments for Sale in Koramangala",
+            "link": "https://www.olx.in/koramangala_g5313995/for-sale-houses-apartments_c1725",
+            "snippet": "Find over 7 flats for sale in Koramangala on OLX. Choose from New Projects, Ready To Move Flats, and Under construction Flats with the option of 1/2/3/4 BHK ..."
+          },
+          {
+            "position": 7,
+            "title": "Flats for sale in Koramangala, Bangalore | 72+ Apartments ...",
+            "link": "https://www.squareyards.com/sale/apartments-for-sale-in-koramangala-bangalore",
+            "snippet": "Explore 72+ Flats in Koramangala, Bangalore. Find 1/2/3/4 BHK Apartments for sale in Koramangala, Bangalore with budget-friendly flat prices."
+          },
+          {
+            "position": 8,
+            "title": "Flats For Sale in Koramangala, Bangalore",
+            "link": "https://residential.addressadvisors.com/flats-for-sale-in-koramangala-bangalore",
+            "snippet": "Explore premium flats for sale in Koramangala, Bangalore. Prime location, vibrant lifestyle, and strong rental demand. Book your site visit today!"
+          },
+          {
+            "position": 9,
+            "title": "Flats for Sale in Koramangala, Bengaluru - Housing",
+            "link": "https://housing.com/in/buy/bengaluru/koramangala-gid/",
+            "snippet": "Explore 271+ Flats for Sale in Koramangala, Bengaluru on Housing.com. Find 42+ Houses/Villas for Sale, 158+ Apartments for Sale."
+          },
+          {
+            "position": 10,
+            "title": "3 - Flats for Sale in Koramangala Bangalore",
+            "link": "https://www.nobroker.in/flats-for-sale-in-koramangala_8th_block_koramangala_bangalore",
+            "snippet": "4+ BHK Flat In Sb For Sale In Koramangala 8th Block, Koramangala \u00b7 2.35 Cr. \u20b99,874/sq.ft ; 2 BHK Flat In Rbs Residency For Sale In Koramangala \u00b7 1.50 Cr. \u20b915,000/ ..."
+          }
+        ]
+      },
+      {
+        "query": "Koramangala real estate review",
+        "results": [
+          {
+            "position": 1,
+            "title": "Ratings & Reviews of Koramangala, Bangalore",
+            "link": "https://www.99acres.com/koramangala-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "The area is posh yet lively, with rentals for students and professionals, though a bit pricey. Evenings are great for walking, and daily needs like the gym, ..."
+          },
+          {
+            "position": 2,
+            "title": "Koramangala Reviews & Ratings",
+            "link": "https://www.magicbricks.com/real-estate-property-reviews/Koramangala-in-Bangalore",
+            "snippet": "Koramangala has good development and growth in recent years. New apartment projects and gated communities are available for families and young professionals ..."
+          },
+          {
+            "position": 3,
+            "title": "Koramangala Real Estate - Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Koramangala-Real-Estate-Koramangala/080PXX80-XX80-110430114808-A2C6_BZDET/reviews?smode=po&companyName=&newAddress=",
+            "snippet": "Koramangala Real Estate in Koramangala, Bangalore currently holds an average rating of 3.5 based on user reviews. Checking reviews before visiting or availing ..."
+          },
+          {
+            "position": 4,
+            "title": "Koramangala, Bangalore Review: Price of Houses ...",
+            "link": "https://www.youtube.com/watch?v=CoQ_AC7X5ls",
+            "snippet": "Koramangala is one of the largest neighborhood which offers mix of luxury apartments commercial structures and premium bungalows."
+          },
+          {
+            "position": 5,
+            "title": "1600 sqft 3 bhk in NGV Koramangala. How is the deal at ...",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1k8buf4/1600_sqft_3_bhk_in_ngv_koramangala_how_is_the/",
+            "snippet": "Its a good investment/price but beware most flat buyers are clueless. They want to look rich/posh so wont bother spending 1 cr more to get a ..."
+          },
+          {
+            "position": 6,
+            "title": "Investment Opportunities in Koramangala",
+            "link": "https://www.radiancerealty.in/blogs/investment-opportunities-in-koramangala",
+            "snippet": "Investing in Koramangala real estate offers potential for long-term gains due to appreciating property values and high demand. Koramangala is a ..."
+          },
+          {
+            "position": 7,
+            "title": "Raheja Residency Reviews & Ratings Koramangala, Bengaluru",
+            "link": "https://housing.com/in/buy/projects/page/148589-raheja-residency-by-raheja-developers-ltd-in-koramangala/reviews",
+            "snippet": "People are very friendly and respectful in the society. Every assistance is very good in the society. Connectivity is very good; cabs and autos are easily ..."
+          },
+          {
+            "position": 8,
+            "title": "Is Koramangala a good area for residential purposes?",
+            "link": "https://www.nobroker.in/forum/koramangala-residential-area/",
+            "snippet": "Once a swampland, Koramangala is now one of the premium locations in South-east Bangalore. Be it residential or commercial complexes, ..."
+          }
+        ]
+      },
+      {
+        "query": "living in Koramangala",
+        "results": [
+          {
+            "position": 1,
+            "title": "why Koramangala is the best place to live in Bangalore - KOTS",
+            "link": "https://www.kots.world/blog/why-koramangala-is-the-best-place-to-live-in-bangalore",
+            "snippet": "Koramangala is a well-known and lively locality in Bangalore that offers a perfect mix of urban lifestyle, incredible connectivity, ..."
+          },
+          {
+            "position": 2,
+            "title": "What is it like to live in Koramangala?",
+            "link": "https://www.quora.com/What-is-it-like-to-live-in-Koramangala",
+            "snippet": "Great weather, good schools and education institutions, decent cost of living, relatively safe environment, lots of greenery, affordable public ..."
+          },
+          {
+            "position": 3,
+            "title": "Why Koramangala is the Best Place to Live in Bangalore",
+            "link": "https://www.sobha.com/blog/why-koramangala-best-place-live-bangalore/",
+            "snippet": "Koramangala is the best place to live in Bangalore as it offers seamless connectivity, premium housing, top educational & healthcare institutions, and thriving ..."
+          },
+          {
+            "position": 4,
+            "title": "Advice/Suggestions on accommodation in Koramangala",
+            "link": "https://www.reddit.com/r/bangalore/comments/rmqez5/advicesuggestions_on_accommodation_in_koramangala/",
+            "snippet": "As of now, Zolo PG seems to be a really good option both given its cost and positive reviews. I thought of renting a 1 RK apartment but I'm lost in that case."
+          },
+          {
+            "position": 5,
+            "title": "Why Koramangala is the Best Place to Live in Bangalore",
+            "link": "https://www.birlaevara.org.in/bangalore/why-koramangala-is-the-best-place-to-live-in-bangalore.html",
+            "snippet": "Koramangala is the best place to live in Bangalore as it offers seamless connectivity to major IT hubs and a premium living experience."
+          },
+          {
+            "position": 6,
+            "title": "Exploring the Growing Trend of Co-Living in Koramangala, ...",
+            "link": "https://www.hyphen.club/blogs/coliving-in-koramangala",
+            "snippet": "Apart from shared living spaces in Koramangala, most co-living properties have large common areas like TV lounges, music rooms, gyms, and indoor game zones."
+          },
+          {
+            "position": 7,
+            "title": "Stays in Koramangala for Connected Living in Central ...",
+            "link": "https://thebluekite.com/properties/bengaluru/koramangala",
+            "snippet": "Stays in Koramangala offering well-managed homes in a lively Bengaluru neighbourhood, ideal for work stays, longer visits, and comfortable everyday city ..."
+          },
+          {
+            "position": 8,
+            "title": "Koramangala Bangalore - Posh Residential Hub & Best ...",
+            "link": "https://www.magicbricks.com/blog/koramangala-best-city-to-live-in-the-heart-of-bangalore/109063.html",
+            "snippet": "Koramangala is a popular neighbourhood in Bangalore. Many professionals and college students live here because of its attractive residential options."
+          }
+        ]
+      },
+      {
+        "query": "What is Koramangala Bangalore famous for?",
+        "results": [
+          {
+            "position": 1,
+            "title": "THE 10 BEST Things to Do in Koramangala (2026)",
+            "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087478-Bengaluru_Bangalore_District_Karnataka.html",
+            "snippet": "1. The Grid \u00b7 2. VR Room \u00b7 3. Escape Room \u00b7 4. Asian Woman Spa \u00b7 5. PVR Koramangla - Gold Cinemas \u00b7 6. Mystery Junkies \u00b7 7. Parashurama Vallabhatta Kalari Academy \u00b7 8."
+          },
+          {
+            "position": 2,
+            "title": "What happens @ Koramangala? : r/bangalore",
+            "link": "https://www.reddit.com/r/bangalore/comments/1eqblv7/what_happens_koramangala/",
+            "snippet": "Curiosity of Koramangala, the amazing hookup stories their friends told them, the free drinks, the recent breakup, the divorced, the curious, ..."
+          },
+          {
+            "position": 3,
+            "title": "Places to Visit in Koramangala with Friends for Food & ...",
+            "link": "https://daveandbustersindia.com/blog/places-to-visit-in-koramangala-with-friends-for-food-games/",
+            "snippet": "... Koramangala famous for the coolest outings ever. What's Famous in Koramangala? First things first, Koramangala is legendary for food, gaming ..."
+          },
+          {
+            "position": 4,
+            "title": "What should everyone know about Koramangala, ...",
+            "link": "https://www.quora.com/What-should-everyone-know-about-Koramangala-Bangalore-India",
+            "snippet": "Koramangala is also home to many educational institutions like the St. John's Medical College, Christ University, Indian Institute of Plantation ..."
+          },
+          {
+            "position": 5,
+            "title": "Discover 10 Hidden Gems in Koramangala: Top Places to ...",
+            "link": "https://www.agoda.com/travel-guides/india/bengaluru/discover-10-hidden-gems-in-koramangala-top-places-to-visit/",
+            "snippet": "Koramangala is not just about food and nightlife; it also boasts a rich cultural scene. From art galleries to cultural events, there's plenty to ..."
+          },
+          {
+            "position": 6,
+            "title": "Things to Do in Koramangala - A Local's Guide to Eating, ...",
+            "link": "https://oliveliving.com/blog/things-to-do-in-koramangala/",
+            "snippet": "Koramangala is also packed with excellent Asian restaurants. Misu is known for its dim sums, sushi, and fragrant curries; it is a great pick for ..."
+          },
+          {
+            "position": 7,
+            "title": "Koramangala",
+            "link": "https://en.wikipedia.org/wiki/Koramangala",
+            "snippet": "One of the largest in that metropolis, it is a residential locality with wide, tree-lined boulevards and a mix of commercial structures and bungalows. Planned ..."
+          },
+          {
+            "position": 8,
+            "title": "why Koramangala is the best place to live in Bangalore - KOTS",
+            "link": "https://www.kots.world/blog/why-koramangala-is-the-best-place-to-live-in-bangalore",
+            "snippet": "Koramangala is known for its upscale flats, luxurious apartments, and stand-alone homes, all with modern amenities. It offers outstanding ..."
+          }
+        ]
+      },
+      {
+        "query": "Is Koramangala a good area?",
+        "results": [
+          {
+            "position": 1,
+            "title": "Is Koramangala overrated or am I missing something?",
+            "link": "https://www.reddit.com/r/Bengaluru/comments/1ot9r30/is_koramangala_overrated_or_am_i_missing_something/",
+            "snippet": "Overpriced food, chaotic parking and way too many people on the streets. Is there actually something special about this area, or is it just hype ..."
+          },
+          {
+            "position": 2,
+            "title": "why Koramangala is the best place to live in Bangalore - KOTS",
+            "link": "https://www.kots.world/blog/why-koramangala-is-the-best-place-to-live-in-bangalore",
+            "snippet": "Koramangala Bengaluru Karnataka is the best place to live because of its top restaurants, good facilities, safe neighborhoods for families and ..."
+          },
+          {
+            "position": 3,
+            "title": "Ratings & Reviews of Koramangala, Bangalore",
+            "link": "https://www.99acres.com/koramangala-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "The area is posh yet lively, with rentals for students and professionals, though a bit pricey. Evenings are great for walking, and daily needs like the gym, ..."
+          },
+          {
+            "position": 4,
+            "title": "What is it like to live in Koramangala?",
+            "link": "https://www.quora.com/What-is-it-like-to-live-in-Koramangala",
+            "snippet": "Great weather, good schools and education institutions, decent cost of living, relatively safe environment, lots of greenery, affordable public ..."
+          },
+          {
+            "position": 5,
+            "title": "Why Koramangala is the Best Place to Live in Bangalore",
+            "link": "https://www.sobha.com/blog/why-koramangala-best-place-live-bangalore/",
+            "snippet": "Koramangala is the best place to live in Bangalore as it offers seamless connectivity, premium housing, top educational & healthcare institutions, and thriving ..."
+          },
+          {
+            "position": 6,
+            "title": "7 Reasons Why Koramangala is a Great Place To Live",
+            "link": "https://www.your-space.in/blogs/reasons-why-koramangala-is-a-great-place-to-live/",
+            "snippet": "Koramangala is an excellent city for students, offering a range of educational institutions, vibrant student culture, and numerous amenities. Some of ..."
+          },
+          {
+            "position": 7,
+            "title": "Why Koramangala is the Best Place to Live in Bangalore",
+            "link": "https://www.birlaevara.org.in/bangalore/why-koramangala-is-the-best-place-to-live-in-bangalore.html",
+            "snippet": "Koramangala is the best place to live in Bangalore as it offers seamless connectivity to major IT hubs and a premium living experience."
+          },
+          {
+            "position": 8,
+            "title": "Koramangala, Bangalore: Map, Photo, Video, Price Trends, ...",
+            "link": "https://www.magicbricks.com/Koramangala-in-Bangalore-Overview",
+            "snippet": "Koramangala is a popular area of Bangalore with many good residential projects and houses. Many people like living here because work places, ..."
+          },
+          {
+            "position": 9,
+            "title": "Koramangala review based on personal experience",
+            "link": "https://www.instagram.com/reel/DIHVtZzBQnf/",
+            "snippet": "I find Karmangla's residential areas really pretty. Some parts feel like a calm hill station or a chill tier two town and there are beautiful ..."
+          },
+          {
+            "position": 10,
+            "title": "Bangalore: My 2 Favorite Neighborhoods and 7 Great ...",
+            "link": "https://nickgray.net/bangalore/",
+            "snippet": "I spent 11 days walking around the neighborhoods of Koramangala, Indiranagar, and Cubbon Park. Now you'll meet my new friends, learn about the best ..."
+          }
+        ]
+      }
+    ],
+    "uncovered_queries": [
+      "What is Koramangala Bangalore famous for?"
+    ],
+    "analysis": {
+      "topic": "Koramangala",
+      "competitor_summary": [
+        {
+          "competitor": "magicbricks.com",
+          "result_count": 8,
+          "depth": "listing",
+          "strengths": "Complete coverage across all transaction types (buy, rent, 2BHK specifics); strong presence in transactional queries; integrated reviews/ratings module",
+          "weaknesses": "Listing-heavy; minimal lifestyle/neighborhood content; no differentiated guides on area characteristics or investment thesis"
+        },
+        {
+          "competitor": "nobroker.in",
+          "result_count": 8,
+          "depth": "listing",
+          "strengths": "Full listing coverage; competitive inventory display; strong on buy/rent property queries",
+          "weaknesses": "Purely transactional; no informational content; no lifestyle or area-specific guides; thin on buyer education"
+        },
+        {
+          "competitor": "99acres.com",
+          "result_count": 8,
+          "depth": "listing",
+          "strengths": "Highest inventory visibility; reviews & ratings module; covers all property types and configurations",
+          "weaknesses": "Listing-focused; minimal thought leadership; no neighborhood guides or lifestyle positioning"
+        },
+        {
+          "competitor": "housing.com",
+          "result_count": 3,
+          "depth": "thin",
+          "strengths": "Presence in core transactional queries",
+          "weaknesses": "Severely underrepresented; missing from 5 of 8 probe queries; no lifestyle or informational content; weak local authority"
+        }
+      ],
+      "coverage_gaps": [
+        {
+          "gap": "Koramangala neighborhood guide (lifestyle, culture, dining, nightlife, community)",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "Why Koramangala is famous for (cultural/social identity, startup ecosystem, food scene)",
+          "priority": "high",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Investment analysis: Koramangala property appreciation, ROI, market trends",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "Koramangala vs. competing South Bangalore localities (Indiranagar, Whitefield, Bellandur)",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Schools, hospitals, infrastructure in Koramangala (family-focused content)",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Rental market insights: 2BHK rental yields, tenant demographics, lease trends",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Koramangala micro-location guides (4th Block, 5th Block, 6th Block breakdowns)",
+          "priority": "medium",
+          "suggested_article_type": "sub_spoke"
+        },
+        {
+          "gap": "First-time buyer guide to Koramangala (affordability, financing, legal considerations)",
+          "priority": "low",
+          "suggested_article_type": "faq"
+        }
+      ],
+      "our_advantages": [
+        "Local expertise: Canvas Homes can author authoritative neighborhood guides with on-ground insights competitors lack",
+        "Lifestyle positioning: Competitors own listings; we can own the 'why live here' narrative (culture, community, growth story)",
+        "Investment thesis: Provide data-driven market analysis, appreciation trends, and ROI comparisons\u2014thin across all competitors",
+        "Micro-location depth: Block-by-block guides (4th, 5th, 6th Block) with hyperlocal amenity mapping\u2014uncontested",
+        "Buyer education: First-time buyer guides, financing explainers, legal checklists\u2014competitors ignore this segment",
+        "Freshness advantage: Real-time market data, recent transactions, price trends\u2014can refresh faster than listing portals",
+        "AEO opportunity: FAQ content on 'Is Koramangala overrated?', 'What is it famous for?'\u2014currently owned by Reddit/Quora/blogs"
+      ],
+      "summary": "Koramangala is dominated by transactional listing portals (MagicBricks, NoBroker, 99acres) with zero informational depth; Housing.com is weak. Canvas Homes can capture high-intent buyer segments by owning neighborhood lifestyle guides, investment analysis, micro-location breakdowns, and buyer education\u2014all currently uncovered by competitors."
+    },
+    "summary": "'Koramangala': magicbricks=8, nobroker=8, housing=3, 99acres=8 | 1 uncovered | 8 gaps identified"
+  }
+}

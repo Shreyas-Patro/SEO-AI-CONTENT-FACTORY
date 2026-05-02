@@ -1,3 +1,6 @@
+# Add at top of get_session_factory or wherever the DB URL is constructed:
+import os
+db_path = os.environ.get("LINK_ENGINE_DB", "link_engine.db")
 from contextlib import contextmanager
 
 from sqlalchemy import create_engine, event, text

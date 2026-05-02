@@ -1,0 +1,905 @@
+{
+  "topic": "Kanakapura",
+  "cluster_id": "cl-8a0080ff-492",
+  "keyword_map": {
+    "topic": "Kanakapura",
+    "keyword_groups": [
+      {
+        "group_name": "Kanakapura Property Pricing & Investment",
+        "primary_keyword": "Kanakapura property price",
+        "supporting_keywords": [
+          "How much is the site rate in Kanakapura",
+          "How much is land in Kanakapura",
+          "Kanakapura property price per sq ft",
+          "Cost of 1 acre land in Kanakapura Road",
+          "30 * 40 site cost Bangalore",
+          "2000 square feet land price Bangalore"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "Kanakapura Rental Market & Availability",
+        "primary_keyword": "Kanakapura rent",
+        "supporting_keywords": [
+          "2BHK rent Kanakapura",
+          "Kanakapura flat for sale",
+          "Independent House for sale in Kanakapura Road",
+          "Kanakapura real Estate Agents"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "Kanakapura Tourism & Attractions",
+        "primary_keyword": "things to do in Kanakapura",
+        "supporting_keywords": [
+          "Kanakapura tourist places",
+          "Kanakapura places to visit with family",
+          "hidden places in Kanakapura",
+          "Kanakapura Bangalore guide",
+          "Why is Kanakapura famous",
+          "What is Kanakapura famous for"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "low",
+        "opportunity_score": 85
+      },
+      {
+        "group_name": "Kanakapura Lifestyle & Amenities",
+        "primary_keyword": "best restaurants Kanakapura",
+        "supporting_keywords": [
+          "schools near Kanakapura",
+          "hospitals near Kanakapura",
+          "Kanakapura Park",
+          "Kanakapura road art of living ashram"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 88
+      },
+      {
+        "group_name": "Kanakapura Location & Connectivity",
+        "primary_keyword": "Kanakapura bangalore distance",
+        "supporting_keywords": [
+          "Kanakapura to Bangalore",
+          "Kanakapura to Mysore distance",
+          "Bangalore to Kanakapura Metro",
+          "Kanakapura metro station",
+          "Kanakapura bus stand",
+          "Kanakapura airport",
+          "Kanakapura bangalore map"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 75
+      },
+      {
+        "group_name": "Kanakapura Investment Comparison & Analysis",
+        "primary_keyword": "Is Kanakapura a good place to invest",
+        "supporting_keywords": [
+          "Kanakapura vs Whitefield",
+          "What is the future of Kanakapura Road",
+          "living in Kanakapura Bangalore",
+          "Kanakapura review",
+          "Is Kanakapura urban or rural"
+        ],
+        "intent": "comparison",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 76
+      },
+      {
+        "group_name": "Kanakapura New Projects & Developments",
+        "primary_keyword": "Kanakapura new projects",
+        "supporting_keywords": [
+          "Kanakapura resort",
+          "Kanakapura road bangalore",
+          "Kanakapura Main Road Bangalore"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 74
+      },
+      {
+        "group_name": "Kanakapura Area Overview & History",
+        "primary_keyword": "What is the old name of Kanakapura",
+        "supporting_keywords": [
+          "Where is Kanakapura near to",
+          "Who is the founder of Kanakpura",
+          "Kanakapura Karnataka",
+          "Kanakapura pin code"
+        ],
+        "intent": "informational",
+        "estimated_volume": "low",
+        "competition": "low",
+        "opportunity_score": 82
+      }
+    ],
+    "summary": "Eight distinct keyword groups identified across Kanakapura real estate, tourism, and lifestyle domains. High-opportunity gaps exist in property pricing guides, lifestyle amenities content, and investment comparison analysis, with low competitor coverage in tourism and historical context areas."
+  },
+  "cluster_plan": {
+    "cluster_id": "kanakapura-bangalore-guide",
+    "cluster_name": "Kanakapura Bangalore Complete Guide",
+    "total_articles": 12,
+    "articles": [
+      {
+        "id": "kanakapura-complete-guide",
+        "title": "Kanakapura Bangalore Complete Guide: Property, Tourism & Living in 2025",
+        "slug": "kanakapura-bangalore-complete-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "Kanakapura Bangalore",
+          "secondary": [
+            "Kanakapura guide",
+            "living in Kanakapura",
+            "Kanakapura overview"
+          ]
+        },
+        "word_count_target": 3000,
+        "outline": [
+          "H2: What is Kanakapura and Where is it Located?",
+          "  H3: Kanakapura's Geographic Position",
+          "  H3: Distance from Major Bangalore Areas",
+          "H2: Why Choose Kanakapura for Property Investment?",
+          "  H3: Investment Potential and Growth Prospects",
+          "  H3: Connectivity and Infrastructure Development",
+          "H2: What are the Property Options in Kanakapura?",
+          "  H3: Residential Properties Available",
+          "  H3: Commercial Investment Opportunities",
+          "H2: How is the Lifestyle and Amenities in Kanakapura?",
+          "  H3: Educational Institutions and Healthcare",
+          "  H3: Recreation and Entertainment Options",
+          "H2: What Makes Kanakapura a Tourist Destination?",
+          "  H3: Natural Attractions and Adventure Activities",
+          "  H3: Cultural and Historical Significance",
+          "H2: How to Reach Kanakapura from Bangalore?",
+          "  H3: Transportation Options and Routes",
+          "  H3: Future Metro Connectivity Plans"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-property-prices-investment-guide",
+            "anchor_text": "detailed property price analysis",
+            "context": "In the investment potential section when discussing property rates"
+          },
+          {
+            "target_slug": "kanakapura-rental-market-analysis",
+            "anchor_text": "rental market opportunities",
+            "context": "When discussing residential property options"
+          },
+          {
+            "target_slug": "kanakapura-tourist-attractions-guide",
+            "anchor_text": "complete tourist attractions guide",
+            "context": "In the tourism section when introducing attractions"
+          },
+          {
+            "target_slug": "kanakapura-connectivity-transport-guide",
+            "anchor_text": "comprehensive connectivity guide",
+            "context": "When discussing transportation and accessibility"
+          },
+          {
+            "target_slug": "kanakapura-lifestyle-amenities-guide",
+            "anchor_text": "lifestyle and amenities overview",
+            "context": "In the lifestyle section when discussing facilities"
+          },
+          {
+            "target_slug": "kanakapura-investment-comparison-analysis",
+            "anchor_text": "investment comparison with other areas",
+            "context": "When discussing why to choose Kanakapura for investment"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "This is the main hub article that provides comprehensive overview and links to all specialized articles in the cluster",
+        "db_id": "art-25ac56d8-6a3"
+      },
+      {
+        "id": "kanakapura-property-prices-investment",
+        "title": "Kanakapura Property Prices & Investment Guide: Land Rates, Site Costs & ROI Analysis",
+        "slug": "kanakapura-property-prices-investment-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "Kanakapura property price",
+          "secondary": [
+            "Kanakapura land price",
+            "site rate Kanakapura",
+            "property investment Kanakapura"
+          ]
+        },
+        "word_count_target": 2800,
+        "outline": [
+          "H2: What are the Current Property Prices in Kanakapura?",
+          "  H3: Residential Plot Prices per Square Foot",
+          "  H3: Commercial Property Rates",
+          "H2: How Much Does Land Cost in Kanakapura?",
+          "  H3: Agricultural Land Prices per Acre",
+          "  H3: Residential Site Costs for Different Dimensions",
+          "H2: What Factors Influence Kanakapura Property Prices?",
+          "  H3: Location and Proximity to Main Road",
+          "  H3: Infrastructure Development Impact",
+          "H2: Is Kanakapura a Good Investment Opportunity?",
+          "  H3: ROI Analysis and Growth Projections",
+          "  H3: Comparison with Other Bangalore Suburbs",
+          "H2: What are the Different Property Types Available?",
+          "  H3: Independent Houses and Villas",
+          "  H3: Apartment Complexes and Gated Communities",
+          "H2: How to Calculate Property Investment Returns in Kanakapura?",
+          "  H3: Rental Yield Calculations",
+          "  H3: Capital Appreciation Potential"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "complete Kanakapura guide",
+            "context": "In the introduction when providing context about the area"
+          },
+          {
+            "target_slug": "kanakapura-rental-market-analysis",
+            "anchor_text": "rental market analysis",
+            "context": "When discussing rental yield calculations"
+          },
+          {
+            "target_slug": "kanakapura-investment-comparison-analysis",
+            "anchor_text": "detailed investment comparison",
+            "context": "When comparing with other Bangalore suburbs"
+          },
+          {
+            "target_slug": "kanakapura-new-projects-developments",
+            "anchor_text": "upcoming projects and developments",
+            "context": "When discussing growth projections and infrastructure impact"
+          },
+          {
+            "target_slug": "kanakapura-connectivity-transport-guide",
+            "anchor_text": "connectivity advantages",
+            "context": "When explaining factors that influence property prices"
+          }
+        ],
+        "faq_count": 10,
+        "notes": "Focus on providing specific price ranges and investment analysis with data-driven insights",
+        "db_id": "art-a90d2c9e-3c5"
+      },
+      {
+        "id": "kanakapura-rental-market-analysis",
+        "title": "Kanakapura Rental Market Analysis: 2BHK Rent, Flats for Sale & Real Estate Agents",
+        "slug": "kanakapura-rental-market-analysis",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Kanakapura rent",
+          "secondary": [
+            "2BHK rent Kanakapura",
+            "Kanakapura flat for sale",
+            "Kanakapura real estate agents"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: What are the Current Rental Rates in Kanakapura?",
+          "  H3: 2BHK Apartment Rental Prices",
+          "  H3: Independent House Rental Costs",
+          "H2: Which Areas in Kanakapura Offer Best Rental Value?",
+          "  H3: Prime Locations for Tenants",
+          "  H3: Budget-Friendly Rental Options",
+          "H2: What Types of Properties are Available for Rent?",
+          "  H3: Furnished vs Unfurnished Options",
+          "  H3: Family-Friendly Rental Properties",
+          "H2: How to Find Reliable Real Estate Agents in Kanakapura?",
+          "  H3: Top Real Estate Agencies",
+          "  H3: Tips for Choosing the Right Agent",
+          "H2: What Should Tenants Know Before Renting in Kanakapura?",
+          "  H3: Lease Agreement Essentials",
+          "  H3: Security Deposit and Documentation"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "comprehensive area guide",
+            "context": "When introducing Kanakapura as a rental destination"
+          },
+          {
+            "target_slug": "kanakapura-property-prices-investment-guide",
+            "anchor_text": "property price trends",
+            "context": "When discussing rental rates in relation to property values"
+          },
+          {
+            "target_slug": "kanakapura-lifestyle-amenities-guide",
+            "anchor_text": "lifestyle amenities available",
+            "context": "When explaining what makes areas attractive for tenants"
+          },
+          {
+            "target_slug": "kanakapura-connectivity-transport-guide",
+            "anchor_text": "transportation connectivity",
+            "context": "When discussing prime locations for rental properties"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include specific rental price ranges and practical advice for both landlords and tenants",
+        "db_id": "art-592a588b-2d2"
+      },
+      {
+        "id": "kanakapura-tourist-attractions-guide",
+        "title": "Kanakapura Tourist Places Guide: Hidden Gems, Family Destinations & Adventure Activities",
+        "slug": "kanakapura-tourist-attractions-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "things to do in Kanakapura",
+          "secondary": [
+            "Kanakapura tourist places",
+            "hidden places in Kanakapura",
+            "Kanakapura places to visit with family"
+          ]
+        },
+        "word_count_target": 2000,
+        "outline": [
+          "H2: What are the Top Tourist Attractions in Kanakapura?",
+          "  H3: Natural Scenic Spots and Waterfalls",
+          "  H3: Adventure Sports and Outdoor Activities",
+          "H2: Which Hidden Places Should You Explore in Kanakapura?",
+          "  H3: Off-the-Beaten-Path Destinations",
+          "  H3: Local Secrets and Unexplored Areas",
+          "H2: What Makes Kanakapura Perfect for Family Visits?",
+          "  H3: Kid-Friendly Attractions and Parks",
+          "  H3: Family Resort Options and Picnic Spots",
+          "H2: Why is Kanakapura Famous Among Tourists?",
+          "  H3: Historical and Cultural Significance",
+          "  H3: Art of Living Ashram and Spiritual Tourism",
+          "H2: How to Plan Your Kanakapura Tourism Itinerary?",
+          "  H3: One-Day Trip Planning",
+          "  H3: Weekend Getaway Suggestions"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "complete Kanakapura overview",
+            "context": "In the introduction when setting context about the destination"
+          },
+          {
+            "target_slug": "kanakapura-connectivity-transport-guide",
+            "anchor_text": "how to reach these attractions",
+            "context": "When discussing itinerary planning and accessibility"
+          },
+          {
+            "target_slug": "kanakapura-lifestyle-amenities-guide",
+            "anchor_text": "dining and accommodation options",
+            "context": "When suggesting family-friendly facilities"
+          },
+          {
+            "target_slug": "kanakapura-area-history-overview",
+            "anchor_text": "historical background of Kanakapura",
+            "context": "When discussing cultural significance and famous aspects"
+          }
+        ],
+        "faq_count": 7,
+        "notes": "Focus on practical tourism information with specific locations, timings, and visitor tips",
+        "db_id": "art-7720140b-787"
+      },
+      {
+        "id": "kanakapura-lifestyle-amenities-guide",
+        "title": "Kanakapura Lifestyle Guide: Best Restaurants, Schools, Hospitals & Recreation Facilities",
+        "slug": "kanakapura-lifestyle-amenities-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "best restaurants Kanakapura",
+          "secondary": [
+            "schools near Kanakapura",
+            "hospitals near Kanakapura",
+            "Kanakapura Park"
+          ]
+        },
+        "word_count_target": 1900,
+        "outline": [
+          "H2: What are the Best Restaurants and Dining Options in Kanakapura?",
+          "  H3: Local Cuisine and Traditional Eateries",
+          "  H3: Family Restaurants and Fine Dining",
+          "H2: Which Schools Serve the Kanakapura Area?",
+          "  H3: Top-Rated Primary and Secondary Schools",
+          "  H3: International Schools and Educational Quality",
+          "H2: What Healthcare Facilities are Available Near Kanakapura?",
+          "  H3: Multi-Specialty Hospitals and Clinics",
+          "  H3: Emergency Medical Services",
+          "H2: Where Can You Find Recreation and Entertainment in Kanakapura?",
+          "  H3: Parks and Green Spaces",
+          "  H3: Sports Facilities and Fitness Centers",
+          "H2: What Shopping and Commercial Options Exist?",
+          "  H3: Local Markets and Shopping Centers",
+          "  H3: Banking and Essential Services"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "living in Kanakapura overview",
+            "context": "When introducing lifestyle aspects of the area"
+          },
+          {
+            "target_slug": "kanakapura-rental-market-analysis",
+            "anchor_text": "rental properties near these amenities",
+            "context": "When discussing schools and hospitals for families"
+          },
+          {
+            "target_slug": "kanakapura-tourist-attractions-guide",
+            "anchor_text": "tourist dining and recreation spots",
+            "context": "When mentioning restaurants and parks that attract visitors"
+          },
+          {
+            "target_slug": "kanakapura-investment-comparison-analysis",
+            "anchor_text": "lifestyle comparison with other areas",
+            "context": "When discussing quality of amenities and facilities"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include specific names, addresses, and ratings of establishments where possible",
+        "db_id": "art-b48ec522-0bb"
+      },
+      {
+        "id": "kanakapura-connectivity-transport-guide",
+        "title": "Kanakapura Connectivity Guide: Distance from Bangalore, Metro Plans & Transportation Options",
+        "slug": "kanakapura-connectivity-transport-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Kanakapura bangalore distance",
+          "secondary": [
+            "Kanakapura to Bangalore",
+            "Kanakapura metro station",
+            "Bangalore to Kanakapura Metro"
+          ]
+        },
+        "word_count_target": 1700,
+        "outline": [
+          "H2: What is the Distance from Kanakapura to Bangalore?",
+          "  H3: Exact Distance and Travel Time",
+          "  H3: Route Options and Traffic Considerations",
+          "H2: How Can You Travel from Bangalore to Kanakapura?",
+          "  H3: Public Transportation Options",
+          "  H3: Private Vehicle and Taxi Services",
+          "H2: What are the Future Metro Connectivity Plans for Kanakapura?",
+          "  H3: Proposed Metro Extensions",
+          "  H3: Timeline and Development Updates",
+          "H2: Which Bus Services Connect Kanakapura to Major Areas?",
+          "  H3: BMTC Bus Routes and Schedules",
+          "  H3: Private Bus Services",
+          "H2: How is the Road Infrastructure in Kanakapura?",
+          "  H3: Main Road Conditions and Development",
+          "  H3: Internal Connectivity Within Kanakapura"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "comprehensive location overview",
+            "context": "When introducing Kanakapura's position relative to Bangalore"
+          },
+          {
+            "target_slug": "kanakapura-property-prices-investment-guide",
+            "anchor_text": "connectivity impact on property prices",
+            "context": "When discussing how transportation affects real estate values"
+          },
+          {
+            "target_slug": "kanakapura-tourist-attractions-guide",
+            "anchor_text": "reaching tourist destinations",
+            "context": "When explaining how to access various attractions"
+          },
+          {
+            "target_slug": "kanakapura-investment-comparison-analysis",
+            "anchor_text": "connectivity comparison with other suburbs",
+            "context": "When discussing transportation advantages"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Include specific distances, travel times, and current transportation schedules",
+        "db_id": "art-edc2640f-bbf"
+      },
+      {
+        "id": "kanakapura-investment-comparison-analysis",
+        "title": "Kanakapura Investment Analysis: vs Whitefield Comparison & Future Growth Prospects",
+        "slug": "kanakapura-investment-comparison-analysis",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Is Kanakapura a good place to invest",
+          "secondary": [
+            "Kanakapura vs Whitefield",
+            "future of Kanakapura Road",
+            "Kanakapura review"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: Is Kanakapura a Good Investment Destination?",
+          "  H3: Investment Pros and Cons Analysis",
+          "  H3: Market Trends and Growth Indicators",
+          "H2: How Does Kanakapura Compare to Whitefield for Investment?",
+          "  H3: Property Price Comparison",
+          "  H3: Infrastructure and Amenities Comparison",
+          "H2: What is the Future Development Potential of Kanakapura Road?",
+          "  H3: Planned Infrastructure Projects",
+          "  H3: Government Initiatives and Policies",
+          "H2: What Do Residents and Investors Say About Kanakapura?",
+          "  H3: Resident Reviews and Experiences",
+          "  H3: Investor Testimonials and Case Studies",
+          "H2: Is Kanakapura Urban or Rural in Character?",
+          "  H3: Current Development Status",
+          "  H3: Urbanization Timeline and Projections"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-property-prices-investment-guide",
+            "anchor_text": "detailed property price analysis",
+            "context": "When comparing investment returns and pricing"
+          },
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "complete area overview",
+            "context": "When providing context about Kanakapura's characteristics"
+          },
+          {
+            "target_slug": "kanakapura-connectivity-transport-guide",
+            "anchor_text": "connectivity advantages",
+            "context": "When comparing infrastructure with other areas"
+          },
+          {
+            "target_slug": "kanakapura-new-projects-developments",
+            "anchor_text": "upcoming development projects",
+            "context": "When discussing future growth potential"
+          }
+        ],
+        "faq_count": 7,
+        "notes": "Include data-driven comparisons and real investor insights where possible",
+        "db_id": "art-3fe22421-bf5"
+      },
+      {
+        "id": "kanakapura-new-projects-developments",
+        "title": "Kanakapura New Projects & Developments: Upcoming Resorts, Road Projects & Real Estate",
+        "slug": "kanakapura-new-projects-developments",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Kanakapura new projects",
+          "secondary": [
+            "Kanakapura resort",
+            "Kanakapura road bangalore",
+            "Kanakapura Main Road Bangalore"
+          ]
+        },
+        "word_count_target": 1600,
+        "outline": [
+          "H2: What New Real Estate Projects are Coming to Kanakapura?",
+          "  H3: Residential Development Projects",
+          "  H3: Commercial and Mixed-Use Developments",
+          "H2: Which New Resorts and Hospitality Projects are Planned?",
+          "  H3: Luxury Resort Developments",
+          "  H3: Eco-Tourism and Adventure Resort Projects",
+          "H2: What Infrastructure Developments are Happening on Kanakapura Road?",
+          "  H3: Road Widening and Improvement Projects",
+          "  H3: Utility and Public Infrastructure Upgrades",
+          "H2: How Will These Developments Impact Property Values?",
+          "  H3: Expected Price Appreciation",
+          "  H3: Investment Opportunities in New Projects",
+          "H2: What is the Timeline for Major Developments?",
+          "  H3: Short-term Projects (1-2 years)",
+          "  H3: Long-term Development Plans (3-5 years)"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-property-prices-investment-guide",
+            "anchor_text": "property investment analysis",
+            "context": "When discussing impact on property values"
+          },
+          {
+            "target_slug": "kanakapura-investment-comparison-analysis",
+            "anchor_text": "investment potential assessment",
+            "context": "When explaining how developments affect investment prospects"
+          },
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "area development overview",
+            "context": "When providing context about Kanakapura's growth"
+          },
+          {
+            "target_slug": "kanakapura-tourist-attractions-guide",
+            "anchor_text": "tourism infrastructure development",
+            "context": "When discussing resort and hospitality projects"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Focus on confirmed projects with timelines and avoid speculative information",
+        "db_id": "art-b797a101-715"
+      },
+      {
+        "id": "kanakapura-area-history-overview",
+        "title": "Kanakapura History & Geography: Old Name, Founder, Pin Code & Karnataka Heritage",
+        "slug": "kanakapura-area-history-overview",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "What is the old name of Kanakapura",
+          "secondary": [
+            "founder of Kanakpura",
+            "Kanakapura Karnataka",
+            "Kanakapura pin code"
+          ]
+        },
+        "word_count_target": 1200,
+        "outline": [
+          "H2: What is the Historical Background of Kanakapura?",
+          "  H3: Ancient Origins and Old Names",
+          "  H3: Historical Significance in Karnataka",
+          "H2: Who Founded Kanakapura and When?",
+          "  H3: Founding Stories and Legends",
+          "  H3: Historical Rulers and Dynasties",
+          "H2: What are the Geographic Details of Kanakapura?",
+          "  H3: Location in Karnataka State",
+          "  H3: Pin Code and Administrative Details",
+          "H2: How Has Kanakapura Evolved Over Time?",
+          "  H3: From Historical Town to Modern Suburb",
+          "  H3: Cultural Heritage and Traditions"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "modern Kanakapura overview",
+            "context": "When connecting historical context to present-day Kanakapura"
+          },
+          {
+            "target_slug": "kanakapura-tourist-attractions-guide",
+            "anchor_text": "historical tourist attractions",
+            "context": "When discussing cultural heritage and significance"
+          },
+          {
+            "target_slug": "kanakapura-lifestyle-amenities-guide",
+            "anchor_text": "cultural amenities and traditions",
+            "context": "When explaining how history influences current lifestyle"
+          },
+          {
+            "target_slug": "kanakapura-distance-location-guide",
+            "anchor_text": "geographic location details",
+            "context": "When providing administrative and location information"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Include accurate historical information and avoid unverified claims about origins",
+        "db_id": "art-044caf70-cb7"
+      },
+      {
+        "id": "kanakapura-distance-location-guide",
+        "title": "Kanakapura Location Guide: Distance to Mysore, Airport Access & Nearby Areas",
+        "slug": "kanakapura-distance-location-guide",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Kanakapura to Mysore distance",
+          "secondary": [
+            "Kanakapura airport",
+            "Where is Kanakapura near to",
+            "Kanakapura bangalore map"
+          ]
+        },
+        "word_count_target": 1100,
+        "outline": [
+          "H2: What is the Distance from Kanakapura to Major Cities?",
+          "  H3: Kanakapura to Mysore Distance and Route",
+          "  H3: Distance to Other Karnataka Cities",
+          "H2: How Far is Kanakapura from Bangalore Airport?",
+          "  H3: Airport Access Routes and Travel Time",
+          "  H3: Transportation Options to Airport",
+          "H2: Which Areas are Near to Kanakapura?",
+          "  H3: Neighboring Towns and Suburbs",
+          "  H3: Strategic Location Advantages",
+          "H2: How to Navigate Kanakapura Using Maps?",
+          "  H3: Key Landmarks and Reference Points",
+          "  H3: Digital Map Resources and GPS Coordinates"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-connectivity-transport-guide",
+            "anchor_text": "detailed transportation options",
+            "context": "When discussing travel routes and connectivity"
+          },
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "comprehensive location overview",
+            "context": "When providing context about Kanakapura's position"
+          },
+          {
+            "target_slug": "kanakapura-tourist-attractions-guide",
+            "anchor_text": "nearby tourist destinations",
+            "context": "When mentioning neighboring areas of interest"
+          },
+          {
+            "target_slug": "kanakapura-area-history-overview",
+            "anchor_text": "historical geographic context",
+            "context": "When explaining the area's geographic significance"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Include specific distances, coordinates, and practical navigation information",
+        "db_id": "art-dc723821-531"
+      },
+      {
+        "id": "kanakapura-site-dimensions-pricing",
+        "title": "Kanakapura Site Dimensions & Pricing: 30x40 Site Cost, 2000 Sq Ft Land Prices",
+        "slug": "kanakapura-site-dimensions-pricing",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "30 * 40 site cost Bangalore",
+          "secondary": [
+            "2000 square feet land price Bangalore",
+            "Cost of 1 acre land in Kanakapura Road"
+          ]
+        },
+        "word_count_target": 1000,
+        "outline": [
+          "H2: What Does a 30x40 Site Cost in Kanakapura?",
+          "  H3: Current Market Rates for Standard Plots",
+          "  H3: Factors Affecting 30x40 Site Pricing",
+          "H2: How Much Does 2000 Square Feet Land Cost?",
+          "  H3: Price Variations by Location",
+          "  H3: Comparison with Other Plot Sizes",
+          "H2: What is the Cost of 1 Acre Land on Kanakapura Road?",
+          "  H3: Agricultural vs Residential Land Rates",
+          "  H3: Investment Potential for Large Plots",
+          "H2: How to Calculate Total Investment for Different Site Dimensions?",
+          "  H3: Additional Costs and Registration Fees",
+          "  H3: Financing Options for Land Purchase"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-property-prices-investment-guide",
+            "anchor_text": "comprehensive property pricing guide",
+            "context": "When providing detailed pricing context and analysis"
+          },
+          {
+            "target_slug": "kanakapura-investment-comparison-analysis",
+            "anchor_text": "investment analysis for different plot sizes",
+            "context": "When discussing investment potential"
+          },
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "area overview for land buyers",
+            "context": "When providing context about the location"
+          },
+          {
+            "target_slug": "kanakapura-rental-market-analysis",
+            "anchor_text": "rental potential for developed sites",
+            "context": "When discussing investment returns"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Include specific price ranges and practical calculation examples for different site dimensions",
+        "db_id": "art-94e9740d-393"
+      },
+      {
+        "id": "kanakapura-faq-compilation",
+        "title": "Kanakapura FAQ: Complete Answers to Property, Tourism & Living Questions",
+        "slug": "kanakapura-faq-compilation",
+        "type": "faq",
+        "target_keywords": {
+          "primary": "Kanakapura FAQ",
+          "secondary": [
+            "Kanakapura questions",
+            "Kanakapura property FAQ",
+            "Kanakapura tourism FAQ"
+          ]
+        },
+        "word_count_target": 1500,
+        "outline": [
+          "H2: Frequently Asked Questions About Kanakapura Property",
+          "  H3: Property Pricing and Investment FAQs",
+          "  H3: Rental Market and Real Estate FAQs",
+          "H2: Common Questions About Kanakapura Tourism",
+          "  H3: Tourist Attractions and Activities FAQs",
+          "  H3: Travel and Accessibility FAQs",
+          "H2: Lifestyle and Living in Kanakapura FAQs",
+          "  H3: Amenities and Facilities Questions",
+          "  H3: Connectivity and Transportation FAQs",
+          "H2: Investment and Development FAQs",
+          "  H3: Future Growth and Development Questions",
+          "  H3: Comparison with Other Areas FAQs"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "kanakapura-bangalore-complete-guide",
+            "anchor_text": "detailed Kanakapura guide",
+            "context": "When referring to comprehensive information"
+          },
+          {
+            "target_slug": "kanakapura-property-prices-investment-guide",
+            "anchor_text": "property pricing details",
+            "context": "When answering property-related questions"
+          },
+          {
+            "target_slug": "kanakapura-tourist-attractions-guide",
+            "anchor_text": "tourist attractions information",
+            "context": "When answering tourism-related questions"
+          },
+          {
+            "target_slug": "kanakapura-connectivity-transport-guide",
+            "anchor_text": "transportation and connectivity details",
+            "context": "When answering travel and accessibility questions"
+          }
+        ],
+        "faq_count": 25,
+        "notes": "Compile the most common questions from all other articles and provide concise, actionable answers",
+        "db_id": "art-9d629021-707"
+      }
+    ],
+    "linking_matrix": {
+      "kanakapura-bangalore-complete-guide": [
+        "kanakapura-property-prices-investment-guide",
+        "kanakapura-rental-market-analysis",
+        "kanakapura-tourist-attractions-guide",
+        "kanakapura-connectivity-transport-guide",
+        "kanakapura-lifestyle-amenities-guide",
+        "kanakapura-investment-comparison-analysis"
+      ],
+      "kanakapura-property-prices-investment-guide": [
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-rental-market-analysis",
+        "kanakapura-investment-comparison-analysis",
+        "kanakapura-new-projects-developments",
+        "kanakapura-connectivity-transport-guide"
+      ],
+      "kanakapura-rental-market-analysis": [
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-property-prices-investment-guide",
+        "kanakapura-lifestyle-amenities-guide",
+        "kanakapura-connectivity-transport-guide"
+      ],
+      "kanakapura-tourist-attractions-guide": [
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-connectivity-transport-guide",
+        "kanakapura-lifestyle-amenities-guide",
+        "kanakapura-area-history-overview"
+      ],
+      "kanakapura-lifestyle-amenities-guide": [
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-rental-market-analysis",
+        "kanakapura-tourist-attractions-guide",
+        "kanakapura-investment-comparison-analysis"
+      ],
+      "kanakapura-connectivity-transport-guide": [
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-property-prices-investment-guide",
+        "kanakapura-tourist-attractions-guide",
+        "kanakapura-investment-comparison-analysis"
+      ],
+      "kanakapura-investment-comparison-analysis": [
+        "kanakapura-property-prices-investment-guide",
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-connectivity-transport-guide",
+        "kanakapura-new-projects-developments"
+      ],
+      "kanakapura-new-projects-developments": [
+        "kanakapura-property-prices-investment-guide",
+        "kanakapura-investment-comparison-analysis",
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-tourist-attractions-guide"
+      ],
+      "kanakapura-area-history-overview": [
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-tourist-attractions-guide",
+        "kanakapura-lifestyle-amenities-guide",
+        "kanakapura-distance-location-guide"
+      ],
+      "kanakapura-distance-location-guide": [
+        "kanakapura-connectivity-transport-guide",
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-tourist-attractions-guide",
+        "kanakapura-area-history-overview"
+      ],
+      "kanakapura-site-dimensions-pricing": [
+        "kanakapura-property-prices-investment-guide",
+        "kanakapura-investment-comparison-analysis",
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-rental-market-analysis"
+      ],
+      "kanakapura-faq-compilation": [
+        "kanakapura-bangalore-complete-guide",
+        "kanakapura-property-prices-investment-guide",
+        "kanakapura-tourist-attractions-guide",
+        "kanakapura-connectivity-transport-guide"
+      ]
+    }
+  }
+}

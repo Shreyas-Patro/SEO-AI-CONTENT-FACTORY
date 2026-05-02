@@ -18,7 +18,7 @@ The prompt MUST:
 2. Demand freshness — facts from 2024-2026 unless historical
 3. Structure into clear research sections matching articles
 4. Demand source URLs in markdown format
-5. Be ONE coherent prompt
+5. Be ONE coherent prompt, MAKE SURE THE RESEARCH IS UPDATED AND RELEVANT FOR 2026 
 
 Return JSON:
 {

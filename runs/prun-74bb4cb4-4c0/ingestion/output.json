@@ -1,0 +1,27 @@
+{
+  "filepath": "C:\\Users\\Shrey\\AppData\\Local\\Temp\\tmp0u9lp_9s.txt",
+  "topic": "Koramangala",
+  "started_at": "2026-04-30T06:33:09.488908",
+  "stages": {
+    "extract": {
+      "char_count": 6636,
+      "word_count": 689
+    },
+    "chunk": {
+      "chunk_count": 14
+    },
+    "fact_extract": {
+      "facts_extracted": 71,
+      "duplicates_skipped": 0,
+      "cost_usd": 0.0462
+    },
+    "plausibility": {
+      "checked": 20,
+      "flagged": 12,
+      "cost_usd": 0.0178
+    }
+  },
+  "completed_at": "2026-04-30T06:35:11.566819",
+  "total_facts": 71,
+  "total_cost_usd": 0.064
+}

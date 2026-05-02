@@ -1,0 +1,885 @@
+{
+  "topic": "Koramangala",
+  "cluster_id": "cl-2b1defd6-918",
+  "keyword_map": {
+    "topic": "Koramangala",
+    "keyword_groups": [
+      {
+        "group_name": "Koramangala Overview & Guide",
+        "primary_keyword": "Koramangala Bangalore guide",
+        "supporting_keywords": [
+          "What is Koramangala Bangalore famous for?",
+          "Is Koramangala a good area?",
+          "Koramangala Bangalore",
+          "Koramangala review"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "Living in Koramangala",
+        "primary_keyword": "living in Koramangala Bangalore",
+        "supporting_keywords": [
+          "Is Koramangala a good area to live in?",
+          "Pros and cons of living in koramangala bangalore",
+          "Cost of living in Koramangala Bangalore",
+          "Living in koramangala bangalore reddit"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 76
+      },
+      {
+        "group_name": "Koramangala Property Pricing",
+        "primary_keyword": "Koramangala property price",
+        "supporting_keywords": [
+          "What is the price of 3 BHK in Koramangala?",
+          "What is the price of flat in Koramangala?",
+          "What is the price of land in Koramangala per square foot?",
+          "Koramangala property rate per sq ft",
+          "Why is Koramangala so expensive?"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 65
+      },
+      {
+        "group_name": "Koramangala Rental Market",
+        "primary_keyword": "Koramangala rent",
+        "supporting_keywords": [
+          "2BHK rent Koramangala",
+          "Koramangala, Bangalore rent",
+          "Koramangala bangalore pg"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "medium",
+        "competition": "high",
+        "opportunity_score": 62
+      },
+      {
+        "group_name": "Things to Do in Koramangala",
+        "primary_keyword": "things to do in Koramangala",
+        "supporting_keywords": [
+          "How do I spend a day in Koramangala?",
+          "What to do in Koramangala with friends?",
+          "Koramangala Bangalore nightlife",
+          "Koramangala pubs",
+          "Koramangala restaurants",
+          "Koramangala flea market"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "low",
+        "opportunity_score": 88
+      },
+      {
+        "group_name": "Koramangala Amenities & Services",
+        "primary_keyword": "schools near Koramangala",
+        "supporting_keywords": [
+          "hospitals near Koramangala",
+          "Koramangala forum mall",
+          "Koramangala nexus mall",
+          "Koramangala passport office",
+          "Koramangala police station"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 85
+      },
+      {
+        "group_name": "Koramangala vs Other Bangalore Areas",
+        "primary_keyword": "Koramangala vs indiranagar",
+        "supporting_keywords": [
+          "Is Koramangala better than Indiranagar?",
+          "Which is the richest block in Koramangala?",
+          "Which area is growing fastest in Bangalore?"
+        ],
+        "intent": "comparison",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "Koramangala New Real Estate Projects",
+        "primary_keyword": "Koramangala new projects",
+        "supporting_keywords": [
+          "Upcoming projects in Bangalore",
+          "Koramangala flat for sale"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 68
+      }
+    ],
+    "summary": "Koramangala search data reveals strong demand across lifestyle, real estate, and informational queries. Key opportunities exist in lifestyle content (things to do, amenities) with low competition, while property pricing and rental queries face high competition from established portals."
+  },
+  "cluster_plan": {
+    "cluster_id": "koramangala-bangalore",
+    "cluster_name": "Koramangala Bangalore Complete Guide",
+    "total_articles": 11,
+    "articles": [
+      {
+        "id": "koramangala-bangalore-guide",
+        "title": "Koramangala Bangalore: Complete Guide to Living in Bangalore's Tech Hub",
+        "slug": "koramangala-bangalore-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "Koramangala Bangalore guide",
+          "secondary": [
+            "What is Koramangala Bangalore famous for",
+            "Is Koramangala a good area",
+            "Koramangala review"
+          ]
+        },
+        "word_count_target": 2800,
+        "outline": [
+          "H2: What is Koramangala Bangalore Famous For?",
+          "  H3: Tech Startup Ecosystem",
+          "  H3: Vibrant Nightlife and Dining Scene",
+          "  H3: Strategic Location and Connectivity",
+          "H2: Is Koramangala a Good Area to Live In?",
+          "  H3: Pros of Living in Koramangala",
+          "  H3: Cons of Living in Koramangala",
+          "  H3: Who Should Consider Koramangala",
+          "H2: Koramangala Blocks and Neighborhoods Overview",
+          "  H3: Block-wise Breakdown (1st to 8th Block)",
+          "  H3: Most Popular Blocks for Residents",
+          "H2: Transportation and Connectivity in Koramangala",
+          "  H3: Metro Connectivity",
+          "  H3: Bus Routes and Public Transport",
+          "  H3: Cab and Auto Availability",
+          "H2: Why Choose Koramangala for Your Next Home?",
+          "  H3: Investment Potential",
+          "  H3: Lifestyle Benefits",
+          "  H3: Future Development Plans"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "detailed guide on living in Koramangala",
+            "context": "In the pros and cons section when discussing lifestyle benefits"
+          },
+          {
+            "target_slug": "koramangala-property-prices-2024",
+            "anchor_text": "current property prices in Koramangala",
+            "context": "When discussing investment potential"
+          },
+          {
+            "target_slug": "things-to-do-koramangala-bangalore",
+            "anchor_text": "entertainment and dining options in Koramangala",
+            "context": "When describing the vibrant nightlife and dining scene"
+          },
+          {
+            "target_slug": "koramangala-amenities-schools-hospitals",
+            "anchor_text": "schools and hospitals near Koramangala",
+            "context": "When discussing who should consider Koramangala"
+          },
+          {
+            "target_slug": "koramangala-vs-indiranagar-comparison",
+            "anchor_text": "how Koramangala compares to other Bangalore areas",
+            "context": "In the strategic location section"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "This is the main pillar article that should comprehensively cover Koramangala as a destination. Include recent statistics, quotes from residents, and high-quality images of different blocks.",
+        "db_id": "art-95400d80-3ff"
+      },
+      {
+        "id": "living-in-koramangala-bangalore",
+        "title": "Living in Koramangala Bangalore: Pros, Cons & Real Resident Experiences",
+        "slug": "living-in-koramangala-bangalore",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "living in Koramangala Bangalore",
+          "secondary": [
+            "Is Koramangala a good area to live in",
+            "Pros and cons of living in koramangala bangalore",
+            "Cost of living in Koramangala Bangalore"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: Is Koramangala a Good Area to Live in Bangalore?",
+          "  H3: Overall Livability Score",
+          "  H3: Resident Satisfaction Ratings",
+          "H2: What Are the Pros of Living in Koramangala?",
+          "  H3: Excellent Connectivity and Transport",
+          "  H3: Thriving Food and Entertainment Scene",
+          "  H3: Strong Professional Network",
+          "  H3: Quality Healthcare and Education",
+          "H2: What Are the Cons of Living in Koramangala?",
+          "  H3: High Cost of Living",
+          "  H3: Traffic Congestion Issues",
+          "  H3: Limited Parking Space",
+          "  H3: Noise and Crowd Levels",
+          "H2: What is the Cost of Living in Koramangala?",
+          "  H3: Housing Costs Breakdown",
+          "  H3: Daily Expenses and Utilities",
+          "  H3: Comparison with Other Bangalore Areas",
+          "H2: Real Resident Reviews and Experiences",
+          "  H3: Young Professional Perspectives",
+          "  H3: Family Living Experiences",
+          "  H3: Senior Citizen Feedback"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "complete guide to Koramangala",
+            "context": "In the introduction when providing overview context"
+          },
+          {
+            "target_slug": "koramangala-rental-market-guide",
+            "anchor_text": "rental options in Koramangala",
+            "context": "When discussing housing costs breakdown"
+          },
+          {
+            "target_slug": "koramangala-amenities-schools-hospitals",
+            "anchor_text": "healthcare and education facilities in Koramangala",
+            "context": "When mentioning quality healthcare and education"
+          },
+          {
+            "target_slug": "things-to-do-koramangala-bangalore",
+            "anchor_text": "food and entertainment options",
+            "context": "When discussing the thriving food and entertainment scene"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include real resident quotes and testimonials. Add cost comparison tables and livability index scores. Focus on authentic experiences rather than promotional content.",
+        "db_id": "art-6638dd5d-993"
+      },
+      {
+        "id": "koramangala-property-prices-2024",
+        "title": "Koramangala Property Prices 2024: Complete Rate Guide for Buyers & Investors",
+        "slug": "koramangala-property-prices-2024",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Koramangala property price",
+          "secondary": [
+            "What is the price of 3 BHK in Koramangala",
+            "Koramangala property rate per sq ft",
+            "Why is Koramangala so expensive"
+          ]
+        },
+        "word_count_target": 1900,
+        "outline": [
+          "H2: What is the Current Property Price in Koramangala?",
+          "  H3: Average Price per Square Foot",
+          "  H3: Block-wise Price Variations",
+          "H2: What is the Price of 3 BHK in Koramangala?",
+          "  H3: 3 BHK Apartment Prices by Block",
+          "  H3: Premium vs Budget 3 BHK Options",
+          "  H3: 3 BHK Price Trends (2022-2024)",
+          "H2: Koramangala Land Rates and Plot Prices",
+          "  H3: Residential Plot Prices per Sq Ft",
+          "  H3: Commercial Land Rates",
+          "  H3: Factors Affecting Land Prices",
+          "H2: Why is Koramangala So Expensive?",
+          "  H3: Location Premium Factors",
+          "  H3: Infrastructure Development Impact",
+          "  H3: Demand vs Supply Analysis",
+          "H2: Property Price Comparison Across Koramangala Blocks",
+          "  H3: Most Expensive Blocks",
+          "  H3: Best Value for Money Blocks",
+          "  H3: Emerging High-Growth Areas",
+          "H2: Investment Analysis and Future Price Predictions",
+          "  H3: ROI Potential in Different Property Types",
+          "  H3: Price Appreciation Trends",
+          "  H3: Expert Market Predictions"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "comprehensive overview of Koramangala",
+            "context": "In the introduction when setting context about the area"
+          },
+          {
+            "target_slug": "koramangala-new-projects-2024",
+            "anchor_text": "upcoming projects in Koramangala",
+            "context": "When discussing future price predictions"
+          },
+          {
+            "target_slug": "koramangala-vs-indiranagar-comparison",
+            "anchor_text": "price comparison with nearby areas",
+            "context": "In the investment analysis section"
+          },
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "cost of living in Koramangala",
+            "context": "When explaining why the area is expensive"
+          }
+        ],
+        "faq_count": 7,
+        "notes": "Include current market data, price charts, and block-wise comparison tables. Add calculator tools for EMI and investment returns. Ensure all price data is recent and accurate.",
+        "db_id": "art-b281f231-6d5"
+      },
+      {
+        "id": "koramangala-rental-market-guide",
+        "title": "Koramangala Rent Guide 2024: 1BHK, 2BHK, 3BHK & PG Options",
+        "slug": "koramangala-rental-market-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Koramangala rent",
+          "secondary": [
+            "2BHK rent Koramangala",
+            "Koramangala bangalore pg",
+            "Koramangala Bangalore rent"
+          ]
+        },
+        "word_count_target": 1700,
+        "outline": [
+          "H2: What is the Average Rent in Koramangala Bangalore?",
+          "  H3: Rental Rate Overview by Property Type",
+          "  H3: Block-wise Rental Variations",
+          "H2: 2BHK Rent in Koramangala: Complete Breakdown",
+          "  H3: Average 2BHK Rental Prices",
+          "  H3: Best 2BHK Options by Budget",
+          "  H3: 2BHK Rental Trends and Seasonality",
+          "H2: 1BHK and 3BHK Rental Options in Koramangala",
+          "  H3: 1BHK Rent Ranges and Best Areas",
+          "  H3: 3BHK Premium Rental Properties",
+          "  H3: Studio Apartment Rental Options",
+          "H2: PG and Shared Accommodation in Koramangala",
+          "  H3: Best PG Options for Working Professionals",
+          "  H3: Co-living Spaces and Shared Apartments",
+          "  H3: PG Pricing and Amenities Comparison",
+          "H2: Rental Market Trends and Tips",
+          "  H3: Best Time to Find Rentals",
+          "  H3: Negotiation Strategies",
+          "  H3: Hidden Costs to Consider",
+          "H2: How to Find the Best Rental in Koramangala?",
+          "  H3: Top Rental Platforms and Brokers",
+          "  H3: Red Flags to Avoid",
+          "  H3: Documentation and Legal Requirements"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "living experience in Koramangala",
+            "context": "When discussing why people choose to rent in Koramangala"
+          },
+          {
+            "target_slug": "koramangala-property-prices-2024",
+            "anchor_text": "property purchase prices in Koramangala",
+            "context": "When comparing rent vs buy decisions"
+          },
+          {
+            "target_slug": "koramangala-amenities-schools-hospitals",
+            "anchor_text": "nearby amenities and facilities",
+            "context": "When discussing factors affecting rental prices"
+          },
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "complete area guide",
+            "context": "In the introduction for area context"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include rental price comparison tables, seasonal trend charts, and a checklist for rental hunting. Add contact information for reliable brokers and rental platforms.",
+        "db_id": "art-02df5a76-763"
+      },
+      {
+        "id": "things-to-do-koramangala-bangalore",
+        "title": "Things to Do in Koramangala: Complete Entertainment & Dining Guide",
+        "slug": "things-to-do-koramangala-bangalore",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "things to do in Koramangala",
+          "secondary": [
+            "How do I spend a day in Koramangala",
+            "Koramangala pubs",
+            "Koramangala restaurants",
+            "Koramangala nightlife"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: How Do I Spend a Day in Koramangala?",
+          "  H3: Morning Activities and Breakfast Spots",
+          "  H3: Afternoon Shopping and Leisure",
+          "  H3: Evening Entertainment Options",
+          "H2: Best Restaurants in Koramangala for Every Budget",
+          "  H3: Fine Dining Restaurants",
+          "  H3: Casual Dining and Cafes",
+          "  H3: Street Food and Budget Eats",
+          "  H3: International Cuisine Options",
+          "H2: Koramangala Nightlife: Pubs, Bars & Clubs",
+          "  H3: Top Pubs and Breweries",
+          "  H3: Rooftop Bars and Lounges",
+          "  H3: Live Music Venues",
+          "  H3: Late Night Hangout Spots",
+          "H2: Shopping in Koramangala: Malls, Markets & Boutiques",
+          "  H3: Forum Mall and Nexus Mall",
+          "  H3: Local Markets and Street Shopping",
+          "  H3: Boutique Stores and Designer Outlets",
+          "H2: What to Do in Koramangala with Friends?",
+          "  H3: Group Activities and Entertainment",
+          "  H3: Gaming Zones and Recreation Centers",
+          "  H3: Weekend Special Events",
+          "H2: Cultural and Recreational Activities",
+          "  H3: Art Galleries and Cultural Centers",
+          "  H3: Fitness Centers and Sports Facilities",
+          "  H3: Parks and Outdoor Spaces"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "overview of Koramangala area",
+            "context": "In the introduction when setting context about the locality"
+          },
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "lifestyle benefits of living in Koramangala",
+            "context": "When discussing why the area is popular for entertainment"
+          },
+          {
+            "target_slug": "koramangala-amenities-schools-hospitals",
+            "anchor_text": "shopping malls and facilities in Koramangala",
+            "context": "When mentioning Forum Mall and other amenities"
+          },
+          {
+            "target_slug": "koramangala-flea-market-guide",
+            "anchor_text": "weekend flea market experience",
+            "context": "When discussing local markets and street shopping"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Include specific restaurant recommendations with price ranges, operating hours, and contact details. Add maps and location details for each venue mentioned.",
+        "db_id": "art-6a9ae68b-628"
+      },
+      {
+        "id": "koramangala-amenities-schools-hospitals",
+        "title": "Schools, Hospitals & Amenities Near Koramangala: Complete Facilities Guide",
+        "slug": "koramangala-amenities-schools-hospitals",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "schools near Koramangala",
+          "secondary": [
+            "hospitals near Koramangala",
+            "Koramangala forum mall",
+            "Koramangala nexus mall",
+            "Koramangala passport office"
+          ]
+        },
+        "word_count_target": 1600,
+        "outline": [
+          "H2: Best Schools Near Koramangala for Your Children",
+          "  H3: Top CBSE and ICSE Schools",
+          "  H3: International Schools and Curricula",
+          "  H3: Preschools and Kindergartens",
+          "  H3: School Admission Process and Fees",
+          "H2: Hospitals and Healthcare Facilities Near Koramangala",
+          "  H3: Multi-specialty Hospitals",
+          "  H3: Specialized Medical Centers",
+          "  H3: 24/7 Emergency Services",
+          "  H3: Pharmacies and Diagnostic Centers",
+          "H2: Shopping Malls and Retail Centers",
+          "  H3: Forum Mall Koramangala Features",
+          "  H3: Nexus Mall Shopping Experience",
+          "  H3: Local Shopping Complexes",
+          "H2: Government Offices and Public Services",
+          "  H3: Koramangala Passport Office Services",
+          "  H3: Police Station and Safety Services",
+          "  H3: Post Office and Banking Services",
+          "H2: Essential Services and Utilities",
+          "  H3: Internet and Cable Providers",
+          "  H3: Utility Services and Maintenance",
+          "  H3: Transportation Hubs",
+          "H2: Recreation and Fitness Facilities",
+          "  H3: Gyms and Fitness Centers",
+          "  H3: Sports Clubs and Courts",
+          "  H3: Parks and Jogging Tracks"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "quality of life in Koramangala",
+            "context": "When discussing why families choose Koramangala"
+          },
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "comprehensive area overview",
+            "context": "In the introduction for area context"
+          },
+          {
+            "target_slug": "things-to-do-koramangala-bangalore",
+            "anchor_text": "entertainment options in the malls",
+            "context": "When describing Forum Mall and Nexus Mall features"
+          },
+          {
+            "target_slug": "koramangala-property-prices-2024",
+            "anchor_text": "property investment potential",
+            "context": "When discussing how amenities affect property values"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include contact details, addresses, and operating hours for all facilities mentioned. Add distance and travel time from different Koramangala blocks.",
+        "db_id": "art-f041a324-4ec"
+      },
+      {
+        "id": "koramangala-vs-indiranagar-comparison",
+        "title": "Koramangala vs Indiranagar: Which Bangalore Area is Better in 2024?",
+        "slug": "koramangala-vs-indiranagar-comparison",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Koramangala vs indiranagar",
+          "secondary": [
+            "Is Koramangala better than Indiranagar",
+            "Which is the richest block in Koramangala",
+            "Which area is growing fastest in Bangalore"
+          ]
+        },
+        "word_count_target": 1700,
+        "outline": [
+          "H2: Is Koramangala Better Than Indiranagar?",
+          "  H3: Overall Comparison Summary",
+          "  H3: Key Differentiating Factors",
+          "H2: Property Prices: Koramangala vs Indiranagar",
+          "  H3: Rental Rate Comparison",
+          "  H3: Purchase Price Analysis",
+          "  H3: Investment ROI Potential",
+          "H2: Lifestyle and Entertainment Comparison",
+          "  H3: Nightlife and Dining Scene",
+          "  H3: Shopping and Retail Options",
+          "  H3: Cultural Activities and Events",
+          "H2: Connectivity and Transportation",
+          "  H3: Metro and Public Transport Access",
+          "  H3: Traffic and Commute Times",
+          "  H3: Cab and Auto Availability",
+          "H2: Which is the Richest Block in Koramangala?",
+          "  H3: Premium Residential Areas",
+          "  H3: Luxury Property Concentrations",
+          "  H3: High-Net-Worth Individual Preferences",
+          "H2: Future Growth Potential Analysis",
+          "  H3: Infrastructure Development Plans",
+          "  H3: Commercial Growth Prospects",
+          "  H3: Which Area is Growing Fastest?",
+          "H2: Who Should Choose Koramangala vs Indiranagar?",
+          "  H3: Best for Young Professionals",
+          "  H3: Best for Families",
+          "  H3: Best for Investors"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "koramangala-property-prices-2024",
+            "anchor_text": "detailed Koramangala property prices",
+            "context": "When comparing property prices between the areas"
+          },
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "living experience in Koramangala",
+            "context": "When discussing lifestyle factors"
+          },
+          {
+            "target_slug": "things-to-do-koramangala-bangalore",
+            "anchor_text": "entertainment options in Koramangala",
+            "context": "When comparing nightlife and dining scenes"
+          },
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "complete guide to Koramangala",
+            "context": "In the introduction for comprehensive area information"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Include side-by-side comparison tables, charts showing price trends, and objective analysis. Avoid bias toward either area and present factual comparisons.",
+        "db_id": "art-531cfa73-374"
+      },
+      {
+        "id": "koramangala-new-projects-2024",
+        "title": "New Projects in Koramangala 2024: Latest Residential & Commercial Developments",
+        "slug": "koramangala-new-projects-2024",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Koramangala new projects",
+          "secondary": [
+            "Upcoming projects in Bangalore",
+            "Koramangala flat for sale"
+          ]
+        },
+        "word_count_target": 1200,
+        "outline": [
+          "H2: Latest Residential Projects in Koramangala 2024",
+          "  H3: Premium Apartment Complexes",
+          "  H3: Mid-Range Housing Options",
+          "  H3: Luxury Villa Projects",
+          "H2: Commercial Developments and Office Spaces",
+          "  H3: New IT Parks and Tech Centers",
+          "  H3: Retail and Mixed-Use Projects",
+          "H2: Infrastructure Development Updates",
+          "  H3: Road and Transport Improvements",
+          "  H3: Utility Upgrades",
+          "H2: Investment Opportunities in New Projects",
+          "  H3: Pre-launch Investment Benefits",
+          "  H3: Expected ROI and Appreciation",
+          "H2: How to Invest in Koramangala New Projects?",
+          "  H3: Due Diligence Checklist",
+          "  H3: Financing Options Available"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "koramangala-property-prices-2024",
+            "anchor_text": "current property market rates",
+            "context": "When discussing investment opportunities and pricing"
+          },
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "area development overview",
+            "context": "In the introduction when setting context about Koramangala"
+          },
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "benefits of living in Koramangala",
+            "context": "When explaining why new projects are coming up in the area"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Include project timelines, developer information, and contact details. Add images and floor plans where available. Ensure all project information is current and verified.",
+        "db_id": "art-48457036-c30"
+      },
+      {
+        "id": "koramangala-flea-market-guide",
+        "title": "Koramangala Flea Market: Shopping Guide, Timings & Best Deals",
+        "slug": "koramangala-flea-market-guide",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Koramangala flea market",
+          "secondary": [
+            "weekend shopping in Koramangala",
+            "street shopping Koramangala"
+          ]
+        },
+        "word_count_target": 1000,
+        "outline": [
+          "H2: Koramangala Flea Market: Complete Shopping Guide",
+          "  H3: Market Location and Timings",
+          "  H3: What to Expect at the Market",
+          "H2: Best Things to Buy at Koramangala Flea Market",
+          "  H3: Clothing and Accessories",
+          "  H3: Home Decor and Handicrafts",
+          "  H3: Books and Vintage Items",
+          "H2: Shopping Tips and Bargaining Strategies",
+          "  H3: Best Time to Visit",
+          "  H3: Negotiation Techniques",
+          "  H3: Payment Methods Accepted",
+          "H2: Other Street Shopping Options in Koramangala",
+          "  H3: Local Markets and Vendors",
+          "  H3: Weekend Pop-up Stores"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "things-to-do-koramangala-bangalore",
+            "anchor_text": "weekend activities in Koramangala",
+            "context": "When discussing the flea market as a weekend activity"
+          },
+          {
+            "target_slug": "koramangala-amenities-schools-hospitals",
+            "anchor_text": "shopping facilities in Koramangala",
+            "context": "When comparing flea market to mall shopping"
+          },
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "local lifestyle and culture",
+            "context": "When describing the local shopping culture"
+          }
+        ],
+        "faq_count": 3,
+        "notes": "Include specific vendor recommendations, price ranges, and photos of popular items. Add directions and parking information.",
+        "db_id": "art-fbda0508-72b"
+      },
+      {
+        "id": "koramangala-startup-ecosystem",
+        "title": "Koramangala Startup Ecosystem: Why Tech Companies Choose This Bangalore Hub",
+        "slug": "koramangala-startup-ecosystem",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Koramangala startups",
+          "secondary": [
+            "tech companies in Koramangala",
+            "startup offices Koramangala"
+          ]
+        },
+        "word_count_target": 1100,
+        "outline": [
+          "H2: Why is Koramangala Called Bangalore's Startup Hub?",
+          "  H3: History of Tech Development",
+          "  H3: Famous Startups Based in Koramangala",
+          "H2: What Makes Koramangala Attractive for Startups?",
+          "  H3: Affordable Office Spaces",
+          "  H3: Networking Opportunities",
+          "  H3: Talent Pool Availability",
+          "H2: Co-working Spaces and Office Options",
+          "  H3: Popular Co-working Spaces",
+          "  H3: Traditional Office Rentals",
+          "H2: Impact on Residential Real Estate",
+          "  H3: How Startups Drive Housing Demand",
+          "  H3: Effect on Property Prices",
+          "H2: Future of Koramangala's Tech Scene",
+          "  H3: Upcoming Developments",
+          "  H3: Government Support Initiatives"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "comprehensive area overview",
+            "context": "When explaining Koramangala's overall significance"
+          },
+          {
+            "target_slug": "koramangala-property-prices-2024",
+            "anchor_text": "commercial property rates",
+            "context": "When discussing office space costs"
+          },
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "professional networking benefits",
+            "context": "When explaining why professionals choose to live here"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Include success stories of startups, list of major companies, and statistics about the tech ecosystem. Add quotes from startup founders and entrepreneurs.",
+        "db_id": "art-100d9bff-7a2"
+      },
+      {
+        "id": "koramangala-complete-faq",
+        "title": "Koramangala Bangalore: 50+ Frequently Asked Questions Answered",
+        "slug": "koramangala-bangalore-faq",
+        "type": "faq",
+        "target_keywords": {
+          "primary": "Koramangala Bangalore FAQ",
+          "secondary": [
+            "Koramangala questions",
+            "Koramangala information"
+          ]
+        },
+        "word_count_target": 1400,
+        "outline": [
+          "H2: General Questions About Koramangala",
+          "  H3: Location and Geography FAQs",
+          "  H3: History and Development FAQs",
+          "H2: Living in Koramangala FAQs",
+          "  H3: Residential Experience Questions",
+          "  H3: Cost of Living FAQs",
+          "H2: Property and Real Estate FAQs",
+          "  H3: Buying Property Questions",
+          "  H3: Rental Market FAQs",
+          "H2: Amenities and Facilities FAQs",
+          "  H3: Schools and Healthcare Questions",
+          "  H3: Shopping and Entertainment FAQs",
+          "H2: Transportation and Connectivity FAQs",
+          "  H3: Public Transport Questions",
+          "  H3: Traffic and Commute FAQs",
+          "H2: Investment and Business FAQs",
+          "  H3: Property Investment Questions",
+          "  H3: Business Setup FAQs"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "koramangala-bangalore-guide",
+            "anchor_text": "detailed guide about Koramangala",
+            "context": "For comprehensive answers that need more detail"
+          },
+          {
+            "target_slug": "koramangala-property-prices-2024",
+            "anchor_text": "current property prices and trends",
+            "context": "For property-related FAQ answers"
+          },
+          {
+            "target_slug": "living-in-koramangala-bangalore",
+            "anchor_text": "living experience insights",
+            "context": "For lifestyle and living-related questions"
+          },
+          {
+            "target_slug": "things-to-do-koramangala-bangalore",
+            "anchor_text": "entertainment and dining options",
+            "context": "For questions about activities and lifestyle"
+          },
+          {
+            "target_slug": "koramangala-amenities-schools-hospitals",
+            "anchor_text": "facilities and amenities information",
+            "context": "For questions about schools, hospitals, and services"
+          }
+        ],
+        "faq_count": 50,
+        "notes": "Organize FAQs by category with jump links. Include both basic and advanced questions. Ensure answers are concise but comprehensive, with links to detailed articles for complex topics.",
+        "db_id": "art-81b10ec0-730"
+      }
+    ],
+    "linking_matrix": {
+      "koramangala-bangalore-guide": [
+        "living-in-koramangala-bangalore",
+        "koramangala-property-prices-2024",
+        "things-to-do-koramangala-bangalore",
+        "koramangala-amenities-schools-hospitals",
+        "koramangala-vs-indiranagar-comparison",
+        "koramangala-new-projects-2024",
+        "koramangala-rental-market-guide",
+        "koramangala-startup-ecosystem"
+      ],
+      "living-in-koramangala-bangalore": [
+        "koramangala-bangalore-guide",
+        "koramangala-rental-market-guide",
+        "koramangala-amenities-schools-hospitals",
+        "things-to-do-koramangala-bangalore",
+        "koramangala-property-prices-2024"
+      ],
+      "koramangala-property-prices-2024": [
+        "koramangala-bangalore-guide",
+        "koramangala-new-projects-2024",
+        "koramangala-vs-indiranagar-comparison",
+        "living-in-koramangala-bangalore",
+        "koramangala-rental-market-guide"
+      ],
+      "koramangala-rental-market-guide": [
+        "living-in-koramangala-bangalore",
+        "koramangala-property-prices-2024",
+        "koramangala-amenities-schools-hospitals",
+        "koramangala-bangalore-guide"
+      ],
+      "things-to-do-koramangala-bangalore": [
+        "koramangala-bangalore-guide",
+        "living-in-koramangala-bangalore",
+        "koramangala-amenities-schools-hospitals",
+        "koramangala-flea-market-guide"
+      ],
+      "koramangala-amenities-schools-hospitals": [
+        "living-in-koramangala-bangalore",
+        "koramangala-bangalore-guide",
+        "things-to-do-koramangala-bangalore",
+        "koramangala-property-prices-2024"
+      ],
+      "koramangala-vs-indiranagar-comparison": [
+        "koramangala-property-prices-2024",
+        "living-in-koramangala-bangalore",
+        "things-to-do-koramangala-bangalore",
+        "koramangala-bangalore-guide"
+      ],
+      "koramangala-new-projects-2024": [
+        "koramangala-property-prices-2024",
+        "koramangala-bangalore-guide",
+        "living-in-koramangala-bangalore"
+      ],
+      "koramangala-flea-market-guide": [
+        "things-to-do-koramangala-bangalore",
+        "koramangala-amenities-schools-hospitals",
+        "living-in-koramangala-bangalore"
+      ],
+      "koramangala-startup-ecosystem": [
+        "koramangala-bangalore-guide",
+        "koramangala-property-prices-2024",
+        "living-in-koramangala-bangalore"
+      ],
+      "koramangala-bangalore-faq": [
+        "koramangala-bangalore-guide",
+        "koramangala-property-prices-2024",
+        "living-in-koramangala-bangalore",
+        "things-to-do-koramangala-bangalore",
+        "koramangala-amenities-schools-hospitals"
+      ]
+    }
+  }
+}

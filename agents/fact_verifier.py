@@ -38,7 +38,7 @@ class FactVerifierAgent(AgentBase):
         print(f"[fact_verifier] Checking: {article['title']}")
 
         try:
-            system = open("prompts/fact_verifier.md").read()
+            system = open("prompts/fact_verifier.md", encoding="utf-8").read()
         except FileNotFoundError:
             system = (
                 "Extract every factual claim from the passage and verify each. "

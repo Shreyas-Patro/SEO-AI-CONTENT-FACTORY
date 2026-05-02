@@ -1,0 +1,7 @@
+
+[content_architect] Designing cluster for: Hosa Road
+  8 keyword groups, expecting ≥5 articles
+  Inserted 12/12 articles
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given

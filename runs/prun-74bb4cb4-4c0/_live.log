@@ -1,0 +1,461 @@
+
+============================================================
+[Pipeline prun-74bb4cb4-4c0] Layer 3 (LangGraph + quality loop)
+============================================================
+[layer3_init] 9 articles to process
+  ✓ Node done: layer3_init
+[lead_writer] article=art-6638dd5d-993 iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: Living in Koramangala Bangalore: Pros, Cons & Real Resident Experiences
+  KB facts retrieved: 21
+  Sections needing facts: 3
+  Done: 2759 words (target: 1800)
+└─ [lead_writer] complete in 107.43s ($0.0878, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Living in Koramangala Bangalore: Pros, Cons & Real Resident Experiences
+  ✅ Score: 0.72 | 30 ok / 26 flagged / 20 unverifiable
+└─ [fact_verifier] complete in 72.04s ($0.0464, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Living in Koramangala Bangalore: Pros, Cons & Real Resident Experiences
+  Readability: 30.8
+  ✅ Brand score: 6.8
+└─ [brand_auditor] complete in 30.39s ($0.0134, 0 SERP, 1 LLM)
+[supervisor] art-6638dd5d-993 iter=1 → REWRITE (fact=0.72, brand=6.8, read=31, flags=12)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] Living in Koramangala Bangalore: Pros, Cons & Real Resident Experiences — 46 fact issues, 12 brand issues
+  ✅ Rewrite complete — 2796 words
+└─ [rewriter] complete in 88.17s ($0.0965, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Living in Koramangala Bangalore: Pros, Cons & Real Resident Experiences
+  ✅ Score: 0.69 | 27 ok / 44 flagged / 20 unverifiable
+└─ [fact_verifier] complete in 62.72s ($0.0474, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Living in Koramangala Bangalore: Pros, Cons & Real Resident Experiences
+  Readability: 31.2
+  ✅ Brand score: 7.8
+└─ [brand_auditor] complete in 14.17s ($0.0090, 0 SERP, 1 LLM)
+[supervisor] art-6638dd5d-993 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: Living in Koramangala Bangalore: Pros, Cons & Real Resident Experiences
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 17.45s ($0.0122, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-b281f231-6d5 iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: Koramangala Property Prices 2024: Complete Rate Guide for Buyers & Investors
+  KB facts retrieved: 15
+  Sections needing facts: 4
+  Done: 2747 words (target: 1900)
+└─ [lead_writer] complete in 113.51s ($0.0885, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala Property Prices 2024: Complete Rate Guide for Buyers & Investors
+  ✅ Score: 0.62 | 27 ok / 31 flagged / 22 unverifiable
+└─ [fact_verifier] complete in 74.87s ($0.0506, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala Property Prices 2024: Complete Rate Guide for Buyers & Investors
+  Readability: 30.7
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Brand score: 6.0
+└─ [brand_auditor] complete in 34.34s ($0.0008, 0 SERP, 1 LLM)
+[supervisor] art-b281f231-6d5 iter=1 → REWRITE (fact=0.62, brand=6.0, read=31, flags=1)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] Koramangala Property Prices 2024: Complete Rate Guide for Buyers & Investors — 53 fact issues, 1 brand issues
+  ✅ Rewrite complete — 2749 words
+└─ [rewriter] complete in 76.62s ($0.0871, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala Property Prices 2024: Complete Rate Guide for Buyers & Investors
+  ✅ Score: 0.62 | 37 ok / 28 flagged / 17 unverifiable
+└─ [fact_verifier] complete in 52.73s ($0.0304, 0 SERP, 2 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala Property Prices 2024: Complete Rate Guide for Buyers & Investors
+  Readability: 30.5
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Brand score: 5.8
+└─ [brand_auditor] complete in 35.08s ($0.0009, 0 SERP, 1 LLM)
+[supervisor] art-b281f231-6d5 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: Koramangala Property Prices 2024: Complete Rate Guide for Buyers & Investors
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 15.87s ($0.0121, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-02df5a76-763 iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: Koramangala Rent Guide 2024: 1BHK, 2BHK, 3BHK & PG Options
+  KB facts retrieved: 18
+  Sections needing facts: 5
+  Done: 2875 words (target: 1700)
+└─ [lead_writer] complete in 115.1s ($0.0989, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala Rent Guide 2024: 1BHK, 2BHK, 3BHK & PG Options
+  ✅ Score: 0.71 | 41 ok / 12 flagged / 33 unverifiable
+└─ [fact_verifier] complete in 76.15s ($0.0530, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala Rent Guide 2024: 1BHK, 2BHK, 3BHK & PG Options
+  Readability: 38.3
+  ✅ Brand score: 6.0
+└─ [brand_auditor] complete in 18.72s ($0.0107, 0 SERP, 1 LLM)
+[supervisor] art-02df5a76-763 iter=1 → REWRITE (fact=0.71, brand=6.0, read=38, flags=12)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] Koramangala Rent Guide 2024: 1BHK, 2BHK, 3BHK & PG Options — 45 fact issues, 12 brand issues
+  ✅ Rewrite complete — 2876 words
+└─ [rewriter] complete in 92.83s ($0.1028, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala Rent Guide 2024: 1BHK, 2BHK, 3BHK & PG Options
+  ✅ Score: 0.71 | 28 ok / 11 flagged / 41 unverifiable
+└─ [fact_verifier] complete in 41.51s ($0.0292, 0 SERP, 2 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala Rent Guide 2024: 1BHK, 2BHK, 3BHK & PG Options
+  Readability: 38.2
+  ✅ Brand score: 6.0
+└─ [brand_auditor] complete in 22.82s ($0.0119, 0 SERP, 1 LLM)
+[supervisor] art-02df5a76-763 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: Koramangala Rent Guide 2024: 1BHK, 2BHK, 3BHK & PG Options
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 19.77s ($0.0124, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-6a9ae68b-628 iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: Things to Do in Koramangala: Complete Entertainment & Dining Guide
+  KB facts retrieved: 16
+  Sections needing facts: 8
+  Done: 3397 words (target: 1800)
+└─ [lead_writer] complete in 112.94s ($0.1011, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Things to Do in Koramangala: Complete Entertainment & Dining Guide
+  ✅ Score: 0.63 | 26 ok / 11 flagged / 43 unverifiable
+└─ [fact_verifier] complete in 62.24s ($0.0446, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Things to Do in Koramangala: Complete Entertainment & Dining Guide
+  Readability: 37.1
+  ✅ Brand score: 6.0
+└─ [brand_auditor] complete in 22.51s ($0.0129, 0 SERP, 1 LLM)
+[supervisor] art-6a9ae68b-628 iter=1 → REWRITE (fact=0.63, brand=6.0, read=37, flags=14)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] Things to Do in Koramangala: Complete Entertainment & Dining Guide — 54 fact issues, 14 brand issues
+  ✅ Rewrite complete — 3314 words
+└─ [rewriter] complete in 97.72s ($0.1028, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Things to Do in Koramangala: Complete Entertainment & Dining Guide
+  ✅ Score: 0.64 | 31 ok / 20 flagged / 34 unverifiable
+└─ [fact_verifier] complete in 67.66s ($0.0483, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Things to Do in Koramangala: Complete Entertainment & Dining Guide
+  Readability: 37.8
+  ✅ Brand score: 6.4
+└─ [brand_auditor] complete in 21.44s ($0.0124, 0 SERP, 1 LLM)
+[supervisor] art-6a9ae68b-628 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: Things to Do in Koramangala: Complete Entertainment & Dining Guide
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 15.04s ($0.0118, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-f041a324-4ec iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: Schools, Hospitals & Amenities Near Koramangala: Complete Facilities Guide
+  KB facts retrieved: 15
+  Sections needing facts: 8
+  Done: 3380 words (target: 1600)
+└─ [lead_writer] complete in 119.91s ($0.1027, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Schools, Hospitals & Amenities Near Koramangala: Complete Facilities Guide
+  ✅ Score: 0.69 | 29 ok / 22 flagged / 31 unverifiable
+└─ [fact_verifier] complete in 56.9s ($0.0437, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Schools, Hospitals & Amenities Near Koramangala: Complete Facilities Guide
+  Readability: 21.6
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 26.89s ($0.0155, 0 SERP, 1 LLM)
+[supervisor] art-f041a324-4ec iter=1 → REWRITE (fact=0.69, brand=6.6, read=22, flags=17)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] Schools, Hospitals & Amenities Near Koramangala: Complete Facilities Guide — 53 fact issues, 17 brand issues
+  ✅ Rewrite complete — 3487 words
+└─ [rewriter] complete in 117.34s ($0.1107, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Schools, Hospitals & Amenities Near Koramangala: Complete Facilities Guide
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Score: 0.70 | 21 ok / 21 flagged / 15 unverifiable
+└─ [fact_verifier] complete in 26.46s ($0.0009, 0 SERP, 1 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Schools, Hospitals & Amenities Near Koramangala: Complete Facilities Guide
+  Readability: 22.5
+  ✅ Brand score: 6.8
+└─ [brand_auditor] complete in 22.04s ($0.0154, 0 SERP, 1 LLM)
+[supervisor] art-f041a324-4ec iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: Schools, Hospitals & Amenities Near Koramangala: Complete Facilities Guide
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.41s ($0.0113, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-531cfa73-374 iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: Koramangala vs Indiranagar: Which Bangalore Area is Better in 2024?
+  KB facts retrieved: 22
+  Sections needing facts: 8
+  Done: 2774 words (target: 1700)
+└─ [lead_writer] complete in 102.55s ($0.0975, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala vs Indiranagar: Which Bangalore Area is Better in 2024?
+  ✅ Score: 0.52 | 21 ok / 27 flagged / 30 unverifiable
+└─ [fact_verifier] complete in 62.14s ($0.0477, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala vs Indiranagar: Which Bangalore Area is Better in 2024?
+  Readability: 23.2
+  ✅ Brand score: 6.8
+└─ [brand_auditor] complete in 26.16s ($0.0151, 0 SERP, 1 LLM)
+[supervisor] art-531cfa73-374 iter=1 → REWRITE (fact=0.52, brand=6.8, read=23, flags=15)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] Koramangala vs Indiranagar: Which Bangalore Area is Better in 2024? — 57 fact issues, 15 brand issues
+  ✅ Rewrite complete — 2705 words
+└─ [rewriter] complete in 87.67s ($0.0992, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala vs Indiranagar: Which Bangalore Area is Better in 2024?
+  ✅ Score: 0.48 | 19 ok / 40 flagged / 22 unverifiable
+└─ [fact_verifier] complete in 71.22s ($0.0506, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala vs Indiranagar: Which Bangalore Area is Better in 2024?
+  Readability: 32.0
+  ✅ Brand score: 6.8
+└─ [brand_auditor] complete in 20.87s ($0.0121, 0 SERP, 1 LLM)
+[supervisor] art-531cfa73-374 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: Koramangala vs Indiranagar: Which Bangalore Area is Better in 2024?
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 16.93s ($0.0133, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-48457036-c30 iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: New Projects in Koramangala 2024: Latest Residential & Commercial Developments
+  KB facts retrieved: 17
+  Sections needing facts: 8
+  Done: 2107 words (target: 1200)
+└─ [lead_writer] complete in 75.63s ($0.0817, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: New Projects in Koramangala 2024: Latest Residential & Commercial Developments
+  ✅ Score: 0.58 | 14 ok / 19 flagged / 50 unverifiable
+└─ [fact_verifier] complete in 69.14s ($0.0487, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: New Projects in Koramangala 2024: Latest Residential & Commercial Developments
+  Readability: 27.7
+  ✅ Brand score: 6.0
+└─ [brand_auditor] complete in 33.2s ($0.0185, 0 SERP, 1 LLM)
+[supervisor] art-48457036-c30 iter=1 → REWRITE (fact=0.58, brand=6.0, read=28, flags=18)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] New Projects in Koramangala 2024: Latest Residential & Commercial Developments — 69 fact issues, 18 brand issues
+  ✅ Rewrite complete — 2186 words
+└─ [rewriter] complete in 64.0s ($0.0810, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: New Projects in Koramangala 2024: Latest Residential & Commercial Developments
+  ✅ Score: 0.60 | 21 ok / 35 flagged / 35 unverifiable
+└─ [fact_verifier] complete in 78.09s ($0.0546, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: New Projects in Koramangala 2024: Latest Residential & Commercial Developments
+  Readability: 37.8
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 27.76s ($0.0009, 0 SERP, 1 LLM)
+[supervisor] art-48457036-c30 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: New Projects in Koramangala 2024: Latest Residential & Commercial Developments
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.38s ($0.0117, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-fbda0508-72b iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: Koramangala Flea Market: Shopping Guide, Timings & Best Deals
+  KB facts retrieved: 15
+  Sections needing facts: 7
+  Done: 1841 words (target: 1000)
+└─ [lead_writer] complete in 66.54s ($0.0692, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala Flea Market: Shopping Guide, Timings & Best Deals
+  ✅ Score: 0.51 | 9 ok / 22 flagged / 29 unverifiable
+└─ [fact_verifier] complete in 58.79s ($0.0381, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala Flea Market: Shopping Guide, Timings & Best Deals
+  Readability: 35.8
+  ✅ Brand score: 7.0
+└─ [brand_auditor] complete in 24.48s ($0.0145, 0 SERP, 1 LLM)
+[supervisor] art-fbda0508-72b iter=1 → REWRITE (fact=0.51, brand=7.0, read=36, flags=17)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] Koramangala Flea Market: Shopping Guide, Timings & Best Deals — 51 fact issues, 17 brand issues
+  ✅ Rewrite complete — 1752 words
+└─ [rewriter] complete in 45.58s ($0.0637, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala Flea Market: Shopping Guide, Timings & Best Deals
+  ✅ Score: 0.48 | 8 ok / 20 flagged / 40 unverifiable
+└─ [fact_verifier] complete in 39.0s ($0.0242, 0 SERP, 2 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala Flea Market: Shopping Guide, Timings & Best Deals
+  Readability: 38.2
+  ✅ Brand score: 5.6
+└─ [brand_auditor] complete in 23.72s ($0.0138, 0 SERP, 1 LLM)
+[supervisor] art-fbda0508-72b iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: Koramangala Flea Market: Shopping Guide, Timings & Best Deals
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.73s ($0.0113, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-100d9bff-7a2 iter=0
+
+┌─ [lead_writer] starting (run=prun-74bb4cb4-4c0)
+[lead_writer] Writing: Koramangala Startup Ecosystem: Why Tech Companies Choose This Bangalore Hub
+  KB facts retrieved: 13
+  Sections needing facts: 7
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Done: 1752 words (target: 1100)
+└─ [lead_writer] complete in 85.53s ($0.0552, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala Startup Ecosystem: Why Tech Companies Choose This Bangalore Hub
+  ✅ Score: 0.57 | 13 ok / 41 flagged / 25 unverifiable
+└─ [fact_verifier] complete in 65.68s ($0.0444, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala Startup Ecosystem: Why Tech Companies Choose This Bangalore Hub
+  Readability: 29.6
+  ✅ Brand score: 6.2
+└─ [brand_auditor] complete in 19.05s ($0.0107, 0 SERP, 1 LLM)
+[supervisor] art-100d9bff-7a2 iter=1 → REWRITE (fact=0.57, brand=6.2, read=30, flags=12)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-74bb4cb4-4c0)
+[rewriter] Koramangala Startup Ecosystem: Why Tech Companies Choose This Bangalore Hub — 66 fact issues, 12 brand issues
+  ✅ Rewrite complete — 1752 words
+└─ [rewriter] complete in 47.09s ($0.0591, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-74bb4cb4-4c0)
+[fact_verifier] Checking: Koramangala Startup Ecosystem: Why Tech Companies Choose This Bangalore Hub
+  ✅ Score: 0.59 | 21 ok / 25 flagged / 31 unverifiable
+└─ [fact_verifier] complete in 64.27s ($0.0389, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-74bb4cb4-4c0)
+[brand_auditor] Auditing: Koramangala Startup Ecosystem: Why Tech Companies Choose This Bangalore Hub
+  Readability: 32.3
+  ✅ Brand score: 6.8
+└─ [brand_auditor] complete in 19.36s ($0.0108, 0 SERP, 1 LLM)
+[supervisor] art-100d9bff-7a2 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-74bb4cb4-4c0)
+[meta_tagger] Tagging: Koramangala Startup Ecosystem: Why Tech Companies Choose This Bangalore Hub
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 15.99s ($0.0116, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue

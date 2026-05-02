@@ -1,0 +1,33 @@
+{
+  "agent": "faq_architect",
+  "status": "failed",
+  "validation_passed": false,
+  "validation_problems": [
+    "Only 2 articles have FAQs \u2014 expected at least 6. LLM likely truncated. Will retry with stronger prompt."
+  ],
+  "problems_history": [
+    [
+      "Only 2 articles have FAQs \u2014 expected at least 6. LLM likely truncated. Will retry with stronger prompt."
+    ],
+    [
+      "Only 2 articles have FAQs \u2014 expected at least 6. LLM likely truncated. Will retry with stronger prompt."
+    ]
+  ],
+  "reads_state": [
+    "keyword_map",
+    "cluster_plan"
+  ],
+  "writes_state": [
+    "faq_plan"
+  ],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 4,
+  "llm_cache_hits": 0,
+  "tokens_in": 941,
+  "tokens_out": 942,
+  "cost_usd": 0.004521,
+  "duration_seconds": 481.95,
+  "completed_at": "2026-04-30T19:17:53.228710",
+  "attempts": 2
+}

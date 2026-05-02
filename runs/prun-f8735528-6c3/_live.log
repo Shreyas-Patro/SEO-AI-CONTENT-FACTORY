@@ -1,0 +1,80 @@
+
+============================================================
+[Pipeline prun-f8735528-6c3] Layer 1 (LangGraph)
+============================================================
+
+────────────────────────────────────────────────────────────
+[Trend Scout v2] Analyzing: mg road
+────────────────────────────────────────────────────────────
+  [1/6] Classifying topic...
+    Type: locality
+    Categories: ['locality', 'infrastructure']
+    Localities: ['MG Road']
+  [2/6] Generating queries (budget: 15 SERP calls)...
+    Generated 15 unique queries across 4 groups
+  [3/6] Fetching Google Trends...
+⚠️  SerpAPI Trends error: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_trends&q=mg+road+Bangalore&geo=IN-KA&data_type=RELATED_QUERIES&api_key=e504c8a9aa13f5537ba9d8035b9b3ddde991482956e13ae48b9e2f75e83317d1&output=json&source=python (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2427)')))
+    Trends unavailable: HTTPSConnectionPool(host='serpapi.com', port=443): Max retries exceeded with url: /search?engine=google_trends&q=mg+road+Bangalore&geo=IN-KA&data_type=RELATED_QUERIES&api_key=e504c8a9aa13f5537ba9d8035b9b3ddde991482956e13ae48b9e2f75e83317d1&output=json&source=python (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2427)')))
+  [4/6] Running 15 SERP searches...
+    [1/15] (core) MG Road Bangalore
+    [2/15] (core) MG Road Bangalore guide
+    [3/15] (core) living in MG Road Bangalore
+    [4/15] (core) MG Road review
+    [5/15] (property) MG Road property price
+    [6/15] (property) MG Road rent
+    [7/15] (property) 2BHK rent MG Road
+    [8/15] (property) MG Road flat for sale
+    [9/15] (property) MG Road property rate per sq ft
+    [10/15] (property) MG Road new projects
+    [11/15] (lifestyle) things to do in MG Road
+    [12/15] (lifestyle) best restaurants MG Road
+    [13/15] (lifestyle) schools near MG Road
+    [14/15] (lifestyle) hospitals near MG Road
+    [15/15] (comparison) MG Road vs Whitefield
+    Total PAA questions: 38
+    Total related searches: 87
+    Enriching trend data with SERP proxy signals...
+  [5/6] Fetching autocomplete (5 calls)...
+    Found 56 autocomplete suggestions
+  [6/6] Running LLM analysis...
+
+  ──────────────────────────────────────────────────
+  ✅ Trend Scout v2 complete
+     Topic type: locality
+     PAA questions: 38
+     Related searches: 87
+     Autocomplete: 56
+     High AEO opportunities: 15
+     Competitor coverage: {"magicbricks.com": 8, "99acres.com": 8, "nobroker.in": 6, "housing.com": 3}
+     SERP calls used: 15/15
+     Cost: $0.0153
+  ──────────────────────────────────────────────────
+  ✓ Node done: trend_scout
+
+┌─ [competitor_spy] starting (run=prun-f8735528-6c3)
+[competitor_spy] Analyzing: mg road
+  Built 8 probe queries
+  [1/8] mg road property
+  [2/8] mg road apartments
+  [3/8] mg road 2bhk for sale
+  [4/8] buy flat in mg road
+  [5/8] mg road real estate review
+  [6/8] living in mg road
+  [7/8] What is MG Road in Bangalore famous for?
+  [8/8] What language is mostly spoken in Bangalore?
+  Running LLM analysis...
+  ✅ 'mg road': magicbricks=8, nobroker=8, housing=3, 99acres=11 | 2 uncovered | 7 gaps identified
+└─ [competitor_spy] complete in 39.25s ($0.0058, 8 SERP, 1 LLM)
+  ✓ Node done: competitor_spy
+
+┌─ [keyword_mapper] starting (run=prun-f8735528-6c3)
+[keyword_mapper] Mapping keywords for: mg road
+  trend_data keys: ['topic', 'classification', 'raw_data', 'analysis', 'competitor_tracker', 'serp_calls_used', 'autocomplete_calls_used', 'cost_usd']
+  competitor_data keys: ['topic', 'competitor_coverage', 'raw_results', 'uncovered_queries', 'analysis', 'summary']
+  Payload contains: 25 PAA, 25 related, 20 autocomplete, 2 uncovered
+  Calling LLM (prompt: 10900 chars)
+  LLM: $0.0070 (3660→1020 tokens, model=claude-haiku-4-5-20251001)
+  Extracted 7 keyword groups
+  ✅ 7 clean keyword groups produced
+└─ [keyword_mapper] complete in 6.9s ($0.0070, 0 SERP, 1 LLM)
+  ✓ Node done: keyword_mapper

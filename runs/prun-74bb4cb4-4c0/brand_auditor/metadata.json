@@ -1,0 +1,19 @@
+{
+  "agent": "brand_auditor",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "reads_state": [],
+  "writes_state": [],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 1,
+  "llm_cache_hits": 0,
+  "tokens_in": 2566,
+  "tokens_out": 2190,
+  "cost_usd": 0.010813,
+  "duration_seconds": 19.36,
+  "completed_at": "2026-04-30T14:20:59.866742",
+  "attempts": 1
+}

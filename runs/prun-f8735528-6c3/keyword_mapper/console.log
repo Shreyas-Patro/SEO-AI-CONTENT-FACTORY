@@ -1,0 +1,8 @@
+[keyword_mapper] Mapping keywords for: mg road
+  trend_data keys: ['topic', 'classification', 'raw_data', 'analysis', 'competitor_tracker', 'serp_calls_used', 'autocomplete_calls_used', 'cost_usd']
+  competitor_data keys: ['topic', 'competitor_coverage', 'raw_results', 'uncovered_queries', 'analysis', 'summary']
+  Payload contains: 25 PAA, 25 related, 20 autocomplete, 2 uncovered
+  Calling LLM (prompt: 10900 chars)
+  LLM: $0.0070 (3660→1020 tokens, model=claude-haiku-4-5-20251001)
+  Extracted 7 keyword groups
+  ✅ 7 clean keyword groups produced

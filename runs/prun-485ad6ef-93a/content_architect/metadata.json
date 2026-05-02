@@ -1,0 +1,32 @@
+{
+  "agent": "content_architect",
+  "status": "failed",
+  "validation_passed": false,
+  "validation_problems": [
+    "total_articles=12 but 11 articles present \u2014 truncated"
+  ],
+  "problems_history": [
+    [
+      "total_articles=12 but 11 articles present \u2014 truncated"
+    ],
+    [
+      "total_articles=12 but 11 articles present \u2014 truncated"
+    ]
+  ],
+  "reads_state": [
+    "keyword_map"
+  ],
+  "writes_state": [
+    "cluster_plan"
+  ],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 0,
+  "llm_cache_hits": 2,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": 0.0,
+  "duration_seconds": 3.27,
+  "completed_at": "2026-04-30T11:09:11.243250",
+  "attempts": 2
+}

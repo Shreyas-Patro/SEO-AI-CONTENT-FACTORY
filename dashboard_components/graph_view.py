@@ -17,7 +17,7 @@ from viz.graph_viewer import export_to_html
 
 
 def render_graph_view():
-    st.markdown("### 🕸️ Knowledge Graph")
+    st.markdown("###  Knowledge Graph")
 
     G = load_graph()
     stats = graph_stats(G)

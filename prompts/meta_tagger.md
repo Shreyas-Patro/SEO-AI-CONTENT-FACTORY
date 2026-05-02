@@ -11,7 +11,7 @@ RULES:
 
 Respond with ONLY JSON:
 {
-  "meta_title": "HSR Layout Bangalore: Complete Guide to Living & Renting (2026) | Canvas Homes",
+  "meta_title": "HSR Layout Bangalore: Complete Guide to Living & Renting | Canvas Homes",
   "meta_description": "Discover everything about HSR Layout — rent prices, property rates, lifestyle, and more. Data-backed guide by Canvas Homes. Updated for 2026.",
   "og_title": "HSR Layout Bangalore: The Complete Guide",
   "og_description": "Your data-backed guide to HSR Layout — prices, lifestyle, connectivity, and insider tips.",

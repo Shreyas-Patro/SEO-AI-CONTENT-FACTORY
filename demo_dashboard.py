@@ -9,6 +9,28 @@ Tabs:
   📊 Opportunity, 📥 Ingestion, 🕸️ Graph, 🗂️ Artifacts (kept from v5)
 """
 import os
+os.environ["TORNADO_LOG_LEVEL"] = "ERROR"
+
+import asyncio
+import logging
+import warnings
+
+logging.getLogger("tornado").setLevel(logging.CRITICAL)
+logging.getLogger("asyncio").setLevel(logging.CRITICAL)
+warnings.filterwarnings("ignore")
+
+# Silence asyncio's "Task exception was never retrieved" for closed websockets
+def _quiet_handler(loop, context):
+    exc = context.get("exception")
+    if exc and exc.__class__.__name__ in ("WebSocketClosedError", "StreamClosedError"):
+        return
+    loop.default_exception_handler(context)
+
+try:
+    asyncio.get_event_loop().set_exception_handler(_quiet_handler)
+except RuntimeError:
+    pass
+import os
 import sys
 import time
 import json
@@ -16,17 +38,21 @@ import threading
 import contextlib
 from pathlib import Path
 from datetime import datetime
+from dashboard_components.output_viewer import render_output_viewer
 
 import streamlit as st
-
+import logging
+logging.getLogger("tornado.access").setLevel(logging.ERROR)
+logging.getLogger("tornado.application").setLevel(logging.ERROR)
+logging.getLogger("tornado.general").setLevel(logging.ERROR)
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 st.set_page_config(
-    page_title="Canvas Homes · AI Pipeline v6",
-    page_icon="🏠",
+    page_title="IQOL· Agentic AI Pipeline V7",
+    page_icon="⚙️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -208,7 +234,7 @@ from dashboard_components.interlinking_view import render_interlinking_view
 
 # ── SIDEBAR ─────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🏠 Canvas Homes")
+    st.markdown("## Canvas Homes")
     st.caption("AI PIPELINE v6 · LangGraph")
 
     topic = st.text_input("Topic", value=st.session_state.topic, key="topic_in")
@@ -247,17 +273,20 @@ with st.sidebar:
 
 
 # ── Auto-refresh while running ──────────────────────────────────────────
-if any_running() and HAVE_AUTOREFRESH:
-    st_autorefresh(interval=2000, key="auto_refresh")
-
+if (
+    HAVE_AUTOREFRESH 
+    and any_running() 
+    and not st.session_state.get("pause_autorefresh", False)
+):
+    st_autorefresh(interval=4000, key="auto_refresh", limit=None)
 
 # ── MAIN LAYOUT ─────────────────────────────────────────────────────────
-st.markdown("# 🏠 Canvas Homes AI Pipeline")
+st.markdown("# IQOL AI AGENT SWARM ")
 
 tabs = st.tabs([
-    "🚀 Pipeline", "📝 Articles", "🔄 Quality",
-    "🔗 Interlink", "📊 Opportunity", "📥 Ingestion",
-    "🕸️ Graph", "🗂️ Artifacts",
+    " Pipeline", " Articles", " Quality",
+    " Interlink", " Opportunity", " Ingestion",
+    " Graph"," Artifacts"," Output"
 ])
 
 with tabs[0]:
@@ -304,3 +333,6 @@ with tabs[7]:
             with st.expander(f"📁 {agent_name} ({len(files)} files)"):
                 for f in files:
                     st.caption(f"`{f['kind']}` · {f['byte_size']} bytes · `{f['file_path']}`")
+with tabs[8]:
+    render_output_viewer(m)
+

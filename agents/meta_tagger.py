@@ -24,7 +24,7 @@ class MetaTaggerAgent(AgentBase):
         faqs = json.loads(article.get("faq_json", "[]") or "[]")
 
         try:
-            system = open("prompts/meta_tagger.md").read()
+            system = open("prompts/meta_tagger.md", encoding="utf-8").read()
         except FileNotFoundError:
             system = "Generate SEO meta tags and schema markup. Return JSON."
 

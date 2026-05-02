@@ -1,0 +1,614 @@
+
+============================================================
+[Pipeline prun-d2e68b07-43f] Layer 3 (LangGraph + quality loop)
+============================================================
+[layer3_init] 12 articles to process
+  ✓ Node done: layer3_init
+[lead_writer] article=art-9d629021-707 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura FAQ: Complete Answers to Property, Tourism & Living Questions
+  KB facts retrieved: 19
+  Sections needing facts: 7
+  Done: 1606 words (target: 1500)
+└─ [lead_writer] complete in 75.51s ($0.0642, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura FAQ: Complete Answers to Property, Tourism & Living Questions
+  ✅ Score: 0.59 | 23 ok / 19 flagged / 19 unverifiable
+└─ [fact_verifier] complete in 56.81s ($0.0386, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura FAQ: Complete Answers to Property, Tourism & Living Questions
+  Readability: 31.3
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 27.0s ($0.0136, 0 SERP, 1 LLM)
+[supervisor] art-9d629021-707 iter=1 → REWRITE (fact=0.59, brand=6.6, read=31, flags=10)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura FAQ: Complete Answers to Property, Tourism & Living Questions — 38 fact issues, 10 brand issues
+  API error: Connection error.. Retrying in 2s...
+  API error: Connection error.. Retrying in 4s...
+  ✅ Rewrite complete — 1533 words
+└─ [rewriter] complete in 10752.03s ($0.0582, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura FAQ: Complete Answers to Property, Tourism & Living Questions
+  ✅ Score: 0.63 | 10 ok / 37 flagged / 12 unverifiable
+└─ [fact_verifier] complete in 59.22s ($0.0373, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura FAQ: Complete Answers to Property, Tourism & Living Questions
+  Readability: 40.9
+  ✅ Brand score: 7.6
+└─ [brand_auditor] complete in 17.98s ($0.0091, 0 SERP, 1 LLM)
+[supervisor] art-9d629021-707 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura FAQ: Complete Answers to Property, Tourism & Living Questions
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 16.39s ($0.0107, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-25ac56d8-6a3 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Bangalore Complete Guide: Property, Tourism & Living in 2025
+  KB facts retrieved: 21
+  Sections needing facts: 8
+  Done: 3458 words (target: 3000)
+└─ [lead_writer] complete in 149.95s ($0.1085, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Bangalore Complete Guide: Property, Tourism & Living in 2025
+  ✅ Score: 0.73 | 21 ok / 13 flagged / 36 unverifiable
+└─ [fact_verifier] complete in 78.7s ($0.0441, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Bangalore Complete Guide: Property, Tourism & Living in 2025
+  Readability: 19.3
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 19.36s ($0.0108, 0 SERP, 1 LLM)
+[supervisor] art-25ac56d8-6a3 iter=1 → REWRITE (fact=0.73, brand=6.6, read=19, flags=11)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Bangalore Complete Guide: Property, Tourism & Living in 2025 — 49 fact issues, 11 brand issues
+  ✅ Rewrite complete — 3316 words
+└─ [rewriter] complete in 112.82s ($0.1052, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Bangalore Complete Guide: Property, Tourism & Living in 2025
+  ✅ Score: 0.76 | 29 ok / 16 flagged / 29 unverifiable
+└─ [fact_verifier] complete in 49.41s ($0.0288, 0 SERP, 2 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Bangalore Complete Guide: Property, Tourism & Living in 2025
+  Readability: 20.5
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 23.36s ($0.0106, 0 SERP, 1 LLM)
+[supervisor] art-25ac56d8-6a3 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Bangalore Complete Guide: Property, Tourism & Living in 2025
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 16.12s ($0.0086, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-a90d2c9e-3c5 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Property Prices & Investment Guide: Land Rates, Site Costs & ROI Analysis
+  KB facts retrieved: 15
+  Sections needing facts: 8
+  API error: Connection error.. Retrying in 2s...
+  API error: Connection error.. Retrying in 4s...
+  Done: 2404 words (target: 2800)
+└─ [lead_writer] complete in 11157.03s ($0.0858, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Property Prices & Investment Guide: Land Rates, Site Costs & ROI Analysis
+  ✅ Score: 0.56 | 31 ok / 52 flagged / 6 unverifiable
+└─ [fact_verifier] complete in 74.1s ($0.0518, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Property Prices & Investment Guide: Land Rates, Site Costs & ROI Analysis
+  Readability: 22.6
+  ✅ Brand score: 6.4
+└─ [brand_auditor] complete in 22.97s ($0.0131, 0 SERP, 1 LLM)
+[supervisor] art-a90d2c9e-3c5 iter=1 → REWRITE (fact=0.56, brand=6.4, read=23, flags=13)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Property Prices & Investment Guide: Land Rates, Site Costs & ROI Analysis — 58 fact issues, 13 brand issues
+  ✅ Rewrite complete — 2361 words
+└─ [rewriter] complete in 72.7s ($0.0866, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Property Prices & Investment Guide: Land Rates, Site Costs & ROI Analysis
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Score: 0.57 | 9 ok / 46 flagged / 1 unverifiable
+└─ [fact_verifier] complete in 77.21s ($0.0358, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Property Prices & Investment Guide: Land Rates, Site Costs & ROI Analysis
+  Readability: 31.8
+  ✅ Brand score: 7.2
+└─ [brand_auditor] complete in 18.11s ($0.0113, 0 SERP, 1 LLM)
+[supervisor] art-a90d2c9e-3c5 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Property Prices & Investment Guide: Land Rates, Site Costs & ROI Analysis
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.22s ($0.0103, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-592a588b-2d2 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Rental Market Analysis: 2BHK Rent, Flats for Sale & Real Estate Agents
+  KB facts retrieved: 18
+  Sections needing facts: 8
+  Done: 2153 words (target: 1800)
+└─ [lead_writer] complete in 85.35s ($0.0805, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Rental Market Analysis: 2BHK Rent, Flats for Sale & Real Estate Agents
+  ✅ Score: 0.38 | 12 ok / 29 flagged / 22 unverifiable
+└─ [fact_verifier] complete in 69.23s ($0.0455, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Rental Market Analysis: 2BHK Rent, Flats for Sale & Real Estate Agents
+  Readability: 29.2
+  ✅ Brand score: 6.6
+└─ [brand_auditor] complete in 21.9s ($0.0124, 0 SERP, 1 LLM)
+[supervisor] art-592a588b-2d2 iter=1 → REWRITE (fact=0.38, brand=6.6, read=29, flags=12)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Rental Market Analysis: 2BHK Rent, Flats for Sale & Real Estate Agents — 51 fact issues, 12 brand issues
+  ✅ Rewrite complete — 2186 words
+└─ [rewriter] complete in 60.55s ($0.0785, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Rental Market Analysis: 2BHK Rent, Flats for Sale & Real Estate Agents
+  ✅ Score: 0.42 | 15 ok / 19 flagged / 31 unverifiable
+└─ [fact_verifier] complete in 60.17s ($0.0412, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Rental Market Analysis: 2BHK Rent, Flats for Sale & Real Estate Agents
+  Readability: 37.9
+  ✅ Brand score: 6.8
+└─ [brand_auditor] complete in 21.78s ($0.0142, 0 SERP, 1 LLM)
+[supervisor] art-592a588b-2d2 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Rental Market Analysis: 2BHK Rent, Flats for Sale & Real Estate Agents
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 10.61s ($0.0077, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-7720140b-787 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Tourist Places Guide: Hidden Gems, Family Destinations & Adventure Activities
+  KB facts retrieved: 15
+  Sections needing facts: 8
+  Done: 2876 words (target: 2000)
+└─ [lead_writer] complete in 102.19s ($0.0912, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Tourist Places Guide: Hidden Gems, Family Destinations & Adventure Activities
+  ✅ Score: 0.71 | 21 ok / 11 flagged / 22 unverifiable
+└─ [fact_verifier] complete in 45.55s ($0.0324, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Tourist Places Guide: Hidden Gems, Family Destinations & Adventure Activities
+  Readability: 28.8
+  ✅ Brand score: 6.0
+└─ [brand_auditor] complete in 24.35s ($0.0136, 0 SERP, 1 LLM)
+[supervisor] art-7720140b-787 iter=1 → REWRITE (fact=0.71, brand=6.0, read=29, flags=13)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Tourist Places Guide: Hidden Gems, Family Destinations & Adventure Activities — 33 fact issues, 13 brand issues
+  ✅ Rewrite complete — 2766 words
+└─ [rewriter] complete in 82.79s ($0.0868, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Tourist Places Guide: Hidden Gems, Family Destinations & Adventure Activities
+  ✅ Score: 0.70 | 23 ok / 16 flagged / 29 unverifiable
+└─ [fact_verifier] complete in 55.8s ($0.0387, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Tourist Places Guide: Hidden Gems, Family Destinations & Adventure Activities
+  Readability: 40.8
+  ✅ Brand score: 6.8
+└─ [brand_auditor] complete in 21.32s ($0.0121, 0 SERP, 1 LLM)
+[supervisor] art-7720140b-787 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Tourist Places Guide: Hidden Gems, Family Destinations & Adventure Activities
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 11.9s ($0.0082, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-b48ec522-0bb iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Lifestyle Guide: Best Restaurants, Schools, Hospitals & Recreation Facilities
+  KB facts retrieved: 15
+  Sections needing facts: 8
+  Done: 2373 words (target: 1900)
+└─ [lead_writer] complete in 81.98s ($0.0783, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Lifestyle Guide: Best Restaurants, Schools, Hospitals & Recreation Facilities
+  ✅ Score: 0.42 | 6 ok / 35 flagged / 21 unverifiable
+└─ [fact_verifier] complete in 60.27s ($0.0414, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Lifestyle Guide: Best Restaurants, Schools, Hospitals & Recreation Facilities
+  Readability: 27.0
+  ✅ Brand score: 5.8
+└─ [brand_auditor] complete in 26.36s ($0.0149, 0 SERP, 1 LLM)
+[supervisor] art-b48ec522-0bb iter=1 → REWRITE (fact=0.42, brand=5.8, read=27, flags=16)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Lifestyle Guide: Best Restaurants, Schools, Hospitals & Recreation Facilities — 56 fact issues, 16 brand issues
+  ✅ Rewrite complete — 2489 words
+└─ [rewriter] complete in 66.0s ($0.0799, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Lifestyle Guide: Best Restaurants, Schools, Hospitals & Recreation Facilities
+  ✅ Score: 0.49 | 16 ok / 37 flagged / 25 unverifiable
+└─ [fact_verifier] complete in 65.31s ($0.0465, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Lifestyle Guide: Best Restaurants, Schools, Hospitals & Recreation Facilities
+  Readability: 37.0
+  ✅ Brand score: 7.6
+└─ [brand_auditor] complete in 14.49s ($0.0099, 0 SERP, 1 LLM)
+[supervisor] art-b48ec522-0bb iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Lifestyle Guide: Best Restaurants, Schools, Hospitals & Recreation Facilities
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.51s ($0.0109, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-edc2640f-bbf iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Connectivity Guide: Distance from Bangalore, Metro Plans & Transportation Options
+  KB facts retrieved: 23
+  Sections needing facts: 7
+  Done: 2079 words (target: 1700)
+└─ [lead_writer] complete in 77.27s ($0.0728, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Connectivity Guide: Distance from Bangalore, Metro Plans & Transportation Options
+  ✅ Score: 0.51 | 15 ok / 49 flagged / 1 unverifiable
+└─ [fact_verifier] complete in 60.57s ($0.0417, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Connectivity Guide: Distance from Bangalore, Metro Plans & Transportation Options
+  Readability: 38.0
+  ✅ Brand score: 6.8
+└─ [brand_auditor] complete in 21.39s ($0.0127, 0 SERP, 1 LLM)
+[supervisor] art-edc2640f-bbf iter=1 → REWRITE (fact=0.51, brand=6.8, read=38, flags=15)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Connectivity Guide: Distance from Bangalore, Metro Plans & Transportation Options — 50 fact issues, 15 brand issues
+  ✅ Rewrite complete — 2135 words
+└─ [rewriter] complete in 56.92s ($0.0753, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Connectivity Guide: Distance from Bangalore, Metro Plans & Transportation Options
+  ✅ Score: 0.52 | 15 ok / 24 flagged / 26 unverifiable
+└─ [fact_verifier] complete in 37.17s ($0.0266, 0 SERP, 2 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Connectivity Guide: Distance from Bangalore, Metro Plans & Transportation Options
+  Readability: 38.9
+  ✅ Brand score: 7.8
+└─ [brand_auditor] complete in 14.59s ($0.0090, 0 SERP, 1 LLM)
+[supervisor] art-edc2640f-bbf iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Connectivity Guide: Distance from Bangalore, Metro Plans & Transportation Options
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 13.23s ($0.0100, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-3fe22421-bf5 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Investment Analysis: vs Whitefield Comparison & Future Growth Prospects
+  KB facts retrieved: 22
+  Sections needing facts: 8
+  Done: 3485 words (target: 1800)
+└─ [lead_writer] complete in 144.11s ($0.1160, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Investment Analysis: vs Whitefield Comparison & Future Growth Prospects
+  ✅ Score: 0.46 | 5 ok / 24 flagged / 40 unverifiable
+└─ [fact_verifier] complete in 68.24s ($0.0450, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Investment Analysis: vs Whitefield Comparison & Future Growth Prospects
+  Readability: 23.8
+  ✅ Brand score: 7.6
+└─ [brand_auditor] complete in 14.58s ($0.0086, 0 SERP, 1 LLM)
+[supervisor] art-3fe22421-bf5 iter=1 → REWRITE (fact=0.46, brand=7.6, read=24, flags=8)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Investment Analysis: vs Whitefield Comparison & Future Growth Prospects — 64 fact issues, 8 brand issues
+  ✅ Rewrite complete — 2971 words
+└─ [rewriter] complete in 101.47s ($0.0950, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Investment Analysis: vs Whitefield Comparison & Future Growth Prospects
+  ✅ Score: 0.47 | 20 ok / 33 flagged / 27 unverifiable
+└─ [fact_verifier] complete in 69.72s ($0.0449, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Investment Analysis: vs Whitefield Comparison & Future Growth Prospects
+  Readability: 16.3
+  ✅ Brand score: 6.2
+└─ [brand_auditor] complete in 20.33s ($0.0123, 0 SERP, 1 LLM)
+[supervisor] art-3fe22421-bf5 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Investment Analysis: vs Whitefield Comparison & Future Growth Prospects
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 13.01s ($0.0095, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-b797a101-715 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura New Projects & Developments: Upcoming Resorts, Road Projects & Real Estate
+  KB facts retrieved: 22
+  Sections needing facts: 6
+  Done: 2179 words (target: 1600)
+└─ [lead_writer] complete in 80.1s ($0.0757, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura New Projects & Developments: Upcoming Resorts, Road Projects & Real Estate
+  ✅ Score: 0.61 | 20 ok / 24 flagged / 23 unverifiable
+└─ [fact_verifier] complete in 63.88s ($0.0443, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura New Projects & Developments: Upcoming Resorts, Road Projects & Real Estate
+  Readability: 28.3
+  ✅ Brand score: 6.2
+└─ [brand_auditor] complete in 30.11s ($0.0161, 0 SERP, 1 LLM)
+[supervisor] art-b797a101-715 iter=1 → REWRITE (fact=0.61, brand=6.2, read=28, flags=15)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura New Projects & Developments: Upcoming Resorts, Road Projects & Real Estate — 47 fact issues, 15 brand issues
+  ✅ Rewrite complete — 2180 words
+└─ [rewriter] complete in 66.51s ($0.0792, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura New Projects & Developments: Upcoming Resorts, Road Projects & Real Estate
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Score: 0.64 | 17 ok / 27 flagged / 6 unverifiable
+└─ [fact_verifier] complete in 72.95s ($0.0314, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura New Projects & Developments: Upcoming Resorts, Road Projects & Real Estate
+  Readability: 29.2
+  ✅ Brand score: 7.0
+└─ [brand_auditor] complete in 14.11s ($0.0088, 0 SERP, 1 LLM)
+[supervisor] art-b797a101-715 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura New Projects & Developments: Upcoming Resorts, Road Projects & Real Estate
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.44s ($0.0108, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-044caf70-cb7 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura History & Geography: Old Name, Founder, Pin Code & Karnataka Heritage
+  KB facts retrieved: 18
+  Sections needing facts: 8
+  Done: 2150 words (target: 1200)
+└─ [lead_writer] complete in 73.04s ($0.0687, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura History & Geography: Old Name, Founder, Pin Code & Karnataka Heritage
+  ✅ Score: 0.69 | 12 ok / 9 flagged / 36 unverifiable
+└─ [fact_verifier] complete in 54.48s ($0.0381, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura History & Geography: Old Name, Founder, Pin Code & Karnataka Heritage
+  Readability: 20.0
+  ✅ Brand score: 5.0
+└─ [brand_auditor] complete in 23.25s ($0.0131, 0 SERP, 1 LLM)
+[supervisor] art-044caf70-cb7 iter=1 → REWRITE (fact=0.69, brand=5.0, read=20, flags=14)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura History & Geography: Old Name, Founder, Pin Code & Karnataka Heritage — 45 fact issues, 14 brand issues
+  ✅ Rewrite complete — 2100 words
+└─ [rewriter] complete in 50.54s ($0.0683, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura History & Geography: Old Name, Founder, Pin Code & Karnataka Heritage
+  ✅ Score: 0.71 | 15 ok / 10 flagged / 33 unverifiable
+└─ [fact_verifier] complete in 34.84s ($0.0233, 0 SERP, 2 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura History & Geography: Old Name, Founder, Pin Code & Karnataka Heritage
+  Readability: 28.9
+  ✅ Brand score: 6.4
+└─ [brand_auditor] complete in 19.96s ($0.0113, 0 SERP, 1 LLM)
+[supervisor] art-044caf70-cb7 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura History & Geography: Old Name, Founder, Pin Code & Karnataka Heritage
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 15.66s ($0.0109, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-dc723821-531 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Location Guide: Distance to Mysore, Airport Access & Nearby Areas
+  KB facts retrieved: 18
+  Sections needing facts: 8
+  Done: 1969 words (target: 1100)
+└─ [lead_writer] complete in 74.31s ($0.0740, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Location Guide: Distance to Mysore, Airport Access & Nearby Areas
+  ✅ Score: 0.75 | 36 ok / 7 flagged / 15 unverifiable
+└─ [fact_verifier] complete in 53.14s ($0.0391, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Location Guide: Distance to Mysore, Airport Access & Nearby Areas
+  Readability: 27.8
+  ✅ Brand score: 6.0
+└─ [brand_auditor] complete in 17.02s ($0.0096, 0 SERP, 1 LLM)
+[supervisor] art-dc723821-531 iter=1 → REWRITE (fact=0.75, brand=6.0, read=28, flags=10)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Location Guide: Distance to Mysore, Airport Access & Nearby Areas — 22 fact issues, 10 brand issues
+  ✅ Rewrite complete — 1921 words
+└─ [rewriter] complete in 49.59s ($0.0665, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Location Guide: Distance to Mysore, Airport Access & Nearby Areas
+  ✅ Score: 0.72 | 42 ok / 16 flagged / 10 unverifiable
+└─ [fact_verifier] complete in 56.25s ($0.0407, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Location Guide: Distance to Mysore, Airport Access & Nearby Areas
+  Readability: 29.0
+  ✅ Brand score: 6.4
+└─ [brand_auditor] complete in 17.28s ($0.0106, 0 SERP, 1 LLM)
+[supervisor] art-dc723821-531 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Location Guide: Distance to Mysore, Airport Access & Nearby Areas
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 9.48s ($0.0074, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-94e9740d-393 iter=0
+
+┌─ [lead_writer] starting (run=prun-d2e68b07-43f)
+[lead_writer] Writing: Kanakapura Site Dimensions & Pricing: 30x40 Site Cost, 2000 Sq Ft Land Prices
+  KB facts retrieved: 18
+  Sections needing facts: 8
+  Done: 1832 words (target: 1000)
+└─ [lead_writer] complete in 70.75s ($0.0755, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Site Dimensions & Pricing: 30x40 Site Cost, 2000 Sq Ft Land Prices
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Score: 0.63 | 10 ok / 11 flagged / 21 unverifiable
+└─ [fact_verifier] complete in 68.32s ($0.0279, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Site Dimensions & Pricing: 30x40 Site Cost, 2000 Sq Ft Land Prices
+  Readability: 40.4
+  ✅ Brand score: 6.2
+└─ [brand_auditor] complete in 29.82s ($0.0170, 0 SERP, 1 LLM)
+[supervisor] art-94e9740d-393 iter=1 → REWRITE (fact=0.63, brand=6.2, read=40, flags=15)
+  ✓ Node done: brand_auditor
+
+┌─ [rewriter] starting (run=prun-d2e68b07-43f)
+[rewriter] Kanakapura Site Dimensions & Pricing: 30x40 Site Cost, 2000 Sq Ft Land Prices — 32 fact issues, 15 brand issues
+  ✅ Rewrite complete — 2010 words
+└─ [rewriter] complete in 61.95s ($0.0803, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-d2e68b07-43f)
+[fact_verifier] Checking: Kanakapura Site Dimensions & Pricing: 30x40 Site Cost, 2000 Sq Ft Land Prices
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Score: 0.63 | 5 ok / 32 flagged / 17 unverifiable
+└─ [fact_verifier] complete in 63.67s ($0.0345, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-d2e68b07-43f)
+[brand_auditor] Auditing: Kanakapura Site Dimensions & Pricing: 30x40 Site Cost, 2000 Sq Ft Land Prices
+  Readability: 48.8
+  ✅ Brand score: 7.0
+└─ [brand_auditor] complete in 17.21s ($0.0110, 0 SERP, 1 LLM)
+[supervisor] art-94e9740d-393 iter=2 → MAX REACHED, accepting
+  ✓ Node done: brand_auditor
+
+┌─ [meta_tagger] starting (run=prun-d2e68b07-43f)
+[meta_tagger] Tagging: Kanakapura Site Dimensions & Pricing: 30x40 Site Cost, 2000 Sq Ft Land Prices
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 16.28s ($0.0114, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue

@@ -16,7 +16,7 @@ from db.sqlite_ops import get_facts, get_pending_verifications
 
 
 def render_ingestion_view(view_run_id=None):
-    st.markdown("### 📥 Research Ingestion Pipeline")
+    st.markdown("###  Research Ingestion Pipeline")
     st.caption(
         "Upload a research document (Perplexity output, .md/.pdf/.docx) → "
         "we extract → chunk → fact-extract → embed → store in graph."

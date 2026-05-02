@@ -87,8 +87,8 @@ class LeadWriterAgent(AgentBase):
 
         # ── Step 4: Build the writing prompt ──────────────────────────
         try:
-            brand_voice = open("prompts/brand_voice.md").read()
-            writer_prompt = open("prompts/lead_writer.md").read()
+            brand_voice = open("prompts/brand_voice.md", encoding="utf-8").read()
+            writer_prompt = open("prompts/lead_writer.md", encoding="utf-8").read()
             system = f"{writer_prompt}\n\n---\n\n{brand_voice}"
         except FileNotFoundError:
             system = self._fallback_system()

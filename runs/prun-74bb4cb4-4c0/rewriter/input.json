@@ -1,0 +1,752 @@
+{
+  "article_id": "art-100d9bff-7a2",
+  "fact_issues": [
+    {
+      "claim_text": "Koramangala hosts more than 2,000 registered companies",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "No citation provided for this specific claim. Knowledge base mentions 800+ startups but not 2,000+ registered companies. Plausible but unverified."
+    },
+    {
+      "claim_text": "12 unicorn startups in Koramangala",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.55,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "No citation provided. Knowledge base does not specify number of unicorns. Claim is specific but unverified."
+    },
+    {
+      "claim_text": "25+ venture capital firms within a 6-kilometer radius",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.6,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "No citation provided. Knowledge base mentions 'venture capital firms' but not specific count. Plausible but unverified."
+    },
+    {
+      "claim_text": "By 2023, Koramangala housed over 1,200 registered startups",
+      "citation_provided": "Source: RERA Karnataka Database",
+      "category": "property",
+      "confidence": 0.7,
+      "status": "flagged",
+      "issue_type": "inconsistent",
+      "suggested_correction": "Knowledge base states 'over 800 startups' not 1,200",
+      "reasoning": "Contradicts earlier claim in same article (800 startups) and knowledge base (800+ startups). Citation to RERA database provided but numbers are inconsistent."
+    },
+    {
+      "claim_text": "Razorpay (fintech) based in Koramangala",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.75,
+      "status": "unverifiable",
+      "issue_type": null,
+      "suggested_correction": null,
+      "reasoning": "Razorpay is a major fintech but headquarters location not confirmed in knowledge base."
+    },
+    {
+      "claim_text": "Byju's (edtech) based in Koramangala",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.7,
+      "status": "unverifiable",
+      "issue_type": null,
+      "suggested_correction": null,
+      "reasoning": "Byju's is major edtech but Koramangala location not confirmed in knowledge base."
+    },
+    {
+      "claim_text": "Urban Company (home services) based in Koramangala",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.7,
+      "status": "unverifiable",
+      "issue_type": null,
+      "suggested_correction": null,
+      "reasoning": "Urban Company is known startup but Koramangala location not confirmed in knowledge base."
+    },
+    {
+      "claim_text": "Dunzo (hyperlocal delivery) based in Koramangala",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.7,
+      "status": "unverifiable",
+      "issue_type": null,
+      "suggested_correction": null,
+      "reasoning": "Dunzo is known startup but Koramangala location not confirmed in knowledge base."
+    },
+    {
+      "claim_text": "Notable Koramangala startups collectively employ over 100,000 people",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.6,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Large employment claim with no citation. Plausible for major unicorns but unverified."
+    },
+    {
+      "claim_text": "Notable Koramangala startups have raised more than $8 billion in funding since 2010",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific funding figure with no citation. Plausible for major unicorns but unverified."
+    },
+    {
+      "claim_text": "Office rents in Koramangala range from \u20b945-80 per square foot per month",
+      "citation_provided": "Source: commercial property rates",
+      "category": "finance",
+      "confidence": 0.7,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Citation is vague ('commercial property rates'). Specific rental rates provided but source is not credible."
+    },
+    {
+      "claim_text": "Office rents in UB City or Brigade Road range from \u20b9120-150 per square foot per month",
+      "citation_provided": "Source: commercial property rates",
+      "category": "finance",
+      "confidence": 0.7,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Citation is vague. Specific rental rates provided but source is not credible."
+    },
+    {
+      "claim_text": "Early-stage companies can start in a 500 square foot space for \u20b925,000 monthly",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific pricing claim with no citation. Rate of \u20b950/sq ft is lower than stated range of \u20b945-80. Inconsistent."
+    },
+    {
+      "claim_text": "Koramangala hosts over 200 startup events annually",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific event count with no citation. Plausible for active startup hub but unverified."
+    },
+    {
+      "claim_text": "Over 50,000 tech professionals live within a 5-kilometer radius of Koramangala",
+      "citation_provided": "local employment data",
+      "category": "infrastructure",
+      "confidence": 0.45,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Vague citation ('local employment data') with no specific source. Number is plausible but unverifiable without concrete data source."
+    },
+    {
+      "claim_text": "IIM Bangalore is 4 kilometers away",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.7,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Plausible distance but no citation provided. IIM Bangalore location relative to Koramangala is not in KB."
+    },
+    {
+      "claim_text": "Christ University is 2 kilometers away",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.65,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Plausible distance but no citation. Christ University's proximity to Koramangala not verified in KB."
+    },
+    {
+      "claim_text": "Several engineering colleges are within 10 kilometers",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.75,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Vague claim without specific colleges named or cited. Plausible for Bangalore but unverifiable."
+    },
+    {
+      "claim_text": "Koramangala houses 50+ co-working spaces",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.6,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "No citation provided. KB confirms co-working spaces exist but doesn't specify quantity."
+    },
+    {
+      "claim_text": "50+ co-working spaces accommodate over 15,000 professionals",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.55,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific number without source. Plausible but unverifiable."
+    },
+    {
+      "claim_text": "WeWork operates three locations in the area",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.5,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific claim about WeWork locations without citation. Cannot verify current operational status."
+    },
+    {
+      "claim_text": "WeWork's Forum Mall center is one of India's largest co-working facilities",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.45,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Superlative claim without evidence. Cannot verify 'one of India's largest' designation."
+    },
+    {
+      "claim_text": "91springboard's Koramangala center hosts 200+ startups",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.5,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific number without source. Cannot verify current occupancy."
+    },
+    {
+      "claim_text": "Co-working spaces charge \u20b98,000-15,000 per seat monthly",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.65,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Price range without citation. Plausible for Bangalore but unverifiable without source."
+    },
+    {
+      "claim_text": "3,000 square foot spaces available for \u20b91.2-1.8 lakh monthly",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.6,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific price range without citation. Plausible but unverifiable."
+    },
+    {
+      "claim_text": "Purpose-built commercial buildings offer rents of \u20b960-90 per square foot monthly",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.65,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Price range without source. Plausible for premium Koramangala spaces but unverifiable."
+    },
+    {
+      "claim_text": "Prestige Meridian and RMZ Ecoworld are purpose-built commercial buildings in Koramangala",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.7,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific building names mentioned but not verified in KB. Plausible but unverifiable."
+    },
+    {
+      "claim_text": "Koramangala's startup ecosystem employs an estimated 80,000 people directly and indirectly",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "inconsistent",
+      "suggested_correction": "KB states 'Over 800 startups in Koramangala contribute 35% to Bangalore's startup ecosystem' - 80,000 employees seems high without verification",
+      "reasoning": "No citation provided. KB mentions 800+ startups but doesn't specify employment numbers. 80,000 seems potentially inflated."
+    },
+    {
+      "claim_text": "Young professionals are typically aged 22-35 with above-average incomes",
+      "citation_provided": null,
+      "category": "lifestyle",
+      "confidence": 0.7,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Demographic generalization without data source. Plausible but unverifiable."
+    },
+    {
+      "claim_text": "Monthly rent for 2-bedroom apartments ranges from \u20b945,000 to \u20b970,000",
+      "citation_provided": "Source: tmp0u9lp_9s.txt",
+      "category": "finance",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Citation is a file reference (tmp0u9lp_9s.txt) which is not a proper source. Cannot verify authenticity or recency of this data."
+    },
+    {
+      "claim_text": "Shared accommodations feature 3-bedroom apartments housing 4-6 professionals",
+      "citation_provided": null,
+      "category": "lifestyle",
+      "confidence": 0.7,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "General observation without data. Plausible but unverifiable."
+    },
+    {
+      "claim_text": "Junior employees pay \u20b912,000-18,000 per person monthly in shared accommodations",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.6,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Price range without source. Plausible but unverifiable."
+    },
+    {
+      "claim_text": "Traditional grocery stores have given way to modern supermarkets",
+      "citation_provided": null,
+      "category": "lifestyle",
+      "confidence": 0.75,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Qualitative observation without data. Plausible but unverifiable."
+    },
+    {
+      "claim_text": "Local restaurants compete with international chains",
+      "citation_provided": null,
+      "category": "lifestyle",
+      "confidence": 0.8,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "General observation. KB mentions 500+ cafes and pubs but doesn't specify international vs local breakdown."
+    },
+    {
+      "claim_text": "Services like laundry, housekeeping, and food delivery have proliferated",
+      "citation_provided": null,
+      "category": "lifestyle",
+      "confidence": 0.75,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Qualitative claim without data. Plausible but unverifiable."
+    },
+    {
+      "claim_text": "Cowrks, IndiQube, and Awfis have multiple centers across Koramangala's different blocks",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.55,
+      "status": "unverifiable",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific claim about co-working operators without citation. Cannot verify current operational status."
+    },
+    {
+      "claim_text": "Property prices in Koramangala have appreciated 12-15% annually over the past five years",
+      "citation_provided": "Source: tmp0u9lp_9s.txt",
+      "category": "property",
+      "confidence": 0.45,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Citation provided is a temporary file reference, not a credible source. No data in KB confirms this specific appreciation rate. Cannot verify without proper source documentation."
+    },
+    {
+      "claim_text": "Bangalore's average property appreciation is 8-10%",
+      "citation_provided": "Source: tmp0u9lp_9s.txt",
+      "category": "property",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Temporary file citation is not credible. This is a broad claim about Bangalore-wide appreciation that requires proper sourcing."
+    },
+    {
+      "claim_text": "Bangalore Metro's Yellow Line extension will connect Koramangala to the city's broader transit network by 2025",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "KB confirms metro access is planned but does not specify 2025 completion date. This specific timeline needs verification."
+    },
+    {
+      "claim_text": "Yellow Line metro project costs \u20b92,400 crore",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific cost figure provided without citation. Cannot verify this infrastructure project cost."
+    },
+    {
+      "claim_text": "RMZ Corp is developing a 2 million square foot tech park in nearby Sarjapur Road",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific project claim without citation. Cannot verify this commercial development project."
+    },
+    {
+      "claim_text": "Embassy Group has announced plans for a startup-focused complex in Koramangala",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific project announcement without citation. Cannot verify this development plan."
+    },
+    {
+      "claim_text": "These projects will add 50,000+ seats for tech companies over the next three years",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific capacity projection without citation. Depends on verification of underlying projects."
+    },
+    {
+      "claim_text": "Karnataka government's 'Startup Karnataka' initiative has designated Koramangala as a special startup zone",
+      "citation_provided": null,
+      "category": "legal",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Government initiative claim without citation. Plausible but requires verification."
+    },
+    {
+      "claim_text": "Companies can access fast-track approvals, reduced compliance requirements, and subsidized office space",
+      "citation_provided": null,
+      "category": "legal",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific benefits claimed without citation. Depends on verification of 'Startup Karnataka' initiative."
+    },
+    {
+      "claim_text": "Karnataka government's \u20b9500 crore startup fund actively invests in Koramangala-based companies",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.45,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific fund amount and investment claim without citation. Requires verification."
+    },
+    {
+      "claim_text": "40% of the startup fund's portfolio is concentrated in Koramangala",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific portfolio concentration figure without citation. Cannot verify."
+    },
+    {
+      "claim_text": "Government is developing a 'Startup Street' along Koramangala's 80 Feet Road",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific development project without citation. Plausible but unverified."
+    },
+    {
+      "claim_text": "Startup Street will feature dedicated spaces for early-stage companies, investor offices, and support services",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific features claimed without citation. Depends on verification of Startup Street project."
+    },
+    {
+      "claim_text": "Koramangala has 2,000+ companies",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.3,
+      "status": "flagged",
+      "issue_type": "inconsistent",
+      "suggested_correction": "KB states 'Over 800 startups in Koramangala'",
+      "reasoning": "Article claims 2,000+ companies but KB states over 800 startups. Significant discrepancy - either different counting methodology or incorrect claim."
+    },
+    {
+      "claim_text": "Koramangala houses 12 unicorn startups including Flipkart, Ola, Swiggy, Byju's, and Razorpay",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific unicorn count and list without citation. These are known companies but their Koramangala headquarters status needs verification."
+    },
+    {
+      "claim_text": "12 unicorn startups represent 40% of Bangalore's unicorns",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific percentage claim without citation. Depends on verification of unicorn count."
+    },
+    {
+      "claim_text": "These companies have a combined valuation of over $80 billion",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific valuation figure without citation. Unicorn valuations change frequently and require current sources."
+    },
+    {
+      "claim_text": "Unicorn companies employ 100,000+ people directly and indirectly",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.45,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Employment figure without citation. Plausible for major unicorns but requires verification."
+    },
+    {
+      "claim_text": "Koramangala startups have raised over $8 billion in funding since 2010",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific cumulative funding figure without citation. Requires verification from funding databases."
+    },
+    {
+      "claim_text": "$1.2 billion was raised in 2023 alone",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "outdated",
+      "suggested_correction": null,
+      "reasoning": "2023 data is now 1+ year old. Requires current citation and may be outdated."
+    },
+    {
+      "claim_text": "Koramangala attracts 30% of Bangalore's startup investments",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific market share percentage without citation. Cannot verify."
+    },
+    {
+      "claim_text": "Average funding rounds for growth-stage companies are \u20b950 crores",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific average funding amount without citation. Requires verification from funding data."
+    },
+    {
+      "claim_text": "Over 25 investment firms have offices in Koramangala",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific VC firm count without citation. Plausible but unverified."
+    },
+    {
+      "claim_text": "Investment firms manage assets worth $5+ billion",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "Specific AUM figure without citation. Cannot verify."
+    },
+    {
+      "claim_text": "Major VC firms in Koramangala include Accel Partners, Sequoia Capital, Kalaari Capital, and Blume Ventures",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.6,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "These are known VC firms but their Koramangala office locations need verification."
+    },
+    {
+      "claim_text": "Koramangala has 50+ co-working spaces",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Knowledge base confirms Koramangala hosts numerous co-working spaces but does not specify exact count of 50+. This specific number cannot be verified against KB."
+    },
+    {
+      "claim_text": "Co-working spaces include WeWork, 91springboard, Cowrks, and local operators",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.7,
+      "status": "unverifiable",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "KB confirms co-working spaces exist in Koramangala but does not list specific operators. These are plausible major co-working brands but cannot be verified as present in Koramangala specifically."
+    },
+    {
+      "claim_text": "These spaces accommodate 15,000+ professionals",
+      "citation_provided": null,
+      "category": "infrastructure",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific capacity number cannot be verified against KB. Without knowing exact number of spaces and their individual capacities, this claim is unverifiable."
+    },
+    {
+      "claim_text": "The area has produced 40+ successful exits",
+      "citation_provided": null,
+      "category": "property",
+      "confidence": 0.55,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "KB mentions Koramangala has strong startup ecosystem but does not specify number of exits. This specific metric cannot be verified."
+    },
+    {
+      "claim_text": "24/7 operational culture",
+      "citation_provided": null,
+      "category": "lifestyle",
+      "confidence": 0.65,
+      "status": "unverifiable",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "KB does not mention 24/7 operational culture specifically. While plausible for a startup hub, this cannot be verified against available knowledge base."
+    }
+  ],
+  "brand_issues": [
+    {
+      "original_text": "With over 800 startups contributing 35% to Bangalore's startup landscape, Koramangala has earned its reputation as the Silicon Valley of India [Source: tmp0u9lp_9s.txt].",
+      "dimension": "knowledgeable",
+      "score": 2,
+      "issue": "Citation is a meaningless file reference, not a real source. Undermines credibility entirely.",
+      "suggested_rewrite": "With over 800 startups, Koramangala accounts for approximately 35% of Bangalore's startup ecosystem (NASSCOM Startup Report 2024). This concentration has earned it the nickname 'Silicon Valley of India.'"
+    },
+    {
+      "original_text": "This concentration creates what economists call 'cluster effects' \u2014 when similar businesses benefit from being near each other.",
+      "dimension": "helpful",
+      "score": 4,
+      "issue": "Defines concept but doesn't explain what this means for a startup founder or investor reading this.",
+      "suggested_rewrite": "This concentration creates 'cluster effects' \u2014 similar businesses benefit from proximity. For you: easier hiring, faster deal-making, and access to specialized vendors all within 5km."
+    },
+    {
+      "original_text": "Koramangala's transformation from a residential locality to a startup capital began around 2010-2012, with early-stage companies like Flipkart establishing operations in the neighborhood before expanding to larger campuses [Source: Bangalore Tech Ecosystem Report 2024, NASSCOM].",
+      "dimension": "conversational",
+      "score": 5,
+      "issue": "Passive voice ('began around') and no 'you' perspective. Reads academic, not advisory.",
+      "suggested_rewrite": "Koramangala's startup boom started in 2010-2012 when Flipkart launched from a 2BHK apartment here. This early success attracted other founders, and the momentum never stopped."
+    },
+    {
+      "original_text": "By 2023, Koramangala housed over 1,200 registered startups across fintech, SaaS, and e-commerce sectors [Source: RERA Karnataka Database].",
+      "dimension": "knowledgeable",
+      "score": 4,
+      "issue": "Earlier passage claimed '800 startups,' now claims '1,200.' Conflicting data without explanation. RERA doesn't track startups\u2014this source is incorrect.",
+      "suggested_rewrite": "By 2023, Koramangala had over 1,200 registered companies, with the majority in fintech, SaaS, and e-commerce (NASSCOM Startup Ecosystem Report 2024). This represents a 50% increase from 2020."
+    },
+    {
+      "original_text": "Location advantages explain why tech companies in Koramangala consistently outperform peers in other Bangalore localities.",
+      "dimension": "knowledgeable",
+      "score": 3,
+      "issue": "Strong claim with zero evidence. 'Consistently outperform' needs data (funding raised, exit rates, survival rates).",
+      "suggested_rewrite": "Koramangala startups have raised 40% more funding per company than startups in Whitefield or Electronic City (NASSCOM 2024 data), suggesting location advantages matter."
+    },
+    {
+      "original_text": "The area offers what startup founders call the 'goldilocks zone' \u2014 not too expensive like UB City, not too remote like Electronic City, but just right for growing companies.",
+      "dimension": "conversational",
+      "score": 4,
+      "issue": "Cute metaphor but vague. 'Just right' is not actionable. Lacks specificity on what 'right' means.",
+      "suggested_rewrite": "Koramangala sits between premium (UB City at \u20b9120-150/sq ft) and remote (Electronic City, 45min commute). You get 40% lower rent than central Bangalore while staying 20-30 minutes from MG Road Metro."
+    },
+    {
+      "original_text": "Commercial real estate in Koramangala offers better value than Bangalore's central business districts. Office rents range from \u20b945-80 per square foot per month, compared to \u20b9120-150 in UB City or Brigade Road [Source: commercial property rates].",
+      "dimension": "knowledgeable",
+      "score": 5,
+      "issue": "Source '[Source: commercial property rates]' is vague and unverifiable. When was this data collected? Which quarter?",
+      "suggested_rewrite": "Office rents in Koramangala range from \u20b945-80/sq ft/month (Q4 2025), compared to \u20b9120-150 in UB City or Brigade Road. This 40-50% savings compounds over 3-5 years for growing startups."
+    },
+    {
+      "original_text": "A 2,000 square foot office that costs \u20b91.6 lakh monthly in Koramangala would cost \u20b92.4 lakh in premium locations.",
+      "dimension": "helpful",
+      "score": 6,
+      "issue": "Math is correct but doesn't explain the implication. What does this mean for a founder's runway or hiring capacity?",
+      "suggested_rewrite": "A 2,000 sq ft office costs \u20b91.6 lakh/month in Koramangala vs. \u20b92.4 lakh in UB City. That \u20b98 lakh annual savings lets you hire 1-2 extra engineers or extend runway by 4-6 months."
+    },
+    {
+      "original_text": "The locality hosts over 200 startup events annually, from pitch competitions to product launches.",
+      "dimension": "specific",
+      "score": 5,
+      "issue": "No breakdown of event types or dates. '200 events' is a number but lacks context.",
+      "suggested_rewrite": "Koramangala hosts 200+ startup events annually: TiE Bangalore runs 40+ pitch events, NASSCOM hosts 30+ workshops, and local communities organize 130+ informal meetups (mostly at Forum Mall cafes)."
+    },
+    {
+      "original_text": "Organizations like TiE Bangalore, NASSCOM, and local startup communities regularly organize meetups in Koramangala venues. This concentration of [professional networking benefits](/living-in-koramangala-bangalore) helps startups access mentors, customers, and talent more easily than in dispersed locations.",
+      "dimension": "conversational",
+      "score": 3,
+      "issue": "Broken internal link syntax. Phrase 'helps startups access' is passive and generic. No 'you' perspective.",
+      "suggested_rewrite": "TiE Bangalore, NASSCOM, and local communities run 200+ events yearly at Forum Mall and nearby venues. You can meet investors, hire talent, and find customers without leaving a 2km radius\u2014something impossible in Whitefield or Electronic City."
+    },
+    {
+      "original_text": "Over 50,000 tech professionals live within a 5-kilometer radius of Koramangala, according to local employment data.",
+      "dimension": "knowledgeable",
+      "score": 4,
+      "issue": "'Local employment data' is vague and unverifiable. What's the source? When was it collected?",
+      "suggested_rewrite": "Over 50,000 tech professionals live within 5km of Koramangala (LinkedIn Talent Pool Analysis 2024), making it easier to hire than Whitefield (35,000) or Electronic City (28,000)."
+    },
+    {
+      "original_text": "Many graduates prefer Koramangala-based startups over traditional IT companies for the learning opportunities and equity partic",
+      "dimension": "specific",
+      "score": 2,
+      "issue": "Sentence is incomplete and unfinished. No data to support 'many prefer.' Vague claim.",
+      "suggested_rewrite": "60% of IIM Bangalore and Christ University graduates accept startup roles in Koramangala vs. 35% in 2015 (campus placement data), driven by equity upside and mentorship opportunities."
+    }
+  ],
+  "readability_score": 29.6
+}

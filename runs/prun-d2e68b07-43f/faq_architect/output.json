@@ -1,0 +1,33 @@
+{
+  "faqs_by_article": {
+    "art-9d629021-707": [
+      {
+        "question": "What are the most common questions about living in Kanakapura?",
+        "answer": "Common Kanakapura questions include property prices (\u20b92,500-4,000 per sq ft), distance from Bangalore (55 km), tourist attractions like Chunchi Falls, rental rates for 2BHK (\u20b98,000-15,000), and connectivity via NICE Road with 90-minute travel time to city center.",
+        "target_keyword": "Kanakapura living questions"
+      },
+      {
+        "question": "How much does property cost in Kanakapura?",
+        "answer": "Property prices in Kanakapura range from \u20b92,500 to \u20b94,000 per square foot depending on location and amenities.",
+        "target_keyword": "Kanakapura property prices"
+      }
+    ],
+    "art-25ac56d8-6a3": [
+      {
+        "question": "What is the current population of Kanakapura in 2025?",
+        "answer": "Kanakapura has a population of approximately 65,000 people as of 2025. The town serves as the headquarters of Kanakapura taluk in Ramanagara district, Karnataka, and is located about 55 kilometers southwest of Bangalore city center.",
+        "target_keyword": "kanakapura population 2025"
+      },
+      {
+        "question": "How far is Kanakapura from Bangalore city center?",
+        "answer": "Kanakapura is located approximately 55 kilometers southwest of Bangalore city center.",
+        "target_keyword": "kanakapura distance from bangalore"
+      }
+    ]
+  },
+  "total_faqs": 4,
+  "total_articles": 2,
+  "expected_articles": 12,
+  "coverage_pct": 16.7,
+  "summary": "4 FAQs for 2 articles"
+}

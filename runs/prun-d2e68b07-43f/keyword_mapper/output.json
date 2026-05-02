@@ -1,0 +1,125 @@
+{
+  "topic": "Kanakapura",
+  "keyword_groups": [
+    {
+      "group_name": "Kanakapura Property Pricing & Investment",
+      "primary_keyword": "Kanakapura property price",
+      "supporting_keywords": [
+        "How much is the site rate in Kanakapura",
+        "How much is land in Kanakapura",
+        "Kanakapura property price per sq ft",
+        "Cost of 1 acre land in Kanakapura Road",
+        "30 * 40 site cost Bangalore",
+        "2000 square feet land price Bangalore"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "high",
+      "competition": "high",
+      "opportunity_score": 72
+    },
+    {
+      "group_name": "Kanakapura Rental Market & Availability",
+      "primary_keyword": "Kanakapura rent",
+      "supporting_keywords": [
+        "2BHK rent Kanakapura",
+        "Kanakapura flat for sale",
+        "Independent House for sale in Kanakapura Road",
+        "Kanakapura real Estate Agents"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "medium",
+      "competition": "medium",
+      "opportunity_score": 78
+    },
+    {
+      "group_name": "Kanakapura Tourism & Attractions",
+      "primary_keyword": "things to do in Kanakapura",
+      "supporting_keywords": [
+        "Kanakapura tourist places",
+        "Kanakapura places to visit with family",
+        "hidden places in Kanakapura",
+        "Kanakapura Bangalore guide",
+        "Why is Kanakapura famous",
+        "What is Kanakapura famous for"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "low",
+      "opportunity_score": 85
+    },
+    {
+      "group_name": "Kanakapura Lifestyle & Amenities",
+      "primary_keyword": "best restaurants Kanakapura",
+      "supporting_keywords": [
+        "schools near Kanakapura",
+        "hospitals near Kanakapura",
+        "Kanakapura Park",
+        "Kanakapura road art of living ashram"
+      ],
+      "intent": "informational",
+      "estimated_volume": "medium",
+      "competition": "low",
+      "opportunity_score": 88
+    },
+    {
+      "group_name": "Kanakapura Location & Connectivity",
+      "primary_keyword": "Kanakapura bangalore distance",
+      "supporting_keywords": [
+        "Kanakapura to Bangalore",
+        "Kanakapura to Mysore distance",
+        "Bangalore to Kanakapura Metro",
+        "Kanakapura metro station",
+        "Kanakapura bus stand",
+        "Kanakapura airport",
+        "Kanakapura bangalore map"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "medium",
+      "opportunity_score": 75
+    },
+    {
+      "group_name": "Kanakapura Investment Comparison & Analysis",
+      "primary_keyword": "Is Kanakapura a good place to invest",
+      "supporting_keywords": [
+        "Kanakapura vs Whitefield",
+        "What is the future of Kanakapura Road",
+        "living in Kanakapura Bangalore",
+        "Kanakapura review",
+        "Is Kanakapura urban or rural"
+      ],
+      "intent": "comparison",
+      "estimated_volume": "medium",
+      "competition": "medium",
+      "opportunity_score": 76
+    },
+    {
+      "group_name": "Kanakapura New Projects & Developments",
+      "primary_keyword": "Kanakapura new projects",
+      "supporting_keywords": [
+        "Kanakapura resort",
+        "Kanakapura road bangalore",
+        "Kanakapura Main Road Bangalore"
+      ],
+      "intent": "informational",
+      "estimated_volume": "medium",
+      "competition": "medium",
+      "opportunity_score": 74
+    },
+    {
+      "group_name": "Kanakapura Area Overview & History",
+      "primary_keyword": "What is the old name of Kanakapura",
+      "supporting_keywords": [
+        "Where is Kanakapura near to",
+        "Who is the founder of Kanakpura",
+        "Kanakapura Karnataka",
+        "Kanakapura pin code"
+      ],
+      "intent": "informational",
+      "estimated_volume": "low",
+      "competition": "low",
+      "opportunity_score": 82
+    }
+  ],
+  "summary": "Eight distinct keyword groups identified across Kanakapura real estate, tourism, and lifestyle domains. High-opportunity gaps exist in property pricing guides, lifestyle amenities content, and investment comparison analysis, with low competitor coverage in tourism and historical context areas."
+}

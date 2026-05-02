@@ -1,0 +1,1190 @@
+{
+  "topic": "mg road",
+  "classification": {
+    "categories": [
+      "locality",
+      "infrastructure"
+    ],
+    "primary_category": "locality",
+    "detected_localities": [
+      "MG Road"
+    ],
+    "is_locality": true,
+    "is_cross_cutting": true
+  },
+  "raw_data": {
+    "trends": {
+      "trend_available": true,
+      "average_interest": 73.9,
+      "recent_interest": 62.5,
+      "peak_interest": 100,
+      "direction": "declining_fast",
+      "is_seasonal": true,
+      "rising_queries": [
+        "mg cyberster on road price bangalore",
+        "kai bangalore",
+        "kai mg road",
+        "isprout managed office space mg road bangalore bengaluru",
+        "mg majestor",
+        "mg m9",
+        "mg cyberster",
+        "mg m9 on road bangalore",
+        "mg majestor on road price bangalore",
+        "beige bangalore",
+        "ksic mg road",
+        "airbnb bangalore",
+        "kaze",
+        "tata tiago ev",
+        "tiago ev on road price bangalore"
+      ],
+      "top_queries": [
+        "bangalore metro",
+        "hyatt mg road bangalore",
+        "hyatt centric mg road bangalore",
+        "mg road restaurants",
+        "taj mg road",
+        "taj mg road bangalore",
+        "taj bangalore",
+        "mg hector",
+        "mg hector on road price bangalore",
+        "mg hector on road price"
+      ]
+    },
+    "paa_questions": [
+      "What is MG Road in Bangalore famous for?",
+      "What language is mostly spoken in Bangalore?",
+      "Who is the mystery woman in Bangalore?",
+      "Which area is near to MG Road?",
+      "What is famous in MG Road Bangalore?",
+      "Where do most billionaires live in Bangalore?",
+      "Why is MG Road famous for?",
+      "Is MG Road worth visiting?",
+      "Is MG Road a posh area?",
+      "Is a 30k salary enough to live in Bangalore?",
+      "Is it worth buying a 10 year old apartment in Bangalore?",
+      "Is MG Road safe at night?",
+      "Why is MG Road closed?",
+      "Why is MG Road so famous?",
+      "What is the price of land in MG Road Bangalore?",
+      "What is the cost of a 30 * 40 site in Bangalore?",
+      "What is the price of 1 BHK projects in Mira Road?",
+      "What is the price of site in RR Nagar?",
+      "What is the price of 200 Gaj plot in Dehradun?",
+      "What is the price of 2000 square feet of land in Bangalore?",
+      "What are the upcoming projects in Bangalore?",
+      "Which is the fastest growing area in Bangalore?",
+      "What is the red building in MG Road?",
+      "Who are the top 5 builders in Bangalore?",
+      "What do people do for fun in Bangalore?",
+      "What is the famous in Bangalore to eat?",
+      "Which is India's most expensive restaurant?",
+      "Which school is ranked no. 1 in Bangalore?",
+      "What is MG Road Bangalore famous for?",
+      "What are the most affordable schools in Bangalore?",
+      "What is the old name of CBSE?",
+      "What are the top 5 hospitals?",
+      "Which is costly, manipal or Apollo?",
+      "Which is the number one hospital in Bangalore?",
+      "What are the top 6 hospitals?",
+      "Where do most CEOs live in Bangalore?",
+      "Is Whitefield cheap or expensive?",
+      "How long is the metro from MG Road to Whitefield?"
+    ],
+    "related_searches": [
+      "MG Road Bangalore shopping",
+      "MG Road Bangalore directions",
+      "MG Road Bangalore distance",
+      "MG Road Bangalore nightlife",
+      "Mg road bangalore map",
+      "MG Road Bangalore Church Street",
+      "Mg Road Bangalore Pin Code",
+      "Mg road bangalore restaurants",
+      "Mg road bangalore guide shops",
+      "Mg road bangalore guide food",
+      "Church Street MG Road Bangalore",
+      "MG Road Bangalore famous for",
+      "Places to visit near MG Road Bangalore",
+      "MG Road Bangalore today",
+      "MG Road Bangalore nearest Metro station",
+      "MG Road places to eat",
+      "Mg road review bangalore",
+      "MG Road Bangalore",
+      "MG Road directions",
+      "MG Road Pub Bangalore",
+      "MG Road Mangalore",
+      "MG Road location",
+      "MG Road Bangalore Location",
+      "Mg road property price in bangalore",
+      "Mg road property price per square foot",
+      "Mg road property price per sq ft",
+      "Commercial Property for Sale in MG Road, Bangalore",
+      "Independent House for sale in MG Road, Bangalore",
+      "Apartments near MG Road, Bangalore",
+      "Mg road per square feet rate in bangalore",
+      "Flats near MG Road, Bangalore for rent",
+      "1 BHK for rent near MG Road, Bangalore",
+      "Mg road rent flats",
+      "2 BHK Flat for rent in near MG Road, Bangalore",
+      "House for rent near MG Road, Bangalore",
+      "Mg road rent apartments",
+      "Flats near MG Road, Gurgaon for rent",
+      "2 BHK flat for sale in MG Road, Bangalore",
+      "2 BHK in MG Road",
+      "MG Road House for rent",
+      "Mg road flat for sale in bangalore",
+      "3 BHK Flats for rent near MG Road, Bangalore",
+      "Apartment near MG Road metro station",
+      "Commercial property for sale in MG Road, Bangalore",
+      "Government rate per square Feet in Bangalore pdf",
+      "Per square feet rate in mount road chennai",
+      "Land for sale in MG Road, Bangalore",
+      "Bangalore square feet",
+      "Earning per person in bangalore",
+      "Unique things to do in mg road",
+      "Things to do in mg road with friends",
+      "Things to do in mg road today",
+      "Things to do in mg road for couples",
+      "Things to do in MG Road, Kochi",
+      "Things to do in MG Road Bangalore for Couples",
+      "Things to do in mg road bangalore at night",
+      "Best restaurants mg road bangalore",
+      "Best restaurants mg road for lunch",
+      "Best restaurants mg road near me",
+      "Best restaurants mg road for couples",
+      "Affordable restaurants in MG Road, Bangalore",
+      "Best restaurants in MG Road, Pune",
+      "Best veg restaurants in MG Road Bangalore",
+      "Roof top restaurants in MG Road",
+      "Top 10 schools near mg road",
+      "Schools near mg road cbse",
+      "Best schools near MG Road, Bangalore",
+      "Private schools near mg road",
+      "Best schools near mg road",
+      "Bishop Cotton Girls School",
+      "Bishop Cotton Boys' School",
+      "Hospital near MG Road, Bangalore",
+      "SPARSH Hospital mg Road",
+      "HOSMAT Hospital mg Road",
+      "Hospital near me",
+      "Manipal hospital mg road bangalore",
+      "Manipal Hospital Millers Road",
+      "Manipal Hospital Millers Road Pharmacy contact number",
+      "Vikram Manipal Hospital Bangalore",
+      "Whitefield to mg road metro travel time",
+      "MG Road to Whitefield metro",
+      "MG Road to Whitefield metro stops",
+      "Mg road vs whitefield reddit",
+      "Mg road vs whitefield rent",
+      "Mg road vs whitefield price",
+      "Mg Road to Whitefield Metro ticket price",
+      "Whitefield to MG Road bus number"
+    ],
+    "autocomplete": [
+      "mg road metro station",
+      "mg road bangalore",
+      "mg road pune",
+      "mg roadster",
+      "mg road to new delhi metro",
+      "mg road gurgaon",
+      "mg road to anand vihar metro",
+      "mg road metro",
+      "mg road restaurants",
+      "mg road kochi",
+      "mg road to rajiv chowk",
+      "mg road delhi",
+      "mg road gangtok",
+      "mg road to kashmere gate",
+      "mg road distance",
+      "mg road bangalore pin code",
+      "mg road bangalore hotels",
+      "mg road bangalore shopping",
+      "mg road bangalore direction",
+      "mg road bangalore location",
+      "mg road bangalore famous for",
+      "mg road bangalore metro station",
+      "mg road bangalore restaurants",
+      "mg road bangalore map",
+      "mg road bangalore pubs",
+      "mg road bangalore distance from my location",
+      "mg road bangalore full form",
+      "mg road bangalore address",
+      "mg road bangalore places to visit",
+      "mg road bangalore weather",
+      "rent in mg road bangalore",
+      "rent in mg road gurgaon",
+      "rentals in mg road",
+      "rent house in mg road bangalore",
+      "room rent in mg road gurgaon",
+      "room rent in mg road bangalore",
+      "pg rent in mg road bangalore",
+      "shop rent in mg road",
+      "room rent in mg road kolkata",
+      "mg road 1 bhk rent",
+      "3bhk rent in mg road",
+      "mg road 2 bhk rent",
+      "rent in mg marg gangtok",
+      "bike rentals in mg road",
+      "rental jewellery in mg road",
+      "mg road property dealer",
+      "mg road property price",
+      "mg road real estate",
+      "mg road for sale",
+      "mg road property for sale",
+      "mg road gurgaon property",
+      "mg road commercial property",
+      "rd mg properties",
+      "mg road bangalore property for sale",
+      "mg road commercial property for sale",
+      "kandivali west mg road property"
+    ],
+    "serp_results_summary": [
+      {
+        "query": "MG Road Bangalore",
+        "top_results": [
+          {
+            "title": "M G Road, Bengaluru",
+            "link": "https://en.wikipedia.org/wiki/M_G_Road,_Bengaluru",
+            "snippet": "Mahatma Gandhi Road also known as MG Road is a road in Bengaluru, India. It runs east from Trinity Circle at one end to Anil Kumble Circle at the other.",
+            "position": 1,
+            "domain": "en.wikipedia.org"
+          },
+          {
+            "title": "MG Road Bangalore",
+            "link": "https://www.google.com/maps/search/MG+Road+Bangalore",
+            "snippet": "",
+            "position": 2,
+            "domain": "www.google.com"
+          },
+          {
+            "title": "Mahatma Gandhi (MG) Road - Bengaluru",
+            "link": "https://www.tripadvisor.in/Attraction_Review-g297628-d631365-Reviews-Mahatma_Gandhi_MG_Road-Bengaluru_Bangalore_District_Karnataka.html",
+            "snippet": "It is one of the busiest main streets of the Bangalore Cantonment connected to its larger family of colonial streets that spread through the city.",
+            "position": 3,
+            "domain": "www.tripadvisor.in"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "image_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com"
+        ]
+      },
+      {
+        "query": "MG Road Bangalore guide",
+        "top_results": [
+          {
+            "title": "THE 10 BEST Things to Do in MG Road (2026)",
+            "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087490-Bengaluru_Bangalore_District_Karnataka.html",
+            "snippet": "Top Things to Do in MG Road \u00b7 1. Mahatma Gandhi (MG) Road \u00b7 2. Cauvery Handicrafts \u00b7 3. St Patrick's Church \u00b7 4. Indian Cartoon Gallery \u00b7 5. Holy ...",
+            "position": 1,
+            "domain": "www.tripadvisor.in"
+          },
+          {
+            "title": "The Pulse of the City: Exploring Mahatma Gandhi Road",
+            "link": "https://www.escape2explore.com/blog/attraction/mahatma-gandhi-road/78",
+            "snippet": "The allure of MG Road is the vast array of shopping, right from posh boutiques to street vendors. Commercial complexes range from ultra-modern malls to the ...",
+            "position": 2,
+            "domain": "www.escape2explore.com"
+          },
+          {
+            "title": "MG Road Bangalore: The Ultimate Guide to the City's Most ...",
+            "link": "https://www.tripoto.com/bangalore/places-to-visit/mg-road-bangalore",
+            "snippet": "MG Road Bangalore in Bangalore is a place that offers you a glimpse of the city's history, culture, shopping, dining, nightlife, accommodation, and ...",
+            "position": 3,
+            "domain": "www.tripoto.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "living in MG Road Bangalore",
+        "top_results": [
+          {
+            "title": "What is the average living cost in MG Road, Bangalore?",
+            "link": "https://www.quora.com/What-is-the-average-living-cost-in-MG-Road-Bangalore",
+            "snippet": "Rent - 10,000 to 15,000 (for a 1/2bhk in an independent house. \u00b7 Food - 10,000 (including gas, groceries and kirana) \u00b7 Utilities - 3000 ( ...",
+            "position": 1,
+            "domain": "www.quora.com"
+          },
+          {
+            "title": "Ratings & Reviews of MG Road, Bangalore",
+            "link": "https://www.99acres.com/mg-road-bangalore-central-reviews-and-ratings-wrffid",
+            "snippet": "There are some drawbacks to living here, such as water shortages, which are a frequent issue, especially during summer, and many nearby buildings depend on ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Luxurious Living on MG Road, Bangalore",
+            "link": "https://luxurypincode.com/luxurious-living-on-mg-road-bangalore/",
+            "snippet": "MG Road offers a vibrant lifestyle with a plethora of dining, shopping, and entertainment options. The area is dotted with luxury boutiques, art galleries, high ...",
+            "position": 3,
+            "domain": "luxurypincode.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "MG Road review",
+        "top_results": [
+          {
+            "title": "Mahatma Gandhi (MG) Road - Bengaluru",
+            "link": "https://www.tripadvisor.in/Attraction_Review-g297628-d631365-Reviews-Mahatma_Gandhi_MG_Road-Bengaluru_Bangalore_District_Karnataka.html",
+            "snippet": "A great place for shopping all kinds of clothes. Ranging from several brand copies to very large brands. The streets here are quite lively with both Indians and ...",
+            "position": 1,
+            "domain": "www.tripadvisor.in"
+          },
+          {
+            "title": "Ratings & Reviews of MG Road, Bangalore",
+            "link": "https://www.99acres.com/mg-road-bangalore-central-reviews-and-ratings-wrffid",
+            "snippet": "The area feels safe, with rare crime incidents reported and a calm atmosphere even at night. Public transport is very good with easy access to buses, metro ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Locality Review: MG Road #bangalorerealestate",
+            "link": "https://www.youtube.com/watch?v=lfOqIH1JX7g",
+            "snippet": "mg Road has something to capture everyone's interest be it shop selling knickknacks big showrooms of the Best Brands Audi trees.",
+            "position": 3,
+            "domain": "www.youtube.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "MG Road property price",
+        "top_results": [
+          {
+            "title": "Property in MG Road, Bangalore",
+            "link": "https://www.99acres.com/property-in-mg-road-bangalore-central-ffid",
+            "snippet": "... Road? The average price of 1 BHK property in MG Road is \u20b9 Rs 25L to \u20b9 2.5Cr. 2 BHK property price in MG Road is \u20b9 Rs 16L to \u20b9 10Cr. For 3 BHK property ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "House for Sale in Mahatma Gandhi Road, Bangalore",
+            "link": "https://www.magicbricks.com/independent-house-for-sale-in-mahatma-gandhi-road-bangalore-pppfs",
+            "snippet": "The average price of a house in Mahatma Gandhi Road generally ranges between \u20b9 30 lakhs-\u20b9 9.99 Cr, depending on the house size, condition, and amenities.",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Property Rates in MG Road, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-mg-road-bangalore-central-prffid",
+            "snippet": "Flat prices in MG Road, Bangalore are in the range of Rs 13550-27600 per square feet (sq ft). Land rates in MG Road, Bangalore are around Rs 800-1500 per sq ft.",
+            "position": 3,
+            "domain": "www.99acres.com"
+          }
+        ],
+        "serp_features": [
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "MG Road rent",
+        "top_results": [
+          {
+            "title": "Flats for Rent in MG Road , Bangalore",
+            "link": "https://www.nobroker.in/flats-for-rent-in-mg_road_bangalore",
+            "snippet": "1 BHK Flats for Rent in MG Road. 1 BHK - 348 sq. ft. to 850 sq. ft. Monthly rent generally in MG Road falls between \u20b910,000 to \u20b935,000 per month, with higher ...",
+            "position": 1,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "191+ Flats for Rent in MG Road, Bangalore",
+            "link": "https://www.99acres.com/flats-for-rent-in-mg-road-bangalore-central-ffid",
+            "snippet": "191+ Flats for rent in MG Road, Bangalore on 99acres.com. Search flats and apartments on rent in MG Road, Bangalore with 1/2/3/4 BHK configuration, ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Flats for Rent in Mahatma Gandhi Road, Bangalore",
+            "link": "https://www.magicbricks.com/flats-for-rent-in-mahatma-gandhi-road-bangalore-pppfr",
+            "snippet": "Explore 1-5 BHK rental flats in Mahatma Gandhi Road priced within \u20b913,200 - \u20b93.8 Lac. The rent mostly depends on property size and the amenities provided in the ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack"
+        ],
+        "competitor_presence": [
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "2BHK rent MG Road",
+        "top_results": [
+          {
+            "title": "2 BHK Flats for Rent in MG Road, Bangalore",
+            "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-mg-road-bangalore-central-ffid",
+            "snippet": "2 BHK Flat for rent in Shivaji Nagar, MG Road ... This 2 bhk semifurnished flat on the 1st floor of a low-Rise building offers 1200 sq.Ft. Of comfortable living ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "2 BHK Flats for Rent in MG Road Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-mg_road_bangalore",
+            "snippet": "You can explore NoBroker verified owner-listed rental homes in MG Road along with 2 BHK 9+, 1 BHK 5+, 3 BHK 4+, 1 RK 3+ units to spacious and luxury apartments.",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Flats for Rent in Mahatma Gandhi Road, Bangalore",
+            "link": "https://www.magicbricks.com/flats-for-rent-in-mahatma-gandhi-road-bangalore-pppfr",
+            "snippet": "Explore flats for rent in Mahatma Gandhi Road within the \u20b912,300 - \u20b93.8 Lac range, available in 1-5 BHK options. The rent in Mahatma Gandhi Road varies mainly ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "magicbricks.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "MG Road flat for sale",
+        "top_results": [
+          {
+            "title": "Apartments in MG Road, Bangalore - 103+ Flats for sale in ...",
+            "link": "https://www.99acres.com/flats-in-mg-road-bangalore-central-ffid",
+            "snippet": "3 BHK Flat in Shivaji Nagar, MG Road ... The flat occupies a super built up area of 5391 sq.Ft. That consists of 3 bedrooms, 4 bathrooms and 3 balconies. The ...",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "77+ Flats for Sale in Mahatma Gandhi Road, Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-mahatma-gandhi-road-bangalore-for-sale-pppfs",
+            "snippet": "Browse flats in Mahatma Gandhi Road for sale within a price range of \u20b955 Lac - \u20b922.81 Cr, covering 1-5 BHK configurations. Explore from 63+ resale flats, 66+ ...",
+            "position": 2,
+            "domain": "www.magicbricks.com"
+          },
+          {
+            "title": "Flats, Apartments for Sale in MG Road, Bangalore",
+            "link": "https://www.nobroker.in/flats-for-sale-in-mg_road_bangalore",
+            "snippet": "3 BHK Flat In Bhavish Dahilo For Sale In Aasa Fina, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560025, India. \u20b91.74 Cr. \u20b97,500/sq.ft.",
+            "position": 3,
+            "domain": "www.nobroker.in"
+          }
+        ],
+        "serp_features": [],
+        "competitor_presence": [
+          "magicbricks.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "MG Road property rate per sq ft",
+        "top_results": [
+          {
+            "title": "Property Rates in MG Road, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-mg-road-bangalore-central-prffid",
+            "snippet": "Flat prices in MG Road, Bangalore are in the range of Rs 13550-27600 per square feet (sq ft). Land rates in MG Road, Bangalore are around Rs 800-1500 per sq ft.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "30+ Residential Land / Plots in MG Road, Bangalore",
+            "link": "https://www.99acres.com/residential-land-in-mg-road-bangalore-central-ffid",
+            "snippet": "MG Road offers an average property rate of \u20b91000/sq. ft. and is rated 4.3 ... The average cost of a 1,000 sq ft residential plot in MG Road will cost you around \u20b9 ...",
+            "position": 2,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "Mahatma Gandhi Road, Bangalore",
+            "link": "https://www.magicbricks.com/Mahatma-Gandhi-Road-in-Bangalore-Overview",
+            "snippet": "31% properties for Sale in Mahatma Gandhi Road lie in range of Above \u20b95Cr while 8% properties for Sale lie in range of \u20b91.2Cr - \u20b91.4Cr. 3 BHK is the most common ...",
+            "position": 3,
+            "domain": "www.magicbricks.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "housing.com",
+          "magicbricks.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "MG Road new projects",
+        "top_results": [
+          {
+            "title": "New Projects in MG Road Bangalore for Sale",
+            "link": "https://www.99acres.com/new-projects-in-mg-road-bangalore-central-ffid",
+            "snippet": "New Projects in MG Road Bangalore for Sale ; Nitesh Logos. Ulsoor, Bangalore Central \u00b7 Price on Request ; Prestige Cedars. Ashok Nagar, Bangalore Central \u00b7 \u20b912 Cr+.",
+            "position": 1,
+            "domain": "www.99acres.com"
+          },
+          {
+            "title": "New Projects in Mg Road Bangalore",
+            "link": "https://www.nobroker.in/new-projects-in-mg-road-bangalore",
+            "snippet": "New Projects in Mg Road Bangalore | NoBroker \u00b7 Total Environment Van Goghs Garden \u00b7 GM Palazzo \u00b7 Golden Orchid \u00b7 Comfort KC Das. Comfort KC Das, Ashok Nagar, ...",
+            "position": 2,
+            "domain": "www.nobroker.in"
+          },
+          {
+            "title": "Residential projects in MG Road, Bangalore",
+            "link": "https://www.commonfloor.com/all-apartments-in-mg-road/psl-2ar1eg",
+            "snippet": "39 New Projects in MG Road, Bangalore ; Prestige Meridian Apartments \u00b7 1.01 Cr - 3.25 Cr ; Total Environment Van Goghs Garden \u00b7 11 Cr - 20.21 Cr ; Kings Acropolis.",
+            "position": 3,
+            "domain": "www.commonfloor.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "housing.com",
+          "nobroker.in",
+          "99acres.com"
+        ]
+      },
+      {
+        "query": "things to do in MG Road",
+        "top_results": [
+          {
+            "title": "Things to do near Mahatma Gandhi (MG) Road",
+            "link": "https://www.tripadvisor.in/AttractionsNear-g297628-d631365-Mahatma_Gandhi_MG_Road-Bengaluru_Bangalore_District_Karnataka.html",
+            "snippet": "See 1 Experience ... Fame Shankarnag Theatre ... 3.7 ... 30 reviews ... 3 minutes from Mahatma Gandhi (MG) Road ... Indian Cartoon Gallery ... 4.3 ... 8 ...",
+            "position": 1,
+            "domain": "www.tripadvisor.in"
+          },
+          {
+            "title": "\u203c\ufe0fTHINGS TO DO IN MG ROAD\u203c\ufe0f Things to do in MG Road ...",
+            "link": "https://www.instagram.com/reel/DPgbFzjEUxG/",
+            "snippet": "\u203c\ufe0fTHINGS TO DO IN MG ROAD\u203c\ufe0f Things to do in MG Road, Bangalore \u2014 absolutely free! If you think MG Road is all about malls and offices, you ...",
+            "position": 2,
+            "domain": "www.instagram.com"
+          },
+          {
+            "title": "The Pulse of the City: Exploring Mahatma Gandhi Road",
+            "link": "https://www.escape2explore.com/blog/attraction/mahatma-gandhi-road/78",
+            "snippet": "It is, therefore, the ultimate and prime destination to conduct shopping, dining, business, entertainment, cultural activities , and much more.",
+            "position": 3,
+            "domain": "www.escape2explore.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "best restaurants MG Road",
+        "top_results": [
+          {
+            "title": "The 10 Best Restaurants in MG Road Bengaluru",
+            "link": "https://www.tripadvisor.in/Restaurants-g297628-zfn13087490-Bengaluru_Bangalore_District_Karnataka.html",
+            "snippet": "MG Road Restaurants \u00b7 1. Karavalli @ Taj. 4.8. (2,595 reviews) \u00b7 2. Hard Rock Cafe. 4.3. (1,311 reviews) \u00b7 3. ShakesBierre - Brewpub & ...",
+            "position": 1,
+            "domain": "www.tripadvisor.in"
+          },
+          {
+            "title": "MG Road Restaurants, Bangalore",
+            "link": "https://www.zomato.com/bangalore/mg-road-restaurants",
+            "snippet": "MG Road Restaurants, Bangalore \u00b7 Cha Hong Kong Eating House \u00b7 Ishaara \u00b7 Taal Bar at Ishaara \u00b7 Kling Brewery \u00b7 Just BLR \u00b7 boCHE & Shakesbierre - Brewpub & Club \u00b7 Cavore.",
+            "position": 2,
+            "domain": "www.zomato.com"
+          },
+          {
+            "title": "Best Restaurants In Mg Road, Bangalore 2025",
+            "link": "https://www.swiggy.com/city/bangalore/mg-road-restaurants",
+            "snippet": "Discover All Restaurants Serving In Mg Road! Explore Menus, Reviews, Ratings, Prices, Locations, Cuisines, Offers, And More For A Perfect Dining Experience.",
+            "position": 3,
+            "domain": "www.swiggy.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "schools near MG Road",
+        "top_results": [
+          {
+            "title": "20+ Schools in M G Road - Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Schools-in-M-G-Road/nct-10422444",
+            "snippet": "329 Schools in M G Road. Strawberrys Play Home, Mother Mary English School, The Green Lawns School etc. Find the best educational institutions offering ...",
+            "position": 1,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "152 Best Schools in Mg Road, Bangalore 2026-2027",
+            "link": "https://www.edustoke.com/bengaluru/schools-in-mg-road",
+            "snippet": "Find the list of best schools in Mg Road, Bangalore 2026-2027 with fees, reviews, admission procedures, board & curriculum, rating, ...",
+            "position": 2,
+            "domain": "www.edustoke.com"
+          },
+          {
+            "title": "Top CBSE Schools in MG Road, Bangalore",
+            "link": "https://www.justdial.com/Bangalore/CBSE-Schools-in-M-G-Road/nct-10083838",
+            "snippet": "Some popular options include Dhirubhai Ambani International School, Jamnabai Narsee School, and Ryan International. Parents can shortlist \u201cGood CBSE schools ...",
+            "position": 3,
+            "domain": "www.justdial.com"
+          }
+        ],
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "hospitals near MG Road",
+        "top_results": [
+          {
+            "title": "Best Hospitals in M G Road, Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Hospitals-in-M-G-Road/nct-10253670",
+            "snippet": "212 Hospitals in M G Road,Bangalore. Fortis Hospital, Homeocare International Pvt Ltd, Hcg Cancer Centre, Manipal North Side Hospital etc.",
+            "position": 1,
+            "domain": "www.justdial.com"
+          },
+          {
+            "title": "Best Hospitals Near Me in MG Road, Bangalore",
+            "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/mg-road",
+            "snippet": "104 Hospitals in MG Road, Bangalore \u00b7 Dr. Partha Sarathi's Asian Hair And Skin Hospitals \u00b7 Gleneagles Hospitals \u00b7 Manipal Hospital, Millers Road ( Vikram ...",
+            "position": 2,
+            "domain": "www.practo.com"
+          },
+          {
+            "title": "Best Private Hospitals Near me in M G Road, Bangalore",
+            "link": "https://www.justdial.com/Bangalore/Private-Hospitals-in-M-G-Road/nct-10390288",
+            "snippet": "Best Private Hospitals in M G Road, Bangalore - Book Appointment Online \u00b7 Fortis Hospital \u00b7 Aster Hospital Whitefield \u00b7 Manipal North Side Hospital \u00b7 Sparsh ...",
+            "position": 3,
+            "domain": "www.justdial.com"
+          }
+        ],
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "competitor_presence": []
+      },
+      {
+        "query": "MG Road vs Whitefield",
+        "top_results": [
+          {
+            "title": "Can outer Bangalore areas like Whitefield and Hebbal ever ...",
+            "link": "https://www.quora.com/Can-outer-Bangalore-areas-like-Whitefield-and-Hebbal-ever-match-MG-Road-Indira-Nagar-Jaya-Nagar-and-Koramangala-the-core-Bangalore-areas-not-in-terms-of-malls-but-purely-charm",
+            "snippet": "Secondly, MG Road, Indiranagar and Koramangala are not the \"core\" Bangalore areas. According to what I've seen over 23 years, core bangalore, by ...",
+            "position": 1,
+            "domain": "www.quora.com"
+          },
+          {
+            "title": "[Advice Needed] Should I move to Whitefield (Bangalore) ...",
+            "link": "https://www.reddit.com/r/Whitefield/comments/1r7stvy/advice_needed_should_i_move_to_whitefield/",
+            "snippet": "TL;DR: Bought a 3BHK near Hope Farm (Whitefield). Confused whether to move in (office near MG Road) or stay in Mumbai and rent it out. Need ...",
+            "position": 2,
+            "domain": "www.reddit.com"
+          },
+          {
+            "title": "Whitefield to MG Rd - 4 ways to travel via subway, bus, taxi ...",
+            "link": "https://www.rome2rio.com/s/Whitefield-India/MG-Rd",
+            "snippet": "The distance between Whitefield and MG Rd is 20 km. The road distance is 17.6 km. ... How do I travel from Whitefield to MG Rd without a car?",
+            "position": 3,
+            "domain": "www.rome2rio.com"
+          }
+        ],
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "competitor_presence": [
+          "magicbricks.com"
+        ]
+      }
+    ],
+    "aeo_scores": [
+      {
+        "query": "best restaurants MG Road",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "hospitals near MG Road",
+        "score": 100,
+        "serp_features": [
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": false
+      },
+      {
+        "query": "MG Road property price",
+        "score": 90,
+        "serp_features": [
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "MG Road rent",
+        "score": 85,
+        "serp_features": [
+          "local_pack"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "2BHK rent MG Road",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "MG Road flat for sale",
+        "score": 85,
+        "serp_features": [],
+        "has_featured_snippet": false,
+        "has_ai_overview": false,
+        "competitor_present": true
+      },
+      {
+        "query": "MG Road Bangalore guide",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "things to do in MG Road",
+        "score": 80,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "schools near MG Road",
+        "score": 80,
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "local_pack",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": false
+      },
+      {
+        "query": "MG Road Bangalore",
+        "score": 70,
+        "serp_features": [
+          "knowledge_panel",
+          "ai_overview",
+          "image_pack",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "living in MG Road Bangalore",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "MG Road review",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "MG Road property rate per sq ft",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "MG Road new projects",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      },
+      {
+        "query": "MG Road vs Whitefield",
+        "score": 70,
+        "serp_features": [
+          "ai_overview",
+          "video_results",
+          "people_also_ask"
+        ],
+        "has_featured_snippet": false,
+        "has_ai_overview": true,
+        "competitor_present": true
+      }
+    ]
+  },
+  "analysis": {
+    "topic": "MG Road, Bangalore",
+    "topic_type": "locality",
+    "trend_direction": "declining_fast",
+    "trend_summary": "MG Road search interest has declined 15% from 12-month average (73.9 to 62.5), indicating reduced organic demand. However, 15 rising related queries suggest emerging sub-topics (vehicle models, co-working spaces, hospitality) that present new content opportunities.",
+    "total_queries_discovered": 181,
+    "intent_clusters": [
+      {
+        "intent": "informational",
+        "queries": [
+          "What is MG Road in Bangalore famous for?",
+          "MG Road Bangalore guide",
+          "things to do in MG Road",
+          "MG Road Bangalore shopping",
+          "MG Road places to eat",
+          "Is MG Road a posh area?",
+          "Is MG Road safe at night?",
+          "MG Road Bangalore famous for"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "transactional",
+        "queries": [
+          "MG Road property price",
+          "MG Road rent",
+          "2BHK rent MG Road",
+          "MG Road flat for sale",
+          "MG Road Bangalore hotels",
+          "best restaurants MG Road",
+          "airbnb bangalore"
+        ],
+        "estimated_volume": "high",
+        "aeo_opportunity": "high"
+      },
+      {
+        "intent": "navigational",
+        "queries": [
+          "MG Road metro station",
+          "MG Road Bangalore directions",
+          "MG Road Bangalore distance",
+          "MG Road nearest Metro station",
+          "MG Road Bangalore location",
+          "MG Road Bangalore pin code",
+          "MG Road Bangalore map"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "medium"
+      },
+      {
+        "intent": "comparative",
+        "queries": [
+          "Which area is near to MG Road?",
+          "Where do most billionaires live in Bangalore?",
+          "Which is the fastest growing area in Bangalore?",
+          "Is it worth buying a 10 year old apartment in Bangalore?",
+          "MG Road review bangalore"
+        ],
+        "estimated_volume": "medium",
+        "aeo_opportunity": "medium"
+      }
+    ],
+    "content_gaps": [
+      {
+        "gap": "No comprehensive guide on MG Road as a residential locality with property investment insights",
+        "queries": [
+          "MG Road property price",
+          "MG Road rent",
+          "2BHK rent MG Road",
+          "MG Road flat for sale",
+          "living in MG Road Bangalore"
+        ],
+        "opportunity": "Create a detailed locality hub covering property prices, rental rates, ROI analysis, and buyer/renter profiles for MG Road",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "Missing infrastructure and amenity guides specific to MG Road (hospitals, schools, metro connectivity)",
+        "queries": [
+          "hospitals near MG Road",
+          "schools near MG Road",
+          "MG Road nearest Metro station",
+          "Which school is ranked no. 1 in Bangalore?"
+        ],
+        "opportunity": "Create spoke content on infrastructure amenities, proximity to metro, schools, and healthcare facilities near MG Road",
+        "suggested_content_type": "spoke",
+        "priority": "high"
+      },
+      {
+        "gap": "Lifestyle and entertainment content for MG Road is fragmented across TripAdvisor and travel blogs; no real estate platform owns this narrative",
+        "queries": [
+          "best restaurants MG Road",
+          "MG Road nightlife",
+          "things to do in MG Road",
+          "MG Road places to eat",
+          "What do people do for fun in Bangalore?"
+        ],
+        "opportunity": "Create lifestyle hub connecting MG Road's dining, entertainment, and social scene to property value and resident experience",
+        "suggested_content_type": "hub",
+        "priority": "high"
+      },
+      {
+        "gap": "No content addressing emerging co-working and managed office space demand on MG Road",
+        "queries": [
+          "isprout managed office space mg road bangalore bengaluru",
+          "ksic mg road"
+        ],
+        "opportunity": "Create spoke content on commercial real estate and co-working opportunities on MG Road for investors and professionals",
+        "suggested_content_type": "spoke",
+        "priority": "medium"
+      },
+      {
+        "gap": "Safety and neighborhood quality questions lack authoritative answers from real estate platforms",
+        "queries": [
+          "Is MG Road safe at night?",
+          "Is MG Road a posh area?",
+          "MG Road review bangalore"
+        ],
+        "opportunity": "Create FAQ and review-based content addressing safety, neighborhood character, and resident satisfaction on MG Road",
+        "suggested_content_type": "faq",
+        "priority": "medium"
+      },
+      {
+        "gap": "Rising vehicle-related queries (MG Cyberster, MG Hector, MG M9) are unrelated to real estate but appear in MG Road searches; opportunity to create lifestyle content linking automotive interests to MG Road's affluent demographic",
+        "queries": [
+          "mg cyberster on road price bangalore",
+          "mg hector on road price bangalore",
+          "mg m9 on road bangalore"
+        ],
+        "opportunity": "Create lifestyle content on MG Road's affluent resident profile and luxury lifestyle (vehicles, dining, shopping) to attract high-value buyers",
+        "suggested_content_type": "spoke",
+        "priority": "low"
+      }
+    ],
+    "aeo_targets": [
+      {
+        "query": "best restaurants MG Road",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create a comprehensive guide listing top 15-20 restaurants on MG Road with cuisine types, price ranges, and resident reviews. Include a map integration and link to property listings in the area. Optimize for local pack and AI overview.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "hospitals near MG Road",
+        "current_answer_quality": "weak",
+        "our_strategy": "Build a detailed guide of hospitals, clinics, and healthcare facilities within 2km of MG Road with specialties, ratings, and distance. Include emergency services info. This addresses a critical amenity question for potential residents.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "MG Road property price",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create a data-driven hub with current property price ranges by property type (1BHK, 2BHK, 3BHK, commercial), price trends over 5 years, price per sqft analysis, and comparison with nearby localities. Include Canvas Homes listings prominently.",
+        "content_type": "hub"
+      },
+      {
+        "query": "MG Road rent",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Develop a rental guide covering average rent by property type, furnished vs unfurnished options, lease terms, and tenant profiles. Include Canvas Homes rental listings and comparison with nearby areas.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "2BHK rent MG Road",
+        "current_answer_quality": "weak",
+        "our_strategy": "Create a specific sub-spoke targeting 2BHK renters with current market rates, available properties, amenities, and neighborhood insights. Optimize for transactional intent with direct listing links.",
+        "content_type": "sub_spoke"
+      },
+      {
+        "query": "MG Road flat for sale",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Build a transactional guide with current inventory, price ranges, builder information, and investment potential. Include Canvas Homes listings and comparison tools.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "MG Road Bangalore guide",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create a comprehensive locality guide covering history, geography, infrastructure, amenities, lifestyle, property market, and resident profiles. Position Canvas Homes as the authoritative real estate source within this guide.",
+        "content_type": "hub"
+      },
+      {
+        "query": "things to do in MG Road",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Develop lifestyle content listing entertainment, dining, shopping, and cultural activities on MG Road. Link to property listings to show residents what lifestyle they'll enjoy. Differentiate from TripAdvisor by focusing on resident experience.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "schools near MG Road",
+        "current_answer_quality": "moderate",
+        "our_strategy": "Create a detailed guide of schools within 2-5km of MG Road with rankings, fees, specialties, and distance. This is critical for family buyers. Include Canvas Homes listings filtered for families.",
+        "content_type": "spoke"
+      },
+      {
+        "query": "MG Road Bangalore",
+        "current_answer_quality": "strong",
+        "our_strategy": "Optimize Canvas Homes' MG Road locality page to compete with Wikipedia and Google's knowledge panel. Include property listings, market data, amenities, and resident reviews. Target the AI overview by providing structured, authoritative data.",
+        "content_type": "hub"
+      }
+    ],
+    "competitor_insights": [
+      {
+        "competitor": "99acres.com",
+        "strength": "Strong presence in property price and locality review queries (8 appearances). Established authority on MG Road property listings and ratings.",
+        "weakness": "Content is transactional-focused; lacks lifestyle and amenity guides. No comprehensive locality hub connecting property to lifestyle. Opportunity to create richer, more informative content."
+      },
+      {
+        "competitor": "magicbricks.com",
+        "strength": "Dominant in property listing queries (8 appearances). Strong for 'house for sale' intent.",
+        "weakness": "Limited lifestyle and infrastructure content. No guides on dining, entertainment, or neighborhood character. Canvas Homes can differentiate with lifestyle-integrated content."
+      },
+      {
+        "competitor": "nobroker.in",
+        "strength": "Growing presence in rental queries (6 appearances). Focused on rental market.",
+        "weakness": "Weak in informational and lifestyle content. No comprehensive guides. Canvas Homes can own the informational space."
+      },
+      {
+        "competitor": "housing.com",
+        "strength": "Minimal presence (3 appearances). Limited threat.",
+        "weakness": "Not a major player in MG Road searches. Canvas Homes has opportunity to establish dominance."
+      },
+      {
+        "competitor": "tripadvisor.in, escape2explore.com, tripoto.com",
+        "strength": "Dominate lifestyle and 'things to do' queries. Strong for entertainment and dining content.",
+        "weakness": "Not real estate platforms. Cannot serve transactional intent. Canvas Homes can bridge the gap by creating lifestyle content that converts to property transactions."
+      }
+    ],
+    "top_5_priority_queries": [
+      {
+        "query": "MG Road property price",
+        "reason": "High transactional intent, high AEO score (90), no featured snippet or AI overview, and direct competitor presence. This is a money query that drives property inquiries. Winning this query directly impacts Canvas Homes' lead generation.",
+        "suggested_action": "Create a comprehensive hub with current price data by property type, price trends, price per sqft, and comparison with nearby localities. Include Canvas Homes listings and a price calculator tool. Optimize for featured snippet and AI overview."
+      },
+      {
+        "query": "best restaurants MG Road",
+        "reason": "Perfect AEO score (100), no featured snippet or AI overview, no competitor presence, and high lifestyle intent. This query has zero competition and can be easily won. Winning it establishes Canvas Homes as a lifestyle authority and attracts affluent buyers.",
+        "suggested_action": "Create a detailed restaurant guide with 15-20 top restaurants, cuisine types, price ranges, resident reviews, and map integration. Link to property listings. This content will rank easily and drive traffic to property pages."
+      },
+      {
+        "query": "MG Road rent",
+        "reason": "High transactional intent, high AEO score (85), and direct competitor presence. Rental market is growing. Winning this query captures renters and builds Canvas Homes' rental portfolio visibility.",
+        "suggested_action": "Create a rental market guide with current rates by property type, furnished vs unfurnished options, lease terms, and Canvas Homes rental listings. Include comparison with nearby areas."
+      },
+      {
+        "query": "hospitals near MG Road",
+        "reason": "Perfect AEO score (100), no featured snippet or AI overview, no competitor presence. This is a critical amenity query for family buyers and renters. Easy win with high relevance to property decisions.",
+        "suggested_action": "Create a healthcare amenities guide listing hospitals, clinics, specialties, ratings, and distance from MG Road. Include emergency services. Link to family-focused property listings."
+      },
+      {
+        "query": "MG Road Bangalore guide",
+        "reason": "High informational intent, AEO score (80), AI overview present, and no competitor dominance. This is the foundational query for establishing Canvas Homes as the MG Road authority. Winning this query drives traffic to all other MG Road content.",
+        "suggested_action": "Create a comprehensive locality hub covering history, geography, infrastructure, amenities, lifestyle, property market, investment potential, and resident profiles. Position Canvas Homes as the authoritative real estate source. Optimize for AI overview by providing structured, authoritative data."
+      }
+    ],
+    "related_topics_to_explore": [
+      "Church Street Bangalore (adjacent locality, mentioned in 11 related searches)",
+      "MG Road metro station connectivity (infrastructure, mentioned in 15+ autocomplete suggestions)",
+      "Bangalore luxury residential market (affluent demographic of MG Road)",
+      "Co-working spaces in Bangalore (emerging trend: isprout, KSIC on MG Road)",
+      "Bangalore restaurant and nightlife scene (lifestyle content opportunity)",
+      "Bangalore schools and education (family buyer segment)",
+      "Bangalore healthcare and hospitals (amenity-focused content)",
+      "Bangalore property investment trends (market analysis)",
+      "Bangalore rental market trends (growing rental demand)",
+      "Bangalore metro connectivity and commute times (infrastructure)"
+    ],
+    "seasonal_notes": "Google Trends indicates seasonal patterns in MG Road searches. Rising queries show spikes in vehicle-related searches (MG Cyberster, MG Hector, MG M9 on-road prices), suggesting seasonal automotive launches and purchase cycles. Airbnb and hospitality searches (Hyatt, Taj) may spike during tourism seasons (Oct-Feb). Property searches may peak during financial year-end (Mar-Apr) and post-monsoon (Oct-Nov). Recommend monitoring monthly search volume to identify optimal content publication windows and seasonal campaign opportunities."
+  },
+  "competitor_tracker": {
+    "magicbricks.com": 8,
+    "99acres.com": 8,
+    "nobroker.in": 6,
+    "housing.com": 3
+  },
+  "serp_calls_used": 15,
+  "autocomplete_calls_used": 4,
+  "cost_usd": 0.018004
+}

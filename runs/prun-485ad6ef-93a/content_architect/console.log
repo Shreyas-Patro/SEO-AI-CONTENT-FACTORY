@@ -1,0 +1,11 @@
+
+[content_architect] Designing cluster for: Koramangala
+  8 keyword groups, expecting ≥5 articles
+  Inserted 11/11 articles
+   [content_architect] retry 2/2 — problems: ['total_articles=12 but 11 articles present — truncated']
+
+[content_architect] Designing cluster for: Koramangala
+  8 keyword groups, expecting ≥5 articles
+  Inserted 11/11 articles
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given

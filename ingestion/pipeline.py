@@ -13,8 +13,9 @@ USAGE (programmatic):
 
 USAGE (dashboard): handled by dashboard_components/ingestion_view.py
 """
-
 import os
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+os.environ["CHROMA_TELEMETRY_DISABLED"] = "1"
 import json
 import time
 import hashlib
@@ -222,7 +223,9 @@ def ingest_document(
                 all_facts.append({"id": fact_id, **fact})
 
         except Exception as e:
+            import traceback
             print(f"  ⚠️  Chunk {i+1} fact extraction failed: {e}")
+            traceback.print_exc()
             continue
 
         _progress("fact_extract", int((i + 1) / len(chunks) * 100))

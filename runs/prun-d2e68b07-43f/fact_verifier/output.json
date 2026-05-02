@@ -1,0 +1,553 @@
+{
+  "article_id": "art-94e9740d-393",
+  "fact_check_score": 0.6333333333333333,
+  "verification": {
+    "total_claims": 54,
+    "verified": 5,
+    "flagged": 32,
+    "unverifiable": 17,
+    "overall_score": 0.6333333333333333,
+    "claims": [
+      {
+        "claim_text": "30x40 sites currently range from \u20b945-65 lakhs in interior layouts to \u20b965-75 lakhs in BBMP-approved sectors (Q4 2025)",
+        "citation_provided": "Knight Frank Bangalore Q4 2025 Land Report",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Citation references Q4 2025 data (future date from knowledge cutoff). Cannot verify Knight Frank report authenticity. Price range is plausible for Kanakapura but unverifiable."
+      },
+      {
+        "claim_text": "This represents a 12-15% YoY increase driven by Metro Phase 2 planning",
+        "citation_provided": "Knight Frank Bangalore Q4 2025 Land Report",
+        "category": "property",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "YoY growth claim lacks independent verification. Metro Phase 2 impact is plausible but specific percentage is unverifiable."
+      },
+      {
+        "claim_text": "planned Metro Phase 2 extension by 2027",
+        "citation_provided": "BMRCL Phase 2 Development Timeline 2025",
+        "category": "infrastructure",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Metro Phase 2 timelines have historically been delayed; verify current status",
+        "reasoning": "Article acknowledges Metro delays are common in Bangalore and Phase 2 was originally planned for 2025. 2027 date is speculative."
+      },
+      {
+        "claim_text": "1,200 sq ft plot (\u20b945-75L) and a 2,000 sq ft plot (\u20b990-115L)",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Price ranges stated without citation in this specific comparison. Consistent with other claims but needs source attribution."
+      },
+      {
+        "claim_text": "Kanakapura offers 20x30 sites (\u20b928-38L), 30x40 sites (\u20b945-75L), and 40x60 sites (\u20b995-130L)",
+        "citation_provided": "Knight Frank Bangalore Residential Land Q4 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Comprehensive pricing by plot size is plausible but Q4 2025 date is future-dated and unverifiable."
+      },
+      {
+        "claim_text": "40x60 plots have appreciated 18-22% YoY due to Metro Phase 2 proximity",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific appreciation percentage lacks citation. Plausible but unverifiable claim."
+      },
+      {
+        "claim_text": "A standard 30x40 site in Kanakapura covers 1,200 square feet",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Mathematical fact: 30 feet \u00d7 40 feet = 1,200 sq ft. Correct calculation."
+      },
+      {
+        "claim_text": "30x40 sites in Kanakapura range from \u20b945-65 lakhs as of Q4 2025",
+        "citation_provided": "Knight Frank Bangalore Q4 2025 Land Report",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Repeated claim with future date. Plausible range but unverifiable source."
+      },
+      {
+        "claim_text": "Properties within 2km of Kanakapura Road command a 15-20% premium over interior layouts",
+        "citation_provided": "RERA Karnataka Property Database 2025",
+        "category": "property",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Premium percentage is plausible for location-based pricing but RERA database citation cannot be independently verified."
+      },
+      {
+        "claim_text": "BBMP-approved layouts in this zone average \u20b965-75 lakhs for 30x40 plots",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Consistent with earlier claims but this specific statement lacks citation."
+      },
+      {
+        "claim_text": "BBMP-approved layouts in Sector 7 and Sector 9 (within 1.5km of Kanakapura Road) list 30x40 sites at \u20b965-75 lakhs",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific sector references lack citation. Plausible but unverifiable."
+      },
+      {
+        "claim_text": "Non-approved interior layouts in the same sectors average \u20b945-55 lakhs\u2014a 20-25% discount",
+        "citation_provided": "Bangalore Real Estate Association (BREA) 2025",
+        "category": "property",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "BREA citation cannot be independently verified. Discount percentage is plausible but unverifiable."
+      },
+      {
+        "claim_text": "Kanakapura averages \u20b94,500-5,800/sq ft vs. Koramangala's \u20b918,000-25,000/sq ft",
+        "citation_provided": "tmp0u9lp_9s.txt",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Koramangala price range (\u20b918,000-25,000/sq ft) matches knowledge base. Kanakapura range is plausible for a developing area. Citation filename appears corrupted but comparison is reasonable."
+      },
+      {
+        "claim_text": "This 4x gap reflects Koramangala's established rental demand (8-10% yields)",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Rental yield claim lacks citation. 8-10% is plausible but unverifiable."
+      },
+      {
+        "claim_text": "Kanakapura's rental yields are currently 3-4% but may improve post-Metro 2027",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific yield percentage lacks citation. Plausible but unverifiable."
+      },
+      {
+        "claim_text": "Corner plots and those facing main roads cost 10-15% more than interior plots",
+        "citation_provided": "Cushman & Wakefield Bangalore Land Market 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Premium percentage is plausible but Cushman & Wakefield citation cannot be independently verified."
+      },
+      {
+        "claim_text": "Plots within 1.5km of the planned Kanakapura Road Metro station (expected 2027) have appreciated 18-22% YoY",
+        "citation_provided": "BMRCL Infrastructure Report 2025",
+        "category": "property",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Appreciation percentage is plausible but BMRCL citation cannot be independently verified. 2027 date is speculative."
+      },
+      {
+        "claim_text": "Metro Phase 2 was originally planned for 2025",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Plausible claim about Metro delays but lacks citation. Article acknowledges this but doesn't source it."
+      },
+      {
+        "claim_text": "Approved layouts cost 20-25% more (\u20b965-75L vs \u20b945-55L) because they're legally safe to build on",
+        "citation_provided": "BBMP Land Records & RERA Karnataka 2025",
+        "category": "legal",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Percentage and reasoning are plausible but citation cannot be independently verified."
+      },
+      {
+        "claim_text": "Plots near schools, hospitals, or commercial centers (within 1.5km) cost 12-18% more",
+        "citation_provided": "Canvas Homes Market Analysis 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Premium percentage is plausible but Canvas Homes internal analysis cannot be independently verified."
+      },
+      {
+        "claim_text": "A 2,000 sq ft plot costs \u20b990-115L in Kanakapura vs. \u20b945-75L for a 30x40 site\u2014a \u20b945-50L premium",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Price comparison is mathematically consistent but lacks citation for the 2,000 sq ft range."
+      },
+      {
+        "claim_text": "30x40 limits you to ~1,800 sq ft",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Construction limitation claim is plausible (accounting for setbacks) but lacks citation."
+      },
+      {
+        "claim_text": "In Kanakapura, 2,000 sq ft plots cost \u20b990-115L if they're BBMP-approved with 30ft road access",
+        "citation_provided": "RERA Karnataka Property Database 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Price range is consistent with earlier claims but RERA citation cannot be independently verified."
+      },
+      {
+        "claim_text": "Interior plots without road access drop to \u20b975-95L but require costly road-cutting permissions (\u20b92-5L)",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Road-cutting cost range is plausible but lacks citation. Price discount is reasonable."
+      },
+      {
+        "claim_text": "Plots within 500m of Kanakapura Road (near the proposed Metro station) average \u20b95,500-6,200/sq ft (\u20b91.1-1.24 crores for 2,000 sq ft)",
+        "citation_provided": "Canvas Homes Market Analysis 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Price per sq ft calculation is mathematically correct (\u20b95,500-6,200 \u00d7 2,000 = \u20b91.1-1.24 crores). Canvas Homes internal analysis cannot be independently verified."
+      },
+      {
+        "claim_text": "This includes areas near Rajarajeshwari Medical College and the Kanakapura Road-Bannerghatta Road junction, which have 25-30 minute travel time to Electronic City",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Travel time estimate is plausible but lacks citation and depends on traffic conditions."
+      },
+      {
+        "claim_text": "Kanakapura at \u20b94,500-6,200/sq ft is 3-4x cheaper than Indiranagar (\u20b920,000-24,000/sq ft)",
+        "citation_provided": "tmp0u9lp_9s.txt",
+        "category": "property",
+        "confidence": 0.92,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Indiranagar price range matches KB (\u20b920,000-24,000/sq ft). Math checks: 20,000/6,200 = 3.2x and 24,000/4,500 = 5.3x, so 3-4x is reasonable for mid-range comparison."
+      },
+      {
+        "claim_text": "Indiranagar has 8-10% rental yields",
+        "citation_provided": null,
+        "category": "rental",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "No source provided for rental yield claim. This is a specific factual assertion requiring citation."
+      },
+      {
+        "claim_text": "Kanakapura's yields are 3-4% today",
+        "citation_provided": null,
+        "category": "rental",
+        "confidence": 0.4,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "No source provided. Specific rental yield claim needs verification."
+      },
+      {
+        "claim_text": "20x30 sites (\u20b928-38L) suit first-time buyers",
+        "citation_provided": "Knight Frank Bangalore Residential Land Q4 2025",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Source cited but cannot independently verify Q4 2025 Knight Frank data. Price range seems plausible for Kanakapura but unconfirmed."
+      },
+      {
+        "claim_text": "30x40 sites (\u20b945-75L) are the sweet spot for families building 1,800 sq ft homes",
+        "citation_provided": "Knight Frank Bangalore Residential Land Q4 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Source cited but unverifiable. 30x40 = 1,200 sq ft, not 1,800 sq ft. This is a dimensional inconsistency."
+      },
+      {
+        "claim_text": "40x60 sites (\u20b995-130L) appeal to investors planning multi-unit developments",
+        "citation_provided": "Knight Frank Bangalore Residential Land Q4 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Source cited but unverifiable. 40x60 = 2,400 sq ft. Price range plausible but cannot confirm."
+      },
+      {
+        "claim_text": "30x40 has the fastest resale\u2014highest demand",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Claim about resale speed and demand lacks citation."
+      },
+      {
+        "claim_text": "20x30 plots average \u20b94,800-6,200/sq ft",
+        "citation_provided": "RERA Karnataka Property Valuation Database 2025",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Source cited but cannot independently verify 2025 RERA database. Range seems plausible."
+      },
+      {
+        "claim_text": "30x40 plots at \u20b94,500-5,800/sq ft",
+        "citation_provided": "RERA Karnataka Property Valuation Database 2025",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Source cited but unverifiable. Consistent with opening claim about Kanakapura pricing."
+      },
+      {
+        "claim_text": "Smaller plots cost 5-10% more per sq ft than larger plots",
+        "citation_provided": "RERA Karnataka Property Valuation Database 2025",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Math checks: 6,200/5,800 = 1.07 (7% premium) and 4,800/4,500 = 1.07 (7% premium). Claim is internally consistent."
+      },
+      {
+        "claim_text": "50x80 layouts (4,000 sq ft) in Kanakapura range \u20b9180-240 lakhs",
+        "citation_provided": "Bangalore Real Estate Association Market Report 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "50x80 = 4,000 sq ft is correct. Price range unverifiable but plausible (\u20b94,500-6,000/sq ft)."
+      },
+      {
+        "claim_text": "30x40 sites offer 40% faster average sale cycles",
+        "citation_provided": "Bangalore Real Estate Association Market Report 2025",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific metric (40% faster) lacks clear baseline for comparison. Unverifiable claim."
+      },
+      {
+        "claim_text": "1 acre (43,560 sq ft) land on Kanakapura Road averages \u20b92.5-3.8 crores as of Q4 2025",
+        "citation_provided": "Knight Frank Bangalore Land Market Report Q4 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Source cited but unverifiable. Conversion is correct (1 acre = 43,560 sq ft). Price range unconfirmed."
+      },
+      {
+        "claim_text": "Premium locations near Rajarajeshwari Nagar commanding \u20b93.5-4.2 crores",
+        "citation_provided": "Knight Frank Bangalore Land Market Report Q4 2025",
+        "category": "property",
+        "confidence": 0.6,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific location premium unverifiable but plausible."
+      },
+      {
+        "claim_text": "Properties within 500m of Kanakapura Road main stretch average \u20b93.2-4.0 crores per acre",
+        "citation_provided": "RERA Karnataka Property Database 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific distance-based pricing unverifiable."
+      },
+      {
+        "claim_text": "Interior Kanakapura areas average \u20b91.8-2.5 crores per acre",
+        "citation_provided": "RERA Karnataka Property Database 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Unverifiable but consistent with location-based pricing logic."
+      },
+      {
+        "claim_text": "30-40% price difference reflects accessibility and development potential",
+        "citation_provided": "RERA Karnataka Property Database 2025",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Math checks: (4.0-2.5)/2.5 = 60% and (2.5-1.8)/2.5 = 28%. Claim of 30-40% is reasonable midpoint."
+      },
+      {
+        "claim_text": "Commercial-zoned 1-acre plots on Kanakapura Road command 35-45% premium over residential",
+        "citation_provided": "Bangalore Municipal Corporation Land Zoning Records 2025",
+        "category": "property",
+        "confidence": 0.6,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific zoning premium unverifiable. KB shows commercial land at \u20b94-5 crore per 1000 sq ft vs residential \u20b92-3 crore, suggesting 67-150% premium, not 35-45%."
+      },
+      {
+        "claim_text": "Commercial-zoned plots averaging \u20b94.5-5.5 crores",
+        "citation_provided": "Bangalore Municipal Corporation Land Zoning Records 2025",
+        "category": "property",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "inconsistent",
+        "suggested_correction": "KB suggests \u20b94-5 crore per 1000 sq ft for commercial land, which would be \u20b94-5 crore for 1 acre (43,560 sq ft), not \u20b94.5-5.5 crore",
+        "reasoning": "Claim conflicts with KB data on commercial land rates."
+      },
+      {
+        "claim_text": "Kanakapura Road corridor has seen 12-16% annual appreciation in land values over 2022-2025",
+        "citation_provided": "Savills India Bangalore Investment Report 2025",
+        "category": "property",
+        "confidence": 0.55,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific appreciation rate unverifiable. KB shows Indiranagar appreciated 22-30% over 2022-2026, so 12-16% for emerging Kanakapura is plausible."
+      },
+      {
+        "claim_text": "Projections of 10-14% CAGR through 2027",
+        "citation_provided": "Savills India Bangalore Investment Report 2025",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Future projection unverifiable."
+      },
+      {
+        "claim_text": "Plots larger than 2,000 sq ft in Kanakapura show 18-22% appreciation when infrastructure projects are announced within 2km radius",
+        "citation_provided": "BMRCL & BBMP Infrastructure Development Plan 2025",
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific appreciation trigger unverifiable. Claim is too precise without clear methodology."
+      },
+      {
+        "claim_text": "Institutional investors have increased land acquisition in Kanakapura by 35% YoY (2024-2025)",
+        "citation_provided": "JLL India Commercial Real Estate Report 2025",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific YoY metric unverifiable."
+      },
+      {
+        "claim_text": "Institutional investors targeting plots 3,000+ sq ft for development",
+        "citation_provided": "JLL India Commercial Real Estate Report 2025",
+        "category": "property",
+        "confidence": 0.55,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific targeting criteria unverifiable."
+      },
+      {
+        "claim_text": "Rental yield on developed layouts in Kanakapura averages 4.5-6.2% annually",
+        "citation_provided": "Canvas Homes Investment Analysis 2025",
+        "category": "rental",
+        "confidence": 0.6,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Internal source cited. Plausible range but unverifiable."
+      },
+      {
+        "claim_text": "Larger plots (2,000+ sq ft) attract builder interest with 8-12% expected returns",
+        "citation_provided": "Canvas Homes Investment Analysis 2025",
+        "category": "rental",
+        "confidence": 0.55,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Internal source cited. Expected returns are projections, not verified data."
+      },
+      {
+        "claim_text": "These returns compare favorably with established localities",
+        "citation_provided": null,
+        "category": "rental",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Comparative claim lacks specific comparison data or citation."
+      },
+      {
+        "claim_text": "30x40 site (1,200 sq ft) at \u20b95,000/sq ft = \u20b960 lakhs base cost",
+        "citation_provided": "RERA Karnataka Cost Estimation Guidelines 2025",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Kanakapura land prices in 2025-2026 typically range \u20b93,000-4,500/sq ft, not \u20b95,000/sq ft"
+      }
+    ]
+  },
+  "needs_rewrite": true
+}

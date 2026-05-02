@@ -1,0 +1,13 @@
+[faq_architect] Generating FAQs for cluster cl-8a0080ff-492
+  Found 12 articles in DB
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Gap-fill: 11 articles still missing FAQs
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Done: 4 FAQs across 2/12 articles
+   [faq_architect] retry 2/2 — problems: ['Only 2 articles have FAQs — expected at least 6. LLM likely truncated. Will retry with stronger prompt.']
+[faq_architect] Generating FAQs for cluster cl-8a0080ff-492
+  Found 12 articles in DB
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Gap-fill: 11 articles still missing FAQs
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Done: 4 FAQs across 2/12 articles

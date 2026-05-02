@@ -1,0 +1,9 @@
+{
+  "agent": "trend_scout",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "serp_calls": 15,
+  "llm_calls": 1,
+  "cost_usd": 0.017826
+}

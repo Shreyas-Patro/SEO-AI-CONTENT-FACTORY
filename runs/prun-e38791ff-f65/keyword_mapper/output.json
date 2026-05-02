@@ -1,0 +1,109 @@
+{
+  "topic": "mg road",
+  "keyword_groups": [
+    {
+      "group_name": "MG Road Property Investment & Pricing",
+      "primary_keyword": "MG Road property price",
+      "supporting_keywords": [
+        "MG Road property rate per sq ft",
+        "MG Road flat for sale",
+        "MG Road rent",
+        "2BHK rent MG Road",
+        "living in MG Road Bangalore"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "high",
+      "competition": "high",
+      "opportunity_score": 72
+    },
+    {
+      "group_name": "MG Road Lifestyle & Entertainment",
+      "primary_keyword": "things to do in MG Road",
+      "supporting_keywords": [
+        "best restaurants MG Road",
+        "MG Road nightlife",
+        "MG Road places to eat",
+        "MG Road Bangalore shopping",
+        "MG Road Bangalore guide"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "medium",
+      "opportunity_score": 78
+    },
+    {
+      "group_name": "MG Road Infrastructure & Amenities",
+      "primary_keyword": "hospitals near MG Road",
+      "supporting_keywords": [
+        "schools near MG Road",
+        "MG Road nearest Metro station",
+        "MG Road Bangalore location",
+        "MG Road directions",
+        "MG Road distance"
+      ],
+      "intent": "informational",
+      "estimated_volume": "medium",
+      "competition": "low",
+      "opportunity_score": 85
+    },
+    {
+      "group_name": "MG Road Area Overview & Reviews",
+      "primary_keyword": "What is MG Road in Bangalore famous for",
+      "supporting_keywords": [
+        "Is MG Road a posh area",
+        "Is MG Road safe at night",
+        "MG Road review bangalore",
+        "MG Road vs Whitefield",
+        "MG Road Bangalore"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "medium",
+      "opportunity_score": 75
+    },
+    {
+      "group_name": "MG Road Accommodation & Hospitality",
+      "primary_keyword": "MG Road Bangalore hotels",
+      "supporting_keywords": [
+        "MG Road accommodation",
+        "airbnb bangalore MG Road",
+        "MG Road guest houses",
+        "places to stay MG Road"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "medium",
+      "competition": "medium",
+      "opportunity_score": 68
+    },
+    {
+      "group_name": "MG Road New Projects & Development",
+      "primary_keyword": "MG Road new projects",
+      "supporting_keywords": [
+        "upcoming projects in Bangalore",
+        "MG Road residential projects",
+        "fastest growing area in Bangalore",
+        "MG Road development"
+      ],
+      "intent": "informational",
+      "estimated_volume": "medium",
+      "competition": "high",
+      "opportunity_score": 65
+    },
+    {
+      "group_name": "MG Road Navigation & Connectivity",
+      "primary_keyword": "MG Road metro station",
+      "supporting_keywords": [
+        "MG Road Bangalore directions",
+        "MG Road location map",
+        "MG Road pin code",
+        "MG Road to new delhi metro",
+        "MG Road nearest Metro station"
+      ],
+      "intent": "navigational",
+      "estimated_volume": "medium",
+      "competition": "low",
+      "opportunity_score": 80
+    }
+  ],
+  "summary": "MG Road Bangalore search data reveals strong demand across property investment, lifestyle/entertainment, and infrastructure queries. Key content opportunities exist in property pricing guides (high competition but high intent), lifestyle content (lower competition, high engagement), and infrastructure amenities (low competition, high opportunity score)."
+}

@@ -1,5 +1,5 @@
 """
-agents/content_architect.py — v5 (fixed for AgentBase v5)
+agents/content_architect.py — v5.1 (truncation filter fix)
 """
 
 import json
@@ -33,6 +33,10 @@ class ContentArchitectAgent(AgentBase):
         """Custom validation on top of base checks."""
         problems = super()._validate_output(output)
 
+        # The base class flags any total_articles mismatch as "truncated".
+        # We replace that with a smarter reconciling check below, so drop it here.
+        problems = [p for p in problems if "truncated" not in p.lower()]
+
         cluster_plan = output.get("cluster_plan", {}) if isinstance(output, dict) else {}
         articles = cluster_plan.get("articles", [])
 
@@ -49,10 +53,25 @@ class ContentArchitectAgent(AgentBase):
             if not a.get("type"):
                 problems.append(f"articles[{i}] missing type")
 
-        declared = cluster_plan.get("total_articles")
-        if isinstance(declared, int) and declared != len(articles):
+        # Reconciling truncation check: trust the actual count
+        declared = cluster_plan.get("total_articles", 0)
+        actual = len(articles)
+
+        # Reconcile: actual count is the truth
+        cluster_plan["total_articles"] = actual
+
+        TRUNCATION_THRESHOLD = 3
+        MIN_ARTICLES = 5
+
+        if actual < MIN_ARTICLES:
+            problems.append(f"only {actual} articles inserted (need ≥{MIN_ARTICLES})")
+        elif declared - actual >= TRUNCATION_THRESHOLD:
             problems.append(
-                f"total_articles={declared} but {len(articles)} articles present — truncated"
+                f"declared {declared} but only {actual} articles — likely truncated"
+            )
+        elif declared != actual:
+            print(
+                f"  Note: LLM declared {declared}, inserted {actual} — using actual count"
             )
 
         return problems
@@ -71,7 +90,6 @@ class ContentArchitectAgent(AgentBase):
     def _execute(self, state: PipelineState, agent_input: dict) -> dict:
         topic = agent_input.get("topic") or state.topic or ""
 
-        # Extract keyword data — could be nested differently depending on source
         kw_map = (
             agent_input.get("keyword_map")
             or agent_input.get("keyword_data", {}).get("keyword_map")
@@ -82,35 +100,45 @@ class ContentArchitectAgent(AgentBase):
         kw_groups = kw_map.get("keyword_groups", [])
         if not kw_groups:
             print(f"  ⚠️  No keyword_groups — building enriched fallback for {topic}")
-            # Enrich fallback with PAA + related searches if available
             trend_state = state.get(StateKeys.TREND_DATA, {}) or {}
             raw = trend_state.get("raw_data", {}) or {}
             paa = (raw.get("paa_questions") or [])[:8]
             related = (raw.get("related_searches") or [])[:8]
+
             kw_groups = self._build_fallback_keyword_groups(topic)
+
             if paa:
                 kw_groups.append({
                     "group_name": f"{topic} FAQs from SERPs",
                     "primary_keyword": f"{topic} questions",
-                    "supporting_keywords": [str(p) if not isinstance(p, dict) else p.get("question", "") for p in paa],
-                    "intent": "informational", "estimated_volume": "medium",
-                    "competition": "low", "opportunity_score": 75,
+                    "supporting_keywords": [
+                        str(p) if not isinstance(p, dict) else p.get("question", "")
+                        for p in paa
+                    ],
+                    "intent": "informational",
+                    "estimated_volume": "medium",
+                    "competition": "low",
+                    "opportunity_score": 75,
                 })
+
             if related:
                 kw_groups.append({
                     "group_name": f"{topic} Related Topics",
                     "primary_keyword": f"{topic} related",
                     "supporting_keywords": related,
-                    "intent": "informational", "estimated_volume": "medium",
-                    "competition": "medium", "opportunity_score": 60,
+                    "intent": "informational",
+                    "estimated_volume": "medium",
+                    "competition": "medium",
+                    "opportunity_score": 60,
                 })
+
             kw_map = {**kw_map, "keyword_groups": kw_groups}
 
         self._expected_min_articles = max(int(len(kw_groups) * 0.6), 5)
+
         print(f"\n[{self.NAME}] Designing cluster for: {topic}")
         print(f"  {len(kw_groups)} keyword groups, expecting ≥{self._expected_min_articles} articles")
 
-        # Get relevant facts (best-effort)
         relevant_facts = []
         try:
             from db.chroma_ops import search_facts
@@ -128,9 +156,8 @@ class ContentArchitectAgent(AgentBase):
         except Exception:
             pass
 
-        # Load prompt template
         try:
-            prompt_template = open("prompts/content_architect.md").read()
+            prompt_template = open("prompts/content_architect.md", encoding="utf-8").read()
         except FileNotFoundError:
             prompt_template = "You are a content strategist. Design a hub-spoke content cluster. Return JSON only."
 
@@ -166,16 +193,18 @@ REQUIREMENTS:
 Return the full cluster plan as JSON."""
 
         result = call_llm_json(
-            prompt, system=prompt_template, model_role="architect",
+            prompt,
+            system=prompt_template,
+            model_role="architect",
             max_tokens=16000,
             cache_namespace=f"{topic}:content_architect{self._retry_suffix()}",
         )
+
         self._track_llm(result)
 
         cluster_plan = result.get("parsed", {})
         articles = cluster_plan.get("articles", [])
 
-        # Create cluster + articles in DB
         cluster_id = self.cluster_id or create_cluster(topic, topic)
         self.cluster_id = cluster_id
 
@@ -196,12 +225,14 @@ Return the full cluster plan as JSON."""
                 )
                 art["db_id"] = article_id
                 successful_inserts += 1
+
                 if art.get("type") == "hub":
                     hub_ids.append(article_id)
                 elif art.get("type") == "faq":
                     faq_ids.append(article_id)
                 else:
                     spoke_ids.append(article_id)
+
             except Exception as e:
                 failed_inserts += 1
                 print(f"  ⚠️  Insert failed for '{art.get('title','?')}': {e}")

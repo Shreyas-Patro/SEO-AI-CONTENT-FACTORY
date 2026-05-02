@@ -1,0 +1,70 @@
+{
+  "master_research_prompt": "I need comprehensive, current research on Koramangala, Bangalore for a real estate content cluster. Provide detailed information with authoritative citations from RERA, BBMP, Knight Frank, JLL, CBRE, 99acres, MagicBricks, Housing.com, and official government sources. All data must be from 2024-2026 unless specifically historical context is needed.\n\n**SECTION 1: KORAMANGALA OVERVIEW & DEMOGRAPHICS**\nWhat is Koramangala famous for and why is it called the startup capital of India? Provide specific company names with offices there, startup ecosystem statistics, and demographic data including average age of residents. What are the 8 blocks of Koramangala and their characteristics? What are the pin codes for each block? Distance from Bangalore airport with travel time estimates?\n\n**SECTION 2: CONNECTIVITY & INFRASTRUCTURE**\nWhich metro lines connect to Koramangala and current construction status? What are all transportation options including bus routes, auto availability, and traffic patterns? Current infrastructure projects and road improvements planned for 2024-2025? Safety statistics especially for women at night?\n\n**SECTION 3: PROPERTY PRICES & MARKET TRENDS**\nCurrent property prices per square foot in Koramangala by block for 2024? Specific 1BHK, 2BHK, 3BHK apartment prices with ranges? Land rates for residential and commercial plots? Price appreciation trends 2022-2024 with percentage growth? Comparison with Indiranagar, HSR Layout, and other premium Bangalore areas? Investment ROI potential and market forecasts?\n\n**SECTION 4: RENTAL MARKET ANALYSIS**\nCurrent rental rates for 1BHK, 2BHK, 3BHK apartments by block? PG accommodation options and pricing? Rental yield calculations for investors? Seasonal rental trends and occupancy rates? Security deposit norms and rental agreements?\n\n**SECTION 5: AMENITIES & FACILITIES**\nTop CBSE, ICSE, and international schools near Koramangala with admission fees and ratings? Multi-specialty hospitals and healthcare facilities with specializations? Shopping malls, markets including flea market timings and locations? Restaurants, cafes, and nightlife venues with specific names and ratings?\n\n**SECTION 6: NEW DEVELOPMENTS & PROJECTS**\nLatest residential and commercial projects launched in 2024? RERA-approved projects with developer names, pricing, and delivery timelines? Upcoming infrastructure developments and their impact on property values?\n\n**SECTION 7: LIFESTYLE & COMMUNITY**\nResident satisfaction surveys and livability scores? Work-life balance factors and commute times to major IT hubs? Community culture and networking opportunities? Cost of living breakdown including utilities, groceries, and entertainment?\n\n**SECTION 8: COMPARATIVE ANALYSIS**\nDetailed comparison between Koramangala vs Indiranagar covering property prices, rental rates, amenities, connectivity, and lifestyle factors? Pros and cons analysis with resident testimonials?\n\nFor each data point, provide source URLs in markdown format [Source Name](URL) and ensure all statistics are current as of 2024. Include specific numbers, percentages, and ranges rather than vague descriptions.",
+  "research_questions": [
+    {
+      "section": "Overview & Demographics",
+      "questions": [
+        "What companies have headquarters/offices in Koramangala?",
+        "What are the 8 blocks and their pin codes?",
+        "What is the demographic profile of Koramangala residents?",
+        "Distance and travel time from Bangalore airport?"
+      ]
+    },
+    {
+      "section": "Property Market",
+      "questions": [
+        "Current property prices per sq ft by block in 2024?",
+        "1BHK, 2BHK, 3BHK apartment price ranges?",
+        "Price appreciation trends 2022-2024?",
+        "Comparison with other premium Bangalore areas?"
+      ]
+    },
+    {
+      "section": "Rental Market",
+      "questions": [
+        "Current rental rates by property type and block?",
+        "PG accommodation options and pricing?",
+        "Rental yield for investors?",
+        "Seasonal rental trends?"
+      ]
+    },
+    {
+      "section": "Infrastructure & Connectivity",
+      "questions": [
+        "Metro connectivity status and future plans?",
+        "Transportation options and traffic patterns?",
+        "Current infrastructure projects?",
+        "Safety statistics and ratings?"
+      ]
+    },
+    {
+      "section": "Amenities & Lifestyle",
+      "questions": [
+        "Top schools with fees and ratings?",
+        "Healthcare facilities and specializations?",
+        "Shopping, dining, and entertainment options?",
+        "Cost of living breakdown?"
+      ]
+    }
+  ],
+  "freshness_requirements": {
+    "default": "last 18 months",
+    "property_prices": "2024 data only",
+    "new_projects": "2024-2025 launches",
+    "infrastructure": "current status and 2024-2025 plans"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "cbre.co.in",
+    "99acres.com",
+    "magicbricks.com",
+    "housing.com",
+    "proptiger.com",
+    "commonfloor.com"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.2
+}

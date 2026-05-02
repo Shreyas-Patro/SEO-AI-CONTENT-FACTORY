@@ -1,0 +1,19 @@
+{
+  "agent": "rewriter",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "reads_state": [],
+  "writes_state": [],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 1,
+  "llm_cache_hits": 0,
+  "tokens_in": 5225,
+  "tokens_out": 2892,
+  "cost_usd": 0.059055,
+  "duration_seconds": 47.09,
+  "completed_at": "2026-04-30T14:19:35.444801",
+  "attempts": 1
+}

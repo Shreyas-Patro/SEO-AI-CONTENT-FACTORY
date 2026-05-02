@@ -1,0 +1,33 @@
+
+============================================================
+[Pipeline prun-706d1c38-f07] Layer 1 (LangGraph)
+============================================================
+
+────────────────────────────────────────────────────────────
+[Trend Scout v2] Analyzing: indiranagar
+────────────────────────────────────────────────────────────
+  [1/6] Classifying topic...
+    Type: locality
+    Categories: ['locality']
+    Localities: ['Indiranagar']
+  [2/6] Generating queries (budget: 15 SERP calls)...
+    Generated 15 unique queries across 4 groups
+  [3/6] Fetching Google Trends...
+    Direction: stable
+    Rising queries: 15
+  [4/6] Running 15 SERP searches...
+    [1/15] (core) Indiranagar Bangalore
+    [2/15] (core) Indiranagar Bangalore guide
+    [3/15] (core) living in Indiranagar Bangalore
+    [4/15] (core) Indiranagar review
+    [5/15] (property) Indiranagar property price
+    [6/15] (property) Indiranagar rent
+    [7/15] (property) 2BHK rent Indiranagar
+    [8/15] (property) Indiranagar flat for sale
+    [9/15] (property) Indiranagar property rate per sq ft
+    [10/15] (property) Indiranagar new projects
+    [11/15] (lifestyle) things to do in Indiranagar
+    [12/15] (lifestyle) best restaurants Indiranagar
+    [13/15] (lifestyle) schools near Indiranagar
+    [14/15] (lifestyle) hospitals near Indiranagar
+    [15/15] (comparison) Indiranagar vs koramangala
