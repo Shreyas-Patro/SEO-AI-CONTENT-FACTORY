@@ -1,34 +1,78 @@
 """
-agents/research_prompt_generator.py — v5 (reads from state)
-"""
+agents/research_prompt_generator.py — v6
 
+Improvements:
+1. Reads BOTH cluster_plan and faq_plan
+2. Comprehensive authoritative source list
+3. Structured by article (not bulk)
+4. Outputs Perplexity-ready format with explicit recency requirements
+"""
 import json
 from db.pipeline_state import StateKeys, PipelineState
 from llm import call_llm_json
 from agents.base import AgentBase
+from config_loader import current_year
 
 
-RPG_SYSTEM_PROMPT = """You are a senior research strategist for Canvas Homes, a Bangalore real estate platform.
+AUTHORITATIVE_SOURCES = [
+    # Government / Regulatory
+    "rera.karnataka.gov.in", "bbmp.gov.in", "bda.karnataka.gov.in",
+    "kar.nic.in", "incometax.gov.in", "rbi.org.in", "sebi.gov.in",
+    "nhb.org.in", "moneycontrol.com",
 
-Produce a SINGLE master research prompt for Perplexity Pro that covers every factual claim
-needed across the entire content cluster.
+    # Real Estate Research
+    "knightfrank.co.in", "knightfrank.com", "jll.co.in", "jll.com",
+    "anarock.com", "cbre.com", "cushmanwakefield.com", "colliers.com",
+    "savills.in", "vestian.com", "propequity.in",
 
-The prompt MUST:
-1. Demand citations from authoritative sources (RERA, BBMP, Knight Frank, JLL, etc.)
-2. Demand freshness — facts from 2024-2026 unless historical
-3. Structure into clear research sections matching articles
-4. Demand source URLs in markdown format
-5. Be ONE coherent prompt, MAKE SURE THE RESEARCH IS UPDATED AND RELEVANT FOR 2026 
+    # News / Industry
+    "livemint.com", "economictimes.indiatimes.com", "business-standard.com",
+    "thehindubusinessline.com", "moneylife.in", "constructionworld.in",
+    "realestate-investments.com", "realtyplusmag.com",
 
-Return JSON:
-{
-  "master_research_prompt": "full prompt string",
-  "research_questions": [{"section": "...", "questions": ["..."]}],
-  "freshness_requirements": {"default": "last 18 months"},
-  "source_priority": ["domain1", "domain2"],
+    # Marketplaces (use cautiously — listing data, not editorial)
+    "magicbricks.com", "nobroker.in", "housing.com", "99acres.com",
+    "commonfloor.com", "makaan.com", "squareyards.com",
+
+    # Local
+    "deccanherald.com", "thehindu.com/news/cities/bangalore",
+    "bangaloremirror.indiatimes.com",
+
+    # Banking / Finance
+    "sbi.co.in", "hdfcbank.com", "icicibank.com", "lichousing.com",
+    "axisbank.com", "kotak.com", "bajajhousingfinance.in",
+]
+
+
+SYSTEM_PROMPT = f"""You are a senior research strategist for Canvas Homes (Bangalore real estate platform).
+
+Produce a SINGLE master research prompt for Perplexity (or any deep research tool) that, when answered, will provide every factual claim needed across the entire content cluster — including the FAQs.
+
+The master prompt MUST:
+1. State the topic clearly with current year context ({current_year()}).
+2. Demand citations from authoritative sources only — list them explicitly.
+3. Demand freshness: data from the last 18 months unless inherently historical.
+4. Structure the research into sections matching the article cluster.
+5. Demand source URLs in markdown format.
+6. Demand SPECIFIC numbers — exact prices, percentages, dates, named entities.
+7. Demand both city-level and locality-specific data where relevant.
+8. Include questions for FAQs explicitly.
+9. Specify British Indian English ("flat" not "apartment", "lakh"/"crore", "BBMP", "RERA").
+10. Be ONE coherent prompt — readable in <60 seconds, executable in one Perplexity query.
+
+The output research will populate our knowledge graph and feed our Lead Writer.
+
+Return STRICT JSON:
+{{
+  "master_research_prompt": "<2000-4000 word prompt>",
+  "research_questions": [
+    {{"section": "Property Prices", "questions": ["What is the average price per sqft for 2BHK in HSR Layout in Q1 {current_year()}?", "..."]}}
+  ],
+  "freshness_requirements": {{"default": "last 18 months", "exceptions": "historical claims may use any era"}},
+  "source_priority": ["rera.karnataka.gov.in", "..."],
   "estimated_perplexity_queries": 1,
   "estimated_perplexity_cost_usd": 0.20
-}
+}}
 
 NO markdown fences. Return raw JSON only."""
 
@@ -43,8 +87,11 @@ class ResearchPromptGeneratorAgent(AgentBase):
     def _validate_output(self, output):
         problems = super()._validate_output(output)
         prompt = output.get("master_research_prompt", "") if isinstance(output, dict) else ""
-        if isinstance(prompt, str) and len(prompt) < 200:
-            problems.append(f"master_research_prompt too short ({len(prompt)} chars)")
+        if isinstance(prompt, str):
+            if len(prompt) < 800:
+                problems.append(f"master_research_prompt too short ({len(prompt)} chars)")
+            if "—" in prompt:
+                problems.append("em-dashes detected in research prompt")
         return problems
 
     def _execute(self, state: PipelineState, agent_input: dict) -> dict:
@@ -54,57 +101,57 @@ class ResearchPromptGeneratorAgent(AgentBase):
             or state.get(StateKeys.CLUSTER_PLAN, {})
             or {}
         )
-        faqs_by_article = (
-            agent_input.get("faqs_by_article")
-            or (state.get(StateKeys.FAQ_PLAN, {}) or {}).get("faqs_by_article", {})
+        faq_plan = (
+            agent_input.get("faq_plan")
+            or state.get(StateKeys.FAQ_PLAN, {})
             or {}
         )
+        faqs_by_article = faq_plan.get("faqs_by_article", {}) or {}
 
         print(f"[{self.NAME}] Building research prompt for: {topic}")
 
         articles = cluster_plan.get("articles", [])
+        # Build comprehensive article descriptors with their FAQs
         compact_articles = []
         for a in articles:
+            kw = a.get("target_keywords") or {}
+            article_faqs = faqs_by_article.get(a.get("db_id"), [])
             compact_articles.append({
                 "title": a.get("title"),
                 "type": a.get("type"),
-                "primary_keyword": a.get("target_keywords", {}).get("primary") if isinstance(a.get("target_keywords"), dict) else "",
-                "outline": a.get("outline", [])[:10],
+                "primary_keyword": kw.get("primary") if isinstance(kw, dict) else "",
+                "outline": (a.get("outline") or [])[:10],
+                "faqs": [f.get("question", "") for f in article_faqs],
             })
 
-        all_faqs = []
-        for art_id, faqs in faqs_by_article.items():
-            for f in (faqs if isinstance(faqs, list) else []):
-                all_faqs.append({
-                    "question": f.get("question", ""),
-                    "article_id": art_id,
-                })
+        prompt = f"""Build a master Perplexity research prompt for: "{topic}" (Bangalore real estate, current year {current_year()}).
 
-        prompt = f"""Build a master Perplexity research prompt for: "{topic}" (Bangalore real estate).
+CONTENT CLUSTER ({len(articles)} articles, with FAQs embedded):
+{json.dumps(compact_articles, indent=2)[:8000]}
 
-CONTENT CLUSTER ({len(articles)} articles):
-{json.dumps(compact_articles, indent=2)[:6000]}
+AUTHORITATIVE SOURCES TO PRIORITISE:
+{json.dumps(AUTHORITATIVE_SOURCES[:30])}
 
-FAQs NEEDING ANSWERS ({len(all_faqs)} total):
-{json.dumps(all_faqs[:30], indent=2)[:4000]}
+The output prompt should produce a research document that, when ingested into our knowledge base, will allow our writers to draft every article in the cluster — every claim cited, every FAQ answered, every number current as of {current_year()}.
 
-Produce the master research prompt as JSON.
+Build the master research prompt as JSON.
 """
 
         result = call_llm_json(
-            prompt, system=RPG_SYSTEM_PROMPT, model_role="architect",
+            prompt, system=SYSTEM_PROMPT, model_role="architect",
             max_tokens=8000,
             cache_namespace=f"{topic}:research_prompt{self._retry_suffix()}",
         )
         self._track_llm(result)
 
-        output = result.get("parsed", {})
+        output = result.get("parsed", {}) or {}
         output.setdefault("estimated_perplexity_queries", 1)
-        output.setdefault("estimated_perplexity_cost_usd", 0.20)
+        output.setdefault("estimated_perplexity_cost_usd", 0.30)
         output.setdefault("freshness_requirements", {"default": "last 18 months"})
-        output.setdefault("source_priority", [
-            "rera.karnataka.gov.in", "bbmp.gov.in", "knightfrank.com",
-            "magicbricks.com", "nobroker.in", "livemint.com",
-        ])
+        output.setdefault("source_priority", AUTHORITATIVE_SOURCES[:15])
+
+        # Sanity post-process: strip em-dashes from prompt
+        if "—" in output.get("master_research_prompt", ""):
+            output["master_research_prompt"] = output["master_research_prompt"].replace("—", ", ")
 
         return output
