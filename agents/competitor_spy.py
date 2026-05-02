@@ -12,6 +12,7 @@ from agents.base import AgentBase
 from db.pipeline_state import StateKeys, PipelineState
 from llm import call_llm_json
 from serpapi import GoogleSearch
+from config_loader import current_year
 
 
 def _get_serpapi_key():
@@ -95,10 +96,12 @@ class CompetitorSpyAgent(AgentBase):
                     raw_results.append({
                         "query": q,
                         "results": [
-                            {"position": r.get("position"),
-                             "title": r.get("title", ""),
-                             "link": r.get("link", ""),
-                             "snippet": r.get("snippet", "")}
+                            {
+                                "position": r.get("position"),
+                                "title": r.get("title", ""),
+                                "link": r.get("link", ""),
+                                "snippet": r.get("snippet", ""),
+                            }
                             for r in organic[:10]
                         ],
                     })
@@ -117,8 +120,10 @@ class CompetitorSpyAgent(AgentBase):
                     continue
                 results = entry.get("results") or []
                 covered = any(
-                    any(d in (r.get("link", "") if isinstance(r, dict) else "")
-                        for d in COMPETITOR_DOMAINS)
+                    any(
+                        d in (r.get("link", "") if isinstance(r, dict) else "")
+                        for d in COMPETITOR_DOMAINS
+                    )
                     for r in results
                 )
                 if not covered:
@@ -129,14 +134,14 @@ class CompetitorSpyAgent(AgentBase):
             for d in COMPETITOR_DOMAINS:
                 domain_hits[d] = scout_coverage.get(d, 0)
 
-        # ── LLM analysis on top of the raw data ───────────────────────
+        # ── LLM analysis ───────────────────────
         print("  Running LLM analysis...")
         compact_serp = []
         for r in raw_results[:8]:
             top3 = (r.get("results") or [])[:3]
             compact_serp.append({
                 "query": r["query"],
-                "top": [{"title": t["title"][:100], "link": t["link"]} for t in top3]
+                "top": [{"title": t["title"][:100], "link": t["link"]} for t in top3],
             })
 
         analysis_prompt = f"""Analyze competitor coverage for "{topic}" in Bangalore.
@@ -179,26 +184,61 @@ Provide structured analysis."""
         }
 
     def _build_queries(self, topic, trend_data):
-        base = [
-            f"{topic} property",
-            f"{topic} apartments",
-            f"{topic} 2bhk for sale",
-            f"buy flat in {topic}",
-            f"{topic} real estate review",
-            f"living in {topic}",
-        ]
+        classification = trend_data.get("classification", {}) or {}
+        is_builder = classification.get("is_builder", False)
+        is_locality = classification.get("is_locality", False)
+
+        if is_builder:
+            builders = classification.get("detected_builders") or [topic]
+            builder = builders[0]
+            base = [
+                f"{builder} reviews",
+                f"{builder} projects Bangalore",
+                f"{builder} construction quality",
+                f"{builder} delays complaints",
+                f"{builder} vs Sobha",
+                f"{builder} vs Prestige",
+                f"is {builder} a good builder",
+            ]
+        elif is_locality:
+            locs = classification.get("detected_localities") or [topic]
+            loc = locs[0]
+            base = [
+                f"{loc} property",
+                f"{loc} apartments",
+                f"{loc} 2bhk for sale",
+                f"buy flat in {loc}",
+                f"{loc} real estate review",
+                f"living in {loc}",
+            ]
+        else:
+            base = [
+                f"{topic} Bangalore",
+                f"{topic} reviews",
+                f"{topic} guide",
+                f"{topic} {current_year()}",
+                f"best {topic}",
+            ]
+
         raw = trend_data.get("raw_data", {}) or {}
         paa = raw.get("paa_questions") or trend_data.get("paa_questions") or []
+
         for q in paa[:2]:
             text = q.get("question") if isinstance(q, dict) else str(q)
             if text and text not in base:
                 base.append(text)
+
         return base
 
     def _search(self, query, api_key):
         params = {
-            "q": query, "api_key": api_key, "engine": "google",
-            "num": 10, "gl": "in", "hl": "en",
+            "q": query,
+            "api_key": api_key,
+            "engine": "google",
+            "num": 10,
+            "gl": "in",
+            "hl": "en",
             "location": "Bangalore, Karnataka, India",
         }
         return GoogleSearch(params).get_dict().get("organic_results", []) or []
+
