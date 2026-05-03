@@ -6,19 +6,37 @@ import os
 import json
 import zipfile
 from db.sqlite_ops import get_article, get_articles_by_cluster, get_cluster, list_clusters
+import re
+
+FAQ_HEADING_RE = re.compile(r"^#{2,3}\s+(?:Frequently Asked Questions|FAQs?)\s*$",
+                            re.IGNORECASE | re.MULTILINE)
+
+def _split_body_and_faqs(content_md: str):
+    """
+    Returns (body_without_faq, faq_section_md, faq_section_md_or_empty).
+    Looks for a '## Frequently Asked Questions' (or similar) heading
+    and chops everything from that heading onward.
+    """
+    if not content_md:
+        return "", ""
+    m = FAQ_HEADING_RE.search(content_md)
+    if not m:
+        return content_md, ""
+    body = content_md[: m.start()].rstrip()
+    faq  = content_md[m.start():].strip()
+    return body, faq
 
 
 def export_article_md(article_id, output_dir="outputs"):
-    """Export a single article as Markdown file."""
+    """Export article as TWO files: <slug>.md (no FAQs) and <slug>.faqs.md."""
     article = get_article(article_id)
     if not article:
         raise ValueError(f"Article {article_id} not found")
-
     os.makedirs(output_dir, exist_ok=True)
-    filename = f"{article['slug']}.md"
-    filepath = os.path.join(output_dir, filename)
 
-    # Build frontmatter
+    body, faq_block = _split_body_and_faqs(article.get("content_md", ""))
+    faqs_struct = json.loads(article.get("faq_json", "[]") or "[]")
+
     meta = {
         "title": article["title"],
         "slug": article["slug"],
@@ -31,21 +49,31 @@ def export_article_md(article_id, output_dir="outputs"):
         "brand_tone_score": article.get("brand_tone_score"),
     }
 
-    content = f"""---
-{json.dumps(meta, indent=2)}
----
+    body_path = os.path.join(output_dir, f"{article['slug']}.md")
+    with open(body_path, "w", encoding="utf-8") as f:
+        f.write(f"---\n{json.dumps(meta, indent=2)}\n---\n\n{body}\n")
 
-{article.get('content_md', '')}
-"""
+    faq_path = None
+    if faq_block or faqs_struct:
+        faq_meta = {
+            "parent_slug": article["slug"],
+            "parent_title": article["title"],
+            "faq_count": len(faqs_struct),
+        }
+        faq_md_lines = [f"---\n{json.dumps(faq_meta, indent=2)}\n---\n"]
+        if faq_block:
+            faq_md_lines.append(faq_block)
+        elif faqs_struct:
+            faq_md_lines.append("# Frequently Asked Questions\n")
+            for q in faqs_struct:
+                faq_md_lines.append(f"\n## {q.get('question','?')}\n\n{q.get('answer','')}\n")
+        faq_path = os.path.join(output_dir, f"{article['slug']}.faqs.md")
+        with open(faq_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(faq_md_lines))
 
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(content)
-
-    return filepath
-
+    return {"body": body_path, "faqs": faq_path}
 
 def export_cluster_zip(cluster_id, output_dir="outputs"):
-    """Export an entire cluster as a ZIP with folder structure."""
     cluster = get_cluster(cluster_id)
     if not cluster:
         raise ValueError(f"Cluster {cluster_id} not found")
@@ -57,8 +85,8 @@ def export_cluster_zip(cluster_id, output_dir="outputs"):
     os.makedirs(output_dir, exist_ok=True)
 
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+
         for article in articles:
-            # Determine subfolder by type
             type_folder = {
                 "hub": "01-hub",
                 "spoke": "02-spokes",
@@ -66,8 +94,7 @@ def export_cluster_zip(cluster_id, output_dir="outputs"):
                 "faq": "04-faq",
             }.get(article["article_type"], "05-other")
 
-            filename = f"{article['slug']}.md"
-            arcpath = f"{cluster_name}/{type_folder}/{filename}"
+            body, faq_block = _split_body_and_faqs(article.get("content_md", ""))
 
             meta = {
                 "title": article["title"],
@@ -76,52 +103,46 @@ def export_cluster_zip(cluster_id, output_dir="outputs"):
                 "meta_description": article.get("meta_description", ""),
             }
 
-            content = f"---\n{json.dumps(meta, indent=2)}\n---\n\n{article.get('content_md', '')}"
-            zf.writestr(arcpath, content)
+            body_doc = f"---\n{json.dumps(meta, indent=2)}\n---\n\n{body}\n"
 
-            # Add schema JSON
+            # Main article
+            zf.writestr(
+                f"{cluster_name}/{type_folder}/{article['slug']}.md",
+                body_doc,
+            )
+
+            # FAQs
+            if faq_block:
+                zf.writestr(
+                    f"{cluster_name}/faqs/{article['slug']}.faqs.md",
+                    faq_block,
+                )
+
+            # Schema
             if article.get("schema_json") and article["schema_json"] != "{}":
-                schema_path = f"{cluster_name}/meta/{article['slug']}-schema.json"
-                zf.writestr(schema_path, article["schema_json"])
+                zf.writestr(
+                    f"{cluster_name}/meta/{article['slug']}-schema.json",
+                    article["schema_json"],
+                )
 
-        # Add cluster summary
+        # ✅ OUTSIDE loop (correct place)
         summary = {
             "cluster_name": cluster["name"],
             "total_articles": len(articles),
-            "articles": [{"title": a["title"], "slug": a["slug"], "type": a["article_type"],
-                          "word_count": a.get("word_count", 0)} for a in articles]
+            "articles": [
+                {
+                    "title": a["title"],
+                    "slug": a["slug"],
+                    "type": a["article_type"],
+                    "word_count": a.get("word_count", 0),
+                }
+                for a in articles
+            ],
         }
-        zf.writestr(f"{cluster_name}/cluster-summary.json", json.dumps(summary, indent=2))
+
+        zf.writestr(
+            f"{cluster_name}/cluster-summary.json",
+            json.dumps(summary, indent=2),
+        )
 
     return zip_path
-
-
-def export_bulk_zip(cluster_ids=None, output_dir="outputs"):
-    """Export multiple clusters as a single ZIP."""
-    if not cluster_ids:
-        clusters = list_clusters()
-        cluster_ids = [c["id"] for c in clusters]
-
-    zip_path = os.path.join(output_dir, "canvas-homes-content-bulk.zip")
-    os.makedirs(output_dir, exist_ok=True)
-
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
-        for cid in cluster_ids:
-            cluster = get_cluster(cid)
-            if not cluster:
-                continue
-            articles = get_articles_by_cluster(cid)
-            cluster_name = cluster["name"].lower().replace(" ", "-")
-
-            for article in articles:
-                type_folder = {
-                    "hub": "01-hub", "spoke": "02-spokes",
-                    "sub_spoke": "03-sub-spokes", "faq": "04-faq"
-                }.get(article["article_type"], "05-other")
-
-                content = f"---\ntitle: {article['title']}\nslug: {article['slug']}\n---\n\n{article.get('content_md', '')}"
-                arcpath = f"{cluster_name}/{type_folder}/{article['slug']}.md"
-                zf.writestr(arcpath, content)
-
-    return zip_path
-
