@@ -1,0 +1,23 @@
+<h3 class="section-h">🤖 Agent Activity</h3>
+
+{% for grp in agents %}
+  <p class="layer-caption">{{ grp.label }}</p>
+  <div class="agent-row">
+    {% for a in grp.agents %}
+    <div class="agent-card agent-{{ a.status }}">
+      <div class="agent-name">{{ a.label }}{% if a.status == 'done' %} ✓{% elif a.status == 'failed' %} ✗{% endif %}</div>
+      <div class="agent-detail">
+        {% if a.status == 'active' %}
+          <span class="pulse"></span>running
+        {% elif a.status == 'done' %}
+          ${{ "%.4f"|format(a.meta.cost_usd) }} · {{ "%.1f"|format(a.meta.duration_seconds) }}s
+        {% elif a.status == 'failed' %}
+          failed
+        {% else %}
+          waiting
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endfor %}

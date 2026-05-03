@@ -109,6 +109,49 @@ BANGALORE_LOCALITIES = [
     "North Bangalore", "South Bangalore", "East Bangalore", "West Bangalore"
 ]
 
+BANGALORE_BUILDERS = [
+    "Brigade", "Brigade Group", "Brigade Enterprises",
+    "Prestige", "Prestige Group", "Prestige Estates",
+    "Sobha", "Sobha Limited", "Sobha Developers",
+    "Puravankara", "Purva", "Provident Housing",
+    "Godrej Properties", "Godrej",
+    "Embassy Group", "Embassy",
+    "Salarpuria Sattva", "Sattva",
+    "Mantri Developers", "Mantri",
+    "Total Environment", "Total Environment Building Systems",
+    "Adarsh Developers", "Adarsh",
+    "Assetz Property Group", "Assetz",
+    "Nitesh Estates",
+    "Mahindra Lifespaces", "Mahindra",
+    "Tata Housing", "Tata Realty",
+    "DLF Bangalore", "DLF",
+    "Lodha Bangalore", "Lodha",
+    "Century Real Estate", "Century",
+    "Shapoorji Pallonji", "SP Real Estate",
+    "Hiranandani", "Hiranandani Communities",
+    "Ozone Group", "Ozone",
+    "RMZ", "RMZ Corp",
+    "Bhartiya City",
+    "Vaishnavi Group",
+    "Concorde Group",
+    "Confident Group",
+    "Ranka Builders", "Ranka",
+    "Pashmina",
+    "House of Hiranandani",
+    "Phoenix Mills", "Phoenix",
+    "L&T Realty", "Larsen and Toubro",
+]
+
+
+# New category in TOPIC_CATEGORIES dict — add this entry:
+# (You'll merge this into the existing TOPIC_CATEGORIES dict)
+BUILDER_CATEGORY = {
+    "builder": {
+        "signals": [b.lower() for b in BANGALORE_BUILDERS],
+        "description": "A Bangalore real estate developer/builder",
+    },
+}
+
 TOPIC_CATEGORIES = {
     "locality": {
         "signals": [],  # Detected by matching against BANGALORE_LOCALITIES
@@ -233,24 +276,29 @@ LOCALITY_NEIGHBORS = {
 # ─────────────────────────────────────────────────────────
 
 def classify_topic(topic):
-    """
-    Classify a topic into one or more categories.
-    Returns a list of matching categories, ordered by confidence.
-    """
+    """Now detects builders too."""
     topic_lower = topic.lower().strip()
     matches = []
-
-    # Check locality first (exact and fuzzy match)
     detected_localities = []
+    detected_builders = []
+
+    # Check builders FIRST 
+    for builder in BANGALORE_BUILDERS:
+        if builder.lower() in topic_lower:
+            detected_builders.append(builder)
+            if "builder" not in matches:
+                matches.append("builder")
+
+    # Then localities
     for loc in BANGALORE_LOCALITIES:
         if loc.lower() in topic_lower:
             detected_localities.append(loc)
             if "locality" not in matches:
                 matches.append("locality")
 
-    # Check all other categories
+    # Other categories
     for category, config in TOPIC_CATEGORIES.items():
-        if category == "locality":
+        if category in ("locality", "builder"):
             continue
         for signal in config.get("signals", []):
             if signal in topic_lower:
@@ -258,13 +306,11 @@ def classify_topic(topic):
                     matches.append(category)
                 break
 
-    # Default: if nothing matched and it looks like a locality name
     if not matches:
         words = topic.strip().split()
         if 1 <= len(words) <= 4 and words[0][0].isupper():
             matches.append("locality")
             detected_localities.append(topic.strip())
-
     if not matches:
         matches.append("market")
 
@@ -272,7 +318,9 @@ def classify_topic(topic):
         "categories": matches,
         "primary_category": matches[0],
         "detected_localities": detected_localities,
+        "detected_builders": detected_builders,
         "is_locality": "locality" in matches,
+        "is_builder": "builder" in matches,
         "is_cross_cutting": len(matches) > 1,
     }
 
@@ -280,6 +328,50 @@ def classify_topic(topic):
 # ─────────────────────────────────────────────────────────
 # QUERY GENERATORS (per topic type)
 # ─────────────────────────────────────────────────────────
+def _generate_queries_builder(topic, classification):
+    """Generate search queries for a builder topic."""
+    builder = classification["detected_builders"][0] if classification["detected_builders"] else topic
+    queries = {
+        "core": [
+            f"{builder} Bangalore",
+            f"{builder} projects Bangalore",
+            f"{builder} reviews",
+            f"{builder} group reviews",
+            f"is {builder} a good builder",
+        ],
+        "projects": [
+            f"{builder} ongoing projects",
+            f"{builder} ready to move projects",
+            f"{builder} new launch",
+            f"{builder} pre launch",
+            f"upcoming {builder} projects Bangalore",
+        ],
+        "reputation": [
+            f"{builder} customer reviews",
+            f"{builder} construction quality",
+            f"{builder} delays",
+            f"{builder} complaints",
+            f"{builder} delivery track record",
+        ],
+        "comparison": [
+            f"{builder} vs Sobha",
+            f"{builder} vs Prestige",
+            f"{builder} vs Brigade",
+            f"best builders in Bangalore",
+        ],
+        "financial": [
+            f"{builder} home loan approved banks",
+            f"{builder} payment plans",
+            f"{builder} price list",
+        ],
+        "legal": [
+            f"{builder} RERA registration",
+            f"{builder} OC certificate",
+            f"{builder} project status RERA",
+        ],
+    }
+    return queries
+
 
 def _generate_queries_locality(topic, classification):
     """Generate search queries for a locality topic."""
@@ -542,6 +634,7 @@ QUERY_GENERATORS = {
     "infrastructure": _generate_queries_infrastructure,
     "process": _generate_queries_process,
     "market": _generate_queries_market,
+    "builder": _generate_queries_builder
 }
 
 
@@ -995,8 +1088,8 @@ Start your response with { and end with }.
 Your analysis must:
 1. Identify the overall trend direction
 2. Cluster queries by user intent (informational, transactional, navigational, comparative)
-3. Identify content gaps — queries that return poor results, have no featured snippets, or lack AI overview answers
-4. Identify AEO opportunities — queries where we can become the AI-cited source
+3. Identify content gaps , queries that return poor results, have no featured snippets, or lack AI overview answers
+4. Identify AEO opportunities , queries where we can become the AI-cited source
 5. Map queries to suggested content types (hub, spoke, sub-spoke, FAQ)
 6. Flag any seasonal patterns
 7. Identify the top 5 highest-priority queries to target first

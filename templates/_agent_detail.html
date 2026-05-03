@@ -1,0 +1,67 @@
+<div class="agent-detail-card" data-run-id="{{ run_id }}" data-agent="{{ agent }}">
+  <h3>{{ agent }}</h3>
+
+  {% if meta %}
+  <div class="meta-row">
+    <span>💰 ${{ "%.4f"|format(meta.cost_usd or 0) }}</span>
+    <span>🤖 {{ meta.llm_calls or 0 }} LLM</span>
+    <span>🔍 {{ meta.serp_calls or 0 }} SERP</span>
+    <span>⏱️ {{ "%.1f"|format(meta.duration_seconds or 0) }}s</span>
+    <span>🔁 {{ meta.attempts or 1 }} attempts</span>
+  </div>
+  {% if meta.validation_problems %}
+    {% for p in meta.validation_problems %}<div class="warn-box">{{ p }}</div>{% endfor %}
+  {% endif %}
+  {% endif %}
+
+  {% if agent != 'trend_scout' %}
+  <button class="btn-warn"
+          hx-post="/runs/{{ run_id }}/agent/{{ agent }}/rerun"
+          hx-swap="none">
+    🔄 Rerun {{ agent }}
+  </button>
+  {% endif %}
+
+  <details>
+    <summary>📥 Input</summary>
+    <pre>{{ input or '(none)' }}</pre>
+  </details>
+
+  <details open>
+    <summary>📤 Output</summary>
+    <form class="agent-output-form">
+      <textarea name="output_json" rows="20">{{ output or '{}' }}</textarea>
+      <button type="submit" class="btn-primary">💾 Save Output</button>
+    </form>
+  </details>
+
+  {% if console %}
+  <details>
+    <summary>🖥️ Console</summary>
+    <pre class="console">{{ console }}</pre>
+  </details>
+  {% endif %}
+</div>
+
+<script>
+(function () {
+  var card = document.querySelector('.agent-detail-card[data-run-id][data-agent]');
+  if (!card) return;
+  var runId = card.getAttribute('data-run-id');
+  var agent = card.getAttribute('data-agent');
+
+  var form = card.querySelector('.agent-output-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var fd = new FormData(form);
+      fetch('/runs/' + runId + '/agent/' + agent + '/save', { method: 'POST', body: fd })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (j.ok) alert('Saved');
+          else alert('Save failed: ' + (j.error || 'unknown'));
+        });
+    });
+  }
+})();
+</script>

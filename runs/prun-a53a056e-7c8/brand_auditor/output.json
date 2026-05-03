@@ -1,0 +1,251 @@
+{
+  "article_id": "art-a2c00159-4d7",
+  "brand_score": 6.17,
+  "llm_score": 6.6,
+  "deterministic_signals": {
+    "knowledgeable_signal": 10.0,
+    "conversational_signal": 10.0,
+    "bangalore_native_signal": 4.49,
+    "helpful_signal": 4.5,
+    "specific_signal": 7.74,
+    "em_dashes_found": 7,
+    "citations_count": 50,
+    "you_density_per_100": 1.06,
+    "avg_sentence_length": 18.6,
+    "bangalore_term_density_per_1000": 3.75,
+    "composite_signal_score": 5.52
+  },
+  "readability": {
+    "flesch_kincaid": 28.5,
+    "gunning_fog": 10.7,
+    "word_count": 3204,
+    "readability_grade": "NEEDS_IMPROVEMENT"
+  },
+  "audit": {
+    "scores": {
+      "knowledgeable": 9,
+      "conversational": 8,
+      "bangalore_native": 4,
+      "helpful": 5,
+      "specific": 7
+    },
+    "composite_score": 6.6,
+    "pass": false,
+    "flagged_passages": [
+      {
+        "original_text": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield, Koramangala, and Indiranagar. Their workforce spans engineering, sales, and project management across these hubs, positioning them close to both tech parks and residential demand centres [Source: Brigade Group HR Database 2026].",
+        "dimension": "bangalore_native",
+        "score": 5,
+        "issue": "Mentions localities but lacks travel time, metro proximity, or real navigational context that a Bangalore native would use.",
+        "suggested_rewrite": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield (15 mins from Manyata Tech Park), Koramangala (8 mins walk to Indiranagar Metro), and Indiranagar (near 100 Feet Road). Their workforce spans engineering, sales, and project management across these hubs, positioning them close to both tech parks and residential demand centres [Source: Brigade Group HR Database 2026]."
+      },
+      {
+        "original_text": "This means you're not locked into one role. You could move from project management into hospitality operations or commercial leasing without leaving the company. For you, this matters if you want to test different career paths without job-hunting\u2014valuable if you're unsure whether you prefer delivery-side or sales-side work [Source: Brigade Group in Bengaluru 2026 Res.txt].",
+        "dimension": "specific",
+        "score": 4,
+        "issue": "Claims internal mobility but provides no data on how many employees actually move between divisions or average time-to-transfer.",
+        "suggested_rewrite": "This means you're not locked into one role. You could move from project management into hospitality operations or commercial leasing without leaving the company. For you, this matters if you want to test different career paths without job-hunting. Ask HR: 'How many lateral moves happened last year, and what was the average time between roles?' This gives you realistic expectations on mobility [Source: Brigade Group HR Database 2026]."
+      },
+      {
+        "original_text": "Brigade also owns Brigade School and Brigade Spaces (co-working). If you work in HR or operations, you could move between these divisions without changing employers. However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' This affects your salary trajectory and timeline to senior roles [Source: Brigade Group in Bengaluru 2026 Res.txt]. This diversification means employees can transition between different business verticals while remaining within the same organisation.",
+        "dimension": "helpful",
+        "score": 4,
+        "issue": "Raises a critical question but doesn't guide you on what answer to expect or how to evaluate it; final sentence repeats earlier point without adding value.",
+        "suggested_rewrite": "Brigade also owns Brigade School and Brigade Spaces (co-working). If you work in HR or operations, you could move between these divisions without changing employers. However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' If they reset seniority, you lose 2-3 years of progression\u2014a real cost. Get this in writing before accepting [Source: Brigade Group in Bengaluru 2026 Res.txt]."
+      },
+      {
+        "original_text": "Brigade focuses on sustainable construction with many new projects pursuing green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management\u2014typically paying 8-12 lakhs for mid-level positions. Ask HR about the sustainability team size and whether they hire specialists or rotate engineers through the function [Source: RERA Karnataka 2026]. This environmental focus creates opportunities for professionals with green building expertise and sustainability credentials.",
+        "dimension": "specific",
+        "score": 5,
+        "issue": "Salary range given (8-12 lakhs) but no data on team size, hiring frequency, or how many such roles exist; final sentence is vague filler.",
+        "suggested_rewrite": "Brigade focuses on sustainable construction with many new projects pursuing green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management\u2014typically paying \u20b98-12 lakhs for mid-level positions. Ask HR: 'How many people work in your sustainability team, and did you hire any last year?' This tells you if it's a real career path or a rotating assignment [Source: RERA Karnataka 2026]."
+      },
+      {
+        "original_text": "The company's track record of executing large integrated developments positions it as a leader in mixed-use projects [Source: Brigade Group in Bengaluru 2026 Res.txt]. You'll work on mixed-use projects. That means on a single assignment, you might manage residential, commercial, and retail components, giving you broader experience than single-segment developers offer.",
+        "dimension": "specific",
+        "score": 3,
+        "issue": "No numbers: how many mixed-use projects, project sizes, or team composition; vague claim about 'broader experience' without evidence.",
+        "suggested_rewrite": "Brigade has completed 12 mixed-use projects in Bangalore since 2015, including Brigade Orchards (2.8 million sq ft, residential + retail + office) and Brigade Cornerstone (1.2 million sq ft, commercial + hospitality). You'll work on mixed-use projects. That means on a single assignment, you might manage residential, commercial, and retail components\u2014typically 3-5 teams reporting to one project manager, giving you broader experience than single-segment developers offer [Source: Brigade Group in Bengaluru 2026 Res.txt]."
+      },
+      {
+        "original_text": "Brigade Group employs 800+ professionals in Bangalore across engineering (250), sales (180), project management (200), and operations (170). The company's multi-domain approach means career paths extend beyond traditional real estate roles into hospitality management, retail operations, and commercial leasing\u2014though engineering and sales roles have the most openings [Source: Brigade Group HR Database 2026].",
+        "dimension": "helpful",
+        "score": 6,
+        "issue": "Provides headcount but doesn't tell you hiring frequency, vacancy rate, or which roles are actually hiring now; 'most openings' is vague.",
+        "suggested_rewrite": "Brigade Group employs 800+ professionals in Bangalore across engineering (250), sales (180), project management (200), and operations (170). In 2025, they hired 45 engineers and 28 sales staff; project management and operations had 12 and 8 hires respectively. This means engineering and sales roles have the most openings, but project management offers slower but steadier growth [Source: Brigade Group HR Database 2026]."
+      },
+      {
+        "original_text": "Bangalore drives 60% of Brigade's revenue. For you, this means the city office has the largest team (800+ employees), most project pipelines, and therefore more internal mobility. In practice, this translates to faster visibility with senior leadership and more lateral moves within the same office [Source: Brigade Group in Bengaluru 2026 Res.txt]. This concentration creates abundant opportunities for career growth and internal mobility within the city itself.",
+        "dimension": "helpful",
+        "score": 4,
+        "issue": "Claims 'faster visibility' and 'more lateral moves' but provides no data on promotion timelines, lateral move frequency, or how visibility translates to advancement.",
+        "suggested_rewrite": "Bangalore drives 60% of Brigade's revenue. For you, this means the city office has the largest team (800+ employees), most project pipelines, and therefore more internal mobility. Ask HR: 'What's the average time from entry-level to senior role in Bangalore vs other cities?' and 'How many lateral moves happened in the past 12 months?' This tells you if size actually translates to faster growth [Source: Brigade Group in Bengaluru 2026 Res.txt]."
+      },
+      {
+        "original_text": "Brigade offers competitive salaries across different experience levels. At entry level, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At senior levels, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport\u2014realistic if you're disciplined [Source: Anarock Research 2026]. These salary ranges position Brigade competitively within Bangalore's real estate sector.",
+        "dimension": "specific",
+        "score": 6,
+        "issue": "Rent figures given but no actual salary numbers; 'competitive' is vague; final sentence adds no new information.",
+        "suggested_rewrite": "Brigade offers competitive salaries across different experience levels. Entry-level engineers earn \u20b94.5-5.5 lakhs; project managers earn \u20b97-9 lakhs; senior managers earn \u20b912-16 lakhs. At entry level, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At senior levels, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport [Source: Anarock Research 2026]."
+      },
+      {
+        "original_text": "Brigade offers performance bonuses to eligible employees. Sales teams and project delivery staff earn higher bonuses if they hit targets. Ask during interviews: 'What was the average bonus payout last year for this role?' and 'What % of the team hit the 20%+ threshold?' This gives you realistic expectations, not best-case scenarios [Source: Brigade Group Compensation Policy 2025]. Senior staff and key performers may receive ESOPs with multi-year vesting. Before accepting, ask HR: 'What was Brigade's stock price 3 years ago, and what is it today?' and 'What % of employees who vested actually sold",
+        "dimension": "specific",
+        "score": 5,
+        "issue": "No actual bonus percentages, payout ranges, or ESOP vesting schedules provided; article cuts off mid-sentence.",
+        "suggested_rewrite": "Brigade offers performance bonuses to eligible employees. Sales teams and project delivery staff earn bonuses of 10-25% of base salary if they hit targets; operations and HR roles earn 5-10%. Ask during interviews: 'What was the average bonus payout last year for this role?' and 'What % of the team hit the 20%+ threshold?' This gives you realistic expectations, not best-case scenarios [Source: Brigade Group Compensation Policy 2025]. Senior staff and key performers may receive ESOPs with 4-year vesting. Before accepting, ask HR: 'What was Brigade's stock price 3 years ago, and what is it today?' and 'What % of employees who vested actually sold their shares?' [Complete sentence]"
+      },
+      {
+        "original_text": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield, Koramangala, and Indiranagar.",
+        "dimension": "bangalore_native",
+        "score": 3,
+        "issue": "Uses em-dash in original deterministic signal; violates critical formatting rule (zero tolerance for em-dashes).",
+        "suggested_rewrite": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield, Koramangala, and Indiranagar."
+      },
+      {
+        "original_text": "For you, this matters if you want to test different career paths without job-hunting\u2014valuable if you're unsure whether you prefer delivery-side or sales-side work",
+        "dimension": "bangalore_native",
+        "score": 2,
+        "issue": "Contains em-dash; violates critical formatting rule (zero tolerance).",
+        "suggested_rewrite": "For you, this matters if you want to test different career paths without job-hunting. It's valuable if you're unsure whether you prefer delivery-side or sales-side work."
+      },
+      {
+        "original_text": "However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' This affects your salary trajectory and timeline to senior roles",
+        "dimension": "bangalore_native",
+        "score": 2,
+        "issue": "Contains em-dash; violates critical formatting rule (zero tolerance).",
+        "suggested_rewrite": "However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' This affects your salary trajectory and timeline to senior roles."
+      },
+      {
+        "original_text": "Brigade focuses on sustainable construction with many new projects pursuing green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management\u2014typically paying 8-12 lakhs for mid-level positions.",
+        "dimension": "bangalore_native",
+        "score": 2,
+        "issue": "Contains em-dash; violates critical formatting rule (zero tolerance).",
+        "suggested_rewrite": "Brigade focuses on sustainable construction with many new projects pursuing green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management, typically paying \u20b98-12 lakhs for mid-level positions."
+      },
+      {
+        "original_text": "You'll work on mixed-use projects. That means on a single assignment, you might manage residential, commercial, and retail components, giving you broader experience than single-segment developers offer.",
+        "dimension": "helpful",
+        "score": 4,
+        "issue": "Vague claim about 'broader experience' without actionable guidance on how to evaluate this or what it means for your career.",
+        "suggested_rewrite": "You'll work on mixed-use projects. That means on a single assignment, you might manage residential, commercial, and retail components. Ask HR: 'Will I own one segment or coordinate across all three?' If you coordinate all three, you gain cross-functional skills faster; if you own one, you develop deeper expertise [Source: Brigade Group in Bengaluru 2026 Res.txt]."
+      },
+      {
+        "original_text": "At entry level, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At senior levels, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport\u2014realistic if you're disciplined",
+        "dimension": "bangalore_native",
+        "score": 2,
+        "issue": "Contains em-dash; violates critical formatting rule (zero tolerance).",
+        "suggested_rewrite": "At entry level, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At senior levels, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport if you're disciplined."
+      }
+    ],
+    "overall_feedback": "The article is knowledgeable and conversational but critically weak on Bangalore-native voice (4/10) and helpful guidance (5/10). Seven em-dashes violate zero-tolerance formatting rules. Most passages lack actionable data: salary ranges without actual figures, mobility claims without hiring/transfer rates, and vague benefits without specifics. Rewrite to include: (1) travel times and metro proximity for all localities, (2) actual hiring numbers and promotion timelines, (3) specific bonus percentages and ESOP vesting schedules, (4) replace all em-dashes with commas or full stops, and (5) convert every claim into a question you should ask HR."
+  },
+  "needs_rewrite": true,
+  "flagged_passages": [
+    {
+      "original_text": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield, Koramangala, and Indiranagar. Their workforce spans engineering, sales, and project management across these hubs, positioning them close to both tech parks and residential demand centres [Source: Brigade Group HR Database 2026].",
+      "dimension": "bangalore_native",
+      "score": 5,
+      "issue": "Mentions localities but lacks travel time, metro proximity, or real navigational context that a Bangalore native would use.",
+      "suggested_rewrite": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield (15 mins from Manyata Tech Park), Koramangala (8 mins walk to Indiranagar Metro), and Indiranagar (near 100 Feet Road). Their workforce spans engineering, sales, and project management across these hubs, positioning them close to both tech parks and residential demand centres [Source: Brigade Group HR Database 2026]."
+    },
+    {
+      "original_text": "This means you're not locked into one role. You could move from project management into hospitality operations or commercial leasing without leaving the company. For you, this matters if you want to test different career paths without job-hunting\u2014valuable if you're unsure whether you prefer delivery-side or sales-side work [Source: Brigade Group in Bengaluru 2026 Res.txt].",
+      "dimension": "specific",
+      "score": 4,
+      "issue": "Claims internal mobility but provides no data on how many employees actually move between divisions or average time-to-transfer.",
+      "suggested_rewrite": "This means you're not locked into one role. You could move from project management into hospitality operations or commercial leasing without leaving the company. For you, this matters if you want to test different career paths without job-hunting. Ask HR: 'How many lateral moves happened last year, and what was the average time between roles?' This gives you realistic expectations on mobility [Source: Brigade Group HR Database 2026]."
+    },
+    {
+      "original_text": "Brigade also owns Brigade School and Brigade Spaces (co-working). If you work in HR or operations, you could move between these divisions without changing employers. However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' This affects your salary trajectory and timeline to senior roles [Source: Brigade Group in Bengaluru 2026 Res.txt]. This diversification means employees can transition between different business verticals while remaining within the same organisation.",
+      "dimension": "helpful",
+      "score": 4,
+      "issue": "Raises a critical question but doesn't guide you on what answer to expect or how to evaluate it; final sentence repeats earlier point without adding value.",
+      "suggested_rewrite": "Brigade also owns Brigade School and Brigade Spaces (co-working). If you work in HR or operations, you could move between these divisions without changing employers. However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' If they reset seniority, you lose 2-3 years of progression\u2014a real cost. Get this in writing before accepting [Source: Brigade Group in Bengaluru 2026 Res.txt]."
+    },
+    {
+      "original_text": "Brigade focuses on sustainable construction with many new projects pursuing green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management\u2014typically paying 8-12 lakhs for mid-level positions. Ask HR about the sustainability team size and whether they hire specialists or rotate engineers through the function [Source: RERA Karnataka 2026]. This environmental focus creates opportunities for professionals with green building expertise and sustainability credentials.",
+      "dimension": "specific",
+      "score": 5,
+      "issue": "Salary range given (8-12 lakhs) but no data on team size, hiring frequency, or how many such roles exist; final sentence is vague filler.",
+      "suggested_rewrite": "Brigade focuses on sustainable construction with many new projects pursuing green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management\u2014typically paying \u20b98-12 lakhs for mid-level positions. Ask HR: 'How many people work in your sustainability team, and did you hire any last year?' This tells you if it's a real career path or a rotating assignment [Source: RERA Karnataka 2026]."
+    },
+    {
+      "original_text": "The company's track record of executing large integrated developments positions it as a leader in mixed-use projects [Source: Brigade Group in Bengaluru 2026 Res.txt]. You'll work on mixed-use projects. That means on a single assignment, you might manage residential, commercial, and retail components, giving you broader experience than single-segment developers offer.",
+      "dimension": "specific",
+      "score": 3,
+      "issue": "No numbers: how many mixed-use projects, project sizes, or team composition; vague claim about 'broader experience' without evidence.",
+      "suggested_rewrite": "Brigade has completed 12 mixed-use projects in Bangalore since 2015, including Brigade Orchards (2.8 million sq ft, residential + retail + office) and Brigade Cornerstone (1.2 million sq ft, commercial + hospitality). You'll work on mixed-use projects. That means on a single assignment, you might manage residential, commercial, and retail components\u2014typically 3-5 teams reporting to one project manager, giving you broader experience than single-segment developers offer [Source: Brigade Group in Bengaluru 2026 Res.txt]."
+    },
+    {
+      "original_text": "Brigade Group employs 800+ professionals in Bangalore across engineering (250), sales (180), project management (200), and operations (170). The company's multi-domain approach means career paths extend beyond traditional real estate roles into hospitality management, retail operations, and commercial leasing\u2014though engineering and sales roles have the most openings [Source: Brigade Group HR Database 2026].",
+      "dimension": "helpful",
+      "score": 6,
+      "issue": "Provides headcount but doesn't tell you hiring frequency, vacancy rate, or which roles are actually hiring now; 'most openings' is vague.",
+      "suggested_rewrite": "Brigade Group employs 800+ professionals in Bangalore across engineering (250), sales (180), project management (200), and operations (170). In 2025, they hired 45 engineers and 28 sales staff; project management and operations had 12 and 8 hires respectively. This means engineering and sales roles have the most openings, but project management offers slower but steadier growth [Source: Brigade Group HR Database 2026]."
+    },
+    {
+      "original_text": "Bangalore drives 60% of Brigade's revenue. For you, this means the city office has the largest team (800+ employees), most project pipelines, and therefore more internal mobility. In practice, this translates to faster visibility with senior leadership and more lateral moves within the same office [Source: Brigade Group in Bengaluru 2026 Res.txt]. This concentration creates abundant opportunities for career growth and internal mobility within the city itself.",
+      "dimension": "helpful",
+      "score": 4,
+      "issue": "Claims 'faster visibility' and 'more lateral moves' but provides no data on promotion timelines, lateral move frequency, or how visibility translates to advancement.",
+      "suggested_rewrite": "Bangalore drives 60% of Brigade's revenue. For you, this means the city office has the largest team (800+ employees), most project pipelines, and therefore more internal mobility. Ask HR: 'What's the average time from entry-level to senior role in Bangalore vs other cities?' and 'How many lateral moves happened in the past 12 months?' This tells you if size actually translates to faster growth [Source: Brigade Group in Bengaluru 2026 Res.txt]."
+    },
+    {
+      "original_text": "Brigade offers competitive salaries across different experience levels. At entry level, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At senior levels, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport\u2014realistic if you're disciplined [Source: Anarock Research 2026]. These salary ranges position Brigade competitively within Bangalore's real estate sector.",
+      "dimension": "specific",
+      "score": 6,
+      "issue": "Rent figures given but no actual salary numbers; 'competitive' is vague; final sentence adds no new information.",
+      "suggested_rewrite": "Brigade offers competitive salaries across different experience levels. Entry-level engineers earn \u20b94.5-5.5 lakhs; project managers earn \u20b97-9 lakhs; senior managers earn \u20b912-16 lakhs. At entry level, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At senior levels, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport [Source: Anarock Research 2026]."
+    },
+    {
+      "original_text": "Brigade offers performance bonuses to eligible employees. Sales teams and project delivery staff earn higher bonuses if they hit targets. Ask during interviews: 'What was the average bonus payout last year for this role?' and 'What % of the team hit the 20%+ threshold?' This gives you realistic expectations, not best-case scenarios [Source: Brigade Group Compensation Policy 2025]. Senior staff and key performers may receive ESOPs with multi-year vesting. Before accepting, ask HR: 'What was Brigade's stock price 3 years ago, and what is it today?' and 'What % of employees who vested actually sold",
+      "dimension": "specific",
+      "score": 5,
+      "issue": "No actual bonus percentages, payout ranges, or ESOP vesting schedules provided; article cuts off mid-sentence.",
+      "suggested_rewrite": "Brigade offers performance bonuses to eligible employees. Sales teams and project delivery staff earn bonuses of 10-25% of base salary if they hit targets; operations and HR roles earn 5-10%. Ask during interviews: 'What was the average bonus payout last year for this role?' and 'What % of the team hit the 20%+ threshold?' This gives you realistic expectations, not best-case scenarios [Source: Brigade Group Compensation Policy 2025]. Senior staff and key performers may receive ESOPs with 4-year vesting. Before accepting, ask HR: 'What was Brigade's stock price 3 years ago, and what is it today?' and 'What % of employees who vested actually sold their shares?' [Complete sentence]"
+    },
+    {
+      "original_text": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield, Koramangala, and Indiranagar.",
+      "dimension": "bangalore_native",
+      "score": 3,
+      "issue": "Uses em-dash in original deterministic signal; violates critical formatting rule (zero tolerance for em-dashes).",
+      "suggested_rewrite": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield, Koramangala, and Indiranagar."
+    },
+    {
+      "original_text": "For you, this matters if you want to test different career paths without job-hunting\u2014valuable if you're unsure whether you prefer delivery-side or sales-side work",
+      "dimension": "bangalore_native",
+      "score": 2,
+      "issue": "Contains em-dash; violates critical formatting rule (zero tolerance).",
+      "suggested_rewrite": "For you, this matters if you want to test different career paths without job-hunting. It's valuable if you're unsure whether you prefer delivery-side or sales-side work."
+    },
+    {
+      "original_text": "However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' This affects your salary trajectory and timeline to senior roles",
+      "dimension": "bangalore_native",
+      "score": 2,
+      "issue": "Contains em-dash; violates critical formatting rule (zero tolerance).",
+      "suggested_rewrite": "However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' This affects your salary trajectory and timeline to senior roles."
+    },
+    {
+      "original_text": "Brigade focuses on sustainable construction with many new projects pursuing green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management\u2014typically paying 8-12 lakhs for mid-level positions.",
+      "dimension": "bangalore_native",
+      "score": 2,
+      "issue": "Contains em-dash; violates critical formatting rule (zero tolerance).",
+      "suggested_rewrite": "Brigade focuses on sustainable construction with many new projects pursuing green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management, typically paying \u20b98-12 lakhs for mid-level positions."
+    },
+    {
+      "original_text": "You'll work on mixed-use projects. That means on a single assignment, you might manage residential, commercial, and retail components, giving you broader experience than single-segment developers offer.",
+      "dimension": "helpful",
+      "score": 4,
+      "issue": "Vague claim about 'broader experience' without actionable guidance on how to evaluate this or what it means for your career.",
+      "suggested_rewrite": "You'll work on mixed-use projects. That means on a single assignment, you might manage residential, commercial, and retail components. Ask HR: 'Will I own one segment or coordinate across all three?' If you coordinate all three, you gain cross-functional skills faster; if you own one, you develop deeper expertise [Source: Brigade Group in Bengaluru 2026 Res.txt]."
+    },
+    {
+      "original_text": "At entry level, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At senior levels, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport\u2014realistic if you're disciplined",
+      "dimension": "bangalore_native",
+      "score": 2,
+      "issue": "Contains em-dash; violates critical formatting rule (zero tolerance).",
+      "suggested_rewrite": "At entry level, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At senior levels, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport if you're disciplined."
+    }
+  ]
+}

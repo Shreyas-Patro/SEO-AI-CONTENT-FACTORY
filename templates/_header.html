@@ -1,0 +1,62 @@
+<div class="header">
+  <h2>{{ run.topic or 'Untitled' }}</h2>
+  <div class="header-meta">
+    <span>Stage: <code>{{ run.current_stage or 'init' }}</code></span>
+    <span>Gate: <code>{{ run.gate_status or 'pending' }}</code></span>
+    <span>Status: <code>{{ run.status or 'running' }}</code></span>
+  </div>
+
+  <div class="action-bar">
+    {% set stage = run.current_stage or '' %}
+    {% set gate = run.gate_status or 'pending' %}
+    {% set status = run.status or 'running' %}
+    {% set l1_done = stage in ['gate_pending', 'gate_approved', 'layer2_content_architect', 'layer2_faq_architect', 'layer2_research_prompt', 'layer2_done', 'layer3_writing', 'done'] %}
+    {% set l2_done = stage in ['layer2_done', 'layer3_writing', 'done'] %}
+    {% set gate_pending_now = stage == 'gate_pending' and gate == 'pending' %}
+    {% set js = job_state or {} %}
+    {% set l1_running = js.get('l1', False) %}
+    {% set l2_running = js.get('l2', False) %}
+    {% set l3_running = js.get('l3', False) %}
+
+    <form method="post" action="/runs/{{ run.id }}/layer/l1" style="display:inline">
+      <button type="submit" class="btn-primary"
+              {% if l1_running or l1_done or status == 'cancelled' %}disabled{% endif %}>
+        {% if l1_running %}⏳ L1 running…{% elif l1_done %}✓ L1 Done{% else %}▶ Layer 1{% endif %}
+      </button>
+    </form>
+
+    <form method="post" action="/runs/{{ run.id }}/gate/approve" style="display:inline">
+      <button type="submit" class="btn-good" {% if not gate_pending_now %}disabled{% endif %}>
+        {% if gate == 'approved' %}✓ Approved{% else %}✅ Approve{% endif %}
+      </button>
+    </form>
+
+    <form method="post" action="/runs/{{ run.id }}/gate/reject" style="display:inline">
+      <button type="submit" class="btn-bad" {% if not gate_pending_now %}disabled{% endif %}>✗ Reject</button>
+    </form>
+
+    <form method="post" action="/runs/{{ run.id }}/layer/l2" style="display:inline">
+      <button type="submit" class="btn-primary"
+              {% if l2_running or gate != 'approved' or l2_done or status == 'cancelled' %}disabled{% endif %}>
+        {% if l2_running %}⏳ L2 running…{% elif l2_done %}✓ L2 Done{% else %}▶ Layer 2{% endif %}
+      </button>
+    </form>
+
+    <form method="post" action="/runs/{{ run.id }}/layer/l3" style="display:inline">
+      <button type="submit" class="btn-primary"
+              {% if l3_running or not run.cluster_id or status == 'cancelled' %}disabled{% endif %}>
+        {% if l3_running %}⏳ L3 running…{% elif status == 'completed' %}🔁 Re-run L3{% else %}▶ Layer 3{% endif %}
+      </button>
+    </form>
+  </div>
+
+  {% set errors = (job_state or {}).get('errors', {}) %}
+  {% for layer, err in errors.items() %}
+    {% if err %}
+    <div class="crash-box">
+      <strong>❌ {{ layer }} crashed:</strong> {{ err.get('error', 'unknown error') }}
+      {% if err.get('tb') %}<details><summary>Traceback</summary><pre>{{ err.tb }}</pre></details>{% endif %}
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>

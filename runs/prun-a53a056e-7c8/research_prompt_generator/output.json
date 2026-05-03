@@ -1,0 +1,89 @@
+{
+  "master_research_prompt": "I need comprehensive research on Brigade Group's real estate operations in Bangalore as of 2026. This research will inform a complete content cluster about Brigade's market position, projects, quality, and investment opportunities. Please provide detailed, current information with authoritative citations.\n\n**COMPANY OVERVIEW & LEADERSHIP (2026)**\nProvide current details about Brigade Group including: Who owns Brigade Group currently? Complete leadership structure including CEO, MD, and key management team members with their backgrounds. What type of company is Brigade Group (public/private, business segments beyond real estate)? Current market capitalization, revenue figures, and financial performance for FY 2025-26. CREDAI membership status, RERA registrations, and industry certifications. Awards and recognitions received in 2024-2026 period.\n\n**MARKET POSITION & CREDIBILITY ANALYSIS**\nIs Brigade considered a Grade A builder in Bangalore as of 2026? Provide specific market share data, ranking among Bangalore developers, and tier classification. Construction quality standards, materials specifications, and quality control processes currently used. Customer satisfaction ratings, delivery track record, and project completion statistics for 2024-2026. Financial stability indicators including credit ratings, debt-equity ratios, and cash flow analysis.\n\n**COMPETITIVE ANALYSIS: BRIGADE VS MAJOR DEVELOPERS**\nDetailed comparison between Brigade and Prestige Group: market reputation, construction quality, pricing per sq ft, customer satisfaction scores, project delivery timelines, and resale value performance. Brigade vs Sobha comparison covering premium segment positioning, quality standards, and customer demographics. Overall ranking of Brigade among top 5 builders in Bangalore with specific criteria used for tier classification.\n\n**CURRENT PROJECT PORTFOLIO & NEW LAUNCHES (2026)**\nComplete list of Brigade's active projects across Bangalore with current status, pricing, and availability. Latest new launch projects in 2025-2026 including project names, locations, configurations, pricing per sq ft, and launch dates. Pre-launch opportunities and upcoming project pipeline for 2026-2027. Ready-to-move properties currently available with immediate possession details.\n\n**LOCATION-SPECIFIC DEVELOPMENTS**\nBrigade projects in Whitefield: Complete list including Brigade Cornerstone Utopia, Brigade Tech Garden, Brigade Metropolis with current pricing, amenities, and connectivity details. What is the newest Brigade project in Whitefield as of 2026? North Bangalore Brigade developments with project details and investment potential. Other key locations where Brigade has active projects.\n\n**PRICING & INVESTMENT ANALYSIS**\nCurrent pricing trends for Brigade properties across different Bangalore locations and configurations (1BHK, 2BHK, 3BHK). Price per sq ft comparison with competitors like Prestige, Sobha, and other tier-1 developers. Rental yields for Brigade properties in key locations. Resale value performance and capital appreciation data for existing Brigade projects.\n\n**CUSTOMER FEEDBACK & REVIEWS**\nBrigade Group's Google Reviews rating and recent review analysis (2024-2026 period). Common customer complaints and appreciation points from recent buyers. Customer satisfaction surveys and third-party rating agency scores. How Brigade handles customer service and complaint resolution. Employee reviews and company culture ratings.\n\n**REGULATORY & COMPLIANCE STATUS**\nCurrent RERA registration status for all active Brigade projects with registration numbers. Any recent regulatory issues, penalties, or compliance matters. Environmental clearances and approvals for ongoing projects. Legal disputes or court cases involving Brigade Group as of 2026.\n\n**FAQ-SPECIFIC RESEARCH REQUIREMENTS**\nProvide specific answers to: Brigade Group's exact market position ranking in Bangalore real estate (with source). Total number of Brigade projects currently available for sale in Bangalore. Specific investment opportunities and ROI potential for Brigade properties. Areas of focus for Brigade's expansion in Bangalore. Construction quality rating compared to industry standards. Delivery timeline reliability statistics. Why Brigade is recommended by real estate experts (with expert quotes). Financial stability indicators that make Brigade reliable for first-time buyers.\n\n**TECHNICAL SPECIFICATIONS**\nConstruction materials and specifications currently used by Brigade. Structural engineering standards and safety certifications. Amenities and features standard across Brigade developments. Technology integration and smart home features in new projects.\n\n**MARKET TRENDS & FUTURE OUTLOOK**\nBrigade's expansion plans for Bangalore in 2026-2027. Market trends affecting Brigade's business strategy. Impact of infrastructure developments on Brigade project locations. Future project pipeline and investment opportunities.\n\n**CITATION REQUIREMENTS**\nAll information must be cited from authoritative sources with URLs in markdown format. Prioritize: rera.karnataka.gov.in, bbmp.gov.in, bda.karnataka.gov.in, moneycontrol.com, knightfrank.co.in, jll.co.in, anarock.com, economictimes.indiatimes.com, livemint.com, business-standard.com, and other credible real estate industry sources. Data should be from the last 18 months unless specifically historical context is required. Use British Indian English terminology (flat not apartment, lakh/crore for currency, BBMP, RERA). Provide specific numbers, exact prices, percentages, dates, and named entities rather than general statements. Include both city-level and locality-specific data where relevant.",
+  "research_questions": [
+    {
+      "section": "Company Overview",
+      "questions": [
+        "Who is the current owner and leadership team of Brigade Group in 2026?",
+        "What is Brigade Group's current market capitalization and financial performance?",
+        "What type of company is Brigade Group and what are its business segments?",
+        "What awards and recognitions has Brigade received in 2024-2026?"
+      ]
+    },
+    {
+      "section": "Market Position",
+      "questions": [
+        "Is Brigade considered a Grade A builder in Bangalore as of 2026?",
+        "What is Brigade's market share and ranking among Bangalore developers?",
+        "What are Brigade's construction quality standards and certifications?",
+        "What is Brigade's customer satisfaction rating and delivery track record?"
+      ]
+    },
+    {
+      "section": "Competitive Analysis",
+      "questions": [
+        "How does Brigade compare to Prestige Group in terms of quality and pricing?",
+        "What are the key differences between Brigade and Sobha developments?",
+        "Where does Brigade rank among the top 5 builders in Bangalore?",
+        "What are the specific criteria for tier-1 developer classification?"
+      ]
+    },
+    {
+      "section": "Current Projects",
+      "questions": [
+        "What are Brigade's latest new launch projects in 2025-2026?",
+        "What Brigade projects are currently available across Bangalore?",
+        "What are the pre-launch opportunities and upcoming pipeline for 2026-2027?",
+        "Which Brigade properties are ready for immediate possession?"
+      ]
+    },
+    {
+      "section": "Location Analysis",
+      "questions": [
+        "What Brigade projects are available in Whitefield with current pricing?",
+        "What is the newest Brigade project in Whitefield as of 2026?",
+        "What Brigade developments are there in North Bangalore?",
+        "What are the key locations for Brigade's active projects?"
+      ]
+    },
+    {
+      "section": "Pricing & Investment",
+      "questions": [
+        "What is the current price per sq ft for Brigade properties across locations?",
+        "How do Brigade prices compare with competitors like Prestige and Sobha?",
+        "What are the rental yields for Brigade properties in key locations?",
+        "What is the resale value performance for existing Brigade projects?"
+      ]
+    },
+    {
+      "section": "Customer Reviews",
+      "questions": [
+        "What is Brigade Group's current Google Reviews rating and recent feedback?",
+        "What are the most common customer complaints and appreciation points?",
+        "How does Brigade handle customer service and complaint resolution?",
+        "What do employee reviews say about Brigade Group's work culture?"
+      ]
+    }
+  ],
+  "freshness_requirements": {
+    "default": "last 18 months",
+    "exceptions": "historical company founding details and legacy project information may use any era"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "bda.karnataka.gov.in",
+    "moneycontrol.com",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "anarock.com",
+    "economictimes.indiatimes.com",
+    "livemint.com",
+    "business-standard.com",
+    "thehindubusinessline.com",
+    "magicbricks.com",
+    "nobroker.in"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.25
+}

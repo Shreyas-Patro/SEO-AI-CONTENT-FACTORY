@@ -31,7 +31,7 @@ from llm import call_llm_json
 
 SYSTEM_PROMPT = """You are a senior SEO strategist analyzing keyword data for Bangalore real estate content.
 
-Your job: take raw search data (PAA questions, related searches, autocomplete suggestions, competitor coverage) and organize it into 4-8 cohesive KEYWORD GROUPS that should each become a distinct piece of content.
+Your job: take raw search data (PAA questions, related searches, autocomplete suggestions, competitor coverage) and organize it into 4-10 cohesive KEYWORD GROUPS that should each become a distinct piece of content.
 
 A good keyword group:
 - Has ONE primary keyword (the head term) and 3-7 supporting keywords (related long-tails, questions, variants)
@@ -40,7 +40,7 @@ A good keyword group:
 - Avoids overlap with other groups
 - Has an opportunity_score reflecting (search interest) - (competitor strength)
 
-CRITICAL: You MUST produce at least 4 keyword groups. Do not return an empty array.
+CRITICAL: You MUST produce at least 5 keyword groups. Do not return an empty array.
 
 Return STRICT JSON only:
 {

@@ -1,0 +1,15 @@
+{% if runs %}
+<ul class="runs-list">
+  {% for r in runs %}
+  <li>
+    <a href="/?run_id={{ r.id }}">
+      <code>{{ r.id[-8:] }}</code>
+      <span class="topic">{{ (r.topic or '')[:20] }}</span>
+      <span class="status status-{{ r.status or 'unknown' }}">{{ r.status or '?' }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">No runs yet.</p>
+{% endif %}

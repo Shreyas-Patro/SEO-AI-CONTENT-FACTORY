@@ -1,0 +1,19 @@
+{
+  "agent": "meta_tagger",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "reads_state": [],
+  "writes_state": [],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 1,
+  "llm_cache_hits": 0,
+  "tokens_in": 2132,
+  "tokens_out": 2087,
+  "cost_usd": 0.010054,
+  "duration_seconds": 13.7,
+  "completed_at": "2026-05-03T03:10:12.023439",
+  "attempts": 1
+}

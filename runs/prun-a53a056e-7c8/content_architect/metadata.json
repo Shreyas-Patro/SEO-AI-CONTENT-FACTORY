@@ -1,0 +1,23 @@
+{
+  "agent": "content_architect",
+  "status": "completed",
+  "validation_passed": true,
+  "validation_problems": [],
+  "problems_history": [],
+  "reads_state": [
+    "keyword_map"
+  ],
+  "writes_state": [
+    "cluster_plan"
+  ],
+  "serp_calls": 0,
+  "serp_cache_hits": 0,
+  "llm_calls": 1,
+  "llm_cache_hits": 0,
+  "tokens_in": 2617,
+  "tokens_out": 9705,
+  "cost_usd": 0.153426,
+  "duration_seconds": 132.08,
+  "completed_at": "2026-05-02T22:51:27.346128",
+  "attempts": 1
+}

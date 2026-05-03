@@ -1,80 +1,43 @@
-"""Pipeline tab: run controls + agent status panel + live log."""
+"""Pipeline tab: full visibility for all 11 agents across 3 layers."""
 import time
 import json
 from pathlib import Path
 import streamlit as st
 
-AGENT_ORDER_L1 = [
-    ("trend_scout", "📡 Trend Scout"),
-    ("competitor_spy", "🕵️ Comp Spy"),
-    ("keyword_mapper", "🗺️ KW Mapper"),
-]
-AGENT_ORDER_L2 = [
-    ("content_architect", "🏗️ Content Architect"),
-    ("faq_architect", "❓ FAQs"),
-    ("research_prompt_generator", "🔬 Research Prompt"),
-]
-AGENT_ORDER_L3 = [
-    ("lead_writer", "✍️ Writer"),
-    ("fact_verifier", "🔍 Fact Verify"),
-    ("brand_auditor", "🎨 Brand Audit"),
-    ("rewriter", "🔄 Rewriter"),
-    ("meta_tagger", "🏷️ Meta Tagger"),
-]
+from dashboard.helpers import ALL_AGENTS, get_agent_status, is_alive, has_active_agent, run_in_bg
 
 
-def _agent_status(run_id, agent_name):
-    base = Path("runs") / run_id / agent_name
-    if not base.exists():
-        return "pending"
-    if (base / "output.json").exists():
-        meta_f = base / "metadata.json"
-        if meta_f.exists():
-            try:
-                d = json.loads(meta_f.read_text())
-                if d.get("status") == "failed":
-                    return "failed"
-            except Exception:
-                pass
-        return "done"
-    if (base / "input.json").exists():
-        return "active"
-    return "pending"
+def _render_agent_card(run_id, key, label, layer, m):
+    status = get_agent_status(run_id, key)
+    layer_tag = f'<span class="layer-tag layer-{layer}">L{layer}</span>'
 
-
-def _render_agent_card(run_id, key, label, m):
-    status = _agent_status(run_id, key)
     if status == "active":
         st.markdown(
             f'<div class="agent-card agent-active">'
-            f'<div class="agent-name">{label}</div>'
+            f'<div class="agent-name">{layer_tag}{label}</div>'
             f'<div class="agent-detail"><span class="pulse"></span>running</div></div>',
-            unsafe_allow_html=True,
-        )
+            unsafe_allow_html=True)
     elif status == "done":
         meta = m["load_agent_metadata"](run_id, key) or {}
         cost = meta.get("cost_usd", 0) or 0
         dur = meta.get("duration_seconds", 0) or 0
         st.markdown(
             f'<div class="agent-card agent-done">'
-            f'<div class="agent-name">{label} ✓</div>'
+            f'<div class="agent-name">{layer_tag}{label} ✓</div>'
             f'<div class="agent-detail">${cost:.4f} · {dur:.1f}s</div></div>',
-            unsafe_allow_html=True,
-        )
+            unsafe_allow_html=True)
     elif status == "failed":
         st.markdown(
             f'<div class="agent-card agent-failed">'
-            f'<div class="agent-name">{label} ✗</div>'
+            f'<div class="agent-name">{layer_tag}{label} ✗</div>'
             f'<div class="agent-detail">failed (see metadata)</div></div>',
-            unsafe_allow_html=True,
-        )
+            unsafe_allow_html=True)
     else:
         st.markdown(
             f'<div class="agent-card agent-pending">'
-            f'<div class="agent-name">{label}</div>'
+            f'<div class="agent-name">{layer_tag}{label}</div>'
             f'<div class="agent-detail">waiting</div></div>',
-            unsafe_allow_html=True,
-        )
+            unsafe_allow_html=True)
 
 
 def _render_live_log(run_id):
@@ -166,10 +129,10 @@ def _render_agent_detail(run_id, agent_key, m):
             st.code(console[-5000:], language=None)
 
 
-def render_pipeline_view(m, run_in_bg, is_alive):
+def render(m):
     rid = st.session_state.viewing_run_id
     if not rid:
-        st.info("Start a new run or open one from the sidebar.")
+        st.info("Start a new run from the sidebar or open one.")
         return
 
     run = m["get_pipeline_run"](rid)
@@ -181,28 +144,27 @@ def render_pipeline_view(m, run_in_bg, is_alive):
     gate = run.get("gate_status") or "pending"
     status = run.get("status") or "running"
 
-    st.markdown(f"**Topic:** `{run['topic']}` · **Stage:** `{stage}` · **Gate:** `{gate}` · **Status:** `{status}`")
+    st.markdown(f"**Topic:** `{run['topic']}` · **Stage:** `{stage}` · **Gate:** `{gate}`")
 
-    l1_alive = is_alive(st.session_state.layer1_thread)
-    l2_alive = is_alive(st.session_state.layer2_thread)
-    l3_alive = is_alive(st.session_state.layer3_thread)
+    # ── Action bar ──
+    l1_alive = is_alive(st.session_state.get("layer1_thread"))
+    l2_alive = is_alive(st.session_state.get("layer2_thread"))
+    l3_alive = is_alive(st.session_state.get("layer3_thread"))
 
     bcol = st.columns(5)
 
     with bcol[0]:
-        l1_done = stage in (
-            "gate_pending", "gate_approved",
-            "layer2_content_architect", "layer2_faq_architect",
-            "layer2_research_prompt", "layer2_done",
-            "layer3_writing", "done",
-        )
-        l1_off = l1_alive or l1_done or status == "cancelled"
+        l1_done = stage in ("gate_pending", "gate_approved", "layer2_content_architect",
+                            "layer2_faq_architect", "layer2_research_prompt", "layer2_done",
+                            "layer3_writing", "done")
+        l1_off = l1_alive or l1_done or status in ("completed", "cancelled")
         l1_lbl = "⏳ Running…" if l1_alive else ("✓ L1 Done" if l1_done else "▶ Layer 1")
-        if st.button(l1_lbl, type="primary", disabled=l1_off, key=f"l1_{rid}", use_container_width=True):
+        if st.button(l1_lbl, type="primary", disabled=l1_off, key=f"btn_l1_{rid}",
+                     use_container_width=True):
             log = Path("runs") / rid / "_live.log"
             err = {"error": None}
             t = run_in_bg(m["run_layer1"], rid, str(log), err)
-            st.session_state.layer1_thread = t
+            st.session_state["layer1_thread"] = t
             st.session_state["l1_err"] = err
             time.sleep(.3)
             st.rerun()
@@ -210,89 +172,85 @@ def render_pipeline_view(m, run_in_bg, is_alive):
     with bcol[1]:
         g_off = not (stage == "gate_pending" and gate == "pending")
         g_lbl = "✓ Approved" if gate == "approved" else ("✗ Rejected" if gate == "rejected" else "✅ Approve")
-        if st.button(g_lbl, disabled=g_off, key=f"g_{rid}", use_container_width=True):
+        if st.button(g_lbl, disabled=g_off, key=f"btn_approve_{rid}", use_container_width=True):
             m["approve_gate"](rid)
             st.rerun()
 
     with bcol[2]:
-        if st.button("✗ Reject", disabled=g_off, key=f"rj_{rid}", use_container_width=True):
+        if st.button("✗ Reject", disabled=g_off, key=f"btn_reject_{rid}", use_container_width=True):
             m["reject_gate"](rid)
             st.rerun()
 
     with bcol[3]:
         l2_done = stage in ("layer2_done", "layer3_writing", "done")
-        l2_off = l2_alive or gate != "approved" or status == "cancelled" or l2_done
+        l2_off = l2_alive or gate != "approved" or status in ("completed", "cancelled") or l2_done
         l2_lbl = "⏳ Running…" if l2_alive else ("✓ L2 Done" if l2_done else "▶ Layer 2")
-        if st.button(l2_lbl, type="primary", disabled=l2_off, key=f"l2_{rid}", use_container_width=True):
+        if st.button(l2_lbl, type="primary", disabled=l2_off, key=f"btn_l2_{rid}",
+                     use_container_width=True):
             log = Path("runs") / rid / "_live.log"
             err = {"error": None}
             t = run_in_bg(m["run_layer2"], rid, str(log), err)
-            st.session_state.layer2_thread = t
+            st.session_state["layer2_thread"] = t
             st.session_state["l2_err"] = err
             time.sleep(.3)
             st.rerun()
 
     with bcol[4]:
-        # KEY FIX: don't disable L3 just because status==completed.
-        # Only disable if currently running OR no cluster_id OR cancelled.
-        l3_off = l3_alive or not run.get("cluster_id") or status == "cancelled"
-        l3_lbl = "⏳ Writing…" if l3_alive else ("🔁 Re-run L3" if status == "completed" else "▶ Layer 3")
-        if st.button(l3_lbl, type="primary", disabled=l3_off, key=f"l3_{rid}", use_container_width=True):
+        l3_off = l3_alive or not run.get("cluster_id") or status in ("completed", "cancelled")
+        l3_lbl = "⏳ Writing…" if l3_alive else "▶ Layer 3"
+        if status == "completed":
+            l3_lbl = "✓ Done"
+        if st.button(l3_lbl, type="primary", disabled=l3_off, key=f"btn_l3_{rid}",
+                     use_container_width=True):
             log = Path("runs") / rid / "_live.log"
             err = {"error": None}
-            # Reset stage so the supervisor knows to start L3 fresh
-            try:
-                m["update_pipeline_run"](rid, status="running", current_stage="layer2_done")
-            except Exception:
-                pass
             t = run_in_bg(m["run_layer3"], rid, str(log), err)
-            st.session_state.layer3_thread = t
+            st.session_state["layer3_thread"] = t
             st.session_state["l3_err"] = err
             time.sleep(.3)
             st.rerun()
 
-    # Crash display with traceback
+    # ── Errors ──
     for ln in ("l1", "l2", "l3"):
         h = st.session_state.get(f"{ln}_err")
         if h and h.get("error"):
             st.error(f"❌ {ln} crashed: {h['error']}")
-            tb = h.get("traceback")
-            if tb:
-                with st.expander("📜 Traceback"):
-                    st.code(tb, language="python")
             if st.button("Clear", key=f"clr_{ln}"):
                 h["error"] = None
-                h["traceback"] = None
                 st.rerun()
 
     st.markdown("---")
 
-    st.markdown("### 🤖 Agent Activity")
+    # ── ALL AGENTS visible — grouped by layer ──
+    st.markdown("### 🤖 Agent Activity (All 11 Agents)")
+    layers = {1: [], 2: [], 3: []}
+    for k, lbl, layer in ALL_AGENTS:
+        layers[layer].append((k, lbl))
 
-    st.caption("Layer 1 — Discovery")
-    l1_cols = st.columns(len(AGENT_ORDER_L1))
-    for i, (k, lbl) in enumerate(AGENT_ORDER_L1):
-        with l1_cols[i]:
-            _render_agent_card(rid, k, lbl, m)
+    layer_titles = {
+        1: "Layer 1 — Discovery (Trend, Competitors, Keywords)",
+        2: "Layer 2 — Architecture (Content Plan, FAQs, Research Prompt)",
+        3: "Layer 3 — Writing & Quality (Writer, Verify, Audit, Rewrite, Meta)",
+    }
 
-    st.caption("Layer 2 — Architecture (Content Plan, FAQs, Research Prompt)")
-    l2_cols = st.columns(len(AGENT_ORDER_L2))
-    for i, (k, lbl) in enumerate(AGENT_ORDER_L2):
-        with l2_cols[i]:
-            _render_agent_card(rid, k, lbl, m)
-
-    st.caption("Layer 3 — Writing & Quality (Writer, Verify, Audit, Rewrite, Meta)")
-    l3_cols = st.columns(len(AGENT_ORDER_L3))
-    for i, (k, lbl) in enumerate(AGENT_ORDER_L3):
-        with l3_cols[i]:
-            _render_agent_card(rid, k, lbl, m)
+    for layer in (1, 2, 3):
+        st.caption(layer_titles[layer])
+        agents = layers[layer]
+        cols = st.columns(len(agents))
+        for i, (k, lbl) in enumerate(agents):
+            with cols[i]:
+                _render_agent_card(rid, k, lbl, layer, m)
 
     st.markdown("---")
 
+    # ── Live log only if something is actually running ──
     any_alive = l1_alive or l2_alive or l3_alive
     if any_alive:
         st.markdown("### 📡 Live Console")
         _render_live_log(rid)
+        # Smart refresh: only here, only when alive, only every 3s
+        time.sleep(3)
+        st.rerun()
     else:
         log_file = Path("runs") / rid / "_live.log"
         if log_file.exists() and log_file.stat().st_size > 0:
@@ -304,11 +262,13 @@ def render_pipeline_view(m, run_in_bg, is_alive):
 
     st.markdown("---")
 
+    # ── Per-agent detail tabs (scoped — only render when user expands) ──
     atabs = st.tabs([
         "📡 Trend", "🕵️ Comp", "🗺️ Kw", "🚪 Gate",
         "🏗️ Arch", "❓ FAQ", "🔬 Research",
         "✍️ Writer", "🔍 Fact", "🎨 Brand", "🔄 Rewrite", "🏷️ Meta",
     ])
+
     with atabs[0]:
         _render_agent_detail(rid, "trend_scout", m)
     with atabs[1]:
@@ -341,8 +301,3 @@ def render_pipeline_view(m, run_in_bg, is_alive):
         _render_agent_detail(rid, "rewriter", m)
     with atabs[11]:
         _render_agent_detail(rid, "meta_tagger", m)
-
-    # Self-rerun ONLY if a thread is alive
-    if any_alive:
-        time.sleep(3)
-        st.rerun()

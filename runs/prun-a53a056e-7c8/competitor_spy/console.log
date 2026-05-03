@@ -1,0 +1,13 @@
+[competitor_spy] Analyzing: brigade
+  Built 9 probe queries
+  [1/9] Brigade reviews
+  [2/9] Brigade projects Bangalore
+  [3/9] Brigade construction quality
+  [4/9] Brigade delays complaints
+  [5/9] Brigade vs Sobha
+  [6/9] Brigade vs Prestige
+  [7/9] is Brigade a good builder
+  [8/9] What is Brigade Road Bangalore famous for?
+  [9/9] What type of company is Brigade?
+  Running LLM analysis...
+  ✅ 'brigade': magicbricks=1, nobroker=3, housing=0, 99acres=2 | 4 uncovered | 6 gaps identified

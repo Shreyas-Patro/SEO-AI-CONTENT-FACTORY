@@ -1,0 +1,157 @@
+{
+  "topic": "brigade",
+  "keyword_map": {
+    "topic": "brigade",
+    "keyword_groups": [
+      {
+        "group_name": "Brigade Company Overview & Credibility",
+        "primary_keyword": "Is Brigade a good builder",
+        "supporting_keywords": [
+          "Is Brigade a good company",
+          "Who is the owner of Brigade Group",
+          "Who is the CEO of Brigade",
+          "What type of company is Brigade",
+          "Is brigade a grade builder",
+          "Brigade construction quality"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "Brigade vs Competitor Builders",
+        "primary_keyword": "Brigade vs Prestige",
+        "supporting_keywords": [
+          "Is brigade better than prestige",
+          "Brigade vs Sobha",
+          "Is Sobha better than Prestige",
+          "Which is better Sobha or Prestige",
+          "Who are the top 5 builders in Bangalore",
+          "Who are tier 1 developers in Bangalore",
+          "best builders in Bangalore"
+        ],
+        "intent": "comparison",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "Brigade Projects by Location",
+        "primary_keyword": "Brigade projects in Bangalore",
+        "supporting_keywords": [
+          "Brigade new projects in Whitefield",
+          "Brigade projects in North Bangalore",
+          "Brigade projects in South Bangalore",
+          "Brigade Bangalore Whitefield",
+          "Brigade new projects in bangalore price",
+          "Brigade villa projects in Bangalore"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 75
+      },
+      {
+        "group_name": "Brigade New Launches & Availability",
+        "primary_keyword": "Brigade new launch",
+        "supporting_keywords": [
+          "Brigade ready to move projects",
+          "Brigade pre launch",
+          "Brigade new projects in Bangalore",
+          "upcoming Brigade projects Bangalore",
+          "Brigade ongoing projects",
+          "What is the new project in Brigade Whitefield"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 82
+      },
+      {
+        "group_name": "Brigade Customer Reviews & Ratings",
+        "primary_keyword": "Brigade reviews",
+        "supporting_keywords": [
+          "Brigade Group google reviews",
+          "Brigade reviews bangalore",
+          "Brigade reviews complaints",
+          "Brigade customer reviews",
+          "Brigade group reviews bangalore",
+          "Brigade Developers review",
+          "Brigade reviews reddit"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 76
+      },
+      {
+        "group_name": "Brigade Contact & Location Information",
+        "primary_keyword": "Brigade Bangalore",
+        "supporting_keywords": [
+          "Brigade bangalore contact number",
+          "Brigade bangalore address",
+          "Brigade bangalore office",
+          "Brigade road bangalore",
+          "Brigade road Bangalore famous for",
+          "What days do Brigade Group work"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 74
+      },
+      {
+        "group_name": "Brigade Rental & Resale Market",
+        "primary_keyword": "Brigade Bangalore rent",
+        "supporting_keywords": [
+          "Brigade apartments near me",
+          "Brigade apartments for rent",
+          "Brigade resale properties",
+          "Brigade rental market Bangalore"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 68
+      },
+      {
+        "group_name": "Brigade Specific Projects & Developments",
+        "primary_keyword": "Brigade Whitefield",
+        "supporting_keywords": [
+          "Brigade cornerstone utopia",
+          "Brigade utopia",
+          "Brigade eldorado",
+          "Brigade tech garden",
+          "Brigade metropolis",
+          "Brigade eternia",
+          "Brigade citadel",
+          "Brigade orchards",
+          "Brigade meadows",
+          "Brigade lakecrest",
+          "Brigade xanadu"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "high",
+        "opportunity_score": 65
+      },
+      {
+        "group_name": "Brigade Corporate & Employment",
+        "primary_keyword": "Brigade Group employee benefits",
+        "supporting_keywords": [
+          "Brigade reviews for employees",
+          "Brigade bangalore careers",
+          "Is Brigade an IT company",
+          "Brigade group reviews complaints",
+          "Which company has the best employee rating"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 62
+      }
+    ],
+    "summary": "Brigade real estate content strategy should prioritize high-opportunity transactional keywords (new launches, ready-to-move projects) and comparison content against Prestige/Sobha, while addressing credibility gaps around construction quality and company ownership. Location-based project pages and comprehensive reviews content offer strong differentiation opportunities with lower competition."
+  }
+}

@@ -1,68 +1,83 @@
 """
 Canvas Homes — Pipeline Dashboard v6 (LangGraph-aware)
-
-Tabs:
-  🚀 Pipeline   — run controls + per-agent status + live log
-  📝 Articles   — article queue, content viewer, history, quality scores
-  🔄 Quality    — per-article quality loop visualization
-  🔗 Interlink  — cluster + global interlinking
-  📊 Opportunity, 📥 Ingestion, 🕸️ Graph, 🗂️ Artifacts (kept from v5)
 """
-import os
-os.environ["TORNAhttps://meet.google.com/efi-vyta-dxsDO_LOG_LEVEL"] = "ERROR"
 
-import asyncio
+# ─── MUST be set BEFORE any streamlit/torch import ──────────────────────
+import sys
+import types
+
+# Stub out torch.classes path inspection (kills the warning at the source)
+_stub = types.ModuleType("torch.classes")
+_stub.__path__ = []
+sys.modules.setdefault("torch.classes", _stub)
+
+import os
+os.environ["STREAMLIT_SERVER_FILE_WATCHER_TYPE"] = "none"
+os.environ["STREAMLIT_GLOBAL_DEVELOPMENT_MODE"] = "false"
+os.environ["TORNADO_LOG_LEVEL"] = "ERROR"
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
 import logging
 import warnings
 
-logging.getLogger("tornado").setLevel(logging.CRITICAL)
-logging.getLogger("asyncio").setLevel(logging.CRITICAL)
+
+class _SilenceWebsocketErrors(logging.Filter):
+    """Swallow noisy tornado/streamlit messages that don't matter to us."""
+    def filter(self, record):
+        msg = record.getMessage()
+        return not any(
+            s in msg
+            for s in (
+                "WebSocketClosedError",
+                "StreamClosedError",
+                "Stream is closed",
+                "Bad message format",
+                "torch.classes",
+                "Examining the path of",
+            )
+        )
+
+
+for name in (
+    "tornado",
+    "tornado.access",
+    "tornado.application",
+    "tornado.general",
+    "asyncio",
+    "streamlit.web.server",
+    "streamlit.runtime.scriptrunner",
+):
+    lg = logging.getLogger(name)
+    lg.setLevel(logging.CRITICAL)
+    lg.addFilter(_SilenceWebsocketErrors())
+
+logging.getLogger().addFilter(_SilenceWebsocketErrors())
 warnings.filterwarnings("ignore")
 
-# Silence asyncio's "Task exception was never retrieved" for closed websockets
-def _quiet_handler(loop, context):
-    exc = context.get("exception")
-    if exc and exc.__class__.__name__ in ("WebSocketClosedError", "StreamClosedError"):
-        return
-    loop.default_exception_handler(context)
-
-try:
-    asyncio.get_event_loop().set_exception_handler(_quiet_handler)
-except RuntimeError:
-    pass
-import os
-import sys
 import time
 import json
 import threading
+import traceback
 import contextlib
 from pathlib import Path
 from datetime import datetime
-from dashboard_components.output_viewer import render_output_viewer
 
 import streamlit as st
-import logging
-logging.getLogger("tornado.access").setLevel(logging.ERROR)
-logging.getLogger("tornado.application").setLevel(logging.ERROR)
-logging.getLogger("tornado.general").setLevel(logging.ERROR)
+
+from dashboard_components.output_viewer import render_output_viewer
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
 st.set_page_config(
-    page_title="IQOL· Agentic AI Pipeline V7",
+    page_title="IQOL · Agentic AI Pipeline V7",
     page_icon="⚙️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-# ── Auto-refresh every 2s while a run is active ─────────────────────────
-try:
-    from streamlit_autorefresh import st_autorefresh
-    HAVE_AUTOREFRESH = True
-except ImportError:
-    HAVE_AUTOREFRESH = False
 
 # ── STYLES ──────────────────────────────────────────────────────────────
 st.markdown("""
@@ -137,17 +152,26 @@ class _Tee:
     def __init__(self, log_file, original):
         self.log_file = log_file
         self.original = original
+
     def write(self, s):
-        try: self.original.write(s)
-        except Exception: pass
+        try:
+            self.original.write(s)
+        except Exception:
+            pass
         try:
             with open(self.log_file, "a", encoding="utf-8") as f:
-                f.write(s); f.flush()
-        except Exception: pass
+                f.write(s)
+                f.flush()
+        except Exception:
+            pass
         return len(s) if s else 0
+
     def flush(self):
-        try: self.original.flush()
-        except Exception: pass
+        try:
+            self.original.flush()
+        except Exception:
+            pass
+
 
 @contextlib.contextmanager
 def tee_to_file(log_file):
@@ -156,22 +180,32 @@ def tee_to_file(log_file):
     old_out, old_err = sys.stdout, sys.stderr
     sys.stdout = _Tee(log_file, old_out)
     sys.stderr = _Tee(log_file, old_err)
-    try: yield
-    finally: sys.stdout, sys.stderr = old_out, old_err
+    try:
+        yield
+    finally:
+        sys.stdout, sys.stderr = old_out, old_err
 
 
 def run_in_bg(fn, run_id, log_file, err_holder, *args):
+    """Run a function in a daemon thread, tee'ing output to a log file
+    AND capturing the full traceback if it crashes."""
     def _target():
         try:
             with tee_to_file(log_file):
+                print(f"[bg] Starting {fn.__name__} for run {run_id}")
                 fn(run_id, *args)
+                print(f"[bg] {fn.__name__} completed")
         except Exception as e:
+            tb = traceback.format_exc()
             err_holder["error"] = f"{type(e).__name__}: {e}"
+            err_holder["traceback"] = tb
             try:
-                with open(log_file, "a") as f:
-                    import traceback
-                    f.write(f"\n❌ {type(e).__name__}: {e}\n{traceback.format_exc()}")
-            except Exception: pass
+                Path(log_file).parent.mkdir(parents=True, exist_ok=True)
+                with open(log_file, "a", encoding="utf-8") as f:
+                    f.write(f"\n\n[CRASH] {type(e).__name__}: {e}\n{tb}\n")
+            except Exception:
+                pass
+
     t = threading.Thread(target=_target, daemon=True)
     t.start()
     return t
@@ -190,16 +224,39 @@ def _load():
         )
         from db.artifacts import (
             list_pipeline_runs, get_pipeline_run, list_artifacts,
-            load_state,
+            load_state, update_pipeline_run,
         )
         from db.pipeline_state import StateKeys
-        return locals()
+        return {
+            "start_pipeline_run": start_pipeline_run,
+            "run_layer1": run_layer1,
+            "run_layer2": run_layer2,
+            "run_layer3": run_layer3,
+            "approve_gate": approve_gate,
+            "reject_gate": reject_gate,
+            "rerun_agent": rerun_agent,
+            "load_agent_output": load_agent_output,
+            "load_agent_input": load_agent_input,
+            "load_agent_metadata": load_agent_metadata,
+            "load_agent_console": load_agent_console,
+            "edit_agent_output": edit_agent_output,
+            "edit_state_key": edit_state_key,
+            "get_full_run_state": get_full_run_state,
+            "list_pipeline_runs": list_pipeline_runs,
+            "get_pipeline_run": get_pipeline_run,
+            "list_artifacts": list_artifacts,
+            "load_state": load_state,
+            "update_pipeline_run": update_pipeline_run,
+            "StateKeys": StateKeys,
+        }
     except Exception as e:
-        return {"error": str(e)}
+        return {"error": str(e), "tb": traceback.format_exc()}
+
 
 m = _load()
 if "error" in m:
     st.error(f"Module load error: {m['error']}")
+    st.code(m.get("tb", ""), language="python")
     st.stop()
 
 
@@ -207,23 +264,10 @@ if "error" in m:
 def is_alive(t):
     return t is not None and t.is_alive()
 
+
 def any_running():
     return any(is_alive(st.session_state.get(f"layer{i}_thread")) for i in (1, 2, 3))
 
-def get_agent_status(run_id, agent_name):
-    base = Path("runs") / run_id / agent_name
-    if not base.exists(): return "pending"
-    out = base / "output.json"
-    meta = base / "metadata.json"
-    if out.exists():
-        if meta.exists():
-            try:
-                d = json.loads(meta.read_text(encoding="utf-8"))
-                if d.get("status") == "failed": return "failed"
-            except Exception: pass
-        return "done"
-    if (base / "input.json").exists(): return "active"
-    return "pending"
 
 # Lift dashboard_components into views
 from dashboard_components.pipeline_view import render_pipeline_view
@@ -244,7 +288,7 @@ with st.sidebar:
         run_id = m["start_pipeline_run"](topic)
         st.session_state.current_run_id = run_id
         st.session_state.viewing_run_id = run_id
-        for k in ("layer1_thread","layer2_thread","layer3_thread"):
+        for k in ("layer1_thread", "layer2_thread", "layer3_thread"):
             st.session_state[k] = None
         st.rerun()
 
@@ -252,9 +296,12 @@ with st.sidebar:
     runs = m["list_pipeline_runs"](limit=20)
     if runs:
         labels = [f"{r['id'][-8:]} · {r['topic'][:18]} · {r['status']}" for r in runs]
-        idx = st.selectbox("Past runs", range(len(runs)),
-                           format_func=lambda i: labels[i],
-                           label_visibility="collapsed")
+        idx = st.selectbox(
+            "Past runs",
+            range(len(runs)),
+            format_func=lambda i: labels[i],
+            label_visibility="collapsed",
+        )
         if st.button("📂 Open"):
             st.session_state.viewing_run_id = runs[idx]["id"]
             st.session_state.current_run_id = runs[idx]["id"]
@@ -267,26 +314,29 @@ with st.sidebar:
             st.caption(f"Run: `{run['id'][-8:]}`")
             st.markdown(f"**{run['status']}** · `{run.get('current_stage') or 'init'}`")
             c1, c2 = st.columns(2)
-            c1.metric("Cost", f"${run.get('total_cost_usd',0) or 0:.4f}")
-            c2.metric("LLM", run.get('total_llm_calls',0) or 0)
-            st.caption(f"🔍 {run.get('total_serp_calls',0) or 0} SERP calls")
+            c1.metric("Cost", f"${run.get('total_cost_usd', 0) or 0:.4f}")
+            c2.metric("LLM", run.get('total_llm_calls', 0) or 0)
+            st.caption(f"🔍 {run.get('total_serp_calls', 0) or 0} SERP calls")
 
+    st.markdown("---")
+    st.caption("**Stuck run?**")
+    if st.session_state.current_run_id and st.button("🔧 Reset to layer2_done"):
+        m["update_pipeline_run"](
+            st.session_state.current_run_id,
+            status="running",
+            current_stage="layer2_done",
+        )
+        st.success("Reset. You can re-run Layer 3 now.")
+        st.rerun()
 
-# ── Auto-refresh while running ──────────────────────────────────────────
-if (
-    HAVE_AUTOREFRESH 
-    and any_running() 
-    and not st.session_state.get("pause_autorefresh", False)
-):
-    st_autorefresh(interval=4000, key="auto_refresh", limit=None)
 
 # ── MAIN LAYOUT ─────────────────────────────────────────────────────────
-st.markdown("# IQOL AI AGENT SWARM ")
+st.markdown("# IQOL AI AGENT SWARM")
 
 tabs = st.tabs([
-    " Pipeline", " Articles", " Quality",
-    " Interlink", " Opportunity", " Ingestion",
-    " Graph"," Artifacts"," Output"
+    "Pipeline", "Articles", "Quality",
+    "Interlink", "Opportunity", "Ingestion",
+    "Graph", "Artifacts", "Output",
 ])
 
 with tabs[0]:
@@ -333,6 +383,6 @@ with tabs[7]:
             with st.expander(f"📁 {agent_name} ({len(files)} files)"):
                 for f in files:
                     st.caption(f"`{f['kind']}` · {f['byte_size']} bytes · `{f['file_path']}`")
+
 with tabs[8]:
     render_output_viewer(m)
-

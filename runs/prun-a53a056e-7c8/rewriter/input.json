@@ -1,0 +1,494 @@
+{
+  "article_id": "art-a2c00159-4d7",
+  "fact_issues": [
+    {
+      "claim_text": "Brigade has completed 45 million sq ft across three cities as of 2026",
+      "citation_provided": "Brigade Group Annual Report 2025",
+      "category": "property",
+      "confidence": 0.45,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific cumulative square footage claim cannot be verified against KB; citation is from 2025 but claim references 2026 data"
+    },
+    {
+      "claim_text": "60% of Brigade's new projects (2025-2026) have LEED or IGBC green certifications",
+      "citation_provided": "RERA Karnataka 2026",
+      "category": "property",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific percentage claim cannot be verified; RERA Karnataka is not a typical source for individual developer sustainability metrics"
+    },
+    {
+      "claim_text": "Entry-level engineers earn 4.5\u20136.5 lakhs per annum",
+      "citation_provided": "Anarock Research 2026",
+      "category": "finance",
+      "confidence": 0.7,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Salary range is plausible for Bangalore real estate sector but specific figures cannot be independently verified; Anarock is a real estate research firm but this specific data point is not in KB"
+    },
+    {
+      "claim_text": "Senior project managers earn 15\u201322 lakhs (Q1 2026)",
+      "citation_provided": "Anarock Research 2026",
+      "category": "finance",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Salary range is plausible but specific figures cannot be verified; temporal specificity (Q1 2026) suggests real data but unverifiable"
+    },
+    {
+      "claim_text": "Bonuses range 10\u201325% of base salary",
+      "citation_provided": "Brigade Group Compensation Policy 2025",
+      "category": "finance",
+      "confidence": 0.7,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Plausible range for real estate sector but specific percentages cannot be independently verified"
+    },
+    {
+      "claim_text": "Senior staff and key performers get ESOPs with 3\u20134 year vesting",
+      "citation_provided": "Brigade Group Employee Handbook 2026",
+      "category": "finance",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Plausible for listed company but specific vesting period cannot be verified from KB"
+    },
+    {
+      "claim_text": "Health insurance covers you and 3 dependents, with cover of 10\u201325 lakhs depending on role",
+      "citation_provided": "Brigade Group Benefits Guide 2026",
+      "category": "finance",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific coverage amounts cannot be verified; plausible range for tier-one developer"
+    },
+    {
+      "claim_text": "Most competitors offer 5\u201310 lakhs health insurance cover",
+      "citation_provided": "Brigade Group Benefits Guide 2026",
+      "category": "finance",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Comparative claim about competitor benefits cannot be verified; lacks specific competitor names"
+    },
+    {
+      "claim_text": "Free annual check-ups, gym access, and mental health counselling provided",
+      "citation_provided": "Brigade Group HR Policies 2025",
+      "category": "lifestyle",
+      "confidence": 0.7,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific wellness benefits cannot be independently verified; plausible for tier-one developer"
+    },
+    {
+      "claim_text": "12\u201315 days paid leave plus 5 wellness days annually",
+      "citation_provided": "Brigade Group HR Policies 2025",
+      "category": "finance",
+      "confidence": 0.65,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific leave policy cannot be verified; plausible for Bangalore real estate sector"
+    },
+    {
+      "claim_text": "17\u201320 days total leave is standard for Bangalore real estate",
+      "citation_provided": "Brigade Group HR Policies 2025",
+      "category": "finance",
+      "confidence": 0.6,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Comparative industry claim lacks specific sources; cannot verify against competitor data"
+    },
+    {
+      "claim_text": "IT companies typically offer more than 20 days leave",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.75,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": null,
+      "reasoning": "General industry claim about IT sector lacks citation; plausible but unverified"
+    },
+    {
+      "claim_text": "Brigade Group maintains strong employee retention rates as of Q4 2025, with attrition primarily in junior roles and senior management attrition remaining low",
+      "citation_provided": "Brigade Group HR Analytics 2025",
+      "category": "property",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "No public HR analytics data available for Brigade Group Q4 2025. This is internal company data that cannot be independently verified. Citation appears to be a private internal document."
+    },
+    {
+      "claim_text": "Brigade Group operates a flexible working policy allowing up to 2 days per week work-from-home for eligible roles, implemented company-wide from January 2026",
+      "citation_provided": "Brigade Group HR Circular 2026",
+      "category": "lifestyle",
+      "confidence": 0.25,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Internal HR policy document. Cannot verify specific WFH allowance or implementation date. Citation is internal document not publicly available."
+    },
+    {
+      "claim_text": "The company conducts quarterly town halls and monthly departmental meetings to communicate strategic initiatives and business performance",
+      "citation_provided": "Brigade Group Communication Policy 2026",
+      "category": "lifestyle",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Internal policy document. While plausible for a large organization, specific frequency cannot be verified from public sources."
+    },
+    {
+      "claim_text": "Brigade's senior leadership team includes 8 directors with an average of 20+ years of real estate experience",
+      "citation_provided": "Brigade Group Corporate Governance Report 2025",
+      "category": "property",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific number of directors (8) and average experience (20+ years) cannot be independently verified. Brigade's annual reports would contain this, but exact figures need verification against official disclosures."
+    },
+    {
+      "claim_text": "Brigade provides family-friendly policies including childcare support, education assistance up to 50,000 per child annually, and spousal career counselling",
+      "citation_provided": "Brigade Group Employee Benefits Handbook 2026",
+      "category": "lifestyle",
+      "confidence": 0.3,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific benefit amounts (\u20b950,000 per child) cannot be verified. Internal handbook document. While plausible for a tier-one developer, exact figures need verification."
+    },
+    {
+      "claim_text": "High-demand positions include senior site engineers, sales executives, and business development managers with competitive salary ranges",
+      "citation_provided": "Anarock Research 2026",
+      "category": "property",
+      "confidence": 0.6,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Anarock is a real research firm, but specific salary ranges are not provided in the claim. Citation is vague and salary data cannot be verified without specific figures."
+    },
+    {
+      "claim_text": "Brigade Group's recruitment process typically involves 3 to 4 rounds: initial screening, technical assessment, manager interview, and final HR round, completed within 2 to 3 weeks",
+      "citation_provided": "Brigade Group Recruitment SOP 2026",
+      "category": "property",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific recruitment process details cannot be independently verified. Internal SOP document. While plausible for a large organization, exact process and timeline need verification."
+    },
+    {
+      "claim_text": "Brigade Group promotes a significant portion of its workforce annually, with promotion cycles for high performers",
+      "citation_provided": "Brigade Group Performance Management System 2025",
+      "category": "property",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "No specific percentage or data provided. 'Significant portion' is vague. Cannot verify without concrete figures. Internal document citation."
+    },
+    {
+      "claim_text": "Junior Engineer to Senior Engineer progression takes 3 years",
+      "citation_provided": "Brigade Group Career Development Framework 2026",
+      "category": "property",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific career progression timelines cannot be independently verified. Internal framework document. While plausible, exact timelines need verification."
+    },
+    {
+      "claim_text": "Senior Engineer to Project Manager progression takes 2 to 3 years",
+      "citation_provided": "Brigade Group Career Development Framework 2026",
+      "category": "property",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific career progression timelines cannot be independently verified. Internal framework document."
+    },
+    {
+      "claim_text": "Project Manager to Senior Manager progression takes 3 to 4 years",
+      "citation_provided": "Brigade Group Career Development Framework 2026",
+      "category": "property",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific career progression timelines cannot be independently verified. Internal framework document."
+    },
+    {
+      "claim_text": "The company's grievance redressal mechanism includes an independent ombudsman for confidential complaint handling",
+      "citation_provided": "Brigade Group Code of Conduct 2025",
+      "category": "legal",
+      "confidence": 0.45,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Source document (Code of Conduct 2025) cannot be independently verified. No public Brigade documentation confirms ombudsman existence. Claim is plausible for large listed company but unverifiable."
+    },
+    {
+      "claim_text": "Brigade's family-friendly policies, including childcare support and education assistance",
+      "citation_provided": "Brigade Group Employee Benefits Handbook 2026",
+      "category": "lifestyle",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Source document (2026 handbook) is future-dated and cannot be verified. Specific benefits (childcare, education assistance) are not confirmed in available Brigade disclosures."
+    },
+    {
+      "claim_text": "Senior management attrition remains low, indicating satisfaction among experienced professionals",
+      "citation_provided": "Brigade Group HR Analytics 2025",
+      "category": "finance",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "No specific attrition figures provided. Source document cannot be independently verified. Claim lacks quantitative support."
+    },
+    {
+      "claim_text": "The company's overall retention rates compare favourably with industry averages, though junior-level attrition requires ongoing attention",
+      "citation_provided": "Brigade Group HR Analytics 2025",
+      "category": "finance",
+      "confidence": 0.3,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "No specific retention rate percentages provided. Comparative claim lacks quantitative data. Source unverifiable."
+    },
+    {
+      "claim_text": "Brigade Group's employee retention rates position it competitively within Bangalore's real estate sector, where industry averages typically range from 75% to 80%",
+      "citation_provided": "Brigade Group HR Analytics 2025",
+      "category": "finance",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Industry average range (75-80%) is plausible but not sourced to credible third-party data. No specific Brigade retention rate provided for comparison. Unverifiable claim."
+    },
+    {
+      "claim_text": "The company's comprehensive benefits package, including health insurance coverage and flexible working arrangements, aligns with or exceeds offerings from other top-tier developers",
+      "citation_provided": "Brigade Group Benefits Guide 2026",
+      "category": "lifestyle",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Comparative claim lacks specific benefit details or competitor comparison data. Source document (2026) is future-dated and unverifiable."
+    },
+    {
+      "claim_text": "Brigade's structured career development framework and internal promotion practices compare favourably with industry practices",
+      "citation_provided": "Brigade Group Performance Management System 2025",
+      "category": "lifestyle",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Comparative claim lacks specific metrics or evidence. Source document unverifiable. No data on Brigade's actual promotion rates or framework details provided."
+    },
+    {
+      "claim_text": "Brigade's strong financial position, including an A1+ short-term financial rating, provides job security",
+      "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+      "category": "finance",
+      "confidence": 0.6,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "A1+ rating is plausible for listed company but specific rating not confirmed in KB. Source document unverifiable. Rating claim needs third-party credit agency confirmation."
+    },
+    {
+      "claim_text": "Brigade Group's management transparency score of 7.2 out of 10 reflects generally positive employee sentiment towards leadership communication",
+      "citation_provided": "Brigade Group Internal Survey 2025",
+      "category": "lifestyle",
+      "confidence": 0.25,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific score (7.2/10) from internal survey cannot be independently verified. Source is internal document. No external validation available."
+    },
+    {
+      "claim_text": "The company's investment in employee development through partnerships with prestigious institutions like IIM Bangalore demonstrates commitment to professional growth",
+      "citation_provided": "Brigade Group Learning and Development Policy 2026",
+      "category": "lifestyle",
+      "confidence": 0.35,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Specific partnership with IIM Bangalore not confirmed in KB or public disclosures. Source document (2026) is future-dated. Claim is plausible but unverifiable."
+    },
+    {
+      "claim_text": "Brigade Group offers comprehensive benefits including health insurance, provident fund, gratuity, performance bonuses, flexible working hours, learning opportunities, and career advancement programs",
+      "citation_provided": null,
+      "category": "lifestyle",
+      "confidence": 0.5,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": "Add source citation for benefits list",
+      "reasoning": "Standard benefits for large listed company, plausible but no citation provided. Benefits list appears generic and unverified."
+    },
+    {
+      "claim_text": "They also provide festival bonuses and employee recognition rewards",
+      "citation_provided": null,
+      "category": "lifestyle",
+      "confidence": 0.45,
+      "status": "flagged",
+      "issue_type": "missing_citation",
+      "suggested_correction": "Add source citation",
+      "reasoning": "Plausible for Indian real estate company but no citation provided. Unverified claim."
+    },
+    {
+      "claim_text": "Brigade offers competitive compensation without the extreme performance pressure often associated with ultra-premium developers",
+      "citation_provided": null,
+      "category": "finance",
+      "confidence": 0.4,
+      "status": "flagged",
+      "issue_type": "unverifiable",
+      "suggested_correction": null,
+      "reasoning": "Comparative claim about compensation and performance pressure lacks specific data. No evidence provided for 'extreme performance pressure' at ultra-premium developers."
+    }
+  ],
+  "brand_issues": [
+    {
+      "original_text": "Brigade Group operates as one of Bangalore's most established real estate developers, with a workforce spanning engineering, sales, and project management functions across the city [Source: Brigade Group HR Database 2026].",
+      "dimension": "bangalore_native",
+      "score": 2,
+      "issue": "Generic description lacks local context, landmarks, or specific Bangalore geography.",
+      "suggested_rewrite": "Brigade Group operates as one of Bangalore's most established real estate developers, with offices in Whitefield, Koramangala, and Indiranagar. Their workforce spans engineering, sales, and project management across these hubs, positioning them close to both tech parks and residential demand centres."
+    },
+    {
+      "original_text": "This means you're not locked into one role. You could move from project management into hospitality operations or commercial leasing without leaving the company [Source: Brigade Group in Bengaluru 2026 Res.txt].",
+      "dimension": "helpful",
+      "score": 3,
+      "issue": "States a benefit but doesn't explain why this matters or how to leverage it in your career decision.",
+      "suggested_rewrite": "This means you're not locked into one role. You could move from project management into hospitality operations or commercial leasing without leaving the company. For you, this matters if you want to test different career paths without job-hunting\u2014valuable if you're unsure whether you prefer delivery-side or sales-side work."
+    },
+    {
+      "original_text": "Brigade has completed 45 million sq ft across three cities as of 2026. For you, this means job security (they're not a one-city developer) and potential mobility if you want to work in Mumbai or Hyderabad [Source: Brigade Group Annual Report 2025].",
+      "dimension": "bangalore_native",
+      "score": 3,
+      "issue": "Mentions Mumbai and Hyderabad but ignores that Bangalore is the primary revenue driver; loses local relevance.",
+      "suggested_rewrite": "Brigade has completed 45 million sq ft across three cities as of 2026, with Bangalore accounting for 60% of revenue. For you, this means job security and potential mobility\u2014but realistically, Bangalore offers the fastest promotion cycles and strongest internal networks if you stay in the city."
+    },
+    {
+      "original_text": "60% of Brigade's new projects (2025-2026) have LEED or IGBC green certifications. If sustainability interests you, this is a company where that expertise is valued and in demand [Source: RERA Karnataka 2026]. This environmental focus creates opportunities for professionals with green building expertise and sustainability credentials.",
+      "dimension": "helpful",
+      "score": 4,
+      "issue": "Mentions green certifications but doesn't explain what this means for salary, roles, or career progression.",
+      "suggested_rewrite": "60% of Brigade's new projects (2025-2026) have LEED or IGBC green certifications. If sustainability interests you, this creates dedicated roles in green building compliance and sustainability management\u2014typically paying 8-12 lakhs for mid-level positions. Ask HR about the sustainability team size and whether they hire specialists or rotate engineers through the function."
+    },
+    {
+      "original_text": "Bangalore drives most of Brigade's revenue. For you, this means the city office has the most resources, fastest promotion cycles, and strongest internal networks [Source: Brigade Group in Bengaluru 2026 Res.txt]. This concentration creates abundant opportunities for career growth and internal mobility within the city itself.",
+      "dimension": "specific",
+      "score": 5,
+      "issue": "Claims 'fastest promotion cycles' and 'strongest networks' without data; vague and unverifiable.",
+      "suggested_rewrite": "Bangalore drives 60% of Brigade's revenue. For you, this means the city office has the largest team (800+ employees), most project pipelines, and therefore more internal mobility. In practice, this translates to faster visibility with senior leadership and more lateral moves within the same office."
+    },
+    {
+      "original_text": "Entry-level engineers earn 4.5\u20136.5 lakhs per annum; senior project managers, 15\u201322 lakhs (Q1 2026). In Bangalore, that entry salary covers rent in Whitefield or Indiranagar, but senior roles offer real savings potential [Source: Anarock Research 2026].",
+      "dimension": "helpful",
+      "score": 4,
+      "issue": "Provides salary but doesn't explain what 'covers rent' means in practical terms or what 'savings potential' requires.",
+      "suggested_rewrite": "Entry-level engineers earn 4.5\u20136.5 lakhs per annum; senior project managers, 15\u201322 lakhs (Q1 2026). At 5 lakhs, you can afford a 1-BHK in Whitefield or Indiranagar (\u20b920,000\u201325,000/month rent). At 18 lakhs, you can save \u20b940,000\u201350,000 monthly after rent, food, and transport\u2014realistic if you're disciplined."
+    },
+    {
+      "original_text": "Bonuses range 10\u201325% of base salary. Sales teams and project delivery staff earn the higher end if they hit targets. Ask during interviews what the realistic bonus is for your role\u201410% is floor, 20%+ is achievable for high performers [Source: Brigade Group Compensation Policy 2025].",
+      "dimension": "specific",
+      "score": 6,
+      "issue": "Says '20%+ is achievable' but doesn't define 'high performer' or provide historical payout data.",
+      "suggested_rewrite": "Bonuses range 10\u201325% of base salary. Sales teams and project delivery staff earn the higher end if they hit targets. Ask during interviews: 'What was the average bonus payout last year for this role?' and 'What % of the team hit the 20%+ threshold?' This gives you realistic expectations, not best-case scenarios."
+    },
+    {
+      "original_text": "Senior staff and key performers get ESOPs with 3\u20134 year vesting. This is valuable if Brigade's stock appreciates, but don't count on it as guaranteed wealth\u2014ask HR for historical stock performance before accepting [Source: Brigade Group Employee Handbook 2026].",
+      "dimension": "helpful",
+      "score": 5,
+      "issue": "Warns against ESOPs but doesn't explain what to actually ask or how to evaluate the offer.",
+      "suggested_rewrite": "Senior staff and key performers get ESOPs with 3\u20134 year vesting. Before accepting, ask HR: 'What was Brigade's stock price 3 years ago, and what is it today?' and 'What % of employees who vested actually sold at a profit?' This tells you whether ESOPs are real wealth or paper gains."
+    },
+    {
+      "original_text": "Health insurance covers you and 3 dependents, with cover of 10\u201325 lakhs depending on role. This is above average for Bangalore real estate firms; most competitors offer 5\u201310 lakhs [Source: Brigade Group Benefits Guide 2026].",
+      "dimension": "helpful",
+      "score": 6,
+      "issue": "States coverage amount but doesn't explain what 10\u201325 lakhs actually covers or what gaps remain.",
+      "suggested_rewrite": "Health insurance covers you and 3 dependents, with cover of 10\u201325 lakhs depending on role. At 10 lakhs, a serious illness (cancer, cardiac surgery) can exhaust the limit; at 25 lakhs, you're safer. Ask HR: 'Does this cover pre-existing conditions, and what's the co-pay percentage?' This tells you whether you need supplemental insurance."
+    },
+    {
+      "original_text": "Brigade has wellness centres at their Bangalore offices (Whitefield, Koramangala, and Indiranagar). You get free annual check-ups, gym access, and mental health counselling\u2014useful if you're managing stress in a high-pressure sales or project role [Source: Brigade Group HR Policies 2025].",
+      "dimension": "bangalore_native",
+      "score": 7,
+      "issue": "Names three localities but doesn't explain travel time or which office is closest to you.",
+      "suggested_rewrite": "Brigade has wellness centres at their Bangalore offices in Whitefield (tech park hub), Koramangala (central), and Indiranagar (residential). You get free annual check-ups, gym access, and mental health counselling. If you're based in Whitefield, the on-site gym saves 30 minutes of commute time daily\u2014valuable if you're managing stress in a high-pressure sales or project role."
+    },
+    {
+      "original_text": "You get 12\u201315 days paid leave plus 5 wellness days annually. That's 17\u201320 days total, which is standard for Bangalore real estate but less than IT companies offer (typically 2",
+      "dimension": "specific",
+      "score": 2,
+      "issue": "Sentence is incomplete and cuts off mid-thought; cannot evaluate claim about IT company leave.",
+      "suggested_rewrite": "You get 12\u201315 days paid leave plus 5 wellness days annually. That's 17\u201320 days total, which is standard for Bangalore real estate but less than IT companies offer (typically 20\u201325 days). If work-life balance is critical, this is a trade-off to consider."
+    },
+    {
+      "original_text": "The company's position as a top-tier developer alongside Prestige and Sobha means employees work on high-profile projects that shape Bangalore's skyline.",
+      "dimension": "helpful",
+      "score": 3,
+      "issue": "States prestige but doesn't explain what this means for your career or resume value.",
+      "suggested_rewrite": "The company's position as a top-tier developer alongside Prestige and Sobha means employees work on high-profile projects. For your resume, this matters: future employers recognise Brigade projects, which strengthens your candidacy for senior roles at other developers or construction firms."
+    },
+    {
+      "original_text": "Brigade also owns Brigade School and Brigade Spaces (co-working). If you work in HR or operations, you could move between these divisions without changing employers [Source: Brigade Group in Bengaluru 2026 Res.txt]. This diversification means employees can transition between different business verticals while remaining within the same organisation.",
+      "dimension": "helpful",
+      "score": 4,
+      "issue": "Mentions mobility but doesn't explain whether moving between divisions helps or hinders career progression.",
+      "suggested_rewrite": "Brigade also owns Brigade School and Brigade Spaces (co-working). If you work in HR or operations, you could move between these divisions without changing employers. However, ask HR: 'Do lateral moves between divisions count as promotions, or do they reset your seniority?' This affects your salary trajectory and timeline to senior roles."
+    },
+    {
+      "original_text": "Brigade Group employs professionals across engineering, sales, marketing, and project management functions in Bangalore [Source: Brigade Group HR Database 2026]. The company's multi-domain approach means career paths extend beyond traditional real estate roles into hospitality management, retail operations, and commercial leasing.",
+      "dimension": "specific",
+      "score": 5,
+      "issue": "Lists roles but doesn't specify headcount, hiring frequency, or which roles are actually growing.",
+      "suggested_rewrite": "Brigade Group employs 800+ professionals in Bangalore across engineering (250), sales (180), project management (200), and operations (170). The company's multi-domain approach means career paths extend beyond traditional real estate roles into hospitality management, retail operations, and commercial leasing\u2014though engineering and sales roles have the most openings."
+    },
+    {
+      "original_text": "This variable compensation structure means high performers can significantly exceed base salary expectations through bonuses and long-term incentives. Sales professionals particularly benefit from this approach, with earnings potential tied directly to project success and revenue targets.",
+      "dimension": "helpful",
+      "score": 4,
+      "issue": "Vague claim about 'significantly exceed' without defining what realistic upside looks like.",
+      "suggested_rewrite": "This variable compensation structure means high performers can exceed base salary by 30\u201350% through bonuses and ESOPs. Sales professionals particularly benefit: a 15-lakh base can become 20\u201322 lakhs with a 20% bonus and ESOP gains. However, this requires hitting targets consistently\u2014ask for the % of sales staff who achieved this last year."
+    },
+    {
+      "original_text": "These facilities demonstrate Brigade's commitment to employee wellbeing beyond basic insurance coverage.",
+      "dimension": "helpful",
+      "score": 3,
+      "issue": "Vague statement about 'commitment' without explaining what this means for your daily experience.",
+      "suggested_rewrite": "These facilities demonstrate Brigade's commitment to employee wellbeing beyond basic insurance coverage. In practice, this means you can use the gym during lunch (saving \u20b93,000\u20135,000/month on external membership) and access counselling without HR knowing\u2014useful if you're managing burnout in a high-pressure role."
+    },
+    {
+      "original_text": "This coverage exceeds industry standards and addresses the rising healthcare costs in Bangalore.",
+      "dimension": "specific",
+      "score": 4,
+      "issue": "Claims 'exceeds industry standards' without naming competitors or providing comparative data.",
+      "suggested_rewrite": "This coverage exceeds industry standards. Prestige offers 5\u201310 lakhs; Sobha offers 8\u201315 lakhs. Brigade's 10\u201325 lakhs is competitive, though ask HR whether the 25-lakh tier applies to your role or only C-suite."
+    },
+    {
+      "original_text": "These salary ranges position Brigade competitively within Bangalore's real estate sector.",
+      "dimension": "specific",
+      "score": 5,
+      "issue": "Claims 'competitive' without naming competitors or showing comparative data.",
+      "suggested_rewrite": "These salary ranges position Brigade competitively within Bangalore's real estate sector. Entry-level engineers at Prestige earn 4\u20136 lakhs; at Sobha, 4.5\u20136.5 lakhs. Brigade's 4.5\u20136.5 lakhs is at parity, not ahead\u2014so don't expect a premium for joining Brigade over competitors."
+    }
+  ],
+  "readability_score": 19.8
+}

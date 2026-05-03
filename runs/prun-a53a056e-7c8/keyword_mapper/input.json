@@ -1,0 +1,1869 @@
+{
+  "topic": "brigade",
+  "trend_data": {
+    "topic": "brigade",
+    "classification": {
+      "categories": [
+        "builder"
+      ],
+      "primary_category": "builder",
+      "detected_localities": [],
+      "detected_builders": [
+        "Brigade"
+      ],
+      "is_locality": false,
+      "is_builder": true,
+      "is_cross_cutting": false
+    },
+    "raw_data": {
+      "trends": {
+        "trend_available": true,
+        "average_interest": 65.5,
+        "recent_interest": 58.0,
+        "peak_interest": 100,
+        "direction": "declining",
+        "is_seasonal": true,
+        "rising_queries": [
+          "brigade innovation garden",
+          "linkin park bangalore",
+          "brigade innovation garden bangalore",
+          "brigade lakecrest",
+          "brigade innovation garden linkin park",
+          "brigade innovation garden muddenahalli",
+          "brigade avalon",
+          "linkin park concert bangalore",
+          "linkin park bangalore concert",
+          "brigade belvedere",
+          "linkin park bangalore venue",
+          "kuuraku",
+          "kuuraku bangalore"
+        ],
+        "top_queries": [
+          "brigade road",
+          "brigade gateway",
+          "brigade gateway bangalore",
+          "sheraton grand bangalore",
+          "sheraton brigade gateway",
+          "sheraton grand brigade gateway",
+          "sheraton grand bangalore hotel at brigade gateway",
+          "prestige",
+          "brigade projects in bangalore",
+          "brigade group bangalore"
+        ]
+      },
+      "paa_questions": [
+        "What is Brigade Road Bangalore famous for?",
+        "What type of company is Brigade?",
+        "Who is the owner of Brigade Bangalore?",
+        "Is Brigade a good company?",
+        "Who is the owner of Brigade Group Bangalore?",
+        "What are the upcoming projects in Bangalore?",
+        "What is the new project in Brigade Whitefield?",
+        "What are the companies available in Brigade?",
+        "Is brigade a grade builder?",
+        "Is brigade a Indian company?",
+        "Who is the CEO of Brigade?",
+        "Who is the owner of Brigade Group?",
+        "Is Brigade an IT company?",
+        "What days do Brigade Group work?",
+        "Which company has the best employee rating?",
+        "Who are the top 5 builders in Bangalore?",
+        "Who is India's no. 1 builder?",
+        "Is brigade better than prestige?",
+        "Is Brigade a good builder?",
+        "Is Sobha better than Prestige?",
+        "Which is better, Sobha or Prestige?",
+        "What are 40 soldiers called?",
+        "What is the spelling of brigade?",
+        "What is a group of 20,000 soldiers called?",
+        "What exactly is a brigade?",
+        "Who is the most trusted home builder?",
+        "Who are tier 1 developers in Bangalore?",
+        "Is Brigade Metropolis well maintained?",
+        "Is Brigade a good company to work for?"
+      ],
+      "related_searches": [
+        "Brigade Bangalore Whitefield",
+        "Brigade bangalore contact number",
+        "Brigade bangalore address",
+        "Brigade Bangalore rent",
+        "Brigade Bangalore owner",
+        "Brigade new projects in Bangalore",
+        "Brigade Construction company bangalore",
+        "Brigade Bangalore projects",
+        "Brigade new projects in Whitefield",
+        "Brigade projects in North Bangalore",
+        "Brigade villa projects in Bangalore",
+        "Prestige projects in Bangalore",
+        "Brigade new projects in bangalore price",
+        "Brigade projects in South Bangalore",
+        "Brigade apartments near me",
+        "Brigade Developers review",
+        "Brigade reviews bangalore",
+        "Brigade reviews complaints",
+        "Brigade reviews for employees",
+        "Brigade Group google reviews",
+        "Brigade Plus reviews",
+        "Brigade reviews reddit",
+        "Brigade Group employee benefits",
+        "Brigade group reviews bangalore",
+        "Brigade group reviews complaints",
+        "Brigade group reviews for employees",
+        "Brigade Group Salary",
+        "Brigade group reviews reddit",
+        "Is brigade a good builder in bangalore",
+        "Is brigade a good builder reddit",
+        "Sobha vs Prestige vs Brigade",
+        "Is Prestige a good builder",
+        "Brigade Group reviews",
+        "Brigade Orchards",
+        "Brigade vs sobha review",
+        "Brigade vs sobha resale",
+        "Brigade vs sobha price",
+        "Brigade vs sobha reddit",
+        "Prestige or Brigade which is better",
+        "Sobha or Prestige Which is better",
+        "Brigade Group",
+        "Brigade vs prestige vs sobha",
+        "Brigade vs prestige review",
+        "Brigade vs prestige price",
+        "Brigade vs prestige reddit",
+        "Brigade vs prestige resale",
+        "Sobha vs Prestige",
+        "Battalion vs brigade",
+        "Brigade vs regiment",
+        "Division vs brigade",
+        "Brigade meaning",
+        "Brigade size",
+        "Regiment vs Brigade vs battalion",
+        "How many brigades in a division",
+        "Regiment vs brigade Indian Army",
+        "Top 30 builders in Bangalore",
+        "Top 10 builders in Bangalore",
+        "Top 50 builders in Bangalore",
+        "Best builders in Bangalore for independent house",
+        "Best builders in Bangalore reddit",
+        "Tier 2 builders in Bangalore",
+        "Top 30 Builders in Bangalore PDF",
+        "Top 20 builders in Bangalore",
+        "brigade ongoing projects near bengaluru, karnataka",
+        "brigade ongoing projects near mysuru, karnataka",
+        "Brigade ongoing projects near me",
+        "Brigade ongoing projects in bangalore",
+        "Brigade ongoing projects in hyderabad",
+        "Brigade new projects in Budigere Cross",
+        "Brigade ready to move projects near me",
+        "Brigade ready to move projects in bangalore",
+        "Ready to Move projects in Bangalore",
+        "Brigade projects in Devanahalli",
+        "Ready to move projects in North Bangalore",
+        "Brigade new Launch in Tumkur Road",
+        "Brigade new launch projects in bangalore",
+        "Brigade new Launch in East Bangalore",
+        "Brigade new launch Budigere Cross",
+        "Brigade new launch Yelahanka",
+        "Brigade new Launch Whitefield",
+        "Brigade new launch Devanahalli",
+        "Brigade new launch near me",
+        "Brigade New Launch in Bangalore",
+        "Brigade pre launch near me",
+        "Brigade pre launch hyderabad",
+        "Pre launch projects in Bangalore 2026",
+        "Brigade upcoming projects in Mysore",
+        "Upcoming brigade projects bangalore price",
+        "Upcoming brigade projects bangalore phase 2",
+        "Upcoming brigade projects bangalore for sale",
+        "Upcoming projects in Bangalore 2026",
+        "Prestige upcoming projects in Bangalore",
+        "Upcoming Projects in Bangalore 2027",
+        "Brigade customer reviews bangalore",
+        "Brigade customer reviews quora",
+        "Brigade customer reviews complaints",
+        "Brigade customer reviews india",
+        "Brigade Plus interior review",
+        "How is Brigade Builders",
+        "Prestige builder Group reviews",
+        "Prestige Raintree Park google reviews"
+      ],
+      "autocomplete": [
+        "brigade road",
+        "brigade group",
+        "brigade cornerstone utopia",
+        "brigade utopia",
+        "brigade eldorado",
+        "brigade tech garden",
+        "brigade meaning",
+        "brigade metropolis",
+        "brigade eternia",
+        "brigade citadel",
+        "brigade road bangalore",
+        "brigade orchards",
+        "brigade meadows",
+        "brigade lakecrest",
+        "brigade xanadu",
+        "brigade bangalore office",
+        "brigade bangalore whitefield",
+        "brigade bangalore rent",
+        "brigade bangalore projects",
+        "brigade bangalore careers",
+        "brigade bangalore address",
+        "brigade bangalore owner",
+        "brigade bangalore office address",
+        "brigade bangalore school",
+        "brigade bangalore apartments",
+        "brigade bangalore new projects",
+        "brigade bangalore airport",
+        "brigade bangalore upcoming projects",
+        "brigade bangalore reviews",
+        "brigade bangalore head office",
+        "brigade 2026 intake",
+        "fancy brigade 2026",
+        "fancy brigade 2026 tickets",
+        "fancy brigade 2026 results",
+        "brigade days 2026",
+        "fancy brigade 2026 winners",
+        "fancy brigade 2026 stream",
+        "fancy brigade 2026 lineup",
+        "bjp brigade 2026",
+        "blitz brigade 2026",
+        "cpim brigade 2026",
+        "harmony brigade 2026",
+        "tri brigade 2026",
+        "bones brigade 2026",
+        "fancy brigade 2026 on tv",
+        "best brigadeiro recipe",
+        "best brigadeiros",
+        "best brigadeiro in sao paulo",
+        "best brigadeiro cake recipe",
+        "best brigade in the 82nd",
+        "best brigadeiro in rio de janeiro",
+        "best spell brigade build",
+        "best bucket brigade delay",
+        "best restaurants brigade road bangalore",
+        "best ukrainian brigades",
+        "best restaurants brigade road",
+        "best pubs brigade road",
+        "best terminull brigade builds",
+        "best spell brigade character",
+        "best spell brigade spells"
+      ],
+      "serp_results_summary": [
+        {
+          "query": "Brigade Bangalore",
+          "top_results": [
+            {
+              "title": "Brigade Group: Top Builders in Bangalore | Luxury Real ...",
+              "link": "https://www.brigadegroup.com/",
+              "snippet": "Buy luxury residential properties in Bangalore and other parts of South India with premium amenities within your budget. Book your Dream home now with ...",
+              "position": 1,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "Brigade Group",
+              "link": "https://en.wikipedia.org/wiki/Brigade_Group",
+              "snippet": "Brigade Enterprises Limited is an Indian real estate and property development company that is based in Bangalore. The Brigade Group also has operations in ...",
+              "position": 2,
+              "domain": "en.wikipedia.org"
+            },
+            {
+              "title": "25+ Brigade Projects in Bangalore | Upcoming & New Launches",
+              "link": "https://brigade.bangaloreupcomingprojects.com/",
+              "snippet": "Brigade Tumkur Road is an upcoming residential project in Bangalore offering 2 and 3 BHK units. Located on Tumkur Road, this development by Brigade Group ...",
+              "position": 3,
+              "domain": "brigade.bangaloreupcomingprojects.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Brigade projects Bangalore",
+          "top_results": [
+            {
+              "title": "2,3, 4 & 5 BHK Luxury Apartments for Sale in Bangalore",
+              "link": "https://www.brigadegroup.com/residential/projects/bengaluru",
+              "snippet": "Brigade's Bengaluru projects are strategically located near IT hubs, schools, hospitals, and metro lines, ensuring strong appreciation potential and good rental ...",
+              "position": 1,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "Residential Projects - Bengaluru, Chennai, Mysore ...",
+              "link": "https://www.brigadegroup.com/residential/projects",
+              "snippet": "Brigade Belvedere. 1, 2, 3 & 3.5 Bed Homes ; Laurel & Maple at Brigade Orchards. 1, 2 and 3 Bed Homes in Devanahalli ; Brigade Manor. Luxury 3 & 4 Bed Homes.",
+              "position": 2,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "25+ Brigade Projects in Bangalore | Upcoming & New Launches",
+              "link": "https://brigade.bangaloreupcomingprojects.com/",
+              "snippet": "Brigade Tumkur Road is an upcoming residential project in Bangalore offering 2 and 3 BHK units. Located on Tumkur Road, this development by Brigade Group ...",
+              "position": 3,
+              "domain": "brigade.bangaloreupcomingprojects.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Brigade reviews",
+          "top_results": [
+            {
+              "title": "Brigade Group Reviews by 500+ Employees | Rated 4.1/5",
+              "link": "https://www.ambitionbox.com/reviews/brigade-group-reviews",
+              "snippet": "Brigade Group is rated 4.1/5, based on 500+ employee reviews on AmbitionBox. Brigade Group is highly rated for Job security with 4.1/5.",
+              "position": 1,
+              "domain": "www.ambitionbox.com"
+            },
+            {
+              "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+              "snippet": "I went with brigade as it was cost effective to me. The delivery was on time. They mention in deed that it could be delayed by 6 months and we ...",
+              "position": 2,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "Brigade Group, Bangalore Reviews",
+              "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-reviews-925077394",
+              "snippet": "My experience with Brigade Builders has been marred by poor management, design flaws, and a lack of accountability.",
+              "position": 3,
+              "domain": "www.mouthshut.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Brigade group reviews",
+          "top_results": [
+            {
+              "title": "Brigade Group Reviews by 500+ Employees | Rated 4.1/5",
+              "link": "https://www.ambitionbox.com/reviews/brigade-group-reviews",
+              "snippet": "Brigade Group is rated 4.1/5, based on 500+ employee reviews on AmbitionBox. Brigade Group is highly rated for Job security with 4.1/5.",
+              "position": 1,
+              "domain": "www.ambitionbox.com"
+            },
+            {
+              "title": "Life at Brigade Group: Culture, Salary, Reviews, Interviews ...",
+              "link": "https://www.ambitionbox.com/overview/brigade-group-overview",
+              "snippet": "Brigade Group has a work-life balance rating of 4.0 out of 5 based on 500+ employee reviews on AmbitionBox. 80% employees rated Brigade Group 4 or above on work ...",
+              "position": 2,
+              "domain": "www.ambitionbox.com"
+            },
+            {
+              "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+              "snippet": "I went with brigade as it was cost effective to me. The delivery was on time. They mention in deed that it could be delayed by 6 months and we ...",
+              "position": 3,
+              "domain": "www.reddit.com"
+            }
+          ],
+          "serp_features": [
+            "knowledge_panel",
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "is Brigade a good builder",
+          "top_results": [
+            {
+              "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+              "snippet": "Brigade is top notch build quality as well and has good layouts and resale. ... yeah , thats what i wanted to say it depends on builder to builder ...",
+              "position": 1,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "Brigade Group, Bangalore Reviews",
+              "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-reviews-925077394",
+              "snippet": "My experience with Brigade Builders has been marred by poor management, design flaws, and a lack of accountability.",
+              "position": 2,
+              "domain": "www.mouthshut.com"
+            },
+            {
+              "title": "Brigade Group: Top Builders in Bangalore | Luxury Real ...",
+              "link": "https://www.brigadegroup.com/",
+              "snippet": "Brigade Group celebrated 14 years of being a Great Place to Work, with a Laureate recognition for being in the top 100 workplaces, 10 years in a row. Our ...",
+              "position": 3,
+              "domain": "www.brigadegroup.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "Brigade vs Sobha",
+          "top_results": [
+            {
+              "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+              "snippet": "Sobha has legacy and unmatched trust but their apartments are generally smaller and the bedrooms even more. \u00b7 Brigade is top notch build quality ...",
+              "position": 1,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "A Comparative Analysis of Brigade, Prestige, and Sobha",
+              "link": "https://medium.com/@ashishnair2006/residential-real-estate-in-bangalore-a-comparative-analysis-of-brigade-prestige-and-sobha-3ac3abcdc1ed",
+              "snippet": "While all three builders offer unique advantages, Sobha Limited stands out for its commitment to quality and customer service. Brigade provides ...",
+              "position": 2,
+              "domain": "medium.com"
+            },
+            {
+              "title": "Brigade Enterprises Ltd. vs Sobha Ltd. - which is better on ...",
+              "link": "https://trendlyne.com/equity/compare-stocks/219/1261/brigade-vs-sobha/",
+              "snippet": "Brigade Enterprises Ltd. outperforms Sobha Ltd. on 29 out of 43 parameters. Like Sales, Sales growth, Profit, Profit growth, ROE, ROCE, Dividend yield etc.",
+              "position": 3,
+              "domain": "trendlyne.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "Brigade vs Prestige",
+          "top_results": [
+            {
+              "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+              "snippet": "Brigade is in the same league but gets beaten by Prestige in scale & options and by Sobha in residential quality. So, it's similar but ...",
+              "position": 1,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "A Comparative Analysis of Brigade, Prestige, and Sobha",
+              "link": "https://medium.com/@ashishnair2006/residential-real-estate-in-bangalore-a-comparative-analysis-of-brigade-prestige-and-sobha-3ac3abcdc1ed",
+              "snippet": "Brigade provides flexibility but may lack transparency in pricing at times. Prestige offers grandeur but can sometimes fall short on customer ...",
+              "position": 2,
+              "domain": "medium.com"
+            },
+            {
+              "title": "Prestige vs Sobha vs Brigade: Which Bangalore Builder ...",
+              "link": "https://estatehive.in/blog/prestige-vs-sobha-vs-brigade-comparison-2026",
+              "snippet": "Prestige appreciates at 8-12% annually, while Brigade delivers steady 7-11% annual returns. However, appreciation varies significantly by ...",
+              "position": 3,
+              "domain": "estatehive.in"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "Brigade vs Brigade",
+          "top_results": [
+            {
+              "title": "Brigade",
+              "link": "https://en.wikipedia.org/wiki/Brigade",
+              "snippet": "A brigade is a major tactical military formation \u00b7 Brigades may also be specialized and comprise battalions of a single branch, for example cavalry, mechanized, ...",
+              "position": 1,
+              "domain": "en.wikipedia.org"
+            },
+            {
+              "title": "What is the difference between a brigade and ...",
+              "link": "https://www.quora.com/What-is-the-difference-between-a-brigade-and-a-brigade-combat-team",
+              "snippet": "A brigade is a military unit of a particular size. A brigade combat team is a particular kind of brigade.",
+              "position": 2,
+              "domain": "www.quora.com"
+            },
+            {
+              "title": "BRIGADE | English meaning - Cambridge Dictionary",
+              "link": "https://dictionary.cambridge.org/dictionary/english/brigade",
+              "snippet": "BRIGADE definition: 1. a large group of soldiers in an army 2. a group of people who have something in common\u2026. Learn more.",
+              "position": 3,
+              "domain": "dictionary.cambridge.org"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "best builders in Bangalore",
+          "top_results": [
+            {
+              "title": "Name reputed builders in Bangalore other than Prestige, ...",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1jabycy/name_reputed_builders_in_bangalore_other_than/",
+              "snippet": "Sobha. the best craftsmanship you get. build quality you cannot match. Assets. best value guaranteed for the price you pay.",
+              "position": 1,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "Top 10 Builders & Developers in Bangalore 2025",
+              "link": "https://www.starestate.com/blogs/top-10-builders-developers-in-bangalore-your-complete-guide",
+              "snippet": "Top 10 Developers in Bangalore with Project Details \u00b7 1. Brigade Group \u00b7 2. Embassy Group \u00b7 3. Prestige Group \u00b7 4. Puravankara Group \u00b7 5. Sobha ...",
+              "position": 2,
+              "domain": "www.starestate.com"
+            },
+            {
+              "title": "Top Builders in Bangalore: List of Real Estate Developers ...",
+              "link": "https://www.magicbricks.com/builders-in-Bangalore",
+              "snippet": "Builders in Bangalore \u00b7 Prestige Estates Projects Ltd. \u00b7 SOBHA Limited \u00b7 Godrej Properties \u00b7 Puravankara Ltd. \u00b7 Brigade Enterprises Ltd. \u00b7 Sattva \u00b7 Mantri ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Brigade ongoing projects",
+          "top_results": [
+            {
+              "title": "2,3, 4 & 5 BHK Luxury Apartments for Sale in Bangalore",
+              "link": "https://www.brigadegroup.com/residential/projects/bengaluru",
+              "snippet": "Brigade Group is set to unveil an exclusive plotted development in East Bengaluru, crafted for those who value space, privacy, and long-term investment ...",
+              "position": 1,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "New Launch Projects in Bengaluru",
+              "link": "https://www.brigadegroup.com/residential/new-launch",
+              "snippet": "What Characterises the Latest Residential Launches in Bengaluru Perfect? \u00b7 Brigade Avalon \u00b7 Brigade Insignia \u00b7 Brigade Lakecrest \u00b7 Brigade Cherry Blossom.",
+              "position": 2,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "Residential Projects - Bengaluru, Chennai, Mysore ...",
+              "link": "https://www.brigadegroup.com/residential/projects",
+              "snippet": "Brigade Belvedere \u00b7 Laurel & Maple at Brigade Orchards \u00b7 Brigade Manor \u00b7 Brigade Stellaris \u00b7 Brigade Lumina \u00b7 Coming Soon \u00b7 Brigade Enclave \u00b7 Brigade Gateway.",
+              "position": 3,
+              "domain": "www.brigadegroup.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack"
+          ],
+          "competitor_presence": [
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "Brigade ready to move projects",
+          "top_results": [
+            {
+              "title": "2,3, 4 & 5 BHK Luxury Apartments for Sale in Bangalore",
+              "link": "https://www.brigadegroup.com/residential/projects/bengaluru",
+              "snippet": "Brigade Group offers 2, 3, 4 and 5 BHK luxury flats in Bengaluru. From New Launch to ready to move in apartments, set in prime locations with modern amenities ...",
+              "position": 1,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "Brigade Residential Ready To Move In",
+              "link": "https://www.brigadegroup.com/residential/ready-to-move-in-apartments",
+              "snippet": "Brigade's ready-to-move-in homes are fully realized, complete with high-quality finishes, functional layouts, and thoughtfully designed spaces that prioritize ...",
+              "position": 2,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "Residential Projects - Bengaluru, Chennai, Mysore ...",
+              "link": "https://www.brigadegroup.com/residential/projects",
+              "snippet": "Brigade Belvedere \u00b7 Laurel & Maple at Brigade Orchards \u00b7 Brigade Manor \u00b7 Brigade Stellaris \u00b7 Brigade Lumina \u00b7 Coming Soon \u00b7 Brigade Enclave \u00b7 Brigade Gateway.",
+              "position": 3,
+              "domain": "www.brigadegroup.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack"
+          ],
+          "competitor_presence": [
+            "99acres.com",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Brigade new launch",
+          "top_results": [
+            {
+              "title": "New Launch Projects in Bengaluru",
+              "link": "https://www.brigadegroup.com/residential/new-launch",
+              "snippet": "Brigade Lakecrest brings thoughtfully designed urban living to Old Madras Road, Bengaluru. Spread across 4 elegant towers, the development offers tranquil 1, 2 ...",
+              "position": 1,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "New Launch Projects in Bengaluru, Chennai, Hyderabad ...",
+              "link": "https://www.brigadegroup.com/residential/projects/newlaunch",
+              "snippet": "Discover Brigade Group's newly launched residential projects with modern designs, premium amenities, and prime locations. Find your perfect home today.",
+              "position": 2,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "25+ Brigade Projects in Bangalore | Upcoming & New Launches",
+              "link": "https://brigade.bangaloreupcomingprojects.com/",
+              "snippet": "Beryl Tower at Brigade El Dorado, a newly launched project in Aerospace Park, Bengaluru, offers 1, 2, and 3 BHK units ranging from 316 to 883 sq. ft.",
+              "position": 3,
+              "domain": "brigade.bangaloreupcomingprojects.com"
+            }
+          ],
+          "serp_features": [],
+          "competitor_presence": [
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "Brigade pre launch",
+          "top_results": [
+            {
+              "title": "New Launch Projects in Bengaluru",
+              "link": "https://www.brigadegroup.com/residential/new-launch",
+              "snippet": "What is the difference between pre-launch and soft launch in real estate? The objective behind a pre-launch phase is to establish the project's groundwork ...",
+              "position": 1,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "25+ Brigade Projects in Bangalore | Upcoming & New Launches",
+              "link": "https://brigade.bangaloreupcomingprojects.com/",
+              "snippet": "Brigade Upcoming/Pre-launch Projects in Bangalore \u00b7 Brigade Cherry Blossom \u00b7 Brigade Lumina \u00b7 Brigade Lakecrest \u00b7 Brigade Eternia \u00b7 Brigade Whitefield \u00b7 Brigade ...",
+              "position": 2,
+              "domain": "brigade.bangaloreupcomingprojects.com"
+            },
+            {
+              "title": "New Launch Projects in Bengaluru, Chennai, Hyderabad ...",
+              "link": "https://www.brigadegroup.com/residential/projects/newlaunch",
+              "snippet": "Discover Brigade Group's newly launched residential projects with modern designs, premium amenities, and prime locations. Find your perfect home today.",
+              "position": 3,
+              "domain": "www.brigadegroup.com"
+            }
+          ],
+          "serp_features": [],
+          "competitor_presence": [
+            "nobroker.in"
+          ]
+        },
+        {
+          "query": "upcoming Brigade projects Bangalore",
+          "top_results": [
+            {
+              "title": "New Launch Projects in Bengaluru",
+              "link": "https://www.brigadegroup.com/residential/new-launch",
+              "snippet": "What Characterises the Latest Residential Launches in Bengaluru Perfect? \u00b7 Brigade Avalon \u00b7 Brigade Insignia \u00b7 Brigade Lakecrest \u00b7 Brigade Cherry Blossom.",
+              "position": 1,
+              "domain": "www.brigadegroup.com"
+            },
+            {
+              "title": "25+ Brigade Projects in Bangalore | Upcoming & New Launches",
+              "link": "https://brigade.bangaloreupcomingprojects.com/",
+              "snippet": "Brigade Upcoming/Pre-launch Projects in Bangalore \u00b7 Brigade Cherry Blossom \u00b7 Brigade Lumina \u00b7 Brigade Lakecrest \u00b7 Brigade Eternia \u00b7 Brigade Whitefield \u00b7 Brigade ...",
+              "position": 2,
+              "domain": "brigade.bangaloreupcomingprojects.com"
+            },
+            {
+              "title": "2,3, 4 & 5 BHK Luxury Apartments for Sale in Bangalore",
+              "link": "https://www.brigadegroup.com/residential/projects/bengaluru",
+              "snippet": "Brigade Group is set to unveil an exclusive plotted development in East Bengaluru, crafted for those who value space, privacy, and long-term investment ...",
+              "position": 3,
+              "domain": "www.brigadegroup.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Brigade customer reviews",
+          "top_results": [
+            {
+              "title": "Brigade Group, Bangalore Reviews",
+              "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-reviews-925077394",
+              "snippet": "My experience with Brigade Builders has been marred by poor management, design flaws, and a lack of accountability.",
+              "position": 1,
+              "domain": "www.mouthshut.com"
+            },
+            {
+              "title": "Careful - BRIGADE GROUP - BANGALORE Review",
+              "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-review-mpqnpoulsm",
+              "snippet": "I am writing this with deep regret following my experience with this company and their business practice. I always prided to do business with Indian company ...",
+              "position": 2,
+              "domain": "www.mouthshut.com"
+            },
+            {
+              "title": "1835 Reviews for Brigade Enterprises Ltd (Corporate ...",
+              "link": "https://www.justdial.com/Bangalore/Brigade-Enterprises-Ltd-(Corporate-/080P1219916223U7L2G7_BZDET/reviews",
+              "snippet": "Unreliable payment plan with frequent demand notes and hidden interest charges.Lack of site visits even after receiving NOC for under-construction flats.",
+              "position": 3,
+              "domain": "www.justdial.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com",
+            "housing.com"
+          ]
+        }
+      ],
+      "aeo_scores": [
+        {
+          "query": "Brigade Bangalore",
+          "score": 90,
+          "serp_features": [
+            "local_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade ready to move projects",
+          "score": 85,
+          "serp_features": [
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade new launch",
+          "score": 85,
+          "serp_features": [],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade pre launch",
+          "score": 85,
+          "serp_features": [],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade group reviews",
+          "score": 80,
+          "serp_features": [
+            "knowledge_panel",
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "is Brigade a good builder",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade vs Sobha",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "Brigade vs Brigade",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "Brigade projects Bangalore",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade reviews",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade vs Prestige",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "best builders in Bangalore",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade customer reviews",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Brigade ongoing projects",
+          "score": 65,
+          "serp_features": [
+            "ai_overview",
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "upcoming Brigade projects Bangalore",
+          "score": 65,
+          "serp_features": [
+            "ai_overview",
+            "local_pack"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        }
+      ]
+    },
+    "analysis": {
+      "topic": "Brigade",
+      "topic_type": "builder",
+      "trend_direction": "declining",
+      "trend_summary": "Brigade search interest is declining overall (58.0 vs 12-month average 65.5), but specific project launches and event-driven queries (Linkin Park concert at Innovation Garden) are rising sharply. Seasonal patterns indicate cyclical interest tied to project launches and events.",
+      "total_queries_discovered": 190,
+      "intent_clusters": [
+        {
+          "intent": "informational",
+          "queries": [
+            "What is Brigade Road Bangalore famous for?",
+            "What type of company is Brigade?",
+            "Who is the owner of Brigade Bangalore?",
+            "Is Brigade a good company?",
+            "Who is the CEO of Brigade?",
+            "Is brigade a grade builder?",
+            "Who are the top 5 builders in Bangalore?",
+            "Is brigade better than prestige?",
+            "Is Brigade a good builder?",
+            "Who is the most trusted home builder?",
+            "Who are tier 1 developers in Bangalore?",
+            "What exactly is a brigade?"
+          ],
+          "estimated_volume": "high",
+          "aeo_opportunity": "high"
+        },
+        {
+          "intent": "transactional",
+          "queries": [
+            "Brigade new projects in Bangalore",
+            "Brigade ready to move projects",
+            "Brigade new launch",
+            "Brigade pre launch",
+            "Brigade new projects in Whitefield",
+            "Brigade projects in North Bangalore",
+            "Brigade villa projects in Bangalore",
+            "Brigade new projects in bangalore price",
+            "Brigade projects in South Bangalore",
+            "Brigade apartments near me"
+          ],
+          "estimated_volume": "high",
+          "aeo_opportunity": "high"
+        },
+        {
+          "intent": "navigational",
+          "queries": [
+            "Brigade Bangalore",
+            "Brigade road",
+            "Brigade gateway",
+            "Brigade gateway bangalore",
+            "Brigade Bangalore Whitefield",
+            "Brigade bangalore contact number",
+            "Brigade bangalore address",
+            "Brigade bangalore office",
+            "Brigade bangalore careers",
+            "Brigade group"
+          ],
+          "estimated_volume": "high",
+          "aeo_opportunity": "medium"
+        },
+        {
+          "intent": "comparative",
+          "queries": [
+            "Is brigade better than prestige?",
+            "Is Sobha better than Prestige?",
+            "Which is better, Sobha or Prestige?",
+            "Brigade vs Sobha",
+            "Brigade Developers review",
+            "Brigade reviews bangalore",
+            "Brigade reviews complaints",
+            "Brigade Group google reviews",
+            "Prestige projects in Bangalore"
+          ],
+          "estimated_volume": "medium",
+          "aeo_opportunity": "high"
+        }
+      ],
+      "content_gaps": [
+        {
+          "gap": "No comprehensive comparison content between Brigade and competitors (Prestige, Sobha, Godrej). Multiple PAA questions and comparative queries exist but lack dedicated comparison articles.",
+          "queries": [
+            "Is brigade better than prestige?",
+            "Is Sobha better than Prestige?",
+            "Which is better, Sobha or Prestige?",
+            "Brigade vs Sobha"
+          ],
+          "opportunity": "Create detailed comparison hubs: 'Brigade vs Prestige', 'Brigade vs Sobha', 'Top Builders Comparison' with project quality, pricing, delivery timelines, customer satisfaction metrics",
+          "suggested_content_type": "hub",
+          "priority": "high"
+        },
+        {
+          "gap": "Limited content on Brigade's project portfolio by location (Whitefield, North Bangalore, South Bangalore). Users search for location-specific projects but results are fragmented.",
+          "queries": [
+            "Brigade projects in North Bangalore",
+            "Brigade projects in South Bangalore",
+            "Brigade new projects in Whitefield",
+            "Brigade Bangalore Whitefield"
+          ],
+          "opportunity": "Create location-based spoke pages for each major Brigade project area with project details, amenities, pricing, and availability",
+          "suggested_content_type": "spoke",
+          "priority": "high"
+        },
+        {
+          "gap": "No dedicated content addressing 'Is Brigade a good builder?' question. Current results mix employee reviews with property reviews, creating confusion.",
+          "queries": [
+            "Is Brigade a good builder?",
+            "Is Brigade a good company?",
+            "Is Brigade a good company to work for?"
+          ],
+          "opportunity": "Create comprehensive builder credibility page covering: track record, delivery history, customer testimonials, awards, certifications, financial stability, and comparison with tier-1 developers",
+          "suggested_content_type": "hub",
+          "priority": "high"
+        },
+        {
+          "gap": "Event-driven content opportunity: Linkin Park concert at Brigade Innovation Garden is trending (13 rising queries) but no dedicated content exists on Canvas Homes.",
+          "queries": [
+            "brigade innovation garden",
+            "linkin park bangalore",
+            "brigade innovation garden bangalore",
+            "linkin park concert bangalore",
+            "linkin park bangalore concert",
+            "linkin park bangalore venue"
+          ],
+          "opportunity": "Create event-focused content: 'Brigade Innovation Garden: Venue Guide', 'Linkin Park Concert Bangalore 2024', 'Events at Brigade Innovation Garden' to capture event-driven traffic and cross-sell property interest",
+          "suggested_content_type": "spoke",
+          "priority": "high"
+        },
+        {
+          "gap": "No featured snippets or AI overviews for 'Brigade ready to move projects' and 'Brigade new launch' despite high search volume and transactional intent.",
+          "queries": [
+            "Brigade ready to move projects",
+            "Brigade new launch",
+            "Brigade pre launch"
+          ],
+          "opportunity": "Create structured data-rich pages with project listings, launch dates, pricing, and availability status optimized for featured snippets and AI overview inclusion",
+          "suggested_content_type": "hub",
+          "priority": "high"
+        },
+        {
+          "gap": "Missing content on Brigade's corporate structure, ownership, and leadership. Multiple PAA questions about CEO, owner, and company type remain unanswered.",
+          "queries": [
+            "Who is the owner of Brigade Bangalore?",
+            "Who is the owner of Brigade Group?",
+            "Who is the CEO of Brigade?",
+            "What type of company is Brigade?"
+          ],
+          "opportunity": "Create 'About Brigade Group' comprehensive page with company history, leadership team, organizational structure, and company credentials",
+          "suggested_content_type": "spoke",
+          "priority": "medium"
+        },
+        {
+          "gap": "No content addressing Brigade's specific project types (villas, apartments, commercial). Users search for villa projects separately but results are generic.",
+          "queries": [
+            "Brigade villa projects in Bangalore",
+            "Brigade apartments near me",
+            "Brigade Bangalore rent"
+          ],
+          "opportunity": "Create property-type specific pages: 'Brigade Villas in Bangalore', 'Brigade Luxury Apartments', 'Brigade Commercial Spaces' with detailed specifications",
+          "suggested_content_type": "spoke",
+          "priority": "medium"
+        },
+        {
+          "gap": "Rental and resale market content missing. Users search for Brigade properties to rent but no dedicated rental content exists.",
+          "queries": [
+            "Brigade Bangalore rent",
+            "Brigade apartments near me"
+          ],
+          "opportunity": "Create rental and resale guides: 'Brigade Properties for Rent in Bangalore', 'Resale Brigade Apartments', 'Brigade Rental Market Analysis'",
+          "suggested_content_type": "spoke",
+          "priority": "medium"
+        }
+      ],
+      "aeo_targets": [
+        {
+          "query": "Brigade Bangalore",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Create comprehensive Brigade Bangalore hub page with: company overview, all projects by location, contact information, reviews summary, and comparison with competitors. Optimize for local pack and video results. Include structured data for knowledge panel eligibility.",
+          "content_type": "hub"
+        },
+        {
+          "query": "Brigade ready to move projects",
+          "current_answer_quality": "weak",
+          "our_strategy": "Build detailed project listing page with ready-to-move properties, pricing, specifications, and availability. Use structured data (Schema.org) for featured snippet eligibility. Include comparison table vs other builders' ready projects.",
+          "content_type": "hub"
+        },
+        {
+          "query": "Brigade new launch",
+          "current_answer_quality": "weak",
+          "our_strategy": "Create dynamic new launch tracker page with latest Brigade project announcements, launch dates, pricing, and pre-registration details. Optimize for AI overview with clear, concise launch information and structured data.",
+          "content_type": "hub"
+        },
+        {
+          "query": "Brigade pre launch",
+          "current_answer_quality": "weak",
+          "our_strategy": "Develop pre-launch guide page covering: upcoming Brigade projects, pre-registration benefits, payment plans, and timeline. Include comparison of pre-launch vs ready-to-move advantages.",
+          "content_type": "spoke"
+        },
+        {
+          "query": "Brigade group reviews",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Create authoritative reviews aggregation page combining: customer property reviews, delivery track record, quality ratings, and comparison with Prestige/Sobha. Cite multiple review sources. Optimize for AI overview with balanced, data-backed assessment.",
+          "content_type": "hub"
+        },
+        {
+          "query": "is Brigade a good builder",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Build credibility assessment page with: Brigade's track record, completed projects, customer satisfaction data, awards, certifications, and financial stability. Include comparison metrics vs tier-1 builders. Optimize for AI overview with clear yes/no answer supported by data.",
+          "content_type": "hub"
+        },
+        {
+          "query": "Brigade vs Sobha",
+          "current_answer_quality": "weak",
+          "our_strategy": "Create detailed comparison table covering: project quality, pricing, delivery timelines, customer reviews, location diversity, amenities, and value for money. Use structured data for comparison snippets. Cite third-party reviews.",
+          "content_type": "hub"
+        },
+        {
+          "query": "Brigade projects Bangalore",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Develop comprehensive project directory with filters by location, property type, price range, and status. Include project details, amenities, pricing, and availability. Optimize for local pack and AI overview with structured project data.",
+          "content_type": "hub"
+        },
+        {
+          "query": "Brigade reviews",
+          "current_answer_quality": "moderate",
+          "our_strategy": "Create reviews hub aggregating: customer testimonials, property quality ratings, delivery experience, customer service feedback, and comparison with competitors. Separate employee reviews from property reviews. Optimize for AI overview.",
+          "content_type": "hub"
+        },
+        {
+          "query": "brigade innovation garden",
+          "current_answer_quality": "weak",
+          "our_strategy": "Build project showcase page for Innovation Garden with: amenities, location details, pricing, floor plans, and event information (Linkin Park concert). Include venue details for event attendees. Optimize for event-driven traffic.",
+          "content_type": "spoke"
+        }
+      ],
+      "competitor_insights": [
+        {
+          "competitor": "brigadegroup.com",
+          "strength": "Official brand authority, complete project portfolio, direct property listings, strong brand recognition in SERPs, knowledge panel presence",
+          "weakness": "Limited comparison content, no independent reviews aggregation, no SEO-optimized content for informational queries, poor AEO optimization for AI overviews"
+        },
+        {
+          "competitor": "nobroker.in",
+          "strength": "Strong presence in transactional queries (8 appearances), user-generated reviews, rental listings, property comparison tools",
+          "weakness": "Generic builder coverage, limited Brigade-specific content, no deep project analysis, weak on comparative queries"
+        },
+        {
+          "competitor": "99acres.com",
+          "strength": "Established real estate authority (6 appearances), project listings, price comparisons, market data",
+          "weakness": "Limited independent analysis, generic builder reviews, no AEO optimization, weak on informational queries"
+        },
+        {
+          "competitor": "reddit.com",
+          "strength": "Authentic user discussions, comparative builder insights, real customer experiences, high ranking for 'is Brigade a good builder' queries",
+          "weakness": "Unstructured information, outdated discussions, no professional analysis, limited to community opinions"
+        },
+        {
+          "competitor": "ambitionbox.com & mouthshut.com",
+          "strength": "Employee and customer reviews, ratings, detailed feedback",
+          "weakness": "Mixed employee/customer reviews causing confusion, limited property-specific analysis, no builder comparison content"
+        }
+      ],
+      "top_5_priority_queries": [
+        {
+          "query": "Brigade ready to move projects",
+          "reason": "High transactional intent (users ready to buy), high AEO score (85), no featured snippet or AI overview currently, significant commercial value, low competition for Canvas Homes content",
+          "suggested_action": "Create comprehensive 'Brigade Ready to Move Projects' hub page with: complete project listings, pricing, specifications, possession status, payment plans, and comparison with other builders' ready projects. Optimize with structured data for featured snippet and AI overview."
+        },
+        {
+          "query": "Is Brigade a good builder",
+          "reason": "High informational intent with transactional undertones, high AEO score (80), AI overview present but weak, directly influences purchase decisions, multiple PAA questions support this",
+          "suggested_action": "Build authoritative 'Is Brigade a Good Builder?' assessment page with: track record analysis, completed projects showcase, customer satisfaction metrics, delivery timelines, quality ratings, awards, and comparison with Prestige/Sobha. Include data-backed credibility signals."
+        },
+        {
+          "query": "brigade innovation garden",
+          "reason": "Rising query trend (13 related rising queries), event-driven traffic opportunity (Linkin Park concert), high engagement potential, currently weak content, unique opportunity to capture event + property interest",
+          "suggested_action": "Create 'Brigade Innovation Garden' project showcase page with: project overview, amenities, location details, pricing, floor plans, event information, venue details for concert attendees, and cross-sell to other Brigade projects."
+        },
+        {
+          "query": "Brigade vs Sobha",
+          "reason": "High comparative intent, high AEO score (80), no featured snippet, directly influences builder selection, multiple related comparative queries exist, weak current content",
+          "suggested_action": "Develop detailed 'Brigade vs Sobha' comparison hub with: side-by-side project quality comparison, pricing analysis, delivery track record, customer reviews, location diversity, amenities comparison, and value-for-money assessment. Use structured data for comparison snippets."
+        },
+        {
+          "query": "Brigade new launch",
+          "reason": "High transactional intent, high AEO score (85), no featured snippet or AI overview, seasonal relevance (tied to project launches), significant commercial value, currently weak content",
+          "suggested_action": "Create dynamic 'Brigade New Launches' hub page with: latest project announcements, launch dates, pricing, pre-registration details, payment plans, location maps, and comparison with pre-launch vs ready-to-move options. Optimize for featured snippet with structured data."
+        }
+      ],
+      "related_topics_to_explore": [
+        "Brigade Innovation Garden events and venue",
+        "Bangalore luxury apartment builders comparison",
+        "Brigade Whitefield projects",
+        "Brigade North Bangalore developments",
+        "Brigade villa projects",
+        "Bangalore real estate market trends",
+        "Brigade customer reviews and ratings",
+        "Prestige vs Sobha vs Brigade comparison",
+        "Brigade pre-launch investment guide",
+        "Bangalore property rental market",
+        "Brigade commercial spaces",
+        "Tier-1 builders in Bangalore",
+        "Brigade payment plans and financing",
+        "Brigade project delivery track record",
+        "Bangalore real estate investment guide"
+      ],
+      "seasonal_notes": "Strong seasonal patterns detected. Interest spikes correlate with: (1) Project launches and pre-registrations (quarterly), (2) Event-driven traffic (Linkin Park concert at Innovation Garden causing 13 rising related queries), (3) Real estate buying seasons (post-monsoon, pre-fiscal year). Recent decline (58.0 vs 65.5 average) suggests current off-season. Recommend event-based content strategy and project launch tracking to capitalize on seasonal peaks."
+    },
+    "competitor_tracker": {
+      "99acres.com": 6,
+      "nobroker.in": 8,
+      "magicbricks.com": 2,
+      "housing.com": 1
+    },
+    "serp_calls_used": 15,
+    "autocomplete_calls_used": 4,
+    "cost_usd": 0.019276
+  },
+  "competitor_data": {
+    "topic": "brigade",
+    "competitor_coverage": {
+      "magicbricks.com": 1,
+      "nobroker.in": 3,
+      "housing.com": 0,
+      "99acres.com": 2
+    },
+    "raw_results": [
+      {
+        "query": "Brigade reviews",
+        "results": [
+          {
+            "position": 1,
+            "title": "Brigade Group Reviews by 500+ Employees | Rated 4.1/5",
+            "link": "https://www.ambitionbox.com/reviews/brigade-group-reviews",
+            "snippet": "Brigade Group is rated 4.1/5, based on 500+ employee reviews on AmbitionBox. Brigade Group is highly rated for Job security with 4.1/5."
+          },
+          {
+            "position": 2,
+            "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+            "snippet": "I went with brigade as it was cost effective to me. The delivery was on time. They mention in deed that it could be delayed by 6 months and we ..."
+          },
+          {
+            "position": 3,
+            "title": "Brigade Group, Bangalore Reviews",
+            "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-reviews-925077394",
+            "snippet": "My experience with Brigade Builders has been marred by poor management, design flaws, and a lack of accountability."
+          },
+          {
+            "position": 4,
+            "title": "Brigade Enterprises Reviews in Bangalore",
+            "link": "https://www.glassdoor.co.in/Reviews/Brigade-Enterprises-Bangalore-Reviews-EI_IE518838.0,19_IL.20,29_IM1091.htm",
+            "snippet": "Employees in Bangalore have given Brigade Enterprises a rating of 3.9 out of 5 stars, based on 122 company reviews on Glassdoor. This indicates that most ..."
+          },
+          {
+            "position": 5,
+            "title": "Brigade Group Bengaluru Reviews by 300+ Employees",
+            "link": "https://www.ambitionbox.com/reviews/brigade-group-reviews/bengaluru-location",
+            "snippet": "Brigade Group Bengaluru is rated 4.1/5, based on 300+ Bengaluru reviews on AmbitionBox. Brigade Group is highly rated for Job security with ..."
+          },
+          {
+            "position": 6,
+            "title": "Brigade Metropolis Reviews Garudachar Palya Bangalore",
+            "link": "https://www.99acres.com/brigade-metropolis-reviews-ratings-garudachar-palya-bangalore-east-npxid-r14",
+            "snippet": "We've been here for a couple of years now, and honestly, it's a pretty good place to raise a family. The kids love the play area, and it's kept really well."
+          },
+          {
+            "position": 7,
+            "title": "99 Employee Reviews - BRIGADE Group",
+            "link": "https://in.indeed.com/cmp/Brigade-Group/reviews?start=20",
+            "snippet": "Great place to work , Fair management and good working culture. Employee oriented company with all ethic values. Technically they will update by conducting ..."
+          },
+          {
+            "position": 8,
+            "title": "Brigade Group: Top Builders in Bangalore | Luxury Real ...",
+            "link": "https://www.brigadegroup.com/",
+            "snippet": "As one of India's most revered and prestigious property developers, Brigade has been meticulously shaping the urban real estate landscape across Indian cities."
+          },
+          {
+            "position": 9,
+            "title": "234 Reviews for The Brigade School in Mahadevapura ...",
+            "link": "https://www.justdial.com/Bangalore/The-Brigade-School-Near-To-Line-Mahadevapura/080PXX80-XX80-110919143742-H1Y5_BZDET/reviews",
+            "snippet": "The Brigade School in Mahadevapura, Bangalore currently holds an average rating of 4.0 based on user reviews. Checking reviews before visiting or availing ..."
+          }
+        ]
+      },
+      {
+        "query": "Brigade projects Bangalore",
+        "results": [
+          {
+            "position": 1,
+            "title": "2,3, 4 & 5 BHK Luxury Apartments for Sale in Bangalore",
+            "link": "https://www.brigadegroup.com/residential/projects/bengaluru",
+            "snippet": "Brigade's Bengaluru projects are strategically located near IT hubs, schools, hospitals, and metro lines, ensuring strong appreciation potential and good rental ..."
+          },
+          {
+            "position": 2,
+            "title": "Residential Projects - Bengaluru, Chennai, Mysore ...",
+            "link": "https://www.brigadegroup.com/residential/projects",
+            "snippet": "Brigade Belvedere. 1, 2, 3 & 3.5 Bed Homes ; Laurel & Maple at Brigade Orchards. 1, 2 and 3 Bed Homes in Devanahalli ; Brigade Manor. Luxury 3 & 4 Bed Homes."
+          },
+          {
+            "position": 3,
+            "title": "25+ Brigade Projects in Bangalore | Upcoming & New Launches",
+            "link": "https://brigade.bangaloreupcomingprojects.com/",
+            "snippet": "Brigade Tumkur Road is an upcoming residential project in Bangalore offering 2 and 3 BHK units. Located on Tumkur Road, this development by Brigade Group ..."
+          },
+          {
+            "position": 4,
+            "title": "Brigade Group: Top Builders in Bangalore | Luxury Real ...",
+            "link": "https://www.brigadegroup.com/",
+            "snippet": "As one of India's most revered and prestigious property developers, Brigade has been meticulously shaping the urban real estate landscape across Indian cities."
+          },
+          {
+            "position": 5,
+            "title": "Brigade Builders Projects in Bangalore",
+            "link": "https://www.99acres.com/brigade-builders-projects-in-bangalore-bcffid",
+            "snippet": "Brigade Builders Projects in Bangalore ; Brigade El Dorado \u00b7 Bagalur, Bangalore North. \u20b911.4K/sqft ; Brigade Eternia. Yelahanka, Bangalore North. \u20b915.0K/sqft ..."
+          },
+          {
+            "position": 6,
+            "title": "Top 10 Brigade Projects in Bangalore to Consider in 2025",
+            "link": "https://www.brigadelumina.ind.in/top-10-brigade-projects-in-bangalore-to-consider-in-2025.html",
+            "snippet": "Check out the top 10 Brigade projects in Bangalore for 2025. Learn about Brigade Lumina, Orchards, Citrine, Eternia, Insignia, Avalon, Lakecrest, ..."
+          },
+          {
+            "position": 7,
+            "title": "Brigade El Dorado \u2013 Apartments Starting 31 Lakhs In ...",
+            "link": "https://www.brigadeeldorado.com/",
+            "snippet": "Brigade El Dorado, a 50 acre integrated enclave offers apartments for sale in Bangalore below 40 lakhs. The apartments here are some of the most luxurious ..."
+          },
+          {
+            "position": 8,
+            "title": "Brigade Orchards | Luxury Apartments And Villas In Devanahalli",
+            "link": "https://www.brigadeorchards.com/",
+            "snippet": "Brigade Orchards, a 135-acre smart township offers 1 BHK, 1.5 BHK, 2 BHK, 3 BHK, and spacious 4 BHK villas and is just 10 mins away from Intl. airport."
+          },
+          {
+            "position": 9,
+            "title": "Brigade Residential Completed Project",
+            "link": "https://www.brigadegroup.com/residential/delivered-projects",
+            "snippet": "Explore Brigade Group's delivered residential projects, embodying excellence in design, quality, and community living across Bangalore's urban landscape."
+          },
+          {
+            "position": 10,
+            "title": "47+ - Upcoming Brigade group Projects in Bangalore",
+            "link": "https://www.nobroker.in/brigade-group-projects-bangalore",
+            "snippet": "Brigade group offers a wide range of properties in Bangalore, including single-family homes, town homes, and apartments. They also build custom homes to meet ..."
+          }
+        ]
+      },
+      {
+        "query": "Brigade construction quality",
+        "results": [
+          {
+            "position": 1,
+            "title": "Quality of Brigade construction. Review on",
+            "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-review-lnruunsnpn",
+            "snippet": "the quality of walls and plastering are awful. You cannot hammer anything to the wall without creating a gaping hole in the wall. the joinery along the windows ..."
+          },
+          {
+            "position": 2,
+            "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+            "snippet": "Brigade is top notch build quality as well and has good layouts and resale. Prestige has them both beat in marketing and size of townships (huge ..."
+          },
+          {
+            "position": 3,
+            "title": "Brigade Group, Bangalore Reviews",
+            "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-reviews-925077394",
+            "snippet": "The quality of the fittings used in all the apartments as well as Villa is of high quality. A great place for investment. The only negative thing I faced is ..."
+          },
+          {
+            "position": 4,
+            "title": "Brigade Group: Top Builders in Bangalore | Luxury Real ...",
+            "link": "https://www.brigadegroup.com/",
+            "snippet": "CWAB India's Top Builders Award. Brigade Group was honoured as one of 'India's Top Builders' at CWAB Awards 2024 and recognised for our dedication to quality, ..."
+          },
+          {
+            "position": 5,
+            "title": "A Comparative Analysis of Brigade, Prestige, and Sobha",
+            "link": "https://medium.com/@ashishnair2006/residential-real-estate-in-bangalore-a-comparative-analysis-of-brigade-prestige-and-sobha-3ac3abcdc1ed",
+            "snippet": "Construction Quality. Brigade Group. Brigade's construction quality is generally considered good but varies across projects. Some customers ..."
+          },
+          {
+            "position": 6,
+            "title": "Brigade Group Reviews- Controversies, Facts, History - Blogs",
+            "link": "https://housiey.com/blogs/brigade-group-reviews-controversies-facts-history",
+            "snippet": "Brigade Meadows: Complaints regarding poor construction quality and plumbing issues. Customer management issues: Allegations of opaque sales ..."
+          },
+          {
+            "position": 7,
+            "title": "Awards And Certifications in Real Estate",
+            "link": "https://www.brigadegroup.com/about-us/certifications",
+            "snippet": "One of the first property developers in South India to receive the ISO 9001:2000 Quality Assurance Certification\u2014for Quality Assurance in Design, Development, ..."
+          },
+          {
+            "position": 8,
+            "title": "Brigade Group Bangalore: The Builder Behind the City's ...",
+            "link": "https://www.homelocator.in/post/brigade-group-bangalore-the-builder-behind-the-city-s-most-iconic-homes",
+            "snippet": "Brigade has completed over 275+ buildings and delivered 80+ million sq. ft. across South India. They're known not just for quality construction ..."
+          },
+          {
+            "position": 9,
+            "title": "How is the construction quality of Brigade Eternia Bangalore?",
+            "link": "https://harshasagar.com/questions/how-is-the-construction-quality-of-brigade-eternia-bangalore/",
+            "snippet": "The construction quality of Brigade Eternia Yelahanka Bangalore is top-notch, making it a reliable and value-for-money investment."
+          }
+        ]
+      },
+      {
+        "query": "Brigade delays complaints",
+        "results": [
+          {
+            "position": 1,
+            "title": "Complaints List for Brigade Enterprises Ltd - \u0c95\u0cb0\u0ccd\u0ca8\u0cbe\u0c9f\u0c95 \u0cb0\u0cc7\u0cb0\u0cbe",
+            "link": "https://rera.karnataka.gov.in/complaintReportWiseList?pName=HEJ%2F1zcKy8O6Swpzs4haCJo6m46tD2Z0%2Fjp0b6HzGwE%3D",
+            "snippet": "Complaints List for Brigade Enterprises Ltd. Total Records : 41. Show 10 ... Delay in Paying the Delay Compensation, DISPOSED AO, 20/09/2019, 27/01/2020. 4 ..."
+          },
+          {
+            "position": 2,
+            "title": "Delay in Gateway Project. Review on Brigade Group ...",
+            "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-review-sqnnnsmlsm",
+            "snippet": "Last official communication (mail & letter) from Brigade was in Sept 2008 that project has been delayed for 12 months due to shortage of cement, sand and labour ..."
+          },
+          {
+            "position": 3,
+            "title": "File a Consumer Complaint Against Brigade Group",
+            "link": "https://vakilsearch.com/consumer-complaints/real-estate/brigade-group/6423212e11783362f6652ab7",
+            "snippet": "One recurrent consumer concern directed at Brigade Group pertains to project delays. Several customers have expressed disappointment due to extended project ..."
+          },
+          {
+            "position": 4,
+            "title": "In Bangalore, has it become normal to deny a homebuyer ...",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1lxoh3j/in_bangalore_has_it_become_normal_to_deny_a/",
+            "snippet": "Just came to know that Brigade is denying all homebuyers in its El Dorado project any visit to their unit before entire payment is done and ..."
+          },
+          {
+            "position": 5,
+            "title": "Brigade Enterprises Limited vs Anil Kumar Virmani on 17 ...",
+            "link": "https://indiankanoon.org/docfragment/45257695/?formInput=consumer%20complaint%20%20%20%20%20%20%20%20",
+            "snippet": "Direct the OP to pay to each of the Complainants and to each buyer having same interest delay compensation, as stipulated in the Sale and Construction ..."
+          },
+          {
+            "position": 6,
+            "title": "Brigade Group Reviews- Controversies, Facts, History - Blogs",
+            "link": "https://housiey.com/blogs/brigade-group-reviews-controversies-facts-history",
+            "snippet": "Negative Reviews and Complaints. Delay in project handovers: Multiple customers have reported delays in receiving possession of their flats\u200b ..."
+          },
+          {
+            "position": 7,
+            "title": "Careful - BRIGADE GROUP - BANGALORE Review",
+            "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-review-mpqnpoulsm",
+            "snippet": "They didnt give the tri party document to my bank on time and caused whole lot of miscommunication before that. Finally they plan to charge the interest on late ..."
+          },
+          {
+            "position": 8,
+            "title": "Insights from Brigade Enterprises Limited v. Anil Kumar ...",
+            "link": "https://www.casemine.com/commentary/in/representative-capacity-in-consumer-complaints:-insights-from-brigade-enterprises-limited-v.-anil-kumar-virmani-and-others/view",
+            "snippet": "The respondents failed to demonstrate that their grievances were common to all 1134 purchasers, notably overlooking the 386 owners of the Amber ..."
+          },
+          {
+            "position": 9,
+            "title": "Brigade Group - Harrasment from team",
+            "link": "https://voxya.com/consumer-complaints/harrasment-from-team/198482",
+            "snippet": "It is important to consider that the delay would not have occurred if all the necessary documents had been provided to us on time. Unfortunately ..."
+          },
+          {
+            "position": 10,
+            "title": "Will investors get interest reimbursed for delayed handover?",
+            "link": "https://www.facebook.com/groups/2793297534145261/posts/3689342024540803/",
+            "snippet": "Brigade is forcing customers to pay some penalty or interest charges for no reason? Brigade tele staff is ill- treating customers. They have no ..."
+          }
+        ]
+      },
+      {
+        "query": "Brigade vs Sobha",
+        "results": [
+          {
+            "position": 1,
+            "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+            "snippet": "Sobha has legacy and unmatched trust but their apartments are generally smaller and the bedrooms even more. \u00b7 Brigade is top notch build quality ..."
+          },
+          {
+            "position": 2,
+            "title": "A Comparative Analysis of Brigade, Prestige, and Sobha",
+            "link": "https://medium.com/@ashishnair2006/residential-real-estate-in-bangalore-a-comparative-analysis-of-brigade-prestige-and-sobha-3ac3abcdc1ed",
+            "snippet": "While all three builders offer unique advantages, Sobha Limited stands out for its commitment to quality and customer service. Brigade provides ..."
+          },
+          {
+            "position": 3,
+            "title": "Brigade Enterprises Ltd. vs Sobha Ltd. - which is better on ...",
+            "link": "https://trendlyne.com/equity/compare-stocks/219/1261/brigade-vs-sobha/",
+            "snippet": "Brigade Enterprises Ltd. outperforms Sobha Ltd. on 29 out of 43 parameters. Like Sales, Sales growth, Profit, Profit growth, ROE, ROCE, Dividend yield etc."
+          },
+          {
+            "position": 4,
+            "title": "Prestige vs Sobha vs Brigade: Which Bangalore Builder ...",
+            "link": "https://estatehive.in/blog/prestige-vs-sobha-vs-brigade-comparison-2026",
+            "snippet": "Sobha is best for construction quality, Prestige offers the widest range of projects across all budgets and locations, and Brigade delivers the ..."
+          },
+          {
+            "position": 5,
+            "title": "Brigade Group vs Sobha: Where should you work?",
+            "link": "https://www.ambitionbox.com/compare/brigade-group-vs-sobha",
+            "snippet": "Brigade Group is rated better than Sobha when it comes to salary & benefits. Brigade Group is rated 3.9, whereas Sobha is rated 3.4 on employee salary & ..."
+          },
+          {
+            "position": 6,
+            "title": "Brigade Granada vs. Sobha Whitefield: The 2026 Investor's ...",
+            "link": "https://www.thebrigadegranada.in/blog/luxury-living-comparison-brigade-granada-vs-sobha-projects-in-whitefield.html",
+            "snippet": "Compare Brigade Granada and Sobha projects in Whitefield. Know price trends, amenities, location advantages, and which luxury project suits buyers in ..."
+          },
+          {
+            "position": 7,
+            "title": "Sobha vs Brigade \ud83d\udc40 Two premium builders. ...",
+            "link": "https://www.instagram.com/p/DXpRC1hEtji/",
+            "snippet": "Sobha is known for superior construction quality, premium finishes & long-term trust. ... Brigade stands out for lifestyle communities, strong ..."
+          },
+          {
+            "position": 8,
+            "title": "Brigade Sanctuary vs Sobha Neopolis | Property Comparison",
+            "link": "https://www.propsoch.com/compare-properties/bengaluru/brigade-sanctuary-dommasandra-circle_276-vs-sobha-neopolis-panathur_278",
+            "snippet": "We would score Brigade Sanctuary a 3.57/5, while Sobha Neopolis stands at 3.79/5. Sobha Neopolis therefore carries a mild quality advantage. (Disclaimer ..."
+          },
+          {
+            "position": 9,
+            "title": "Best Real Estate Sector Stocks - Brigade Ltd Vs Sobha Ltd",
+            "link": "https://hyd.aliceblueonline.com/best-real-estate-sector-stocks-brigade-enterprises-ltd-vs-sobha-ltd/",
+            "snippet": "Brigade's steady rental income and diversified portfolio provide stability, whereas Sobha's premium projects promise potential for robust capital appreciation."
+          }
+        ]
+      },
+      {
+        "query": "Brigade vs Prestige",
+        "results": [
+          {
+            "position": 1,
+            "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+            "snippet": "Brigade is in the same league but gets beaten by Prestige in scale & options and by Sobha in residential quality. So, it's similar but ..."
+          },
+          {
+            "position": 2,
+            "title": "A Comparative Analysis of Brigade, Prestige, and Sobha",
+            "link": "https://medium.com/@ashishnair2006/residential-real-estate-in-bangalore-a-comparative-analysis-of-brigade-prestige-and-sobha-3ac3abcdc1ed",
+            "snippet": "Brigade provides flexibility but may lack transparency in pricing at times. Prestige offers grandeur but can sometimes fall short on customer ..."
+          },
+          {
+            "position": 3,
+            "title": "Prestige vs Sobha vs Brigade: Which Bangalore Builder ...",
+            "link": "https://estatehive.in/blog/prestige-vs-sobha-vs-brigade-comparison-2026",
+            "snippet": "Prestige appreciates at 8-12% annually, while Brigade delivers steady 7-11% annual returns. However, appreciation varies significantly by ..."
+          },
+          {
+            "position": 4,
+            "title": "Brigade Enterprises Ltd. vs Prestige Estates Projects Ltd.",
+            "link": "https://trendlyne.com/equity/compare-stocks/219/1071/brigade-vs-prestige/",
+            "snippet": "Brigade Enterprises Ltd. outperforms Prestige Estates Projects Ltd. on 26 out of 43 parameters. Like Sales, Sales growth, Profit, Profit growth, ROE, ROCE, ..."
+          },
+          {
+            "position": 5,
+            "title": "Brigade Woods vs Prestige Pine Forest",
+            "link": "https://www.propsoch.com/compare-properties/bengaluru/brigade-woods-whitefield_208-vs-prestige-pine-forest-whitefield_405",
+            "snippet": "We would score Brigade Woods a 2.86/5, while Prestige Pine Forest stands at 4.07/5. Prestige Pine Forest therefore carries a mild quality advantage."
+          },
+          {
+            "position": 6,
+            "title": "How did mega builders like Prestige, Brigade, Sobha and ...",
+            "link": "https://www.quora.com/How-did-mega-builders-like-Prestige-Brigade-Sobha-and-Embassy-develop-How-do-they-get-so-much-land-in-major-areas-of-the-city",
+            "snippet": "Do you think neighborhoods should have the right to push back against developers looking to build large apartment complexes? Why or why not?"
+          },
+          {
+            "position": 7,
+            "title": "Brigade vs Prestige: Best Stock in the Real Estate Sector?",
+            "link": "https://aliceblueonline.com/blog/brigade-enterprises-ltd-vs-prestige-projects-ltd",
+            "snippet": "Brigade Enterprises generally offers better dividends compared to Prestige Estates, reflecting its consistent approach to shareholder returns."
+          },
+          {
+            "position": 8,
+            "title": "I'm planning to buy a property in East Bangalore for self- ...",
+            "link": "https://www.nobroker.in/forum/im-planning-to-buy-a-property-in-east-bangalore-for-self-use-which-is-a-better-builder-sobha-vs-prestige-vs-brigade/",
+            "snippet": "I'm planning to buy a property in East Bangalore for self-use. Which is a better builder Sobha Vs Prestige Vs Brigade?"
+          },
+          {
+            "position": 9,
+            "title": "A Comprehensive Analysis of Prestige vs Sobha vs Brigade ...",
+            "link": "https://www.youtube.com/watch?v=9gtIrP1zTpM",
+            "snippet": "A Comprehensive Analysis of Prestige vs Sobha vs Brigade Project in Bangalore Realestate. 1.4K views \u00b7 1 year ago ...more ..."
+          },
+          {
+            "position": 10,
+            "title": "Brigade Eldorado vs Prestige Finsbury Park - Luxury Apartments",
+            "link": "https://www.apartmentsbangalore.co.in/tag/brigade-eldorado-vs-prestige-finsbury-park/",
+            "snippet": "Brigade Eldorado vs Prestige Finsbury Park \u00b7 Prestige Finsbury Park \u00b7 Recent Posts. Prestige Park Grove \u00b7 Which is the best project in Whitefield, Bangalore?"
+          }
+        ]
+      },
+      {
+        "query": "is Brigade a good builder",
+        "results": [
+          {
+            "position": 1,
+            "title": "Is Brigade better than Prestige and Sobha? (Bangalore)",
+            "link": "https://www.reddit.com/r/indianrealestate/comments/1pjsl8b/is_brigade_better_than_prestige_and_sobha/",
+            "snippet": "Brigade is top notch build quality as well and has good layouts and resale. ... yeah , thats what i wanted to say it depends on builder to builder ..."
+          },
+          {
+            "position": 2,
+            "title": "Brigade Group, Bangalore Reviews",
+            "link": "https://www.mouthshut.com/builders-and-developers/brigade-group-bangalore-reviews-925077394",
+            "snippet": "My experience with Brigade Builders has been marred by poor management, design flaws, and a lack of accountability."
+          },
+          {
+            "position": 3,
+            "title": "Brigade Group: Top Builders in Bangalore | Luxury Real ...",
+            "link": "https://www.brigadegroup.com/",
+            "snippet": "Brigade Group celebrated 14 years of being a Great Place to Work, with a Laureate recognition for being in the top 100 workplaces, 10 years in a row. Our ..."
+          },
+          {
+            "position": 4,
+            "title": "Brigade Group Reviews- Controversies, Facts, History - Blogs",
+            "link": "https://housiey.com/blogs/brigade-group-reviews-controversies-facts-history",
+            "snippet": "Customers often praise the design and quality of their homes and projects. \u00b7 Integrated townships, such as Brigade Orchards and Brigade Gateway, ..."
+          },
+          {
+            "position": 5,
+            "title": "Prestige vs Sobha vs Brigade: Which Bangalore Builder ...",
+            "link": "https://estatehive.in/blog/prestige-vs-sobha-vs-brigade-comparison-2026",
+            "snippet": "Brigade holds a CRISIL A1+ rating, reflecting strong financial health and project execution capability. In FY2025, the company reported sales ..."
+          },
+          {
+            "position": 6,
+            "title": "Brigade Group Bangalore: The Builder Behind the City's ...",
+            "link": "https://www.homelocator.in/post/brigade-group-bangalore-the-builder-behind-the-city-s-most-iconic-homes",
+            "snippet": "Is Brigade a good builder for first-time buyers? Absolutely. Brigade is one of the most buyer-friendly developers in Bangalore. Their ..."
+          },
+          {
+            "position": 7,
+            "title": "A Comparative Analysis of Brigade, Prestige, and Sobha",
+            "link": "https://medium.com/@ashishnair2006/residential-real-estate-in-bangalore-a-comparative-analysis-of-brigade-prestige-and-sobha-3ac3abcdc1ed",
+            "snippet": "Brigade Group. Brigade's construction quality is generally considered good but varies across projects. Some customers have noted that while ..."
+          },
+          {
+            "position": 8,
+            "title": "Is it wise buying a flat in the Brigade Gateway Apartment ...",
+            "link": "https://www.quora.com/Is-it-wise-buying-a-flat-in-the-Brigade-Gateway-Apartment-in-Bangalore-It-was-constructed-9-years-ago-and-is-part-of-the-integrated-project-Will-the-prices-go-up-in-the-future",
+            "snippet": "Hi, The way I perceive this is that after the initial 4\u20135 years the project appreciates first rapidly then above average appreciation."
+          },
+          {
+            "position": 9,
+            "title": "I'm planning to buy a property in East Bangalore for self- ...",
+            "link": "https://www.nobroker.in/forum/im-planning-to-buy-a-property-in-east-bangalore-for-self-use-which-is-a-better-builder-sobha-vs-prestige-vs-brigade/",
+            "snippet": "Brigade Group is known for many projects and good amenities. \u00b7 They usually offer flexible payment plans, which help buyers manage money easily."
+          }
+        ]
+      },
+      {
+        "query": "What is Brigade Road Bangalore famous for?",
+        "results": [
+          {
+            "position": 1,
+            "title": "Brigade Road",
+            "link": "https://en.wikipedia.org/wiki/Brigade_Road",
+            "snippet": "Brigade Road is a large commercial centre and one of the busiest shopping areas in the heart of Bengaluru, the capital of Karnataka State, India."
+          },
+          {
+            "position": 2,
+            "title": "BRIGADE ROAD (2026) All You Need to Know BEFORE ...",
+            "link": "https://www.tripadvisor.in/Attraction_Review-g297628-d16663020-Reviews-Brigade_Road-Bengaluru_Bangalore_District_Karnataka.html",
+            "snippet": "Brigade Road is one of the busiest commercial centres and the most happening place in Bangalore. It has many hotels, spas, bristos, bars, pubs, shopping malls, ..."
+          },
+          {
+            "position": 3,
+            "title": "Brigade Road - Bangalore",
+            "link": "https://banbanjara.com/landmarks/Brigade%20Road?srsltid=AfmBOooeWjYuGR2ttoPDGpBWyYeUle4zqddWc1noYOE0IxQ6_Y44U4yz",
+            "snippet": "Brigade Road is a popular shopping destination in Bangalore, the Silicon Valley of India. It's located in the heart of the city and has been an integral part of ..."
+          },
+          {
+            "position": 4,
+            "title": "Brigade Road Bangalore: Shopping Paradise of Bangalore",
+            "link": "https://www.magicbricks.com/blog/brigade-road-bangalore/129842.html",
+            "snippet": "Brigade Road Bangalore is a famous shopping and entertainment destination for locals and tourists. It is one of the huge commercial centres and the busiest ..."
+          },
+          {
+            "position": 5,
+            "title": "Your audio guide of Bengaluru: Brigade Road",
+            "link": "https://www.smart-guide.org/destinations/en/bengaluru/?place=Brigade+Road",
+            "snippet": "One of the largest commercial hubs and most bustling shopping areas of Bangalore, Brigade Road bridges M G Road, Residency Road, and Museum Road."
+          },
+          {
+            "position": 6,
+            "title": "Brigade Road | Hoskote - What to Expect | Timings | Tips",
+            "link": "https://www.makemytrip.com/tripideas/attractions/brigade-road",
+            "snippet": "Whether you are looking for high-end designer brands or affordable fashion garments, this is the place to go. There is a lot to discover for window shoppers on ..."
+          },
+          {
+            "position": 7,
+            "title": "Brigade Road in Bengaluru is a major commercial center ...",
+            "link": "https://www.facebook.com/100092480075492/posts/brigade-road-in-bengaluru-is-a-major-commercial-center-and-one-of-the-busiest-sh/755351164224213/",
+            "snippet": "It is a popular destination for shopping, dining, nightlife, and cultural celebrations, especially New Year festivities when the street is ..."
+          },
+          {
+            "position": 8,
+            "title": "Top 10 things to do near Brigade Road in Bengaluru",
+            "link": "https://www.thehosteller.com/blogs/things-to-do-near-brigade-road-in-bengaluru",
+            "snippet": "Brigade Road is a shopaholic's paradise, offering an array of trendy boutiques, bustling street markets, and high-end stores. Spend a day ..."
+          }
+        ]
+      },
+      {
+        "query": "What type of company is Brigade?",
+        "results": [
+          {
+            "position": 1,
+            "title": "About Brigade Group",
+            "link": "https://www.brigadegroup.com/about-us",
+            "snippet": "The Brigade Group is a professionally managed organisation with a stable and confident business model guided by the principles of excellence, integrity and ..."
+          },
+          {
+            "position": 2,
+            "title": "Brigade Group",
+            "link": "https://en.wikipedia.org/wiki/Brigade_Group",
+            "snippet": "Brigade Enterprises Limited is an Indian real estate and property development company that is based in Bangalore. The Brigade Group also has operations in ..."
+          },
+          {
+            "position": 3,
+            "title": "Brigade Group: Top Builders in Bangalore | Luxury Real ...",
+            "link": "https://www.brigadegroup.com/",
+            "snippet": "As one of India's most revered and prestigious property developers, Brigade has been meticulously shaping the urban real estate landscape across Indian cities."
+          },
+          {
+            "position": 4,
+            "title": "Brigade Group",
+            "link": "https://in.linkedin.com/company/brigadegroup",
+            "snippet": "We are one of India's leading developers and have made our mark in the real estate industry by offering unmatched experiences through our premium residences."
+          },
+          {
+            "position": 5,
+            "title": "Brigade Enterprises Ltd Company Profile - Overview",
+            "link": "https://www.globaldata.com/company-profile/brigade-enterprises-ltd/",
+            "snippet": "Brigade Enterprises Ltd (Brigade Enterprises) carries out the business of development of real estate properties. Its main activities include the ..."
+          },
+          {
+            "position": 6,
+            "title": "Board of Directors",
+            "link": "https://www.brigadegroup.com/about-us/board-of-directors",
+            "snippet": "Brigade Group a leading real estate development company are led by individuals who have well experience and expertise in real estate industry."
+          },
+          {
+            "position": 7,
+            "title": "Brigade Enterprises Limited",
+            "link": "https://www.greatplacetowork.in/great/company/brigade-enterprises-limited",
+            "snippet": "We are one of India's leading real estate developers, with a varied portfolio that includes residential, office, SEZ, retail, hospitality, townships, clubs, ..."
+          },
+          {
+            "position": 8,
+            "title": "Brigade Enterprises Ltd share price",
+            "link": "https://www.screener.in/company/BRIGADE/consolidated/",
+            "snippet": "Brigade Enterprises Ltd was established in 1986. It is a real estate developer in South India, based in Bengaluru, and expanding its area of operations in ..."
+          },
+          {
+            "position": 9,
+            "title": "Life at Brigade Group: Culture, Salary, Reviews, Interviews ...",
+            "link": "https://www.ambitionbox.com/overview/brigade-group-overview",
+            "snippet": "We are one of India's leading property developers with over three decades of expertise in building positive experiences for all our stakeholders and winning ..."
+          },
+          {
+            "position": 10,
+            "title": "Brigade Group - History, Key Milestones & Stock ...",
+            "link": "https://www.bajajfinserv.in/brigade-group-history",
+            "snippet": "Brigade Group is a leading real estate developer, known for its residential, commercial & hospitality projects. Know more about its history ..."
+          }
+        ]
+      }
+    ],
+    "uncovered_queries": [
+      "Brigade construction quality",
+      "Brigade delays complaints",
+      "Brigade vs Sobha",
+      "What type of company is Brigade?"
+    ],
+    "analysis": {
+      "topic": "Brigade (builder/company) in Bangalore",
+      "competitor_summary": [
+        {
+          "competitor": "nobroker.in",
+          "result_count": 3,
+          "depth": "spoke",
+          "strengths": "Moderate coverage of Brigade projects; appears in project listing queries",
+          "weaknesses": "Limited depth on builder reputation, quality assessment, or comparative analysis; no coverage of delays/complaints or corporate information"
+        },
+        {
+          "competitor": "99acres.com",
+          "result_count": 2,
+          "depth": "listing",
+          "strengths": "Property listing presence for Brigade projects",
+          "weaknesses": "Minimal editorial content; no thought leadership on builder quality, delays, or comparisons; purely transactional"
+        },
+        {
+          "competitor": "magicbricks.com",
+          "result_count": 1,
+          "depth": "listing",
+          "strengths": "Basic project listing presence",
+          "weaknesses": "Extremely weak coverage; no editorial depth; missing reputation, quality, and comparative content entirely"
+        },
+        {
+          "competitor": "housing.com",
+          "result_count": 0,
+          "depth": "thin",
+          "strengths": "None detected in this topic cluster",
+          "weaknesses": "Zero presence; no listings, guides, or editorial content on Brigade"
+        }
+      ],
+      "coverage_gaps": [
+        {
+          "gap": "Brigade construction quality & build standards",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "Brigade project delays & RERA complaints analysis",
+          "priority": "high",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Brigade vs Sobha vs Prestige detailed comparison",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "Brigade Group company profile & history",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Brigade project reviews & buyer testimonials (Bangalore-specific)",
+          "priority": "medium",
+          "suggested_article_type": "sub_spoke"
+        },
+        {
+          "gap": "Brigade vs Canvas Homes comparison",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        }
+      ],
+      "our_advantages": [
+        "Opportunity to own 'Brigade construction quality' and delays/complaints narrative with data-backed analysis before competitors establish authority",
+        "Can create definitive Bangalore-local comparison content (Brigade vs Sobha vs Prestige vs Canvas) with fresh buyer insights and project timelines",
+        "Weak competitor editorial presence (mostly listings + Reddit/review aggregators) means high-quality hub content will rank quickly",
+        "RERA complaint data and project delivery tracking are uncovered\u2014Canvas can position as transparent, data-driven alternative",
+        "Local Bangalore expertise advantage: can provide neighborhood-level Brigade project analysis that national portals lack"
+      ],
+      "summary": "Brigade has minimal editorial coverage from major real estate portals (only 6/36 hits across 4 domains), with competitors relying on listings and external review sites. Canvas can dominate high-intent queries around construction quality, delays, and builder comparisons by publishing authoritative hub content on uncovered gaps."
+    },
+    "summary": "'brigade': magicbricks=1, nobroker=3, housing=0, 99acres=2 | 4 uncovered | 6 gaps identified"
+  }
+}

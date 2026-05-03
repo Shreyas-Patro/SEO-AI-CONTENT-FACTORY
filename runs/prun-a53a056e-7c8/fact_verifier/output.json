@@ -1,0 +1,664 @@
+{
+  "article_id": "art-a2c00159-4d7",
+  "fact_check_score": 0.5733333333333334,
+  "verification": {
+    "total_claims": 65,
+    "verified": 19,
+    "flagged": 25,
+    "unverifiable": 21,
+    "overall_score": 0.5733333333333334,
+    "claims": [
+      {
+        "claim_text": "Brigade Group operates as one of Bangalore's most established real estate developers",
+        "citation_provided": "Brigade Group HR Database 2026",
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB confirms Brigade is a top-tier listed developer in Bengaluru with established operations"
+      },
+      {
+        "claim_text": "Brigade Group has offices in Whitefield, Koramangala, and Indiranagar",
+        "citation_provided": "Brigade Group HR Database 2026",
+        "category": "property",
+        "confidence": 0.85,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific office locations not confirmed in KB; plausible for Bangalore developer but cannot verify exact locations"
+      },
+      {
+        "claim_text": "Brigade Group's position as a top-tier developer alongside Prestige and Sobha",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.98,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB repeatedly confirms Brigade is grouped with Prestige and Sobha in top-developer comparisons"
+      },
+      {
+        "claim_text": "Brigade Group is a real estate developer, not IT",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.99,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Core business model confirmed in KB; Brigade is a real estate developer"
+      },
+      {
+        "claim_text": "Brigade functions through Brigade Enterprises Limited, a publicly listed entity",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB confirms Brigade is a public limited company with NSE-hosted annual reporting"
+      },
+      {
+        "claim_text": "Brigade operates across four primary business segments: residential, commercial, retail, and hospitality development",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.98,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB explicitly confirms Brigade operates in residential, commercial, retail, and hospitality segments"
+      },
+      {
+        "claim_text": "Bangalore accounting for 60% of revenue",
+        "citation_provided": "Brigade Group Annual Report 2025",
+        "category": "finance",
+        "confidence": 0.8,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "KB states Bengaluru is 'largest contributor to Brigade's bookings' but specific 60% figure not confirmed in KB; citation is 2025 report which is recent"
+      },
+      {
+        "claim_text": "Brigade owns Brigade School and Brigade Spaces (co-working)",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.9,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB confirms 'Brigade's wider group ecosystem includes education and flexible workspace adjacencies'"
+      },
+      {
+        "claim_text": "Sustainability roles typically paying 8-12 lakhs for mid-level positions",
+        "citation_provided": "RERA Karnataka 2026",
+        "category": "finance",
+        "confidence": 0.4,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific salary range for sustainability roles cannot be verified; RERA Karnataka is regulatory body, not compensation source"
+      },
+      {
+        "claim_text": "Brigade focuses on sustainable construction with many new projects pursuing green certifications",
+        "citation_provided": "RERA Karnataka 2026",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Plausible for modern developer but not confirmed in KB; citation source (RERA) is inappropriate for this claim"
+      },
+      {
+        "claim_text": "Brigade's track record of executing large integrated developments positions it as a leader in mixed-use projects",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.92,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB confirms Brigade is 'positioned as a value-for-money branded tier-one developer with mixed-use strength' and has mixed-use projects"
+      },
+      {
+        "claim_text": "Brigade Group employs 800+ professionals in Bangalore",
+        "citation_provided": "Brigade Group HR Database 2026",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific headcount figure cannot be verified in KB; plausible for large developer but unconfirmed"
+      },
+      {
+        "claim_text": "Brigade employs 250 in engineering, 180 in sales, 200 in project management, and 170 in operations",
+        "citation_provided": "Brigade Group HR Database 2026",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific departmental breakdown (totaling 800) cannot be verified; these are very precise figures without independent confirmation"
+      },
+      {
+        "claim_text": "Engineering and sales roles have the most openings",
+        "citation_provided": "Brigade Group HR Database 2026",
+        "category": "property",
+        "confidence": 0.6,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Cannot verify current hiring patterns; depends on real-time recruitment data"
+      },
+      {
+        "claim_text": "Bangalore drives 60% of Brigade's revenue",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "finance",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "inconsistent",
+        "suggested_correction": null,
+        "reasoning": "Same 60% figure appears twice with different citations; KB confirms Bengaluru is largest contributor but specific percentage unconfirmed"
+      },
+      {
+        "claim_text": "Bangalore office has the largest team (800+ employees)",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific headcount and city concentration not independently verified"
+      },
+      {
+        "claim_text": "Entry level salaries allow affording a 1-BHK in Whitefield or Indiranagar at \u20b920,000\u201325,000/month rent",
+        "citation_provided": "Anarock Research 2026",
+        "category": "finance",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Rental rates are market-dependent and change frequently; 2026 data is future-dated (appears to be speculative)"
+      },
+      {
+        "claim_text": "Senior levels can save \u20b940,000\u201350,000 monthly after rent, food, and transport",
+        "citation_provided": "Anarock Research 2026",
+        "category": "finance",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Highly dependent on individual circumstances and salary levels; cannot be generalized; citation year is 2026 (future)"
+      },
+      {
+        "claim_text": "Brigade offers performance bonuses to eligible employees",
+        "citation_provided": "Brigade Group Compensation Policy 2025",
+        "category": "finance",
+        "confidence": 0.85,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Plausible for large developer but specific policy details cannot be verified from KB"
+      },
+      {
+        "claim_text": "Sales teams and project delivery staff earn higher bonuses if they hit targets",
+        "citation_provided": "Brigade Group Compensation Policy 2025",
+        "category": "finance",
+        "confidence": 0.8,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Standard practice in real estate but specific to Brigade cannot be verified"
+      },
+      {
+        "claim_text": "Senior staff and key performers may receive ESOPs with multi-year vesting",
+        "citation_provided": "Brigade Group Compensation Policy 2025",
+        "category": "finance",
+        "confidence": 0.75,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Common for listed companies but specific Brigade ESOP details cannot be verified"
+      },
+      {
+        "claim_text": "Brigade has multiple live projects or development initiatives in Bangalore and Greater Whitefield during 2025-2026",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.9,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB confirms Brigade has 'multiple live projects or development initiatives in Bengaluru and Greater Whitefield during 2025-2026'"
+      },
+      {
+        "claim_text": "Brigade Tech Gardens is a mixed-use development project in Bangalore",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB confirms Brigade Tech Gardens as a mixed-use development project in Bengaluru"
+      },
+      {
+        "claim_text": "Brigade is a multifaceted, multi-domain and multi-city public limited company",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB explicitly confirms Brigade is 'multifaceted, multi-domain and multi-city public limited company'"
+      },
+      {
+        "claim_text": "Brigade has diversified income streams and a large-scale Bangalore pipeline including mixed-use and township-style projects",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.9,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB confirms 'Brigade has diversified income streams and a large-scale Bengaluru pipeline including mixed-use and township-style projects'"
+      },
+      {
+        "claim_text": "Brigade Group maintains competitive employee retention rates in the real estate sector",
+        "citation_provided": "Brigade Group HR Analytics 2025",
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide specific retention rate percentage or comparative data",
+        "reasoning": "Vague claim without quantifiable metrics. Citation appears to be internal document not publicly verifiable. No specific retention rate provided for comparison."
+      },
+      {
+        "claim_text": "Brigade Group's position as a balanced developer between quality and price creates a stable work environment",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Aligns with KB positioning of Brigade as 'mid-tier branded developer offering more balanced entry pricing' and 'value-for-money branded tier-one developer'. Citation format is unusual but claim is consistent with known positioning."
+      },
+      {
+        "claim_text": "Brigade Group has implemented flexible working policies for eligible roles",
+        "citation_provided": "Brigade Group HR Circular 2026",
+        "category": "lifestyle",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Plausible for a large listed company but cannot verify specific policy implementation. Citation is internal document."
+      },
+      {
+        "claim_text": "Brigade's senior leadership team includes 8 directors with an average of 20+ years of real estate experience",
+        "citation_provided": "Brigade Group Corporate Governance Report 2025",
+        "category": "property",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": "Verify exact number of directors and their average experience from latest annual report or corporate governance disclosures",
+        "reasoning": "Specific number (8 directors) and average experience claim cannot be verified from provided KB. Should be verifiable from NSE-hosted annual reports mentioned in KB context, but not confirmed here."
+      },
+      {
+        "claim_text": "Brigade Group maintains a zero-tolerance policy on harassment and discrimination, with an independent ombudsman and confidential grievance redressal mechanism",
+        "citation_provided": "Brigade Group Code of Conduct 2025",
+        "category": "legal",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Standard practice for listed companies but specific mechanisms cannot be verified from provided information. Plausible for a listed developer."
+      },
+      {
+        "claim_text": "Brigade provides family-friendly policies including childcare support, education assistance up to 50,000 per child annually, and spousal career counselling",
+        "citation_provided": "Brigade Group Employee Benefits Handbook 2026",
+        "category": "lifestyle",
+        "confidence": 0.4,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide specific benefit amounts and policy details from official employee handbook",
+        "reasoning": "Specific rupee amount (\u20b950,000) is provided but cannot be verified. Citation is internal document. Claim is detailed but unverifiable."
+      },
+      {
+        "claim_text": "Brigade Group's expansion in Bangalore creates continuous hiring opportunities across multiple business segments",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB stating 'Brigade has multiple live projects or development initiatives in Bengaluru and Greater Whitefield during 2025-2026' and 'diversified income streams and large-scale Bengaluru pipeline'."
+      },
+      {
+        "claim_text": "As of Q1 2026, Brigade Group has active job openings across Bangalore, including roles in project management, sales, architecture, and finance",
+        "citation_provided": "Brigade Group Careers Portal 2026",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Plausible given Brigade's operations across multiple segments (KB confirms residential, commercial, retail, hospitality), but specific job openings cannot be verified from provided sources."
+      },
+      {
+        "claim_text": "High-demand positions include senior site engineers, sales executives, and business development managers with competitive salary ranges",
+        "citation_provided": "Anarock Research 2026",
+        "category": "finance",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide specific salary ranges for these positions",
+        "reasoning": "Citation to Anarock Research is external but no specific salary ranges are provided. Claim is vague about what constitutes 'competitive'."
+      },
+      {
+        "claim_text": "The company is actively recruiting for its new commercial and mixed-use projects in Whitefield and Sarjapur Road",
+        "citation_provided": "Brigade Group HR Announcements 2026",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB: 'Brigade has multiple live projects or development initiatives in Bengaluru and Greater Whitefield during 2025-2026' and 'Brigade Tech Gardens is a mixed-use development project in Bengaluru'."
+      },
+      {
+        "claim_text": "Brigade Group's recruitment process typically involves 3 to 4 rounds: initial screening, technical assessment, manager interview, and final HR round, completed within 2 to 3 weeks",
+        "citation_provided": "Brigade Group Recruitment SOP 2026",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific process details cannot be verified. Plausible for a large organization but internal SOP citation is not publicly verifiable."
+      },
+      {
+        "claim_text": "For engineering roles, candidates must possess a BE/B.Tech in Civil or Mechanical Engineering with a minimum 60% aggregate",
+        "citation_provided": "Brigade Group Job Specifications 2026",
+        "category": "property",
+        "confidence": 0.55,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific educational requirements cannot be verified. Plausible for engineering roles but internal job specifications are not publicly verifiable."
+      },
+      {
+        "claim_text": "MBA candidates require 2+ years of work experience",
+        "citation_provided": "Brigade Group Job Specifications 2026",
+        "category": "property",
+        "confidence": 0.55,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific requirement cannot be verified. Plausible but internal specification not publicly verifiable."
+      },
+      {
+        "claim_text": "Background verification and reference checks are mandatory for all positions, with a standard turnaround time of 10 to 15 days",
+        "citation_provided": "Brigade Group HR Policies 2026",
+        "category": "legal",
+        "confidence": 0.6,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Standard practice for large companies but specific turnaround time cannot be verified. Internal policy document."
+      },
+      {
+        "claim_text": "Brigade Group promotes a significant portion of its workforce annually, with promotion cycles for high performers",
+        "citation_provided": "Brigade Group Performance Management System 2025",
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide specific percentage or number of employees promoted annually",
+        "reasoning": "Vague claim without quantifiable metrics. 'Significant portion' is subjective. No specific data provided."
+      },
+      {
+        "claim_text": "Junior Engineer to Senior Engineer progression takes 3 years",
+        "citation_provided": "Brigade Group Career Development Framework 2026",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific timeline cannot be verified. Plausible but internal framework document not publicly verifiable."
+      },
+      {
+        "claim_text": "Senior Engineer to Project Manager progression takes 2 to 3 years",
+        "citation_provided": "Brigade Group Career Development Framework 2026",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific timeline cannot be verified. Plausible but internal framework document not publicly verifiable."
+      },
+      {
+        "claim_text": "Project Manager to Senior Manager progression takes 3 to 4 years",
+        "citation_provided": "Brigade Group Career Development Framework 2026",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific timeline cannot be verified. Plausible but internal framework document not publicly verifiable."
+      },
+      {
+        "claim_text": "Brigade Group operates across multiple business segments",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Strongly supported by KB: 'Brigade operates in residential, commercial, retail, and hospitality business segments' and 'Brigade operates across multiple business segments including residential, commercial, retail, and hospitality development'."
+      },
+      {
+        "claim_text": "Brigade Group is a listed company",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Supported by KB: 'Brigade is a multifaceted, multi-domain and multi-city public limited company' and reference to NSE-hosted annual reporting."
+      },
+      {
+        "claim_text": "Brigade Group is positioned as a balanced developer between quality and price",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB: 'Brigade is positioned as a mid-tier branded developer offering more balanced entry pricing compared to ultra-premium developers' and 'value-for-money branded tier-one developer'."
+      },
+      {
+        "claim_text": "Brigade maintains regular communication through structured meetings and company updates",
+        "citation_provided": "Brigade Group Communication Policy 2026",
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Plausible for large organization but specific communication practices cannot be verified from provided sources."
+      },
+      {
+        "claim_text": "Brigade's leadership approach emphasises transparency and regular communication with employees",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "unverifiable",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Plausible claim but cannot be verified without specific evidence or employee testimonials."
+      },
+      {
+        "claim_text": "The company's grievance redressal mechanism includes an independent ombudsman for confidential complaint handling",
+        "citation_provided": "Brigade Group Code of Conduct 2025",
+        "category": "legal",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "No public verification available for internal HR mechanisms. Citation format suggests internal document but cannot verify ombudsman existence or independence."
+      },
+      {
+        "claim_text": "Brigade's family-friendly policies, including childcare support and education assistance",
+        "citation_provided": "Brigade Group Employee Benefits Handbook 2026",
+        "category": "lifestyle",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": null,
+        "reasoning": "Specific benefits claimed but cannot verify from public sources. Citation is internal document from future date (2026)."
+      },
+      {
+        "claim_text": "Senior management retention remains strong, indicating satisfaction among experienced professionals",
+        "citation_provided": "Brigade Group HR Analytics 2025",
+        "category": "finance",
+        "confidence": 0.4,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide specific retention percentage figures",
+        "reasoning": "Vague claim without numerical data. Internal source cannot be independently verified."
+      },
+      {
+        "claim_text": "Brigade's overall retention rates compare favourably with industry averages, though junior-level attrition requires ongoing attention",
+        "citation_provided": "Brigade Group HR Analytics 2025",
+        "category": "finance",
+        "confidence": 0.35,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": "Provide specific retention rate percentages for senior and junior levels",
+        "reasoning": "No specific figures provided. Claim is qualitative without quantitative support."
+      },
+      {
+        "claim_text": "Brigade Group's employee retention rates position it competitively within Bangalore's real estate sector, where industry averages typically range from 75% to 80%",
+        "citation_provided": "Brigade Group HR Analytics 2025",
+        "category": "finance",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": "Provide source for 75-80% industry average benchmark",
+        "reasoning": "Industry benchmark cited but source is internal Brigade document, not independent industry research. Cannot verify if 75-80% is accurate for real estate sector."
+      },
+      {
+        "claim_text": "The company's comprehensive benefits package, including health insurance coverage and flexible working arrangements, aligns with or exceeds offerings from other top-tier developers",
+        "citation_provided": "Brigade Group Benefits Guide 2026",
+        "category": "lifestyle",
+        "confidence": 0.35,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": "Provide comparative data with named competitors (Prestige, Sobha)",
+        "reasoning": "Comparative claim without specific competitor data. Citation is internal document. Cannot verify against Prestige or Sobha benefits."
+      },
+      {
+        "claim_text": "Brigade's structured career development framework and internal promotion practices compare favourably with industry practices",
+        "citation_provided": "Brigade Group Performance Management System 2025",
+        "category": "lifestyle",
+        "confidence": 0.4,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": "Provide specific metrics or third-party validation",
+        "reasoning": "Qualitative comparison without supporting data. Internal source cannot be independently verified."
+      },
+      {
+        "claim_text": "Many real estate companies struggle with clear advancement pathways, making Brigade's structured approach a competitive advantage",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite industry research or survey data",
+        "reasoning": "General industry claim without citation. Plausible but unsubstantiated."
+      },
+      {
+        "claim_text": "Brigade Group's positioning as a balanced developer between quality and price extends to its employment practices",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Aligns with KB: Brigade is positioned as 'value-for-money branded tier-one developer' and 'mid-tier branded developer offering more balanced entry pricing'."
+      },
+      {
+        "claim_text": "The company offers competitive compensation without the extreme performance pressure often associated with ultra-premium developers",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "lifestyle",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": "Provide comparative data with Prestige and Sobha work cultures",
+        "reasoning": "Comparative claim about competitor work pressure without supporting evidence. Plausible but unverifiable."
+      },
+      {
+        "claim_text": "The company's diversified business model across residential, commercial, retail, and hospitality segments provides employees with varied career experiences within a single organisation",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Directly confirmed by KB: 'Brigade operates in residential, commercial, retail, and hospitality business segments.'"
+      },
+      {
+        "claim_text": "This diversity can enhance job satisfaction and reduce career stagnation compared to single-segment developers",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite HR research or employee satisfaction studies",
+        "reasoning": "Logical inference but lacks empirical support. No citation provided."
+      },
+      {
+        "claim_text": "Brigade's strong financial position, including an A1+ short-term financial rating, provides job security",
+        "citation_provided": "Brigade Group in Bengaluru 2026 Res.txt",
+        "category": "finance",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "satisfied_correction": "Verify current A1+ rating from CRISIL or other rating agency",
+        "reasoning": "A1+ rating is plausible for listed developer but cannot verify from provided citation. Rating agencies should be cited directly."
+      },
+      {
+        "claim_text": "Brigade Group's management transparency score of 7.2 out of 10 reflects generally positive employee sentiment towards leadership communication",
+        "citation_provided": "Brigade Group Internal Survey 2025",
+        "category": "lifestyle",
+        "confidence": 0.3,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": "Provide methodology and sample size for internal survey",
+        "reasoning": "Specific metric (7.2/10) from internal survey. Cannot verify methodology, sample size, or whether this is above/below industry average."
+      },
+      {
+        "claim_text": "This rating suggests effective management practices compared to industry standards where communication often receives criticism",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite industry benchmarks for management communication scores",
+        "reasoning": "Comparative claim without industry benchmark data. No citation for industry standard."
+      },
+      {
+        "claim_text": "The company's investment in employee development through partnerships with prestigious institutions like IIM Bangalore demonstrates commitment to professional growth",
+        "citation_provided": "Brigade Group Learning and Development Policy 2026",
+        "category": "lifestyle",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "unverifiable",
+        "suggested_correction": "Provide details of specific IIM Bangalore partnership programs",
+        "reasoning": "Partnership with IIM Bangalore claimed but cannot verify from public sources. Citation is internal policy document."
+      },
+      {
+        "claim_text": "Brigade Group offers comprehensive benefits including health insurance, provident fund, gratuity, performance bonuses, flexible working hours, learning opportunities, and career advancement programs",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite official Brigade HR documentation or careers page",
+        "reasoning": "Standard benefits list for large Indian companies. Plausible but no citation provided for verification."
+      }
+    ]
+  },
+  "needs_rewrite": true
+}

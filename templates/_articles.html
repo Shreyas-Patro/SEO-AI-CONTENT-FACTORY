@@ -1,0 +1,127 @@
+<h3 class="section-h">📝 Articles</h3>
+
+{% if not articles %}
+  <p class="muted">No articles yet. Run Layer 2 first.</p>
+{% else %}
+
+<p class="muted">{{ articles|length }} articles in cluster</p>
+
+{% for art in articles %}
+<details class="article-card status-{{ art.status }}" data-article-id="{{ art.id }}">
+  <summary>
+    {% if art.article_type == 'hub' %}🏛️
+    {% elif art.article_type == 'spoke' %}📄
+    {% elif art.article_type == 'sub_spoke' %}📃
+    {% elif art.article_type == 'faq' %}❓
+    {% else %}📄{% endif %}
+    <strong>{{ art.title }}</strong> — {{ art.word_count or 0 }} words · {{ art.status }}
+  </summary>
+
+  <div class="article-body">
+    <div class="article-meta">
+      <span>Brand: <strong>{{ "%.1f"|format(art.brand_tone_score or 0) }}/10</strong></span>
+      <span>Fact: <strong>{{ "%.2f"|format(art.fact_check_score or 0) }}</strong></span>
+      <span>Read: <strong>{{ "%.0f"|format(art.readability_score or 0) }}</strong></span>
+    </div>
+
+    <div class="article-tabs">
+      <button class="art-tab active" data-pane="read-{{ art.id }}">Read</button>
+      <button class="art-tab" data-pane="edit-{{ art.id }}">Edit</button>
+      <button class="art-tab" data-pane="faqs-{{ art.id }}">FAQs ({{ art.faqs_parsed|length }})</button>
+      <button class="art-tab" data-pane="del-{{ art.id }}">Delete</button>
+    </div>
+
+    <div class="art-pane active" id="read-{{ art.id }}">
+      <pre class="article-content">{{ art.content_md or '(no content yet)' }}</pre>
+    </div>
+
+    <div class="art-pane" id="edit-{{ art.id }}">
+      <form class="article-edit-form" data-article-id="{{ art.id }}">
+        <textarea name="content_md" rows="20">{{ art.content_md or '' }}</textarea>
+        <button type="submit" class="btn-primary">💾 Save</button>
+      </form>
+    </div>
+
+    <div class="art-pane" id="faqs-{{ art.id }}">
+      {% if art.faqs_parsed %}
+      <ol>
+        {% for faq in art.faqs_parsed %}
+        <li>
+          <strong>Q:</strong> {{ faq.question }}<br>
+          <em>A:</em> {{ faq.answer }}<br>
+          <button class="btn-bad-small faq-delete-btn"
+                  data-article-id="{{ art.id }}"
+                  data-faq-idx="{{ loop.index0 }}">Delete this FAQ</button>
+        </li>
+        {% endfor %}
+      </ol>
+      {% else %}
+        <p class="muted">No FAQs.</p>
+      {% endif %}
+    </div>
+
+    <div class="art-pane" id="del-{{ art.id }}">
+      <p class="warn">Delete is permanent.</p>
+      <button class="btn-bad article-delete-btn" data-article-id="{{ art.id }}">🗑️ Delete this article</button>
+    </div>
+  </div>
+</details>
+{% endfor %}
+
+{% endif %}
+
+<script>
+(function () {
+  // Tab switching inside article cards
+  document.querySelectorAll('.art-tab').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var paneId = btn.getAttribute('data-pane');
+      var card = btn.closest('.article-body');
+      card.querySelectorAll('.art-tab').forEach(function (b) { b.classList.remove('active'); });
+      card.querySelectorAll('.art-pane').forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      var pane = document.getElementById(paneId);
+      if (pane) pane.classList.add('active');
+    });
+  });
+
+  // Save article body
+  document.querySelectorAll('.article-edit-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var id = form.getAttribute('data-article-id');
+      var fd = new FormData(form);
+      fetch('/articles/' + id + '/save', { method: 'POST', body: fd })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (j.ok) { alert('Saved (' + j.word_count + ' words)'); }
+          else { alert('Save failed'); }
+        });
+    });
+  });
+
+  // Delete article
+  document.querySelectorAll('.article-delete-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!confirm('Delete this article permanently?')) return;
+      var id = btn.getAttribute('data-article-id');
+      fetch('/articles/' + id + '/delete', { method: 'POST' })
+        .then(function () { location.reload(); });
+    });
+  });
+
+  // Delete FAQ
+  document.querySelectorAll('.faq-delete-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!confirm('Delete this FAQ?')) return;
+      var id = btn.getAttribute('data-article-id');
+      var idx = btn.getAttribute('data-faq-idx');
+      fetch('/articles/' + id + '/faq/' + idx + '/delete', { method: 'POST' })
+        .then(function () {
+          if (window.htmx) { window.htmx.trigger('#articles-panel', 'load'); }
+          else { location.reload(); }
+        });
+    });
+  });
+})();
+</script>

@@ -1,0 +1,24 @@
+
+============================================================
+[Pipeline prun-a53a056e-7c8] Layer 2 (LangGraph)
+============================================================
+
+┌─ [content_architect] starting (run=prun-a53a056e-7c8)
+
+[content_architect] Designing cluster for: brigade
+  9 keyword groups, expecting ≥5 articles
+  Inserted 12/12 articles
+└─ [content_architect] complete in 132.08s ($0.1534, 0 SERP, 1 LLM)
+  ✓ Node done: content_architect
+
+┌─ [faq_architect] starting (run=prun-a53a056e-7c8)
+[faq_architect] Generating FAQs for cluster cl-53b5e206-556
+  Found 12 articles in DB
+  Done: 83 FAQs across 12/12 articles
+└─ [faq_architect] complete in 136.32s ($0.1204, 0 SERP, 1 LLM)
+  ✓ Node done: faq_architect
+
+┌─ [research_prompt_generator] starting (run=prun-a53a056e-7c8)
+[research_prompt_generator] Building research prompt for: brigade
+└─ [research_prompt_generator] complete in 39.56s ($0.0403, 0 SERP, 1 LLM)
+  ✓ Node done: research_prompt

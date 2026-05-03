@@ -1,0 +1,1103 @@
+{
+  "topic": "brigade",
+  "cluster_id": "cl-53b5e206-556",
+  "keyword_map": {
+    "topic": "brigade",
+    "keyword_groups": [
+      {
+        "group_name": "Brigade Company Overview & Credibility",
+        "primary_keyword": "Is Brigade a good builder",
+        "supporting_keywords": [
+          "Is Brigade a good company",
+          "Who is the owner of Brigade Group",
+          "Who is the CEO of Brigade",
+          "What type of company is Brigade",
+          "Is brigade a grade builder",
+          "Brigade construction quality"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "Brigade vs Competitor Builders",
+        "primary_keyword": "Brigade vs Prestige",
+        "supporting_keywords": [
+          "Is brigade better than prestige",
+          "Brigade vs Sobha",
+          "Is Sobha better than Prestige",
+          "Which is better Sobha or Prestige",
+          "Who are the top 5 builders in Bangalore",
+          "Who are tier 1 developers in Bangalore",
+          "best builders in Bangalore"
+        ],
+        "intent": "comparison",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "Brigade Projects by Location",
+        "primary_keyword": "Brigade projects in Bangalore",
+        "supporting_keywords": [
+          "Brigade new projects in Whitefield",
+          "Brigade projects in North Bangalore",
+          "Brigade projects in South Bangalore",
+          "Brigade Bangalore Whitefield",
+          "Brigade new projects in bangalore price",
+          "Brigade villa projects in Bangalore"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 75
+      },
+      {
+        "group_name": "Brigade New Launches & Availability",
+        "primary_keyword": "Brigade new launch",
+        "supporting_keywords": [
+          "Brigade ready to move projects",
+          "Brigade pre launch",
+          "Brigade new projects in Bangalore",
+          "upcoming Brigade projects Bangalore",
+          "Brigade ongoing projects",
+          "What is the new project in Brigade Whitefield"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 82
+      },
+      {
+        "group_name": "Brigade Customer Reviews & Ratings",
+        "primary_keyword": "Brigade reviews",
+        "supporting_keywords": [
+          "Brigade Group google reviews",
+          "Brigade reviews bangalore",
+          "Brigade reviews complaints",
+          "Brigade customer reviews",
+          "Brigade group reviews bangalore",
+          "Brigade Developers review",
+          "Brigade reviews reddit"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 76
+      },
+      {
+        "group_name": "Brigade Contact & Location Information",
+        "primary_keyword": "Brigade Bangalore",
+        "supporting_keywords": [
+          "Brigade bangalore contact number",
+          "Brigade bangalore address",
+          "Brigade bangalore office",
+          "Brigade road bangalore",
+          "Brigade road Bangalore famous for",
+          "What days do Brigade Group work"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 74
+      },
+      {
+        "group_name": "Brigade Rental & Resale Market",
+        "primary_keyword": "Brigade Bangalore rent",
+        "supporting_keywords": [
+          "Brigade apartments near me",
+          "Brigade apartments for rent",
+          "Brigade resale properties",
+          "Brigade rental market Bangalore"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 68
+      },
+      {
+        "group_name": "Brigade Specific Projects & Developments",
+        "primary_keyword": "Brigade Whitefield",
+        "supporting_keywords": [
+          "Brigade cornerstone utopia",
+          "Brigade utopia",
+          "Brigade eldorado",
+          "Brigade tech garden",
+          "Brigade metropolis",
+          "Brigade eternia",
+          "Brigade citadel",
+          "Brigade orchards",
+          "Brigade meadows",
+          "Brigade lakecrest",
+          "Brigade xanadu"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "high",
+        "opportunity_score": 65
+      },
+      {
+        "group_name": "Brigade Corporate & Employment",
+        "primary_keyword": "Brigade Group employee benefits",
+        "supporting_keywords": [
+          "Brigade reviews for employees",
+          "Brigade bangalore careers",
+          "Is Brigade an IT company",
+          "Brigade group reviews complaints",
+          "Which company has the best employee rating"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 62
+      }
+    ],
+    "summary": "Brigade real estate content strategy should prioritize high-opportunity transactional keywords (new launches, ready-to-move projects) and comparison content against Prestige/Sobha, while addressing credibility gaps around construction quality and company ownership. Location-based project pages and comprehensive reviews content offer strong differentiation opportunities with lower competition."
+  },
+  "cluster_plan": {
+    "cluster_id": "brigade-bangalore-real-estate",
+    "cluster_name": "Brigade Group Bangalore Real Estate Guide",
+    "total_articles": 12,
+    "articles": [
+      {
+        "id": "brigade-bangalore-complete-guide",
+        "title": "Brigade Group Bangalore: Complete Guide to Projects, Reviews & Investment Opportunities",
+        "slug": "brigade-bangalore-complete-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "Brigade Bangalore",
+          "secondary": [
+            "Brigade projects in Bangalore",
+            "Brigade Group Bangalore",
+            "Brigade new projects"
+          ]
+        },
+        "word_count_target": 3000,
+        "outline": [
+          "H2: What is Brigade Group? Company Overview and Leadership",
+          "  H3: Who is the owner of Brigade Group?",
+          "  H3: CEO and management team",
+          "  H3: What type of company is Brigade?",
+          "H2: Is Brigade a good builder in Bangalore?",
+          "  H3: Construction quality standards",
+          "  H3: Grade A builder credentials",
+          "  H3: Market reputation analysis",
+          "H2: Brigade Projects Across Bangalore Locations",
+          "  H3: North Bangalore developments",
+          "  H3: South Bangalore properties",
+          "  H3: Whitefield and East Bangalore projects",
+          "H2: Brigade New Launches and Upcoming Projects",
+          "  H3: Ready to move properties",
+          "  H3: Pre-launch opportunities",
+          "  H3: Ongoing construction updates",
+          "H2: Brigade vs Top Bangalore Builders Comparison",
+          "  H3: Brigade vs Prestige comparison",
+          "  H3: Brigade vs Sobha analysis",
+          "  H3: Tier 1 developer ranking",
+          "H2: Brigade Customer Reviews and Ratings Analysis",
+          "  H3: Google reviews summary",
+          "  H3: Customer satisfaction metrics",
+          "  H3: Common complaints and resolutions",
+          "H2: Investment Opportunities with Brigade Properties",
+          "  H3: Rental yields and ROI",
+          "  H3: Resale value appreciation",
+          "  H3: Market trends and forecasts"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "detailed analysis of Brigade's construction quality",
+            "context": "In the construction quality section when discussing builder credentials"
+          },
+          {
+            "target_slug": "brigade-vs-prestige-bangalore-comparison",
+            "anchor_text": "comprehensive Brigade vs Prestige comparison",
+            "context": "In the builder comparison section"
+          },
+          {
+            "target_slug": "brigade-new-launch-projects-bangalore",
+            "anchor_text": "latest Brigade new launch projects",
+            "context": "When discussing upcoming developments"
+          },
+          {
+            "target_slug": "brigade-whitefield-projects-guide",
+            "anchor_text": "Brigade Whitefield projects overview",
+            "context": "In the location-wise projects section"
+          },
+          {
+            "target_slug": "brigade-customer-reviews-bangalore",
+            "anchor_text": "detailed Brigade customer reviews analysis",
+            "context": "In the reviews and ratings section"
+          },
+          {
+            "target_slug": "brigade-rental-resale-bangalore",
+            "anchor_text": "Brigade rental and resale market insights",
+            "context": "In the investment opportunities section"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "This is the main hub article that should comprehensively cover all aspects of Brigade Group in Bangalore. Include recent project updates and market data.",
+        "db_id": "art-c8e40cd6-ebb"
+      },
+      {
+        "id": "is-brigade-good-builder-bangalore",
+        "title": "Is Brigade a Good Builder in Bangalore? Construction Quality & Credibility Analysis",
+        "slug": "is-brigade-good-builder-bangalore",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "Is Brigade a good builder",
+          "secondary": [
+            "Brigade construction quality",
+            "Is brigade a grade builder",
+            "Brigade company credibility"
+          ]
+        },
+        "word_count_target": 2500,
+        "outline": [
+          "H2: Is Brigade a good company for real estate investment?",
+          "  H3: Company financial stability",
+          "  H3: Market presence and experience",
+          "  H3: Awards and recognitions",
+          "H2: Brigade construction quality assessment",
+          "  H3: Materials and specifications used",
+          "  H3: Quality control processes",
+          "  H3: Structural engineering standards",
+          "H2: Is Brigade a grade A builder in Bangalore?",
+          "  H3: CREDAI membership and certifications",
+          "  H3: Regulatory compliance record",
+          "  H3: Industry rankings and ratings",
+          "H2: Who is the owner of Brigade Group?",
+          "  H3: Founding family and leadership",
+          "  H3: Management team credentials",
+          "  H3: Corporate governance structure",
+          "H2: Brigade delivery track record",
+          "  H3: On-time project completion rates",
+          "  H3: Post-delivery support quality",
+          "  H3: Warranty and maintenance services",
+          "H2: Customer satisfaction metrics",
+          "  H3: Homeowner feedback analysis",
+          "  H3: Complaint resolution efficiency",
+          "  H3: Long-term resident satisfaction"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "complete Brigade Bangalore guide",
+            "context": "In the introduction when providing overview context"
+          },
+          {
+            "target_slug": "brigade-customer-reviews-bangalore",
+            "anchor_text": "Brigade customer reviews and complaints",
+            "context": "In the customer satisfaction section"
+          },
+          {
+            "target_slug": "brigade-vs-prestige-bangalore-comparison",
+            "anchor_text": "how Brigade compares to Prestige",
+            "context": "When discussing grade A builder status"
+          },
+          {
+            "target_slug": "brigade-new-launch-projects-bangalore",
+            "anchor_text": "Brigade's latest projects",
+            "context": "In the delivery track record section"
+          },
+          {
+            "target_slug": "top-builders-bangalore-comparison",
+            "anchor_text": "top builders in Bangalore ranking",
+            "context": "When discussing industry position"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Focus on objective analysis with data-backed insights. Include specific examples of construction quality and delivery performance.",
+        "db_id": "art-d27d2b01-88d"
+      },
+      {
+        "id": "brigade-vs-prestige-bangalore-comparison",
+        "title": "Brigade vs Prestige Bangalore: Which Builder is Better for Your Investment?",
+        "slug": "brigade-vs-prestige-bangalore-comparison",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Brigade vs Prestige",
+          "secondary": [
+            "Is brigade better than prestige",
+            "Brigade vs Prestige comparison",
+            "best builders Bangalore"
+          ]
+        },
+        "word_count_target": 2000,
+        "outline": [
+          "H2: Is Brigade better than Prestige in Bangalore?",
+          "  H3: Market reputation comparison",
+          "  H3: Project portfolio analysis",
+          "  H3: Customer satisfaction scores",
+          "H2: Construction quality: Brigade vs Prestige",
+          "  H3: Materials and specifications",
+          "  H3: Finishing standards",
+          "  H3: Structural integrity comparison",
+          "H2: Pricing comparison: Brigade vs Prestige properties",
+          "  H3: Per sq ft rates analysis",
+          "  H3: Value for money assessment",
+          "  H3: Hidden costs comparison",
+          "H2: Location presence: Where each builder excels",
+          "  H3: Brigade's strong locations",
+          "  H3: Prestige's prime areas",
+          "  H3: Connectivity and infrastructure",
+          "H2: Delivery timeline comparison",
+          "  H3: On-time completion rates",
+          "  H3: Project delay analysis",
+          "  H3: Possession experience",
+          "H2: Investment potential: Brigade vs Prestige",
+          "  H3: Rental yields comparison",
+          "  H3: Resale value appreciation",
+          "  H3: Market demand analysis"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "comprehensive Brigade overview",
+            "context": "In the introduction when setting up the comparison"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade's construction quality credentials",
+            "context": "In the construction quality section"
+          },
+          {
+            "target_slug": "top-builders-bangalore-comparison",
+            "anchor_text": "top builders in Bangalore",
+            "context": "When discussing market positioning"
+          },
+          {
+            "target_slug": "brigade-customer-reviews-bangalore",
+            "anchor_text": "Brigade customer feedback",
+            "context": "In the customer satisfaction comparison"
+          },
+          {
+            "target_slug": "brigade-rental-resale-bangalore",
+            "anchor_text": "Brigade rental market performance",
+            "context": "In the investment potential section"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Maintain objectivity while highlighting unique strengths of each builder. Include specific project examples and market data.",
+        "db_id": "art-1c6ad0c6-f13"
+      },
+      {
+        "id": "brigade-new-launch-projects-bangalore",
+        "title": "Brigade New Launch Projects in Bangalore: Latest Developments & Pre-Launch Opportunities",
+        "slug": "brigade-new-launch-projects-bangalore",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Brigade new launch",
+          "secondary": [
+            "Brigade new projects in Bangalore",
+            "Brigade pre launch",
+            "upcoming Brigade projects"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: What are the latest Brigade new launch projects?",
+          "  H3: Recently launched developments",
+          "  H3: Project specifications and features",
+          "  H3: Pricing and payment plans",
+          "H2: Brigade pre-launch opportunities in Bangalore",
+          "  H3: Upcoming project pipeline",
+          "  H3: Early bird offers and discounts",
+          "  H3: Investment advantages of pre-launch",
+          "H2: Brigade ready to move projects",
+          "  H3: Immediate possession properties",
+          "  H3: Move-in ready amenities",
+          "  H3: Rental income potential",
+          "H2: Location-wise new Brigade projects",
+          "  H3: North Bangalore new launches",
+          "  H3: South Bangalore developments",
+          "  H3: Whitefield and East Bangalore projects",
+          "H2: Brigade ongoing projects status update",
+          "  H3: Construction progress tracking",
+          "  H3: Expected completion timelines",
+          "  H3: Booking availability status",
+          "H2: How to book Brigade new launch projects",
+          "  H3: Booking process and documentation",
+          "  H3: Home loan assistance",
+          "  H3: Registration and legal formalities"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "Brigade Group overview",
+            "context": "In the introduction when providing company context"
+          },
+          {
+            "target_slug": "brigade-whitefield-projects-guide",
+            "anchor_text": "Brigade Whitefield projects",
+            "context": "In the location-wise projects section"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade's construction quality",
+            "context": "When discussing project specifications"
+          },
+          {
+            "target_slug": "brigade-rental-resale-bangalore",
+            "anchor_text": "Brigade rental yields",
+            "context": "In the ready to move section"
+          },
+          {
+            "target_slug": "brigade-customer-reviews-bangalore",
+            "anchor_text": "Brigade delivery experience",
+            "context": "In the booking process section"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Keep project information current and include specific launch dates, pricing, and availability. Add contact information for inquiries.",
+        "db_id": "art-1bbb2f43-81c"
+      },
+      {
+        "id": "brigade-whitefield-projects-guide",
+        "title": "Brigade Whitefield Projects: Complete Guide to Developments in East Bangalore",
+        "slug": "brigade-whitefield-projects-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Brigade Whitefield",
+          "secondary": [
+            "Brigade new projects in Whitefield",
+            "Brigade Bangalore Whitefield",
+            "Brigade Whitefield developments"
+          ]
+        },
+        "word_count_target": 1700,
+        "outline": [
+          "H2: Why choose Brigade projects in Whitefield?",
+          "  H3: Whitefield location advantages",
+          "  H3: IT corridor connectivity",
+          "  H3: Infrastructure development",
+          "H2: Major Brigade projects in Whitefield",
+          "  H3: Brigade Cornerstone Utopia overview",
+          "  H3: Brigade Tech Garden details",
+          "  H3: Brigade Metropolis features",
+          "H2: What is the new project in Brigade Whitefield?",
+          "  H3: Latest launches and announcements",
+          "  H3: Upcoming developments pipeline",
+          "  H3: Pre-launch opportunities",
+          "H2: Brigade Whitefield project amenities",
+          "  H3: Recreational facilities",
+          "  H3: Security and safety features",
+          "  H3: Connectivity and transportation",
+          "H2: Pricing and investment analysis",
+          "  H3: Current market rates",
+          "  H3: Price appreciation trends",
+          "  H3: ROI and rental yields",
+          "H2: How to reach Brigade Whitefield projects",
+          "  H3: Public transportation options",
+          "  H3: Major landmarks and distances",
+          "  H3: Connectivity to other Bangalore areas"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "Brigade Group projects overview",
+            "context": "In the introduction when providing company background"
+          },
+          {
+            "target_slug": "brigade-new-launch-projects-bangalore",
+            "anchor_text": "Brigade's latest launches",
+            "context": "In the new projects section"
+          },
+          {
+            "target_slug": "brigade-specific-projects-bangalore",
+            "anchor_text": "detailed Brigade project reviews",
+            "context": "When discussing major projects"
+          },
+          {
+            "target_slug": "brigade-rental-resale-bangalore",
+            "anchor_text": "Brigade Whitefield rental market",
+            "context": "In the investment analysis section"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade construction standards",
+            "context": "When discussing project quality"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Focus on Whitefield-specific advantages and include detailed project information with current pricing and availability.",
+        "db_id": "art-1934ea5b-15e"
+      },
+      {
+        "id": "brigade-customer-reviews-bangalore",
+        "title": "Brigade Reviews Bangalore: Customer Feedback, Complaints & Satisfaction Analysis",
+        "slug": "brigade-customer-reviews-bangalore",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Brigade reviews",
+          "secondary": [
+            "Brigade customer reviews",
+            "Brigade reviews bangalore",
+            "Brigade reviews complaints"
+          ]
+        },
+        "word_count_target": 1900,
+        "outline": [
+          "H2: What do Brigade customers say about their experience?",
+          "  H3: Overall satisfaction ratings",
+          "  H3: Positive feedback highlights",
+          "  H3: Common appreciation points",
+          "H2: Brigade Group Google reviews analysis",
+          "  H3: Rating trends and patterns",
+          "  H3: Review volume and authenticity",
+          "  H3: Response rate to customer feedback",
+          "H2: Brigade reviews complaints and issues",
+          "  H3: Most common complaints",
+          "  H3: Delivery and possession issues",
+          "  H3: Quality and maintenance concerns",
+          "H2: Brigade customer service review",
+          "  H3: Support team responsiveness",
+          "  H3: Complaint resolution process",
+          "  H3: After-sales service quality",
+          "H2: Brigade reviews on Reddit and forums",
+          "  H3: Community discussions analysis",
+          "  H3: Unbiased user experiences",
+          "  H3: Investment advice from residents",
+          "H2: How Brigade addresses customer concerns",
+          "  H3: Improvement initiatives",
+          "  H3: Quality enhancement measures",
+          "  H3: Customer feedback integration"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "Brigade Group overview",
+            "context": "In the introduction when providing company context"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade construction quality analysis",
+            "context": "When discussing quality-related feedback"
+          },
+          {
+            "target_slug": "brigade-vs-prestige-bangalore-comparison",
+            "anchor_text": "Brigade vs competitors comparison",
+            "context": "In the satisfaction analysis section"
+          },
+          {
+            "target_slug": "brigade-new-launch-projects-bangalore",
+            "anchor_text": "Brigade's latest projects",
+            "context": "When discussing recent delivery experiences"
+          },
+          {
+            "target_slug": "brigade-contact-bangalore",
+            "anchor_text": "Brigade customer service contacts",
+            "context": "In the customer service section"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Present balanced view with both positive and negative feedback. Include specific examples and resolution stories where possible.",
+        "db_id": "art-d0a7d8f3-471"
+      },
+      {
+        "id": "top-builders-bangalore-comparison",
+        "title": "Top 5 Builders in Bangalore: Tier 1 Developers Ranking & Comparison Guide",
+        "slug": "top-builders-bangalore-comparison",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "top 5 builders in Bangalore",
+          "secondary": [
+            "tier 1 developers in Bangalore",
+            "best builders in Bangalore",
+            "Brigade vs Sobha"
+          ]
+        },
+        "word_count_target": 2100,
+        "outline": [
+          "H2: Who are the top 5 builders in Bangalore?",
+          "  H3: Tier 1 developer criteria",
+          "  H3: Market share and presence",
+          "  H3: Quality and reputation ranking",
+          "H2: Brigade vs Sobha: Which is the better choice?",
+          "  H3: Construction quality comparison",
+          "  H3: Project portfolio analysis",
+          "  H3: Customer satisfaction metrics",
+          "H2: Is Sobha better than Prestige in Bangalore?",
+          "  H3: Premium segment positioning",
+          "  H3: Luxury amenities comparison",
+          "  H3: Investment returns analysis",
+          "H2: Which is better Sobha or Prestige for investment?",
+          "  H3: Rental yield comparison",
+          "  H3: Resale value appreciation",
+          "  H3: Market demand trends",
+          "H2: Tier 1 developers in Bangalore ranking criteria",
+          "  H3: Financial stability assessment",
+          "  H3: Delivery track record",
+          "  H3: Innovation and sustainability",
+          "H2: How to choose the right builder in Bangalore",
+          "  H3: Key evaluation parameters",
+          "  H3: Due diligence checklist",
+          "  H3: Red flags to avoid"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-vs-prestige-bangalore-comparison",
+            "anchor_text": "detailed Brigade vs Prestige comparison",
+            "context": "When discussing specific builder comparisons"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade's tier 1 credentials",
+            "context": "In the ranking criteria section"
+          },
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "Brigade Group detailed analysis",
+            "context": "When discussing Brigade in the top builders list"
+          },
+          {
+            "target_slug": "brigade-customer-reviews-bangalore",
+            "anchor_text": "Brigade customer satisfaction data",
+            "context": "In the quality and reputation section"
+          },
+          {
+            "target_slug": "brigade-rental-resale-bangalore",
+            "anchor_text": "Brigade investment performance",
+            "context": "In the investment comparison section"
+          }
+        ],
+        "faq_count": 7,
+        "notes": "Maintain objectivity while positioning Brigade appropriately among top builders. Include market data and specific metrics for comparisons.",
+        "db_id": "art-be1095d6-1ff"
+      },
+      {
+        "id": "brigade-rental-resale-bangalore",
+        "title": "Brigade Bangalore Rent & Resale: Investment Returns, Rental Yields & Market Analysis",
+        "slug": "brigade-rental-resale-bangalore",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Brigade Bangalore rent",
+          "secondary": [
+            "Brigade apartments for rent",
+            "Brigade resale properties",
+            "Brigade rental market"
+          ]
+        },
+        "word_count_target": 1600,
+        "outline": [
+          "H2: Brigade apartments for rent in Bangalore",
+          "  H3: Current rental rates by location",
+          "  H3: Popular Brigade projects for tenants",
+          "  H3: Rental demand trends",
+          "H2: Brigade rental yields and ROI analysis",
+          "  H3: Average rental yields by project",
+          "  H3: Comparison with market averages",
+          "  H3: Factors affecting rental income",
+          "H2: Brigade resale properties market",
+          "  H3: Resale value appreciation trends",
+          "  H3: Best performing Brigade projects",
+          "  H3: Resale vs new purchase analysis",
+          "H2: Brigade apartments near me for investment",
+          "  H3: Location-wise investment potential",
+          "  H3: Connectivity and infrastructure impact",
+          "  H3: Future development prospects",
+          "H2: Brigade rental market Bangalore outlook",
+          "  H3: Market demand drivers",
+          "  H3: Tenant preferences and trends",
+          "  H3: Future rental growth projections",
+          "H2: How to invest in Brigade properties",
+          "  H3: New vs resale investment strategy",
+          "  H3: Financing options and EMI planning",
+          "  H3: Legal and documentation process"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "Brigade projects overview",
+            "context": "In the introduction when discussing investment options"
+          },
+          {
+            "target_slug": "brigade-whitefield-projects-guide",
+            "anchor_text": "Brigade Whitefield rental market",
+            "context": "In the location-wise analysis section"
+          },
+          {
+            "target_slug": "brigade-new-launch-projects-bangalore",
+            "anchor_text": "Brigade new projects for investment",
+            "context": "In the investment strategy section"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade construction quality impact on resale",
+            "context": "In the resale value section"
+          },
+          {
+            "target_slug": "brigade-contact-bangalore",
+            "anchor_text": "Brigade sales team contact",
+            "context": "In the investment process section"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Include current market data, rental rates, and specific ROI calculations. Add location-wise breakdown of rental and resale performance.",
+        "db_id": "art-f1bfd4c3-2f3"
+      },
+      {
+        "id": "brigade-specific-projects-bangalore",
+        "title": "Brigade Specific Projects Bangalore: Utopia, Eldorado, Metropolis & More Detailed Reviews",
+        "slug": "brigade-specific-projects-bangalore",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Brigade cornerstone utopia",
+          "secondary": [
+            "Brigade utopia",
+            "Brigade eldorado",
+            "Brigade metropolis",
+            "Brigade tech garden"
+          ]
+        },
+        "word_count_target": 1400,
+        "outline": [
+          "H2: Brigade Cornerstone Utopia project overview",
+          "  H3: Location and connectivity",
+          "  H3: Apartment configurations and pricing",
+          "  H3: Amenities and facilities",
+          "H2: Brigade Eldorado Bangalore details",
+          "  H3: Project specifications",
+          "  H3: Current availability and pricing",
+          "  H3: Resident reviews and feedback",
+          "H2: Brigade Metropolis features and amenities",
+          "  H3: Luxury amenities overview",
+          "  H3: Security and safety features",
+          "  H3: Investment potential analysis",
+          "H2: Brigade Tech Garden commercial project",
+          "  H3: Office space specifications",
+          "  H3: Tenant profile and occupancy",
+          "  H3: Investment opportunities",
+          "H2: Other notable Brigade projects",
+          "  H3: Brigade Eternia highlights",
+          "  H3: Brigade Citadel overview",
+          "  H3: Brigade Orchards and Meadows",
+          "H2: How to choose the right Brigade project",
+          "  H3: Budget and requirement matching",
+          "  H3: Location preference analysis",
+          "  H3: Amenities and lifestyle fit"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-whitefield-projects-guide",
+            "anchor_text": "Brigade Whitefield projects overview",
+            "context": "When discussing Whitefield-based projects"
+          },
+          {
+            "target_slug": "brigade-new-launch-projects-bangalore",
+            "anchor_text": "Brigade latest launches",
+            "context": "In the project availability section"
+          },
+          {
+            "target_slug": "brigade-customer-reviews-bangalore",
+            "anchor_text": "Brigade project reviews",
+            "context": "When discussing resident feedback"
+          },
+          {
+            "target_slug": "brigade-rental-resale-bangalore",
+            "anchor_text": "Brigade investment returns",
+            "context": "In the investment analysis sections"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Focus on specific project details, current pricing, and availability. Include high-quality project images and detailed amenity lists.",
+        "db_id": "art-b090f994-02d"
+      },
+      {
+        "id": "brigade-contact-bangalore",
+        "title": "Brigade Bangalore Contact Details: Office Address, Phone Numbers & Customer Service",
+        "slug": "brigade-contact-bangalore",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Brigade bangalore contact number",
+          "secondary": [
+            "Brigade bangalore address",
+            "Brigade bangalore office",
+            "Brigade customer service"
+          ]
+        },
+        "word_count_target": 1200,
+        "outline": [
+          "H2: Brigade Bangalore office address and location",
+          "  H3: Head office details",
+          "  H3: Regional office locations",
+          "  H3: Sales office addresses",
+          "H2: Brigade bangalore contact number directory",
+          "  H3: Customer service helpline",
+          "  H3: Sales inquiry numbers",
+          "  H3: Project-specific contacts",
+          "H2: What days do Brigade Group work?",
+          "  H3: Office working hours",
+          "  H3: Customer service availability",
+          "  H3: Holiday schedule and timings",
+          "H2: Brigade road Bangalore information",
+          "  H3: What is Brigade Road famous for?",
+          "  H3: Shopping and commercial significance",
+          "  H3: Connectivity and accessibility",
+          "H2: How to reach Brigade offices",
+          "  H3: Public transportation options",
+          "  H3: Parking facilities",
+          "  H3: Nearby landmarks and directions",
+          "H2: Brigade customer support channels",
+          "  H3: Email support contacts",
+          "  H3: Online inquiry forms",
+          "  H3: Social media channels"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "Brigade Group overview",
+            "context": "In the introduction when providing company background"
+          },
+          {
+            "target_slug": "brigade-customer-reviews-bangalore",
+            "anchor_text": "Brigade customer service reviews",
+            "context": "In the customer support section"
+          },
+          {
+            "target_slug": "brigade-new-launch-projects-bangalore",
+            "anchor_text": "Brigade project inquiries",
+            "context": "When providing sales contact information"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade company information",
+            "context": "In the office details section"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Ensure all contact information is current and accurate. Include multiple contact methods and response time expectations.",
+        "db_id": "art-27ef08b5-a8e"
+      },
+      {
+        "id": "brigade-employee-reviews-bangalore",
+        "title": "Brigade Group Employee Reviews: Work Culture, Benefits & Career Opportunities in Bangalore",
+        "slug": "brigade-employee-reviews-bangalore",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Brigade Group employee benefits",
+          "secondary": [
+            "Brigade reviews for employees",
+            "Brigade bangalore careers",
+            "Brigade work culture"
+          ]
+        },
+        "word_count_target": 1300,
+        "outline": [
+          "H2: Is Brigade an IT company or real estate developer?",
+          "  H3: Business verticals overview",
+          "  H3: Core competencies and focus areas",
+          "  H3: Career opportunities across divisions",
+          "H2: Brigade Group employee benefits package",
+          "  H3: Salary and compensation structure",
+          "  H3: Health and wellness benefits",
+          "  H3: Professional development opportunities",
+          "H2: Brigade reviews for employees and work culture",
+          "  H3: Employee satisfaction ratings",
+          "  H3: Work-life balance assessment",
+          "  H3: Management and leadership feedback",
+          "H2: Brigade bangalore careers and job opportunities",
+          "  H3: Current job openings",
+          "  H3: Hiring process and requirements",
+          "  H3: Growth and promotion prospects",
+          "H2: Brigade group reviews complaints from employees",
+          "  H3: Common workplace concerns",
+          "  H3: HR policies and practices",
+          "  H3: Employee retention rates",
+          "H2: Which company has the best employee rating in real estate?",
+          "  H3: Industry comparison analysis",
+          "  H3: Brigade's position among competitors",
+          "  H3: Employee satisfaction benchmarks"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "Brigade Group company overview",
+            "context": "When discussing company structure and business"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade company leadership",
+            "context": "In the management feedback section"
+          },
+          {
+            "target_slug": "brigade-contact-bangalore",
+            "anchor_text": "Brigade HR contact details",
+            "context": "In the careers section"
+          },
+          {
+            "target_slug": "top-builders-bangalore-comparison",
+            "anchor_text": "top real estate companies comparison",
+            "context": "In the industry comparison section"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Focus on employee perspective while maintaining professional tone. Include career guidance and application process information.",
+        "db_id": "art-a2c00159-4d7"
+      },
+      {
+        "id": "brigade-bangalore-faq",
+        "title": "Brigade Bangalore FAQ: Complete Answers to Common Questions About Projects & Services",
+        "slug": "brigade-bangalore-faq",
+        "type": "faq",
+        "target_keywords": {
+          "primary": "Brigade Bangalore FAQ",
+          "secondary": [
+            "Brigade questions",
+            "Brigade information",
+            "Brigade help"
+          ]
+        },
+        "word_count_target": 1500,
+        "outline": [
+          "H2: Frequently Asked Questions About Brigade Group",
+          "H2: Brigade Company and Credibility Questions",
+          "  H3: Is Brigade a good builder in Bangalore?",
+          "  H3: Who is the owner of Brigade Group?",
+          "  H3: What type of company is Brigade?",
+          "H2: Brigade Projects and Locations FAQ",
+          "  H3: What are Brigade's major projects in Bangalore?",
+          "  H3: Which Brigade projects are ready to move?",
+          "  H3: What is the new project in Brigade Whitefield?",
+          "H2: Brigade Pricing and Investment Questions",
+          "  H3: What are Brigade apartment prices in Bangalore?",
+          "  H3: How is Brigade's rental yield compared to others?",
+          "  H3: Are Brigade properties good for investment?",
+          "H2: Brigade Customer Service and Contact FAQ",
+          "  H3: What is Brigade Bangalore contact number?",
+          "  H3: What days do Brigade Group work?",
+          "  H3: How to book a Brigade apartment?",
+          "H2: Brigade vs Competitors FAQ",
+          "  H3: Is Brigade better than Prestige?",
+          "  H3: How does Brigade compare to Sobha?",
+          "  H3: Is Brigade a tier 1 developer?",
+          "H2: Brigade Reviews and Customer Experience FAQ",
+          "  H3: What do customers say about Brigade?",
+          "  H3: How is Brigade's after-sales service?",
+          "  H3: What are common complaints about Brigade?"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "brigade-bangalore-complete-guide",
+            "anchor_text": "comprehensive Brigade guide",
+            "context": "In the introduction as main reference"
+          },
+          {
+            "target_slug": "is-brigade-good-builder-bangalore",
+            "anchor_text": "Brigade credibility analysis",
+            "context": "For company credibility questions"
+          },
+          {
+            "target_slug": "brigade-vs-prestige-bangalore-comparison",
+            "anchor_text": "Brigade vs Prestige detailed comparison",
+            "context": "For competitor comparison questions"
+          },
+          {
+            "target_slug": "brigade-new-launch-projects-bangalore",
+            "anchor_text": "Brigade latest projects",
+            "context": "For project-related questions"
+          },
+          {
+            "target_slug": "brigade-customer-reviews-bangalore",
+            "anchor_text": "Brigade customer reviews",
+            "context": "For customer experience questions"
+          },
+          {
+            "target_slug": "brigade-contact-bangalore",
+            "anchor_text": "Brigade contact information",
+            "context": "For contact and service questions"
+          }
+        ],
+        "faq_count": 25,
+        "notes": "Comprehensive FAQ covering all major topics from the cluster. Provide concise but complete answers with links to detailed articles.",
+        "db_id": "art-4bd836ca-8dc"
+      }
+    ],
+    "linking_matrix": {
+      "brigade-bangalore-complete-guide": [
+        "is-brigade-good-builder-bangalore",
+        "brigade-vs-prestige-bangalore-comparison",
+        "brigade-new-launch-projects-bangalore",
+        "brigade-whitefield-projects-guide",
+        "brigade-customer-reviews-bangalore",
+        "brigade-rental-resale-bangalore"
+      ],
+      "is-brigade-good-builder-bangalore": [
+        "brigade-bangalore-complete-guide",
+        "brigade-customer-reviews-bangalore",
+        "brigade-vs-prestige-bangalore-comparison",
+        "brigade-new-launch-projects-bangalore",
+        "top-builders-bangalore-comparison"
+      ],
+      "brigade-vs-prestige-bangalore-comparison": [
+        "brigade-bangalore-complete-guide",
+        "is-brigade-good-builder-bangalore",
+        "top-builders-bangalore-comparison",
+        "brigade-customer-reviews-bangalore",
+        "brigade-rental-resale-bangalore"
+      ],
+      "brigade-new-launch-projects-bangalore": [
+        "brigade-bangalore-complete-guide",
+        "brigade-whitefield-projects-guide",
+        "is-brigade-good-builder-bangalore",
+        "brigade-rental-resale-bangalore",
+        "brigade-customer-reviews-bangalore"
+      ],
+      "brigade-whitefield-projects-guide": [
+        "brigade-bangalore-complete-guide",
+        "brigade-new-launch-projects-bangalore",
+        "brigade-specific-projects-bangalore",
+        "brigade-rental-resale-bangalore",
+        "is-brigade-good-builder-bangalore"
+      ],
+      "brigade-customer-reviews-bangalore": [
+        "brigade-bangalore-complete-guide",
+        "is-brigade-good-builder-bangalore",
+        "brigade-vs-prestige-bangalore-comparison",
+        "brigade-new-launch-projects-bangalore",
+        "brigade-contact-bangalore"
+      ],
+      "top-builders-bangalore-comparison": [
+        "brigade-vs-prestige-bangalore-comparison",
+        "is-brigade-good-builder-bangalore",
+        "brigade-bangalore-complete-guide",
+        "brigade-customer-reviews-bangalore",
+        "brigade-rental-resale-bangalore"
+      ],
+      "brigade-rental-resale-bangalore": [
+        "brigade-bangalore-complete-guide",
+        "brigade-whitefield-projects-guide",
+        "brigade-new-launch-projects-bangalore",
+        "is-brigade-good-builder-bangalore",
+        "brigade-contact-bangalore"
+      ],
+      "brigade-specific-projects-bangalore": [
+        "brigade-whitefield-projects-guide",
+        "brigade-new-launch-projects-bangalore",
+        "brigade-customer-reviews-bangalore",
+        "brigade-rental-resale-bangalore"
+      ],
+      "brigade-contact-bangalore": [
+        "brigade-bangalore-complete-guide",
+        "brigade-customer-reviews-bangalore",
+        "brigade-new-launch-projects-bangalore",
+        "is-brigade-good-builder-bangalore"
+      ],
+      "brigade-employee-reviews-bangalore": [
+        "brigade-bangalore-complete-guide",
+        "is-brigade-good-builder-bangalore",
+        "brigade-contact-bangalore",
+        "top-builders-bangalore-comparison"
+      ],
+      "brigade-bangalore-faq": [
+        "brigade-bangalore-complete-guide",
+        "is-brigade-good-builder-bangalore",
+        "brigade-vs-prestige-bangalore-comparison",
+        "brigade-new-launch-projects-bangalore",
+        "brigade-customer-reviews-bangalore",
+        "brigade-contact-bangalore"
+      ]
+    }
+  }
+}
