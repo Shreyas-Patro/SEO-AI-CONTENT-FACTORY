@@ -250,12 +250,15 @@ def node_rewriter(graph_state: Dict[str, Any]) -> Dict[str, Any]:
     readability = brand_output.get("readability", {}).get("flesch_kincaid", 60)
 
     agent = RewriterAgent(run_id, cluster_id=cluster_id, article_id=article_id)
+    brief = graph_state.get("rewrite_brief") or {}
     agent.run({
-        "article_id": article_id,
-        "fact_issues": fact_issues,
-        "brand_issues": brand_issues,
-        "readability_score": readability,
-    })
+    "article_id": article_id,
+    "rewrite_brief": brief,
+    # Keep these for backwards compat with existing rewriter agent code:
+    "fact_issues": brief.get("fact_issues", fact_issues),
+    "brand_issues": brief.get("brand_issues", brand_issues),
+    "readability_score": readability,
+})
     increment_run_counters(run_id, cost=agent.cost_usd, llm_calls=agent.llm_calls)
 
     iteration = graph_state.get("article_iteration", {}).get(article_id, 1)

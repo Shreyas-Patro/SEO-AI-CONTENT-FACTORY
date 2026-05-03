@@ -3,7 +3,7 @@ graph/pipeline.py — builds the LangGraph.
 """
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
-
+from graph.supervisor_node import node_supervisor
 from graph.state import PipelineGraphState
 from graph.nodes import (
     node_trend_scout, node_competitor_spy, node_keyword_mapper,
@@ -63,11 +63,14 @@ def build_layer3_graph():
     g.add_edge("layer3_init", "lead_writer")
     g.add_edge("lead_writer", "fact_verifier")
     g.add_edge("fact_verifier", "brand_auditor")
+   
+    g.add_node("supervisor", node_supervisor)
+    g.add_edge("brand_auditor", "supervisor")
     g.add_conditional_edges(
-        "brand_auditor",
-        supervisor_after_audit,
-        {"rewriter": "rewriter", "meta_tagger": "meta_tagger"},
-    )
+    "supervisor",
+    lambda s: "rewriter" if s.get("supervisor_decision") == "rewrite" else "meta_tagger",
+    {"rewriter": "rewriter", "meta_tagger": "meta_tagger"},
+)
     g.add_edge("rewriter", "fact_verifier")  # loop back through audit chain
     g.add_edge("meta_tagger", "advance_queue")
     g.add_conditional_edges(

@@ -49,7 +49,12 @@ class RewriterAgent(AgentBase):
         fact_issues = agent_input.get("fact_issues", []) or []
         brand_issues = agent_input.get("brand_issues", []) or []
         readability_score = agent_input.get("readability_score", 0)
-
+        brief = agent_input.get("rewrite_brief") or {}
+        priorities = brief.get("priorities", [])
+        priority_block = "\n".join(
+    f"- [{p['severity'].upper()}] {p['dimension']}: {p['instruction']}"
+    for p in priorities
+)
         if not fact_issues and not brand_issues:
             print(f"[rewriter] No issues — skipping")
             return {"article_id": article_id, "fixes_applied": 0, "skipped": True}
