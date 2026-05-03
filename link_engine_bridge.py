@@ -35,7 +35,7 @@ def _load_anthropic_key_from_config() -> Optional[str]:
         from config_loader import load_config
         cfg = load_config() or {}
         key = (cfg.get("anthropic") or {}).get("api_key")
-        if key and str(key).strip() and not str(key).startswith("..."):
+        if key and str(key).strip() and not str(key).startswith(("${", "...")):
             return str(key).strip()
     except Exception:
         pass
@@ -47,7 +47,7 @@ def _load_anthropic_key_from_config() -> Optional[str]:
             with open(CONFIG_PATH, "r", encoding="utf-8") as f:
                 cfg = yaml.safe_load(f) or {}
             key = (cfg.get("anthropic") or {}).get("api_key")
-            if key and str(key).strip() and not str(key).startswith("..."):
+            if key and str(key).strip() and not str(key).startswith(("${", "...")):
                 return str(key).strip()
     except Exception:
         pass
