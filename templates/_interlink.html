@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block body %}
+<div style="max-width:1200px;margin:24px auto;padding:0 16px">
+  <a href="/?run_id={{ run_id }}" style="color:#c8ff00;text-decoration:none;font-size:13px">← Back</a>
+  <h1>Interlinking</h1>
+
+  {% if not cluster_id %}
+    <p class="muted">Run Layer 2 first to create a cluster.</p>
+  {% else %}
+    <div style="display:flex;gap:8px;margin:16px 0">
+      <form method="post" action="/runs/{{ run_id }}/interlink/cluster">
+        <button type="submit" class="btn-primary"
+                {% if interlink_running %}disabled{% endif %}
+                style="padding:10px 18px;width:auto">
+          {% if interlink_running %}Running…{% else %}Run Cluster Pass{% endif %}
+        </button>
+      </form>
+      <form method="post" action="/runs/{{ run_id }}/interlink/inject">
+        <input type="hidden" name="dry_run" value="false">
+        <button type="submit" class="btn-good" style="padding:10px 18px;width:auto">
+          Inject Approved Links
+        </button>
+      </form>
+    </div>
+
+    <h3>Pending Review ({{ pending | length }})</h3>
+    {% if pending %}
+      <div>
+        {% for p in pending %}
+          {% if p.error %}
+            <div class="warn-box">Error: {{ p.error }}</div>
+          {% else %}
+          <details class="article-card">
+            <summary>
+              <strong>{{ p.source_title }}</strong> → <strong>{{ p.target_title }}</strong>
+              · sim={{ p.similarity }} · conf={{ p.confidence }}/5
+            </summary>
+            <div style="padding:12px 0">
+              <p>Anchor: <code>{{ p.anchor_text }}</code></p>
+              {% if p.reasoning %}<p class="muted" style="font-size:12px">{{ p.reasoning }}</p>{% endif %}
+              <div style="display:flex;gap:8px">
+                <button class="btn-good"
+                        onclick="approveAnchor('{{ p.anchor_id }}', this)">Approve</button>
+                <button class="btn-bad"
+                        onclick="rejectAnchor('{{ p.anchor_id }}', this)">Reject</button>
+              </div>
+            </div>
+          </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="muted">No pending anchors. Run cluster pass to generate candidates.</p>
+    {% endif %}
+  {% endif %}
+</div>
+
+<script>
+function approveAnchor(id, btn) {
+  fetch('/interlink/anchor/' + id + '/approve', { method: 'POST' })
+    .then(function () { btn.closest('details').style.opacity = '0.4'; btn.disabled = true; });
+}
+function rejectAnchor(id, btn) {
+  fetch('/interlink/anchor/' + id + '/reject', { method: 'POST' })
+    .then(function () { btn.closest('details').remove(); });
+}
+</script>
+{% endblock %}

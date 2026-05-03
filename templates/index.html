@@ -28,7 +28,9 @@
       <p>💰 ${{ "%.4f"|format(run.total_cost_usd or 0) }}</p>
       <p>🔍 {{ run.total_serp_calls or 0 }} SERP · 🤖 {{ run.total_llm_calls or 0 }} LLM</p>
     </div>
-
+    <form method="post" action="/logout" style="margin-top:12px">
+      <button type="submit" class="btn-small" style="width:100%">Sign out ({{ user.name }})</button>
+    </form>
     <form method="post" action="/runs/{{ run.id }}/reset_l3">
       <button type="submit" class="btn-warn">🔧 Reset to layer2_done</button>
     </form>
@@ -51,6 +53,11 @@
       <button class="tab active" data-tab="pipeline">Pipeline</button>
       <button class="tab" data-tab="articles">Articles</button>
       <button class="tab" data-tab="agent-detail">Agent Inspector</button>
+      <a href="/runs/{{ run_id }}/interlink"
+     class="tab"
+     style="text-decoration:none;display:inline-block">
+     Interlink
+  </a>
     </nav>
 
     <section class="tab-panel active" id="tab-pipeline">
@@ -62,12 +69,20 @@
       </div>
 
       <h3 class="section-h">📡 Live Console</h3>
-      <div id="live-log"
-           hx-get="/runs/{{ run_id }}/log"
-           hx-trigger="load, every 3s"
-           hx-swap="innerHTML">
-        {% include "_live_log.html" %}
-      </div>
+      <pre id="live-log" class="live-log" style="max-height:400px;overflow:auto"></pre>
+<script>
+(function () {
+  var pre = document.getElementById('live-log');
+  if (!pre) return;
+  var src = new EventSource('/runs/{{ run_id }}/log/stream');
+  src.onmessage = function (e) {
+    pre.textContent += e.data + '\n';
+    pre.scrollTop = pre.scrollHeight;
+  };
+  src.onerror = function () { /* browser will auto-reconnect */ };
+  window.addEventListener('beforeunload', function () { src.close(); });
+})();
+</script>
     </section>
 
     <section class="tab-panel" id="tab-articles">

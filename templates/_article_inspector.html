@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block body %}
+<div style="max-width:1100px;margin:24px auto;padding:0 16px">
+  <a href="/?run_id={{ run_id }}" style="color:#c8ff00;text-decoration:none;font-size:13px">← Back to pipeline</a>
+
+  <h1 style="margin:16px 0 4px">{{ article.title }}</h1>
+  <div class="header-meta">
+    <span>Type: <code>{{ article.article_type }}</code></span>
+    <span>Status: <code>{{ article.status }}</code></span>
+    <span>Words: <code>{{ article.word_count or 0 }}</code></span>
+    <span>Brand: <code>{{ "%.1f"|format(article.brand_tone_score or 0) }}/10</code></span>
+    <span>Fact: <code>{{ "%.2f"|format(article.fact_check_score or 0) }}</code></span>
+  </div>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="rendered">Rendered</button>
+    <button class="tab" data-tab="edit">Edit Markdown</button>
+    <button class="tab" data-tab="history">History</button>
+  </nav>
+
+  <section class="tab-panel active" id="tab-rendered">
+    <div id="rendered-md" style="background:#161624;padding:24px;border-radius:8px"></div>
+  </section>
+
+  <section class="tab-panel" id="tab-edit">
+    <form id="edit-form">
+      <textarea id="content-md" rows="40" style="font-family:ui-monospace,monospace">{{ article.content_md or '' }}</textarea>
+      <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+        <button type="submit" class="btn-primary" style="width:auto;padding:10px 24px">Save</button>
+        <span id="save-status" class="muted" style="font-size:12px"></span>
+      </div>
+    </form>
+  </section>
+
+  <section class="tab-panel" id="tab-history">
+    <div id="history-pane">{{ article.history or '[]' }}</div>
+  </section>
+</div>
+
+<!-- minimal markdown renderer (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+(function () {
+  function renderMarkdown() {
+    var src = document.getElementById('content-md').value;
+    document.getElementById('rendered-md').innerHTML = marked.parse(src);
+  }
+  renderMarkdown();
+  document.getElementById('content-md').addEventListener('input', function () {
+    // debounce render
+    clearTimeout(window._mdRender);
+    window._mdRender = setTimeout(renderMarkdown, 200);
+  });
+
+  document.querySelectorAll('.tab').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(function (t) { t.classList.remove('active'); });
+      document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
+      b.classList.add('active');
+      document.getElementById('tab-' + b.dataset.tab).classList.add('active');
+    });
+  });
+
+  document.getElementById('edit-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var status = document.getElementById('save-status');
+    status.textContent = 'Saving…';
+    var fd = new FormData();
+    fd.append('content_md', document.getElementById('content-md').value);
+    fetch('/articles/{{ article.id }}/edit', { method: 'POST', body: fd })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (j.ok) status.textContent = 'Saved · ' + j.word_count + ' words';
+        else status.textContent = 'Save failed';
+      });
+  });
+
+  // History parse
+  var raw = document.getElementById('history-pane').textContent;
+  try {
+    var hist = JSON.parse(raw);
+    var html = hist.reverse().map(function (h) {
+      return '<div style="padding:8px;border-bottom:1px solid #1a1a2e;font-size:13px">' +
+             '<code>' + h.stage + '</code> @ ' + h.timestamp.substring(0,19) +
+             ' — ' + (h.changes_summary || '') + '</div>';
+    }).join('');
+    document.getElementById('history-pane').innerHTML = html;
+  } catch (e) {}
+})();
+</script>
+{% endblock %}

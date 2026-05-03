@@ -30,7 +30,7 @@ from db.artifacts import (
     list_pipeline_runs, get_pipeline_run, list_artifacts,
     update_pipeline_run, load_state,
 )
-from db.sqlite_ops import get_articles_by_cluster, update_article, db_conn
+from db.sqlite_ops import add_article_history, get_articles_by_cluster, update_article, db_conn
 from orchestrator import (
     start_pipeline_run, run_layer1, run_layer2, run_layer3,
     approve_gate, reject_gate, rerun_agent,
@@ -432,7 +432,171 @@ async def log_stream(run_id: str, request: Request,
             await asyncio.sleep(1.5)
 
     return StreamingResponse(event_gen(), media_type="text/event-stream")
+@app.get("/runs/{run_id}/articles/{article_id}", response_class=HTMLResponse)
+async def article_inspector(request: Request, run_id: str, article_id: str,
+                            user: dict = Depends(require_user)):
+    from db.sqlite_ops import get_article
+    article = get_article(article_id)
+    if not article:
+        raise HTTPException(404, "Article not found")
+    return templates.TemplateResponse(request, "_article_inspector.html", {
+        "run_id": run_id,
+        "article": article,
+    })
+@app.post("/runs/{run_id}/interlink/cluster")
+async def run_cluster_interlink(
+    run_id: str,
+    user: dict = Depends(require_user),
+):
+    run = get_pipeline_run(run_id)
+    if not run or not run.get("cluster_id"):
+        raise HTTPException(400, "No cluster_id")
+    job_manager.submit(
+        f"{run_id}:interlink_cluster",
+        _run_cluster_pass,
+        run["cluster_id"], run_id,
+    )
+    return RedirectResponse(f"/runs/{run_id}/interlink", status_code=303)
 
+
+def _run_cluster_pass(cluster_id: str, run_id: str):
+    """Wraps link_engine_bridge.cluster_pass with logging."""
+    from link_engine_bridge import cluster_pass
+    print(f"[interlink] starting cluster pass for {cluster_id}")
+    result = cluster_pass(cluster_id, run_id)
+    print(f"[interlink] cluster pass done: {len(result.get('report', []))} candidates")
+
+
+@app.get("/runs/{run_id}/interlink", response_class=HTMLResponse)
+async def interlink_view(
+    request: Request,
+    run_id: str,
+    user: dict = Depends(require_user),
+):
+    run = get_pipeline_run(run_id)
+    cluster_id = run.get("cluster_id") if run else None
+
+    # Read the latest link_report.json if it exists
+    report_path = ROOT / "output" / "link_report.json"
+    candidates = []
+    if report_path.exists():
+        try:
+            candidates = json.loads(report_path.read_text())
+        except Exception:
+            pass
+
+    # Also pull pending anchors from link_engine.db so users can approve
+    pending = []
+    try:
+        from link_engine.db.session import get_session_factory
+        from link_engine.db.models import Anchor, Match
+        session = get_session_factory()()
+        try:
+            pending_anchors = (
+                session.query(Anchor)
+                .filter(Anchor.status == "pending_review")
+                .join(Anchor.match)
+                .order_by(Match.similarity_score.desc())
+                .limit(100)
+                .all()
+            )
+            for a in pending_anchors:
+                m = a.match
+                pending.append({
+                    "anchor_id": a.anchor_id,
+                    "anchor_text": a.edited_anchor or a.anchor_text or m.matched_phrase,
+                    "source_title": m.source_chunk.article.title,
+                    "target_title": m.target_chunk.article.title,
+                    "similarity": round(m.similarity_score, 3),
+                    "confidence": a.llm_confidence or 0,
+                    "reasoning": a.reasoning or "",
+                })
+        finally:
+            session.close()
+    except Exception as e:
+        pending = [{"error": str(e)}]
+
+    return templates.TemplateResponse(request, "_interlink.html", {
+        "run_id": run_id,
+        "cluster_id": cluster_id,
+        "candidates": candidates,
+        "pending": pending,
+        "interlink_running": job_manager.is_active(f"{run_id}:interlink_cluster")
+                             or job_manager.is_active(f"{run_id}:interlink_global"),
+    })
+
+
+@app.post("/interlink/anchor/{anchor_id}/approve")
+async def interlink_approve(anchor_id: str, user: dict = Depends(require_user)):
+    from link_engine.db.session import get_session_factory
+    from link_engine.db.models import Anchor
+    session = get_session_factory()()
+    try:
+        a = session.get(Anchor, anchor_id)
+        if a:
+            a.status = "approved"
+            session.commit()
+    finally:
+        session.close()
+    return JSONResponse({"ok": True})
+
+
+@app.post("/interlink/anchor/{anchor_id}/reject")
+async def interlink_reject(anchor_id: str, user: dict = Depends(require_user)):
+    from link_engine.db.session import get_session_factory
+    from link_engine.db.models import Anchor
+    session = get_session_factory()()
+    try:
+        a = session.get(Anchor, anchor_id)
+        if a:
+            a.status = "rejected"
+            session.commit()
+    finally:
+        session.close()
+    return JSONResponse({"ok": True})
+
+
+@app.post("/runs/{run_id}/interlink/inject")
+async def interlink_inject(
+    run_id: str,
+    dry_run: bool = Form(False),
+    user: dict = Depends(require_user),
+):
+    from link_engine.db.session import get_session_factory
+    from link_engine.db.models import Anchor, Run, Injection
+    from link_engine.stages.inject import inject_approved_links
+    session = get_session_factory()()
+    try:
+        approved = (
+            session.query(Anchor)
+            .filter(Anchor.status == "approved")
+            .filter(~Anchor.anchor_id.in_(session.query(Injection.anchor_id)))
+            .all()
+        )
+        run = Run(articles_processed=0)
+        session.add(run)
+        session.flush()
+        results = inject_approved_links(approved, session, run.run_id, dry_run=dry_run)
+        session.commit()
+    finally:
+        session.close()
+    return RedirectResponse(f"/runs/{run_id}/interlink?injected={results['injected']}",
+                            status_code=303)
+
+@app.post("/articles/{article_id}/edit")
+async def article_edit(
+    article_id: str,
+    content_md: str = Form(...),
+    user: dict = Depends(require_user),
+):
+    wc = len(content_md.split())
+    update_article(article_id, content_md=content_md, word_count=wc, status="edited")
+    add_article_history(
+        article_id, "human_edit",
+        f"Edited by {user['username']} ({wc} words)",
+        content_md[:500],
+    )
+    return JSONResponse({"ok": True, "word_count": wc})
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=False)
