@@ -190,9 +190,10 @@ CRITICAL RULES:
 Write the complete article now."""
 
         result = call_llm(
-            prompt, system=system, model_role="writer",
-            max_tokens=12000, temperature=0.3, use_cache=False,
-        )
+        prompt, system=system, model_role="writer",
+        max_tokens=12000, temperature=0.3, use_cache=False,
+        cache_system=True,  # brand_voice + writer prompt = ~5k tokens, cache it
+)
         self._track_llm(result)
         content = result["text"]
 

@@ -91,7 +91,7 @@ Return the COMPLETE revised article. Preserve all structure, links, citations, a
 
         result = call_llm(
             prompt, system=REWRITER_SYSTEM, model_role="writer",
-            max_tokens=12000, temperature=0.3, use_cache=False,
+            max_tokens=12000, temperature=0.3, use_cache=False, cache_system=True,
         )
         self._track_llm(result)
 

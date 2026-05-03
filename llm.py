@@ -29,13 +29,16 @@ PRICING = {
 
 def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
              temperature=0.3, use_cache=True, cache_ttl=7, prefill=None,
-             cache_namespace=""):
+             cache_namespace="", cache_system=False):
     """
-    Call Claude with automatic retries and cost tracking.
+    Call Claude with retries, cost tracking, local cache, AND server-side prompt caching.
 
     Args:
-        cache_namespace: Extra string mixed into the cache key. Pass topic name
-                         + agent_name to prevent cross-topic cache poisoning.
+        cache_namespace: mixed into local cache key to prevent cross-topic poisoning.
+        cache_system: when True, system prompt is sent as an Anthropic ephemeral
+                      cache block. Cached input is billed at 10% of base rate
+                      (5-min TTL, refreshes on each hit). Use for system prompts
+                      >1024 tokens that you reuse within ~5 minutes.
     """
     model = get_model(model_role)
 
@@ -52,7 +55,6 @@ def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
     for attempt in range(max_retries):
         try:
             messages = [{"role": "user", "content": prompt}]
-
             if prefill:
                 messages.append({"role": "assistant", "content": prefill})
 
@@ -63,7 +65,15 @@ def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
                 "temperature": temperature,
             }
             if system:
-                kwargs["system"] = system
+                if cache_system and len(system) > 1500:  # ~1024 token threshold
+                    # Send system as a list with a cache breakpoint
+                    kwargs["system"] = [{
+                        "type": "text",
+                        "text": system,
+                        "cache_control": {"type": "ephemeral"},
+                    }]
+                else:
+                    kwargs["system"] = system
 
             response = client.messages.create(**kwargs)
 
@@ -73,14 +83,23 @@ def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
 
             tokens_in  = response.usage.input_tokens
             tokens_out = response.usage.output_tokens
+            cache_read  = getattr(response.usage, "cache_read_input_tokens", 0) or 0
+            cache_write = getattr(response.usage, "cache_creation_input_tokens", 0) or 0
 
             pricing = PRICING.get(model, {"input": 3.0, "output": 15.0})
-            cost = (tokens_in * pricing["input"] + tokens_out * pricing["output"]) / 1_000_000
+            # Real billing: cache reads = 10% input, cache writes = 125% input
+            base_input_cost   = (tokens_in - cache_read - cache_write) * pricing["input"] / 1_000_000
+            cache_read_cost   = cache_read  * pricing["input"] * 0.10 / 1_000_000
+            cache_write_cost  = cache_write * pricing["input"] * 1.25 / 1_000_000
+            output_cost       = tokens_out  * pricing["output"] / 1_000_000
+            cost = base_input_cost + cache_read_cost + cache_write_cost + output_cost
 
             result = {
                 "text":       response_text,
                 "tokens_in":  tokens_in,
                 "tokens_out": tokens_out,
+                "cache_read_tokens":  cache_read,
+                "cache_write_tokens": cache_write,
                 "cost_usd":   round(cost, 6),
                 "model":      model,
                 "cached":     False,
@@ -88,7 +107,6 @@ def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
 
             if use_cache:
                 cache_set(cache_key, result, ttl_days=cache_ttl)
-
             return result
 
         except anthropic.RateLimitError:
@@ -104,7 +122,6 @@ def call_llm(prompt, system="", model_role="bulk", max_tokens=4096,
                 raise
 
     raise Exception(f"Failed after {max_retries} retries")
-
 
 def _strip_markdown_fences(text):
     cleaned = text.strip()
@@ -163,7 +180,7 @@ def _safe_json_parse(text):
 
 
 def call_llm_json(prompt, system="", model_role="bulk", max_tokens=4096, retries=2,
-                  cache_namespace=""):
+                  cache_namespace="", cache_system=False):
     """
     Call LLM and parse JSON response with automatic retry and fallback.
 

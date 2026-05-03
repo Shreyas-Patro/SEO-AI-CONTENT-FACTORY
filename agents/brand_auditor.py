@@ -195,7 +195,7 @@ Score all 5 dimensions and flag specific failing passages with suggested rewrite
 
         result = call_llm_json(
             prompt, system=llm_system, model_role="bulk", max_tokens=4096,
-            cache_namespace=f"{article_id}:brand_auditor"
+            cache_namespace=f"{article_id}:brand_auditor" , cache_system=True,
         )
         self._track_llm(result)
 
