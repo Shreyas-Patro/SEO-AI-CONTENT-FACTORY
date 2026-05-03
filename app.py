@@ -8,6 +8,7 @@ import json
 import os
 import sys
 import asyncio
+import threading
 import traceback as _tb_mod
 from pathlib import Path
 from typing import Optional
@@ -39,7 +40,8 @@ from orchestrator import (
 )
 
 from jobs import job_manager
-
+from scheduler import start_scheduler
+from db.sqlite_ops import enqueue_topic, list_topic_queue
 # ─── App setup ────────────────────────────────────────────────────────────
 
 app = FastAPI(title="Canvas Homes Pipeline")
@@ -597,6 +599,33 @@ async def article_edit(
         content_md[:500],
     )
     return JSONResponse({"ok": True, "word_count": wc})
+@app.get("/queue", response_class=HTMLResponse)
+async def queue_view(request: Request, user: dict = Depends(require_user)):
+    items = list_topic_queue(limit=100)
+    return templates.TemplateResponse(request, "_queue.html", {
+        "items": items,
+        "user": user,
+    })
+
+
+@app.post("/queue/add")
+async def queue_add(
+    topics: str = Form(...),
+    user: dict = Depends(require_user),
+):
+    """Accepts a textarea of newline-separated topics."""
+    added = 0
+    for t in topics.splitlines():
+        t = t.strip()
+        if t:
+            enqueue_topic(t, user["username"])
+            added += 1
+    return RedirectResponse(f"/queue?added={added}", status_code=303)
+
+@app.on_event("startup")
+def _startup():
+    threading.Thread(target=start_scheduler, daemon=True).start()
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=False)

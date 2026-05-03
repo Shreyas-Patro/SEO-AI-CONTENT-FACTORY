@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block body %}
+<div style="max-width:1100px;margin:24px auto;padding:0 16px">
+  <h1>Topic Queue</h1>
+  <p class="muted">Up to 3 topics run in parallel. Budget cap applies.</p>
+
+  <form method="post" action="/queue/add" style="margin:16px 0">
+    <textarea name="topics" rows="5" placeholder="One topic per line:&#10;HSR Layout&#10;Whitefield&#10;Indiranagar"
+              style="width:100%;font-family:inherit"></textarea>
+    <button type="submit" class="btn-primary" style="margin-top:8px;width:auto;padding:10px 24px">
+      Queue topics
+    </button>
+  </form>
+
+  <h2>Queue</h2>
+  <table style="width:100%;border-collapse:collapse;font-size:13px">
+    <thead><tr style="border-bottom:1px solid #1a1a2e">
+      <th style="text-align:left;padding:8px">Topic</th>
+      <th>Status</th>
+      <th>By</th>
+      <th>Cost</th>
+      <th>Run</th>
+    </tr></thead>
+    <tbody>
+      {% for it in items %}
+      <tr style="border-bottom:1px solid #1a1a2e">
+        <td style="padding:8px">{{ it.topic }}</td>
+        <td><span class="status status-{{ it.status }}">{{ it.status }}</span></td>
+        <td>{{ it.submitted_by }}</td>
+        <td>${{ "%.4f"|format(it.cost_usd or 0) }}</td>
+        <td>
+          {% if it.run_id %}
+          <a href="/?run_id={{ it.run_id }}" style="color:#c8ff00">open</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

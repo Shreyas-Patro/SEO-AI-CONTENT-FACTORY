@@ -4,8 +4,8 @@
 <div class="layout">
 
   <aside class="sidebar">
-    <h1>🏠 Canvas Homes</h1>
-    <p class="muted">Pipeline · v7</p>
+    <h1>🏠 IQOL TECHNOLOGIES</h1>
+    <p class="muted">AGENT SWARM· v7</p>
 
     <form method="post" action="/runs/new" class="new-run-form">
       <input type="text" name="topic" placeholder="Topic (e.g. HSR Layout)" required>
@@ -18,6 +18,11 @@
       {% include "_runs_list.html" %}
     </div>
 
+   <a href="/queue"
+   class="btn-small"
+   style="display:block;margin-top:8px;text-align:center;text-decoration:none">
+  📋 Topic Queue ({{ runs|length }})
+   </a> 
     {% if run %}
     <hr>
     <div class="run-summary">

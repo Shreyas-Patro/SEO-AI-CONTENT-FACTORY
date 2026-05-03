@@ -170,6 +170,20 @@ def init_db():
         CREATE INDEX IF NOT EXISTS idx_articles_status ON articles(status);
         CREATE INDEX IF NOT EXISTS idx_agent_runs_cluster ON agent_runs(cluster_id);
         CREATE INDEX IF NOT EXISTS idx_agent_runs_status ON agent_runs(status);
+        
+        CREATE TABLE IF NOT EXISTS topic_queue (
+            id TEXT PRIMARY KEY,
+            topic TEXT NOT NULL,
+            submitted_by TEXT,
+            submitted_at TEXT,
+            status TEXT DEFAULT 'queued',
+            run_id TEXT,
+            started_at TEXT,
+    completed_at TEXT,
+    cost_usd REAL DEFAULT 0
+);
+
+CREATE INDEX IF NOT EXISTS idx_topic_queue_status ON topic_queue(status);
         """)
         conn.commit()
     print(f"Database initialized at {DB_PATH}")
@@ -490,7 +504,33 @@ def cache_clear_for_topic(topic):
 
 
 # ─── STATS ────────────────────────────────────────────────────────────────
+# ─── TOPIC QUEUE ─────────────────────────────────────────────────────────
 
+def enqueue_topic(topic: str, submitted_by: str) -> str:
+    qid = f"qt-{_uuid()}"
+    with db_conn() as conn:
+        conn.execute("""
+            INSERT INTO topic_queue (id, topic, submitted_by, submitted_at, status)
+            VALUES (?, ?, ?, ?, 'queued')
+        """, (qid, topic, submitted_by, _now()))
+        conn.commit()
+    return qid
+
+
+def list_topic_queue(limit=50):
+    with db_conn() as conn:
+        rows = conn.execute(
+            "SELECT * FROM topic_queue ORDER BY submitted_at DESC LIMIT ?", (limit,)
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def update_topic_queue(qid, **kwargs):
+    sets = ", ".join(f"{k} = ?" for k in kwargs)
+    vals = list(kwargs.values()) + [qid]
+    with db_conn() as conn:
+        conn.execute(f"UPDATE topic_queue SET {sets} WHERE id = ?", vals)
+        conn.commit()
 def get_stats():
     with db_conn() as conn:
         stats = {
