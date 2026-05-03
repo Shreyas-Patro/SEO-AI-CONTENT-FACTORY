@@ -29,3 +29,4 @@ bcrypt==4.1.2
 redis==5.0.1
 rq==1.16.1
 torch>=2.2.0
+itsdangerous==2.2.0

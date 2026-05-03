@@ -11,12 +11,17 @@ import asyncio
 import traceback as _tb_mod
 from pathlib import Path
 from typing import Optional
-
+from fastapi import Depends
 from fastapi import FastAPI, Request, Form, HTTPException
 from fastapi.responses import HTMLResponse, RedirectResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-
+from auth import (
+    login, make_session_cookie, current_user, require_user, require_admin,
+    SESSION_COOKIE, USERS,
+ )
+import asyncio
+from fastapi.responses import StreamingResponse
 ROOT = Path(__file__).parent
 os.chdir(ROOT)
 sys.path.insert(0, str(ROOT))
@@ -149,7 +154,23 @@ def _job_state_for_run(run_id: str) -> dict:
         },
     }
 
-
+def _layer3_summary(run_id: str) -> dict:
+    """Per-cluster Layer 3 stats: how many articles done, in flight, queued."""
+    run = get_pipeline_run(run_id)
+    cluster_id = run.get("cluster_id") if run else None
+    if not cluster_id:
+        return {"total": 0, "written": 0, "drafts": 0, "needs_review": 0}
+    arts = get_articles_by_cluster(cluster_id)
+    return {
+        "total":         len(arts),
+        "written":       sum(1 for a in arts if a.get("status") == "written"),
+        "drafts":        sum(1 for a in arts if a.get("status") == "draft"),
+        "needs_review":  sum(1 for a in arts if a.get("status") == "needs_human_review"),
+        "current_stages": {
+            a["title"]: a.get("current_stage", "?")
+            for a in arts if a.get("current_stage") not in ("planned", "meta_tagger")
+        },
+    }
 # ─── Pages ────────────────────────────────────────────────────────────────
 
 @app.get("/", response_class=HTMLResponse)
@@ -330,16 +351,87 @@ async def faq_delete(article_id: str, idx: int):
             conn.commit()
     return JSONResponse({"ok": True})
 
+@app.get("/login", response_class=HTMLResponse)
+async def login_page(request: Request, error: str = None):
+    if current_user(request):
+        return RedirectResponse("/", status_code=303)
+    return templates.TemplateResponse(request, "login.html", {"error": error})
 
+
+@app.post("/login")
+async def login_submit(
+    request: Request,
+    username: str = Form(...),
+    password: str = Form(...),
+):
+    user = login(username, password)
+    if not user:
+        return RedirectResponse("/login?error=invalid", status_code=303)
+    response = RedirectResponse("/", status_code=303)
+    response.set_cookie(
+        key=SESSION_COOKIE,
+        value=make_session_cookie(user),
+        httponly=True,
+        max_age=60 * 60 * 24 * 14,  # 14 days
+        samesite="lax",
+    )
+    return response
+
+
+@app.post("/logout")
+async def logout():
+    response = RedirectResponse("/login", status_code=303)
+    response.delete_cookie(SESSION_COOKIE)
+    return response
 # ─── Sidebar runs list ────────────────────────────────────────────────────
 
-@app.get("/runs/list", response_class=HTMLResponse)
-async def runs_list_partial(request: Request):
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request, run_id: Optional[str] = None,
+               user: dict = Depends(require_user)):
+    # ... existing body, but pass user into the template:
     runs = list_pipeline_runs(limit=20)
-    return templates.TemplateResponse(request, "_runs_list.html", {
+    if run_id is None and runs:
+        run_id = runs[0]["id"]
+    run = get_pipeline_run(run_id) if run_id else None
+    return templates.TemplateResponse(request, "index.html", {
         "runs": runs,
+        "run": run,
+        "run_id": run_id,
+        "agents": _agents_grouped(run_id) if run_id else [],
+        "job_state": _job_state_for_run(run_id) if run_id else {
+            "l1": False, "l2": False, "l3": False, "errors": {}
+        },
+        "user": user,                        # NEW
+        "is_admin": user["role"] == "admin", # NEW
     })
 
+@app.get("/runs/{run_id}/log/stream")
+async def log_stream(run_id: str, request: Request,
+                     user: dict = Depends(require_user)):
+    """Server-Sent Events stream of the live log file."""
+    log_file = ROOT / "runs" / run_id / "_live.log"
+
+    async def event_gen():
+        last_size = 0
+        while True:
+            if await request.is_disconnected():
+                break
+            try:
+                if log_file.exists():
+                    size = log_file.stat().st_size
+                    if size > last_size:
+                        with log_file.open("r", encoding="utf-8", errors="replace") as f:
+                            f.seek(last_size)
+                            new = f.read()
+                        last_size = size
+                        # SSE format: each line prefixed with "data: ", terminated by \n\n
+                        for line in new.splitlines():
+                            yield f"data: {line}\n\n"
+            except Exception as e:
+                yield f"data: [stream error] {e}\n\n"
+            await asyncio.sleep(1.5)
+
+    return StreamingResponse(event_gen(), media_type="text/event-stream")
 
 if __name__ == "__main__":
     import uvicorn
