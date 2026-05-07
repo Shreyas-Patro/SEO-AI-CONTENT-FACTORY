@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div style="max-width:380px;margin:80px auto;padding:32px;background:#0f0f1a;border:1px solid #1a1a2e;border-radius:12px">
+  <h1 style="margin:0 0 24px;font-size:22px">Canvas Homes</h1>
+  <p class="muted" style="font-size:13px">Sign in to continue.</p>
+  {% if error %}
+    <div style="background:#4a1a1a;color:#ff8888;padding:8px 12px;border-radius:6px;margin-bottom:16px;font-size:13px">
+      Invalid username or password.
+    </div>
+  {% endif %}
+  <form method="post" action="/login">
+    <label style="display:block;font-size:12px;color:#888;margin:12px 0 4px">Username</label>
+    <input name="username" type="text" autofocus required
+           style="width:100%;padding:10px;background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;color:#fff">
+    <label style="display:block;font-size:12px;color:#888;margin:12px 0 4px">Password</label>
+    <input name="password" type="password" required
+           style="width:100%;padding:10px;background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;color:#fff">
+    <button type="submit" class="btn-primary" style="margin-top:24px;width:100%">Sign In</button>
+  </form>
+</div>
+{% endblock %}

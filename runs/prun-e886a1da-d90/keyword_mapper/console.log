@@ -1,0 +1,8 @@
+[keyword_mapper] Mapping keywords for: sarjapur road
+  trend_data keys: ['topic', 'classification', 'raw_data', 'analysis', 'competitor_tracker', 'serp_calls_used', 'autocomplete_calls_used', 'cost_usd']
+  competitor_data keys: ['topic', 'competitor_coverage', 'raw_results', 'uncovered_queries', 'analysis', 'summary']
+  Payload contains: 25 PAA, 25 related, 20 autocomplete, 0 uncovered
+  Calling LLM (prompt: 11389 chars)
+  LLM: $0.0095 (3894→1586 tokens, model=claude-haiku-4-5-20251001)
+  Extracted 10 keyword groups
+  ✅ 10 clean keyword groups produced

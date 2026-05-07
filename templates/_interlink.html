@@ -1,68 +1,238 @@
-{% extends "base.html" %}
-{% block body %}
-<div style="max-width:1200px;margin:24px auto;padding:0 16px">
-  <a href="/?run_id={{ run_id }}" style="color:#c8ff00;text-decoration:none;font-size:13px">← Back</a>
-  <h1>Interlinking</h1>
+{# templates/_interlink.html — full Streamlit-parity interlink dashboard #}
+<div style="max-width:1400px;margin:0 auto;padding:24px">
 
-  {% if not cluster_id %}
-    <p class="muted">Run Layer 2 first to create a cluster.</p>
-  {% else %}
-    <div style="display:flex;gap:8px;margin:16px 0">
-      <form method="post" action="/runs/{{ run_id }}/interlink/cluster">
-        <button type="submit" class="btn-primary"
-                {% if interlink_running %}disabled{% endif %}
-                style="padding:10px 18px;width:auto">
-          {% if interlink_running %}Running…{% else %}Run Cluster Pass{% endif %}
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+    <div>
+      <h2 style="margin:0">🔗 Interlinking</h2>
+      <div style="color:#888;font-size:13px;margin-top:4px">
+        Cluster: <code>{{ cluster_id or "—" }}</code>
+        &nbsp;|&nbsp; Run: <code>{{ run_id }}</code>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <form method="post" action="/runs/{{ run_id }}/interlink/cluster" style="display:inline">
+        <button type="submit" class="btn-primary" {% if interlink_running %}disabled{% endif %}>
+          {% if interlink_running %}Running...{% else %}Run Cluster Pass{% endif %}
         </button>
       </form>
-      <form method="post" action="/runs/{{ run_id }}/interlink/inject">
-        <input type="hidden" name="dry_run" value="false">
-        <button type="submit" class="btn-good" style="padding:10px 18px;width:auto">
-          Inject Approved Links
+      <form method="post" action="/runs/{{ run_id }}/interlink/global" style="display:inline">
+        <button type="submit" class="btn-small" {% if interlink_running %}disabled{% endif %}>
+          Run Global Pass
         </button>
+      </form>
+      <form method="post" action="/runs/{{ run_id }}/interlink/inject" style="display:inline">
+        <input type="hidden" name="dry_run" value="false">
+        <button type="submit" class="btn-small">Inject Approved →</button>
       </form>
     </div>
+  </div>
 
-    <h3>Pending Review ({{ pending | length }})</h3>
+  <!-- Counts -->
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:16px">
+    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
+      <div style="color:#888;font-size:11px">PENDING</div>
+      <div style="font-size:22px;font-weight:bold;color:#fa0">{{ pending|length }}</div>
+    </div>
+    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
+      <div style="color:#888;font-size:11px">APPROVED</div>
+      <div style="font-size:22px;font-weight:bold;color:#0f0">{{ approved|length }}</div>
+    </div>
+    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
+      <div style="color:#888;font-size:11px">INJECTED</div>
+      <div style="font-size:22px;font-weight:bold;color:#0af">{{ injected|length }}</div>
+    </div>
+    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
+      <div style="color:#888;font-size:11px">ARTICLES INDEXED</div>
+      <div style="font-size:22px;font-weight:bold">{{ articles|length }}</div>
+    </div>
+    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
+      <div style="color:#888;font-size:11px">ERRORS</div>
+      <div style="font-size:22px;font-weight:bold;color:{% if errors|length %}#f44{% else %}#666{% endif %}">{{ errors|length }}</div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div style="border-bottom:1px solid #333;margin-bottom:16px;display:flex;gap:0">
+    <button onclick="ilTab('pending')"   id="il-tab-pending"   class="il-tab il-tab-active">Pending Review ({{ pending|length }})</button>
+    <button onclick="ilTab('approved')"  id="il-tab-approved"  class="il-tab">Approved ({{ approved|length }})</button>
+    <button onclick="ilTab('injected')"  id="il-tab-injected"  class="il-tab">Injected ({{ injected|length }})</button>
+    <button onclick="ilTab('articles')"  id="il-tab-articles"  class="il-tab">All Articles ({{ articles|length }})</button>
+    <button onclick="ilTab('errors')"    id="il-tab-errors"    class="il-tab">Errors ({{ errors|length }})</button>
+  </div>
+
+  <!-- PENDING -->
+  <div id="il-pane-pending" class="il-pane">
     {% if pending %}
-      <div>
-        {% for p in pending %}
-          {% if p.error %}
-            <div class="warn-box">Error: {{ p.error }}</div>
-          {% else %}
-          <details class="article-card">
-            <summary>
-              <strong>{{ p.source_title }}</strong> → <strong>{{ p.target_title }}</strong>
-              · sim={{ p.similarity }} · conf={{ p.confidence }}/5
-            </summary>
-            <div style="padding:12px 0">
-              <p>Anchor: <code>{{ p.anchor_text }}</code></p>
-              {% if p.reasoning %}<p class="muted" style="font-size:12px">{{ p.reasoning }}</p>{% endif %}
-              <div style="display:flex;gap:8px">
-                <button class="btn-good"
-                        onclick="approveAnchor('{{ p.anchor_id }}', this)">Approve</button>
-                <button class="btn-bad"
-                        onclick="rejectAnchor('{{ p.anchor_id }}', this)">Reject</button>
+      {% for p in pending %}
+        {% if p.error %}
+          <div style="background:#2a1a1a;border:1px solid #844;padding:12px;border-radius:8px;color:#f88">
+            Error reading link engine DB: {{ p.error }}
+          </div>
+        {% else %}
+          <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px;margin-bottom:12px"
+               id="anchor-{{ p.anchor_id }}">
+            <div style="display:flex;justify-content:space-between;gap:16px">
+              <div style="flex:1">
+                <div style="font-size:13px;color:#888;margin-bottom:4px">
+                  <strong style="color:#eee">{{ p.source_title }}</strong>
+                  &nbsp;→&nbsp;
+                  <strong style="color:#eee">{{ p.target_title }}</strong>
+                </div>
+                <div style="margin:8px 0;font-size:15px">
+                  Anchor: <span style="background:#0a3a0a;padding:2px 8px;border-radius:4px;color:#9f9">{{ p.anchor_text }}</span>
+                </div>
+                <div style="font-size:12px;color:#aaa">
+                  similarity: <code>{{ p.similarity }}</code>
+                  &nbsp;|&nbsp; confidence: <code>{{ "%.2f"|format(p.confidence or 0) }}</code>
+                </div>
+                {% if p.reasoning %}
+                  <details style="margin-top:8px">
+                    <summary style="cursor:pointer;color:#888;font-size:12px">Reasoning</summary>
+                    <div style="margin-top:6px;padding:8px;background:#000;border:1px solid #222;border-radius:4px;font-size:12px;color:#bbb">
+                      {{ p.reasoning }}
+                    </div>
+                  </details>
+                {% endif %}
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px;align-self:start">
+                <button onclick="approveAnchor('{{ p.anchor_id }}')"
+                        class="btn-small" style="background:#0a3a0a;border-color:#0f0;color:#9f9">Approve</button>
+                <button onclick="rejectAnchor('{{ p.anchor_id }}')"
+                        class="btn-small" style="background:#3a0a0a;border-color:#f44;color:#f99">Reject</button>
               </div>
             </div>
-          </details>
-          {% endif %}
-        {% endfor %}
-      </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     {% else %}
-      <p class="muted">No pending anchors. Run cluster pass to generate candidates.</p>
+      <div style="color:#888;padding:24px;text-align:center">
+        No pending anchors. Run a cluster pass to discover candidates.
+      </div>
     {% endif %}
-  {% endif %}
+  </div>
+
+  <!-- APPROVED -->
+  <div id="il-pane-approved" class="il-pane" style="display:none">
+    {% if approved %}
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="border-bottom:1px solid #333;text-align:left">
+            <th style="padding:8px">Anchor</th>
+            <th style="padding:8px">Source → Target</th>
+            <th style="padding:8px">Confidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in approved %}
+            <tr style="border-bottom:1px solid #222">
+              <td style="padding:8px"><code style="color:#9f9">{{ a.anchor_text }}</code></td>
+              <td style="padding:8px;color:#bbb">{{ a.source_title }} → {{ a.target_title }}</td>
+              <td style="padding:8px">{{ "%.2f"|format(a.confidence or 0) }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <div style="color:#888;padding:24px;text-align:center">No approved anchors yet.</div>
+    {% endif %}
+  </div>
+
+  <!-- INJECTED -->
+  <div id="il-pane-injected" class="il-pane" style="display:none">
+    {% if injected %}
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="border-bottom:1px solid #333;text-align:left">
+            <th style="padding:8px">Anchor</th>
+            <th style="padding:8px">Source → Target</th>
+            <th style="padding:8px">Injected At</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in injected %}
+            <tr style="border-bottom:1px solid #222">
+              <td style="padding:8px"><code style="color:#9af">{{ i.anchor_text }}</code></td>
+              <td style="padding:8px;color:#bbb">{{ i.source_title }} → {{ i.target_title }}</td>
+              <td style="padding:8px;color:#888">{{ (i.injected_at or "")[:19] }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <div style="color:#888;padding:24px;text-align:center">No injected links yet.</div>
+    {% endif %}
+  </div>
+
+  <!-- ARTICLES -->
+  <div id="il-pane-articles" class="il-pane" style="display:none">
+    {% if articles %}
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="border-bottom:1px solid #333;text-align:left">
+            <th style="padding:8px">Title</th>
+            <th style="padding:8px">URL</th>
+            <th style="padding:8px">Chunks</th>
+            <th style="padding:8px">Indexed At</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in articles %}
+            <tr style="border-bottom:1px solid #222">
+              <td style="padding:8px">{{ a.title }}</td>
+              <td style="padding:8px;color:#888;max-width:400px;overflow:hidden;text-overflow:ellipsis">
+                <code style="font-size:11px">{{ a.url or "—" }}</code>
+              </td>
+              <td style="padding:8px">{{ a.chunk_count }}</td>
+              <td style="padding:8px;color:#888">{{ (a.created_at or "")[:19] }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <div style="color:#888;padding:24px;text-align:center">No articles indexed in link engine yet.</div>
+    {% endif %}
+  </div>
+
+  <!-- ERRORS -->
+  <div id="il-pane-errors" class="il-pane" style="display:none">
+    {% if errors %}
+      {% for e in errors %}
+        <div style="background:#2a1a1a;border:1px solid #844;padding:12px;border-radius:8px;margin-bottom:8px">
+          <div style="color:#f88;font-weight:bold">{{ e.stage or "?" }} — {{ e.error_type or "Error" }}</div>
+          <div style="color:#bbb;margin-top:4px;font-size:13px">{{ e.message }}</div>
+          <div style="color:#888;margin-top:4px;font-size:11px">{{ (e.created_at or "")[:19] }}</div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div style="color:#666;padding:24px;text-align:center">No errors recorded.</div>
+    {% endif %}
+  </div>
+
 </div>
 
+<style>
+  .il-tab {
+    background:transparent;border:0;border-bottom:2px solid transparent;
+    color:#888;padding:10px 16px;cursor:pointer;font-size:13px;
+  }
+  .il-tab:hover { color:#eee; }
+  .il-tab-active { color:#fff;border-bottom-color:#0af; }
+</style>
+
 <script>
-function approveAnchor(id, btn) {
-  fetch('/interlink/anchor/' + id + '/approve', { method: 'POST' })
-    .then(function () { btn.closest('details').style.opacity = '0.4'; btn.disabled = true; });
-}
-function rejectAnchor(id, btn) {
-  fetch('/interlink/anchor/' + id + '/reject', { method: 'POST' })
-    .then(function () { btn.closest('details').remove(); });
-}
+  function ilTab(name) {
+    document.querySelectorAll('.il-pane').forEach(p => p.style.display = 'none');
+    document.querySelectorAll('.il-tab').forEach(t => t.classList.remove('il-tab-active'));
+    document.getElementById('il-pane-' + name).style.display = '';
+    document.getElementById('il-tab-' + name).classList.add('il-tab-active');
+  }
+
+  async function approveAnchor(id) {
+    const r = await fetch('/interlink/anchor/' + id + '/approve', { method: 'POST' });
+    if (r.ok) document.getElementById('anchor-' + id).style.opacity = '0.3';
+  }
+  async function rejectAnchor(id) {
+    const r = await fetch('/interlink/anchor/' + id + '/reject', { method: 'POST' });
+    if (r.ok) document.getElementById('anchor-' + id).style.opacity = '0.3';
+  }
 </script>
-{% endblock %}

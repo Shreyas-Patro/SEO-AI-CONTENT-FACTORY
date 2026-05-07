@@ -1,0 +1,27 @@
+Database initialized at data/canvas.db
+[bg] starting app._run_cluster_pass args=('cl-d715062c-f28', 'prun-e886a1da-d90')
+[interlink] starting cluster pass for cl-d715062c-f28
+[link_bridge] Exported 11 cluster articles → runs\prun-e886a1da-d90\interlink\cluster
+[link_bridge] Running: C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Scripts\python.exe -m link_engine.cli run runs\prun-e886a1da-d90\interlink\cluster
+[link_bridge] API key forwarded: sk-ant-api03…HAAA
+[interlink] cluster pass done: 0 candidates
+[bg] completed app._run_cluster_pass
+Process SpawnProcess-5:1:
+Traceback (most recent call last):
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 249, in _process_worker
+    call_item = call_queue.get(block=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\queues.py", line 103, in get
+    res = self._recv_bytes()
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 321, in _recv_bytes
+    waitres = _winapi.WaitForMultipleObjects(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

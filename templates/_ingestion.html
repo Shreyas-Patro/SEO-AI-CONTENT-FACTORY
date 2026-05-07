@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block body %}
+<div style="max-width:1200px;margin:0 auto;padding:24px">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+    <h1 style="margin:0">📥 Ingest Research</h1>
+    <div>
+      <a href="/" class="btn-small">← Dashboard</a>
+      <span style="margin-left:12px;color:#888">{{ user.name }}</span>
+      <form method="post" action="/logout" style="display:inline;margin-left:8px">
+        <button type="submit" class="btn-small">Sign out</button>
+      </form>
+    </div>
+  </div>
+
+  <p style="color:#aaa;margin-bottom:24px">
+    Upload research documents (.md, .txt, .pdf, .docx). They get parsed, chunked,
+    embedded into ChromaDB, and added to the knowledge graph. Lead Writer pulls
+    from this corpus when drafting articles.
+  </p>
+
+  <!-- Upload form -->
+  <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:24px;margin-bottom:24px">
+    <h2 style="margin-top:0">Upload a document</h2>
+    <form method="post" action="/ingestion/upload" enctype="multipart/form-data" id="ingestForm">
+      <div style="margin-bottom:12px">
+        <label style="display:block;margin-bottom:4px;color:#aaa">Topic / area (optional)</label>
+        <input name="topic" type="text" placeholder="e.g. Sarjapur Road infrastructure"
+               style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#eee;border-radius:4px">
+      </div>
+      <div style="margin-bottom:12px">
+        <label style="display:block;margin-bottom:4px;color:#aaa">Source URL (optional)</label>
+        <input name="source_url" type="url" placeholder="https://..."
+               style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#eee;border-radius:4px">
+      </div>
+      <div style="margin-bottom:16px">
+        <label style="display:block;margin-bottom:4px;color:#aaa">File (.md, .txt, .pdf, .docx)</label>
+        <input name="file" type="file" required accept=".md,.txt,.pdf,.docx"
+               style="width:100%;padding:8px;background:#000;border:1px solid #333;color:#eee;border-radius:4px">
+      </div>
+      <button type="submit" class="btn-primary" id="ingestBtn">Ingest</button>
+      <span id="ingestStatus" style="margin-left:12px;color:#888"></span>
+    </form>
+  </div>
+
+  <!-- Recent facts -->
+  <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:24px;margin-bottom:24px">
+    <h2 style="margin-top:0">Recently ingested facts ({{ facts|length }})</h2>
+    {% if facts %}
+      <table style="width:100%;border-collapse:collapse">
+        <thead>
+          <tr style="border-bottom:1px solid #333;text-align:left">
+            <th style="padding:8px">Statement</th>
+            <th style="padding:8px">Source</th>
+            <th style="padding:8px">Confidence</th>
+            <th style="padding:8px">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for f in facts %}
+            <tr style="border-bottom:1px solid #222">
+              <td style="padding:8px;max-width:500px">{{ f.statement[:200] }}{% if f.statement|length > 200 %}…{% endif %}</td>
+              <td style="padding:8px;color:#888">{{ f.source or "—" }}</td>
+              <td style="padding:8px">{{ "%.2f"|format(f.confidence) }}</td>
+              <td style="padding:8px;color:#888">{{ f.created_at[:10] }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p style="color:#888">No facts ingested yet. Upload a document to start.</p>
+    {% endif %}
+  </div>
+
+  <!-- Pending verifications -->
+  {% if pending %}
+  <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:24px">
+    <h2 style="margin-top:0">Pending verifications ({{ pending|length }})</h2>
+    <table style="width:100%;border-collapse:collapse">
+      <thead>
+        <tr style="border-bottom:1px solid #333;text-align:left">
+          <th style="padding:8px">Claim</th>
+          <th style="padding:8px">Reason</th>
+          <th style="padding:8px">Article</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in pending %}
+          <tr style="border-bottom:1px solid #222">
+            <td style="padding:8px;max-width:500px">{{ p.claim[:200] }}</td>
+            <td style="padding:8px;color:#888">{{ p.reason or "—" }}</td>
+            <td style="padding:8px;color:#888">{{ p.article_id or "—" }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+
+</div>
+
+<script>
+  document.getElementById('ingestForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const btn = document.getElementById('ingestBtn');
+    const status = document.getElementById('ingestStatus');
+    btn.disabled = true;
+    status.textContent = 'Ingesting...';
+    status.style.color = '#fa0';
+
+    try {
+      const fd = new FormData(form);
+      const r = await fetch('/ingestion/upload', { method: 'POST', body: fd });
+      const data = await r.json();
+      if (data.ok) {
+        status.textContent = '✓ Done. Reloading...';
+        status.style.color = '#0f0';
+        setTimeout(() => location.reload(), 800);
+      } else {
+        status.textContent = '✗ ' + (data.error || 'failed');
+        status.style.color = '#f44';
+        btn.disabled = false;
+      }
+    } catch (err) {
+      status.textContent = '✗ ' + err.message;
+      status.style.color = '#f44';
+      btn.disabled = false;
+    }
+  });
+</script>
+{% endblock %}

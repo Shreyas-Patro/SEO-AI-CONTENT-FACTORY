@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block body %}
+<div style="max-width:1400px;margin:0 auto;padding:24px">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+    <h1 style="margin:0">🕸️ Knowledge Graph</h1>
+    <div>
+      <a href="/" class="btn-small">← Dashboard</a>
+      <span style="margin-left:12px;color:#888">{{ user.name }}</span>
+      <form method="post" action="/logout" style="display:inline;margin-left:8px">
+        <button type="submit" class="btn-small">Sign out</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px">
+    <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px">
+      <div style="color:#888;font-size:12px">Total nodes</div>
+      <div style="font-size:24px;font-weight:bold">{{ stats.total_nodes }}</div>
+    </div>
+    <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px">
+      <div style="color:#888;font-size:12px">Total edges</div>
+      <div style="font-size:24px;font-weight:bold">{{ stats.total_edges }}</div>
+    </div>
+    <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px">
+      <div style="color:#888;font-size:12px">Avg degree</div>
+      <div style="font-size:24px;font-weight:bold">{{ "%.2f"|format(stats.avg_degree or 0) }}</div>
+    </div>
+    <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px">
+      <div style="color:#888;font-size:12px">Density</div>
+      <div style="font-size:24px;font-weight:bold">{{ "%.4f"|format(stats.density or 0) }}</div>
+    </div>
+  </div>
+
+  <!-- Node-type breakdown -->
+  {% if type_counts %}
+  <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px;margin-bottom:24px">
+    <div style="color:#888;font-size:12px;margin-bottom:8px">Nodes by type</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      {% for t, c in type_counts.items() %}
+        <span style="background:#222;border:1px solid #444;padding:4px 12px;border-radius:12px;font-size:13px">
+          {{ t }} <span style="color:#888">({{ c }})</span>
+        </span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Filter form -->
+  <form method="get" action="/graph" style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px;margin-bottom:24px;display:flex;gap:12px;align-items:end;flex-wrap:wrap">
+    <div>
+      <label style="display:block;color:#aaa;font-size:12px;margin-bottom:4px">Filter node type</label>
+      <select name="filter_type" style="padding:8px;background:#000;border:1px solid #333;color:#eee;border-radius:4px;min-width:160px">
+        <option value="all" {% if filter_type == "all" %}selected{% endif %}>All</option>
+        {% for t in type_counts.keys() %}
+          <option value="{{ t }}" {% if filter_type == t %}selected{% endif %}>{{ t }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label style="display:block;color:#aaa;font-size:12px;margin-bottom:4px">Max nodes</label>
+      <input type="number" name="max_nodes" value="{{ max_nodes }}" min="20" max="2000" step="20"
+             style="padding:8px;background:#000;border:1px solid #333;color:#eee;border-radius:4px;width:120px">
+    </div>
+    <button type="submit" class="btn-primary">Apply</button>
+    <a href="/graph/iframe?filter_type={{ filter_type }}&max_nodes={{ max_nodes }}" target="_blank" class="btn-small">
+      Open fullscreen ↗
+    </a>
+  </form>
+
+  <!-- Graph -->
+  {% if stats.total_nodes > 0 %}
+    <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;overflow:hidden">
+      <iframe src="/graph/iframe?filter_type={{ filter_type }}&max_nodes={{ max_nodes }}"
+              style="width:100%;height:700px;border:0;background:#000"></iframe>
+    </div>
+  {% else %}
+    <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:48px;text-align:center;color:#888">
+      Knowledge graph is empty. Run a pipeline or ingest documents to populate it.
+    </div>
+  {% endif %}
+
+</div>
+{% endblock %}

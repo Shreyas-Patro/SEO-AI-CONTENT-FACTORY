@@ -1,127 +1,132 @@
-<h3 class="section-h">📝 Articles</h3>
+{# templates/_articles.html — articles list with REAL meta from your schema #}
+
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+  <h2 style="margin:0;font-size:18px">📄 Articles ({{ articles|length }})</h2>
+  {% if articles %}
+    <div style="display:flex;gap:8px">
+  <a href="/runs/{{ run_id }}/articles/download"
+     class="btn-small"
+     style="text-decoration:none;display:inline-block"
+     title="Hugo/Astro frontmatter, with JSON-LD schema">
+    ⬇ Download All (publish-ready)
+  </a>
+  <a href="/runs/{{ run_id }}/articles/download_for_link_engine"
+     class="btn-primary"
+     style="text-decoration:none;display:inline-block"
+     title="Link engine format — upload to Streamlit interlink dashboard">
+    🔗 Download for Link Engine
+  </a>
+</div>
+  {% endif %}
+</div>
 
 {% if not articles %}
-  <p class="muted">No articles yet. Run Layer 2 first.</p>
+  <div style="color:#888;padding:24px;text-align:center;background:#1a1a1a;border:1px solid #333;border-radius:8px">
+    No articles yet. Run Layer 3 to generate them.
+  </div>
 {% else %}
 
-<p class="muted">{{ articles|length }} articles in cluster</p>
+{% for a in articles %}
+  {% set border_color = '#333' %}
+  {% if a.status == 'written' %}{% set border_color = '#0a3a0a' %}{% endif %}
+  {% if a.status == 'needs_human_review' %}{% set border_color = '#3a2a0a' %}{% endif %}
 
-{% for art in articles %}
-<details class="article-card status-{{ art.status }}" data-article-id="{{ art.id }}">
-  <summary>
-    {% if art.article_type == 'hub' %}🏛️
-    {% elif art.article_type == 'spoke' %}📄
-    {% elif art.article_type == 'sub_spoke' %}📃
-    {% elif art.article_type == 'faq' %}❓
-    {% else %}📄{% endif %}
-    <strong>{{ art.title }}</strong> — {{ art.word_count or 0 }} words · {{ art.status }}
-  </summary>
+  <div style="background:#1a1a1a;border:1px solid {{ border_color }};border-radius:8px;padding:16px;margin-bottom:12px">
 
-  <div class="article-body">
-    <div class="article-meta">
-      <span>Brand: <strong>{{ "%.1f"|format(art.brand_tone_score or 0) }}/10</strong></span>
-      <span>Fact: <strong>{{ "%.2f"|format(art.fact_check_score or 0) }}</strong></span>
-      <span>Read: <strong>{{ "%.0f"|format(art.readability_score or 0) }}</strong></span>
+    <!-- Header row -->
+    <div style="display:flex;justify-content:space-between;gap:16px;align-items:start;margin-bottom:8px">
+      <div style="flex:1;min-width:0">
+        <h3 style="margin:0 0 4px 0;font-size:16px">
+          <a href="/runs/{{ run_id }}/articles/{{ a.id }}"
+             style="color:#9cf;text-decoration:none">{{ a.title or "(untitled)" }}</a>
+        </h3>
+        {% if a.slug %}
+          <div style="font-size:12px;color:#888;font-family:monospace">
+            /{{ a.slug }}
+          </div>
+        {% endif %}
+        {% if a.meta_title and a.meta_title != a.title %}
+          <div style="font-size:11px;color:#789;margin-top:2px">
+            <span style="color:#666">SEO title:</span> {{ a.meta_title }}
+          </div>
+        {% endif %}
+      </div>
+      <div style="display:flex;gap:6px;flex-shrink:0">
+        <a href="/runs/{{ run_id }}/articles/{{ a.id }}"
+           class="btn-small" style="text-decoration:none">Edit</a>
+           <a href="/articles/{{ a.id }}/download"
+   class="btn-small" style="text-decoration:none;background:#0a2a3a;border-color:#069"
+   title="Publish-ready markdown">⬇ .md</a>
+<a href="/articles/{{ a.id }}/download_for_link_engine"
+   class="btn-small" style="text-decoration:none;background:#0a3a1a;border-color:#0a6"
+   title="Link engine format">🔗 .md</a>
+
+        <button onclick="deleteArticle('{{ a.id }}')"
+                class="btn-small" style="background:#3a0a0a;border-color:#844;color:#f88">Delete</button>
+      </div>
     </div>
 
-    <div class="article-tabs">
-      <button class="art-tab active" data-pane="read-{{ art.id }}">Read</button>
-      <button class="art-tab" data-pane="edit-{{ art.id }}">Edit</button>
-      <button class="art-tab" data-pane="faqs-{{ art.id }}">FAQs ({{ art.faqs_parsed|length }})</button>
-      <button class="art-tab" data-pane="del-{{ art.id }}">Delete</button>
-    </div>
+    <!-- Meta description -->
+    {% if a.meta_description %}
+      <div style="font-size:13px;color:#bbb;margin:8px 0;padding:8px;background:#0a0a0a;border-left:3px solid #444;border-radius:0 4px 4px 0">
+        {{ a.meta_description }}
+      </div>
+    {% endif %}
 
-    <div class="art-pane active" id="read-{{ art.id }}">
-      <pre class="article-content">{{ art.content_md or '(no content yet)' }}</pre>
-    </div>
-
-    <div class="art-pane" id="edit-{{ art.id }}">
-      <form class="article-edit-form" data-article-id="{{ art.id }}">
-        <textarea name="content_md" rows="20">{{ art.content_md or '' }}</textarea>
-        <button type="submit" class="btn-primary">💾 Save</button>
-      </form>
-    </div>
-
-    <div class="art-pane" id="faqs-{{ art.id }}">
-      {% if art.faqs_parsed %}
-      <ol>
-        {% for faq in art.faqs_parsed %}
-        <li>
-          <strong>Q:</strong> {{ faq.question }}<br>
-          <em>A:</em> {{ faq.answer }}<br>
-          <button class="btn-bad-small faq-delete-btn"
-                  data-article-id="{{ art.id }}"
-                  data-faq-idx="{{ loop.index0 }}">Delete this FAQ</button>
-        </li>
-        {% endfor %}
-      </ol>
-      {% else %}
-        <p class="muted">No FAQs.</p>
+    <!-- Stats row (mapped to actual columns) -->
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin:8px 0;font-size:12px;color:#aaa">
+      {% if a.article_type %}
+        <span>📑 <strong>{{ a.article_type }}</strong></span>
+      {% endif %}
+      <span>📊 <strong>{{ a.status or "?" }}</strong></span>
+      <span>📝 {{ a.word_count or 0 }} words</span>
+      {% if a.brand_tone_score is not none %}
+        <span>🎨 brand: <strong>{{ "%.1f"|format(a.brand_tone_score) }}/10</strong></span>
+      {% endif %}
+      {% if a.fact_check_score is not none %}
+        <span>🔍 fact: <strong>{{ "%.2f"|format(a.fact_check_score) }}</strong></span>
+      {% endif %}
+      {% if a.readability_score is not none %}
+        <span>📖 readability: <strong>{{ "%.0f"|format(a.readability_score) }}</strong></span>
+      {% endif %}
+      {% if a.faqs_parsed %}
+        <span>❓ {{ a.faqs_parsed|length }} FAQs</span>
+      {% endif %}
+      {% if a.internal_link_count %}
+        <span>🔗 {{ a.internal_link_count }} links</span>
       {% endif %}
     </div>
 
-    <div class="art-pane" id="del-{{ art.id }}">
-      <p class="warn">Delete is permanent.</p>
-      <button class="btn-bad article-delete-btn" data-article-id="{{ art.id }}">🗑️ Delete this article</button>
-    </div>
+    <!-- Primary + secondary keywords (from target_keywords JSON) -->
+    {% if a.target_keywords_parsed and a.target_keywords_parsed.primary %}
+      <div style="font-size:11px;color:#888;margin-top:6px">
+        🔑 <code style="color:#9f9">{{ a.target_keywords_parsed.primary }}</code>
+        {% if a.target_keywords_parsed.secondary %}
+          <span style="color:#666"> + {{ a.target_keywords_parsed.secondary|length }} secondary</span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <!-- Canonical URL (from schema_json) -->
+    {% if a.canonical_url %}
+      <div style="font-size:11px;color:#666;font-family:monospace;margin-top:4px">
+        canonical: <a href="{{ a.canonical_url }}" target="_blank" style="color:#69a">{{ a.canonical_url }}</a>
+      </div>
+    {% endif %}
+
   </div>
-</details>
 {% endfor %}
 
 {% endif %}
 
 <script>
-(function () {
-  // Tab switching inside article cards
-  document.querySelectorAll('.art-tab').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var paneId = btn.getAttribute('data-pane');
-      var card = btn.closest('.article-body');
-      card.querySelectorAll('.art-tab').forEach(function (b) { b.classList.remove('active'); });
-      card.querySelectorAll('.art-pane').forEach(function (p) { p.classList.remove('active'); });
-      btn.classList.add('active');
-      var pane = document.getElementById(paneId);
-      if (pane) pane.classList.add('active');
-    });
-  });
-
-  // Save article body
-  document.querySelectorAll('.article-edit-form').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var id = form.getAttribute('data-article-id');
-      var fd = new FormData(form);
-      fetch('/articles/' + id + '/save', { method: 'POST', body: fd })
-        .then(function (r) { return r.json(); })
-        .then(function (j) {
-          if (j.ok) { alert('Saved (' + j.word_count + ' words)'); }
-          else { alert('Save failed'); }
-        });
-    });
-  });
-
-  // Delete article
-  document.querySelectorAll('.article-delete-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      if (!confirm('Delete this article permanently?')) return;
-      var id = btn.getAttribute('data-article-id');
-      fetch('/articles/' + id + '/delete', { method: 'POST' })
-        .then(function () { location.reload(); });
-    });
-  });
-
-  // Delete FAQ
-  document.querySelectorAll('.faq-delete-btn').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      if (!confirm('Delete this FAQ?')) return;
-      var id = btn.getAttribute('data-article-id');
-      var idx = btn.getAttribute('data-faq-idx');
-      fetch('/articles/' + id + '/faq/' + idx + '/delete', { method: 'POST' })
-        .then(function () {
-          if (window.htmx) { window.htmx.trigger('#articles-panel', 'load'); }
-          else { location.reload(); }
-        });
-    });
-  });
-})();
+  async function deleteArticle(id) {
+    if (!confirm('Delete this article? Cannot be undone.')) return;
+    try {
+      const r = await fetch(`/articles/${id}/delete`, { method: 'POST' });
+      const data = await r.json();
+      if (data.ok) location.reload();
+      else alert('Failed: ' + (data.error || 'unknown'));
+    } catch (e) { alert('Error: ' + e.message); }
+  }
 </script>

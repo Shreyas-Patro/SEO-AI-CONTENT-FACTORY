@@ -23,6 +23,12 @@
    style="display:block;margin-top:8px;text-align:center;text-decoration:none">
   📋 Topic Queue ({{ runs|length }})
    </a> 
+   <a href="/ingestion" class="btn-small" style="display:block;margin-top:8px;text-align:center;text-decoration:none">
+   Ingest Research
+   </a>
+   <a href="/graph" class="btn-small" style="display:block;margin-top:8px;text-align:center;text-decoration:none">
+   Knowledge Graph
+   </a>
     {% if run %}
     <hr>
     <div class="run-summary">
@@ -72,7 +78,7 @@
            hx-swap="innerHTML">
         {% include "_agents_grid.html" %}
       </div>
-
+<div id="agent-inspector"></div>
       <h3 class="section-h">📡 Live Console</h3>
       <pre id="live-log" class="live-log" style="max-height:400px;overflow:auto"></pre>
 <script>

@@ -1,24 +1,91 @@
+Database initialized at data/canvas.db
+[bg] starting app._run_cluster_pass args=('cl-53b5e206-556', 'prun-a53a056e-7c8')
+[interlink] starting cluster pass for cl-53b5e206-556
+[link_bridge] Exported 12 cluster articles → runs\prun-a53a056e-7c8\interlink\cluster
+[link_bridge] Running: C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Scripts\python.exe -m link_engine.cli run runs\prun-a53a056e-7c8\interlink\cluster
+[link_bridge] API key forwarded: sk-ant-api03…HAAA
 
-============================================================
-[Pipeline prun-a53a056e-7c8] Layer 2 (LangGraph)
-============================================================
+[CRASH] RuntimeError: link_engine failed:
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine\cli. |
+| py:49 in run                                                                |
+|                                                                             |
+|    46                                                                       |
+|    47     session, pipeline_run = _get_session_and_run()                    |
+|    48     run_id = pipeline_run.run_id                                      |
+| >  49     console.print(f"\n[bold blue]\U0001f517 Link Engine[/bold blue]  Run ID:  |
+|    50                                                                       |
+|    51     # Stage 1: Ingest (now also derives title_phrases)                |
+|    52     console.print("[bold]Stage 1/6:[/bold] Ingesting articles...")    |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |  content_dir = WindowsPath('runs/prun-a53a056e-7c8/interlink/cluster')  | |
+| |      dry_run = 'False'                                                  | |
+| | pipeline_run = <link_engine.db.models.Run object at 0x000001203C855B50> | |
+| |       run_id = '1c5a1c8d-1b0f-48f8-b64e-c81742400eb3'                   | |
+| |      session = <sqlalchemy.orm.session.Session object at                | |
+| |                0x000001205D02B910>                                      | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa |
+| ckages\rich\console.py:1678 in print                                        |
+|                                                                             |
+|   1675                 overflow = "ignore"                            
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\jobs.py", line 51, in _bootstrap_and_run
+    result = fn(*args)
+             ^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\app.py", line 557, in _run_cluster_pass
+    result = cluster_pass(cluster_id, run_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine_bridge.py", line 195, in cluster_pass
+    return run_link_engine(folder, db_path=db_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine_bridge.py", line 184, in run_link_engine
+    raise RuntimeError(f"link_engine failed:\n{err[:2000]}")
+RuntimeError: link_engine failed:
++--------------------- Traceback (most recent call last) ---------------------+
+| C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine\cli. |
+| py:49 in run                                                                |
+|                                                                             |
+|    46                                                                       |
+|    47     session, pipeline_run = _get_session_and_run()                    |
+|    48     run_id = pipeline_run.run_id                                      |
+| >  49     console.print(f"\n[bold blue]\U0001f517 Link Engine[/bold blue]  Run ID:  |
+|    50                                                                       |
+|    51     # Stage 1: Ingest (now also derives title_phrases)                |
+|    52     console.print("[bold]Stage 1/6:[/bold] Ingesting articles...")    |
+|                                                                             |
+| +-------------------------------- locals ---------------------------------+ |
+| |  content_dir = WindowsPath('runs/prun-a53a056e-7c8/interlink/cluster')  | |
+| |      dry_run = 'False'                                                  | |
+| | pipeline_run = <link_engine.db.models.Run object at 0x000001203C855B50> | |
+| |       run_id = '1c5a1c8d-1b0f-48f8-b64e-c81742400eb3'                   | |
+| |      session = <sqlalchemy.orm.session.Session object at                | |
+| |                0x000001205D02B910>                                      | |
+| +-------------------------------------------------------------------------+ |
+|                                                                             |
+| C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa |
+| ckages\rich\console.py:1678 in print                                        |
+|                                                                             |
+|   1675                 overflow = "ignore"                            
 
-┌─ [content_architect] starting (run=prun-a53a056e-7c8)
-
-[content_architect] Designing cluster for: brigade
-  9 keyword groups, expecting ≥5 articles
-  Inserted 12/12 articles
-└─ [content_architect] complete in 132.08s ($0.1534, 0 SERP, 1 LLM)
-  ✓ Node done: content_architect
-
-┌─ [faq_architect] starting (run=prun-a53a056e-7c8)
-[faq_architect] Generating FAQs for cluster cl-53b5e206-556
-  Found 12 articles in DB
-  Done: 83 FAQs across 12/12 articles
-└─ [faq_architect] complete in 136.32s ($0.1204, 0 SERP, 1 LLM)
-  ✓ Node done: faq_architect
-
-┌─ [research_prompt_generator] starting (run=prun-a53a056e-7c8)
-[research_prompt_generator] Building research prompt for: brigade
-└─ [research_prompt_generator] complete in 39.56s ($0.0403, 0 SERP, 1 LLM)
-  ✓ Node done: research_prompt
+Process SpawnProcess-3:1:
+Traceback (most recent call last):
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 249, in _process_worker
+    call_item = call_queue.get(block=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\queues.py", line 103, in get
+    res = self._recv_bytes()
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 321, in _recv_bytes
+    waitres = _winapi.WaitForMultipleObjects(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

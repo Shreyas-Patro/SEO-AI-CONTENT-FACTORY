@@ -7,6 +7,8 @@ Two phases:
   2. global_pass(cluster_id): exports cluster articles + all approved articles to
      runs/<run_id>/interlink/global/, runs link_engine, returns NEW matches only
 """
+import cmd
+import cmd
 import json
 import os
 import shutil
@@ -14,6 +16,10 @@ import subprocess
 import sys
 from pathlib import Path
 from typing import List, Dict, Optional
+
+from langchain import env
+
+from langchain import env
 
 from db.sqlite_ops import get_articles_by_cluster, db_conn
 
@@ -142,21 +148,16 @@ def export_global(cluster_id: str, run_id: str) -> Path:
 # Subprocess invocation with API key injection
 # ────────────────────────────────────────────────────────────────────────────
 def _build_subprocess_env(db_path: Optional[str] = None) -> dict:
-    """Build the env for the link_engine subprocess.
-
-    Resolves the Anthropic API key from env / config.yaml / .env (in that order)
-    and injects it as ANTHROPIC_API_KEY so the link_engine subprocess can use
-    the standard Anthropic SDK without further config.
-    """
     env = os.environ.copy()
-
     api_key = _resolve_anthropic_key()
     if api_key:
         env["ANTHROPIC_API_KEY"] = api_key
-
     if db_path:
         env["LINK_ENGINE_DB"] = db_path
 
+    # Force UTF-8 so emojis in the link engine's Rich output don't crash on Windows.
+    env["PYTHONIOENCODING"] = "utf-8"
+    env["PYTHONUTF8"] = "1"
     return env
 
 
@@ -178,10 +179,32 @@ def run_link_engine(corpus_dir: Path, db_path: Optional[str] = None) -> Dict:
     print(f"[link_bridge] Running: {' '.join(cmd)}")
     masked = env["ANTHROPIC_API_KEY"]
     print(f"[link_bridge] API key forwarded: {masked[:12]}…{masked[-4:]}")
-    proc = subprocess.run(cmd, capture_output=True, text=True, env=env)
+    proc = subprocess.run(
+        cmd, capture_output=True, text=True, env=env,
+        encoding="utf-8", errors="replace",
+    )
     if proc.returncode != 0:
-        err = (proc.stderr or "") + "\n--- stdout ---\n" + (proc.stdout or "")
-        raise RuntimeError(f"link_engine failed:\n{err[:2000]}")
+        # Write full output to a debug log so we can see EVERYTHING
+        debug_log = PROJECT_ROOT / "runs" / "_link_engine_last_error.log"
+        debug_log.parent.mkdir(parents=True, exist_ok=True)
+        debug_log.write_text(
+            f"=== STDOUT ===\n{proc.stdout or ''}\n\n"
+            f"=== STDERR ===\n{proc.stderr or ''}\n",
+            encoding="utf-8",
+        )
+        # Print to console (uvicorn log) so it's visible immediately
+        print(f"\n[link_bridge] FULL STDERR:\n{proc.stderr}\n", flush=True)
+        print(f"[link_bridge] FULL STDOUT:\n{proc.stdout}\n", flush=True)
+        print(f"[link_bridge] Full output also saved to: {debug_log}\n", flush=True)
+        # Try to extract a meaningful error line for the exception message
+        err = proc.stderr or proc.stdout or "(no output)"
+        # Look for the actual exception type — typically the LAST non-pipe line
+        last_lines = [
+            ln.strip() for ln in err.splitlines()
+            if ln.strip() and not ln.lstrip().startswith(("│", "┌", "└", "├", "─"))
+        ]
+        summary = last_lines[-1] if last_lines else err[:500]
+        raise RuntimeError(f"link_engine failed: {summary}\n(full output in {debug_log})")
 
     report_path = Path("output") / "link_report.json"
     if report_path.exists():

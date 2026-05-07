@@ -74,24 +74,36 @@ def init_artifact_tables():
         CREATE INDEX IF NOT EXISTS idx_pruns_status ON pipeline_runs(status);
         CREATE INDEX IF NOT EXISTS idx_artifacts_run ON artifact_index(run_id);
         """)
+        # Migration: add submitted_by column to existing DBs
+        try:
+            conn.execute("ALTER TABLE pipeline_runs ADD COLUMN submitted_by TEXT DEFAULT ''")
+        except Exception:
+            pass  # Column already exists
         conn.commit()
 
 
 # ─── PIPELINE RUNS ────────────────────────────────────────────────────────
 
-def create_pipeline_run(topic, notes=""):
+def create_pipeline_run(topic, notes="", submitted_by=""):
     """Create a new pipeline run. Allocates the on-disk folder."""
     run_id = f"prun-{_uuid()}"
     artifact_path = RUNS_ROOT / run_id
     artifact_path.mkdir(parents=True, exist_ok=True)
 
     with db_conn() as conn:
-        conn.execute("""
-            INSERT INTO pipeline_runs (id, topic, notes, artifact_path, created_at, updated_at)
-            VALUES (?, ?, ?, ?, ?, ?)
-        """, (run_id, topic, notes, str(artifact_path), _now(), _now()))
+        # Tolerant of pre-migration DBs that don't yet have the column
+        try:
+            conn.execute("""
+                INSERT INTO pipeline_runs (id, topic, notes, submitted_by, artifact_path, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, (run_id, topic, notes, submitted_by, str(artifact_path), _now(), _now()))
+        except Exception:
+            conn.execute("""
+                INSERT INTO pipeline_runs (id, topic, notes, artifact_path, created_at, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?)
+            """, (run_id, topic, notes, str(artifact_path), _now(), _now()))
         conn.commit()
-
+    # ... keep the rest of the function unchanged
     # Write the initial run.json
     run_meta = {
         "id": run_id,

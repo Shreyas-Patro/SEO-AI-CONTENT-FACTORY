@@ -1,67 +1,160 @@
-<div class="agent-detail-card" data-run-id="{{ run_id }}" data-agent="{{ agent }}">
-  <h3>{{ agent }}</h3>
+{# templates/_agent_detail.html — full agent inspector with editable JSON #}
 
-  {% if meta %}
-  <div class="meta-row">
-    <span>💰 ${{ "%.4f"|format(meta.cost_usd or 0) }}</span>
-    <span>🤖 {{ meta.llm_calls or 0 }} LLM</span>
-    <span>🔍 {{ meta.serp_calls or 0 }} SERP</span>
-    <span>⏱️ {{ "%.1f"|format(meta.duration_seconds or 0) }}s</span>
-    <span>🔁 {{ meta.attempts or 1 }} attempts</span>
+<div style="background:#0a0a0a;border:1px solid #444;border-radius:8px;padding:20px;margin-top:16px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+    <h3 style="margin:0;color:#9cf">🔍 Inspecting: {{ agent }}</h3>
+    <div style="display:flex;gap:8px">
+      {% if agent != 'trend_scout' %}
+        <button onclick="rerunAgent('{{ run_id }}', '{{ agent }}')"
+                class="btn-small" style="background:#1a2a1a;border-color:#5a5">↻ Rerun</button>
+      {% endif %}
+      <button onclick="document.getElementById('agent-inspector').innerHTML=''"
+              class="btn-small">✕ Close</button>
+    </div>
   </div>
-  {% if meta.validation_problems %}
-    {% for p in meta.validation_problems %}<div class="warn-box">{{ p }}</div>{% endfor %}
-  {% endif %}
-  {% endif %}
 
-  {% if agent != 'trend_scout' %}
-  <button class="btn-warn"
-          hx-post="/runs/{{ run_id }}/agent/{{ agent }}/rerun"
-          hx-swap="none">
-    🔄 Rerun {{ agent }}
-  </button>
-  {% endif %}
+  <!-- Tabs -->
+  <div style="border-bottom:1px solid #333;margin-bottom:16px;display:flex;gap:0">
+    <button onclick="agTab('output')"  id="ag-tab-output"  class="ag-tab ag-tab-active">Output</button>
+    <button onclick="agTab('input')"   id="ag-tab-input"   class="ag-tab">Input</button>
+    <button onclick="agTab('meta')"    id="ag-tab-meta"    class="ag-tab">Metadata</button>
+    <button onclick="agTab('console')" id="ag-tab-console" class="ag-tab">Console</button>
+  </div>
 
-  <details>
-    <summary>📥 Input</summary>
-    <pre>{{ input or '(none)' }}</pre>
-  </details>
+  <!-- OUTPUT (editable) -->
+  <div id="ag-pane-output" class="ag-pane">
+    {% if output %}
+      <form id="ag-save-form" onsubmit="saveAgent(event, '{{ run_id }}', '{{ agent }}')">
+        <textarea name="output_json" id="ag-output-text"
+                  style="width:100%;height:480px;background:#000;color:#9f9;border:1px solid #333;
+                         border-radius:4px;padding:12px;font-family:monospace;font-size:12px;resize:vertical">{{ output }}</textarea>
+        <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+          <button type="submit" class="btn-primary">💾 Save</button>
+          <span id="ag-save-status" style="color:#888;font-size:12px"></span>
+        </div>
+      </form>
+    {% else %}
+      <div style="color:#888;padding:24px;text-align:center">No output yet (agent may not have run, or it failed before producing output).</div>
+    {% endif %}
+  </div>
 
-  <details open>
-    <summary>📤 Output</summary>
-    <form class="agent-output-form">
-      <textarea name="output_json" rows="20">{{ output or '{}' }}</textarea>
-      <button type="submit" class="btn-primary">💾 Save Output</button>
-    </form>
-  </details>
+  <!-- INPUT -->
+  <div id="ag-pane-input" class="ag-pane" style="display:none">
+    {% if input %}
+      <pre style="background:#000;color:#bbb;border:1px solid #333;border-radius:4px;
+                  padding:12px;font-size:12px;max-height:480px;overflow:auto;white-space:pre-wrap">{{ input }}</pre>
+    {% else %}
+      <div style="color:#888;padding:24px;text-align:center">No input recorded.</div>
+    {% endif %}
+  </div>
 
-  {% if console %}
-  <details>
-    <summary>🖥️ Console</summary>
-    <pre class="console">{{ console }}</pre>
-  </details>
-  {% endif %}
+  <!-- METADATA -->
+  <div id="ag-pane-meta" class="ag-pane" style="display:none">
+    {% if meta %}
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px">
+        <div style="background:#1a1a1a;border:1px solid #333;padding:10px;border-radius:6px">
+          <div style="color:#888;font-size:11px">COST</div>
+          <div style="font-size:18px;font-weight:bold">${{ "%.4f"|format(meta.cost_usd or 0) }}</div>
+        </div>
+        <div style="background:#1a1a1a;border:1px solid #333;padding:10px;border-radius:6px">
+          <div style="color:#888;font-size:11px">DURATION</div>
+          <div style="font-size:18px;font-weight:bold">{{ "%.1f"|format(meta.duration_seconds or 0) }}s</div>
+        </div>
+        <div style="background:#1a1a1a;border:1px solid #333;padding:10px;border-radius:6px">
+          <div style="color:#888;font-size:11px">LLM CALLS</div>
+          <div style="font-size:18px;font-weight:bold">{{ meta.llm_calls or 0 }}</div>
+        </div>
+        <div style="background:#1a1a1a;border:1px solid #333;padding:10px;border-radius:6px">
+          <div style="color:#888;font-size:11px">SERP CALLS</div>
+          <div style="font-size:18px;font-weight:bold">{{ meta.serp_calls or 0 }}</div>
+        </div>
+      </div>
+      {% if meta.validation_problems %}
+        <div style="background:#2a1a0a;border:1px solid #fa0;border-radius:6px;padding:12px;margin-bottom:12px">
+          <div style="color:#fa0;font-weight:bold;margin-bottom:6px">⚠ Validation problems ({{ meta.validation_problems|length }})</div>
+          <ul style="margin:0;padding-left:20px;color:#ddd;font-size:13px">
+            {% for p in meta.validation_problems %}<li>{{ p }}</li>{% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      <details>
+        <summary style="cursor:pointer;color:#888;font-size:13px">Full metadata JSON</summary>
+        <pre style="background:#000;color:#bbb;border:1px solid #333;border-radius:4px;padding:12px;
+                    font-size:11px;margin-top:8px;max-height:300px;overflow:auto">{{ meta | tojson(indent=2) }}</pre>
+      </details>
+    {% else %}
+      <div style="color:#888;padding:24px;text-align:center">No metadata available.</div>
+    {% endif %}
+  </div>
+
+  <!-- CONSOLE -->
+  <div id="ag-pane-console" class="ag-pane" style="display:none">
+    {% if console %}
+      <pre style="background:#000;color:#9f9;border:1px solid #333;border-radius:4px;
+                  padding:12px;font-size:11px;max-height:480px;overflow:auto;white-space:pre-wrap">{{ console }}</pre>
+    {% else %}
+      <div style="color:#888;padding:24px;text-align:center">No console output captured.</div>
+    {% endif %}
+  </div>
+
 </div>
 
-<script>
-(function () {
-  var card = document.querySelector('.agent-detail-card[data-run-id][data-agent]');
-  if (!card) return;
-  var runId = card.getAttribute('data-run-id');
-  var agent = card.getAttribute('data-agent');
-
-  var form = card.querySelector('.agent-output-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var fd = new FormData(form);
-      fetch('/runs/' + runId + '/agent/' + agent + '/save', { method: 'POST', body: fd })
-        .then(function (r) { return r.json(); })
-        .then(function (j) {
-          if (j.ok) alert('Saved');
-          else alert('Save failed: ' + (j.error || 'unknown'));
-        });
-    });
+<style>
+  .ag-tab {
+    background:transparent;border:0;border-bottom:2px solid transparent;
+    color:#888;padding:8px 16px;cursor:pointer;font-size:13px;
   }
-})();
+  .ag-tab:hover { color:#eee; }
+  .ag-tab-active { color:#fff;border-bottom-color:#0af; }
+</style>
+
+<script>
+  function agTab(name) {
+    document.querySelectorAll('.ag-pane').forEach(p => p.style.display = 'none');
+    document.querySelectorAll('.ag-tab').forEach(t => t.classList.remove('ag-tab-active'));
+    document.getElementById('ag-pane-' + name).style.display = '';
+    document.getElementById('ag-tab-' + name).classList.add('ag-tab-active');
+  }
+
+  async function saveAgent(evt, runId, agent) {
+    evt.preventDefault();
+    const status = document.getElementById('ag-save-status');
+    const text = document.getElementById('ag-output-text').value;
+    try {
+      JSON.parse(text);
+    } catch (e) {
+      status.textContent = '✗ Invalid JSON: ' + e.message;
+      status.style.color = '#f44';
+      return;
+    }
+    const fd = new FormData();
+    fd.append('output_json', text);
+    status.textContent = 'Saving...';
+    status.style.color = '#fa0';
+    try {
+      const r = await fetch(`/runs/${runId}/agent/${agent}/save`, { method: 'POST', body: fd });
+      const data = await r.json();
+      if (data.ok) {
+        status.textContent = '✓ Saved';
+        status.style.color = '#0f0';
+      } else {
+        status.textContent = '✗ ' + (data.error || 'failed');
+        status.style.color = '#f44';
+      }
+    } catch (e) {
+      status.textContent = '✗ ' + e.message;
+      status.style.color = '#f44';
+    }
+  }
+
+  async function rerunAgent(runId, agent) {
+    if (!confirm(`Rerun ${agent}? This will overwrite its current output.`)) return;
+    try {
+      const r = await fetch(`/runs/${runId}/agent/${agent}/rerun`, { method: 'POST' });
+      const data = await r.json();
+      alert(data.ok ? `Rerun started for ${agent}` : `Failed: ${data.error || 'unknown'}`);
+    } catch (e) {
+      alert('Error: ' + e.message);
+    }
+  }
 </script>

@@ -1,0 +1,162 @@
+{
+  "topic": "sarjapur road",
+  "keyword_map": {
+    "topic": "sarjapur road",
+    "keyword_groups": [
+      {
+        "group_name": "Sarjapur Road Overview & Location",
+        "primary_keyword": "Sarjapur Road Bangalore",
+        "supporting_keywords": [
+          "Which part of Bangalore is Sarjapur Road",
+          "Sarjapur Road location",
+          "Sarjapur Road Bangalore map",
+          "Sarjapur Road pincode",
+          "Sarjapur Road directions",
+          "Sarjapur Road distance"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 75
+      },
+      {
+        "group_name": "Lifestyle & Dining Guide",
+        "primary_keyword": "best restaurants Sarjapur Road",
+        "supporting_keywords": [
+          "things to do in Sarjapur Road",
+          "Sarjapur Road cafes",
+          "Sarjapur Road nightlife",
+          "Sarjapur Road pubs",
+          "Sarjapur Road brewery",
+          "What is Sarjapur Road famous for"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 85
+      },
+      {
+        "group_name": "Property Pricing & Market Trends",
+        "primary_keyword": "Sarjapur Road property price",
+        "supporting_keywords": [
+          "Sarjapur Road property rate per sq ft",
+          "What is the price of 2BHK in Sarjapur Road",
+          "What is the price of land in Sarjapur Road",
+          "How much does the price of Sarjapur Road appreciate",
+          "Is Sarjapur expensive",
+          "Sarjapur Road property price per square foot"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 70
+      },
+      {
+        "group_name": "Residential Rentals",
+        "primary_keyword": "Sarjapur Road rent",
+        "supporting_keywords": [
+          "2BHK rent Sarjapur Road",
+          "Sarjapur Road apartments for rent",
+          "Living in Sarjapur Road Bangalore",
+          "Sarjapur Road flat for rent",
+          "Sarjapur Road rental prices"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "Property Sales & New Projects",
+        "primary_keyword": "Sarjapur Road flat for sale",
+        "supporting_keywords": [
+          "Sarjapur Road new projects",
+          "Independent House for sale in Sarjapur Road",
+          "Sarjapur Road property for sale",
+          "Sarjapur Road real estate agents",
+          "Sarjapur Road apartments for sale"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 68
+      },
+      {
+        "group_name": "Infrastructure & Connectivity",
+        "primary_keyword": "Sarjapur Road metro",
+        "supporting_keywords": [
+          "Which is the nearest metro to Sarjapur Road",
+          "Will the metro come to Sarjapur Road",
+          "Sarjapur Road traffic",
+          "Sarjapur Road widening",
+          "Sarjapur Road to Whitefield",
+          "Sarjapur Marathahalli distance"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "Education & Schools",
+        "primary_keyword": "schools near Sarjapur Road",
+        "supporting_keywords": [
+          "Glentree Sarjapur fees",
+          "Best schools in Sarjapur Road",
+          "Sarjapur Road CBSE schools",
+          "Top schools near Sarjapur Road",
+          "School rankings Sarjapur Road"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 80
+      },
+      {
+        "group_name": "Healthcare Facilities",
+        "primary_keyword": "hospitals near Sarjapur Road",
+        "supporting_keywords": [
+          "Manipal Hospital Sarjapur Road",
+          "Best hospitals Sarjapur Road",
+          "Healthcare facilities Sarjapur Road",
+          "Sarjapur Road medical centers",
+          "Apollo Hospital Sarjapur Road"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 82
+      },
+      {
+        "group_name": "Livability & Reviews",
+        "primary_keyword": "Is Sarjapur good for living",
+        "supporting_keywords": [
+          "Living in Sarjapur Road Bangalore reviews",
+          "Is Sarjapur a posh area in Bangalore",
+          "Sarjapur Road review",
+          "Sarjapur Road Bangalore reddit",
+          "Sarjapur Road livability"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 76
+      },
+      {
+        "group_name": "Locality Comparisons",
+        "primary_keyword": "Sarjapur Road vs Electronic City",
+        "supporting_keywords": [
+          "Sarjapur Road vs Bellandur",
+          "Which is better Sarjapur Road or Electronic City",
+          "Sarjapur vs Marathahalli",
+          "Sarjapur Road comparison with other localities"
+        ],
+        "intent": "comparison",
+        "estimated_volume": "low",
+        "competition": "medium",
+        "opportunity_score": 74
+      }
+    ],
+    "summary": "Sarjapur Road keyword data reveals strong demand across residential (rentals, sales, pricing), lifestyle (dining, entertainment), and infrastructure (metro, connectivity) categories. High-opportunity gaps exist in lifestyle content, healthcare/education guides, and pricing analysis where competitor coverage is weak."
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "master_research_prompt": "Research comprehensive data on Sarjapur Road, Bangalore real estate market for 2026. This research will inform a complete content cluster covering location analysis, property prices, rentals, infrastructure, lifestyle amenities, and educational facilities. Provide authoritative, current data with specific citations.\n\n**GEOGRAPHIC AND LOCATION ANALYSIS:**\nProvide detailed geographic boundaries of Sarjapur Road stretch in Bangalore, including exact start and end points, major intersections, and sub-localities. List all pincodes covering Sarjapur Road area. Calculate precise distances from Sarjapur Road to major Bangalore landmarks: Electronic City, Whitefield, Koramangala, HSR Layout, BTM Layout, Silk Board Junction, Marathahalli, Bellandur, and Bangalore city centre. Include travel times by private vehicle and public transport during peak and off-peak hours. Identify which BBMP ward(s) Sarjapur Road falls under and provide administrative jurisdiction details.\n\n**CURRENT PROPERTY MARKET ANALYSIS (2026):**\nProvide current property prices per square foot for residential properties on Sarjapur Road as of Q1 2026, segmented by: ready-to-move flats, under-construction projects, premium segment (above \u20b98000/sqft), mid-segment (\u20b94000-8000/sqft), and budget segment (below \u20b94000/sqft). List exact price ranges for 1BHK, 2BHK, 3BHK, and 4BHK flats with carpet area specifications. Include price variations by specific micro-locations along Sarjapur Road (e.g., near Wipro Corporate Office, near Carmelaram, near Dommasandra Circle). Provide year-on-year price appreciation data for 2024-2026 period with percentage changes. Compare Sarjapur Road prices with neighbouring areas: HSR Layout, Koramangala, Electronic City, and Whitefield.\n\n**RENTAL MARKET DATA:**\nProvide current rental rates for 2026 across different property types: 1BHK (\u20b9X-Y), 2BHK (\u20b9X-Y), 3BHK (\u20b9X-Y), 4BHK+ (\u20b9X-Y) with specific ranges. Include rental yields for investors, security deposit norms (typically X months), and maintenance charges. Identify premium residential complexes with highest rental rates and budget-friendly options. List factors affecting rental pricing: proximity to IT companies, metro connectivity, amenities, and furnishing status.\n\n**NEW PROJECTS AND INVENTORY:**\nList all residential projects launched in 2025-2026 on Sarjapur Road with builder names, project names, unit configurations, pricing, possession timelines, and RERA registration numbers. Include upcoming launches planned for 2026-2027. Provide inventory status: ready-to-move vs under-construction ratio. List major builders active in Sarjapur Road: Prestige Group, Brigade Group, Sobha Limited, Godrej Properties, etc., with their current and upcoming projects.\n\n**INFRASTRUCTURE AND CONNECTIVITY:**\nProvide current status of Sarjapur Road metro connectivity including nearest existing metro stations with exact distances. Detail planned metro extensions: Phase 2B of Bangalore Metro covering Sarjapur Road with timeline, stations planned, and expected completion dates. Analyze current road infrastructure: road width, condition, ongoing widening projects, and traffic congestion patterns during peak hours (7-10 AM, 6-9 PM). List major bus routes serving Sarjapur Road with BMTC route numbers. Include connectivity to Kempegowda International Airport with travel time and transport options.\n\n**IT HUB AND EMPLOYMENT PROXIMITY:**\nList major IT companies and offices located on or near Sarjapur Road: Wipro Corporate Office, Infosys campuses, TCS facilities, and other tech parks. Calculate distances to major IT hubs: Electronic City (X km), Whitefield (Y km), Outer Ring Road IT corridor. Provide employment statistics and workforce residing in Sarjapur Road area.\n\n**SOCIAL INFRASTRUCTURE:**\nList top-rated schools within 5km radius of Sarjapur Road including: CBSE schools, international schools (IB, IGCSE, Cambridge), state board schools. Provide school fee ranges, admission processes, and academic ratings. Include healthcare facilities: multi-specialty hospitals, clinics, diagnostic centres with names and specialties. List shopping destinations: malls, retail outlets, supermarkets, and local markets.\n\n**LIFESTYLE AND AMENITIES:**\nProvide comprehensive list of restaurants on Sarjapur Road categorized by: fine dining (\u20b91500+ per person), casual dining (\u20b9500-1500), quick service restaurants, street food options. Include popular cafes, co-working spaces, pubs, bars, and breweries with names, locations, and specialties. List entertainment options: multiplexes, gaming zones, sports facilities, parks, and recreational centres.\n\n**REGULATORY AND LEGAL ASPECTS:**\nProvide RERA compliance status for major projects, approved building plans, BBMP approvals, and any legal disputes or issues affecting properties. Include property registration costs, stamp duty rates for Karnataka, and documentation requirements.\n\n**INVESTMENT ANALYSIS:**\nProvide rental yields, capital appreciation trends, and investment attractiveness scores. Compare investment potential with other Bangalore micro-markets. Include analysis of factors driving demand: IT proximity, infrastructure development, and demographic trends.\n\n**FUTURE DEVELOPMENT PLANS:**\nDetail upcoming infrastructure projects: metro extensions, road improvements, flyovers, and government initiatives affecting Sarjapur Road. Include timeline for major developments and their expected impact on property values.\n\n**DEMOGRAPHIC AND LIFESTYLE DATA:**\nProvide resident demographics: age groups, income levels, family types, and lifestyle preferences. Include data on IT professionals, families with children, and senior citizens residing in the area.\n\n**SPECIFIC FAQ RESEARCH:**\nAddress these specific questions with factual data: exact pincode coverage, best areas for families vs bachelors, traffic conditions during different times, metro timeline with official announcements, school admission seasons and processes, restaurant recommendations by cuisine type, property price predictions for 2026-2027, rental agreement norms, and maintenance costs in residential complexes.\n\n**SOURCE REQUIREMENTS:**\nCite all data from authoritative sources only: RERA Karnataka, BBMP, BDA, Knight Frank India, JLL India, ANAROCK, CBRE, Cushman & Wakefield, government transport authorities, school websites, and established real estate platforms. Provide source URLs in markdown format [Source Name](URL). Prioritize data from last 18 months unless historical context is required. Use British Indian English terminology: 'flat' not 'apartment', 'lakh/crore' for currency, 'BBMP' for municipal corporation, 'RERA' for regulatory authority.\n\n**DATA FRESHNESS:**\nAll pricing data must be from Q4 2025 or Q1 2026. Infrastructure updates from last 12 months. School and amenity information current as of 2026. Historical data acceptable only for trend analysis and comparative studies.\n\nProvide specific numbers, exact addresses, precise distances, current prices with ranges, named entities, and verifiable facts that can support detailed content creation across the entire Sarjapur Road real estate content cluster.",
+  "research_questions": [
+    {
+      "section": "Geographic Location",
+      "questions": [
+        "What are the exact geographic boundaries of Sarjapur Road in Bangalore?",
+        "Which pincodes cover the Sarjapur Road area?",
+        "What is the distance from Sarjapur Road to Electronic City, Whitefield, and city centre?",
+        "Which BBMP ward does Sarjapur Road fall under?"
+      ]
+    },
+    {
+      "section": "Property Prices",
+      "questions": [
+        "What is the current price per sqft for residential properties on Sarjapur Road in Q1 2026?",
+        "What are the exact price ranges for 2BHK and 3BHK flats on Sarjapur Road?",
+        "How do property prices vary by micro-locations along Sarjapur Road?",
+        "What is the year-on-year price appreciation for 2024-2026?"
+      ]
+    },
+    {
+      "section": "Rental Market",
+      "questions": [
+        "What are the current rental rates for 2BHK and 3BHK flats on Sarjapur Road in 2026?",
+        "What rental yields can investors expect on Sarjapur Road properties?",
+        "Which are the premium residential complexes with highest rental rates?",
+        "What are the standard security deposit and maintenance charge norms?"
+      ]
+    },
+    {
+      "section": "New Projects",
+      "questions": [
+        "Which residential projects were launched on Sarjapur Road in 2025-2026?",
+        "What are the upcoming project launches planned for 2026-2027?",
+        "Which major builders are currently active on Sarjapur Road?",
+        "What are the RERA registration numbers for current projects?"
+      ]
+    },
+    {
+      "section": "Infrastructure",
+      "questions": [
+        "What is the current metro connectivity status for Sarjapur Road?",
+        "When is the metro extension to Sarjapur Road expected to complete?",
+        "What are the current traffic conditions and road infrastructure status?",
+        "Which BMTC bus routes serve Sarjapur Road?"
+      ]
+    },
+    {
+      "section": "IT Proximity",
+      "questions": [
+        "Which major IT companies have offices on or near Sarjapur Road?",
+        "What is the distance to major IT hubs like Electronic City and Whitefield?",
+        "How many IT professionals reside in the Sarjapur Road area?",
+        "What are the commute options to major tech parks?"
+      ]
+    },
+    {
+      "section": "Schools",
+      "questions": [
+        "Which are the top-rated CBSE schools within 5km of Sarjapur Road?",
+        "What are the fee ranges for international schools near Sarjapur Road?",
+        "What is the admission process and timeline for top schools?",
+        "Which schools offer transportation facilities to Sarjapur Road residents?"
+      ]
+    },
+    {
+      "section": "Lifestyle Amenities",
+      "questions": [
+        "What are the best restaurants on Sarjapur Road by category and price range?",
+        "Which cafes and co-working spaces are popular among IT professionals?",
+        "What entertainment and nightlife options are available?",
+        "Which shopping malls and retail outlets serve the area?"
+      ]
+    },
+    {
+      "section": "Healthcare",
+      "questions": [
+        "Which multi-specialty hospitals are located near Sarjapur Road?",
+        "What healthcare facilities and diagnostic centres are available?",
+        "How is the emergency medical services accessibility?",
+        "Which speciality clinics serve the Sarjapur Road area?"
+      ]
+    },
+    {
+      "section": "Investment Analysis",
+      "questions": [
+        "What are the rental yields and capital appreciation trends for Sarjapur Road?",
+        "How does investment potential compare with other Bangalore micro-markets?",
+        "What factors are driving property demand on Sarjapur Road?",
+        "What are the property price predictions for 2026-2027?"
+      ]
+    }
+  ],
+  "freshness_requirements": {
+    "default": "last 18 months",
+    "exceptions": "historical price trends and comparative analysis may use data from 2020 onwards"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "bda.karnataka.gov.in",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "anarock.com",
+    "cbre.com",
+    "cushmanwakefield.com",
+    "livemint.com",
+    "economictimes.indiatimes.com",
+    "business-standard.com",
+    "magicbricks.com",
+    "nobroker.in",
+    "moneycontrol.com",
+    "rbi.org.in"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.25
+}

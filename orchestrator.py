@@ -20,15 +20,19 @@ from db.sqlite_ops import init_db, get_articles_by_cluster
 init_db()
 init_artifact_tables()
 
-
-def start_pipeline_run(topic, notes=""):
-    run_id = create_pipeline_run(topic, notes=notes)
-    save_artifact(run_id, "_pipeline", "input", {"topic": topic, "notes": notes})
+def start_pipeline_run(topic, notes="", submitted_by=""):
+    # Tolerant of older db/artifacts.py that didn't take submitted_by yet
+    try:
+        run_id = create_pipeline_run(topic, notes=notes, submitted_by=submitted_by)
+    except TypeError:
+        run_id = create_pipeline_run(topic, notes=notes)
+    save_artifact(run_id, "_pipeline", "input", {
+        "topic": topic, "notes": notes, "submitted_by": submitted_by,
+    })
     state = PipelineState.load(run_id)
     state.topic = topic
     state.save()
     return run_id
-
 
 def approve_gate(run_id):
     update_pipeline_run(run_id, gate_status="approved", current_stage="gate_approved")

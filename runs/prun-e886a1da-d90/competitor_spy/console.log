@@ -1,0 +1,12 @@
+[competitor_spy] Analyzing: sarjapur road
+  Built 8 probe queries
+  [1/8] Sarjapur Road property
+  [2/8] Sarjapur Road apartments
+  [3/8] Sarjapur Road 2bhk for sale
+  [4/8] buy flat in Sarjapur Road
+  [5/8] Sarjapur Road real estate review
+  [6/8] living in Sarjapur Road
+  [7/8] Which part of Bangalore is Sarjapur Road?
+  [8/8] Is Sarjapura posh area in Bangalore?
+  Running LLM analysis...
+  ✅ 'sarjapur road': magicbricks=9, nobroker=8, housing=1, 99acres=9 | 0 uncovered | 8 gaps identified

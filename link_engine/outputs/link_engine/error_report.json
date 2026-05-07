@@ -1,0 +1,72 @@
+[
+  {
+    "error_id": "e38bc7db-7d8a-4430-a13f-719772cfd243",
+    "stage": "injection",
+    "article_id": "78989b907e7d53ab7b31702af50d0cdae468c83153a06ff3aa088682a45f7d01",
+    "chunk_id": "bdd104a9-7596-4a89-8174-0eaf04240afe",
+    "error_type": "inside_existing_link",
+    "message": "Position inside existing markdown link",
+    "rerun_eligible": true,
+    "resolved_at": null
+  },
+  {
+    "error_id": "06438343-1f69-4034-83fc-43ae21decd9c",
+    "stage": "injection",
+    "article_id": "5fd3eaca294e732f0bb89e5b3d17d1f628d614786df655b9690199167b930bea",
+    "chunk_id": "f141abec-1555-49f1-afdd-95ea12bbd118",
+    "error_type": "inside_existing_link",
+    "message": "Position inside existing markdown link",
+    "rerun_eligible": true,
+    "resolved_at": null
+  },
+  {
+    "error_id": "a0c1f05f-99b1-4eef-ae75-11be6e9f7000",
+    "stage": "injection",
+    "article_id": "3fc2ead3b92916074456af508585b9f1c47462bc4128f2f0881c1124d25d034a",
+    "chunk_id": "f661d226-9773-40fc-9e72-9e05c93a1d0a",
+    "error_type": "inside_existing_link",
+    "message": "Position inside existing markdown link",
+    "rerun_eligible": true,
+    "resolved_at": null
+  },
+  {
+    "error_id": "4ffd9246-df37-4c63-88e7-87a20e4d41bc",
+    "stage": "injection",
+    "article_id": "3fc2ead3b92916074456af508585b9f1c47462bc4128f2f0881c1124d25d034a",
+    "chunk_id": "f661d226-9773-40fc-9e72-9e05c93a1d0a",
+    "error_type": "inside_existing_link",
+    "message": "Position inside existing markdown link",
+    "rerun_eligible": true,
+    "resolved_at": null
+  },
+  {
+    "error_id": "1425341c-32bb-423c-be3c-de55937b862e",
+    "stage": "injection",
+    "article_id": "10548a559b4acc3b5dd4d9ef5e6ef97c30b07f17732638762742f8c755acd534",
+    "chunk_id": "5610a446-e902-4d3b-abc8-59010d666aed",
+    "error_type": "inside_existing_link",
+    "message": "Position inside existing markdown link",
+    "rerun_eligible": true,
+    "resolved_at": null
+  },
+  {
+    "error_id": "00d0b047-63a9-47ad-966f-8b23cb7892f9",
+    "stage": "injection",
+    "article_id": "6513df45756c0b62b8bfc870567891de19d14e44a86b157711d05c5bf1d16959",
+    "chunk_id": "bb48e210-be42-40d7-b615-c978570bc23a",
+    "error_type": "inside_existing_link",
+    "message": "Position inside existing markdown link",
+    "rerun_eligible": true,
+    "resolved_at": null
+  },
+  {
+    "error_id": "335ff6ac-1e1e-4fc2-b275-ffb2a25502ab",
+    "stage": "injection",
+    "article_id": "6513df45756c0b62b8bfc870567891de19d14e44a86b157711d05c5bf1d16959",
+    "chunk_id": "bb48e210-be42-40d7-b615-c978570bc23a",
+    "error_type": "inside_existing_link",
+    "message": "Position inside existing markdown link",
+    "rerun_eligible": true,
+    "resolved_at": null
+  }
+]

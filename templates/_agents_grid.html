@@ -1,23 +1,55 @@
-<h3 class="section-h">🤖 Agent Activity</h3>
+{# templates/_agents_grid.html — agent cards as direct links to full-page inspector #}
 
-{% for grp in agents %}
-  <p class="layer-caption">{{ grp.label }}</p>
-  <div class="agent-row">
-    {% for a in grp.agents %}
-    <div class="agent-card agent-{{ a.status }}">
-      <div class="agent-name">{{ a.label }}{% if a.status == 'done' %} ✓{% elif a.status == 'failed' %} ✗{% endif %}</div>
-      <div class="agent-detail">
-        {% if a.status == 'active' %}
-          <span class="pulse"></span>running
-        {% elif a.status == 'done' %}
-          ${{ "%.4f"|format(a.meta.cost_usd) }} · {{ "%.1f"|format(a.meta.duration_seconds) }}s
-        {% elif a.status == 'failed' %}
-          failed
-        {% else %}
-          waiting
-        {% endif %}
+{% if layer3_summary and layer3_summary.total %}
+  <div style="background:#0a1a2a;border:1px solid #036;border-radius:8px;padding:12px;margin-bottom:16px;font-size:13px">
+    <strong style="color:#9cf">Layer 3:</strong>
+    {{ layer3_summary.written }}/{{ layer3_summary.total }} written
+    {% if layer3_summary.drafts %}&nbsp;·&nbsp; {{ layer3_summary.drafts }} drafts{% endif %}
+    {% if layer3_summary.needs_review %}&nbsp;·&nbsp; <span style="color:#fa0">{{ layer3_summary.needs_review }} need review</span>{% endif %}
+    {% if layer3_summary.current_stages %}
+      <div style="margin-top:6px;color:#bbb;font-size:12px">
+        {% for title, stage in layer3_summary.current_stages.items() %}
+          <div>· <strong>{{ title[:60] }}</strong>: {{ stage }}</div>
+        {% endfor %}
       </div>
+    {% endif %}
+  </div>
+{% endif %}
+
+{% for layer in agents %}
+  <div style="margin-bottom:20px">
+    <h3 style="color:#aaa;margin:0 0 8px 0;font-size:13px;text-transform:uppercase;letter-spacing:0.5px">
+      {{ layer.label }}
+    </h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px">
+      {% for a in layer.agents %}
+        {% set color = '#444' %}
+        {% if a.status == 'done' %}{% set color = '#0a3a0a' %}{% endif %}
+        {% if a.status == 'failed' %}{% set color = '#3a0a0a' %}{% endif %}
+        {% if a.status == 'active' %}{% set color = '#3a2a0a' %}{% endif %}
+
+        <a href="/runs/{{ run_id }}/agent/{{ a.key }}/view"
+           style="background:{{ color }};border:1px solid #555;border-radius:6px;padding:10px;
+                  text-decoration:none;color:#eee;display:block"
+           title="Click to view {{ a.label }} output">
+          <div style="font-weight:600;font-size:13px">{{ a.label }}</div>
+          <div style="font-size:11px;color:#aaa;margin-top:4px">
+            {% if a.status == 'done' %}✓ done — view →{% endif %}
+            {% if a.status == 'failed' %}✗ failed — view →{% endif %}
+            {% if a.status == 'active' %}● running{% endif %}
+            {% if a.status == 'pending' %}· pending{% endif %}
+            {% if a.meta.attempts and a.meta.attempts > 1 %}&nbsp;(×{{ a.meta.attempts }}){% endif %}
+          </div>
+          {% if a.meta.cost_usd %}
+            <div style="font-size:11px;color:#888;margin-top:2px">
+              ${{ "%.4f"|format(a.meta.cost_usd) }} · {{ a.meta.duration_seconds|int }}s
+            </div>
+          {% endif %}
+          {% if a.meta.validation_problems %}
+            <div style="font-size:10px;color:#fa0;margin-top:2px">⚠ {{ a.meta.validation_problems|length }} issues</div>
+          {% endif %}
+        </a>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 {% endfor %}
