@@ -1,0 +1,55 @@
+{# ============================================================================
+   public_base.html — minimal layout for marketing/public pages
+   ----------------------------------------------------------------------------
+   Used by landing.html, about.html, how_to_use.html.
+   No sidebar. Different nav. CTA always points to /login.
+   ============================================================================ #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Canvas Homes — AI-powered SEO{% endblock %}</title>
+
+  <link rel="stylesheet" href="/static/styles.css">
+
+  <meta name="description" content="{% block description %}Canvas Homes — the AI agent swarm that produces topical authority for Bangalore real estate.{% endblock %}">
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="/" class="brand">
+        <span class="brand-mark"></span>
+        CANVAS / HOMES
+      </a>
+      <div class="topnav-links">
+        <a href="/about" {% if active_page == 'about' %}class="active"{% endif %}>About</a>
+        <a href="/how-to-use" {% if active_page == 'how' %}class="active"{% endif %}>How it works</a>
+      </div>
+      <div class="topnav-right">
+        {% if user %}
+          <a href="/dashboard" class="btn btn-sm btn-primary">Open dashboard →</a>
+        {% else %}
+          <a href="/login" class="btn btn-sm">Sign in</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+
+  {% block body %}{% endblock %}
+
+  <footer style="padding: var(--s-12) 0; border-top: 1px solid var(--border); margin-top: var(--s-20);">
+    <div class="container row row-between">
+      <div class="muted fs-sm mono">© Canvas Homes · iqol technologies</div>
+      <div class="row gap-4 fs-sm muted">
+        <a href="/about">About</a>
+        <a href="/how-to-use">How it works</a>
+        <a href="/login">Sign in</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

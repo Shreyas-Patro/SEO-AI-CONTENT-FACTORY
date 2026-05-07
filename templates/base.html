@@ -1,13 +1,104 @@
+{# ============================================================================
+   base.html — global layout
+   ----------------------------------------------------------------------------
+   Every authenticated page extends this. Public pages (landing, about, how-to)
+   extend public_base.html instead — no app sidebar, different nav.
+
+   Provides:
+     - <head> with meta, fonts, stylesheets
+     - HTMX + SSE extension scripts
+     - Top navigation with brand, primary links, user menu
+     - {% block body %} for page content
+     - Toast stack container (#toast-stack) — JS appendChild a .toast div
+   ============================================================================ #}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{% block title %}Canvas Homes Pipeline{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Canvas Homes{% endblock %} · Canvas</title>
+
   <link rel="stylesheet" href="/static/styles.css">
+
   <script src="https://unpkg.com/htmx.org@2.0.4"></script>
   <script src="https://unpkg.com/htmx-ext-sse@2.2.2"></script>
+
+  {% block head_extra %}{% endblock %}
 </head>
 <body>
+
+  {% if user %}
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="/" class="brand">
+        <span class="brand-mark"></span>
+        CANVAS / HOMES
+      </a>
+      <div class="topnav-links">
+        <a href="/" {% if active_page == 'pipeline' %}class="active"{% endif %}>Pipeline</a>
+        <a href="/queue" {% if active_page == 'queue' %}class="active"{% endif %}>Queue</a>
+        <a href="/ingestion" {% if active_page == 'ingestion' %}class="active"{% endif %}>Ingest</a>
+        <a href="/graph" {% if active_page == 'graph' %}class="active"{% endif %}>Graph</a>
+        <a href="/how-to-use" {% if active_page == 'how' %}class="active"{% endif %}>Docs</a>
+        {% if is_admin %}
+          <a href="/admin" {% if active_page == 'admin' %}class="active"{% endif %}>Admin</a>
+        {% endif %}
+      </div>
+      <div class="topnav-right">
+        <span class="topnav-user">
+          {{ user.name or user.username }}
+          <span class="role-tag {% if is_admin %}role-admin{% endif %}">
+            {{ user.role }}
+          </span>
+        </span>
+        <form method="post" action="/logout" style="display:inline">
+          <button type="submit" class="btn btn-sm btn-ghost">Sign out</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  {% endif %}
+
   {% block body %}{% endblock %}
+
+  <div class="toast-stack" id="toast-stack"></div>
+
+  <script>
+    // Tiny global toast helper. Use:  toast('Saved.', 'good')
+    function toast(msg, kind = '') {
+      const stack = document.getElementById('toast-stack');
+      if (!stack) return;
+      const el = document.createElement('div');
+      el.className = 'toast' + (kind ? ' toast-' + kind : '');
+      el.textContent = msg;
+      stack.appendChild(el);
+      setTimeout(() => el.remove(), 3500);
+    }
+
+    // Generic tab switcher used by tab buttons with [data-tab] attribute.
+    // Markup:
+    //   <div class="tabs">
+    //     <button class="tab active" data-tab="foo">Foo</button>
+    //     <button class="tab" data-tab="bar">Bar</button>
+    //   </div>
+    //   <div class="tab-panel active" id="tab-foo">...</div>
+    //   <div class="tab-panel" id="tab-bar">...</div>
+    document.addEventListener('click', function (e) {
+      const btn = e.target.closest('.tab[data-tab]');
+      if (!btn) return;
+      const group = btn.closest('.tabs');
+      if (!group) return;
+      const target = btn.dataset.tab;
+      group.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      // Find sibling panels (same parent as the .tabs)
+      const parent = group.parentElement;
+      parent.querySelectorAll(':scope > .tab-panel').forEach(p => p.classList.remove('active'));
+      const panel = parent.querySelector(':scope > #tab-' + target);
+      if (panel) panel.classList.add('active');
+    });
+  </script>
+
+  {% block scripts_extra %}{% endblock %}
 </body>
 </html>

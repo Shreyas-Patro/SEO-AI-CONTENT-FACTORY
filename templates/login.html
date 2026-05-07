@@ -1,22 +1,57 @@
-{% extends "base.html" %}
-
+{% extends "public_base.html" %}
+{% block title %}Sign in{% endblock %}
 {% block body %}
-<div style="max-width:380px;margin:80px auto;padding:32px;background:#0f0f1a;border:1px solid #1a1a2e;border-radius:12px">
-  <h1 style="margin:0 0 24px;font-size:22px">Canvas Homes</h1>
-  <p class="muted" style="font-size:13px">Sign in to continue.</p>
-  {% if error %}
-    <div style="background:#4a1a1a;color:#ff8888;padding:8px 12px;border-radius:6px;margin-bottom:16px;font-size:13px">
-      Invalid username or password.
+
+<div class="container container-narrow" style="padding-top: var(--s-20); padding-bottom: var(--s-20);">
+
+  <div class="card card-loose" style="max-width: 420px; margin: 0 auto;">
+    <div class="eyebrow mb-2">Canvas Homes · Sign in</div>
+    <h1 style="margin-bottom: var(--s-2); font-size: var(--fs-2xl);">Welcome back.</h1>
+    <p class="muted" style="margin-bottom: var(--s-6);">
+      Enter your credentials to access the pipeline.
+    </p>
+
+    {% if error %}
+      <div class="card card-tight" style="border-color: var(--c-bad); background: var(--c-bad-bg); margin-bottom: var(--s-4);">
+        <div class="row gap-2">
+          <span class="dot dot-bad"></span>
+          <span class="strong">Invalid username or password.</span>
+        </div>
+      </div>
+    {% endif %}
+
+    <form method="post" action="/login" class="stack-4">
+      <div class="field">
+        <label class="label" for="login-username">Username</label>
+        <input class="input input-mono"
+               type="text"
+               name="username"
+               id="login-username"
+               autocomplete="username"
+               autofocus
+               required>
+      </div>
+      <div class="field">
+        <label class="label" for="login-password">Password</label>
+        <input class="input"
+               type="password"
+               name="password"
+               id="login-password"
+               autocomplete="current-password"
+               required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block btn-lg">
+        Sign in
+      </button>
+    </form>
+
+    <div style="margin-top: var(--s-6); padding-top: var(--s-4); border-top: 1px solid var(--border);">
+      <p class="muted fs-sm" style="margin: 0;">
+        Don't have an account? Ask the admin to add you to <code>auth.py</code>.
+      </p>
     </div>
-  {% endif %}
-  <form method="post" action="/login">
-    <label style="display:block;font-size:12px;color:#888;margin:12px 0 4px">Username</label>
-    <input name="username" type="text" autofocus required
-           style="width:100%;padding:10px;background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;color:#fff">
-    <label style="display:block;font-size:12px;color:#888;margin:12px 0 4px">Password</label>
-    <input name="password" type="password" required
-           style="width:100%;padding:10px;background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;color:#fff">
-    <button type="submit" class="btn-primary" style="margin-top:24px;width:100%">Sign In</button>
-  </form>
+  </div>
+
 </div>
+
 {% endblock %}
