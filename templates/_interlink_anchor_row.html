@@ -1,0 +1,96 @@
+{# ============================================================================
+   _interlink_anchor_row.html — one row in the pending review queue
+   ----------------------------------------------------------------------------
+   Variables: p (the anchor dict from get_snapshot)
+   ============================================================================ #}
+<div class="anchor-card"
+     id="anchor-{{ p.anchor_id }}"
+     data-similarity="{{ p.similarity }}">
+
+  <div class="row row-between" style="align-items: flex-start;">
+
+    {# LEFT — context #}
+    <div style="flex: 1; min-width: 0; padding-right: var(--s-4);">
+
+      <div class="flow mb-2">
+        <span class="strong">{{ p.source_title or "?" }}</span>
+        <span class="arrow">→</span>
+        <span class="strong">{{ p.target_title or "?" }}</span>
+      </div>
+
+      <div class="row gap-3 mb-3">
+        <span class="anchor-text">{{ p.anchor_text }}</span>
+        {% if p.score_band == "high" %}
+          <span class="pill pill-good">sim {{ "%.2f"|format(p.similarity) }}</span>
+        {% elif p.score_band == "mid" %}
+          <span class="pill pill-warn">sim {{ "%.2f"|format(p.similarity) }}</span>
+        {% else %}
+          <span class="pill pill-bad">sim {{ "%.2f"|format(p.similarity) }}</span>
+        {% endif %}
+        <span class="pill">conf {{ p.confidence }}/5</span>
+      </div>
+
+      {% if p.reasoning %}
+        <details>
+          <summary class="muted fs-sm" style="cursor: pointer;">LLM reasoning</summary>
+          <div class="card card-tight mt-2" style="background: var(--bg-deep);">
+            <p class="muted fs-sm" style="margin: 0;">{{ p.reasoning }}</p>
+          </div>
+        </details>
+      {% endif %}
+
+      {% if p.source_text or p.target_text %}
+        <details style="margin-top: var(--s-2);">
+          <summary class="muted fs-sm" style="cursor: pointer;">Show source/target passages</summary>
+          <div class="grid grid-2 mt-2 gap-3">
+            {% if p.source_text %}
+            <div class="card card-tight" style="background: var(--bg-deep);">
+              <div class="eyebrow mb-2">Source</div>
+              <p class="fs-sm muted" style="margin:0;">{{ p.source_text }}…</p>
+            </div>
+            {% endif %}
+            {% if p.target_text %}
+            <div class="card card-tight" style="background: var(--bg-deep);">
+              <div class="eyebrow mb-2">Target</div>
+              <p class="fs-sm muted" style="margin:0;">{{ p.target_text }}…</p>
+            </div>
+            {% endif %}
+          </div>
+        </details>
+      {% endif %}
+    </div>
+
+    {# RIGHT — actions #}
+    <div class="stack-2" style="flex-shrink: 0;">
+      <button class="btn btn-good btn-sm"
+              hx-post="/interlink/anchor/{{ p.anchor_id }}/approve"
+              hx-swap="none">
+        ✓ Approve
+      </button>
+      <button class="btn btn-bad btn-sm"
+              hx-post="/interlink/anchor/{{ p.anchor_id }}/reject"
+              hx-swap="none">
+        ✗ Reject
+      </button>
+      <button class="btn btn-sm btn-ghost"
+              onclick="document.getElementById('edit-{{ p.anchor_id }}').classList.toggle('hide')">
+        ✎ Edit
+      </button>
+    </div>
+  </div>
+
+  {# Hidden edit row — reveal via the Edit button #}
+  <div id="edit-{{ p.anchor_id }}" class="hide" style="margin-top: var(--s-3);">
+    <form class="row gap-2"
+          hx-post="/interlink/anchor/{{ p.anchor_id }}/edit"
+          hx-swap="none"
+          onsubmit="setTimeout(() => location.reload(), 400)">
+      <input class="input input-mono flex-1"
+             type="text"
+             name="anchor_text"
+             value="{{ p.anchor_text }}"
+             placeholder="New anchor text">
+      <button type="submit" class="btn btn-sm btn-primary">Save</button>
+    </form>
+  </div>
+</div>

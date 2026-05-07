@@ -1,238 +1,303 @@
-{# templates/_interlink.html — full Streamlit-parity interlink dashboard #}
-<div style="max-width:1400px;margin:0 auto;padding:24px">
+{# ============================================================================
+   _interlink.html — full migration of the Streamlit interlink dashboard
+   ----------------------------------------------------------------------------
+   Functionality parity with link_engine/dashboard/app.py:
+     - Pending review queue with similarity filter, per-row approve/reject/edit
+     - Approved (not yet injected) list
+     - Injected list
+     - All Articles indexed in link engine
+     - Errors panel
+     - Run cluster pass / global pass (subprocess via JobManager)
+     - Inject approved (with dry-run option)
 
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+   HTMX is used for approve/reject (no full page reload). Other state changes
+   trigger redirects to refresh the snapshot.
+   ============================================================================ #}
+{% extends "base.html" %}
+{% block title %}Interlinking · {{ cluster_id or run_id[-8:] }}{% endblock %}
+{% block body %}
+
+<div class="container container-wide" style="padding-block: var(--s-6);">
+
+  {# ─── Header ──────────────────────────────────────────────── #}
+  <div class="row row-between" style="margin-bottom: var(--s-6);">
     <div>
-      <h2 style="margin:0">🔗 Interlinking</h2>
-      <div style="color:#888;font-size:13px;margin-top:4px">
-        Cluster: <code>{{ cluster_id or "—" }}</code>
-        &nbsp;|&nbsp; Run: <code>{{ run_id }}</code>
+      <div class="row gap-3" style="margin-bottom: var(--s-2);">
+        <a href="/?run_id={{ run_id }}" class="btn btn-sm btn-ghost">← Pipeline</a>
+        <span class="eyebrow">Interlinking</span>
+      </div>
+      <h1 style="margin-bottom: var(--s-1);">Interlink dashboard</h1>
+      <div class="muted fs-sm mono">
+        cluster: <code>{{ cluster_id or '—' }}</code> &nbsp;·&nbsp;
+        run: <code>{{ run_id[-12:] }}</code>
+        {% if not snapshot.available %}
+          &nbsp;·&nbsp;<span class="pill pill-bad">link_engine offline</span>
+        {% endif %}
       </div>
     </div>
-    <div style="display:flex;gap:8px">
+    <div class="row gap-2">
       <form method="post" action="/runs/{{ run_id }}/interlink/cluster" style="display:inline">
-        <button type="submit" class="btn-primary" {% if interlink_running %}disabled{% endif %}>
-          {% if interlink_running %}Running...{% else %}Run Cluster Pass{% endif %}
+        <button type="submit" class="btn btn-primary" {% if interlink_running %}disabled{% endif %}>
+          {% if interlink_running %}⏳ Running…{% else %}▶ Cluster pass{% endif %}
         </button>
       </form>
       <form method="post" action="/runs/{{ run_id }}/interlink/global" style="display:inline">
-        <button type="submit" class="btn-small" {% if interlink_running %}disabled{% endif %}>
-          Run Global Pass
+        <button type="submit" class="btn" {% if interlink_running %}disabled{% endif %}>
+          ▶ Global pass
         </button>
       </form>
       <form method="post" action="/runs/{{ run_id }}/interlink/inject" style="display:inline">
         <input type="hidden" name="dry_run" value="false">
-        <button type="submit" class="btn-small">Inject Approved →</button>
+        <button type="submit" class="btn btn-good"
+                {% if not snapshot.counts.approved %}disabled{% endif %}>
+          Inject {{ snapshot.counts.approved }} approved →
+        </button>
       </form>
     </div>
   </div>
 
-  <!-- Counts -->
-  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:16px">
-    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
-      <div style="color:#888;font-size:11px">PENDING</div>
-      <div style="font-size:22px;font-weight:bold;color:#fa0">{{ pending|length }}</div>
+  {% if not snapshot.available %}
+    <div class="card" style="border-color: var(--c-bad); background: var(--c-bad-bg);">
+      <h3 style="color: var(--c-bad); margin: 0 0 var(--s-2) 0;">Link engine package not importable</h3>
+      <p class="muted">{{ snapshot.error or "Import failed silently." }}</p>
+      <p class="muted fs-sm">
+        Make sure <code>link_engine</code> is on the Python path. The package
+        should live at <code>./link_engine/</code> relative to where you run
+        uvicorn from.
+      </p>
     </div>
-    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
-      <div style="color:#888;font-size:11px">APPROVED</div>
-      <div style="font-size:22px;font-weight:bold;color:#0f0">{{ approved|length }}</div>
+  {% else %}
+
+  {# ─── Counts strip ─────────────────────────────────────── #}
+  <div class="grid grid-4 mb-6">
+    <div class="stat">
+      <div class="stat-label">Pending review</div>
+      <div class="stat-value" style="color: var(--c-warn);">{{ snapshot.counts.pending }}</div>
     </div>
-    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
-      <div style="color:#888;font-size:11px">INJECTED</div>
-      <div style="font-size:22px;font-weight:bold;color:#0af">{{ injected|length }}</div>
+    <div class="stat">
+      <div class="stat-label">Approved</div>
+      <div class="stat-value" style="color: var(--c-good);">{{ snapshot.counts.approved }}</div>
     </div>
-    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
-      <div style="color:#888;font-size:11px">ARTICLES INDEXED</div>
-      <div style="font-size:22px;font-weight:bold">{{ articles|length }}</div>
+    <div class="stat">
+      <div class="stat-label">Injected</div>
+      <div class="stat-value" style="color: var(--c-info);">{{ snapshot.counts.injected }}</div>
     </div>
-    <div style="background:#1a1a1a;border:1px solid #333;padding:12px;border-radius:8px;text-align:center">
-      <div style="color:#888;font-size:11px">ERRORS</div>
-      <div style="font-size:22px;font-weight:bold;color:{% if errors|length %}#f44{% else %}#666{% endif %}">{{ errors|length }}</div>
+    <div class="stat">
+      <div class="stat-label">Articles indexed</div>
+      <div class="stat-value">{{ snapshot.counts.articles }}</div>
     </div>
   </div>
 
-  <!-- Tabs -->
-  <div style="border-bottom:1px solid #333;margin-bottom:16px;display:flex;gap:0">
-    <button onclick="ilTab('pending')"   id="il-tab-pending"   class="il-tab il-tab-active">Pending Review ({{ pending|length }})</button>
-    <button onclick="ilTab('approved')"  id="il-tab-approved"  class="il-tab">Approved ({{ approved|length }})</button>
-    <button onclick="ilTab('injected')"  id="il-tab-injected"  class="il-tab">Injected ({{ injected|length }})</button>
-    <button onclick="ilTab('articles')"  id="il-tab-articles"  class="il-tab">All Articles ({{ articles|length }})</button>
-    <button onclick="ilTab('errors')"    id="il-tab-errors"    class="il-tab">Errors ({{ errors|length }})</button>
+  {# ─── Tabs ─────────────────────────────────────────────── #}
+  <div class="tabs">
+    <button class="tab active" data-tab="pending">
+      Pending <span class="tab-count">{{ snapshot.counts.pending }}</span>
+    </button>
+    <button class="tab" data-tab="approved">
+      Approved <span class="tab-count">{{ snapshot.counts.approved }}</span>
+    </button>
+    <button class="tab" data-tab="injected">
+      Injected <span class="tab-count">{{ snapshot.counts.injected }}</span>
+    </button>
+    <button class="tab" data-tab="articles">
+      Articles <span class="tab-count">{{ snapshot.counts.articles }}</span>
+    </button>
+    <button class="tab" data-tab="errors">
+      Errors <span class="tab-count">{{ snapshot.counts.errors }}</span>
+    </button>
   </div>
 
-  <!-- PENDING -->
-  <div id="il-pane-pending" class="il-pane">
-    {% if pending %}
-      {% for p in pending %}
-        {% if p.error %}
-          <div style="background:#2a1a1a;border:1px solid #844;padding:12px;border-radius:8px;color:#f88">
-            Error reading link engine DB: {{ p.error }}
-          </div>
-        {% else %}
-          <div style="background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:16px;margin-bottom:12px"
-               id="anchor-{{ p.anchor_id }}">
-            <div style="display:flex;justify-content:space-between;gap:16px">
-              <div style="flex:1">
-                <div style="font-size:13px;color:#888;margin-bottom:4px">
-                  <strong style="color:#eee">{{ p.source_title }}</strong>
-                  &nbsp;→&nbsp;
-                  <strong style="color:#eee">{{ p.target_title }}</strong>
-                </div>
-                <div style="margin:8px 0;font-size:15px">
-                  Anchor: <span style="background:#0a3a0a;padding:2px 8px;border-radius:4px;color:#9f9">{{ p.anchor_text }}</span>
-                </div>
-                <div style="font-size:12px;color:#aaa">
-                  similarity: <code>{{ p.similarity }}</code>
-                  &nbsp;|&nbsp; confidence: <code>{{ "%.2f"|format(p.confidence or 0) }}</code>
-                </div>
-                {% if p.reasoning %}
-                  <details style="margin-top:8px">
-                    <summary style="cursor:pointer;color:#888;font-size:12px">Reasoning</summary>
-                    <div style="margin-top:6px;padding:8px;background:#000;border:1px solid #222;border-radius:4px;font-size:12px;color:#bbb">
-                      {{ p.reasoning }}
-                    </div>
-                  </details>
-                {% endif %}
-              </div>
-              <div style="display:flex;flex-direction:column;gap:6px;align-self:start">
-                <button onclick="approveAnchor('{{ p.anchor_id }}')"
-                        class="btn-small" style="background:#0a3a0a;border-color:#0f0;color:#9f9">Approve</button>
-                <button onclick="rejectAnchor('{{ p.anchor_id }}')"
-                        class="btn-small" style="background:#3a0a0a;border-color:#f44;color:#f99">Reject</button>
-              </div>
+  {# ─── PANEL: PENDING ──────────────────────────────────── #}
+  <div class="tab-panel active" id="tab-pending">
+
+    {% if snapshot.pending %}
+      <div class="row gap-3 mb-4">
+        <button class="btn btn-good"
+                hx-post="/interlink/bulk/approve_all"
+                hx-confirm="Approve all {{ snapshot.counts.pending }} pending anchors?"
+                hx-swap="none"
+                onclick="setTimeout(() => location.reload(), 600)">
+          Approve all
+        </button>
+        <button class="btn btn-bad"
+                hx-post="/interlink/bulk/reject_all"
+                hx-confirm="Reject all {{ snapshot.counts.pending }} pending anchors?"
+                hx-swap="none"
+                onclick="setTimeout(() => location.reload(), 600)">
+          Reject all
+        </button>
+
+        <div class="row gap-2" style="margin-left:auto;">
+          <label class="label-text">Min similarity</label>
+          <input id="sim-filter" type="range" min="0" max="1" step="0.05" value="0"
+                 oninput="filterPending(this.value)" style="width:160px">
+          <span id="sim-filter-val" class="mono fs-sm">0.00</span>
+        </div>
+      </div>
+
+      <div id="pending-list" class="stack-3">
+        {% for p in snapshot.pending %}
+          {% if p.error %}
+            <div class="card" style="border-color: var(--c-bad);">
+              <span class="pill pill-bad">row error</span>
+              <span class="muted">{{ p.error }}</span>
             </div>
-          </div>
-        {% endif %}
-      {% endfor %}
+          {% else %}
+            {% include "_interlink_anchor_row.html" with context %}
+          {% endif %}
+        {% endfor %}
+      </div>
     {% else %}
-      <div style="color:#888;padding:24px;text-align:center">
-        No pending anchors. Run a cluster pass to discover candidates.
+      <div class="empty">
+        <div class="empty-icon">🔗</div>
+        <h3 style="margin:0;">No pending anchors.</h3>
+        <p class="muted">Run a cluster pass to discover candidates.</p>
       </div>
     {% endif %}
   </div>
 
-  <!-- APPROVED -->
-  <div id="il-pane-approved" class="il-pane" style="display:none">
-    {% if approved %}
-      <table style="width:100%;border-collapse:collapse">
-        <thead>
-          <tr style="border-bottom:1px solid #333;text-align:left">
-            <th style="padding:8px">Anchor</th>
-            <th style="padding:8px">Source → Target</th>
-            <th style="padding:8px">Confidence</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for a in approved %}
-            <tr style="border-bottom:1px solid #222">
-              <td style="padding:8px"><code style="color:#9f9">{{ a.anchor_text }}</code></td>
-              <td style="padding:8px;color:#bbb">{{ a.source_title }} → {{ a.target_title }}</td>
-              <td style="padding:8px">{{ "%.2f"|format(a.confidence or 0) }}</td>
+  {# ─── PANEL: APPROVED ─────────────────────────────────── #}
+  <div class="tab-panel" id="tab-approved">
+    {% if snapshot.approved %}
+      <div class="card">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Anchor</th>
+              <th>Source</th>
+              <th>Target</th>
+              <th class="text-right">Confidence</th>
             </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {% for a in snapshot.approved %}
+              <tr>
+                <td><code style="color: var(--c-good);">{{ a.anchor_text }}</code></td>
+                <td class="muted">{{ a.source_title }}</td>
+                <td class="muted">{{ a.target_title }}</td>
+                <td class="text-right mono">{{ "%.1f"|format(a.confidence) }}/5</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
     {% else %}
-      <div style="color:#888;padding:24px;text-align:center">No approved anchors yet.</div>
+      <div class="empty"><div class="empty-icon">✓</div>No approved anchors yet.</div>
     {% endif %}
   </div>
 
-  <!-- INJECTED -->
-  <div id="il-pane-injected" class="il-pane" style="display:none">
-    {% if injected %}
-      <table style="width:100%;border-collapse:collapse">
-        <thead>
-          <tr style="border-bottom:1px solid #333;text-align:left">
-            <th style="padding:8px">Anchor</th>
-            <th style="padding:8px">Source → Target</th>
-            <th style="padding:8px">Injected At</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for i in injected %}
-            <tr style="border-bottom:1px solid #222">
-              <td style="padding:8px"><code style="color:#9af">{{ i.anchor_text }}</code></td>
-              <td style="padding:8px;color:#bbb">{{ i.source_title }} → {{ i.target_title }}</td>
-              <td style="padding:8px;color:#888">{{ (i.injected_at or "")[:19] }}</td>
+  {# ─── PANEL: INJECTED ─────────────────────────────────── #}
+  <div class="tab-panel" id="tab-injected">
+    {% if snapshot.injected %}
+      <div class="card">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Anchor</th>
+              <th>Source</th>
+              <th>Target</th>
+              <th>Injected at</th>
             </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {% for i in snapshot.injected %}
+              <tr>
+                <td><code style="color: var(--c-info);">{{ i.anchor_text }}</code></td>
+                <td class="muted">{{ i.source_title }}</td>
+                <td class="muted">{{ i.target_title }}</td>
+                <td class="muted fs-sm">{{ i.injected_at[:19] }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
     {% else %}
-      <div style="color:#888;padding:24px;text-align:center">No injected links yet.</div>
+      <div class="empty"><div class="empty-icon">📤</div>No injected links yet.</div>
     {% endif %}
   </div>
 
-  <!-- ARTICLES -->
-  <div id="il-pane-articles" class="il-pane" style="display:none">
-    {% if articles %}
-      <table style="width:100%;border-collapse:collapse">
-        <thead>
-          <tr style="border-bottom:1px solid #333;text-align:left">
-            <th style="padding:8px">Title</th>
-            <th style="padding:8px">URL</th>
-            <th style="padding:8px">Chunks</th>
-            <th style="padding:8px">Indexed At</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for a in articles %}
-            <tr style="border-bottom:1px solid #222">
-              <td style="padding:8px">{{ a.title }}</td>
-              <td style="padding:8px;color:#888;max-width:400px;overflow:hidden;text-overflow:ellipsis">
-                <code style="font-size:11px">{{ a.url or "—" }}</code>
-              </td>
-              <td style="padding:8px">{{ a.chunk_count }}</td>
-              <td style="padding:8px;color:#888">{{ (a.created_at or "")[:19] }}</td>
+  {# ─── PANEL: ARTICLES ─────────────────────────────────── #}
+  <div class="tab-panel" id="tab-articles">
+    {% if snapshot.articles %}
+      <div class="card">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>URL</th>
+              <th class="text-right">Chunks</th>
+              <th>Indexed</th>
             </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {% for a in snapshot.articles %}
+              <tr>
+                <td>{{ a.title }}</td>
+                <td class="muted fs-sm" style="max-width: 360px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                  <code>{{ a.url or a.slug or "—" }}</code>
+                </td>
+                <td class="text-right mono">{{ a.chunk_count }}</td>
+                <td class="muted fs-sm">{{ (a.created_at or "")[:19] }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
     {% else %}
-      <div style="color:#888;padding:24px;text-align:center">No articles indexed in link engine yet.</div>
+      <div class="empty"><div class="empty-icon">📚</div>No articles indexed in the link engine yet.</div>
     {% endif %}
   </div>
 
-  <!-- ERRORS -->
-  <div id="il-pane-errors" class="il-pane" style="display:none">
-    {% if errors %}
-      {% for e in errors %}
-        <div style="background:#2a1a1a;border:1px solid #844;padding:12px;border-radius:8px;margin-bottom:8px">
-          <div style="color:#f88;font-weight:bold">{{ e.stage or "?" }} — {{ e.error_type or "Error" }}</div>
-          <div style="color:#bbb;margin-top:4px;font-size:13px">{{ e.message }}</div>
-          <div style="color:#888;margin-top:4px;font-size:11px">{{ (e.created_at or "")[:19] }}</div>
-        </div>
-      {% endfor %}
+  {# ─── PANEL: ERRORS ──────────────────────────────────── #}
+  <div class="tab-panel" id="tab-errors">
+    {% if snapshot.errors %}
+      <div class="stack-2">
+        {% for e in snapshot.errors %}
+          <div class="card" style="border-color: var(--c-bad); background: var(--c-bad-bg);">
+            <div class="row gap-2 mb-2">
+              <span class="pill pill-bad">{{ e.stage or "?" }}</span>
+              <span class="strong">{{ e.error_type or "Error" }}</span>
+              <span class="muted fs-sm" style="margin-left:auto;">{{ (e.created_at or "")[:19] }}</span>
+            </div>
+            <pre style="max-height: 160px;">{{ e.message }}</pre>
+          </div>
+        {% endfor %}
+      </div>
     {% else %}
-      <div style="color:#666;padding:24px;text-align:center">No errors recorded.</div>
+      <div class="empty"><div class="empty-icon">✓</div>No errors recorded.</div>
     {% endif %}
   </div>
+
+  {% endif %}
 
 </div>
 
-<style>
-  .il-tab {
-    background:transparent;border:0;border-bottom:2px solid transparent;
-    color:#888;padding:10px 16px;cursor:pointer;font-size:13px;
-  }
-  .il-tab:hover { color:#eee; }
-  .il-tab-active { color:#fff;border-bottom-color:#0af; }
-</style>
-
 <script>
-  function ilTab(name) {
-    document.querySelectorAll('.il-pane').forEach(p => p.style.display = 'none');
-    document.querySelectorAll('.il-tab').forEach(t => t.classList.remove('il-tab-active'));
-    document.getElementById('il-pane-' + name).style.display = '';
-    document.getElementById('il-tab-' + name).classList.add('il-tab-active');
+  // Filter the pending list by minimum similarity (client-side, fast)
+  function filterPending(min) {
+    document.getElementById('sim-filter-val').textContent = parseFloat(min).toFixed(2);
+    document.querySelectorAll('#pending-list > .anchor-card').forEach(card => {
+      const sim = parseFloat(card.dataset.similarity || '0');
+      card.style.display = sim >= parseFloat(min) ? '' : 'none';
+    });
   }
 
-  async function approveAnchor(id) {
-    const r = await fetch('/interlink/anchor/' + id + '/approve', { method: 'POST' });
-    if (r.ok) document.getElementById('anchor-' + id).style.opacity = '0.3';
-  }
-  async function rejectAnchor(id) {
-    const r = await fetch('/interlink/anchor/' + id + '/reject', { method: 'POST' });
-    if (r.ok) document.getElementById('anchor-' + id).style.opacity = '0.3';
-  }
+  // After HTMX approve/reject, fade the row out
+  document.body.addEventListener('htmx:afterRequest', (e) => {
+    const target = e.detail.elt.closest('.anchor-card');
+    if (target && e.detail.successful) {
+      target.classList.add('acted');
+      // After 500ms, remove it from the DOM and decrement the count badge
+      setTimeout(() => {
+        target.remove();
+        const countBadge = document.querySelector('.tab[data-tab="pending"] .tab-count');
+        if (countBadge) {
+          const n = parseInt(countBadge.textContent, 10) - 1;
+          countBadge.textContent = Math.max(0, n);
+        }
+      }, 450);
+    }
+  });
 </script>
+
+{% endblock %}

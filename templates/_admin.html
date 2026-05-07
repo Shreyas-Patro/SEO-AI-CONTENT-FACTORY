@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block body %}
+
+<div class="container container-wide" style="padding-block: var(--s-8);">
+
+  <div class="row row-between" style="margin-bottom: var(--s-6);">
+    <div>
+      <div class="eyebrow mb-2">Administration</div>
+      <h1>Admin console</h1>
+      <p class="muted">Activity, costs, users, and live configuration.</p>
+    </div>
+    <div class="row gap-2">
+      <a href="/" class="btn btn-sm">← Pipeline</a>
+    </div>
+  </div>
+
+  {# ─── HIGH-LEVEL METRICS ─────────────────────────────────── #}
+  <div class="grid grid-4 mb-6">
+    <div class="stat">
+      <div class="stat-label">7-day runs</div>
+      <div class="stat-value">{{ week_total.runs }}</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">7-day spend</div>
+      <div class="stat-value">${{ "%.2f"|format(week_total.cost_usd) }}</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">7-day LLM calls</div>
+      <div class="stat-value">{{ week_total.llm_calls }}</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Active users</div>
+      <div class="stat-value">{{ users|length }}</div>
+    </div>
+  </div>
+
+  {# ─── TABS ───────────────────────────────────────────────── #}
+  <div class="tabs">
+    <button class="tab active" data-tab="users">
+      Users <span class="tab-count">{{ users|length }}</span>
+    </button>
+    <button class="tab" data-tab="activity">
+      Activity by user <span class="tab-count">{{ by_user|length }}</span>
+    </button>
+    <button class="tab" data-tab="runs">
+      Recent runs <span class="tab-count">{{ all_runs|length }}</span>
+    </button>
+    <button class="tab" data-tab="config">
+      Config &amp; API keys
+    </button>
+  </div>
+
+  {# ─── PANEL: USERS ───────────────────────────────────────── #}
+  <div class="tab-panel active" id="tab-users">
+    <div class="card">
+      <p class="muted" style="margin-bottom: var(--s-4);">
+        Edit <code>auth.py</code> and restart the server to add or remove users.
+      </p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for username, data in users.items() %}
+            <tr>
+              <td><code>{{ username }}</code></td>
+              <td>{{ data.name }}</td>
+              <td class="muted">{{ data.email or "—" }}</td>
+              <td>
+                {% if data.role == "admin" %}
+                  <span class="pill pill-accent">{{ data.role }}</span>
+                {% else %}
+                  <span class="pill">{{ data.role }}</span>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  {# ─── PANEL: ACTIVITY BY USER ─────────────────────────────── #}
+  <div class="tab-panel" id="tab-activity">
+    <div class="card">
+      {% if by_user %}
+        <table class="table">
+          <thead>
+            <tr>
+              <th>User</th>
+              <th class="text-right">Runs</th>
+              <th class="text-right">LLM calls</th>
+              <th class="text-right">SERP calls</th>
+              <th class="text-right">Tokens in</th>
+              <th class="text-right">Tokens out</th>
+              <th class="text-right">Cost (USD)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for user, s in by_user.items() %}
+              <tr>
+                <td><code>{{ user }}</code></td>
+                <td class="text-right mono">{{ s.runs }}</td>
+                <td class="text-right mono">{{ s.llm_calls }}</td>
+                <td class="text-right mono">{{ s.serp_calls }}</td>
+                <td class="text-right mono">{{ "{:,}".format(s.tokens_in) }}</td>
+                <td class="text-right mono">{{ "{:,}".format(s.tokens_out) }}</td>
+                <td class="text-right mono strong">${{ "%.4f"|format(s.cost_usd) }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <div class="empty">
+          <div class="empty-icon">📊</div>
+          No activity recorded yet.
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {# ─── PANEL: RECENT RUNS ──────────────────────────────────── #}
+  <div class="tab-panel" id="tab-runs">
+    <div class="card">
+      {% if all_runs %}
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Topic</th>
+              <th>By</th>
+              <th>Status</th>
+              <th>Stage</th>
+              <th class="text-right">Cost</th>
+              <th>Created</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in all_runs %}
+              <tr>
+                <td><a href="/?run_id={{ r.id }}"><code>{{ r.id[-8:] }}</code></a></td>
+                <td>{{ r.topic or "—" }}</td>
+                <td class="muted">{{ r.submitted_by or "—" }}</td>
+                <td>
+                  {% if r.status == "completed" %}
+                    <span class="pill pill-good">{{ r.status }}</span>
+                  {% elif r.status == "running" %}
+                    <span class="pill pill-info">{{ r.status }}</span>
+                  {% elif r.status == "failed" or r.status == "cancelled" %}
+                    <span class="pill pill-bad">{{ r.status }}</span>
+                  {% else %}
+                    <span class="pill">{{ r.status }}</span>
+                  {% endif %}
+                </td>
+                <td><code>{{ r.current_stage or "—" }}</code></td>
+                <td class="text-right mono">${{ "%.4f"|format(r.total_cost_usd or 0) }}</td>
+                <td class="muted fs-sm">{{ (r.created_at or "")[:16] }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <div class="empty">
+          <div class="empty-icon">📭</div>
+          No runs yet.
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {# ─── PANEL: CONFIG & API KEYS ────────────────────────────── #}
+  <div class="tab-panel" id="tab-config">
+    <div class="card">
+      <h3 style="margin-bottom: var(--s-2);">API keys</h3>
+      <p class="muted" style="margin-bottom: var(--s-5);">
+        Updates here write to <code>.env</code> on disk and update the live process
+        environment. Worker processes pick up the new value on the next job submit.
+      </p>
+
+      <form method="post" action="/admin/api-keys" class="stack-4">
+        <div class="form-row">
+          <label class="label-text">ANTHROPIC_API_KEY</label>
+          <input class="input input-mono"
+                 type="password"
+                 name="anthropic_api_key"
+                 placeholder="{{ env_status.anthropic or 'not set' }}"
+                 autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label class="label-text">SERPAPI_API_KEY</label>
+          <input class="input input-mono"
+                 type="password"
+                 name="serpapi_api_key"
+                 placeholder="{{ env_status.serpapi or 'not set' }}"
+                 autocomplete="off">
+        </div>
+        <div class="form-row">
+          <label class="label-text">PERPLEXITY_API_KEY</label>
+          <input class="input input-mono"
+                 type="password"
+                 name="perplexity_api_key"
+                 placeholder="{{ env_status.perplexity or 'not set' }}"
+                 autocomplete="off">
+        </div>
+        <div class="row row-end mt-2">
+          <button type="submit" class="btn btn-primary">Save keys</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card mt-4">
+      <h3 style="margin-bottom: var(--s-2);">Quality thresholds</h3>
+      <p class="muted fs-sm">
+        These live in <code>config.yaml</code> under <code>quality:</code>. To
+        change at runtime, edit the file and restart. Surfaced here for
+        convenience.
+      </p>
+      <table class="table" style="margin-top: var(--s-3);">
+        <tbody>
+          <tr><td>Min fact-check confidence</td><td class="mono">{{ thresholds.min_fact_check_confidence }}</td></tr>
+          <tr><td>Min brand-tone score</td><td class="mono">{{ thresholds.min_brand_tone_score }}</td></tr>
+          <tr><td>Min readability score</td><td class="mono">{{ thresholds.min_readability_score }}</td></tr>
+          <tr><td>Max quality-loop iterations</td><td class="mono">{{ thresholds.max_quality_loop_iterations }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card mt-4">
+      <h3 style="margin-bottom: var(--s-2);">Budget caps</h3>
+      <table class="table" style="margin-top: var(--s-3);">
+        <tbody>
+          <tr><td>Max SERP calls per topic</td><td class="mono">{{ budget.max_serp_calls_per_topic }}</td></tr>
+          <tr><td>Max LLM $ per article</td><td class="mono">${{ budget.max_llm_dollars_per_article }}</td></tr>
+          <tr><td>Max LLM $ per topic</td><td class="mono">${{ budget.max_llm_dollars_per_topic }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
