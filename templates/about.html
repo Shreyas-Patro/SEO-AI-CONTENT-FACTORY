@@ -1,0 +1,94 @@
+{% extends "public_base.html" %}
+{% block title %}About · Canvas Homes{% endblock %}
+{% block body %}
+
+<section class="section" style="border-top: 0; padding-top: var(--s-16);">
+  <div class="container container-narrow">
+    <div class="eyebrow mb-4">About</div>
+    <h1 class="display" style="font-size: clamp(40px, 6vw, 72px); line-height: 1; letter-spacing: -0.03em; margin-bottom: var(--s-8);">
+      We're building <em style="color: var(--accent); font-style: italic;">topical authority</em>,
+      not blog posts.
+    </h1>
+    <p class="fs-lg muted" style="line-height: var(--lh-relaxed); margin-bottom: var(--s-6);">
+      Canvas Homes is a one-person operation competing with MagicBricks and NoBroker
+      for the most valuable real-estate searches in Bangalore. The advantage isn't
+      headcount — it's a pipeline that produces clusters of deeply interlinked, fact-checked,
+      schema-tagged articles faster than any traditional content team.
+    </p>
+    <p class="fs-lg muted" style="line-height: var(--lh-relaxed);">
+      Every article is written by the agent swarm, verified against a private research
+      corpus, and approved by a human at three different gates. The result: content that
+      ranks on Google <em>and</em> shows up as the cited answer when someone asks
+      Perplexity or ChatGPT about Sarjapur Road.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <div class="section-head">
+      <div class="eyebrow">Strategy</div>
+      <h2>The three pillars.</h2>
+    </div>
+
+    <div class="stack-6">
+      <div class="card card-loose">
+        <div class="eyebrow mb-2">01</div>
+        <h3>Trust through provenance</h3>
+        <p class="muted">
+          Backlinks plus dense interlinking, credible author personas with real
+          LinkedIn presence, and every statistic cited to a primary source.
+          The Fact Verifier agent rejects any claim it can't trace.
+        </p>
+      </div>
+      <div class="card card-loose">
+        <div class="eyebrow mb-2">02</div>
+        <h3>Q&amp;A coverage at scale</h3>
+        <p class="muted">
+          Hub → spoke → sub-spoke architecture, paired with FAQ schema on every
+          page. We become the default answer for AI engines (Perplexity, ChatGPT,
+          Claude, Google AIO) and for voice search.
+        </p>
+      </div>
+      <div class="card card-loose">
+        <div class="eyebrow mb-2">03</div>
+        <h3>Compounding internal authority</h3>
+        <p class="muted">
+          The Link Engine threads semantic + lexical links through every new
+          cluster, so each new article makes every existing one rank a little
+          higher. PageRank goes up monotonically.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <div class="section-head">
+      <div class="eyebrow">Architecture</div>
+      <h2>How it's built.</h2>
+    </div>
+
+    <div class="card card-loose">
+      <table class="table">
+        <thead>
+          <tr><th>Component</th><th>Tech</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Web app</td><td><code>FastAPI · HTMX · Jinja2</code></td></tr>
+          <tr><td>Background jobs</td><td><code>ProcessPoolExecutor</code></td></tr>
+          <tr><td>Pipeline graph</td><td><code>LangGraph</code></td></tr>
+          <tr><td>State store</td><td><code>SQLite + JSON artifacts</code></td></tr>
+          <tr><td>Embeddings</td><td><code>sentence-transformers (mpnet)</code></td></tr>
+          <tr><td>LLMs</td><td><code>Anthropic Sonnet 4 + Haiku 4.5</code></td></tr>
+          <tr><td>SERP</td><td><code>SerpApi</code></td></tr>
+          <tr><td>Knowledge graph</td><td><code>NetworkX + vis.js</code></td></tr>
+          <tr><td>Interlinking</td><td><code>Custom semantic + lexical engine</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

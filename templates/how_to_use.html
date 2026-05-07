@@ -1,0 +1,202 @@
+{% extends "public_base.html" %}
+{% block title %}How it works · Canvas Homes{% endblock %}
+{% block body %}
+
+<section class="section" style="border-top: 0; padding-top: var(--s-16);">
+  <div class="container container-narrow">
+    <div class="eyebrow mb-4">Documentation</div>
+    <h1 class="display" style="font-size: clamp(40px, 6vw, 64px); line-height: 1; letter-spacing: -0.03em; margin-bottom: var(--s-6);">
+      How to use the pipeline.
+    </h1>
+    <p class="muted fs-lg">
+      A step-by-step walkthrough of producing your first cluster. Estimated time
+      from "I have a topic" to "articles are live": about 90 minutes including
+      review.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow stack-8">
+
+    {# ─── STEP 1 ───────────────────────────────────────── #}
+    <div>
+      <div class="layer-banner">
+        <span class="label" style="color: var(--accent); font-weight: 600;">Step 1</span>
+        <div class="line"></div>
+      </div>
+      <h2>Sign in and start a run.</h2>
+      <p class="muted">
+        Go to <a href="/login"><code>/login</code></a>, sign in, then enter a topic
+        in the sidebar — for example, <em>"Sarjapur Road"</em>. Click
+        <span class="kbd">Start New Run</span>.
+      </p>
+      <div class="card card-tight" style="background: var(--accent-dim); border-color: var(--accent-edge);">
+        <div class="eyebrow" style="color: var(--accent);">Tip</div>
+        Topics should be specific enough to support 8–15 articles. "Real estate" is
+        too broad; "Sarjapur Road" is right.
+      </div>
+    </div>
+
+    {# ─── STEP 2 ───────────────────────────────────────── #}
+    <div>
+      <div class="layer-banner">
+        <span class="label" style="color: var(--accent); font-weight: 600;">Step 2</span>
+        <div class="line"></div>
+      </div>
+      <h2>Run Layer 1 — discovery.</h2>
+      <p class="muted">
+        Click <span class="kbd">▶ Layer 1</span>. Three agents run in sequence:
+      </p>
+      <ul class="muted" style="line-height: var(--lh-relaxed);">
+        <li><strong>Trend Scout</strong> — pulls current SERP, related searches, PAA boxes.</li>
+        <li><strong>Competitor Spy</strong> — audits MagicBricks, NoBroker, Housing.com top 10.</li>
+        <li><strong>Keyword Mapper</strong> — groups keywords by intent and difficulty.</li>
+      </ul>
+      <p class="muted">
+        About 2–3 minutes. You'll see live console output stream in. Each agent's
+        full input/output is inspectable from the agent grid.
+      </p>
+    </div>
+
+    {# ─── STEP 3 ───────────────────────────────────────── #}
+    <div>
+      <div class="layer-banner">
+        <span class="label" style="color: var(--accent); font-weight: 600;">Step 3</span>
+        <div class="line"></div>
+      </div>
+      <h2>Approve the gate.</h2>
+      <p class="muted">
+        Layer 1 ends at the approval gate. Open the keyword map, sanity check the
+        intent groupings, then click <span class="kbd">✅ Approve</span>. If
+        something's off, click <span class="kbd">✗ Reject</span> — the run is
+        cancelled. Edit any agent's output JSON in place if you want to nudge it.
+      </p>
+    </div>
+
+    {# ─── STEP 4 ───────────────────────────────────────── #}
+    <div>
+      <div class="layer-banner">
+        <span class="label" style="color: var(--accent); font-weight: 600;">Step 4</span>
+        <div class="line"></div>
+      </div>
+      <h2>Run Layer 2 — architecture.</h2>
+      <p class="muted">
+        Click <span class="kbd">▶ Layer 2</span>. Three more agents run:
+      </p>
+      <ul class="muted" style="line-height: var(--lh-relaxed);">
+        <li><strong>Content Architect</strong> — designs the cluster (1 hub, N spokes, M sub-spokes).</li>
+        <li><strong>FAQ Architect</strong> — generates the AEO-optimised question set.</li>
+        <li><strong>Research Prompt Generator</strong> — writes the brief for each spoke.</li>
+      </ul>
+    </div>
+
+    {# ─── STEP 5 ───────────────────────────────────────── #}
+    <div>
+      <div class="layer-banner">
+        <span class="label" style="color: var(--accent); font-weight: 600;">Step 5</span>
+        <div class="line"></div>
+      </div>
+      <h2>Ingest research.</h2>
+      <p class="muted">
+        Open <a href="/ingestion"><code>/ingestion</code></a>. Drop your research
+        documents (.md, .pdf, .docx, .txt) — they're chunked, embedded into ChromaDB,
+        and added to the knowledge graph. The Lead Writer queries this corpus for
+        every claim.
+      </p>
+      <div class="card card-tight" style="background: var(--c-warn-bg); border-color: var(--c-warn);">
+        <div class="eyebrow" style="color: var(--c-warn);">Important</div>
+        Without ingested research, the Fact Verifier will reject most claims and
+        the quality loop will hit its iteration cap. Ingest before running L3.
+      </div>
+    </div>
+
+    {# ─── STEP 6 ───────────────────────────────────────── #}
+    <div>
+      <div class="layer-banner">
+        <span class="label" style="color: var(--accent); font-weight: 600;">Step 6</span>
+        <div class="line"></div>
+      </div>
+      <h2>Run Layer 3 — writing &amp; quality.</h2>
+      <p class="muted">
+        Click <span class="kbd">▶ Layer 3</span>. For each article in the cluster,
+        the pipeline runs:
+      </p>
+      <ol class="muted" style="line-height: var(--lh-relaxed);">
+        <li><strong>Lead Writer</strong> drafts.</li>
+        <li><strong>Fact Verifier</strong> checks every claim against ingested research.</li>
+        <li><strong>Brand Auditor</strong> scores tone (target ≥ 6.5/10).</li>
+        <li><strong>Rewriter</strong> fixes whatever didn't pass — up to two iterations.</li>
+        <li><strong>Meta Tagger</strong> adds slug, schema, OG tags, canonical URL.</li>
+      </ol>
+      <p class="muted">
+        Articles that fail the quality loop after 2 iterations are flagged
+        <code>needs_human_review</code>. Open them in the Articles tab, edit
+        in-browser, save.
+      </p>
+    </div>
+
+    {# ─── STEP 7 ───────────────────────────────────────── #}
+    <div>
+      <div class="layer-banner">
+        <span class="label" style="color: var(--accent); font-weight: 600;">Step 7</span>
+        <div class="line"></div>
+      </div>
+      <h2>Interlink.</h2>
+      <p class="muted">
+        Open the Interlink tab. Click <span class="kbd">Run Cluster Pass</span>.
+        The Link Engine extracts canonical anchor phrases, finds candidates across
+        all articles in this cluster, and proposes links with confidence scores.
+      </p>
+      <p class="muted">
+        Approve or reject each candidate. Click
+        <span class="kbd">Inject Approved →</span> when you're done. Markdown gets
+        rewritten in place with backups in <code>.md.bak</code>.
+      </p>
+      <p class="muted">
+        Run the <strong>Global Pass</strong> if you want to interlink against
+        every previously-published article, not just this cluster.
+      </p>
+    </div>
+
+    {# ─── STEP 8 ───────────────────────────────────────── #}
+    <div>
+      <div class="layer-banner">
+        <span class="label" style="color: var(--accent); font-weight: 600;">Step 8</span>
+        <div class="line"></div>
+      </div>
+      <h2>Export.</h2>
+      <p class="muted">
+        From the Articles tab:
+      </p>
+      <ul class="muted" style="line-height: var(--lh-relaxed);">
+        <li><strong>Download All (publish-ready)</strong> — Hugo/Astro frontmatter + JSON-LD schema.</li>
+        <li><strong>Download for Link Engine</strong> — minimal frontmatter, ready to round-trip.</li>
+        <li><strong>Per-article .md</strong> — single article, both formats available.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <div class="section-head">
+      <div class="eyebrow">Reference</div>
+      <h2>Keyboard shortcuts.</h2>
+    </div>
+    <div class="card">
+      <table class="table">
+        <thead><tr><th>Action</th><th>Shortcut</th></tr></thead>
+        <tbody>
+          <tr><td>Open run by ID</td><td><span class="kbd">Click</span> any past run in sidebar</td></tr>
+          <tr><td>Inspect agent</td><td><span class="kbd">Click</span> any agent card</td></tr>
+          <tr><td>Approve interlink anchor</td><td><span class="kbd">Approve</span> button</td></tr>
+          <tr><td>Save edited JSON</td><td><span class="kbd">⌘ S</span> in the editor</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
