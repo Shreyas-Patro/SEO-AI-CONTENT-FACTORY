@@ -11,6 +11,7 @@ import sys
 import io
 import zipfile
 import re
+from auth import optional_user
 import traceback as _tb_mod
 from pathlib import Path
 from typing import Optional
@@ -19,8 +20,19 @@ from fastapi import Depends, FastAPI, Form, HTTPException, Request
 from fastapi.responses import (
     HTMLResponse, JSONResponse, RedirectResponse, StreamingResponse,
 )
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request as StarletteRequest
+from starlette.responses import Response as StarletteResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+# Add near the other local imports
+from link_engine_integration import (
+    get_snapshot as interlink_snapshot,
+    approve_anchor,
+    reject_anchor,
+    edit_anchor_text,
+    inject_all_approved,
+)
 
 ROOT = Path(__file__).parent
 os.chdir(ROOT)
@@ -93,6 +105,27 @@ async def _all_errors(request: Request, exc: Exception):
         status_code=500,
     )
 
+class AuthRedirectMiddleware(BaseHTTPMiddleware):
+    """
+    If a route raises HTTPException(401), redirect HTML clients to /login.
+    JSON clients (HTMX/fetch) still get the 401 so client-side code can
+    detect the auth failure cleanly.
+    """
+    async def dispatch(self, request: StarletteRequest, call_next):
+        response: StarletteResponse = await call_next(request)
+        if response.status_code == 401:
+            accepts = request.headers.get("accept", "")
+            wants_html = "text/html" in accepts and "application/json" not in accepts
+            if wants_html and not request.url.path.startswith("/login"):
+                redirect = RedirectResponse(
+                    f"/login?next={request.url.path}",
+                    status_code=303,
+                )
+                return redirect
+        return response
+
+
+app.add_middleware(AuthRedirectMiddleware)
 
 @app.get("/favicon.ico", include_in_schema=False)
 async def _favicon():
@@ -357,6 +390,29 @@ def _article_to_markdown(article: dict) -> tuple[str, str]:
     filename = f"{slug}.md"
     return filename, md
 
+@app.get("/landing", response_class=HTMLResponse)
+async def landing(request: Request, user: dict = Depends(optional_user)):
+    return templates.TemplateResponse(request, "landing.html", {
+        "user": user,
+        "is_admin": (user or {}).get("role") == "admin",
+        "active_page": "landing",
+    })
+
+@app.get("/about", response_class=HTMLResponse)
+async def about(request: Request, user: dict = Depends(optional_user)):
+    return templates.TemplateResponse(request, "about.html", {
+        "user": user,
+        "is_admin": (user or {}).get("role") == "admin",
+        "active_page": "about",
+    })
+
+@app.get("/how-to-use", response_class=HTMLResponse)
+async def how_to_use(request: Request, user: dict = Depends(optional_user)):
+    return templates.TemplateResponse(request, "how_to_use.html", {
+        "user": user,
+        "is_admin": (user or {}).get("role") == "admin",
+        "active_page": "how",
+    })
 
 @app.get("/articles/{article_id}/download")
 async def article_download(article_id: str, user: dict = Depends(require_user)):
@@ -495,8 +551,11 @@ async def download_one_for_link_engine(
 async def home(
     request: Request,
     run_id: Optional[str] = None,
-    user: dict = Depends(require_user),
+    user: Optional[dict] = Depends(optional_user),  # CHANGED from require_user
 ):
+      # Anonymous users go to the marketing page, not the dashboard
+    if not user:
+        return RedirectResponse("/landing", status_code=303)
     runs = list_pipeline_runs(limit=20)
     if run_id is None and runs:
         run_id = runs[0]["id"]
@@ -851,112 +910,20 @@ async def interlink_view(
     run = get_pipeline_run(run_id)
     cluster_id = run.get("cluster_id") if run else None
 
-    pending, approved, injected, articles, errors = [], [], [], [], []
-
-    try:
-        from link_engine.db.session import get_session_factory
-        from link_engine.db.models import Anchor, Match, Article as LEArticle, Injection
-        # Errors model may or may not exist — try both common names
-        try:
-            from link_engine.db.models import Error as LEError
-        except ImportError:
-            LEError = None
-
-        session = get_session_factory()()
-        try:
-            # PENDING
-            for a in (session.query(Anchor)
-                      .filter(Anchor.status == "pending_review")
-                      .join(Anchor.match)
-                      .order_by(Match.similarity_score.desc())
-                      .limit(100).all()):
-                m = a.match
-                pending.append({
-                    "anchor_id": a.anchor_id,
-                    "anchor_text": a.edited_anchor or a.anchor_text or m.matched_phrase,
-                    "source_title": m.source_chunk.article.title,
-                    "target_title": m.target_chunk.article.title,
-                    "similarity": round(m.similarity_score, 3),
-                    "confidence": a.llm_confidence or 0,
-                    "reasoning": a.reasoning or "",
-                })
-
-            # APPROVED (not yet injected)
-            injected_ids = {i.anchor_id for i in session.query(Injection).all()}
-            for a in (session.query(Anchor)
-                      .filter(Anchor.status == "approved")
-                      .limit(200).all()):
-                if a.anchor_id in injected_ids:
-                    continue
-                m = a.match
-                approved.append({
-                    "anchor_id": a.anchor_id,
-                    "anchor_text": a.edited_anchor or a.anchor_text or m.matched_phrase,
-                    "source_title": m.source_chunk.article.title,
-                    "target_title": m.target_chunk.article.title,
-                    "confidence": a.llm_confidence or 0,
-                })
-
-            # INJECTED
-            for inj in (session.query(Injection)
-                        .order_by(Injection.created_at.desc())
-                        .limit(200).all()):
-                anc = session.get(Anchor, inj.anchor_id)
-                if not anc:
-                    continue
-                m = anc.match
-                injected.append({
-                    "anchor_text": anc.edited_anchor or anc.anchor_text or m.matched_phrase,
-                    "source_title": m.source_chunk.article.title,
-                    "target_title": m.target_chunk.article.title,
-                    "injected_at": str(inj.created_at) if inj.created_at else "",
-                })
-
-            # ARTICLES indexed
-            for art in (session.query(LEArticle)
-                        .order_by(LEArticle.created_at.desc())
-                        .limit(500).all()):
-                articles.append({
-                    "title": art.title,
-                    "url": getattr(art, "url", "") or "",
-                    "chunk_count": len(art.chunks) if hasattr(art, "chunks") else 0,
-                    "created_at": str(art.created_at) if art.created_at else "",
-                })
-
-            # ERRORS
-            if LEError is not None:
-                for e in (session.query(LEError)
-                          .order_by(LEError.created_at.desc())
-                          .limit(50).all()):
-                    errors.append({
-                        "stage": getattr(e, "stage", "") or "",
-                        "error_type": getattr(e, "error_type", "") or "",
-                        "message": getattr(e, "message", "") or "",
-                        "created_at": str(e.created_at) if e.created_at else "",
-                    })
-        finally:
-            session.close()
-    except Exception as e:
-        errors.append({
-            "stage": "dashboard",
-            "error_type": type(e).__name__,
-            "message": str(e),
-            "created_at": "",
-        })
+    snapshot = interlink_snapshot()
+    interlink_running = (
+        job_manager.is_active(f"{run_id}:interlink_cluster")
+        or job_manager.is_active(f"{run_id}:interlink_global")
+    )
 
     return templates.TemplateResponse(request, "_interlink.html", _ctx(user,
         run_id=run_id,
         cluster_id=cluster_id,
-        pending=pending,
-        approved=approved,
-        injected=injected,
-        articles=articles,
-        errors=errors,
-        interlink_running=(
-            job_manager.is_active(f"{run_id}:interlink_cluster")
-            or job_manager.is_active(f"{run_id}:interlink_global")
-        ),
+        snapshot=snapshot,
+        interlink_running=interlink_running,
+        active_page="pipeline",
     ))
+
 @app.get("/runs/{run_id}/agent/{agent}/view", response_class=HTMLResponse)
 async def agent_view(
     request: Request,
@@ -976,35 +943,17 @@ async def agent_view(
         meta=meta or {},
         console=console[-8000:] if console else "",
     ))
+
 @app.post("/interlink/anchor/{anchor_id}/approve")
 async def interlink_approve(anchor_id: str, user: dict = Depends(require_user)):
-    from link_engine.db.session import get_session_factory
-    from link_engine.db.models import Anchor
-    session = get_session_factory()()
-    try:
-        a = session.get(Anchor, anchor_id)
-        if a:
-            a.status = "approved"
-            session.commit()
-    finally:
-        session.close()
-    return JSONResponse({"ok": True})
+    ok = approve_anchor(anchor_id)
+    return JSONResponse({"ok": ok})
 
 
 @app.post("/interlink/anchor/{anchor_id}/reject")
 async def interlink_reject(anchor_id: str, user: dict = Depends(require_user)):
-    from link_engine.db.session import get_session_factory
-    from link_engine.db.models import Anchor
-    session = get_session_factory()()
-    try:
-        a = session.get(Anchor, anchor_id)
-        if a:
-            a.status = "rejected"
-            session.commit()
-    finally:
-        session.close()
-    return JSONResponse({"ok": True})
-
+    ok = reject_anchor(anchor_id)
+    return JSONResponse({"ok": ok})
 
 @app.post("/runs/{run_id}/interlink/inject")
 async def interlink_inject(
@@ -1012,28 +961,41 @@ async def interlink_inject(
     dry_run: bool = Form(False),
     user: dict = Depends(require_user),
 ):
-    from link_engine.db.session import get_session_factory
-    from link_engine.db.models import Anchor, Run as LinkRun, Injection
-    from link_engine.stages.inject import inject_approved_links
-    session = get_session_factory()()
-    try:
-        approved = (
-            session.query(Anchor)
-            .filter(Anchor.status == "approved")
-            .filter(~Anchor.anchor_id.in_(session.query(Injection.anchor_id)))
-            .all()
-        )
-        link_run = LinkRun(articles_processed=0)
-        session.add(link_run)
-        session.flush()
-        results = inject_approved_links(approved, session, link_run.run_id, dry_run=dry_run)
-        session.commit()
-    finally:
-        session.close()
+    results = inject_all_approved(dry_run=dry_run)
     return RedirectResponse(
-        f"/runs/{run_id}/interlink?injected={results['injected']}",
+        f"/runs/{run_id}/interlink?injected={results.get('injected', 0)}",
         status_code=303,
     )
+
+@app.post("/interlink/anchor/{anchor_id}/edit")
+async def interlink_edit(
+    anchor_id: str,
+    anchor_text: str = Form(...),
+    user: dict = Depends(require_user),
+):
+    ok = edit_anchor_text(anchor_id, anchor_text)
+    return JSONResponse({"ok": ok})
+
+
+@app.post("/interlink/bulk/approve_all")
+async def interlink_bulk_approve(user: dict = Depends(require_user)):
+    """Approve every currently-pending anchor in one shot."""
+    snap = interlink_snapshot(limit_pending=10000)
+    n = 0
+    for p in snap.pending:
+        if not p.get("error") and approve_anchor(p["anchor_id"]):
+            n += 1
+    return JSONResponse({"ok": True, "approved": n})
+
+
+@app.post("/interlink/bulk/reject_all")
+async def interlink_bulk_reject(user: dict = Depends(require_user)):
+    snap = interlink_snapshot(limit_pending=10000)
+    n = 0
+    for p in snap.pending:
+        if not p.get("error") and reject_anchor(p["anchor_id"]):
+            n += 1
+    return JSONResponse({"ok": True, "rejected": n})
 
 
 # ─── Topic queue ──────────────────────────────────────────────────────────
@@ -1060,11 +1022,13 @@ async def queue_add(
 
 
 # ─── Admin (admin role only) ──────────────────────────────────────────────
-
 @app.get("/admin", response_class=HTMLResponse)
 async def admin_page(request: Request, user: dict = Depends(require_admin)):
+    from config_loader import get_config
+    cfg = get_config()
     runs = list_pipeline_runs(limit=500)
 
+    # Per-user activity rollup
     by_user = {}
     for r in runs:
         u = r.get("submitted_by") or "(unknown)"
@@ -1088,14 +1052,69 @@ async def admin_page(request: Request, user: dict = Depends(require_admin)):
         "llm_calls": sum(r.get("total_llm_calls", 0)  or 0 for r in recent),
     }
 
+    # API key status — show last 4 chars only, never the full key
+    def _mask(v):
+        if not v: return ""
+        return f"…{v[-4:]}" if len(v) >= 8 else "set"
+    env_status = {
+        "anthropic":  _mask(os.getenv("ANTHROPIC_API_KEY", "")),
+        "serpapi":    _mask(os.getenv("SERPAPI_API_KEY", "")),
+        "perplexity": _mask(os.getenv("PERPLEXITY_API_KEY", "")),
+    }
+
     return templates.TemplateResponse(request, "_admin.html", _ctx(user,
         users=USERS,
         by_user=by_user,
         week_total=week_total,
         all_runs=runs[:50],
+        env_status=env_status,
+        thresholds=cfg.get("quality", {}),
+        budget=cfg.get("budget", {}),
+        active_page="admin",
     ))
 
+@app.post("/admin/api-keys")
+async def admin_save_api_keys(
+    request: Request,
+    user: dict = Depends(require_admin),
+):
+    """
+    Update API keys at runtime. Persists to .env on disk and updates
+    os.environ for the running process. Worker processes started by
+    JobManager inherit the parent env, so newly-submitted jobs pick up
+    the new value.
+    """
+    form = await request.form()
+    updates = {
+        "ANTHROPIC_API_KEY":  (form.get("anthropic_api_key")  or "").strip(),
+        "SERPAPI_API_KEY":    (form.get("serpapi_api_key")    or "").strip(),
+        "PERPLEXITY_API_KEY": (form.get("perplexity_api_key") or "").strip(),
+    }
 
+    # Apply to live env
+    for k, v in updates.items():
+        if v:                      # blank input = leave unchanged
+            os.environ[k] = v
+
+    # Persist to .env (preserve unrelated lines)
+    env_path = ROOT / ".env"
+    existing = {}
+    if env_path.exists():
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            if "=" in line and not line.lstrip().startswith("#"):
+                k, _, v = line.partition("=")
+                existing[k.strip()] = v.strip()
+
+    for k, v in updates.items():
+        if v:
+            existing[k] = v
+
+    env_path.write_text(
+        "\n".join(f"{k}={v}" for k, v in existing.items()) + "\n",
+        encoding="utf-8",
+    )
+
+    return RedirectResponse("/admin?saved=1", status_code=303)
 # ─── Artifacts (read-only browser) ────────────────────────────────────────
 
 @app.get("/runs/{run_id}/artifacts", response_class=HTMLResponse)
