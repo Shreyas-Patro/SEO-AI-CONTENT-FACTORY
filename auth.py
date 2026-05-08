@@ -32,14 +32,14 @@ from itsdangerous import BadSignature, URLSafeSerializer
 # ─── Config ───────────────────────────────────────────────────────────────
 
 # Cookie name. Keep stable so existing sessions survive deploys.
-SESSION_COOKIE = "canvas_session"
+SESSION_COOKIE = "BLOG-AI_session"
 
 # Secret used to sign the session cookie. Override via env var in prod.
 # If you change this, every existing session is invalidated (users get
 # logged out and have to sign in again).
 SESSION_SECRET = os.getenv("SESSION_SECRET", "dev-secret-change-me-in-prod")
 
-_serializer = URLSafeSerializer(SESSION_SECRET, salt="canvas-homes-session")
+_serializer = URLSafeSerializer(SESSION_SECRET, salt="BLOG-AI-session")
 
 
 # ─── Users (hardcoded — replace with bcrypt-hashed values in production) ──
@@ -54,10 +54,10 @@ _serializer = URLSafeSerializer(SESSION_SECRET, salt="canvas-homes-session")
 # To add or remove team members, edit this dict and restart the server.
 USERS: dict[str, dict] = {
     "admin": {
-        "password": "change-me-admin",
-        "name": "Aakash",
+        "password": "canvashomes",
+        "name": "Shreyas",
         "role": "admin",
-        "email": "aakash@canvas-homes.com",
+        "email": "shreyas@canvas-homes.com",
     },
     "writer1": {
         "password": "change-me-writer1",

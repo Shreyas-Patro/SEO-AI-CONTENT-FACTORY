@@ -1,15 +1,30 @@
-{# templates/_agents_grid.html — agent cards as direct links to full-page inspector #}
+{# ============================================================================
+   _agents_grid.html — pipeline agent grid
+   ----------------------------------------------------------------------------
+   Three layered rows; each agent is a card linking to its full inspector view.
+   Status states: pending | active | done | failed
+   ============================================================================ #}
 
 {% if layer3_summary and layer3_summary.total %}
-  <div style="background:#0a1a2a;border:1px solid #036;border-radius:8px;padding:12px;margin-bottom:16px;font-size:13px">
-    <strong style="color:#9cf">Layer 3:</strong>
-    {{ layer3_summary.written }}/{{ layer3_summary.total }} written
-    {% if layer3_summary.drafts %}&nbsp;·&nbsp; {{ layer3_summary.drafts }} drafts{% endif %}
-    {% if layer3_summary.needs_review %}&nbsp;·&nbsp; <span style="color:#fa0">{{ layer3_summary.needs_review }} need review</span>{% endif %}
+  <div class="card mb-4" style="background: var(--c-info-bg); border-color: var(--c-info);">
+    <div class="row gap-3">
+      <span class="pill pill-info">Layer 3</span>
+      <span class="strong">{{ layer3_summary.written }}/{{ layer3_summary.total }} written</span>
+      {% if layer3_summary.drafts %}
+        <span class="muted">· {{ layer3_summary.drafts }} drafts</span>
+      {% endif %}
+      {% if layer3_summary.needs_review %}
+        <span class="pill pill-warn">{{ layer3_summary.needs_review }} need review</span>
+      {% endif %}
+    </div>
     {% if layer3_summary.current_stages %}
-      <div style="margin-top:6px;color:#bbb;font-size:12px">
+      <div class="stack-2 mt-3">
         {% for title, stage in layer3_summary.current_stages.items() %}
-          <div>· <strong>{{ title[:60] }}</strong>: {{ stage }}</div>
+          <div class="row gap-2 fs-sm">
+            <span class="dot dot-pulse dot-good"></span>
+            <span class="strong">{{ title[:60] }}</span>
+            <span class="muted">— {{ stage }}</span>
+          </div>
         {% endfor %}
       </div>
     {% endif %}
@@ -17,39 +32,44 @@
 {% endif %}
 
 {% for layer in agents %}
-  <div style="margin-bottom:20px">
-    <h3 style="color:#aaa;margin:0 0 8px 0;font-size:13px;text-transform:uppercase;letter-spacing:0.5px">
-      {{ layer.label }}
-    </h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px">
-      {% for a in layer.agents %}
-        {% set color = '#444' %}
-        {% if a.status == 'done' %}{% set color = '#0a3a0a' %}{% endif %}
-        {% if a.status == 'failed' %}{% set color = '#3a0a0a' %}{% endif %}
-        {% if a.status == 'active' %}{% set color = '#3a2a0a' %}{% endif %}
+  <div class="layer-banner">
+    <span class="label">{{ layer.label }}</span>
+    <div class="line"></div>
+  </div>
 
-        <a href="/runs/{{ run_id }}/agent/{{ a.key }}/view"
-           style="background:{{ color }};border:1px solid #555;border-radius:6px;padding:10px;
-                  text-decoration:none;color:#eee;display:block"
-           title="Click to view {{ a.label }} output">
-          <div style="font-weight:600;font-size:13px">{{ a.label }}</div>
-          <div style="font-size:11px;color:#aaa;margin-top:4px">
-            {% if a.status == 'done' %}✓ done — view →{% endif %}
-            {% if a.status == 'failed' %}✗ failed — view →{% endif %}
-            {% if a.status == 'active' %}● running{% endif %}
-            {% if a.status == 'pending' %}· pending{% endif %}
-            {% if a.meta.attempts and a.meta.attempts > 1 %}&nbsp;(×{{ a.meta.attempts }}){% endif %}
+  <div class="grid grid-auto mb-4">
+    {% for a in layer.agents %}
+      <a href="/runs/{{ run_id }}/agent/{{ a.key }}/view"
+         class="agent-card {{ a.status }}"
+         title="Open {{ a.label }} inspector">
+        <div class="agent-name">{{ a.label }}</div>
+        <div class="agent-meta">
+          {% if a.status == 'done' %}
+            ✓ Complete
+          {% elif a.status == 'failed' %}
+            ✗ Failed
+          {% elif a.status == 'active' %}
+            <span class="dot dot-pulse dot-good"></span> Running
+          {% else %}
+            Pending
+          {% endif %}
+          {% if a.meta.attempts and a.meta.attempts > 1 %}
+            · ×{{ a.meta.attempts }}
+          {% endif %}
+        </div>
+        {% if a.meta.cost_usd %}
+          <div class="agent-cost">
+            ${{ "%.4f"|format(a.meta.cost_usd) }} ·
+            {{ a.meta.duration_seconds|int }}s ·
+            {{ a.meta.llm_calls or 0 }} calls
           </div>
-          {% if a.meta.cost_usd %}
-            <div style="font-size:11px;color:#888;margin-top:2px">
-              ${{ "%.4f"|format(a.meta.cost_usd) }} · {{ a.meta.duration_seconds|int }}s
-            </div>
-          {% endif %}
-          {% if a.meta.validation_problems %}
-            <div style="font-size:10px;color:#fa0;margin-top:2px">⚠ {{ a.meta.validation_problems|length }} issues</div>
-          {% endif %}
-        </a>
-      {% endfor %}
-    </div>
+        {% endif %}
+        {% if a.meta.validation_problems %}
+          <div class="mt-2">
+            <span class="pill pill-warn">⚠ {{ a.meta.validation_problems|length }} issues</span>
+          </div>
+        {% endif %}
+      </a>
+    {% endfor %}
   </div>
 {% endfor %}

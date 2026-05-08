@@ -18,7 +18,7 @@ Property prices on Sarjapur Road vary significantly based on proximity to IT cor
 
 ### Average Price Per Square Foot Analysis
 
-Current [Sarjapur Road property prices](/sarjapur-road-bangalore-complete-guide) range between ₹10,200 and ₹11,600 per sq ft as of late 2025, with premium developments and new launches commanding ₹12,000 to ₹14,000 per sq ft [Source: Canvas Homes Research, 2025]. This pricing positions the locality competitively against other major IT corridors in Bangalore.
+Current Sarjapur Road property prices range between ₹10,200 and ₹11,600 per sq ft as of late 2025, with premium developments and new launches commanding ₹12,000 to ₹14,000 per sq ft [Source: Canvas Homes Research, 2025]. This pricing positions the locality competitively against other major IT corridors in Bangalore.
 
 The price spectrum reflects the corridor's diverse character. Areas closer to Bellandur and the Outer Ring Road junction command premium rates due to established infrastructure and proximity to major tech parks. Meanwhile, emerging localities like Dommasandra and Kodathi offer more accessible entry points for first-time buyers.
 

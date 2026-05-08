@@ -1,138 +1,140 @@
+{# ============================================================================
+   index.html — the pipeline dashboard (authenticated home page)
+   ----------------------------------------------------------------------------
+   Layout: app-shell with sidebar (runs + actions) + main (header, agents,
+   articles, live console).
+   ============================================================================ #}
 {% extends "base.html" %}
-
+{% block title %}Pipeline{% endblock %}
 {% block body %}
-<div class="layout">
 
+<div class="app-shell">
+
+  {# ─── SIDEBAR ───────────────────────────────────────── #}
   <aside class="sidebar">
-    <h1>🏠 IQOL TECHNOLOGIES</h1>
-    <p class="muted">AGENT SWARM· v7</p>
-
-    <form method="post" action="/runs/new" class="new-run-form">
-      <input type="text" name="topic" placeholder="Topic (e.g. HSR Layout)" required>
-      <button type="submit" class="btn-primary">▶ Start New Run</button>
+    <div class="eyebrow mb-4">Start a run</div>
+    <form method="post" action="/runs/new" class="stack-2">
+      <input type="text"
+             name="topic"
+             class="input"
+             placeholder="e.g. HSR Layout"
+             required>
+      <button type="submit" class="btn btn-primary btn-block">▶ Start new run</button>
     </form>
 
-    <hr>
     <h3>Past runs</h3>
-    <div id="runs-list" hx-get="/runs/list" hx-trigger="load, every 30s" hx-swap="innerHTML">
+    <div hx-get="/runs/list" hx-trigger="load, every 30s" hx-swap="innerHTML">
       {% include "_runs_list.html" %}
     </div>
 
-   <a href="/queue"
-   class="btn-small"
-   style="display:block;margin-top:8px;text-align:center;text-decoration:none">
-  📋 Topic Queue ({{ runs|length }})
-   </a> 
-   <a href="/ingestion" class="btn-small" style="display:block;margin-top:8px;text-align:center;text-decoration:none">
-   Ingest Research
-   </a>
-   <a href="/graph" class="btn-small" style="display:block;margin-top:8px;text-align:center;text-decoration:none">
-   Knowledge Graph
-   </a>
-    {% if run %}
-    <hr>
-    <div class="run-summary">
-      <p><strong>Run:</strong> <code>{{ run.id[-8:] }}</code></p>
-      <p><strong>Topic:</strong> {{ run.topic }}</p>
-      <p><strong>Status:</strong> <span class="status-{{ run.status }}">{{ run.status }}</span></p>
-      <p><strong>Stage:</strong> <code>{{ run.current_stage or 'init' }}</code></p>
-      <p>💰 ${{ "%.4f"|format(run.total_cost_usd or 0) }}</p>
-      <p>🔍 {{ run.total_serp_calls or 0 }} SERP · 🤖 {{ run.total_llm_calls or 0 }} LLM</p>
+    <h3>Quick links</h3>
+    <div class="stack-2">
+      <a href="/queue" class="btn btn-sm btn-block">📋 Topic queue</a>
+      <a href="/ingestion" class="btn btn-sm btn-block">📥 Ingest research</a>
+      <a href="/graph" class="btn btn-sm btn-block">🕸 Knowledge graph</a>
     </div>
-    <form method="post" action="/logout" style="margin-top:12px">
-      <button type="submit" class="btn-small" style="width:100%">Sign out ({{ user.name }})</button>
-    </form>
-    <form method="post" action="/runs/{{ run.id }}/reset_l3">
-      <button type="submit" class="btn-warn">🔧 Reset to layer2_done</button>
-    </form>
+
+    {% if run %}
+      <h3>This run</h3>
+      <div class="stack-2 fs-sm">
+        <div class="row row-between">
+          <span class="muted">ID</span>
+          <code>{{ run.id[-8:] }}</code>
+        </div>
+        <div class="row row-between">
+          <span class="muted">Topic</span>
+          <span class="strong" style="text-align:right;max-width:60%;">{{ run.topic }}</span>
+        </div>
+        <div class="row row-between">
+          <span class="muted">Status</span>
+          {% if run.status == "completed" %}
+            <span class="pill pill-good">{{ run.status }}</span>
+          {% elif run.status == "running" %}
+            <span class="pill pill-info">{{ run.status }}</span>
+          {% elif run.status == "failed" or run.status == "cancelled" %}
+            <span class="pill pill-bad">{{ run.status }}</span>
+          {% else %}
+            <span class="pill">{{ run.status }}</span>
+          {% endif %}
+        </div>
+        <div class="row row-between">
+          <span class="muted">Stage</span>
+          <code>{{ run.current_stage or 'init' }}</code>
+        </div>
+        <div class="row row-between">
+          <span class="muted">Cost</span>
+          <span class="mono">${{ "%.4f"|format(run.total_cost_usd or 0) }}</span>
+        </div>
+        <div class="row row-between">
+          <span class="muted">LLM / SERP</span>
+          <span class="mono">{{ run.total_llm_calls or 0 }} / {{ run.total_serp_calls or 0 }}</span>
+        </div>
+      </div>
+
+      <h3>Actions</h3>
+      <form method="post" action="/runs/{{ run.id }}/reset_l3">
+        <button type="submit" class="btn btn-warn btn-sm btn-block">🔧 Reset to layer2_done</button>
+      </form>
     {% endif %}
   </aside>
 
+  {# ─── MAIN ──────────────────────────────────────────── #}
   <main class="main">
     {% if not run %}
-      <div class="empty">No run selected. Start a new run from the sidebar.</div>
+      <div class="empty" style="margin-top: var(--s-12);">
+        <div class="empty-icon">🚀</div>
+        <h2 style="margin: 0 0 var(--s-2) 0;">No run selected.</h2>
+        <p class="muted">Start a new one from the sidebar — enter a topic and click <em>Start new run</em>.</p>
+      </div>
     {% else %}
 
-    <div id="run-header"
-         hx-get="/runs/{{ run_id }}/header"
-         hx-trigger="load, every 3s"
-         hx-swap="innerHTML">
-      {% include "_header.html" %}
-    </div>
-
-    <nav class="tabs">
-      <button class="tab active" data-tab="pipeline">Pipeline</button>
-      <button class="tab" data-tab="articles">Articles</button>
-      <button class="tab" data-tab="agent-detail">Agent Inspector</button>
-      <a href="/runs/{{ run_id }}/interlink"
-     class="tab"
-     style="text-decoration:none;display:inline-block">
-     Interlink
-  </a>
-    </nav>
-
-    <section class="tab-panel active" id="tab-pipeline">
-      <div id="agents-grid"
-           hx-get="/runs/{{ run_id }}/agents"
-           hx-trigger="load, every 3s"
-           hx-swap="innerHTML">
-        {% include "_agents_grid.html" %}
+      {# Run header — re-rendered every 3s by HTMX #}
+      <div hx-get="/runs/{{ run_id }}/header" hx-trigger="load, every 3s" hx-swap="innerHTML">
+        {% include "_header.html" %}
       </div>
-<div id="agent-inspector"></div>
-      <h3 class="section-h">📡 Live Console</h3>
-      <pre id="live-log" class="live-log" style="max-height:400px;overflow:auto"></pre>
-<script>
-(function () {
-  var pre = document.getElementById('live-log');
-  if (!pre) return;
-  var src = new EventSource('/runs/{{ run_id }}/log/stream');
-  src.onmessage = function (e) {
-    pre.textContent += e.data + '\n';
-    pre.scrollTop = pre.scrollHeight;
-  };
-  src.onerror = function () { /* browser will auto-reconnect */ };
-  window.addEventListener('beforeunload', function () { src.close(); });
-})();
-</script>
-    </section>
 
-    <section class="tab-panel" id="tab-articles">
-      <div id="articles-panel"
-           hx-get="/runs/{{ run_id }}/articles"
-           hx-trigger="load, every 8s"
-           hx-swap="innerHTML">
-        Loading articles...
+      {# Tab nav #}
+      <div class="tabs">
+        <button class="tab active" data-tab="pipeline">Pipeline</button>
+        <button class="tab" data-tab="articles">Articles</button>
+        <a class="tab" href="/runs/{{ run_id }}/interlink">Interlink</a>
       </div>
-    </section>
 
-    <section class="tab-panel" id="tab-agent-detail">
-    <div class="agent-picker">
-  {% for grp in agents %}
-    {% for a in grp.agents %}
-      <button class="btn-small"
-              hx-get="/runs/{{ run_id }}/agent/{{ a.key }}/detail"
-              hx-target="#agent-detail-target"
-              hx-swap="innerHTML">
-        {{ a.label }}
-      </button>
-    {% endfor %}
-  {% endfor %}
-</div>
-    </section>
+      <div class="tab-panel active" id="tab-pipeline">
+        {# Agent grid — re-rendered every 3s #}
+        <div hx-get="/runs/{{ run_id }}/agents" hx-trigger="load, every 3s" hx-swap="innerHTML">
+          {% include "_agents_grid.html" %}
+        </div>
+
+        <div class="layer-banner">
+          <span class="label">Live console</span>
+          <div class="line"></div>
+        </div>
+        <pre id="live-log" class="live-log"></pre>
+
+        <script>
+          (function () {
+            const pre = document.getElementById('live-log');
+            if (!pre) return;
+            const src = new EventSource('/runs/{{ run_id }}/log/stream');
+            src.onmessage = (e) => {
+              pre.textContent += e.data + '\n';
+              pre.scrollTop = pre.scrollHeight;
+            };
+            window.addEventListener('beforeunload', () => src.close());
+          })();
+        </script>
+      </div>
+
+      <div class="tab-panel" id="tab-articles">
+        <div hx-get="/runs/{{ run_id }}/articles" hx-trigger="load, every 8s" hx-swap="innerHTML">
+          <div class="muted">Loading articles…</div>
+        </div>
+      </div>
 
     {% endif %}
   </main>
+
 </div>
 
-<script>
-document.querySelectorAll('.tab').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    var target = btn.getAttribute('data-tab');
-    document.querySelectorAll('.tab').forEach(function (t) { t.classList.remove('active'); });
-    document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('active'); });
-    btn.classList.add('active');
-    document.getElementById('tab-' + target).classList.add('active');
-  });
-});
-</script>
 {% endblock %}

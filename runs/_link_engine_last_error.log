@@ -1,10 +1,13 @@
-[bg] starting app._run_cluster_pass args=('cl-53b5e206-556', 'prun-a53a056e-7c8')
-[interlink] starting cluster pass for cl-53b5e206-556
-[link_bridge] Exported 12 cluster articles → runs\prun-a53a056e-7c8\interlink\cluster
-[link_bridge] Running: C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Scripts\python.exe -m link_engine.cli run runs\prun-a53a056e-7c8\interlink\cluster
-[link_bridge] API key forwarded: sk-ant-api03…HAAA
+=== STDOUT ===
 
-[link_bridge] FULL STDERR:
+🔗 Link Engine  Run ID: 0574a6c4...
+
+Stage 1/6: Ingesting articles...
+  ✓ 12 new  |  0 changed  |  0 unchanged  |  0 errors
+Stage 2/6: Chunking articles...
+
+
+=== STDERR ===
 ┌───────────────────── Traceback (most recent call last) ─────────────────────┐
 │ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
 │ ckages\sqlalchemy\engine\base.py:1933 in _exec_single_context               │
@@ -5041,34 +5044,4 @@ and maintenance charges ranging from ₹2-4 per sq ft monthly.", 18380, 18616,
 '2026-05-08 09:41:04.168860')]]
 (Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on 
 this error at: https://sqlalche.me/e/20/7s2a)
-
-
-[link_bridge] FULL STDOUT:
-
-🔗 Link Engine  Run ID: 0574a6c4...
-
-Stage 1/6: Ingesting articles...
-  ✓ 12 new  |  0 changed  |  0 unchanged  |  0 errors
-Stage 2/6: Chunking articles...
-
-
-[link_bridge] Full output also saved to: C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\runs\_link_engine_last_error.log
-
-
-[CRASH] RuntimeError: link_engine failed: this error at: https://sqlalche.me/e/20/7s2a)
-(full output in C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\runs\_link_engine_last_error.log)
-Traceback (most recent call last):
-  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\jobs.py", line 51, in _bootstrap_and_run
-    result = fn(*args)
-             ^^^^^^^^^
-  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\app.py", line 866, in _run_cluster_pass
-    result = cluster_pass(cluster_id, run_id)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine_bridge.py", line 218, in cluster_pass
-    return run_link_engine(folder, db_path=db_path)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine_bridge.py", line 207, in run_link_engine
-    raise RuntimeError(f"link_engine failed: {summary}\n(full output in {debug_log})")
-RuntimeError: link_engine failed: this error at: https://sqlalche.me/e/20/7s2a)
-(full output in C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\runs\_link_engine_last_error.log)
 
