@@ -1,5 +1,5 @@
 """
-Pipeline Orchestrator v6 — LangGraph-backed.
+Pipeline Orchestrator v7 — LangGraph-backed, with post-L3 hook.
 
 PUBLIC API (unchanged so the dashboard keeps working):
 - start_pipeline_run(topic, notes)
@@ -9,7 +9,16 @@ PUBLIC API (unchanged so the dashboard keeps working):
 - rerun_agent(run_id, agent_name) — single-node rerun
 - load_agent_output / load_agent_input / load_agent_metadata / load_agent_console
 - edit_agent_output, edit_state_key, get_full_run_state
+
+NEW in v7:
+- run_layer3() now triggers _post_layer3_hook() on success, which:
+    1. Exports cluster articles to data/published_articles/<cluster_id>/
+    2. Runs link_engine.process_directory() in-process to ingest + match + score
+    3. Updates the run's current_stage to "interlink_ready"
 """
+from pathlib import Path
+import traceback
+
 from db.artifacts import (
     init_artifact_tables, create_pipeline_run, update_pipeline_run, get_pipeline_run,
     save_artifact, load_artifact, list_pipeline_runs, increment_run_counters,
@@ -20,8 +29,8 @@ from db.sqlite_ops import init_db, get_articles_by_cluster
 init_db()
 init_artifact_tables()
 
+
 def start_pipeline_run(topic, notes="", submitted_by=""):
-    # Tolerant of older db/artifacts.py that didn't take submitted_by yet
     try:
         run_id = create_pipeline_run(topic, notes=notes, submitted_by=submitted_by)
     except TypeError:
@@ -33,6 +42,7 @@ def start_pipeline_run(topic, notes="", submitted_by=""):
     state.topic = topic
     state.save()
     return run_id
+
 
 def approve_gate(run_id):
     update_pipeline_run(run_id, gate_status="approved", current_stage="gate_approved")
@@ -116,7 +126,7 @@ def run_layer3(run_id, article_ids=None):
         init_state["current_article_id"] = article_ids[0]
     config = {
         "configurable": {"thread_id": f"{run_id}-l3"},
-        "recursion_limit": 200,   # quality loop can iterate
+        "recursion_limit": 200,
     }
 
     print(f"\n{'='*60}\n[Pipeline {run_id}] Layer 3 (LangGraph + quality loop)\n{'='*60}")
@@ -127,7 +137,84 @@ def run_layer3(run_id, article_ids=None):
             final_state = node_output
 
     update_pipeline_run(run_id, status="completed", current_stage="done")
+
+    # ── NEW: auto-trigger interlinking ingestion ────────────────────────
+    try:
+        _post_layer3_hook(run_id)
+    except Exception as e:
+        print(f"[post-L3 hook] FAILED but Layer 3 already completed: {e}")
+        print(traceback.format_exc())
+        # Don't re-raise — L3 success is what matters; interlinking can be retried manually.
+
     return final_state
+
+
+def _post_layer3_hook(run_id):
+    """
+    Runs immediately after Layer 3 completes successfully.
+
+    Steps:
+      1. Export cluster articles to data/published_articles/<cluster_id>/
+      2. Run link_engine.process_directory() to ingest + match + score
+      3. Update run's current_stage to 'interlink_ready'
+
+    All exceptions are caught and logged; a hook failure must NOT roll back L3.
+    """
+    print(f"\n{'='*60}\n[Pipeline {run_id}] Post-L3: auto-interlink\n{'='*60}")
+
+    run = get_pipeline_run(run_id)
+    cluster_id = run.get("cluster_id")
+    if not cluster_id:
+        print("[post-L3] No cluster_id, skipping")
+        return
+
+    # 1. Export articles to the link engine's corpus dir
+    try:
+        from export_for_link_engine import export_cluster_to_dir
+        export_root = Path("data/published_articles") / cluster_id
+        if export_root.exists():
+            # Clear stale files from a previous L3 run on the same cluster
+            import shutil
+            shutil.rmtree(export_root)
+        paths = export_cluster_to_dir(cluster_id, export_root)
+        print(f"[post-L3] Exported {len(paths)} articles to {export_root}")
+    except Exception as e:
+        print(f"[post-L3] Export failed: {e}")
+        update_pipeline_run(run_id, current_stage="interlink_export_failed")
+        raise
+
+    # 2. Ingest into the link engine
+    try:
+        from link_engine.db.session import get_session_factory
+        from link_engine.stages.article_ops import process_directory
+
+        session = get_session_factory()()
+        try:
+            def _progress(msg, frac):
+                print(f"[post-L3 ingest] {int(frac*100):3d}% — {msg}")
+
+            summary = process_directory(
+                export_root,
+                session,
+                progress_callback=_progress,
+            )
+            print(f"[post-L3] Ingest complete: "
+                  f"new={summary.get('new', 0)} "
+                  f"changed={summary.get('changed', 0)} "
+                  f"unchanged={summary.get('unchanged', 0)} "
+                  f"matches={summary.get('matches_found', 0)} "
+                  f"anchors_passed={summary.get('anchors_passed', 0)}")
+        finally:
+            session.close()
+    except Exception as e:
+        print(f"[post-L3] Link-engine ingest failed: {e}")
+        print(traceback.format_exc())
+        update_pipeline_run(run_id, current_stage="interlink_ingest_failed")
+        raise
+
+    # 3. Mark the run as ready for human interlink review
+    update_pipeline_run(run_id, current_stage="interlink_ready")
+    print(f"[post-L3] Cluster {cluster_id} ready for interlink review.")
 
 
 # ── Single-agent reruns (kept for dashboard) ────────────────────────────
