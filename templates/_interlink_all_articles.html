@@ -1,0 +1,81 @@
+{% if not articles %}
+  <div class="empty"><div class="empty-icon">📚</div>No articles indexed.</div>
+{% else %}
+
+<div class="mb-3">
+  <input id="article-search" class="input" placeholder="Search by title or slug…"
+         oninput="filterArticles(this.value)">
+</div>
+
+<div id="article-list" class="stack-2">
+  {% for art in articles %}
+    <div class="card" data-title="{{ (art.title or '')|lower }}" data-slug="{{ art.slug|lower }}"
+         id="art-{{ art.article_id }}">
+      <div class="row row-between">
+        <div style="flex: 1; min-width: 0;">
+          <h4 style="margin: 0 0 var(--s-1) 0;">{{ art.title }}</h4>
+          <div class="muted fs-sm">
+            <code>{{ art.slug }}</code> &nbsp;·&nbsp;
+            {{ art.chunk_count }} chunks &nbsp;·&nbsp;
+            {{ art.injected_count }} links injected
+          </div>
+        </div>
+        <div class="row gap-2">
+          <button class="btn btn-sm" onclick="toggleArticleDetail('{{ art.article_id }}')">▾ View</button>
+          <button class="btn btn-sm btn-bad"
+                  hx-post="/interlink/articles/{{ art.article_id }}/delete"
+                  hx-confirm="Delete {{ art.title }} and all its data?"
+                  hx-swap="none"
+                  onclick="setTimeout(() => location.reload(), 600)">🗑 Delete</button>
+        </div>
+      </div>
+
+      <div id="detail-{{ art.article_id }}" class="hide" style="margin-top: var(--s-3);">
+        {% if art.sections %}
+          <h5 class="eyebrow">Sections</h5>
+          <ul style="list-style: none; padding: 0; margin: var(--s-1) 0 var(--s-3) 0;">
+            {% for s in art.sections %}
+              <li class="muted fs-sm">
+                <code>{{ s.heading }}</code> — {{ s.word_count }} words
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if art.content %}
+          <h5 class="eyebrow">Content</h5>
+          <div class="rendered-md" data-content="{{ art.content|e }}"
+               style="background: var(--bg-deep); padding: var(--s-3); border-radius: var(--r-2);
+                      max-height: 380px; overflow: auto;">
+            <span class="muted">Rendering…</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  function toggleArticleDetail(aid) {
+    const d = document.getElementById('detail-' + aid);
+    d.classList.toggle('hide');
+    if (!d.classList.contains('hide') && typeof marked !== 'undefined') {
+      d.querySelectorAll('.rendered-md').forEach(div => {
+        if (!div.dataset.rendered) {
+          div.innerHTML = marked.parse(div.dataset.content || '');
+          div.dataset.rendered = '1';
+        }
+      });
+    }
+  }
+  function filterArticles(q) {
+    q = (q || '').toLowerCase();
+    document.querySelectorAll('#article-list > .card').forEach(c => {
+      const t = c.dataset.title || '';
+      const s = c.dataset.slug || '';
+      c.style.display = (!q || t.includes(q) || s.includes(q)) ? '' : 'none';
+    });
+  }
+</script>
+
+{% endif %}

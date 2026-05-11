@@ -1,0 +1,36 @@
+{% if not link_runs %}
+  <div class="empty"><div class="empty-icon">📜</div>No link engine runs yet.</div>
+{% else %}
+
+<div class="card">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Run ID</th><th>Started</th><th>Duration</th>
+        <th class="text-right">Articles</th>
+        <th class="text-right">Matches</th>
+        <th class="text-right">Injected</th>
+        <th class="text-right">Errors</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in link_runs %}
+        <tr>
+          <td><code>{{ r.run_id[:8] }}</code></td>
+          <td class="muted fs-sm">{{ r.started_at }}</td>
+          <td class="mono">{{ r.duration }}</td>
+          <td class="text-right mono">{{ r.articles_processed }}</td>
+          <td class="text-right mono">{{ r.matches_found }}</td>
+          <td class="text-right mono">{{ r.links_injected }}</td>
+          <td class="text-right mono">
+            {% if r.errors_total %}
+              <span style="color: var(--c-bad)">{{ r.errors_total }}</span>
+            {% else %}0{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endif %}
