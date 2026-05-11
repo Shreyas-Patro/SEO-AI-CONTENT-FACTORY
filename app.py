@@ -32,8 +32,16 @@ from link_engine_integration import (
     reject_anchor,
     edit_anchor_text,
     inject_all_approved,
+    ingest_single_article,
+    ingest_bulk_files,
+    ingest_bulk_paste,
+    reprocess_corpus,
+    delete_article_by_id,
+    get_all_articles_with_content,
+    get_injected_with_content,
+    restore_article_from_backup,
+    get_run_history as get_link_run_history,
 )
-
 ROOT = Path(__file__).parent
 os.chdir(ROOT)
 sys.path.insert(0, str(ROOT))
@@ -859,8 +867,9 @@ async def faq_delete(
 
 # ─── Interlinking ─────────────────────────────────────────────────────────
 
+# ─── Interlinking ─────────────────────────────────────────────────────────
+
 def _run_cluster_pass(cluster_id: str, run_id: str):
-    """Wraps link_engine_bridge.cluster_pass with logging."""
     from link_engine_bridge import cluster_pass
     print(f"[interlink] starting cluster pass for {cluster_id}")
     result = cluster_pass(cluster_id, run_id)
@@ -868,7 +877,6 @@ def _run_cluster_pass(cluster_id: str, run_id: str):
 
 
 def _run_global_pass(cluster_id: str, run_id: str):
-    """Wraps link_engine_bridge.global_pass with logging."""
     from link_engine_bridge import global_pass
     print(f"[interlink] starting global pass for {cluster_id}")
     result = global_pass(cluster_id, run_id)
@@ -905,6 +913,7 @@ async def run_global_interlink(run_id: str, user: dict = Depends(require_user)):
 async def interlink_view(
     request: Request,
     run_id: str,
+    tab: str = "pending",
     user: dict = Depends(require_user),
 ):
     run = get_pipeline_run(run_id)
@@ -918,31 +927,14 @@ async def interlink_view(
 
     return templates.TemplateResponse(request, "_interlink.html", _ctx(user,
         run_id=run_id,
+        run=run,
         cluster_id=cluster_id,
         snapshot=snapshot,
         interlink_running=interlink_running,
+        active_tab=tab,
         active_page="pipeline",
     ))
 
-@app.get("/runs/{run_id}/agent/{agent}/view", response_class=HTMLResponse)
-async def agent_view(
-    request: Request,
-    run_id: str,
-    agent: str,
-    user: dict = Depends(require_user),
-):
-    inp = load_agent_input(run_id, agent)
-    out = load_agent_output(run_id, agent)
-    meta = load_agent_metadata(run_id, agent)
-    console = load_agent_console(run_id, agent) or ""
-    return templates.TemplateResponse(request, "_agent_view.html", _ctx(user,
-        run_id=run_id,
-        agent=agent,
-        input=json.dumps(inp, indent=2, default=str) if inp else None,
-        output=json.dumps(out, indent=2, default=str) if out else None,
-        meta=meta or {},
-        console=console[-8000:] if console else "",
-    ))
 
 @app.post("/interlink/anchor/{anchor_id}/approve")
 async def interlink_approve(anchor_id: str, user: dict = Depends(require_user)):
@@ -955,17 +947,6 @@ async def interlink_reject(anchor_id: str, user: dict = Depends(require_user)):
     ok = reject_anchor(anchor_id)
     return JSONResponse({"ok": ok})
 
-@app.post("/runs/{run_id}/interlink/inject")
-async def interlink_inject(
-    run_id: str,
-    dry_run: bool = Form(False),
-    user: dict = Depends(require_user),
-):
-    results = inject_all_approved(dry_run=dry_run)
-    return RedirectResponse(
-        f"/runs/{run_id}/interlink?injected={results.get('injected', 0)}",
-        status_code=303,
-    )
 
 @app.post("/interlink/anchor/{anchor_id}/edit")
 async def interlink_edit(
@@ -977,9 +958,21 @@ async def interlink_edit(
     return JSONResponse({"ok": ok})
 
 
+@app.post("/runs/{run_id}/interlink/inject")
+async def interlink_inject(
+    run_id: str,
+    dry_run: bool = Form(False),
+    user: dict = Depends(require_user),
+):
+    results = inject_all_approved(dry_run=dry_run)
+    return RedirectResponse(
+        f"/runs/{run_id}/interlink?tab=injected&injected={results.get('injected', 0)}",
+        status_code=303,
+    )
+
+
 @app.post("/interlink/bulk/approve_all")
 async def interlink_bulk_approve(user: dict = Depends(require_user)):
-    """Approve every currently-pending anchor in one shot."""
     snap = interlink_snapshot(limit_pending=10000)
     n = 0
     for p in snap.pending:
@@ -997,6 +990,124 @@ async def interlink_bulk_reject(user: dict = Depends(require_user)):
             n += 1
     return JSONResponse({"ok": True, "rejected": n})
 
+
+# ── Single article add ────────────────────────────────────────────────
+@app.post("/interlink/articles/add")
+async def interlink_add_article(
+    title: str = Form(...),
+    body: str = Form(...),
+    slug: str = Form(""),
+    url: str = Form(""),
+    article_type: str = Form(""),
+    user: dict = Depends(require_user),
+):
+    result = ingest_single_article(
+        title=title, body=body, slug=slug, url=url,
+        article_type=article_type, overwrite=True,
+    )
+    return JSONResponse(result)
+
+
+# ── Bulk file upload ──────────────────────────────────────────────────
+@app.post("/interlink/articles/bulk_upload")
+async def interlink_bulk_upload(
+    request: Request,
+    user: dict = Depends(require_user),
+):
+    form = await request.form()
+    files = []
+    for key, val in form.multi_items():
+        if key == "files" and hasattr(val, "filename"):
+            content = await val.read()
+            files.append({
+                "filename": val.filename,
+                "raw": content.decode("utf-8", errors="replace"),
+            })
+    overwrite = (form.get("overwrite") or "true").lower() in ("true", "1", "on")
+    if not files:
+        return JSONResponse({"ok": False, "error": "no files uploaded"}, status_code=400)
+    result = ingest_bulk_files(files, overwrite=overwrite)
+    return JSONResponse(result)
+
+
+# ── Bulk paste ────────────────────────────────────────────────────────
+@app.post("/interlink/articles/bulk_paste")
+async def interlink_bulk_paste(
+    pasted: str = Form(...),
+    overwrite: bool = Form(True),
+    user: dict = Depends(require_user),
+):
+    if not pasted.strip():
+        return JSONResponse({"ok": False, "error": "empty paste"}, status_code=400)
+    result = ingest_bulk_paste(pasted, overwrite=overwrite)
+    return JSONResponse(result)
+
+
+# ── Reprocess all ─────────────────────────────────────────────────────
+@app.post("/interlink/reprocess")
+async def interlink_reprocess(
+    invalidate_phrases: bool = Form(False),
+    invalidate_embeddings: bool = Form(False),
+    invalidate_confidence: bool = Form(False),
+    user: dict = Depends(require_user),
+):
+    result = reprocess_corpus(
+        invalidate_phrases=invalidate_phrases,
+        invalidate_embeddings=invalidate_embeddings,
+        invalidate_confidence=invalidate_confidence,
+    )
+    return JSONResponse(result)
+
+
+# ── Delete + restore ──────────────────────────────────────────────────
+@app.post("/interlink/articles/{article_id}/delete")
+async def interlink_delete_article(
+    article_id: str,
+    delete_file: bool = Form(False),
+    user: dict = Depends(require_user),
+):
+    ok = delete_article_by_id(article_id, delete_file=delete_file)
+    return JSONResponse({"ok": ok})
+
+
+@app.post("/interlink/articles/{article_id}/restore")
+async def interlink_restore_article(
+    article_id: str,
+    user: dict = Depends(require_user),
+):
+    ok = restore_article_from_backup(article_id)
+    return JSONResponse({"ok": ok})
+
+
+# ── List/render endpoints used by tabs ────────────────────────────────
+@app.get("/interlink/articles", response_class=HTMLResponse)
+async def interlink_articles_partial(
+    request: Request,
+    user: dict = Depends(require_user),
+):
+    articles = get_all_articles_with_content(limit=500)
+    return templates.TemplateResponse(request, "_interlink_all_articles.html",
+        _ctx(user, articles=articles))
+
+
+@app.get("/interlink/injected", response_class=HTMLResponse)
+async def interlink_injected_partial(
+    request: Request,
+    user: dict = Depends(require_user),
+):
+    injected_articles = get_injected_with_content(limit=200)
+    return templates.TemplateResponse(request, "_interlink_injected.html",
+        _ctx(user, injected_articles=injected_articles))
+
+
+@app.get("/interlink/runs", response_class=HTMLResponse)
+async def interlink_runs_partial(
+    request: Request,
+    user: dict = Depends(require_user),
+):
+    runs = get_link_run_history(limit=30)
+    return templates.TemplateResponse(request, "_interlink_runs.html",
+        _ctx(user, link_runs=runs))
 
 # ─── Topic queue ──────────────────────────────────────────────────────────
 
