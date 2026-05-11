@@ -109,6 +109,7 @@ def init_db():
             status TEXT DEFAULT 'planned',
             current_stage TEXT DEFAULT 'planned',
             content_md TEXT DEFAULT '',
+            content_md_with_citations TEXT DEFAULT '',
             meta_title TEXT,
             meta_description TEXT,
             schema_json TEXT DEFAULT '{}',
