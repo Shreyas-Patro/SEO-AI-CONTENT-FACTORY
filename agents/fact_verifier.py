@@ -31,12 +31,19 @@ class FactVerifierAgent(AgentBase):
         if not article:
             raise ValueError(f"Article {article_id} not found")
 
-        content = article.get("content_md", "")
+       # Prefer the with-citations version (has [Source] markers we need to audit).
+        # Fall back to content_md for old articles created before this column existed.
+        content = (
+            article.get("content_md_with_citations")
+            or article.get("content_md")
+            or ""
+        )
         if not content:
             raise ValueError("Article has no content")
 
-        print(f"[fact_verifier] Checking: {article['title']}")
-
+        has_citations = bool(article.get("content_md_with_citations"))
+        print(f"[fact_verifier] Checking: {article['title']} "
+              f"({'with citations' if has_citations else 'no audit version'})")
         try:
             system = open("prompts/fact_verifier.md", encoding="utf-8").read()
         except FileNotFoundError:
