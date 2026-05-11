@@ -87,7 +87,7 @@ from orchestrator import (
     start_pipeline_run,
 )
 from scheduler import start_scheduler
-
+from citation_stripper import strip_citations
 
 # ─── App setup ────────────────────────────────────────────────────────────
 
@@ -370,7 +370,10 @@ def _article_to_markdown(article: dict) -> tuple[str, str]:
     front.append("---")
     front.append("")
 
-    md = "\n".join(front) + body.rstrip()
+# ── Strip citation markers before publishing ───────────────────
+    body_clean = strip_citations(body or "")
+
+    md = "\n".join(front) + body_clean.rstrip()
 
     # Append FAQ section
     try:
@@ -378,13 +381,15 @@ def _article_to_markdown(article: dict) -> tuple[str, str]:
     except Exception:
         faqs = []
 
-    if faqs and "## Frequently Asked Questions" not in body:
+    if faqs and "## Frequently Asked Questions" not in body_clean:
         md += "\n\n## Frequently Asked Questions\n\n"
         for f in faqs:
             q = (f.get("question") or "").strip()
             a_text = (f.get("answer") or "").strip()
             if q and a_text:
-                md += f"### {q}\n\n{a_text}\n\n"
+                # Strip citations from FAQ answers too
+                a_clean = strip_citations(a_text)
+                md += f"### {q}\n\n{a_clean}\n\n"
 
     # Append JSON-LD schema as HTML comment so Hugo/Astro can pick it up
     if schema.get("schema_article") or schema.get("schema_faq") or schema.get("schema_breadcrumb"):
