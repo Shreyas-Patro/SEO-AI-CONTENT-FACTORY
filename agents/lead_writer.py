@@ -219,29 +219,45 @@ Write the complete article now."""
             content = content.rstrip() + "\n\n" + extension_text
             word_count = len(content.split())
 
-        # ── Persist ──
+       # ── Strip citations to make the published version ──
+        # content_md_with_citations: original, has [Source] markers, used by fact_verifier
+        # content_md: clean, no markers, used by everyone else (auditor, rewriter, downloads, link engine)
+        from citation_stripper import strip_citations_with_stats
+        content_with_citations = content
+        content_clean, strip_stats = strip_citations_with_stats(content)
+        clean_word_count = len(content_clean.split())
+
+        print(f"  Citation stripper: removed {strip_stats.get('total_removed', 0)} markers "
+              f"({clean_word_count} clean words vs {word_count} raw)")
+
+        # ── Persist BOTH versions ──
         update_article(
-            article_id, content_md=content, word_count=word_count,
-            status="written", current_stage="lead_writer",
+            article_id,
+            content_md=content_clean,                       # clean, for everyone else
+            content_md_with_citations=content_with_citations,  # audit trail, for fact_verifier
+            word_count=clean_word_count,
+            status="written",
+            current_stage="lead_writer",
         )
         add_article_history(
             article_id, "lead_writer",
-            f"Written {word_count} words" + (" (rewrite)" if rewrite_feedback else ""),
-            content[:500],
+            f"Written {word_count} raw words → {clean_word_count} after stripping "
+            f"{strip_stats.get('total_removed', 0)} citations"
+            + (" (rewrite)" if rewrite_feedback else ""),
+            content_clean[:500],
         )
 
         try:
             from db.chroma_ops import store_article_embedding
             store_article_embedding(
-                article_id, content,
+                article_id, content_clean,   # embed the clean version
                 {"title": article["title"], "slug": article["slug"]}
             )
         except Exception:
             pass
 
-        print(f"  Done: {word_count} words (target: {word_target})")
-        return {"article_id": article_id, "word_count": word_count}
-
+        print(f"  Done: {clean_word_count} clean words (target: {word_target}, raw was {word_count})")
+        return {"article_id": article_id, "word_count": clean_word_count}
     # ─── Helpers ──────────────────────────────────────────────────────
     def _find_spec(self, cluster_plan, article):
         for a in cluster_plan.get("articles", []):
