@@ -854,3 +854,46 @@ pre code { background: transparent; border: 0; padding: 0; color: inherit; }
 @media (max-width: 760px) {
   .form-row { grid-template-columns: 1fr; }
 }
+/* ============================================================================
+   P1 additions — interlink dashboard
+   ========================================================================== */
+
+.rendered-md h1, .rendered-md h2, .rendered-md h3 {
+  color: var(--text-strong);
+  margin-top: var(--s-3);
+}
+.rendered-md h1 { font-size: var(--fs-xl); }
+.rendered-md h2 { font-size: var(--fs-lg); }
+.rendered-md h3 { font-size: var(--fs-md); }
+.rendered-md p { color: var(--text); }
+.rendered-md a {
+  color: var(--c-info);
+  text-decoration: underline;
+  text-decoration-color: rgba(96, 165, 250, 0.4);
+}
+.rendered-md a:hover { color: var(--accent); }
+.rendered-md code {
+  background: var(--bg-elevated);
+  border: 0;
+  padding: 1px 4px;
+  font-size: 0.9em;
+}
+.rendered-md ul, .rendered-md ol { color: var(--text); padding-left: var(--s-5); }
+.rendered-md blockquote {
+  border-left: 3px solid var(--accent-edge);
+  padding-left: var(--s-3);
+  margin: var(--s-3) 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.raw-md {
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--r-2);
+  padding: var(--s-3);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  white-space: pre-wrap;
+  color: var(--c-bone);
+}
