@@ -142,31 +142,55 @@ def node_research_prompt(graph_state: Dict[str, Any]) -> Dict[str, Any]:
 
 # ─── LAYER 3 (per-article) ──────────────────────────────────────────────
 def node_layer3_init(graph_state: Dict[str, Any]) -> Dict[str, Any]:
-    """Builds the article queue."""
+    """Builds the article queue. On re-run, includes ALL articles in the cluster,
+    not just planned/draft, so the user can re-process completed work."""
     run_id = graph_state["run_id"]
     cluster_id = graph_state.get("cluster_id")
     if not cluster_id:
-        return {"errors": [{"node": "layer3_init", "error": "no cluster_id"}]}
+        print("[layer3_init] no cluster_id — nothing to do")
+        return {
+            "articles_queue": [],
+            "current_article_id": None,
+            "current_stage": "layer3_done_empty",
+        }
 
     articles = get_articles_by_cluster(cluster_id)
-    queue = [a["id"] for a in articles if a["status"] in ("planned", "draft")]
-    print(f"[layer3_init] {len(queue)} articles to process")
+
+    # If the run already has an explicit queue passed in, honour it.
+    explicit_queue = graph_state.get("articles_queue") or []
+    if explicit_queue:
+        queue = explicit_queue
+        print(f"[layer3_init] using explicit queue: {len(queue)} articles")
+    else:
+        # Try planned/draft first (fresh run)
+        queue = [a["id"] for a in articles if a["status"] in ("planned", "draft")]
+        # If nothing matches, this is a re-run — take everything
+        if not queue and articles:
+            queue = [a["id"] for a in articles]
+            print(f"[layer3_init] re-run mode: processing all {len(queue)} articles")
+        else:
+            print(f"[layer3_init] fresh-run: {len(queue)} planned/draft articles")
+
     return {
         "articles_queue": queue,
         "current_article_id": queue[0] if queue else None,
-        "current_stage": "layer3_writing",
+        "current_stage": "layer3_writing" if queue else "layer3_done_empty",
         "article_iteration": {},
         "article_scores": {},
     }
-
 
 def node_lead_writer(graph_state: Dict[str, Any]) -> Dict[str, Any]:
     from agents.lead_writer import LeadWriterAgent
     run_id = graph_state["run_id"]
     cluster_id = graph_state.get("cluster_id")
-    article_id = graph_state["current_article_id"]
-    iteration = graph_state.get("article_iteration", {}).get(article_id, 0)
+    article_id = graph_state.get("current_article_id")
 
+    # Guard: empty queue — skip without crashing
+    if not article_id:
+        print("[lead_writer] no current_article_id — skipping (empty queue)")
+        return {}
+
+    iteration = graph_state.get("article_iteration", {}).get(article_id, 0)
     print(f"[lead_writer] article={article_id} iter={iteration}")
 
     agent = LeadWriterAgent(run_id, cluster_id=cluster_id, article_id=article_id)
@@ -193,8 +217,9 @@ def node_fact_verifier(graph_state: Dict[str, Any]) -> Dict[str, Any]:
     from agents.fact_verifier import FactVerifierAgent
     run_id = graph_state["run_id"]
     cluster_id = graph_state.get("cluster_id")
-    article_id = graph_state["current_article_id"]
-
+    article_id = graph_state.get("current_article_id")
+    if not article_id:
+        return {}
     agent = FactVerifierAgent(run_id, cluster_id=cluster_id, article_id=article_id)
     output = agent.run({"article_id": article_id})
     increment_run_counters(run_id, cost=agent.cost_usd, llm_calls=agent.llm_calls)
@@ -214,8 +239,9 @@ def node_brand_auditor(graph_state: Dict[str, Any]) -> Dict[str, Any]:
     from agents.brand_auditor import BrandAuditorAgent
     run_id = graph_state["run_id"]
     cluster_id = graph_state.get("cluster_id")
-    article_id = graph_state["current_article_id"]
-
+    article_id = graph_state.get("current_article_id")
+    if not article_id:
+        return {}
     agent = BrandAuditorAgent(run_id, cluster_id=cluster_id, article_id=article_id)
     output = agent.run({"article_id": article_id})
     increment_run_counters(run_id, cost=agent.cost_usd, llm_calls=agent.llm_calls)
@@ -237,8 +263,9 @@ def node_rewriter(graph_state: Dict[str, Any]) -> Dict[str, Any]:
     from agents.rewriter import RewriterAgent
     run_id = graph_state["run_id"]
     cluster_id = graph_state.get("cluster_id")
-    article_id = graph_state["current_article_id"]
-
+    article_id = graph_state.get("current_article_id")
+    if not article_id:
+        return {}
     fact_output = graph_state.get("last_fact_verifier_output", {}) or {}
     brand_output = graph_state.get("last_brand_auditor_output", {}) or {}
 
@@ -273,8 +300,9 @@ def node_meta_tagger(graph_state: Dict[str, Any]) -> Dict[str, Any]:
     from agents.meta_tagger import MetaTaggerAgent
     run_id = graph_state["run_id"]
     cluster_id = graph_state.get("cluster_id")
-    article_id = graph_state["current_article_id"]
-
+    article_id = graph_state.get("current_article_id")
+    if not article_id:
+        return {}
     agent = MetaTaggerAgent(run_id, cluster_id=cluster_id, article_id=article_id)
     agent.run({"article_id": article_id})
     increment_run_counters(run_id, cost=agent.cost_usd, llm_calls=agent.llm_calls)

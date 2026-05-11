@@ -42,13 +42,14 @@ def build_layer2_graph():
 
 def build_layer3_graph():
     """
-    Layer 3 with quality loop.
+    Layer 3 with quality loop and empty-queue guard.
 
-    init → writer → fact_verifier → brand_auditor → SUPERVISOR
-                                                    ├─ rewriter → fact_verifier (loop)
-                                                    └─ meta_tagger → advance_queue
-                                                                       ├─ lead_writer (next article)
-                                                                       └─ END
+    init → (queue empty?) → END
+         → (queue has items) → writer → fact_verifier → brand_auditor → SUPERVISOR
+                                                                          ├─ rewriter → fact_verifier (loop)
+                                                                          └─ meta_tagger → advance_queue
+                                                                                             ├─ lead_writer (next)
+                                                                                             └─ END
     """
     g = StateGraph(PipelineGraphState)
     g.add_node("layer3_init", node_layer3_init)
@@ -58,20 +59,26 @@ def build_layer3_graph():
     g.add_node("rewriter", node_rewriter)
     g.add_node("meta_tagger", node_meta_tagger)
     g.add_node("advance_queue", node_advance_queue)
+    g.add_node("supervisor", node_supervisor)
 
     g.set_entry_point("layer3_init")
-    g.add_edge("layer3_init", "lead_writer")
+
+    # NEW: conditional route after init — skip everything if queue is empty
+    g.add_conditional_edges(
+        "layer3_init",
+        lambda s: "lead_writer" if s.get("current_article_id") else "END",
+        {"lead_writer": "lead_writer", "END": END},
+    )
+
     g.add_edge("lead_writer", "fact_verifier")
     g.add_edge("fact_verifier", "brand_auditor")
-   
-    g.add_node("supervisor", node_supervisor)
     g.add_edge("brand_auditor", "supervisor")
     g.add_conditional_edges(
-    "supervisor",
-    lambda s: "rewriter" if s.get("supervisor_decision") == "rewrite" else "meta_tagger",
-    {"rewriter": "rewriter", "meta_tagger": "meta_tagger"},
-)
-    g.add_edge("rewriter", "fact_verifier")  # loop back through audit chain
+        "supervisor",
+        lambda s: "rewriter" if s.get("supervisor_decision") == "rewrite" else "meta_tagger",
+        {"rewriter": "rewriter", "meta_tagger": "meta_tagger"},
+    )
+    g.add_edge("rewriter", "fact_verifier")
     g.add_edge("meta_tagger", "advance_queue")
     g.add_conditional_edges(
         "advance_queue",
