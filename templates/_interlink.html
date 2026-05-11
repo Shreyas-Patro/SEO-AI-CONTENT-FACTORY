@@ -1,25 +1,9 @@
-{# ============================================================================
-   _interlink.html — full migration of the Streamlit interlink dashboard
-   ----------------------------------------------------------------------------
-   Functionality parity with link_engine/dashboard/app.py:
-     - Pending review queue with similarity filter, per-row approve/reject/edit
-     - Approved (not yet injected) list
-     - Injected list
-     - All Articles indexed in link engine
-     - Errors panel
-     - Run cluster pass / global pass (subprocess via JobManager)
-     - Inject approved (with dry-run option)
-
-   HTMX is used for approve/reject (no full page reload). Other state changes
-   trigger redirects to refresh the snapshot.
-   ============================================================================ #}
 {% extends "base.html" %}
 {% block title %}Interlinking · {{ cluster_id or run_id[-8:] }}{% endblock %}
 {% block body %}
 
 <div class="container container-wide" style="padding-block: var(--s-6);">
 
-  {# ─── Header ──────────────────────────────────────────────── #}
   <div class="row row-between" style="margin-bottom: var(--s-6);">
     <div>
       <div class="row gap-3" style="margin-bottom: var(--s-2);">
@@ -30,6 +14,9 @@
       <div class="muted fs-sm mono">
         cluster: <code>{{ cluster_id or '—' }}</code> &nbsp;·&nbsp;
         run: <code>{{ run_id[-12:] }}</code>
+        {% if run and run.current_stage == "interlink_ready" %}
+          &nbsp;·&nbsp;<span class="pill pill-good">auto-ingested</span>
+        {% endif %}
         {% if not snapshot.available %}
           &nbsp;·&nbsp;<span class="pill pill-bad">link_engine offline</span>
         {% endif %}
@@ -60,18 +47,12 @@
     <div class="card" style="border-color: var(--c-bad); background: var(--c-bad-bg);">
       <h3 style="color: var(--c-bad); margin: 0 0 var(--s-2) 0;">Link engine package not importable</h3>
       <p class="muted">{{ snapshot.error or "Import failed silently." }}</p>
-      <p class="muted fs-sm">
-        Make sure <code>link_engine</code> is on the Python path. The package
-        should live at <code>./link_engine/</code> relative to where you run
-        uvicorn from.
-      </p>
     </div>
   {% else %}
 
-  {# ─── Counts strip ─────────────────────────────────────── #}
   <div class="grid grid-4 mb-6">
     <div class="stat">
-      <div class="stat-label">Pending review</div>
+      <div class="stat-label">Pending</div>
       <div class="stat-value" style="color: var(--c-warn);">{{ snapshot.counts.pending }}</div>
     </div>
     <div class="stat">
@@ -88,28 +69,35 @@
     </div>
   </div>
 
-  {# ─── Tabs ─────────────────────────────────────────────── #}
   <div class="tabs">
-    <button class="tab active" data-tab="pending">
-      Pending <span class="tab-count">{{ snapshot.counts.pending }}</span>
+    <button class="tab {% if active_tab == 'pending' %}active{% endif %}" data-tab="pending">
+      Review queue <span class="tab-count">{{ snapshot.counts.pending }}</span>
     </button>
-    <button class="tab" data-tab="approved">
+    <button class="tab {% if active_tab == 'approved' %}active{% endif %}" data-tab="approved">
       Approved <span class="tab-count">{{ snapshot.counts.approved }}</span>
     </button>
-    <button class="tab" data-tab="injected">
+    <button class="tab {% if active_tab == 'injected' %}active{% endif %}" data-tab="injected"
+            hx-get="/interlink/injected" hx-target="#tab-injected" hx-trigger="click once">
       Injected <span class="tab-count">{{ snapshot.counts.injected }}</span>
     </button>
-    <button class="tab" data-tab="articles">
-      Articles <span class="tab-count">{{ snapshot.counts.articles }}</span>
+    <button class="tab" data-tab="articles"
+            hx-get="/interlink/articles" hx-target="#tab-articles" hx-trigger="click once">
+      All articles <span class="tab-count">{{ snapshot.counts.articles }}</span>
     </button>
+    <button class="tab" data-tab="add">+ Add article</button>
+    <button class="tab" data-tab="bulk">⇪ Bulk upload</button>
+    <button class="tab" data-tab="reprocess">↻ Reprocess</button>
     <button class="tab" data-tab="errors">
       Errors <span class="tab-count">{{ snapshot.counts.errors }}</span>
     </button>
+    <button class="tab" data-tab="runs"
+            hx-get="/interlink/runs" hx-target="#tab-runs" hx-trigger="click once">
+      Run history
+    </button>
   </div>
 
-  {# ─── PANEL: PENDING ──────────────────────────────────── #}
-  <div class="tab-panel active" id="tab-pending">
-
+  {# ─── PENDING ─────────────────────────────────────────── #}
+  <div class="tab-panel {% if active_tab == 'pending' %}active{% endif %}" id="tab-pending">
     {% if snapshot.pending %}
       <div class="row gap-3 mb-4">
         <button class="btn btn-good"
@@ -156,18 +144,13 @@
     {% endif %}
   </div>
 
-  {# ─── PANEL: APPROVED ─────────────────────────────────── #}
-  <div class="tab-panel" id="tab-approved">
+  {# ─── APPROVED ─────────────────────────────────────────── #}
+  <div class="tab-panel {% if active_tab == 'approved' %}active{% endif %}" id="tab-approved">
     {% if snapshot.approved %}
       <div class="card">
         <table class="table">
           <thead>
-            <tr>
-              <th>Anchor</th>
-              <th>Source</th>
-              <th>Target</th>
-              <th class="text-right">Confidence</th>
-            </tr>
+            <tr><th>Anchor</th><th>Source</th><th>Target</th><th class="text-right">Confidence</th></tr>
           </thead>
           <tbody>
             {% for a in snapshot.approved %}
@@ -186,69 +169,120 @@
     {% endif %}
   </div>
 
-  {# ─── PANEL: INJECTED ─────────────────────────────────── #}
-  <div class="tab-panel" id="tab-injected">
-    {% if snapshot.injected %}
-      <div class="card">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Anchor</th>
-              <th>Source</th>
-              <th>Target</th>
-              <th>Injected at</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for i in snapshot.injected %}
-              <tr>
-                <td><code style="color: var(--c-info);">{{ i.anchor_text }}</code></td>
-                <td class="muted">{{ i.source_title }}</td>
-                <td class="muted">{{ i.target_title }}</td>
-                <td class="muted fs-sm">{{ i.injected_at[:19] }}</td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    {% else %}
-      <div class="empty"><div class="empty-icon">📤</div>No injected links yet.</div>
-    {% endif %}
+  {# ─── INJECTED — lazy-loaded ────────────────────────────── #}
+  <div class="tab-panel {% if active_tab == 'injected' %}active{% endif %}" id="tab-injected">
+    <div class="empty muted">Loading…</div>
   </div>
 
-  {# ─── PANEL: ARTICLES ─────────────────────────────────── #}
+  {# ─── ALL ARTICLES — lazy-loaded ────────────────────────── #}
   <div class="tab-panel" id="tab-articles">
-    {% if snapshot.articles %}
-      <div class="card">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>URL</th>
-              <th class="text-right">Chunks</th>
-              <th>Indexed</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for a in snapshot.articles %}
-              <tr>
-                <td>{{ a.title }}</td>
-                <td class="muted fs-sm" style="max-width: 360px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-                  <code>{{ a.url or a.slug or "—" }}</code>
-                </td>
-                <td class="text-right mono">{{ a.chunk_count }}</td>
-                <td class="muted fs-sm">{{ (a.created_at or "")[:19] }}</td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    {% else %}
-      <div class="empty"><div class="empty-icon">📚</div>No articles indexed in the link engine yet.</div>
-    {% endif %}
+    <div class="empty muted">Loading…</div>
   </div>
 
-  {# ─── PANEL: ERRORS ──────────────────────────────────── #}
+  {# ─── ADD ARTICLE ─────────────────────────────────────── #}
+  <div class="tab-panel" id="tab-add">
+    <div class="card">
+      <h3 style="margin-top:0">Add a single article</h3>
+      <form id="add-article-form" onsubmit="return submitAddArticle(event)">
+        <div class="grid grid-2 gap-3">
+          <div>
+            <label class="label">Title <span style="color:var(--c-bad)">*</span></label>
+            <input class="input" name="title" required placeholder="How to buy in HSR Layout">
+          </div>
+          <div>
+            <label class="label">Slug (auto if blank)</label>
+            <input class="input input-mono" name="slug" placeholder="how-to-buy-in-hsr-layout">
+          </div>
+          <div>
+            <label class="label">URL (auto if blank)</label>
+            <input class="input input-mono" name="url" placeholder="/how-to-buy-in-hsr-layout">
+          </div>
+          <div>
+            <label class="label">Article type</label>
+            <input class="input" name="article_type" placeholder="hub / spoke / faq">
+          </div>
+        </div>
+        <div class="mt-3">
+          <label class="label">Body (markdown — no frontmatter) <span style="color:var(--c-bad)">*</span></label>
+          <textarea class="textarea" name="body" required rows="14"
+                    placeholder="## What is HSR Layout..."></textarea>
+        </div>
+        <div class="row gap-3 mt-3">
+          <button type="submit" class="btn btn-primary">Add &amp; process</button>
+          <span id="add-status" class="muted fs-sm"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  {# ─── BULK UPLOAD ───────────────────────────────────────── #}
+  <div class="tab-panel" id="tab-bulk">
+    <div class="card mb-4">
+      <h3 style="margin-top:0">Upload .md files</h3>
+      <form id="bulk-upload-form" onsubmit="return submitBulkUpload(event)" enctype="multipart/form-data">
+        <input type="file" name="files" multiple accept=".md" class="input" required>
+        <div class="row gap-2 mt-3">
+          <label class="row gap-2 fs-sm">
+            <input type="checkbox" name="overwrite" checked> Overwrite existing slugs
+          </label>
+        </div>
+        <div class="row gap-3 mt-3">
+          <button type="submit" class="btn btn-primary">Upload &amp; process</button>
+          <span id="bulk-upload-status" class="muted fs-sm"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Or paste multiple articles</h3>
+      <p class="muted fs-sm">
+        Concatenate any number of frontmatter-delimited articles. Each must start
+        with <code>---\ntitle: ...\nslug: ...\n---</code> and have a body.
+      </p>
+      <form id="bulk-paste-form" onsubmit="return submitBulkPaste(event)">
+        <textarea class="textarea" name="pasted" required rows="16"
+                  placeholder="---&#10;title: Article one&#10;slug: article-one&#10;---&#10;&#10;## Body...&#10;&#10;---&#10;title: Article two&#10;..."></textarea>
+        <label class="row gap-2 fs-sm mt-2">
+          <input type="checkbox" name="overwrite" checked> Overwrite existing slugs
+        </label>
+        <div class="row gap-3 mt-3">
+          <button type="submit" class="btn btn-primary">Process pasted</button>
+          <span id="bulk-paste-status" class="muted fs-sm"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  {# ─── REPROCESS ─────────────────────────────────────────── #}
+  <div class="tab-panel" id="tab-reprocess">
+    <div class="card">
+      <h3 style="margin-top:0">Reprocess corpus</h3>
+      <p class="muted fs-sm">
+        Selectively invalidate caches and re-run the pipeline. Use after changing
+        the LLM model, embedding model, or to fix bad data.
+      </p>
+      <form id="reprocess-form" onsubmit="return submitReprocess(event)">
+        <label class="row gap-2 mb-2">
+          <input type="checkbox" name="invalidate_phrases">
+          Re-extract phrases <span class="muted fs-sm">(LLM call per article — costs $)</span>
+        </label>
+        <label class="row gap-2 mb-2">
+          <input type="checkbox" name="invalidate_embeddings">
+          Recompute embeddings <span class="muted fs-sm">(local, free)</span>
+        </label>
+        <label class="row gap-2 mb-2">
+          <input type="checkbox" name="invalidate_confidence">
+          Re-score confidence <span class="muted fs-sm">(LLM call per match — costs $)</span>
+        </label>
+        <div class="row gap-3 mt-3">
+          <button type="submit" class="btn btn-warn">Run reprocess</button>
+          <span id="reprocess-status" class="muted fs-sm"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  {# ─── ERRORS ────────────────────────────────────────────── #}
   <div class="tab-panel" id="tab-errors">
     {% if snapshot.errors %}
       <div class="stack-2">
@@ -268,12 +302,16 @@
     {% endif %}
   </div>
 
+  {# ─── RUN HISTORY — lazy-loaded ─────────────────────────── #}
+  <div class="tab-panel" id="tab-runs">
+    <div class="empty muted">Loading…</div>
+  </div>
+
   {% endif %}
 
 </div>
 
 <script>
-  // Filter the pending list by minimum similarity (client-side, fast)
   function filterPending(min) {
     document.getElementById('sim-filter-val').textContent = parseFloat(min).toFixed(2);
     document.querySelectorAll('#pending-list > .anchor-card').forEach(card => {
@@ -282,12 +320,10 @@
     });
   }
 
-  // After HTMX approve/reject, fade the row out
   document.body.addEventListener('htmx:afterRequest', (e) => {
     const target = e.detail.elt.closest('.anchor-card');
     if (target && e.detail.successful) {
       target.classList.add('acted');
-      // After 500ms, remove it from the DOM and decrement the count badge
       setTimeout(() => {
         target.remove();
         const countBadge = document.querySelector('.tab[data-tab="pending"] .tab-count');
@@ -298,6 +334,110 @@
       }, 450);
     }
   });
+
+  async function submitAddArticle(evt) {
+    evt.preventDefault();
+    const form = evt.target;
+    const status = document.getElementById('add-status');
+    status.textContent = 'Processing…';
+    status.style.color = 'var(--c-warn)';
+    const fd = new FormData(form);
+    try {
+      const r = await fetch('/interlink/articles/add', { method: 'POST', body: fd });
+      const data = await r.json();
+      if (data.ok) {
+        const s = data.summary || {};
+        status.textContent = `✓ ${s.article || 'Added'} · ${s.matches_found || 0} matches found`;
+        status.style.color = 'var(--c-good)';
+        setTimeout(() => location.reload(), 1500);
+      } else {
+        status.textContent = '✗ ' + (data.error || 'failed');
+        status.style.color = 'var(--c-bad)';
+      }
+    } catch (e) {
+      status.textContent = '✗ ' + e.message;
+      status.style.color = 'var(--c-bad)';
+    }
+    return false;
+  }
+
+  async function submitBulkUpload(evt) {
+    evt.preventDefault();
+    const form = evt.target;
+    const status = document.getElementById('bulk-upload-status');
+    status.textContent = 'Uploading…';
+    status.style.color = 'var(--c-warn)';
+    const fd = new FormData(form);
+    try {
+      const r = await fetch('/interlink/articles/bulk_upload', { method: 'POST', body: fd });
+      const data = await r.json();
+      if (data.ok) {
+        const s = data.summary || {};
+        status.textContent = `✓ new=${s.new || 0} changed=${s.changed || 0} matches=${s.matches_found || 0}`;
+        status.style.color = 'var(--c-good)';
+        setTimeout(() => location.reload(), 2000);
+      } else {
+        status.textContent = '✗ ' + (data.error || 'failed');
+        status.style.color = 'var(--c-bad)';
+      }
+    } catch (e) {
+      status.textContent = '✗ ' + e.message;
+      status.style.color = 'var(--c-bad)';
+    }
+    return false;
+  }
+
+  async function submitBulkPaste(evt) {
+    evt.preventDefault();
+    const form = evt.target;
+    const status = document.getElementById('bulk-paste-status');
+    status.textContent = 'Processing…';
+    status.style.color = 'var(--c-warn)';
+    const fd = new FormData(form);
+    try {
+      const r = await fetch('/interlink/articles/bulk_paste', { method: 'POST', body: fd });
+      const data = await r.json();
+      if (data.ok) {
+        const s = data.summary || {};
+        status.textContent = `✓ new=${s.new || 0} changed=${s.changed || 0} matches=${s.matches_found || 0}`;
+        status.style.color = 'var(--c-good)';
+        setTimeout(() => location.reload(), 2000);
+      } else {
+        status.textContent = '✗ ' + (data.error || 'failed');
+        status.style.color = 'var(--c-bad)';
+      }
+    } catch (e) {
+      status.textContent = '✗ ' + e.message;
+      status.style.color = 'var(--c-bad)';
+    }
+    return false;
+  }
+
+  async function submitReprocess(evt) {
+    evt.preventDefault();
+    const form = evt.target;
+    const status = document.getElementById('reprocess-status');
+    if (!confirm('Run reprocess? This may cost LLM money.')) return false;
+    status.textContent = 'Running…';
+    status.style.color = 'var(--c-warn)';
+    const fd = new FormData(form);
+    try {
+      const r = await fetch('/interlink/reprocess', { method: 'POST', body: fd });
+      const data = await r.json();
+      if (data.ok) {
+        const s = data.summary || {};
+        status.textContent = `✓ matches=${s.matches_found || 0} passed=${s.anchors_passed || 0}`;
+        status.style.color = 'var(--c-good)';
+      } else {
+        status.textContent = '✗ ' + (data.error || 'failed');
+        status.style.color = 'var(--c-bad)';
+      }
+    } catch (e) {
+      status.textContent = '✗ ' + e.message;
+      status.style.color = 'var(--c-bad)';
+    }
+    return false;
+  }
 </script>
 
 {% endblock %}
