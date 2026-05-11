@@ -1,0 +1,109 @@
+{# Lazy-loaded by the Injected tab. Shows each injected article with a
+   rendered/raw toggle. #}
+
+{% if not injected_articles %}
+  <div class="empty"><div class="empty-icon">📤</div>No injected links yet.</div>
+{% else %}
+
+<div class="row row-between mb-4">
+  <div>
+    <span class="strong">{{ injected_articles|length }}</span>
+    <span class="muted">articles modified</span>
+    &nbsp;·&nbsp;
+    <span class="strong">{{ injected_articles|sum(attribute='links')|length }}</span>
+    <span class="muted">total links</span>
+  </div>
+</div>
+
+{% for art in injected_articles %}
+  <div class="card mb-4" id="inj-{{ art.article_id }}">
+    <div class="row row-between mb-3">
+      <div>
+        <h3 style="margin: 0 0 var(--s-1) 0;">{{ art.title }}</h3>
+        <div class="muted fs-sm">
+          {% if art.url %}<a href="{{ art.url }}" target="_blank">{{ art.url }}</a>{% endif %}
+          &nbsp;·&nbsp;
+          <span class="strong">{{ art.links|length }} link(s)</span>
+        </div>
+      </div>
+      <div class="row gap-2">
+        <a class="btn btn-sm" href="data:text/markdown;charset=utf-8,{{ art.raw|urlencode }}"
+           download="{{ art.slug }}.md">⬇ .md</a>
+        {% if art.backup %}
+          <button class="btn btn-sm btn-warn"
+                  hx-post="/interlink/articles/{{ art.article_id }}/restore"
+                  hx-confirm="Restore {{ art.title }} from backup? This will undo the injected links."
+                  hx-swap="none"
+                  onclick="setTimeout(() => location.reload(), 600)">↺ Restore</button>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <h4 class="eyebrow">Injected links</h4>
+      <ul style="list-style: none; padding: 0; margin: var(--s-2) 0 0 0;">
+        {% for link in art.links %}
+          <li class="row gap-3 mb-1 fs-sm">
+            <code style="color: var(--c-info); flex-shrink: 0;">{{ link.anchor_text }}</code>
+            <span class="muted">→</span>
+            <span class="strong" style="flex: 1; min-width:0; overflow:hidden; text-overflow:ellipsis;">
+              {{ link.target_title }}
+            </span>
+            <span class="muted fs-xs">{{ link.injected_at }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="tabs" style="margin-bottom: var(--s-3);">
+      <button class="tab active" onclick="showRendered('{{ art.article_id }}')">Rendered</button>
+      <button class="tab" onclick="showRaw('{{ art.article_id }}')">Raw markdown</button>
+    </div>
+
+    <div id="rendered-{{ art.article_id }}"
+         class="rendered-md"
+         data-content="{{ art.content|e }}"
+         style="background: var(--bg-deep); padding: var(--s-4); border-radius: var(--r-2);
+                max-height: 480px; overflow: auto;">
+      <span class="muted">Rendering…</span>
+    </div>
+
+    <pre id="raw-{{ art.article_id }}"
+         class="raw-md hide"
+         style="max-height: 480px; overflow: auto;">{{ art.raw }}</pre>
+  </div>
+{% endfor %}
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  // Render all .rendered-md blocks once on load
+  (function () {
+    if (typeof marked === 'undefined') {
+      setTimeout(arguments.callee, 100);
+      return;
+    }
+    document.querySelectorAll('.rendered-md').forEach(div => {
+      const md = div.dataset.content || '';
+      div.innerHTML = marked.parse(md);
+    });
+  })();
+
+  function showRendered(aid) {
+    const card = document.getElementById('inj-' + aid);
+    card.querySelector('#rendered-' + aid).classList.remove('hide');
+    card.querySelector('#raw-' + aid).classList.add('hide');
+    card.querySelectorAll('.tab').forEach((t, i) => {
+      t.classList.toggle('active', i === 0);
+    });
+  }
+  function showRaw(aid) {
+    const card = document.getElementById('inj-' + aid);
+    card.querySelector('#rendered-' + aid).classList.add('hide');
+    card.querySelector('#raw-' + aid).classList.remove('hide');
+    card.querySelectorAll('.tab').forEach((t, i) => {
+      t.classList.toggle('active', i === 1);
+    });
+  }
+</script>
+
+{% endif %}
