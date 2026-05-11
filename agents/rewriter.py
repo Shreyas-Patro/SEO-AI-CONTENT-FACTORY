@@ -100,19 +100,28 @@ Return the COMPLETE revised article. Preserve all structure, links, citations, a
         )
         self._track_llm(result)
 
-        new_content = result["text"]
-        new_word_count = len(new_content.split())
+        new_content_raw = result["text"]
+
+        # Same dual-save logic as lead_writer — keep DB consistent
+        from citation_stripper import strip_citations_with_stats
+        new_content_clean, strip_stats = strip_citations_with_stats(new_content_raw)
+        new_word_count = len(new_content_clean.split())
+
+        print(f"  Citation stripper: removed {strip_stats.get('total_removed', 0)} markers "
+              f"from rewrite")
 
         update_article(
             article_id,
-            content_md=new_content,
+            content_md=new_content_clean,
+            content_md_with_citations=new_content_raw,
             word_count=new_word_count,
             current_stage="rewriter",
         )
         add_article_history(
             article_id, "rewriter",
-            f"Applied {len(fact_issues)} fact + {len(brand_issues)} brand fixes",
-            new_content[:500],
+            f"Applied {len(fact_issues)} fact + {len(brand_issues)} brand fixes "
+            f"(stripped {strip_stats.get('total_removed', 0)} citations)",
+            new_content_clean[:500],
         )
 
         print(f"  ✅ Rewrite complete — {new_word_count} words")
