@@ -83,9 +83,51 @@ def chunk_article(article: Article, session) -> List[Chunk]:
     Deletes old chunks and creates fresh ones.
     """
     # Delete stale chunks for this article
-    session.query(Chunk).filter(Chunk.article_id == article.article_id).delete()
-    session.flush()
+    # Delete stale chunks + their dependents (embeddings, matches, anchors, injections).
+    # Must delete children before parent or SQLite's FK constraint blocks us.
+    from link_engine.db.models import Embedding, Match, Anchor, Injection
 
+    stale_chunk_ids = [
+        c.chunk_id for c in
+        session.query(Chunk).filter(Chunk.article_id == article.article_id).all()
+    ]
+    if stale_chunk_ids:
+        # Find all matches involving these chunks (as source OR target)
+        stale_match_ids = [
+            m.match_id for m in session.query(Match).filter(
+                (Match.source_chunk_id.in_(stale_chunk_ids)) |
+                (Match.target_chunk_id.in_(stale_chunk_ids))
+            ).all()
+        ]
+        if stale_match_ids:
+            # Anchors → Injections (deepest children first)
+            stale_anchor_ids = [
+                a.anchor_id for a in session.query(Anchor).filter(
+                    Anchor.match_id.in_(stale_match_ids)
+                ).all()
+            ]
+            if stale_anchor_ids:
+                session.query(Injection).filter(
+                    Injection.anchor_id.in_(stale_anchor_ids)
+                ).delete(synchronize_session=False)
+                session.query(Anchor).filter(
+                    Anchor.anchor_id.in_(stale_anchor_ids)
+                ).delete(synchronize_session=False)
+            session.query(Match).filter(
+                Match.match_id.in_(stale_match_ids)
+            ).delete(synchronize_session=False)
+
+        # Embeddings (direct child of Chunk)
+        session.query(Embedding).filter(
+            Embedding.chunk_id.in_(stale_chunk_ids)
+        ).delete(synchronize_session=False)
+
+        # Finally, the chunks themselves
+        session.query(Chunk).filter(
+            Chunk.chunk_id.in_(stale_chunk_ids)
+        ).delete(synchronize_session=False)
+
+    session.flush()
     try:
         # Read the body text (strip frontmatter)
         import frontmatter as fm
