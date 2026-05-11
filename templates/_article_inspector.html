@@ -18,10 +18,19 @@
     <button class="tab" data-tab="history">History</button>
   </nav>
 
-  <section class="tab-panel active" id="tab-rendered">
+<section class="tab-panel active" id="tab-rendered">
+    <div style="margin-bottom: 12px; display: flex; gap: 8px; align-items: center">
+      <label class="muted" style="font-size: 12px">View:</label>
+      <button id="view-clean-btn" class="btn-small" onclick="switchView('clean')"
+              style="background:#1a3a1a;border-color:#0a6">📖 Clean (published)</button>
+      <button id="view-cited-btn" class="btn-small" onclick="switchView('cited')"
+              style="background:#222;border-color:#444">🔍 With citations (audit)</button>
+      <span id="view-label" class="muted" style="font-size: 11px; margin-left: auto">
+        showing clean version
+      </span>
+    </div>
     <div id="rendered-md" style="background:#161624;padding:24px;border-radius:8px"></div>
   </section>
-
   <section class="tab-panel" id="tab-edit">
     <form id="edit-form">
       <textarea id="content-md" rows="40" style="font-family:ui-monospace,monospace">{{ article.content_md or '' }}</textarea>
@@ -40,7 +49,24 @@
 <!-- minimal markdown renderer (CDN) -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
-(function () {
+ (function () {
+  var cleanSrc = {{ (article.content_md or '') | tojson }};
+  var citedSrc = {{ (article.content_md_with_citations or '') | tojson }};
+  window._currentView = 'clean';
+
+  window.switchView = function (mode) {
+    window._currentView = mode;
+    var src = (mode === 'cited' && citedSrc) ? citedSrc : cleanSrc;
+    document.getElementById('rendered-md').innerHTML = marked.parse(src);
+    document.getElementById('view-label').textContent =
+      mode === 'cited' ? 'showing audit version (with [Source] tags)'
+                       : 'showing clean version (published)';
+    document.getElementById('view-clean-btn').style.background =
+      mode === 'clean' ? '#1a3a1a' : '#222';
+    document.getElementById('view-cited-btn').style.background =
+      mode === 'cited' ? '#1a3a1a' : '#222';
+  };
+
   function renderMarkdown() {
     var src = document.getElementById('content-md').value;
     document.getElementById('rendered-md').innerHTML = marked.parse(src);
