@@ -10,7 +10,7 @@
     <span class="strong">{{ injected_articles|length }}</span>
     <span class="muted">articles modified</span>
     &nbsp;·&nbsp;
-    <span class="strong">{{ injected_articles|sum(attribute='links')|length }}</span>
+    <span class="strong">{{ injected_articles|map(attribute='links')|map('length')|sum }}</span>
     <span class="muted">total links</span>
   </div>
 </div>
