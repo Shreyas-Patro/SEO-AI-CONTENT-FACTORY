@@ -43,7 +43,7 @@ import sys
 import zipfile
 from pathlib import Path
 from typing import Iterable
-from citation_stripper import strip_citations
+
 # Make sure the project root is on sys.path so this script runs from anywhere
 ROOT = Path(__file__).parent
 sys.path.insert(0, str(ROOT))
@@ -55,14 +55,7 @@ from db.artifacts import list_pipeline_runs, get_pipeline_run
 # ── Markdown sanitiser ───────────────────────────────────────────────────
 
 def _sanitize_for_link_engine(body: str) -> str:
-     """
-    Remove markdown patterns that produce empty chunks in the link engine.
-    Also strips citation markers since interlinking shouldn't index "[Source]"
-    as anchor text.
     """
-    # NEW: strip citations first — they have nothing to interlink against
-    body = strip_citations(body)
-  """
     Remove markdown patterns that produce empty chunks in the link engine:
 
     1. Heading-only sections — '## Foo\\n\\n### Bar' becomes '### Bar'

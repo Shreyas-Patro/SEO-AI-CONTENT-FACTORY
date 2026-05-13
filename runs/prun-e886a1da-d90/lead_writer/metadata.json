@@ -13,10 +13,10 @@
   "serp_cache_hits": 0,
   "llm_calls": 2,
   "llm_cache_hits": 0,
-  "tokens_in": 3417,
-  "tokens_out": 4577,
-  "cost_usd": 0.058157,
-  "duration_seconds": 61.88,
-  "completed_at": "2026-05-04T11:35:21.317216",
+  "tokens_in": 3725,
+  "tokens_out": 6031,
+  "cost_usd": 0.071132,
+  "duration_seconds": 72.51,
+  "completed_at": "2026-05-11T17:39:34.729323",
   "attempts": 1
 }

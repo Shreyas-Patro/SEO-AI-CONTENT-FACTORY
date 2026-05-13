@@ -1,0 +1,83 @@
+{
+  "master_research_prompt": "Research comprehensive data on SG Palya (Suddagunte Palya), Bangalore for 2026 real estate analysis. Provide authoritative, current information with specific citations for all claims.\n\n**RESEARCH SCOPE & REQUIREMENTS:**\nFocus: SG Palya/Suddagunte Palya locality in Bangalore, Karnataka, India\nTimeframe: Current data as of 2026, with trends from last 18 months (July 2024-January 2026)\nLanguage: British Indian English (use 'flat' not 'apartment', 'lakh'/'crore' for currency, 'BBMP', 'RERA')\nCitations: Mandatory for every factual claim with source URLs in markdown format\n\n**SECTION 1: LOCATION & ADMINISTRATIVE DETAILS**\nProvide exact information on:\n- SG Palya full form (Suddagunte Palya) and historical background\n- Precise geographic coordinates and boundaries\n- SG Palya pincode(s) and ward numbers under BBMP\n- Administrative jurisdiction (assembly constituency, parliamentary constituency)\n- Neighbouring localities and major landmarks\n- Distance in kilometres to major Bangalore areas (Koramangala, HSR Layout, Electronic City, Whitefield, Indiranagar, MG Road, Bannerghatta Road)\n\n**SECTION 2: INFRASTRUCTURE & CONNECTIVITY**\nResearch and provide specific data on:\n- Nearest metro stations with exact distances in kilometres and walking/driving time\n- BMTC bus route numbers serving SG Palya with frequency data\n- Major roads connecting SG Palya (road names, widths, condition)\n- Traffic congestion patterns and peak hour travel times to IT hubs\n- Upcoming infrastructure projects (metro extensions, road widening, flyovers) with completion timelines\n- Internet connectivity providers and average speeds\n- Power supply reliability and water supply sources\n\n**SECTION 3: SAFETY & SECURITY ANALYSIS**\nProvide factual data on:\n- Crime statistics for SG Palya area from Karnataka Police records (2024-2026)\n- Nearest police station name, distance, and average response times\n- Street lighting coverage percentage and CCTV installation status\n- Women's safety initiatives and night patrol schedules\n- Emergency services availability (fire station, ambulance response times)\n- Resident safety ratings from surveys or municipal data\n\n**SECTION 4: AMENITIES & SOCIAL INFRASTRUCTURE**\nCompile comprehensive list with names, addresses, and ratings:\n- Hospitals and healthcare facilities within 3km radius\n- Schools (CBSE, ICSE, state board) with admission criteria and fees\n- Colleges and educational institutions nearby\n- Shopping centres, malls, and local markets with operating hours\n- Banks, ATMs, and financial services\n- Restaurants, cafes, and entertainment options\n- Parks, playgrounds, and recreational facilities\n- Religious places and community centres\n\n**SECTION 5: PROPERTY MARKET ANALYSIS**\nProvide current market data (Q4 2025 - Q1 2026):\n- Average property prices per square foot by property type:\n  * Independent houses/villas\n  * Builder floors\n  * 1BHK, 2BHK, 3BHK flats\n  * Commercial spaces\n- Price range variations within SG Palya sub-areas\n- Year-over-year price appreciation rates (2024 vs 2025 vs 2026)\n- Active residential projects with developer names, launch dates, possession timelines\n- RERA registration numbers for ongoing projects\n- Resale market activity and transaction volumes\n- Price comparison with neighbouring localities\n\n**SECTION 6: RENTAL MARKET DATA**\nProvide current rental information:\n- Monthly rental rates by property type and BHK configuration\n- Security deposit norms (months of rent)\n- PG accommodation options with pricing (\u20b9 per month)\n- Co-living spaces and hostel facilities\n- Rental yield calculations for investors\n- Tenant preferences and demand patterns\n- Rental agreement registration requirements\n\n**SECTION 7: INVESTMENT POTENTIAL & MARKET OUTLOOK**\nAnalyse and provide:\n- Capital appreciation potential based on infrastructure development\n- Rental yield comparisons with other Bangalore localities\n- Upcoming developments that could impact property values\n- Demographic trends and population growth data\n- Employment opportunities in nearby areas\n- Investment risks and challenges specific to SG Palya\n\n**SECTION 8: BANGALORE REAL ESTATE MARKET CONTEXT (2026)**\nProvide broader market analysis:\n- Overall Bangalore property price trends (Q1 2026)\n- Interest rate environment and home loan availability\n- Government policies affecting real estate (RERA updates, tax changes)\n- Supply-demand dynamics in Bangalore residential market\n- IT sector growth impact on housing demand\n- Infrastructure projects affecting overall city connectivity\n- Market predictions for 2026-2027\n\n**SECTION 9: REGULATORY & LEGAL FRAMEWORK**\nResearch current information on:\n- RERA Karnataka updates and compliance requirements\n- Property registration process and stamp duty rates in Karnataka\n- BBMP property tax rates and calculation methods\n- Building approval processes and timelines\n- Legal documentation requirements for property transactions\n- Dispute resolution mechanisms for property issues\n\n**FAQ RESEARCH REQUIREMENTS:**\nProvide specific answers with citations for:\n- Property buying costs and hidden charges in SG Palya\n- Best areas within SG Palya for different budgets\n- Financing options and bank loan eligibility\n- Property appreciation potential over 5-10 years\n- Comparison with other emerging localities in Bangalore\n- Suitability for different demographic groups (families, professionals, retirees)\n- Monsoon-related issues and infrastructure resilience\n- Future development plans affecting the area\n\n**SOURCE REQUIREMENTS:**\nPrioritise data from these authoritative sources (provide URLs):\n- rera.karnataka.gov.in (project registrations, developer details)\n- bbmp.gov.in (municipal data, infrastructure projects)\n- bda.karnataka.gov.in (development authority plans)\n- kar.nic.in (government notifications, policies)\n- rbi.org.in (interest rates, housing finance data)\n- Knight Frank, JLL, Anarock, CBRE (market reports)\n- Economic Times, Mint, Business Standard (market news)\n- MagicBricks, NoBroker (current listings and prices)\n\n**DATA FRESHNESS REQUIREMENTS:**\n- Property prices: Last 6 months (August 2025 - January 2026)\n- Infrastructure updates: Last 12 months\n- Government policies: Current as of January 2026\n- Market trends: Last 18 months with quarterly breakdowns\n- Safety statistics: Most recent available (2024-2025)\n\n**OUTPUT FORMAT:**\nStructure research with clear section headers, bullet points for easy extraction, and mandatory source citations in [Source: URL] format after each claim. Include specific numbers, dates, names, and percentages wherever available. Avoid generic statements - provide actionable, specific information that can be directly used in property advisory content.",
+  "research_questions": [
+    {
+      "section": "Location & Administrative",
+      "questions": [
+        "What is the exact pincode of SG Palya and which BBMP ward does it fall under?",
+        "What are the precise boundaries and neighbouring localities of Suddagunte Palya?",
+        "What is the historical significance and origin of the name Suddagunte Palya?"
+      ]
+    },
+    {
+      "section": "Connectivity & Transport",
+      "questions": [
+        "Which is the nearest metro station to SG Palya and what is the exact distance?",
+        "What are the specific BMTC bus route numbers serving SG Palya?",
+        "What is the driving time from SG Palya to major IT hubs during peak hours?"
+      ]
+    },
+    {
+      "section": "Safety & Security",
+      "questions": [
+        "What are the crime statistics for SG Palya area from 2024-2025?",
+        "Which police station covers SG Palya and what is the average response time?",
+        "What is the street lighting and CCTV coverage status in SG Palya?"
+      ]
+    },
+    {
+      "section": "Property Prices",
+      "questions": [
+        "What is the current price per square foot for 2BHK flats in SG Palya as of Q1 2026?",
+        "What are the rental rates for different BHK configurations in SG Palya?",
+        "Which are the active RERA-registered projects in SG Palya with possession timelines?"
+      ]
+    },
+    {
+      "section": "Infrastructure & Amenities",
+      "questions": [
+        "What hospitals and healthcare facilities are available within 3km of SG Palya?",
+        "Which schools and educational institutions serve the SG Palya area?",
+        "What shopping and entertainment options are available in SG Palya?"
+      ]
+    },
+    {
+      "section": "Investment Analysis",
+      "questions": [
+        "What is the rental yield for properties in SG Palya compared to other Bangalore localities?",
+        "What infrastructure developments are planned that could impact SG Palya property values?",
+        "What are the capital appreciation trends for SG Palya over the last 3 years?"
+      ]
+    },
+    {
+      "section": "Market Context",
+      "questions": [
+        "What are the overall Bangalore property price trends as of 2026?",
+        "How do current interest rates affect property buying decisions in Bangalore?",
+        "What is the supply-demand scenario in Bangalore residential market?"
+      ]
+    }
+  ],
+  "freshness_requirements": {
+    "default": "last 18 months",
+    "exceptions": "historical claims about locality origin and development may use any era"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "bda.karnataka.gov.in",
+    "kar.nic.in",
+    "rbi.org.in",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "anarock.com",
+    "cbre.com",
+    "economictimes.indiatimes.com",
+    "livemint.com",
+    "business-standard.com",
+    "magicbricks.com",
+    "nobroker.in"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.25
+}

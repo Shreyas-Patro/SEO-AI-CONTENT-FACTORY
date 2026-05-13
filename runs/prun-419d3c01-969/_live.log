@@ -1,0 +1,29 @@
+Database initialized at data/canvas.db
+[bg] starting orchestrator.run_layer2 args=('prun-419d3c01-969',)
+
+============================================================
+[Pipeline prun-419d3c01-969] Layer 2 (LangGraph)
+============================================================
+
+┌─ [content_architect] starting (run=prun-419d3c01-969)
+
+[content_architect] Designing cluster for: sattva
+  9 keyword groups, expecting ≥5 articles
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Inserted 11/11 articles
+  Note: LLM declared 12, inserted 11 — using actual count
+└─ [content_architect] complete in 226.35s ($0.1360, 0 SERP, 1 LLM)
+  ✓ Node done: content_architect
+
+┌─ [faq_architect] starting (run=prun-419d3c01-969)
+[faq_architect] Generating FAQs for cluster cl-cfd73e4b-18c
+  Found 11 articles in DB
+  Done: 68 FAQs across 11/11 articles
+└─ [faq_architect] complete in 142.68s ($0.1183, 0 SERP, 1 LLM)
+  ✓ Node done: faq_architect
+
+┌─ [research_prompt_generator] starting (run=prun-419d3c01-969)
+[research_prompt_generator] Building research prompt for: sattva
+└─ [research_prompt_generator] complete in 51.16s ($0.0505, 0 SERP, 1 LLM)
+  ✓ Node done: research_prompt
+[bg] completed orchestrator.run_layer2

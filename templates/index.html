@@ -88,8 +88,8 @@
       </div>
     {% else %}
 
-      {# Run header — re-rendered every 3s by HTMX #}
-      <div hx-get="/runs/{{ run_id }}/header" hx-trigger="load, every 3s" hx-swap="innerHTML">
+      {# Run header — re-rendered every 8s by HTMX #}
+      <div hx-get="/runs/{{ run_id }}/header" hx-trigger="load, every 8s" hx-swap="innerHTML">
         {% include "_header.html" %}
       </div>
 
@@ -101,8 +101,8 @@
       </div>
 
       <div class="tab-panel active" id="tab-pipeline">
-        {# Agent grid — re-rendered every 3s #}
-        <div hx-get="/runs/{{ run_id }}/agents" hx-trigger="load, every 3s" hx-swap="innerHTML">
+        {# Agent grid — re-rendered every 10s #}
+        <div hx-get="/runs/{{ run_id }}/agents" hx-trigger="load, every 10s" hx-swap="innerHTML">
           {% include "_agents_grid.html" %}
         </div>
 

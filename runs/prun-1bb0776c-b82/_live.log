@@ -1,0 +1,59 @@
+[bg] starting orchestrator.run_layer2 args=('prun-1bb0776c-b82',)
+
+============================================================
+[Pipeline prun-1bb0776c-b82] Layer 2 (LangGraph)
+============================================================
+
+┌─ [content_architect] starting (run=prun-1bb0776c-b82)
+
+[content_architect] Designing cluster for: indiranagar
+  9 keyword groups, expecting ≥5 articles
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Inserted 11/11 articles
+  Note: LLM declared 12, inserted 11 — using actual count
+└─ [content_architect] complete in 0.96s ($0.0000, 0 SERP, 0 LLM)
+  ✓ Node done: content_architect
+
+┌─ [faq_architect] starting (run=prun-1bb0776c-b82)
+[faq_architect] Generating FAQs for cluster cl-1542aa73-079
+  Found 22 articles in DB
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Gap-fill: 21 articles still missing FAQs
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Done: 4 FAQs across 2/22 articles
+   [faq_architect] retry 2/2 — problems: ['Only 2 articles have FAQs — expected at least 6. LLM likely truncated. Will retry with stronger prompt.']
+[faq_architect] Generating FAQs for cluster cl-1542aa73-079
+  Found 16 articles in DB
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Gap-fill: 15 articles still missing FAQs
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Done: 4 FAQs across 2/16 articles
+└─ [faq_architect] FAILED validation: ['Only 2 articles have FAQs — expected at least 6. LLM likely truncated. Will retry with stronger prompt.']
+
+[CRASH] ValidationError: faq_architect output validation failed: ['Only 2 articles have FAQs — expected at least 6. LLM likely truncated. Will retry with stronger prompt.']
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\jobs.py", line 51, in _bootstrap_and_run
+    result = fn(*args)
+             ^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 109, in run_layer2
+    for event in graph.stream(init_state, config=config):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\pregel\__init__.py", line 1656, in stream
+    for _ in runner.tick(
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\pregel\runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\utils\runnable.py", line 408, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\utils\runnable.py", line 184, in invoke
+    ret = context.run(self.func, input, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\graph\nodes.py", line 115, in node_faq_architect
+    agent.run({"topic": graph_state["topic"], "cluster_id": cluster_id})
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 316, in run
+    raise ValidationError(
+agents.base.ValidationError: faq_architect output validation failed: ['Only 2 articles have FAQs — expected at least 6. LLM likely truncated. Will retry with stronger prompt.']
+During task with name 'faq_architect' and id '45bae1cf-08ef-3a47-b86b-f32643f885c8'
+

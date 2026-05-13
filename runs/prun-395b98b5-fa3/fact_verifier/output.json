@@ -1,0 +1,884 @@
+{
+  "article_id": "art-5be141a7-e78",
+  "fact_check_score": 0.5700000000000001,
+  "verification": {
+    "total_claims": 87,
+    "verified": 21,
+    "flagged": 47,
+    "unverifiable": 19,
+    "overall_score": 0.5700000000000001,
+    "claims": [
+      {
+        "claim_text": "prices rising 16% year-over-year in Q1 2025",
+        "citation_provided": "None explicitly stated",
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Matches KB: 'Bengaluru residential prices increased 16% year-over-year in Q1 2025'"
+      },
+      {
+        "claim_text": "average ticket sizes now in the \u20b910-20 million range",
+        "citation_provided": "None explicitly stated",
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Matches KB: 'ticket sizes between \u20b910\u201320 million dominating sales'"
+      },
+      {
+        "claim_text": "IT sector job growth (estimated 12% annually)",
+        "citation_provided": "None",
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "No citation provided for this specific IT job growth figure. Plausible but unverified."
+      },
+      {
+        "claim_text": "Metro Phase 2 extensions (completion Q3 2027)",
+        "citation_provided": "None explicitly stated",
+        "category": "infrastructure",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB reference to 'BMRCL Phase 2 timelines' and multiple mentions in article of Q3 2027 completion"
+      },
+      {
+        "claim_text": "average time-to-decision declining from 8 weeks to 3.5 weeks",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific metric with no citation. Plausible indicator of market efficiency but unverified."
+      },
+      {
+        "claim_text": "Commercial real estate absorption reached 45 million sq ft in 2024",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific figure with no source. Plausible but cannot verify without citation."
+      },
+      {
+        "claim_text": "Sarjapur Road (10 km from IT parks) has seen 18-22% annual appreciation",
+        "citation_provided": "None explicitly stated",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific appreciation range with no citation. Repeated multiple times in article but no source provided."
+      },
+      {
+        "claim_text": "average residential prices in Bengaluru rose 12% in 2025 to \u20b97,388 per sq ft",
+        "citation_provided": "RERA Karnataka data",
+        "category": "property",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Matches KB: 'Average residential prices in Bengaluru rose approximately 12 percent in 2025 to about \u20b97,388 per square foot'"
+      },
+      {
+        "claim_text": "premium segment (\u20b915,000+ per sq ft) has shown remarkable resilience",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Qualitative claim without specific data or citation. Plausible but unverified."
+      },
+      {
+        "claim_text": "Mid-market segments (\u20b97,000-15,000 per sq ft) have experienced the strongest demand",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Comparative claim without specific data or citation. Plausible but unverified."
+      },
+      {
+        "claim_text": "SG Palya typical 1-2 BHK flats and builder floors are priced in the \u20b97,000-\u20b915,000 per square foot range as of late 2025 to early 2026",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "KB confirms SG Palya property data availability but this specific price range is not cited. Plausible but unverified."
+      },
+      {
+        "claim_text": "Rental yields in mid-market Bangalore (\u20b97,000-15,000 per sq ft) average 2.8-3.3% per annum",
+        "citation_provided": "None explicitly stated",
+        "category": "rental",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Matches KB: 'Mid-market Bangalore rental yields in 2025\u201326 are in the range of 2.8\u20133.3% per annum'"
+      },
+      {
+        "claim_text": "12-16% annual appreciation in areas like Sarjapur Road",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "inconsistent",
+        "suggested_correction": "Article earlier states 18-22% annual appreciation for Sarjapur Road",
+        "reasoning": "Contradicts earlier claim in same article that Sarjapur Road has 18-22% annual appreciation. This 12-16% figure appears inconsistent."
+      },
+      {
+        "claim_text": "Sarjapur Road is Bangalore's fastest-growing corridor, with 18-22% annual appreciation over two years",
+        "citation_provided": "None explicitly stated",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Repeated claim without citation. Plausible but unverified."
+      },
+      {
+        "claim_text": "Metro Phase 2 to SG Palya, Q3 2027",
+        "citation_provided": "None explicitly stated",
+        "category": "infrastructure",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB reference to BMRCL Phase 2 timelines and multiple article references"
+      },
+      {
+        "claim_text": "Sarjapur Road has appreciated 18-22% annually from 2023-2025",
+        "citation_provided": "per RERA Karnataka transaction data",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Citation mentioned but no specific RERA report or link provided. Cannot independently verify."
+      },
+      {
+        "claim_text": "Hennur and Thanisandra are priced at \u20b93,000-5,000 per sq ft (as of Q1 2026)",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific price range with no citation. Plausible for emerging areas but unverified."
+      },
+      {
+        "claim_text": "60% below mid-market averages",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Calculation claim without explicit verification. If mid-market is \u20b97,000-15,000, then 60% below would be \u20b92,800-6,000, which roughly aligns with stated \u20b93,000-5,000 range."
+      },
+      {
+        "claim_text": "could support 12-15% annual appreciation over 3-5 years",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.6,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Forward-looking projection with no basis or citation provided. Speculative."
+      },
+      {
+        "claim_text": "Metro Phase 2 extension (Q3 2027)",
+        "citation_provided": "None explicitly stated",
+        "category": "infrastructure",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB and multiple article references to BMRCL Phase 2 timelines"
+      },
+      {
+        "claim_text": "Peripheral Ring Road widening",
+        "citation_provided": "None",
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Infrastructure project mentioned but no specific timeline or citation provided."
+      },
+      {
+        "claim_text": "\u20b950,000 crore in planned infrastructure investment",
+        "citation_provided": "None",
+        "category": "infrastructure",
+        "confidence": 0.6,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific investment figure with no source. Plausible but unverified."
+      },
+      {
+        "claim_text": "projected 35-40 minute travel time reduction to central business districts by 2027",
+        "citation_provided": "None explicitly stated",
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific projection with no citation. Plausible but unverified."
+      },
+      {
+        "claim_text": "Government infrastructure investments (including Metro Phase 2 and Peripheral Ring Road widening) are projected to reduce travel time from Hennur to Whitefield IT corridor by 35-40 minutes by 2027",
+        "citation_provided": "based on BMRCL Phase 2 timelines",
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Vague citation to 'BMRCL Phase 2 timelines' without specific source. Projection is unverified."
+      },
+      {
+        "claim_text": "This shift reflects the city's growing affluence and the tech sector's continued expansion",
+        "citation_provided": "None",
+        "category": "lifestyle",
+        "confidence": 0.75,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Causal claim without supporting data or citation. Plausible but unverified."
+      },
+      {
+        "claim_text": "current demand stems from genuine end-user requirements and lifestyle upgrades",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Qualitative claim about demand drivers without specific data or citation."
+      },
+      {
+        "claim_text": "sub-\u20b950 lakh segment that previously drove volumes",
+        "citation_provided": "None",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "unverifiable",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Historical comparison without specific data or citation. Plausible but unverified."
+      },
+      {
+        "claim_text": "SG Palya has emerged as a preferred locality for IT professionals, with many new flat buyers working in Whitefield, Marathahalli, or Outer Ring Road IT parks",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB context that SG Palya is a well-connected micro-market with IT-linked demand. Whitefield and Marathahalli are known IT hubs in Bangalore."
+      },
+      {
+        "claim_text": "Bangalore's population continues growing at approximately 3.5% annually",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "No source provided. While plausible for a growing metro, specific annual growth rate needs verification from official census or municipal data."
+      },
+      {
+        "claim_text": "71% of Bangalore homebuyers now prioritise localities with green spaces, gyms, and co-working facilities",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific percentage claim with no source. This is a precise statistic that requires citation from a survey or research report."
+      },
+      {
+        "claim_text": "SG Palya projects now include 40-50% open space allocation",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific claim about project specifications without source. Needs verification from actual project documentation."
+      },
+      {
+        "claim_text": "Work-from-home adoption remains at 45% among IT professionals in Bangalore",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Precise statistic without citation. Requires source from employment survey or industry report."
+      },
+      {
+        "claim_text": "Demand for 2 and 3 BHK flats in SG Palya increased by 34% in 2025-2026",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific growth percentage without source. Needs citation from market research or sales data."
+      },
+      {
+        "claim_text": "buyers seeking properties priced \u20b970-110 lakh over larger units",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Price range aligns with KB context that mid-to-premium segment (\u20b910-20 million) dominates Bangalore market. \u20b970-110 lakh falls within this range."
+      },
+      {
+        "claim_text": "SG Palya saw 12 new residential project launches in 2025-2026, adding 3,200+ units",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific project launch data without source. Requires verification from real estate databases or developer announcements."
+      },
+      {
+        "claim_text": "average price range of \u20b965-95 lakh for 2 BHK flats",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Price range is consistent with KB data on mid-segment pricing and \u20b97,388-8,952 per sq ft rates in Bangalore."
+      },
+      {
+        "claim_text": "58% of launches targeting first-time homebuyers and young professionals earning \u20b915-25 lakh annually",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific percentage without source. Requires citation from developer data or market analysis."
+      },
+      {
+        "claim_text": "Average construction timelines for new projects in SG Palya are 36-42 months",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific timeline claim without source. Needs verification from project documentation or industry standards."
+      },
+      {
+        "claim_text": "85% of projects offering possession between Q2 2027 and Q4 2028",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific percentage without source. Requires citation from project data."
+      },
+      {
+        "claim_text": "SG Palya has an unsold inventory of 2,100 units as of Q1 2026",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific inventory figure without source. Needs verification from real estate databases."
+      },
+      {
+        "claim_text": "representing a 6.5-month supply at current absorption rates of 320 units per month",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific absorption rate without source. Calculation appears logical (2,100/320 \u2248 6.5 months) but underlying data needs verification."
+      },
+      {
+        "claim_text": "Inventory in the \u20b960-90 lakh price segment in SG Palya is 35% lower than in 2024",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Year-over-year comparison without source. Requires citation from market data."
+      },
+      {
+        "claim_text": "price appreciation of 8-12% year-on-year",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB data showing 12% YoY price growth in Bangalore for 2025, and 16% in Q1 2025."
+      },
+      {
+        "claim_text": "Ready-to-move flats in SG Palya account for only 18% of total inventory",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific percentage without source. Needs verification from inventory data."
+      },
+      {
+        "claim_text": "82% of units still under construction or in pre-launch phase",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Inverse of previous claim (100% - 18% = 82%), mathematically consistent but underlying data needs verification."
+      },
+      {
+        "claim_text": "The city now hosts major research and development centres, biotechnology firms, aerospace companies, and emerging fintech startups",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Bangalore is well-known for diverse economic base including biotech, aerospace, and fintech sectors. This is general knowledge."
+      },
+      {
+        "claim_text": "Average household incomes in Bangalore have shown strong growth over the past three years, outpacing national averages",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Comparative claim without specific data or source. Plausible but needs citation."
+      },
+      {
+        "claim_text": "The emergence of dual-income households has particularly impacted the \u20b975 lakh to \u20b91.5 crore price segment",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Causal claim without supporting data. Plausible but needs citation from market research."
+      },
+      {
+        "claim_text": "Startup ecosystem growth has created a new category of high-net-worth individuals under 35",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with known Bangalore startup ecosystem growth and general knowledge about tech entrepreneurship."
+      },
+      {
+        "claim_text": "Areas like SG Palya benefit from this pipeline, with proximity to Christ University and other institutions creating sustained rental demand",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "SG Palya is known to be near educational institutions. KB confirms persistent rental demand in SG Palya."
+      },
+      {
+        "claim_text": "Migration patterns have evolved beyond traditional IT professionals to include entrepreneurs, researchers, and service sector workers",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with KB context about diversified employment base and general knowledge of Bangalore's economic evolution."
+      },
+      {
+        "claim_text": "This diversification reduces the market's dependence on any single industry and creates more stable demand patterns",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Logical inference supported by KB data on economic diversification and stable sales volumes."
+      },
+      {
+        "claim_text": "Inventory management has become more sophisticated, with developers launching phases based on absorption rates rather than speculative building",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with industry best practices and KB context on balanced supply-demand dynamics."
+      },
+      {
+        "claim_text": "Areas with balanced supply-demand ratios tend to attract better projects and maintain steady appreciation",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.8,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Standard real estate market principle supported by economic theory and market observations."
+      },
+      {
+        "claim_text": "Virtual property tours and 3D walkthroughs have increased property inquiry conversion rates by 42% in Bangalore",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this specific statistic",
+        "reasoning": "Specific conversion rate metric lacks citation. While PropTech adoption is real, this exact figure cannot be verified against knowledge base."
+      },
+      {
+        "claim_text": "67% of SG Palya buyers now use PropTech platforms for initial research",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.35,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this SG Palya-specific statistic",
+        "reasoning": "Highly specific claim about SG Palya with no citation. Cannot verify against available data."
+      },
+      {
+        "claim_text": "AI-powered property valuation tools have reduced price discovery time by 55%",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.4,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this efficiency metric",
+        "reasoning": "Specific percentage reduction lacks citation and cannot be verified."
+      },
+      {
+        "claim_text": "average time-to-decision for flat purchases in SG Palya declining from 8 weeks to 3.5 weeks",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.3,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this SG Palya-specific timeline",
+        "reasoning": "Very specific claim about SG Palya with no source. Unverifiable."
+      },
+      {
+        "claim_text": "Smart home integration is now standard in 73% of new projects in SG Palya",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.35,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this SG Palya market penetration statistic",
+        "reasoning": "Specific percentage for SG Palya lacks citation and cannot be verified."
+      },
+      {
+        "claim_text": "IoT-enabled security, energy management, and automation systems adding \u20b93-5 lakh to flat prices",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this price premium estimate",
+        "reasoning": "Price premium estimate lacks citation. Plausible range but unverified."
+      },
+      {
+        "claim_text": "78% of new residential projects in SG Palya now comply with IGBC Green Homes or LEED certification standards",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.35,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this SG Palya green certification rate",
+        "reasoning": "Specific SG Palya statistic with no citation. Cannot verify."
+      },
+      {
+        "claim_text": "Green-certified flats in SG Palya command a 6-9% price premium over non-certified units",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this premium percentage",
+        "reasoning": "Specific premium range lacks citation. Plausible but unverified."
+      },
+      {
+        "claim_text": "buyers are willing to pay an additional \u20b94-8 lakh for sustainability features",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this willingness-to-pay estimate",
+        "reasoning": "Price premium estimate lacks citation. Plausible but unverified."
+      },
+      {
+        "claim_text": "Water recycling and waste management systems are now mandatory in all new projects in SG Palya under BBMP regulations",
+        "citation_provided": null,
+        "category": "legal",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide BBMP regulation reference",
+        "reasoning": "While BBMP regulations on water management are plausible, specific claim about SG Palya lacks citation."
+      },
+      {
+        "claim_text": "reducing operational costs by 18-22% for residents",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.4,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this cost reduction estimate",
+        "reasoning": "Specific percentage savings lacks citation and cannot be verified."
+      },
+      {
+        "claim_text": "RERA Karnataka 2026 amendments have mandated 30% affordable housing in projects above 20,000 sq m",
+        "citation_provided": null,
+        "category": "legal",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide RERA Karnataka 2026 amendment reference",
+        "reasoning": "Specific regulation claim lacks citation. Plausible but needs verification from official RERA source."
+      },
+      {
+        "claim_text": "Stamp duty reduction from 5% to 3% for first-time homebuyers in Karnataka (effective January 2026)",
+        "citation_provided": null,
+        "category": "legal",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide official government notification reference",
+        "reasoning": "Specific tax policy change lacks citation. Needs verification from Karnataka government sources."
+      },
+      {
+        "claim_text": "has increased flat purchase registrations in SG Palya by 31% in Q1 2026",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.25,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this SG Palya registration increase",
+        "reasoning": "Very specific claim about SG Palya impact with no citation. Unverifiable."
+      },
+      {
+        "claim_text": "BBMP's revised Comprehensive Development Plan 2031 designates SG Palya as a 'High-Growth Residential Zone'",
+        "citation_provided": null,
+        "category": "legal",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide reference to BBMP CDP 2031 document",
+        "reasoning": "Specific urban planning designation lacks citation. Needs verification from BBMP official documents."
+      },
+      {
+        "claim_text": "enabling higher Floor Space Index (FSI) of 3.5",
+        "citation_provided": null,
+        "category": "legal",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide reference to BBMP CDP 2031 FSI specifications",
+        "reasoning": "Specific FSI value for SG Palya lacks citation."
+      },
+      {
+        "claim_text": "attracting developer investment of \u20b9850+ crore",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.3,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this investment figure",
+        "reasoning": "Specific investment amount for SG Palya lacks citation and cannot be verified."
+      },
+      {
+        "claim_text": "Property tax exemptions for green-certified buildings in Bangalore have incentivised 64% of new SG Palya projects to pursue sustainability certifications",
+        "citation_provided": null,
+        "category": "legal",
+        "confidence": 0.35,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this incentive impact statistic",
+        "reasoning": "Specific SG Palya adoption rate lacks citation. Cannot verify."
+      },
+      {
+        "claim_text": "reducing buyer costs by \u20b91.2-1.8 lakh over 5 years",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.4,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this cost savings estimate",
+        "reasoning": "Specific savings estimate lacks citation and cannot be verified."
+      },
+      {
+        "claim_text": "projected 8-12% annual growth driven by IT expansion, infrastructure development, and population growth to 15 million by 2030",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for growth projection and population forecast",
+        "reasoning": "Specific growth rate and population projection lack citation. Knowledge base shows 12-16% growth in 2025, but future projections need sources."
+      },
+      {
+        "claim_text": "government's \u20b91 lakh crore infrastructure investment",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this infrastructure investment figure",
+        "reasoning": "Specific investment amount lacks citation and cannot be verified."
+      },
+      {
+        "claim_text": "Emerging growth areas include Sarjapur Road, Hennur, Thanisandra, Yelahanka, and areas along Peripheral Ring Road",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.7,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "These are well-known emerging areas in Bangalore with documented infrastructure development. Consistent with market knowledge."
+      },
+      {
+        "claim_text": "These locations offer 15-20% appreciation potential",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this appreciation potential estimate",
+        "reasoning": "Specific appreciation range lacks citation. Knowledge base shows 12-16% growth in 2025, but future projections need sources."
+      },
+      {
+        "claim_text": "with upcoming metro connectivity, IT parks, and infrastructure development at competitive prices of \u20b93,000-5,000 per sq ft",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "inconsistent",
+        "suggested_correction": "Verify price range against current market data",
+        "reasoning": "Knowledge base shows weighted average prices at \u20b98,952 per sq ft in Q1 2026. Price range of \u20b93,000-5,000 appears significantly outdated or refers to specific micro-markets, needs clarification."
+      },
+      {
+        "claim_text": "population growth to 15 million by 2030",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for this population projection",
+        "reasoning": "Specific population forecast lacks citation. Plausible but needs verification from official sources."
+      },
+      {
+        "claim_text": "45 million sq ft absorption in 2024",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific commercial real estate absorption figure lacks source attribution. While plausible for Bangalore's scale, cannot verify against KB which focuses on residential market."
+      },
+      {
+        "claim_text": "co-working spaces growing 30%",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Growth percentage for co-working spaces lacks citation. No KB data available to verify this specific metric."
+      },
+      {
+        "claim_text": "Office rents increased 8-12%",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Office rent increase range lacks source. KB mentions strong office leasing momentum in 2025 but does not provide specific rent increase percentages."
+      },
+      {
+        "claim_text": "vacancy rates at healthy 12-15%",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Commercial office vacancy rate range lacks citation. Cannot verify against available KB data."
+      },
+      {
+        "claim_text": "Government's \u20b950,000 crore investment in infrastructure",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Specific infrastructure investment amount lacks source. This is a significant claim requiring government documentation or official announcement."
+      },
+      {
+        "claim_text": "Metro Phase 3, suburban rail, elevated corridors, and airport expansion",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "These are known Bangalore infrastructure projects in development. While no specific citations provided, these are publicly documented initiatives."
+      },
+      {
+        "claim_text": "boost property values by 15-25% in connected areas",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": null,
+        "reasoning": "Property value appreciation range lacks citation. KB shows residential prices grew 12-16% in 2025, but this claim is broader and infrastructure-specific without source."
+      },
+      {
+        "claim_text": "IT companies expanding operations drive demand",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "KB confirms strong office leasing momentum in Bengaluru during 2025 underpinning housing demand in IT-linked micro-markets, supporting this claim."
+      }
+    ]
+  },
+  "needs_rewrite": true
+}

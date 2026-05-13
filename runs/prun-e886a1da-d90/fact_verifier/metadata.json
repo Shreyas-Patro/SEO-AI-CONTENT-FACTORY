@@ -9,11 +9,11 @@
   "serp_calls": 0,
   "serp_cache_hits": 0,
   "llm_calls": 3,
-  "llm_cache_hits": 0,
-  "tokens_in": 6420,
-  "tokens_out": 8493,
-  "cost_usd": 0.039107,
-  "duration_seconds": 57.35,
-  "completed_at": "2026-05-04T11:38:30.107147",
+  "llm_cache_hits": 1,
+  "tokens_in": 3662,
+  "tokens_out": 6937,
+  "cost_usd": 0.030677,
+  "duration_seconds": 64.44,
+  "completed_at": "2026-05-11T17:43:07.042769",
   "attempts": 1
 }

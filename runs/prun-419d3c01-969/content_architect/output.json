@@ -1,0 +1,753 @@
+{
+  "cluster_id": "cl-cfd73e4b-18c",
+  "cluster_plan": {
+    "cluster_id": "sattva-bangalore-builder",
+    "cluster_name": "Sattva Builder Guide - Bangalore Real Estate",
+    "total_articles": 11,
+    "articles": [
+      {
+        "id": "sattva-builder-complete-guide",
+        "title": "Sattva Builder Complete Guide: Projects, Reviews & Investment Analysis in Bangalore",
+        "slug": "sattva-builder-complete-guide-bangalore",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "sattva bangalore",
+          "secondary": [
+            "sattva group",
+            "sattva real estate",
+            "sattva builder"
+          ]
+        },
+        "word_count_target": 3000,
+        "outline": [
+          "H2: What is Sattva Group - Company Overview and History",
+          "  H3: Founding and Leadership Team",
+          "  H3: Business Verticals and Market Presence",
+          "H2: Is Sattva a Good Builder - Credibility Assessment",
+          "  H3: Grade Classification and Industry Standing",
+          "  H3: Construction Quality and Standards",
+          "  H3: Financial Stability and Track Record",
+          "H2: Sattva Projects Portfolio in Bangalore",
+          "  H3: Completed Projects Overview",
+          "  H3: Ongoing and Upcoming Developments",
+          "  H3: Location-wise Project Distribution",
+          "H2: How Does Sattva Compare to Other Builders",
+          "  H3: Market Position Among Tier 1 Developers",
+          "  H3: Competitive Advantages and Differentiators",
+          "H2: Customer Reviews and Feedback Analysis",
+          "  H3: Common Praise Points",
+          "  H3: Areas of Concern and Complaints",
+          "H2: Investment Perspective - Should You Buy Sattva Properties",
+          "  H3: Pricing Strategy and Value Proposition",
+          "  H3: Resale Value and Appreciation Potential",
+          "H2: How to Choose the Right Sattva Project for You"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "is-sattva-good-builder-credibility-analysis",
+            "anchor_text": "detailed credibility analysis of Sattva",
+            "context": "In the credibility assessment section when discussing builder grade"
+          },
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "complete list of Sattva projects in Bangalore",
+            "context": "In the projects portfolio section"
+          },
+          {
+            "target_slug": "sattva-vs-prestige-sobha-brigade-comparison",
+            "anchor_text": "detailed comparison with Prestige, Sobha and Brigade",
+            "context": "In the competitive analysis section"
+          },
+          {
+            "target_slug": "sattva-reviews-customer-feedback-analysis",
+            "anchor_text": "comprehensive customer reviews analysis",
+            "context": "In the customer feedback section"
+          },
+          {
+            "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+            "anchor_text": "specific project details for Songbird and Lumina",
+            "context": "When mentioning flagship projects"
+          },
+          {
+            "target_slug": "sattva-pre-launch-projects-pricing-guide",
+            "anchor_text": "pre-launch opportunities and pricing",
+            "context": "In the investment perspective section"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "This is the main hub article that should comprehensively cover all aspects of Sattva as a builder. Include data-driven insights and link to all other cluster articles.",
+        "db_id": "art-63aafd20-1d6"
+      },
+      {
+        "id": "is-sattva-good-builder-credibility",
+        "title": "Is Sattva a Good Builder? Complete Credibility Analysis and Grade Assessment",
+        "slug": "is-sattva-good-builder-credibility-analysis",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "is sattva a good builder",
+          "secondary": [
+            "is sattva a grade builder",
+            "is sattva a good brand",
+            "sattva builder grade"
+          ]
+        },
+        "word_count_target": 2000,
+        "outline": [
+          "H2: What Makes a Builder 'Good' - Evaluation Criteria",
+          "  H3: Financial Stability Indicators",
+          "  H3: Construction Quality Parameters",
+          "  H3: Delivery Track Record",
+          "H2: Is Sattva an A-Grade Builder in Bangalore",
+          "  H3: Industry Classification and Recognition",
+          "  H3: Comparison with Tier 1 Developers",
+          "H2: Sattva's Construction Quality and Standards",
+          "  H3: Materials and Build Quality",
+          "  H3: Architectural Design Philosophy",
+          "  H3: Amenities and Infrastructure",
+          "H2: Financial Health and Company Stability",
+          "  H3: Revenue Growth and Market Share",
+          "  H3: Debt Management and Cash Flow",
+          "H2: Project Delivery Track Record",
+          "  H3: On-time Completion Statistics",
+          "  H3: Delay Analysis and Reasons",
+          "H2: Customer Satisfaction Metrics",
+          "  H3: Post-possession Service Quality",
+          "  H3: Complaint Resolution Process",
+          "H2: Should You Trust Sattva as Your Builder"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "complete Sattva builder guide",
+            "context": "In the introduction when providing overview context"
+          },
+          {
+            "target_slug": "sattva-vs-prestige-sobha-brigade-comparison",
+            "anchor_text": "how Sattva compares to other A-grade builders",
+            "context": "In the grade classification section"
+          },
+          {
+            "target_slug": "sattva-reviews-customer-feedback-analysis",
+            "anchor_text": "detailed customer feedback analysis",
+            "context": "In the customer satisfaction section"
+          },
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "track record across all Sattva projects",
+            "context": "When discussing delivery statistics"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Focus on objective analysis with data points. Address common concerns about builder credibility and provide evidence-based assessment.",
+        "db_id": "art-53342001-421"
+      },
+      {
+        "id": "sattva-projects-bangalore-complete-list",
+        "title": "Sattva Projects in Bangalore: Complete List of Ongoing, Upcoming & Ready Properties",
+        "slug": "sattva-projects-bangalore-complete-list",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "sattva projects bangalore",
+          "secondary": [
+            "sattva upcoming projects",
+            "sattva new launch",
+            "sattva ongoing projects"
+          ]
+        },
+        "word_count_target": 2200,
+        "outline": [
+          "H2: Complete Portfolio of Sattva Projects in Bangalore",
+          "  H3: Project Categories and Types",
+          "  H3: Geographic Distribution Across Bangalore",
+          "H2: Sattva Ready to Move Projects",
+          "  H3: Completed Residential Projects",
+          "  H3: Commercial and Mixed-use Developments",
+          "  H3: Immediate Possession Options",
+          "H2: Sattva Ongoing Projects - Under Construction",
+          "  H3: Current Construction Status",
+          "  H3: Expected Completion Timelines",
+          "  H3: Booking Status and Availability",
+          "H2: Sattva Upcoming Projects and New Launches",
+          "  H3: Pre-launch Opportunities",
+          "  H3: Planned Developments by Location",
+          "  H3: Expected Launch Dates",
+          "H2: Location-wise Sattva Projects Analysis",
+          "  H3: North Bangalore Projects",
+          "  H3: South Bangalore Developments",
+          "  H3: East and West Bangalore Properties",
+          "H2: How Many Projects Does Sattva Have - Portfolio Size",
+          "  H3: Total Project Count and Scale",
+          "  H3: Investment Value and Market Presence",
+          "H2: Choosing the Right Sattva Project for Your Needs"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "comprehensive Sattva builder analysis",
+            "context": "In the introduction for company background"
+          },
+          {
+            "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+            "anchor_text": "detailed information about Songbird and Lumina projects",
+            "context": "When mentioning flagship projects"
+          },
+          {
+            "target_slug": "sattva-pre-launch-projects-pricing-guide",
+            "anchor_text": "pre-launch pricing and investment opportunities",
+            "context": "In the upcoming projects section"
+          },
+          {
+            "target_slug": "sattva-projects-whitefield-location-guide",
+            "anchor_text": "Sattva projects specifically in Whitefield",
+            "context": "In the location-wise analysis section"
+          }
+        ],
+        "faq_count": 7,
+        "notes": "Maintain updated project information and include current availability status. Focus on helping buyers find suitable projects based on their requirements.",
+        "db_id": "art-0af6675d-ab6"
+      },
+      {
+        "id": "sattva-vs-prestige-sobha-brigade-comparison",
+        "title": "Sattva vs Prestige vs Sobha vs Brigade: Complete Builder Comparison Guide Bangalore",
+        "slug": "sattva-vs-prestige-sobha-brigade-comparison",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "sattva vs sobha",
+          "secondary": [
+            "sattva vs prestige",
+            "sattva vs brigade",
+            "which is better prestige or sobha"
+          ]
+        },
+        "word_count_target": 2500,
+        "outline": [
+          "H2: Bangalore's Top Builders - Market Overview",
+          "  H3: Tier 1 Developer Classification",
+          "  H3: Market Share and Presence",
+          "H2: Sattva vs Prestige - Detailed Comparison",
+          "  H3: Project Quality and Design Standards",
+          "  H3: Pricing and Value Proposition",
+          "  H3: Delivery Track Record",
+          "  H3: Customer Service and Support",
+          "H2: Sattva vs Sobha - Which Builder is Better",
+          "  H3: Construction Quality Comparison",
+          "  H3: Amenities and Lifestyle Offerings",
+          "  H3: Investment Returns Analysis",
+          "H2: Sattva vs Brigade - Comprehensive Analysis",
+          "  H3: Project Portfolio Comparison",
+          "  H3: Location Strategy and Presence",
+          "  H3: Pricing Strategy Differences",
+          "H2: Multi-Builder Comparison Matrix",
+          "  H3: Strengths and Weaknesses Summary",
+          "  H3: Best Choice by Buyer Profile",
+          "  H3: Investment Perspective Comparison",
+          "H2: Which Builder Should You Choose",
+          "  H3: Decision Framework for Buyers",
+          "  H3: Specific Recommendations by Needs"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "detailed Sattva builder profile",
+            "context": "When introducing Sattva in the comparison"
+          },
+          {
+            "target_slug": "is-sattva-good-builder-credibility-analysis",
+            "anchor_text": "Sattva's credibility assessment",
+            "context": "When discussing builder reliability"
+          },
+          {
+            "target_slug": "sattva-reviews-customer-feedback-analysis",
+            "anchor_text": "customer reviews for Sattva",
+            "context": "In the customer service comparison section"
+          },
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "complete Sattva project portfolio",
+            "context": "When comparing project portfolios"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "Provide objective comparison without bias. Include specific data points and help readers make informed decisions based on their priorities.",
+        "db_id": "art-39a773b5-2f4"
+      },
+      {
+        "id": "sattva-reviews-customer-feedback",
+        "title": "Sattva Reviews: Customer Feedback, Complaints Analysis & Buyer Experience Guide",
+        "slug": "sattva-reviews-customer-feedback-analysis",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "sattva reviews",
+          "secondary": [
+            "sattva customer reviews",
+            "sattva group reviews",
+            "sattva delays complaints"
+          ]
+        },
+        "word_count_target": 2000,
+        "outline": [
+          "H2: Overview of Sattva Customer Reviews and Ratings",
+          "  H3: Review Sources and Methodology",
+          "  H3: Overall Satisfaction Scores",
+          "H2: Positive Customer Feedback for Sattva",
+          "  H3: Construction Quality Appreciation",
+          "  H3: Design and Amenities Praise",
+          "  H3: Location and Connectivity Benefits",
+          "H2: Common Complaints and Concerns About Sattva",
+          "  H3: Project Delay Issues and Analysis",
+          "  H3: Customer Service Challenges",
+          "  H3: Post-possession Problems",
+          "H2: Sattva Bangalore Reviews - Location-wise Analysis",
+          "  H3: North Bangalore Project Reviews",
+          "  H3: South Bangalore Development Feedback",
+          "H2: How Sattva Handles Customer Complaints",
+          "  H3: Complaint Resolution Process",
+          "  H3: Customer Support Channels",
+          "  H3: Improvement Initiatives",
+          "H2: Comparison with Industry Standards",
+          "  H3: Sattva vs Competitor Review Scores",
+          "  H3: Industry Benchmarking",
+          "H2: Should You Buy Based on Reviews - Final Assessment"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "comprehensive Sattva builder guide",
+            "context": "In the introduction for company context"
+          },
+          {
+            "target_slug": "is-sattva-good-builder-credibility-analysis",
+            "anchor_text": "Sattva's overall credibility analysis",
+            "context": "When discussing builder reliability"
+          },
+          {
+            "target_slug": "sattva-vs-prestige-sobha-brigade-comparison",
+            "anchor_text": "how Sattva compares to other builders",
+            "context": "In the industry comparison section"
+          },
+          {
+            "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+            "anchor_text": "specific project reviews for Songbird and Lumina",
+            "context": "When mentioning project-specific feedback"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Present balanced view of reviews. Include both positive and negative feedback with analysis of patterns and trends.",
+        "db_id": "art-bd4c540d-4db"
+      },
+      {
+        "id": "sattva-specific-projects-songbird-lumina",
+        "title": "Sattva Songbird & Lumina Projects: Complete Guide, Reviews & Investment Analysis",
+        "slug": "sattva-specific-projects-songbird-lumina-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "sattva songbird",
+          "secondary": [
+            "sattva lumina",
+            "sattva knowledge city",
+            "sattva forest ridge"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: Sattva Songbird - Complete Project Overview",
+          "  H3: Location and Connectivity Details",
+          "  H3: Project Specifications and Features",
+          "  H3: Pricing and Payment Plans",
+          "  H3: Current Status and Possession Timeline",
+          "H2: Sattva Lumina - Detailed Project Analysis",
+          "  H3: Design and Architecture Highlights",
+          "  H3: Amenities and Lifestyle Features",
+          "  H3: Investment Potential and ROI",
+          "H2: Other Notable Sattva Projects",
+          "  H3: Sattva Knowledge City Overview",
+          "  H3: Sattva Forest Ridge Features",
+          "  H3: Sattva Anugraha and Misty Charm",
+          "H2: Comparative Analysis of Sattva Flagship Projects",
+          "  H3: Location Advantages Comparison",
+          "  H3: Pricing and Value Analysis",
+          "H2: Customer Reviews for Specific Projects",
+          "  H3: Songbird Resident Feedback",
+          "  H3: Lumina Buyer Experiences",
+          "H2: Which Sattva Project Should You Choose"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "complete list of all Sattva projects",
+            "context": "In the introduction when providing portfolio context"
+          },
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "overall Sattva builder analysis",
+            "context": "When discussing company background"
+          },
+          {
+            "target_slug": "sattva-reviews-customer-feedback-analysis",
+            "anchor_text": "detailed customer reviews analysis",
+            "context": "In the customer feedback section"
+          },
+          {
+            "target_slug": "sattva-pre-launch-projects-pricing-guide",
+            "anchor_text": "pricing strategies and pre-launch opportunities",
+            "context": "When discussing investment potential"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Focus on specific project details that buyers are searching for. Include current pricing, availability, and unique selling points of each project.",
+        "db_id": "art-88b62789-6bb"
+      },
+      {
+        "id": "sattva-pre-launch-projects-pricing",
+        "title": "Sattva Pre Launch Projects: Pricing, Offers & Early Bird Investment Opportunities",
+        "slug": "sattva-pre-launch-projects-pricing-guide",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "sattva pre launch",
+          "secondary": [
+            "sattva projects bangalore price",
+            "what is the price of sattva pre launch"
+          ]
+        },
+        "word_count_target": 1200,
+        "outline": [
+          "H2: What are Sattva Pre Launch Projects",
+          "  H3: Pre-launch vs Regular Launch Difference",
+          "  H3: Benefits of Pre-launch Investment",
+          "H2: Current Sattva Pre Launch Opportunities",
+          "  H3: Available Pre-launch Projects List",
+          "  H3: Location and Project Details",
+          "H2: Sattva Pre Launch Pricing Strategy",
+          "  H3: Pricing Structure and Payment Plans",
+          "  H3: Early Bird Discounts and Offers",
+          "H2: How to Invest in Sattva Pre Launch Projects",
+          "  H3: Booking Process and Documentation",
+          "  H3: Risk Assessment and Considerations",
+          "H2: ROI Analysis for Pre Launch Investments"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "complete Sattva projects portfolio",
+            "context": "When discussing available pre-launch options"
+          },
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "Sattva builder credibility analysis",
+            "context": "When discussing investment safety"
+          },
+          {
+            "target_slug": "is-sattva-good-builder-credibility-analysis",
+            "anchor_text": "detailed credibility assessment",
+            "context": "In the risk assessment section"
+          },
+          {
+            "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+            "anchor_text": "successful Sattva project examples",
+            "context": "When providing track record examples"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Focus on current pre-launch opportunities and provide actionable investment guidance. Include risk disclaimers and due diligence advice.",
+        "db_id": "art-9aafacd5-3a9"
+      },
+      {
+        "id": "sattva-projects-whitefield-location",
+        "title": "Sattva Projects in Whitefield: Location Guide, Connectivity & Investment Analysis",
+        "slug": "sattva-projects-whitefield-location-guide",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "sattva projects in whitefield",
+          "secondary": [
+            "sattva upcoming projects in north bangalore",
+            "sattva projects in south bangalore"
+          ]
+        },
+        "word_count_target": 1400,
+        "outline": [
+          "H2: Why Whitefield for Sattva Projects",
+          "  H3: Location Advantages and Connectivity",
+          "  H3: Infrastructure Development in Whitefield",
+          "H2: Current Sattva Projects in Whitefield",
+          "  H3: Ongoing Developments",
+          "  H3: Completed Projects in the Area",
+          "H2: Upcoming Sattva Projects in North Bangalore",
+          "  H3: Planned Developments and Timeline",
+          "  H3: Investment Opportunities",
+          "H2: Sattva Projects in Other Bangalore Locations",
+          "  H3: South Bangalore Developments",
+          "  H3: East and West Bangalore Presence",
+          "H2: Location-wise Investment Comparison",
+          "  H3: Appreciation Potential by Area",
+          "  H3: Rental Yield Analysis"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "complete location-wise project list",
+            "context": "When providing comprehensive project overview"
+          },
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "Sattva's overall Bangalore strategy",
+            "context": "In the introduction"
+          },
+          {
+            "target_slug": "sattva-pre-launch-projects-pricing-guide",
+            "anchor_text": "pre-launch opportunities in these locations",
+            "context": "When discussing upcoming projects"
+          },
+          {
+            "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+            "anchor_text": "flagship projects in prime locations",
+            "context": "When comparing location advantages"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Focus on location-specific benefits and connectivity advantages. Include area development plans and future growth prospects.",
+        "db_id": "art-7c6854ec-e46"
+      },
+      {
+        "id": "sattva-company-leadership-ownership",
+        "title": "Who Owns Sattva Group: Leadership, CEO & Company Structure Analysis",
+        "slug": "sattva-company-leadership-ownership-analysis",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "who is the owner of sattva",
+          "secondary": [
+            "who is the ceo of sattva bangalore",
+            "which company is sattva"
+          ]
+        },
+        "word_count_target": 1000,
+        "outline": [
+          "H2: Sattva Group Ownership Structure",
+          "  H3: Founding Members and Promoters",
+          "  H3: Current Ownership Distribution",
+          "H2: Who is the CEO of Sattva Bangalore",
+          "  H3: Current Leadership Team",
+          "  H3: Management Experience and Background",
+          "H2: Sattva Company Structure and Subsidiaries",
+          "  H3: Business Verticals and Divisions",
+          "  H3: Group Companies and Partnerships",
+          "H2: Corporate Governance and Transparency",
+          "  H3: Board of Directors",
+          "  H3: Financial Reporting and Compliance"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "comprehensive Sattva company overview",
+            "context": "In the introduction for broader company context"
+          },
+          {
+            "target_slug": "is-sattva-good-builder-credibility-analysis",
+            "anchor_text": "how leadership impacts builder credibility",
+            "context": "When discussing management quality"
+          },
+          {
+            "target_slug": "sattva-careers-employment-opportunities",
+            "anchor_text": "career opportunities at Sattva",
+            "context": "When mentioning company culture"
+          },
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "projects delivered under current leadership",
+            "context": "When discussing management track record"
+          }
+        ],
+        "faq_count": 3,
+        "notes": "Provide factual information about company structure and leadership. Focus on transparency and credibility aspects that matter to potential buyers.",
+        "db_id": "art-39f052a6-b0f"
+      },
+      {
+        "id": "sattva-careers-employment",
+        "title": "Sattva Bangalore Careers: Jobs, Salary, Employee Reviews & Office Locations",
+        "slug": "sattva-careers-employment-opportunities",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "sattva bangalore careers",
+          "secondary": [
+            "what is the salary of sattva freshers",
+            "sattva group employee reviews"
+          ]
+        },
+        "word_count_target": 1100,
+        "outline": [
+          "H2: Career Opportunities at Sattva Group",
+          "  H3: Available Job Roles and Departments",
+          "  H3: Hiring Process and Requirements",
+          "H2: Sattva Salary Structure and Compensation",
+          "  H3: Fresher Salary Ranges",
+          "  H3: Experienced Professional Packages",
+          "  H3: Benefits and Perks",
+          "H2: Employee Reviews and Work Culture",
+          "  H3: Sattva Ambitionbox Reviews Analysis",
+          "  H3: Work-life Balance and Growth Opportunities",
+          "H2: Sattva Bangalore Office Locations",
+          "  H3: Head Office and Branch Locations",
+          "  H3: Office Infrastructure and Facilities"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-company-leadership-ownership-analysis",
+            "anchor_text": "company leadership and structure",
+            "context": "When discussing organizational hierarchy"
+          },
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "overall company profile and growth",
+            "context": "In the introduction for company background"
+          },
+          {
+            "target_slug": "is-sattva-good-builder-credibility-analysis",
+            "anchor_text": "company stability and growth prospects",
+            "context": "When discussing job security"
+          },
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "project portfolio and business scale",
+            "context": "When explaining career growth opportunities"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Focus on job seekers' needs while maintaining relevance to real estate audience. Include current salary ranges and authentic employee feedback.",
+        "db_id": "art-fadc1665-ec3"
+      },
+      {
+        "id": "sattva-faq-compilation",
+        "title": "Sattva Builder FAQ: 50+ Common Questions About Projects, Reviews & Investment",
+        "slug": "sattva-builder-faq-compilation",
+        "type": "faq",
+        "target_keywords": {
+          "primary": "sattva bangalore",
+          "secondary": [
+            "sattva builder questions",
+            "sattva investment guide"
+          ]
+        },
+        "word_count_target": 2000,
+        "outline": [
+          "H2: Sattva Company and Credibility FAQs",
+          "  H3: Builder Grade and Reputation Questions",
+          "  H3: Company Background and Ownership",
+          "H2: Sattva Projects and Pricing FAQs",
+          "  H3: Project Availability and Booking",
+          "  H3: Pricing and Payment Plans",
+          "H2: Sattva Reviews and Customer Experience FAQs",
+          "  H3: Common Complaints and Resolutions",
+          "  H3: Customer Service and Support",
+          "H2: Sattva Investment and Comparison FAQs",
+          "  H3: Investment Potential and ROI",
+          "  H3: Comparison with Other Builders",
+          "H2: Sattva Location and Connectivity FAQs",
+          "  H3: Project Locations and Accessibility",
+          "  H3: Future Development Plans"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sattva-builder-complete-guide-bangalore",
+            "anchor_text": "comprehensive Sattva builder guide",
+            "context": "For detailed answers to complex questions"
+          },
+          {
+            "target_slug": "is-sattva-good-builder-credibility-analysis",
+            "anchor_text": "detailed credibility analysis",
+            "context": "For builder reputation questions"
+          },
+          {
+            "target_slug": "sattva-projects-bangalore-complete-list",
+            "anchor_text": "complete project list and details",
+            "context": "For project-specific questions"
+          },
+          {
+            "target_slug": "sattva-vs-prestige-sobha-brigade-comparison",
+            "anchor_text": "builder comparison guide",
+            "context": "For competitive analysis questions"
+          },
+          {
+            "target_slug": "sattva-reviews-customer-feedback-analysis",
+            "anchor_text": "customer reviews analysis",
+            "context": "For review-related questions"
+          }
+        ],
+        "faq_count": 50,
+        "notes": "Compile the most frequently asked questions from all other articles. Provide concise but complete answers with links to detailed articles for more information.",
+        "db_id": "art-c93409fb-9d7"
+      }
+    ],
+    "linking_matrix": {
+      "sattva-builder-complete-guide-bangalore": [
+        "is-sattva-good-builder-credibility-analysis",
+        "sattva-projects-bangalore-complete-list",
+        "sattva-vs-prestige-sobha-brigade-comparison",
+        "sattva-reviews-customer-feedback-analysis",
+        "sattva-specific-projects-songbird-lumina-guide",
+        "sattva-pre-launch-projects-pricing-guide"
+      ],
+      "is-sattva-good-builder-credibility-analysis": [
+        "sattva-builder-complete-guide-bangalore",
+        "sattva-vs-prestige-sobha-brigade-comparison",
+        "sattva-reviews-customer-feedback-analysis",
+        "sattva-projects-bangalore-complete-list"
+      ],
+      "sattva-projects-bangalore-complete-list": [
+        "sattva-builder-complete-guide-bangalore",
+        "sattva-specific-projects-songbird-lumina-guide",
+        "sattva-pre-launch-projects-pricing-guide",
+        "sattva-projects-whitefield-location-guide"
+      ],
+      "sattva-vs-prestige-sobha-brigade-comparison": [
+        "sattva-builder-complete-guide-bangalore",
+        "is-sattva-good-builder-credibility-analysis",
+        "sattva-reviews-customer-feedback-analysis",
+        "sattva-projects-bangalore-complete-list"
+      ],
+      "sattva-reviews-customer-feedback-analysis": [
+        "sattva-builder-complete-guide-bangalore",
+        "is-sattva-good-builder-credibility-analysis",
+        "sattva-vs-prestige-sobha-brigade-comparison",
+        "sattva-specific-projects-songbird-lumina-guide"
+      ],
+      "sattva-specific-projects-songbird-lumina-guide": [
+        "sattva-projects-bangalore-complete-list",
+        "sattva-builder-complete-guide-bangalore",
+        "sattva-reviews-customer-feedback-analysis",
+        "sattva-pre-launch-projects-pricing-guide"
+      ],
+      "sattva-pre-launch-projects-pricing-guide": [
+        "sattva-projects-bangalore-complete-list",
+        "sattva-builder-complete-guide-bangalore",
+        "is-sattva-good-builder-credibility-analysis",
+        "sattva-specific-projects-songbird-lumina-guide"
+      ],
+      "sattva-projects-whitefield-location-guide": [
+        "sattva-projects-bangalore-complete-list",
+        "sattva-builder-complete-guide-bangalore",
+        "sattva-pre-launch-projects-pricing-guide",
+        "sattva-specific-projects-songbird-lumina-guide"
+      ],
+      "sattva-company-leadership-ownership-analysis": [
+        "sattva-builder-complete-guide-bangalore",
+        "is-sattva-good-builder-credibility-analysis",
+        "sattva-careers-employment-opportunities",
+        "sattva-projects-bangalore-complete-list"
+      ],
+      "sattva-careers-employment-opportunities": [
+        "sattva-company-leadership-ownership-analysis",
+        "sattva-builder-complete-guide-bangalore",
+        "is-sattva-good-builder-credibility-analysis",
+        "sattva-projects-bangalore-complete-list"
+      ],
+      "sattva-builder-faq-compilation": [
+        "sattva-builder-complete-guide-bangalore",
+        "is-sattva-good-builder-credibility-analysis",
+        "sattva-projects-bangalore-complete-list",
+        "sattva-vs-prestige-sobha-brigade-comparison",
+        "sattva-reviews-customer-feedback-analysis"
+      ]
+    }
+  },
+  "articles_created": 11,
+  "articles_failed": 0
+}

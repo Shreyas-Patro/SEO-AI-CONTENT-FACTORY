@@ -1,0 +1,1575 @@
+{
+  "topic": "indiranagar",
+  "trend_data": {
+    "topic": "indiranagar",
+    "classification": {
+      "categories": [
+        "locality"
+      ],
+      "primary_category": "locality",
+      "detected_localities": [
+        "Indiranagar"
+      ],
+      "detected_builders": [],
+      "is_locality": true,
+      "is_builder": false,
+      "is_cross_cutting": false
+    },
+    "raw_data": {
+      "trends": {
+        "trend_available": true,
+        "average_interest": 84.7,
+        "recent_interest": 80.0,
+        "peak_interest": 100,
+        "direction": "declining",
+        "is_seasonal": false,
+        "rising_queries": [
+          "antera indiranagar",
+          "mylari dosa bangalore",
+          "mylari dosa bangalore indiranagar",
+          "smash guys",
+          "smash guys bangalore",
+          "beige bangalore",
+          "nothing store bangalore",
+          "vesparo",
+          "quarter peter",
+          "antera kitchen and bar indiranagar",
+          "mai mai indiranagar",
+          "antera bangalore",
+          "mezcalita bangalore",
+          "phurr indiranagar",
+          "nothing store bangalore indiranagar"
+        ],
+        "top_queries": [
+          "restaurants indiranagar",
+          "restaurants bangalore",
+          "restaurants in indiranagar",
+          "restaurants in indiranagar bangalore",
+          "restaurants in bangalore",
+          "cafe in indiranagar",
+          "cafe in indiranagar bangalore",
+          "indiranagar metro station",
+          "best restaurants bangalore",
+          "indiranagar cafes"
+        ]
+      },
+      "paa_questions": [
+        "What is Indiranagar Bangalore famous for?",
+        "Is Indiranagar expensive?",
+        "Which is the best area to live in Bangalore?",
+        "What is the cost of living in Indiranagar Bangalore?",
+        "Which area is better, Indiranagar or Koramangala?",
+        "Is Indiranagar family friendly?",
+        "Is Indira Nagar a good place to live?",
+        "Is 60,000 a good salary in Bangalore?",
+        "Why is Indiranagar famous?",
+        "What is Indiranagar famous for?",
+        "Is Indiranagar the heart of Bangalore?",
+        "What is the price of land in Indiranagar Bangalore?",
+        "What is the cost of living in Indiranagar?",
+        "What is the cost of 3bhk in Indiranagar Bangalore?",
+        "Which area in Bangalore has the cheapest rent?",
+        "What is the cost of PG in Indiranagar Bangalore?",
+        "What is the cost of a 30 * 40 site in Bangalore?",
+        "What is the cost of 3bhk in indiranagar Bangalore?",
+        "Which is the fastest growing area in Bangalore?",
+        "Where do most CEOs live in Bangalore?",
+        "What are the new projects in Bangalore?",
+        "What are some unique things to do in Bangalore?",
+        "How to spend 4 hours in Bangalore?",
+        "Where to go for peace of mind in Bangalore?",
+        "What is famous in Indiranagar, Bangalore?",
+        "What is the famous in Bangalore to eat?",
+        "Who is the most expensive restaurant?",
+        "Which Bangalore restaurants have the best views?",
+        "Which school is no 1 rank in Bangalore?",
+        "Is NPS Indiranagar CBSE or ICSE?",
+        "What is the old name of CBSE?",
+        "Which is the number one hospital in Bangalore?",
+        "Which is costly, manipal or Apollo?",
+        "What are the top 5 hospitals?",
+        "Which is better, Apollo or Fortis in Bangalore?",
+        "What is the richest area in Bangalore?",
+        "Why is Koramangala so expensive?"
+      ],
+      "related_searches": [
+        "Indiranagar bangalore shopping",
+        "Indiranagar bangalore directions",
+        "Indiranagar Bangalore pincode",
+        "Indiranagar bangalore map",
+        "Indiranagar bangalore restaurants",
+        "Indiranagar, Bangalore rent",
+        "Indiranagar bangalore places to visit",
+        "Indiranagar bangalore distance",
+        "100 Feet Road Indiranagar",
+        "Indiranagar things to do Bangalore",
+        "Places to visit near Indiranagar, Bangalore",
+        "Street shopping in Indiranagar Bangalore",
+        "Cheap Street shopping in Indiranagar Bangalore",
+        "Indira Nagar market Bangalore",
+        "Indiranagar places to eat",
+        "Places to visit in Indiranagar for couples",
+        "Living in indiranagar bangalore reviews",
+        "Living in indiranagar bangalore for females",
+        "Living in indiranagar bangalore reddit",
+        "Indira Nagar, Bangalore House for sale",
+        "Indira nagar bangalore distance",
+        "100 feet road Indiranagar",
+        "Is Indiranagar a posh area",
+        "Things to do in Indiranagar",
+        "Indiranagar review reddit",
+        "Indiranagar, Bangalore",
+        "Indiranagar places to eat and drink",
+        "Shopping in Indiranagar",
+        "South Indian restaurants in Indiranagar",
+        "Top restaurants in Indiranagar",
+        "Cafes in Indiranagar",
+        "Restaurants in Indiranagar for Lunch",
+        "Indiranagar property price per square foot",
+        "Indiranagar property price per square feet",
+        "Indiranagar price per sq ft",
+        "Indiranagar property price per sq ft",
+        "Independent House for sale in Indiranagar, Bangalore",
+        "Indiranagar 2nd Stage land rate",
+        "Property for sale in Indiranagar, Bangalore",
+        "Indiranagar Real Estate Brokers",
+        "1 BHK Flats in Indira Nagar Bangalore for rent",
+        "Indiranagar rent house",
+        "Indiranagar rent 2bhk",
+        "Flats in Indiranagar, Bangalore rent",
+        "Luxury apartments for rent in Indiranagar, Bangalore",
+        "Society Flats for rent in Indiranagar, Bangalore",
+        "3 BHK Apartment for rent in Indiranagar, Bangalore",
+        "99acres indiranagar rent",
+        "2 BHK House for rent in INDIRANAGAR Bangalore olx",
+        "2 BHK fully furnished flat for rent in Indiranagar",
+        "Koramangala 2 BHK rent",
+        "2 BHK Flat for rent in Defence Colony Indiranagar Bangalore",
+        "2 BHK in Indiranagar for sale",
+        "2 bhk society flats for rent in indiranagar bangalore",
+        "2 BHK independent House for rent in Indiranagar Bangalore",
+        "2 BHK for rent in Ulsoor, Bangalore",
+        "Flats in Indiranagar for rent",
+        "Indiranagar flat for sale 2bhk",
+        "Indiranagar flat for sale olx",
+        "Ready to Move Flats in Indira Nagar, Bangalore",
+        "3 BHK Flats for sale in Indira Nagar, Bangalore",
+        "Flats in Indiranagar, Bangalore",
+        "New Flats in Indiranagar",
+        "Indira Nagar Bangalore property rates",
+        "Per Square feet rate",
+        "How to check per square feet Rate",
+        "Indiranagar property for sale",
+        "Indiranagar new projects price",
+        "Indiranagar new projects for sale",
+        "New apartments in indiranagar for sale",
+        "Indiranagar residential projects",
+        "Brigade Jacaranda Indiranagar",
+        "Century Regalia Indiranagar",
+        "Indiranagar gated community",
+        "Things to do in indiranagar with friends",
+        "Unique things to do in indiranagar",
+        "Things to do in indiranagar for couples",
+        "Things to do in Indiranagar for kids",
+        "Things to do in indiranagar today",
+        "Things to do in indiranagar at night",
+        "Free things to do in indiranagar",
+        "Best restaurants indiranagar for lunch",
+        "Best restaurants indiranagar for couples",
+        "Top restaurants in Indiranagar for dinner",
+        "Affordable restaurants in Indiranagar",
+        "Restaurants in Indiranagar for Team Dinner",
+        "Veg restaurants in Indiranagar for lunch",
+        "Rooftop Restaurants in Indiranagar",
+        "New restaurants in Indiranagar",
+        "Cbse schools near indiranagar",
+        "Best schools near Indiranagar, Bangalore",
+        "Top 10 schools near indiranagar",
+        "Best CBSE schools near Indiranagar, Bangalore",
+        "Top 10 best schools near Indiranagar, Bangalore",
+        "Government schools near indiranagar",
+        "Best schools in Indiranagar, Bangalore with fees structure",
+        "National Public School, Indiranagar",
+        "Government hospital in Indiranagar",
+        "Multispeciality Hospitals in Indira Nagar",
+        "Neyveli indira nagar hospital list",
+        "Manipal Hospital Indiranagar",
+        "Revive hospital Indiranagar",
+        "Hospital Near Indira Nagar Lucknow",
+        "Life Plus Hospital, Indiranagar",
+        "Apollo Hospital Indiranagar",
+        "Indiranagar vs koramangala which is better",
+        "Indiranagar vs koramangala reddit",
+        "Indiranagar vs koramangala live",
+        "Koramangala to IndiraNagar distance",
+        "Koramangala Bangalore",
+        "Best area to stay in Bangalore for tourist",
+        "Best area to live in Bangalore for family"
+      ],
+      "autocomplete": [
+        "indiranagar restaurants",
+        "indiranagar pincode",
+        "indiranagar metro station",
+        "indiranagar cafes",
+        "indiranagar bangalore",
+        "indiranagar club",
+        "indiranagar social",
+        "indiranagar metro",
+        "indiranagar pubs",
+        "indiranagar walk in street",
+        "indiranagar to koramangala distance",
+        "indiranagar distance",
+        "indiranagar police station",
+        "indiranagar lucknow",
+        "indiranagar 100 feet road",
+        "indiranagar bangalore pin code",
+        "indiranagar bangalore weather",
+        "indiranagar bangalore rent",
+        "indiranagar bangalore restaurants",
+        "indiranagar bangalore distance",
+        "indiranagar bangalore pg",
+        "indiranagar bangalore aqi",
+        "indiranagar bangalore hotels",
+        "indiranagar bangalore cafes",
+        "indiranagar bangalore metro station",
+        "indiranagar bangalore temperature",
+        "indiranagar bangalore map",
+        "indiranagar bangalore to airport distance",
+        "indiranagar bangalore pubs",
+        "indiranagar bangalore flats for rent",
+        "rent in indiranagar bangalore",
+        "rent in indiranagar 1bhk",
+        "rent in indiranagar reddit",
+        "rent in indiranagar 2bhk",
+        "rent in indiranagar 2nd stage",
+        "rentals in indiranagar",
+        "rent house in indiranagar",
+        "room rent in indiranagar",
+        "house rent in indiranagar bangalore",
+        "flat rent in indiranagar bangalore",
+        "3bhk rent in indiranagar",
+        "rent flats in indiranagar",
+        "1bhk rent in indiranagar bangalore",
+        "room rent in indiranagar bangalore",
+        "rent apartment in indiranagar bangalore",
+        "indiranagar property rates",
+        "indiranagar property for sale",
+        "indiranagar property prices",
+        "indiranagar property for rent",
+        "indiranagar property value",
+        "indira nagar property dealer",
+        "indiranagar commercial property for rent",
+        "indiranagar commercial property for sale",
+        "indiranagar highest sold property",
+        "land rate in indiranagar bangalore",
+        "property prices in basavanagudi bangalore",
+        "indiranagar property buy"
+      ],
+      "serp_results_summary": [
+        {
+          "query": "Indiranagar Bangalore",
+          "top_results": [
+            {
+              "title": "Indiranagar, Bengaluru",
+              "link": "https://en.wikipedia.org/wiki/Indiranagar,_Bengaluru",
+              "snippet": "Indiranagar (officially Indiranagara), is an affluent, mid-sized neighbourhood in east Bengaluru, Karnataka, India. Indiranagar is one of the most expensive ...",
+              "position": 1,
+              "domain": "en.wikipedia.org"
+            },
+            {
+              "title": "THE 10 BEST Things to Do in Indiranagar (2026)",
+              "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087477-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "SPA.ce the Spa welcomes you to one of Bangalore's best spas. We have branches at Indiranagar (Domlur), Cunningham Road, Anand Rao Circle, and St. Marks Road.",
+              "position": 2,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Indira Nagar, Bangalore: Map, Photo, Video, Price Trends, ...",
+              "link": "https://www.magicbricks.com/Indira-Nagar-in-Bangalore-Overview",
+              "snippet": "Indira Nagar is known as a developed residential and commercial locality in Bengaluru. Located towards East of the city, it is adjacent to other prominent ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "knowledge_panel",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "magicbricks.com"
+          ]
+        },
+        {
+          "query": "Indiranagar Bangalore guide",
+          "top_results": [
+            {
+              "title": "THE 10 BEST Things to Do in Indiranagar (2026)",
+              "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087477-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Top Things to Do in Indiranagar \u00b7 1. SPA.ce the Spa \u00b7 2. 1000PETALS \u00b7 3. Equilibrium Climbing Station \u00b7 4. Meraki Spa & Blends \u00b7 5. Mystery Rooms.",
+              "position": 1,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Indiranagar Hood Guide: Where To Eat, Shop And Drink | LBB",
+              "link": "https://lbb.in/bangalore/100-feet-road-indiranagar-bangalore/",
+              "snippet": "Indiranagar is the best place to hit up for a whole day of shopping, checking out home decor stores, visiting good cafes and top bars and restaurants.",
+              "position": 2,
+              "domain": "lbb.in"
+            },
+            {
+              "title": "What are some things to do in Indiranagar that's not food ...",
+              "link": "https://www.reddit.com/r/indiranagar/comments/1mr0gi6/what_are_some_things_to_do_in_indiranagar_thats/",
+              "snippet": "I wanted to know what are some things to do in indiranagar which is not going to places to eat . Cafes with boardgames are fine but anything else?",
+              "position": 3,
+              "domain": "www.reddit.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "living in Indiranagar Bangalore",
+          "top_results": [
+            {
+              "title": "What makes living in Indiranagar truly worth it?",
+              "link": "https://www.reddit.com/r/indiranagar/comments/1mz06eh/what_makes_living_in_indiranagar_truly_worth_it/",
+              "snippet": "Hi everyone! I'm considering moving to Indiranagar and would love to hear from locals or long-time residents\u2014what, in your opinion, makes living in this ...",
+              "position": 1,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "Is Indiranagar considered the best area in Bangalore ...",
+              "link": "https://www.quora.com/Is-Indiranagar-considered-the-best-area-in-Bangalore-for-living-and-entertainment",
+              "snippet": "Indiranagar has changed a lot over the years! It was once known as a quiet residential area, but now it's famous for its lively pubs and ...",
+              "position": 2,
+              "domain": "www.quora.com"
+            },
+            {
+              "title": "Ratings & Reviews of Indiranagar, Bangalore",
+              "link": "https://www.99acres.com/indiranagar-bangalore-east-reviews-and-ratings-wrffid",
+              "snippet": "Indiranagar is good for living with good sources. There is many very resources for income. Great place to live. This place looking also good. There is good ...",
+              "position": 3,
+              "domain": "www.99acres.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Indiranagar review",
+          "top_results": [
+            {
+              "title": "Ratings & Reviews of Indiranagar, Bangalore",
+              "link": "https://www.99acres.com/indiranagar-bangalore-east-reviews-and-ratings-wrffid",
+              "snippet": "It is a good place to live and neigbours are also good. This area is suitable both families and working professionals.Cabs and autos are easily available. The ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "What do you like most about indiranagar? : r/bangalore",
+              "link": "https://www.reddit.com/r/bangalore/comments/1cn9gqh/what_do_you_like_most_about_indiranagar/",
+              "snippet": "What do you appreciate most about the area ? What makes you feel good about living in the place ?",
+              "position": 2,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "Locality Review: Indiranagar, Bengaluru",
+              "link": "https://www.youtube.com/watch?v=QKJYkc5Doas",
+              "snippet": "Indiranagar, a Bangalore Development Authority (BDA) Layout formed in the 1970s, is named after the former Prime Minister of India, ...",
+              "position": 3,
+              "domain": "www.youtube.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Indiranagar property price",
+          "top_results": [
+            {
+              "title": "Property in Indira Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/property-for-sale-in-indira-nagar-bangalore-pppfs",
+              "snippet": "The price of flats in Indira Nagar range between \u20b9 35 lakhs - \u20b9 17.19 Cr, and houses price between \u20b9 39.1 lakhs - \u20b9 6.67 Cr, with 1-5 BHK options. However, land ...",
+              "position": 1,
+              "domain": "www.magicbricks.com"
+            },
+            {
+              "title": "Property Rates in Indiranagar, Bangalore 2026",
+              "link": "https://www.99acres.com/property-rates-and-price-trends-in-indiranagar-bangalore-east-prffid",
+              "snippet": "The average flat rates in Indiranagar, Bangalore is \u20b9 20,200 per sq ft. A 3 BHK flat is available at a price range of \u20b9 34,950,000-66,950,000. A 4 BHK flat is ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Property Rates in Indira Nagar, Bengaluru - 2026 - Housing",
+              "link": "https://housing.com/price-trends/property-rates-for-buy-in-indira_nagar_bengaluru-Pu0r6m95i80gbhpp",
+              "snippet": "Starting price of properties in Indira Nagar stands at Rs. 666 per sqft. On average, the price of properties in Indira Nagar is Rs. 25,646 per ...",
+              "position": 3,
+              "domain": "housing.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "housing.com",
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Indiranagar rent",
+          "top_results": [
+            {
+              "title": "Flats for Rent in Indiranagar , Bangalore",
+              "link": "https://www.nobroker.in/flats-for-rent-in-indira_nagar_bangalore",
+              "snippet": "Monthly rent generally in Indiranagar falls between \u20b955,000 to \u20b9185,000 per month, with prices increasing based on layout, furnishing, and exclusivity. 4+ BHK ...",
+              "position": 1,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "226+ Flats for Rent in Indiranagar, Bangalore East",
+              "link": "https://www.99acres.com/flats-for-rent-in-indiranagar-bangalore-east-ffid",
+              "snippet": "226+ Flats for rent in Indiranagar, Bangalore East on 99acres.com. Search flats and apartments on rent in Indiranagar, Bangalore East with 1/2/3/4 BHK ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Flats for Rent in Indira Nagar, Bengaluru - Housing",
+              "link": "https://housing.com/rent/flats-for-rent-in-indira-nagar-bengaluru-Pu0r6m95i80gbhpp",
+              "snippet": "Looking for Rental Property in Indira Nagar? Housing.com offers 483+ Flats for rent & 46 Houses/Villas for rent. Search from 284 2 & 3 BHK flats for rent in ...",
+              "position": 3,
+              "domain": "housing.com"
+            }
+          ],
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "housing.com",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "2BHK rent Indiranagar",
+          "top_results": [
+            {
+              "title": "2 BHK Flats for Rent in Indiranagar, Bangalore East",
+              "link": "https://www.99acres.com/2-bhk-flats-for-rent-in-indiranagar-bangalore-east-ffid",
+              "snippet": "2 BHK Flat for rent in Indira Nagar Stage 2, Bangalore ... Property has 1049 sq.Ft. Super built-Up area with 2 bathrooms & 2 balconies attached. The flat is built ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "2 BHK Flats for rent in Indiranagar, Bangalore",
+              "link": "https://www.nobroker.in/2bhk-flats-for-rent-in-indira_nagar_bangalore",
+              "snippet": "2 BHK Flats for Rent in Indiranagar. 2 BHK - 400 sq. ft. to 1,550 sq. ft. Monthly rent generally in Indiranagar falls between \u20b915,650 to \u20b986,749 per month, ...",
+              "position": 2,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "\ud83c\udfe1 Spacious 2BHK for Rent | Defence Colony, Indiranagar ...",
+              "link": "https://www.instagram.com/reel/DHqSQJ0SOSQ/",
+              "snippet": "\u2713 Rent: \u20b952,000 plus maintenance 57 thousand (Including Maintenance) , Slightly Negotiable) 1350 Sq. Ft. | Semi-Furnished | Ready for ...",
+              "position": 3,
+              "domain": "www.instagram.com"
+            }
+          ],
+          "serp_features": [],
+          "competitor_presence": [
+            "housing.com",
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Indiranagar flat for sale",
+          "top_results": [
+            {
+              "title": "Flats for Sale in Indiranagar Bangalore | Apartments in ...",
+              "link": "https://www.nobroker.in/flats-for-sale-in-indira_nagar_bangalore",
+              "snippet": "26 - Flats for Sale in Indiranagar Bangalore | Apartments for Sale in Indiranagar Bangalore \u00b7 2 BHK Flat In Pradham Sai Nilaya Apartment For Sale In Indiranagar.",
+              "position": 1,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "Apartments in Indiranagar, Bangalore East - 99acres.com",
+              "link": "https://www.99acres.com/flats-in-indiranagar-bangalore-east-ffid",
+              "snippet": "3 BHK Flat in 1st Stage Indira Nagar, Bangalore ... The flat is over 2000 sq.Ft. Built up area and comes with 3 bedroom(s), 4 bathrooms and 2 balconies. This flat ...",
+              "position": 2,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "232+ Flats for Sale in Indira Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/flats-in-indira-nagar-bangalore-for-sale-pppfs",
+              "snippet": "Browse flats in Indiranagar for sale within a price range of \u20b91.09 Cr - \u20b926.55 Cr, covering 1-5 BHK configurations. Explore from 104+ resale flats, 121+ ready- ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [],
+          "competitor_presence": [
+            "housing.com",
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Indiranagar property rate per sq ft",
+          "top_results": [
+            {
+              "title": "Property Rates in Indiranagar, Bangalore 2026",
+              "link": "https://www.99acres.com/property-rates-and-price-trends-in-indiranagar-bangalore-east-prffid",
+              "snippet": "The average flat rates in Indiranagar, Bangalore is \u20b9 20,200 per sq ft. A 3 BHK flat is available at a price range of \u20b9 34,950,000-66,950,000. A 4 BHK flat is ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "Property Rates in Indira Nagar, Bengaluru - 2026 - Housing",
+              "link": "https://housing.com/price-trends/property-rates-for-buy-in-indira_nagar_bengaluru-Pu0r6m95i80gbhpp",
+              "snippet": "Starting price of properties in Indira Nagar stands at Rs. 666 per sqft. On average, the price of properties in Indira Nagar is Rs. 25,646 per sqft. The most ...",
+              "position": 2,
+              "domain": "housing.com"
+            },
+            {
+              "title": "Property in Indira Nagar, Bangalore",
+              "link": "https://www.magicbricks.com/property-for-sale-in-indira-nagar-bangalore-pppfs",
+              "snippet": "... price between \u20b9 39.1 lakhs - \u20b9 6.67 Cr, with 1-5 BHK options. However, land prices in Indira Nagar ranges between \u20b9 1,010 - \u20b9 47,370 per sq.ft. How to ...",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "nobroker.in",
+            "housing.com",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "Indiranagar new projects",
+          "top_results": [
+            {
+              "title": "New Projects in Indiranagar, Bangalore East",
+              "link": "https://www.99acres.com/new-projects-in-indiranagar-bangalore-east-ffid",
+              "snippet": "New Projects in Indiranagar Bangalore for Sale ; Century Regalia \u00b7 2BHK. \u20b93.44 Cr+. 3BHK. \u20b94 Cr+. 4BHK. \u20b94.75 Cr+. 5BHK. \u20b99.09 Cr. Completion from Apr, 2029 ...",
+              "position": 1,
+              "domain": "www.99acres.com"
+            },
+            {
+              "title": "New Projects in Indira Nagar Bangalore",
+              "link": "https://www.nobroker.in/new-projects-in-indira-nagar-bangalore",
+              "snippet": "New Projects in Indira Nagar Bangalore | NoBroker \u00b7 Adarsh Primrose \u00b7 Purva Orient Grand \u00b7 Adarsh Premia \u00b7 Maia The Seven \u00b7 Elegant Hermitage \u00b7 Nandi Brindavan.",
+              "position": 2,
+              "domain": "www.nobroker.in"
+            },
+            {
+              "title": "New Projects in Indiranagar, Bangalore: 305+ Pre Launch ...",
+              "link": "https://www.magicbricks.com/new-projects-Indiranagar-in-Bangalore",
+              "snippet": "Projects in Indiranagar, Bangalore \u00b7 Godrej Athena \u00b7 Embassy Grove \u00b7 Aratt The Aeris Residences \u00b7 Century Regalia \u00b7 Lewis 24 Defence Colony \u00b7 DRA Ranka Iris.",
+              "position": 3,
+              "domain": "www.magicbricks.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": [
+            "housing.com",
+            "nobroker.in",
+            "magicbricks.com",
+            "99acres.com"
+          ]
+        },
+        {
+          "query": "things to do in Indiranagar",
+          "top_results": [
+            {
+              "title": "What are some things to do in Indiranagar that's not food ...",
+              "link": "https://www.reddit.com/r/indiranagar/comments/1mr0gi6/what_are_some_things_to_do_in_indiranagar_thats/",
+              "snippet": "I wanted to know what are some things to do in indiranagar which is not going to places to eat . Cafes with boardgames are fine but anything else?",
+              "position": 1,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "THE 10 BEST Things to Do in Indiranagar (2026)",
+              "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087477-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Top Things to Do in Indiranagar \u00b7 1. SPA.ce the Spa \u00b7 2. 1000PETALS \u00b7 3. Equilibrium Climbing Station \u00b7 4. Meraki Spa & Blends \u00b7 5. Mystery ...",
+              "position": 2,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Indiranagar Hood Guide: Where To Eat, Shop And Drink",
+              "link": "https://lbb.in/bangalore/100-feet-road-indiranagar-bangalore/",
+              "snippet": "Indiranagar is the best place to hit up for a whole day of shopping, checking out home decor stores, visiting good cafes and top bars and restaurants.",
+              "position": 3,
+              "domain": "lbb.in"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "best restaurants Indiranagar",
+          "top_results": [
+            {
+              "title": "Indiranagar eateries that are not just hype? : r/bangalore",
+              "link": "https://www.reddit.com/r/bangalore/comments/1i47br2/indiranagar_eateries_that_are_not_just_hype/",
+              "snippet": "Everyday there is a new cafe or something in Indiranagar. I was first happy cos I was living nearer. But after trying out a couple of these (hyped ...",
+              "position": 1,
+              "domain": "www.reddit.com"
+            },
+            {
+              "title": "The 10 Best Restaurants in Indiranagar Bengaluru",
+              "link": "https://www.tripadvisor.in/Restaurants-g297628-zfn13087477-Bengaluru_Bangalore_District_Karnataka.html",
+              "snippet": "Indiranagar Restaurants \u00b7 1. Toit Brewpub. 4.3. (2,166 reviews) \u00b7 2. Burma Burma Restaurant & Tea Room - Indiranagar, Bangalore. 4.4. (140 ...",
+              "position": 2,
+              "domain": "www.tripadvisor.in"
+            },
+            {
+              "title": "Where to eat in Indiranagar, Bengaluru",
+              "link": "https://www.cntraveller.in/story/where-to-eat-in-indiranagar-bengaluru-best-restaurants/",
+              "snippet": "Best places to eat in Indiranagar \u00b7 Something's Brewing \u00b7 Bergamot \u00b7 Phobidden Fruit Vietnamese Kitchen \u00b7 ARAKU Coffee \u00b7 Cafe Plume \u00b7 Salt Mango ...",
+              "position": 3,
+              "domain": "www.cntraveller.in"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "schools near Indiranagar",
+          "top_results": [
+            {
+              "title": "NCFE Indiranagar Campus",
+              "link": "https://ncfeschools.com/indiranagar",
+              "snippet": "NCFE Indiranagar is One of the Best Schools Near Indiranagar. Admissions Open for K-10 Students Seeking a Top-notch Education At Top-rated Educational ...",
+              "position": 1,
+              "domain": "ncfeschools.com"
+            },
+            {
+              "title": "Best CBSE Schools in Indiranagar, Bangalore 2026-2027",
+              "link": "https://www.edustoke.com/bengaluru/cbse-schools-in-indiranagar",
+              "snippet": "Find the list of best & top rated CBSE schools in Indiranagar, Bangalore for fee details, reviews, admission information, academic details, ...",
+              "position": 2,
+              "domain": "www.edustoke.com"
+            },
+            {
+              "title": "NPS Indiranagar | Home",
+              "link": "https://www.npsinr.com/",
+              "snippet": "National Public School, Indiranagar is a co-educational school, founded in 1982 under the chairmanship of Dr. K. P. Gopalkrishna. This is the third school set ...",
+              "position": 3,
+              "domain": "www.npsinr.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "hospitals near Indiranagar",
+          "top_results": [
+            {
+              "title": "105 Hospitals in Indiranagar, Bangalore",
+              "link": "https://www.practo.com/bangalore/hospitals/all-hospitals/indiranagar",
+              "snippet": "105 Hospitals in Indiranagar, Bangalore \u00b7 Motherhood Hospital \u00b7 Life Plus Hospital \u00b7 Motherhood Fertility and IVF - Indiranagar \u00b7 Manipal Clinic Indiranagar.",
+              "position": 1,
+              "domain": "www.practo.com"
+            },
+            {
+              "title": "Best Hospitals in Indiranagar, Bangalore",
+              "link": "https://www.justdial.com/Bangalore/Hospitals-in-Indiranagar/nct-10253670",
+              "snippet": "148 Hospitals in Indiranagar,Bangalore. Homeocare International Pvt Ltd, Fortis Hospital, Aster Hospital Whitefield, Hcg Cancer Centre etc.",
+              "position": 2,
+              "domain": "www.justdial.com"
+            },
+            {
+              "title": "Best Clinic In Indiranagar Bangalore - Bengaluru",
+              "link": "https://www.manipalhospitals.com/clinics-indiranagar/",
+              "snippet": "Manipal Hospitals Indiranagar clinic is the best multi-speciality clinic in Indiranagar Bangalore, providing world-class healthcare services with top ...",
+              "position": 3,
+              "domain": "www.manipalhospitals.com"
+            }
+          ],
+          "serp_features": [
+            "local_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        },
+        {
+          "query": "Indiranagar vs koramangala",
+          "top_results": [
+            {
+              "title": "Which is better, Koramangala or Indiranagar, in terms ...",
+              "link": "https://www.quora.com/Which-is-better-Koramangala-or-Indiranagar-in-terms-of-the-cost-of-living",
+              "snippet": "Which is better, Koramangala or Indiranagar, in terms of the cost of living?",
+              "position": 1,
+              "domain": "www.quora.com"
+            },
+            {
+              "title": "Indiranagar vs Koramangala: Cost, Lifestyle & Property ...",
+              "link": "https://beegru.com/blog/priya-ramachandran/indiranagar-vs-koramangala-cost-lifestyle-property-comparison",
+              "snippet": "Koramangala offers marginally more affordable daily living due to a higher density of budget eateries, delivery kitchens, and student-oriented ...",
+              "position": 2,
+              "domain": "beegru.com"
+            },
+            {
+              "title": "Bangalore: My 2 Favorite Neighborhoods and 7 Great ...",
+              "link": "https://nickgray.net/bangalore/",
+              "snippet": "Indiranagar, pronounced like \u201cIndra-nah-gr,\u201d is the West Village (NYC) or the Hollywood (LA) of Bangalore. Imagine big, tree-lined streets. It's ...",
+              "position": 3,
+              "domain": "nickgray.net"
+            }
+          ],
+          "serp_features": [
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "competitor_presence": []
+        }
+      ],
+      "aeo_scores": [
+        {
+          "query": "best restaurants Indiranagar",
+          "score": 100,
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "schools near Indiranagar",
+          "score": 100,
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "hospitals near Indiranagar",
+          "score": 100,
+          "serp_features": [
+            "local_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": false
+        },
+        {
+          "query": "Indiranagar Bangalore",
+          "score": 90,
+          "serp_features": [
+            "knowledge_panel",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Indiranagar rent",
+          "score": 90,
+          "serp_features": [
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Indiranagar new projects",
+          "score": 90,
+          "serp_features": [
+            "local_pack",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "2BHK rent Indiranagar",
+          "score": 85,
+          "serp_features": [],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Indiranagar flat for sale",
+          "score": 85,
+          "serp_features": [],
+          "has_featured_snippet": false,
+          "has_ai_overview": false,
+          "competitor_present": true
+        },
+        {
+          "query": "Indiranagar Bangalore guide",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "things to do in Indiranagar",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "Indiranagar vs koramangala",
+          "score": 80,
+          "serp_features": [
+            "ai_overview",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": false
+        },
+        {
+          "query": "living in Indiranagar Bangalore",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "local_pack",
+            "image_pack",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Indiranagar review",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "video_results",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Indiranagar property price",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        },
+        {
+          "query": "Indiranagar property rate per sq ft",
+          "score": 70,
+          "serp_features": [
+            "ai_overview",
+            "people_also_ask"
+          ],
+          "has_featured_snippet": false,
+          "has_ai_overview": true,
+          "competitor_present": true
+        }
+      ]
+    },
+    "analysis": {
+      "topic": "Indiranagar",
+      "topic_type": "locality",
+      "trend_direction": "declining",
+      "trend_summary": "Indiranagar search interest is declining slightly (80.0 vs 12-month avg 84.7), but the locality remains a high-volume search topic with strong transactional and lifestyle intent. Rising queries focus heavily on F&B establishments and lifestyle venues, indicating shifting user interests toward experiential content.",
+      "total_queries_discovered": 206,
+      "intent_clusters": [
+        {
+          "intent_type": "commercial",
+          "percentage": 35,
+          "description": "Real estate and property transactions"
+        },
+        {
+          "intent_type": "lifestyle",
+          "percentage": 40,
+          "description": "Restaurants, cafes, and entertainment venues"
+        },
+        {
+          "intent_type": "informational",
+          "percentage": 25,
+          "description": "General locality information and navigation"
+        }
+      ]
+    },
+    "competitor_tracker": {
+      "nobroker.in": 8,
+      "magicbricks.com": 8,
+      "99acres.com": 8,
+      "housing.com": 6
+    },
+    "serp_calls_used": 15,
+    "autocomplete_calls_used": 4,
+    "cost_usd": 0.001165
+  },
+  "competitor_data": {
+    "topic": "indiranagar",
+    "competitor_coverage": {
+      "magicbricks.com": 8,
+      "nobroker.in": 8,
+      "housing.com": 4,
+      "99acres.com": 9
+    },
+    "raw_results": [
+      {
+        "query": "Indiranagar property",
+        "results": [
+          {
+            "position": 1,
+            "title": "Property in Indiranagar, Bangalore East",
+            "link": "https://www.99acres.com/property-in-indiranagar-bangalore-east-ffid",
+            "snippet": "Find 158+ Properties for sale in Indiranagar, Bangalore East on 99acres.com, India's No.1 Real Estate Portal. Buy Verified Property in Indiranagar, ..."
+          },
+          {
+            "position": 2,
+            "title": "Property in Indira Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/property-for-sale-in-indira-nagar-bangalore-pppfs",
+            "snippet": "The price of a 3 BHK flat in Indira Nagar Bangalore ranges from \u20b9 35 lakhs to \u20b9 17.19 Cr, depends on locality, flat size, BHK type, and amenities."
+          },
+          {
+            "position": 3,
+            "title": "Properties for Sale in Indiranagar Bangalore",
+            "link": "https://www.nobroker.in/properties-for-sale-in-indira-nagar-bangalore",
+            "snippet": "44 - Properties for Sale in Indiranagar Bangalore ; 2 BHK Apartment In Sls Signature For Sale In Kadubeesanahalli \u00b7 1.10 Cr. \u20b99,557/sq.ft ; 3 BHK Apartment In ..."
+          },
+          {
+            "position": 4,
+            "title": "Property for sale in Indiranagar, Bangalore",
+            "link": "https://www.squareyards.com/sale/property-for-sale-in-indiranagar-bangalore",
+            "snippet": "Explore 104+ property for sale in Indiranagar. You can choose from 29+ flats, 2+ Land, 2+ Builder Floor, 35+ Independent House, 2+ Villas, Penthouse ..."
+          },
+          {
+            "position": 5,
+            "title": "6 Flats & Apartments for Sale in Indira Nagar",
+            "link": "https://www.olx.in/en-in/indira-nagar_g5437579/for-sale-houses-apartments_c1725",
+            "snippet": "Explore flats for sale in Indira Nagar in the price range of \u20b910,000 - \u20b9180 Crores. OLX provides you options ranging from 1-5 BHK flats for sale in Indira Nagar ..."
+          },
+          {
+            "position": 6,
+            "title": "Property Rates in Indiranagar Bangalore",
+            "link": "https://www.magicbricks.com/Property-Rates-Trends/Multistorey-Apartment-rates-Indiranagar-in-Bangalore",
+            "snippet": "Property Rates in Indiranagar Bangalore - View & Compare Property Prices & Real Estate Trends for Properties for Sale/Rent in Indiranagar Bangalore on ..."
+          },
+          {
+            "position": 7,
+            "title": "Property for Sale in Indiranagar, Bangalore East",
+            "link": "https://www.99acres.com/property-near-indiranagar-metro-station-indira-nagar-bangalore-east-ffid",
+            "snippet": "Find 119+ Properties for sale in Indiranagar, Bangalore East on 99acres.com, India's No.1 Real Estate Portal. Buy Verified Property in Indiranagar, ..."
+          },
+          {
+            "position": 8,
+            "title": "Top Properties For Sale In Indira Nagar, Bangalore",
+            "link": "https://www.commonfloor.com/bangalore/property/sale/in-indira-nagar-r4e71a186a7594",
+            "snippet": "Best 57+ Property For Sale In Indira Nagar, Bangalore ; 3BHK Villa for Sale in HAL 3rd Stage \u00b7 HAL 3rd Stage \u00b7 3.50 Cr ; Semi Furnished 4 BHK Apartment for Sale in ..."
+          },
+          {
+            "position": 9,
+            "title": "Flats For Sale in Indiranagar , Bangalore Below 2 crores",
+            "link": "https://www.nobroker.in/properties-for-sale-below-2-crores-in-indira_nagar_bangalore",
+            "snippet": "Indiranagar might offer a range of property types including apartments, houses, penthouses, and more. The availability depends on the local real estate market."
+          },
+          {
+            "position": 10,
+            "title": "Flats For Sale in Indiranagar, Bangalore | 3 & 4 BHK | Century ...",
+            "link": "https://www.youtube.com/watch?v=ea0dFRVZbkM",
+            "snippet": "HAL Airport Road, Indiranagar \u2606Total Land Area: 8.6 Acres \u2606Apartment Options & Pricing: 3 BHK: 2300 - 2700 Sq. ft 4 BHK: 2800 - 4000+ Sq ..."
+          }
+        ]
+      },
+      {
+        "query": "Indiranagar apartments",
+        "results": [
+          {
+            "position": 1,
+            "title": "50+ Flats for sale in Indiranagar, Bangalore East",
+            "link": "https://www.99acres.com/flats-in-indiranagar-bangalore-east-ffid",
+            "snippet": "Find Apartments in Indiranagar, Bangalore East on 99acres.com, India's No.1 Real Estate Portal. Buy 1/2/3/4 BHK Flats for sale in Indiranagar, ..."
+          },
+          {
+            "position": 2,
+            "title": "Flats for Sale in Indiranagar Bangalore | Apartments in ...",
+            "link": "https://www.nobroker.in/flats-for-sale-in-indira_nagar_bangalore",
+            "snippet": "2 BHK Apartment In Sls Signature For Sale In Kadubeesanahalli \u00b7 1.10 Cr. \u20b99,557/sq.ft ; 3 BHK Apartment In Grandus Quiet Woods For Sale In Indiranagar \u00b7 4.98 Cr. \u20b9 ..."
+          },
+          {
+            "position": 3,
+            "title": "Flats for Rent in Indira Nagar, Bengaluru - Housing",
+            "link": "https://housing.com/rent/flats-for-rent-in-indira-nagar-bengaluru-Pu0r6m95i80gbhpp",
+            "snippet": "Top Flats for Rent in Indira Nagar, Bengaluru - Price & Specification ; 1 BHK Flat (570 sq.ft). \u20b930,000. HAL 2nd Stage, Indira Nagar, Bengaluru ; 3 BHK Flat (2300 ..."
+          },
+          {
+            "position": 4,
+            "title": "232+ Flats for Sale in Indira Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-indira-nagar-bangalore-for-sale-pppfs",
+            "snippet": "Browse flats in Indiranagar for sale within a price range of \u20b91.09 Cr - \u20b926.55 Cr, covering 1-5 BHK configurations. Explore from 104+ resale flats, 121+ ready- ..."
+          },
+          {
+            "position": 5,
+            "title": "Luxury Apartments Near Indiranagar Bangalore",
+            "link": "https://luxpropserv.com/bangalore/luxury-apartments-near-indiranagar/",
+            "snippet": "Find luxury apartments near Indiranagar Bangalore offering modern designs and convenient city access, ideal for comfortable living and investment potential."
+          },
+          {
+            "position": 6,
+            "title": "Apartments for sale in Indira Nagar, Bangalore",
+            "link": "https://www.housingman.com/bangalore/flats-for-sale-in-indira-nagar-bangalore",
+            "snippet": "Apartments for sale in Indira Nagar, Bangalore \u00b7 4 BHK Villa in Indira Nagar \u00b7 2 BHK Apartment in Indira Nagar \u00b7 3 BHK Apartment in Indira Nagar \u00b7 3 BHK ..."
+          },
+          {
+            "position": 7,
+            "title": "Apartments in Indiranagar Bangalore at starting price \u20b91484",
+            "link": "https://www.goibibo.com/hotels/apartments-in-bangalore/indiranagar-ap/",
+            "snippet": "6 Apartments available in Indiranagar, Bangalore starting from \u20b91484. Use offer code GETSETGO for discounts upto 30% on best Apartments in Indiranagar, ..."
+          },
+          {
+            "position": 8,
+            "title": "Serviced Apartments in Indiranagar, Bangalore",
+            "link": "https://www.thesqua.re/bengaluru/indiranagar/serviced-apartments",
+            "snippet": "The average price range of monthly apartments in Indiranagar, Bangalore ranges from \u20b960,000/ $720 to \u20b92,84,100/ $3,300 per night. Is Indiranagar in ..."
+          },
+          {
+            "position": 9,
+            "title": "Flats for Rent in Indiranagar , Bangalore",
+            "link": "https://www.nobroker.in/flats-for-rent-in-indira_nagar_bangalore",
+            "snippet": "2 BHK Flats for Rent in Indiranagar ... 2 BHK - 400 sq. ft. to 1,550 sq. ft. Monthly rent generally in Indiranagar falls between \u20b915,950 to \u20b985,250 per month, ..."
+          }
+        ]
+      },
+      {
+        "query": "Indiranagar 2bhk for sale",
+        "results": [
+          {
+            "position": 1,
+            "title": "31+ 2 BHK Flats for Sale in Indira Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/2-bhk-flats-in-indira-nagar-bangalore-for-sale-pppfs",
+            "snippet": "Explore 2 BHK flats in Indiranagar available for sale in the price range of \u20b91.05 Cr - \u20b93.41 Cr. Choose from 23+ resale flats, 26+ ready-to-move units, and 22+ ..."
+          },
+          {
+            "position": 2,
+            "title": "2 BHK Flats For Sale in Indiranagar , Bangalore",
+            "link": "https://www.nobroker.in/2bhk-flats-for-sale-in-indira_nagar_bangalore",
+            "snippet": "11+ 2 BHK Apartments/flats available for sale in Indiranagar, , Bangalore within your budget & no brokerage. Contact property owners directly for 2 BHK ..."
+          },
+          {
+            "position": 3,
+            "title": "2 BHK Flats in Indiranagar, Bangalore East - 99acres.com",
+            "link": "https://www.99acres.com/2-bhk-flats-in-indiranagar-bangalore-east-ffid",
+            "snippet": "2 BHK Flats in Indiranagar, Bangalore East ; in Defence Colony, Indira Nagar \u00b7 \u20b92.95 Cr. \u20b926,818 /sqft ; in 1st Stage Indira Nagar, Bangalore \u00b7 \u20b91.55 Cr. \u20b912,916 / ..."
+          },
+          {
+            "position": 4,
+            "title": "6 Flats & Apartments for Sale in Indira Nagar",
+            "link": "https://www.olx.in/en-in/indira-nagar_g5437579/for-sale-houses-apartments_c1725",
+            "snippet": "Affordable 2BHK Flat for Sale in CV Raman Nagar Near Indiranagar. \u20b9 1,05,00,000 ; 2BHK Flat for Sale in CV Raman Nagar Near Baiyappanahalli Metro. \u20b9 1,06,00,000."
+          },
+          {
+            "position": 5,
+            "title": "10+ 2 BHK Flats For Sale in Indiranagar, Bangalore",
+            "link": "https://www.squareyards.com/sale/2-bhk-for-sale-in-indiranagar-bangalore",
+            "snippet": "Secure a smart investment in Indiranagar, Bengaluru, with this unfurnished two-bedroom, two-bathroom Flats priced at 73.99 lakh."
+          },
+          {
+            "position": 6,
+            "title": "2 BHK Flats for Sale in Indira Nagar, Bengaluru - Housing",
+            "link": "https://housing.com/in/buy/bengaluru/indira-nagar-gid/2bhk-flats-fid/",
+            "snippet": "Looking for 2 BHK Flat in Indira Nagar? Housing.com offers 59+ 2 BHK Flats & 1+ 2 BHK Houses. Choose from 10+ New Projects, 78+ Resale Properties and 4+ 2 BHK ..."
+          },
+          {
+            "position": 7,
+            "title": "2 BHK Flats for Sale In Indiranagar, Bangalore",
+            "link": "https://beegru.com/s/2-bhk-flats-for-sale-in-indiranagar-bangalore",
+            "snippet": "Discover premium 2 BHK Flats for Sale in Indiranagar with modern amenities, great connectivity, and strong appreciation. Explore top 2 BHK Apartments in ..."
+          },
+          {
+            "position": 8,
+            "title": "Flats for Sale in Indira Nagar Bangalore - HousingMan",
+            "link": "https://www.housingman.com/bangalore/flats-for-sale-in-indira-nagar-bangalore",
+            "snippet": "Apartments for sale in Indira Nagar, Bangalore. (15 Properties ... 2 BHK Apartment in Indira Nagar. \u20b91.52 Cr* Onwards. \u20b98400/ Sqft. 2 BHK's 1813 ..."
+          },
+          {
+            "position": 9,
+            "title": "2 BHK Apartments/Flats For Sale Near Chinmaya Mission ...",
+            "link": "https://www.nobroker.in/2bhk-flats-for-sale-near-indiranagar_metro_station_bangalore",
+            "snippet": "2 BHK Flat For Sale In Indiranagar \u00b7 60 Lacs. \u20b910,000/sq.ft ; 2 BHK Apartment In Ganga Apartment For Sale In Indiranagar \u00b7 92 Lacs. \u20b99,946/sq.ft ; 2 BHK Apartment ..."
+          },
+          {
+            "position": 10,
+            "title": "2 BHK Flats in Indiranagar, Bangalore East from 50 lakhs ...",
+            "link": "https://www.99acres.com/2-bhk-flats-in-indiranagar-bangalore-east-50-lakhs-to-80-lakhs-ffid",
+            "snippet": "2 bhk in mana candela 2 for sale . Available with 2 parking covered. 1154 sqr feet. Moving out sale. Corner unit with excellent ventilation from 3 sides This ..."
+          }
+        ]
+      },
+      {
+        "query": "buy flat in Indiranagar",
+        "results": [
+          {
+            "position": 1,
+            "title": "50+ Flats for sale in Indiranagar, Bangalore East",
+            "link": "https://www.99acres.com/flats-in-indiranagar-bangalore-east-ffid",
+            "snippet": "Apartments in Indiranagar, Bangalore East ; MONARCH MANOR \u00b7 \u20b94.8 Cr. \u20b937,885 /sqft ; PARK VIEW \u00b7 \u20b94.15 Cr. \u20b920,313 /sqft ; AISSHWARYA SIGNUM \u00b7 \u20b91.95 Cr. \u20b911,143 /sqft."
+          },
+          {
+            "position": 2,
+            "title": "Flats for Sale in Indiranagar Bangalore | Apartments in ...",
+            "link": "https://www.nobroker.in/flats-for-sale-in-indira_nagar_bangalore",
+            "snippet": "2 BHK Apartment In Sls Signature For Sale In Kadubeesanahalli \u00b7 1.10 Cr. \u20b99,557/sq.ft ; 3 BHK Apartment In Grandus Quiet Woods For Sale In Indiranagar \u00b7 4.98 Cr. \u20b9 ..."
+          },
+          {
+            "position": 3,
+            "title": "232+ Flats for Sale in Indira Nagar, Bangalore",
+            "link": "https://www.magicbricks.com/flats-in-indira-nagar-bangalore-for-sale-pppfs",
+            "snippet": "Browse flats in Indiranagar for sale within a price range of \u20b91.09 Cr - \u20b926.55 Cr, covering 1-5 BHK configurations. Explore from 104+ resale flats, 121+ ready- ..."
+          },
+          {
+            "position": 4,
+            "title": "Apartments for sale in Indira Nagar, Bangalore",
+            "link": "https://www.housingman.com/bangalore/flats-for-sale-in-indira-nagar-bangalore",
+            "snippet": "Apartments for sale in Indira Nagar, Bangalore ; Salarpuria Kings Domain Villa \u00b7 4 BHK Villa in Indira Nagar. \u20b95.46 Cr* Onwards. \u20b914000/ Sqft. 4 BHK's ; Salarpuria ..."
+          },
+          {
+            "position": 5,
+            "title": "Flats for Sale in Indira Nagar, Bengaluru - Housing",
+            "link": "https://housing.com/in/buy/bengaluru/indira-nagar-gid/",
+            "snippet": "The average price per sqft for Flats in Indira Nagar, Bengaluru is Rs. 25,646. The price range per sqft is Rs. 666 - Rs. 162,500. See Price ..."
+          },
+          {
+            "position": 6,
+            "title": "Flats for Sale in Indiranagar, Bengaluru",
+            "link": "https://www.roofandfloor.com/bengaluru/flats-for-sale-in-indiranagar",
+            "snippet": "The cost of an flat in Indiranagar ranges from 2.52 Cr - 9.46 Cr *. How much does it cost to buy a 3 bhk flat in Indiranagar? The average cost of a 3 bhk ..."
+          },
+          {
+            "position": 7,
+            "title": "Apartments for Sale in Indira Nagar",
+            "link": "https://homeraaga.com/apartments-for-sale-in-indira-nagar/",
+            "snippet": "Apartments for Sale In Indira Nagar ; 3 BHK Apartment Vaswani Golf Vista, Domlur. \u20b9 2,60,00,000 (2.6 Cr) ; 2 BHK Apartment , Indira Nagar. \u20b9 2,90,00,000 (2.9 Cr)."
+          },
+          {
+            "position": 8,
+            "title": "6 Flats & Apartments for Sale in Indira Nagar",
+            "link": "https://www.olx.in/en-in/indira-nagar_g5437579/for-sale-houses-apartments_c1725",
+            "snippet": "Find over 6 flats for sale in Indira Nagar on OLX. Choose from New Projects, Ready To Move Flats, and Under construction Flats with the option of 1/2/3/4 ..."
+          },
+          {
+            "position": 9,
+            "title": "Apartments for Sale in Indiranagar Bangalore",
+            "link": "https://www.squareyards.com/sale/apartments-for-sale-in-indiranagar-bangalore",
+            "snippet": "See apartments for sale in Indiranagar Bangalore with listings. Start your property search in Indiranagar Bangalore."
+          },
+          {
+            "position": 10,
+            "title": "Flats for Sale in Indiranagar, Bangalore",
+            "link": "https://beegru.com/s/flats-for-sale-in-indiranagar-bangalore",
+            "snippet": "Explore flats for sale in Indiranagar, Bangalore with modern layouts, prime location, and excellent connectivity. Find premium apartments in Indiranagar ..."
+          }
+        ]
+      },
+      {
+        "query": "Indiranagar real estate review",
+        "results": [
+          {
+            "position": 1,
+            "title": "Ratings & Reviews of Indiranagar, Bangalore",
+            "link": "https://www.99acres.com/indiranagar-bangalore-east-reviews-and-ratings-wrffid",
+            "snippet": "Indiranagar Bangalore has 4.4 star rating out of 5. Know positive and negative things about Indiranagar through 399 tenants/owners genuine reviews."
+          },
+          {
+            "position": 2,
+            "title": "Indiranagar Reviews & Ratings",
+            "link": "https://www.magicbricks.com/real-estate-property-reviews/Indiranagar-in-Bangalore",
+            "snippet": "Indira Nagar offers a mix of older apartments and newer gated projects. The location is well developed, and local transport options are easily available."
+          },
+          {
+            "position": 3,
+            "title": "3BHK in Indiranagar for \u20b91.3 Cr - realistic or exaggerated?",
+            "link": "https://www.reddit.com/r/indiranagar/comments/1psrj7x/3bhk_in_indiranagar_for_13_cr_realistic_or/",
+            "snippet": "Came across this claim about buying a 3BHK in Indiranagar for \u20b91.3 Cr, with the argument that people outside Bengaluru don\u2019t really understand ..."
+          },
+          {
+            "position": 4,
+            "title": "Ratings & Reviews of Indiranagar, Bangalore",
+            "link": "https://www.99acres.com/indiranagar-bangalore-south-reviews-and-ratings-wrffid",
+            "snippet": "Indiranagar Bangalore has 4.2 star rating out of 5. Know positive and negative things about Indiranagar through 43 tenants/owners genuine reviews."
+          },
+          {
+            "position": 5,
+            "title": "Top Estate Agents For Independent House in Indiranagar",
+            "link": "https://www.justdial.com/Bangalore/Estate-Agents-For-Independent-House-in-Indiranagar/nct-10192706",
+            "snippet": "(1264 Ratings & Reviews as on 28/04/2026). Latest Customer Reviews. Ankith Realtors. 5.0. Best real estate agency in indiranagar. Mathi13 Jan 2024. Vinra ..."
+          },
+          {
+            "position": 6,
+            "title": "Locality Review: Indiranagar, Bengaluru",
+            "link": "https://www.youtube.com/watch?v=QKJYkc5Doas",
+            "snippet": "... real estate demand in Indiranagar. However, the flooded roads during rains and traffic jams during peak hours can be disappointing. For more ..."
+          },
+          {
+            "position": 7,
+            "title": "Indiranagar, Bangalore - Map, Pincode, Property Rates, ...",
+            "link": "https://www.nobroker.in/locality-iq/indira-nagar-bangalore-liqlt",
+            "snippet": "Good locality but parking is a real struggle, especially near 100 Feet Road and pubs. ... Walking at night feels safe, thanks to good street lighting. ... This area ..."
+          },
+          {
+            "position": 8,
+            "title": "Indira Nagar, Bengaluru - Housing",
+            "link": "https://housing.com/indira-nagar-bengaluru-overview-Pu0r6m95i80gbhpp",
+            "snippet": "Overall locality is good for living. 1 User found this review helpful ... Download Android App for Real Estate in Indira Nagar \u00b7 Download IOS App for ..."
+          },
+          {
+            "position": 9,
+            "title": "Godrej Athena in Indiranagar, Bangalore Details | Reviews",
+            "link": "https://www.homznspace.com/godrej-athena-indiranagar-reviews/",
+            "snippet": "Indiranagar and this part of East Bangalore are well-established and highly sought-after with countless commercial as well as residential landmarks mere minutes ..."
+          }
+        ]
+      },
+      {
+        "query": "living in Indiranagar",
+        "results": [
+          {
+            "position": 1,
+            "title": "What makes living in Indiranagar truly worth it?",
+            "link": "https://www.reddit.com/r/indiranagar/comments/1mz06eh/what_makes_living_in_indiranagar_truly_worth_it/",
+            "snippet": "Hi everyone! I'm considering moving to Indiranagar and would love to hear from locals or long-time residents\u2014what, in your opinion, makes living in this ..."
+          },
+          {
+            "position": 2,
+            "title": "Bangalore's Hipster Neighborhood | Indiranagar \u2014 Hype or ...",
+            "link": "https://www.youtube.com/watch?v=3AjiVJ8rwhw",
+            "snippet": "This neighborhood is popular with expats, popular with tech workers, popular with young people, full of restaurants cafes, good transportation connection."
+          },
+          {
+            "position": 3,
+            "title": "Is Indiranagar considered the best area in Bangalore ...",
+            "link": "https://www.quora.com/Is-Indiranagar-considered-the-best-area-in-Bangalore-for-living-and-entertainment",
+            "snippet": "Indiranagar has changed a lot over the years! It was once known as a quiet residential area, but now it's famous for its lively pubs and ..."
+          },
+          {
+            "position": 4,
+            "title": "Best PG in Indiranagar Bangalore | Paying Guest For Boys ...",
+            "link": "https://cofynd.com/co-living/bangalore/indiranagar",
+            "snippet": "PG in Indiranagar ; Stanza Living Lafayette House. Koramangala, Bangalore. \u20b913,599 ; Hyphen Club D\u00e9rive \u00b7 Indiranagar, Bangalore. \u20b920,499 ; Settl.Samara."
+          },
+          {
+            "position": 5,
+            "title": "Coliving Spaces in Indiranagar",
+            "link": "https://housr.in/bangalore/coliving-in-indiranagar",
+            "snippet": "Experience modern coliving spaces in Indiranagar at Housr. Enjoy fully furnished coliving in Indiranagar with all-inclusive amenities in prime areas of the ..."
+          },
+          {
+            "position": 6,
+            "title": "PG and Coliving Near Indiranagar Metro Station, Bangalore",
+            "link": "https://thehelloworld.com/blogs/pg-and-coliving-near-indiranagar-metro-station-bangalore",
+            "snippet": "This guide provides a detailed overview of living near Indiranagar Metro Station, including rental trends, nearby employment hubs, micro-markets ..."
+          },
+          {
+            "position": 7,
+            "title": "Settl. Derive | Coliving PG for rent in Indiranagar | Bangalore",
+            "link": "https://www.thesettl.com/pg/bangalore/indiranagar/indiranagar-derive/",
+            "snippet": "As a leading coliving company in Indiranagar, Derive prioritizes resident safety with high-tech security systems. This is a standout feature among Apartments ..."
+          },
+          {
+            "position": 8,
+            "title": "Boys/Girls PG in Indiranagar with AC, WiFi & Meals",
+            "link": "https://www.stanzaliving.com/bengaluru/indiranagar",
+            "snippet": "Choose Stanza Living in Indiranagar. Stanza Living combines comfort, safety, and community with fully furnished rooms, reliable Wi\u2011Fi, homely meals ..."
+          },
+          {
+            "position": 9,
+            "title": "Indira Nagar, Bangalore: Map, Photo, Video, Price Trends, ...",
+            "link": "https://www.magicbricks.com/Indira-Nagar-in-Bangalore-Overview",
+            "snippet": "Indiranagar Gated Community Living Available. Indira Nagar offers a mix of older apartments and newer gated projects. The location is well developed, and ..."
+          }
+        ]
+      },
+      {
+        "query": "What is Indiranagar Bangalore famous for?",
+        "results": [
+          {
+            "position": 1,
+            "title": "THE 10 BEST Things to Do in Indiranagar (2026)",
+            "link": "https://www.tripadvisor.in/Attractions-g297628-Activities-zfn13087477-Bengaluru_Bangalore_District_Karnataka.html",
+            "snippet": "1. SPA.ce the Spa \u00b7 2. 1000PETALS \u00b7 3. Equilibrium Climbing Station \u00b7 4. Meraki Spa & Blends \u00b7 5. Mystery Rooms \u00b7 6. The Bull Ring Arena \u00b7 7."
+          },
+          {
+            "position": 2,
+            "title": "Indiranagar Hood Guide: Where To Eat, Shop And Drink | LBB",
+            "link": "https://lbb.in/bangalore/100-feet-road-indiranagar-bangalore/",
+            "snippet": "Indiranagar as a locality is a gift that keeps on giving. From shopping at international brands to indie designers, budget home basics to high-end furniture ..."
+          },
+          {
+            "position": 3,
+            "title": "What are some things to do in Indiranagar that's not food ...",
+            "link": "https://www.reddit.com/r/indiranagar/comments/1mr0gi6/what_are_some_things_to_do_in_indiranagar_thats/",
+            "snippet": "I wanted to know what are some things to do in indiranagar which is not going to places to eat . Cafes with boardgames are fine but anything else?"
+          },
+          {
+            "position": 4,
+            "title": "Top Things to Do in Indira Nagar, Bangalore",
+            "link": "https://www.royalorchidhotels.com/regenta-inn-indiranagar-bangalore/things-to-do",
+            "snippet": "Embassy Golf Links is a renowned business and tech park that hosts major companies like Facebook, JP Morgan, Goldman Sachs, Dell, McAfee, and IBM, among others."
+          },
+          {
+            "position": 5,
+            "title": "Bengaluru on Instagram: \"#Things2doRecommends : If you ...",
+            "link": "https://www.instagram.com/reel/C5dwtGJJ4pw/?hl=en",
+            "snippet": "Indiranagar \u2013 Famous for 100 ft Road, pubs & cafes Koramangala \u2013 Startup hub with food streets & nightlife Whitefield \u2013 IT parks + Phoenix ..."
+          },
+          {
+            "position": 6,
+            "title": "10 Fun Things to Do in Indiranagar for an Unforgettable Day!",
+            "link": "https://www.agoda.com/travel-guides/india/bengaluru/10-fun-things-to-do-in-indiranagar-for-an-unforgettable-day/",
+            "snippet": "Indiranagar is renowned for its craft beer scene, and you can't miss out on visiting Toit, one of the most popular microbreweries in the area."
+          },
+          {
+            "position": 7,
+            "title": "Indiranagar, Bengaluru",
+            "link": "https://en.wikipedia.org/wiki/Indiranagar,_Bengaluru",
+            "snippet": "Indiranagar is one of the most expensive cosmopolitan neighbourhoods in Bangalore. ... In addition, Indiranagar is also famous for having a 100 ft. road ..."
+          },
+          {
+            "position": 8,
+            "title": "Is Indiranagar considered the best area in Bangalore ...",
+            "link": "https://www.quora.com/Is-Indiranagar-considered-the-best-area-in-Bangalore-for-living-and-entertainment",
+            "snippet": "It was once known as a quiet residential area, but now it's famous for its lively pubs and restaurants. Here are some photos of the popular pubs ..."
+          },
+          {
+            "position": 9,
+            "title": "Things to do in Indiranagar Bangalore",
+            "link": "https://www.ff21.in/blog/things-to-do-in-indiranagar-bangalore",
+            "snippet": "Indiranagar in Bangalore is famous for its vibrant nightlife, trendy cafes, boutique shopping, and diverse restaurants. It's a popular ..."
+          }
+        ]
+      },
+      {
+        "query": "Is Indiranagar expensive?",
+        "results": [
+          {
+            "position": 1,
+            "title": "Which is better, Koramangala or Indiranagar, in terms ...",
+            "link": "https://www.quora.com/Which-is-better-Koramangala-or-Indiranagar-in-terms-of-the-cost-of-living",
+            "snippet": "Which is better, Koramangala or Indiranagar, in terms of the cost of living?"
+          },
+          {
+            "position": 2,
+            "title": "What makes living in Indiranagar truly worth it?",
+            "link": "https://www.reddit.com/r/indiranagar/comments/1mz06eh/what_makes_living_in_indiranagar_truly_worth_it/",
+            "snippet": "Hi everyone! I'm considering moving to Indiranagar and would love to hear from locals or long-time residents\u2014what, in your opinion, makes living in this ..."
+          },
+          {
+            "position": 3,
+            "title": "Indira Nagar, Bangalore: Map, Photo, Video, Price Trends, ...",
+            "link": "https://www.magicbricks.com/Indira-Nagar-in-Bangalore-Overview",
+            "snippet": "Indiranagar is one of the most expensive localities of Bangalore. With several IT companies in the vicinity, leading schools and prominent hospitals are easily ..."
+          },
+          {
+            "position": 4,
+            "title": "Indiranagar, Bangalore: Map, photos, videos, price trends ...",
+            "link": "https://www.squareyards.com/indiranagar-in-bangalore-overview-668",
+            "snippet": "Property rates in Indiranagar have seen a steady growth. Current prices range from \u20b9 70.62 Lakhs to 50 Crore . The average sale price is around \u20b917,450 per sq."
+          },
+          {
+            "position": 5,
+            "title": "Indiranagar, one of Bengaluru's posh localities, ranks as ...",
+            "link": "https://www.facebook.com/etnow/posts/indiranagar-one-of-bengalurus-posh-localities-ranks-as-the-costliest-area-for-2b/1045984897560414/",
+            "snippet": "Indiranagar, one of Bengaluru's posh localities, ranks as the costliest area for 2BHK rentals with an average monthly rent of Rs 50,000, as per ..."
+          },
+          {
+            "position": 6,
+            "title": "Indiranagar vs Koramangala: Cost, Lifestyle & Property ...",
+            "link": "https://beegru.com/blog/priya-ramachandran/indiranagar-vs-koramangala-cost-lifestyle-property-comparison",
+            "snippet": "Yes, Indiranagar is generally 10\u201320% more expensive than Koramangala across both rental and property purchase markets. A 2BHK apartment in ..."
+          },
+          {
+            "position": 7,
+            "title": "Indiranagar, Bengaluru",
+            "link": "https://en.wikipedia.org/wiki/Indiranagar,_Bengaluru",
+            "snippet": "Indiranagar is one of the most expensive cosmopolitan neighbourhoods in Bangalore. Indiranagar. Neighbourhood. Indiranagara. Indiranagar is located in Bengaluru."
+          },
+          {
+            "position": 8,
+            "title": "Indiranagar Bangalore 2025: Real Estate and Lifestyle Guide",
+            "link": "https://www.prestigesevergreen.info/bangalore/indiranagar-bangalore-2025-real-estate-and-lifestyle-guide.html",
+            "snippet": "Yes, it is expensive. But the returns in both quality of life and capital value make it worth it for many. If you want to live in a part of ..."
+          },
+          {
+            "position": 9,
+            "title": "Property Rates in Indiranagar, Bangalore 2026",
+            "link": "https://www.99acres.com/property-rates-and-price-trends-in-indiranagar-bangalore-south-prffid",
+            "snippet": "Flat prices in Indiranagar, Bangalore are in the range of Rs 6950-17000 per square feet (sq ft). Key highlights about property rates in Indiranagar. \u2022 There are ..."
+          },
+          {
+            "position": 10,
+            "title": "Indiranagar has officially become the costliest locality in ...",
+            "link": "https://www.instagram.com/p/DHglmdwzBvO/",
+            "snippet": "Indiranagar has officially become the costliest locality in Bengaluru for 2BHK rentals, with the average monthly rent touching Rs 50,000, ..."
+          }
+        ]
+      }
+    ],
+    "uncovered_queries": [
+      "What is Indiranagar Bangalore famous for?"
+    ],
+    "analysis": {
+      "topic": "indiranagar",
+      "competitor_summary": [
+        {
+          "competitor": "99acres.com",
+          "result_count": 9,
+          "depth": "listing",
+          "strengths": "Dominant listing coverage across all property queries (2BHK, apartments, general property); strong review/ratings section; high inventory visibility",
+          "weaknesses": "Purely transactional; no lifestyle, neighborhood guide, or investment analysis content; thin on 'why live here' narrative"
+        },
+        {
+          "competitor": "magicbricks.com",
+          "result_count": 8,
+          "depth": "listing",
+          "strengths": "Consistent presence across property type queries; includes price trends and area reviews; established brand authority",
+          "weaknesses": "Listing-focused; minimal lifestyle or cultural content; no differentiation on neighborhood character or local insights"
+        },
+        {
+          "competitor": "nobroker.in",
+          "result_count": 8,
+          "depth": "listing",
+          "strengths": "Strong coverage of buy/rent queries; competitive listing density; user-friendly property filtering",
+          "weaknesses": "No editorial depth; purely transactional; absent from lifestyle/living experience queries"
+        },
+        {
+          "competitor": "housing.com",
+          "result_count": 4,
+          "depth": "listing",
+          "strengths": "Rental-focused presence; some market data",
+          "weaknesses": "Weakest coverage overall; minimal presence in sale queries; no neighborhood guides or lifestyle content"
+        }
+      ],
+      "coverage_gaps": [
+        {
+          "gap": "Indiranagar neighborhood guide (culture, food, entertainment, lifestyle)",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "Investment analysis: Why Indiranagar is a good investment (ROI, appreciation, demand drivers)",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "Cost of living breakdown vs. comparable areas (Koramangala, Whitefield, Bellandur)",
+          "priority": "high",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Indiranagar micro-locality guides (100 Feet Road, Indiranagar 1st Stage, 2nd Stage, etc.)",
+          "priority": "high",
+          "suggested_article_type": "hub"
+        },
+        {
+          "gap": "Schools, hospitals, and amenities in Indiranagar (family-focused content)",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Rental vs. buy analysis for Indiranagar",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "Indiranagar property price trends and market forecast",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        },
+        {
+          "gap": "First-time buyer guide to Indiranagar",
+          "priority": "medium",
+          "suggested_article_type": "spoke"
+        }
+      ],
+      "our_advantages": [
+        "Local expertise: Create hyper-local micro-locality guides (100 Feet Road, 1st/2nd Stage) that competitors ignore",
+        "Lifestyle narrative: Own the 'living experience' angle with cultural, food, and entertainment depth\u2014competitors only list properties",
+        "Investment-focused content: Provide ROI analysis, appreciation trends, and demand drivers that transactional portals don't cover",
+        "Comparative analysis: Build cost-of-living and neighborhood comparison content (vs. Koramangala, Whitefield) that adds decision-making value",
+        "Fresh data: Real-time market insights, price trends, and inventory updates with Canvas Homes branding and credibility",
+        "Family-focused guides: Target underserved segments (schools, hospitals, safety, commute) with authoritative local knowledge"
+      ],
+      "summary": "Indiranagar is dominated by transactional listing portals (99acres, magicbricks, nobroker) with zero editorial depth on lifestyle, investment, or neighborhood character. Canvas Homes can capture high-intent traffic by publishing comprehensive neighborhood guides, investment analysis, micro-locality breakdowns, and comparative cost-of-living content\u2014all currently uncovered by competitors."
+    },
+    "summary": "'indiranagar': magicbricks=8, nobroker=8, housing=4, 99acres=9 | 1 uncovered | 8 gaps identified"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "master_research_prompt": "I need comprehensive research on Sattva Group, a Bangalore-based real estate developer, for content creation in 2026. This research must provide factual claims, current data, and authoritative citations for a complete content cluster covering company analysis, project portfolio, credibility assessment, comparisons, reviews, and investment opportunities.\n\n**RESEARCH SCOPE & STRUCTURE:**\n\n**1. SATTVA GROUP COMPANY OVERVIEW (2026 CONTEXT)**\nProvide detailed information about Sattva Group's current status as of 2026:\n- Complete company history, founding year, and evolution timeline\n- Current leadership team with names, designations, and backgrounds\n- Business verticals beyond real estate (if any)\n- Current market capitalisation, revenue figures, and financial performance (2024-2026)\n- Total number of employees and office locations\n- Corporate structure and subsidiary companies\n- Recent corporate developments, mergers, acquisitions, or partnerships (2024-2026)\n- Current market share in Bangalore real estate sector with exact percentages\n- Geographic presence beyond Bangalore (other cities/states)\n\n**2. CREDIBILITY & GRADE ASSESSMENT**\nAnalyse Sattva's standing in the industry:\n- Official grade classification (A-grade, B-grade, etc.) from industry bodies\n- RERA registration status and compliance record for all projects\n- Credit ratings from agencies like CRISIL, ICRA, or CARE (latest ratings)\n- Financial stability indicators: debt-to-equity ratio, cash flow, working capital\n- Industry awards and recognitions received (2022-2026)\n- Quality certifications (ISO, IGBC, etc.) with validity dates\n- Legal compliance record: any ongoing litigation, NCLT cases, or regulatory issues\n- Customer complaint statistics from consumer forums and RERA portals\n- Delivery track record: percentage of projects delivered on time vs delayed\n- Comparison metrics with other A-grade builders in Bangalore\n\n**3. COMPLETE PROJECT PORTFOLIO ANALYSIS**\nProvide exhaustive project data:\n- Total number of projects: completed, ongoing, upcoming, and pre-launch\n- Geographic distribution across Bangalore with locality-wise project count\n- Project categories: residential (flats/villas), commercial, mixed-use with unit counts\n- Total area developed (in acres/sq ft) and total units delivered\n- Current inventory: available units across all ongoing projects\n- Price ranges for different project categories and locations (\u20b9 per sq ft)\n- Specific project details for major developments including:\n  * Sattva Songbird: location, size, unit types, pricing, possession status\n  * Sattva Lumina: complete specifications, amenities, investment potential\n  * Other flagship projects with names, locations, and current status\n- Upcoming launches planned for 2026-2027 with tentative timelines\n- Pre-launch opportunities currently available with pricing and offers\n\n**4. COMPETITIVE ANALYSIS**\nDetailed comparison with major Bangalore builders:\n- Market positioning vs Prestige Group, Sobha Limited, Brigade Group\n- Pricing comparison: average \u20b9 per sq ft across similar localities\n- Project delivery timelines and track record comparison\n- Construction quality standards and materials used\n- Customer satisfaction scores and review ratings\n- Market share comparison with exact percentages\n- Unique selling propositions and differentiation factors\n- Financial strength comparison: revenue, profitability, debt levels\n\n**5. CUSTOMER REVIEWS & FEEDBACK ANALYSIS**\nComprehensive review analysis:\n- Overall customer satisfaction ratings from multiple platforms\n- Review aggregation from MagicBricks, NoBroker, Google Reviews, Facebook\n- Common positive feedback themes with specific examples\n- Frequent complaints and issues raised by customers\n- Project-wise review breakdown for major developments\n- Customer service quality assessment\n- Post-possession support and maintenance service reviews\n- Grievance redressal mechanism and response times\n- Comparison of review scores with competitor builders\n\n**6. INVESTMENT ANALYSIS & MARKET PERFORMANCE**\nInvestment-focused data:\n- Historical price appreciation for completed Sattva projects (2020-2026)\n- Current rental yields for Sattva properties across different localities\n- Resale market performance and liquidity analysis\n- Investment potential assessment for ongoing and upcoming projects\n- Location-wise growth prospects and infrastructure development impact\n- Connectivity improvements affecting Sattva project locations\n- Market trends affecting Sattva's target segments and price points\n\n**7. SPECIFIC FAQ RESEARCH REQUIREMENTS**\nProvide detailed answers for these specific questions:\n- What makes Sattva Group a leading real estate developer in Bangalore?\n- Is Sattva considered an A-grade builder with specific grade classification?\n- How many ongoing projects does Sattva currently have in Bangalore?\n- What are Sattva's upcoming project launches planned for 2026-2027?\n- How does Sattva compare to Prestige, Sobha, and Brigade in terms of quality and pricing?\n- What is the overall customer review rating for Sattva Group projects?\n- What are the current pre-launch offers available for Sattva projects?\n- Which Sattva projects are ready for immediate possession in Bangalore?\n- What is the investment potential and ROI for Sattva projects?\n- How does Sattva handle customer complaints and grievances?\n\n**MANDATORY SOURCE REQUIREMENTS:**\nAll information must be cited from authoritative sources with URLs in markdown format. Prioritise these sources:\n- Government: rera.karnataka.gov.in, bbmp.gov.in, bda.karnataka.gov.in\n- Financial: rbi.org.in, sebi.gov.in, moneycontrol.com\n- Real Estate Research: knightfrank.co.in, jll.co.in, anarock.com, cbre.com, cushmanwakefield.com\n- Business Media: livemint.com, economictimes.indiatimes.com, business-standard.com\n- Property Portals: magicbricks.com, nobroker.in\n- Industry Publications: constructionworld.in, realtyplusmag.com\n\n**DATA FRESHNESS REQUIREMENTS:**\n- All financial data, project status, and market metrics must be from the last 18 months (July 2024-January 2026)\n- Historical company information and completed project data can be from any relevant period\n- Pricing data must be current as of Q4 2025 or Q1 2026\n- Review and rating data should be recent (last 12 months preferred)\n\n**LANGUAGE & TERMINOLOGY:**\nUse British Indian English throughout:\n- 'Flat' instead of 'apartment'\n- Currency in 'lakh' and 'crore' (\u20b9 50 lakh, \u20b9 2.5 crore)\n- Local terminology: 'BBMP', 'RERA', 'BDA'\n- Bangalore (not Bengaluru) for consistency\n\n**SPECIFIC NUMERIC DATA REQUIRED:**\n- Exact project counts, unit numbers, and area measurements\n- Precise pricing per sq ft for different localities and project types\n- Specific percentages for market share, delivery track record, customer satisfaction\n- Exact dates for project launches, completions, and possession timelines\n- Detailed financial figures: revenue, profit margins, debt ratios\n- Specific review scores and ratings with sample sizes\n\n**OUTPUT FORMAT:**\nStructure the research with clear sections matching the content cluster outline. Include source URLs in markdown format [Source Name](URL) for every factual claim. Provide specific numbers, dates, and named entities throughout. Ensure all data points can be independently verified from the cited sources.",
+  "research_questions": [
+    {
+      "section": "Company Overview",
+      "questions": [
+        "What is Sattva Group's founding year and complete company history?",
+        "Who are the current leadership team members and their backgrounds?",
+        "What is Sattva's current market share in Bangalore real estate sector?",
+        "What are Sattva's revenue figures and financial performance for 2024-2026?"
+      ]
+    },
+    {
+      "section": "Credibility Assessment",
+      "questions": [
+        "Is Sattva classified as an A-grade builder by industry standards?",
+        "What is Sattva's RERA compliance record and registration status?",
+        "What are Sattva's current credit ratings from agencies like CRISIL or ICRA?",
+        "What percentage of Sattva projects have been delivered on time vs delayed?"
+      ]
+    },
+    {
+      "section": "Project Portfolio",
+      "questions": [
+        "How many total projects does Sattva have: completed, ongoing, and upcoming?",
+        "What are the current pricing ranges for Sattva projects across different localities?",
+        "What is the detailed status of Sattva Songbird and Lumina projects?",
+        "Which Sattva projects are available for immediate possession in 2026?"
+      ]
+    },
+    {
+      "section": "Competitive Analysis",
+      "questions": [
+        "How does Sattva's pricing compare to Prestige, Sobha, and Brigade per sq ft?",
+        "What are the market share percentages for Sattva vs major competitors?",
+        "How do delivery timelines compare between Sattva and other A-grade builders?",
+        "What are the unique selling propositions that differentiate Sattva?"
+      ]
+    },
+    {
+      "section": "Customer Reviews",
+      "questions": [
+        "What is Sattva's overall customer satisfaction rating across review platforms?",
+        "What are the most common complaints about Sattva projects?",
+        "How does Sattva's customer service quality compare to competitors?",
+        "What is the project-wise review breakdown for major Sattva developments?"
+      ]
+    },
+    {
+      "section": "Investment Analysis",
+      "questions": [
+        "What has been the price appreciation for Sattva projects from 2020-2026?",
+        "What are the current rental yields for Sattva properties?",
+        "What is the resale market performance for Sattva projects?",
+        "Which Sattva projects offer the best investment potential and ROI?"
+      ]
+    }
+  ],
+  "freshness_requirements": {
+    "default": "last 18 months",
+    "exceptions": "historical company information and completed project data may use any relevant period"
+  },
+  "source_priority": [
+    "rera.karnataka.gov.in",
+    "bbmp.gov.in",
+    "bda.karnataka.gov.in",
+    "rbi.org.in",
+    "sebi.gov.in",
+    "moneycontrol.com",
+    "knightfrank.co.in",
+    "jll.co.in",
+    "anarock.com",
+    "cbre.com",
+    "livemint.com",
+    "economictimes.indiatimes.com",
+    "business-standard.com",
+    "magicbricks.com",
+    "nobroker.in"
+  ],
+  "estimated_perplexity_queries": 1,
+  "estimated_perplexity_cost_usd": 0.25
+}

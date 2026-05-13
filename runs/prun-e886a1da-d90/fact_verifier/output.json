@@ -1,632 +1,622 @@
 {
   "article_id": "art-f845cefc-9b2",
-  "fact_check_score": 0.6266666666666667,
+  "fact_check_score": 0.645,
   "verification": {
-    "total_claims": 62,
-    "verified": 25,
-    "flagged": 29,
-    "unverifiable": 8,
-    "overall_score": 0.6266666666666667,
+    "total_claims": 61,
+    "verified": 17,
+    "flagged": 44,
+    "unverifiable": 0,
+    "overall_score": 0.645,
     "claims": [
       {
-        "claim_text": "Sarjapur Road functions as a 20-25 km corridor extending from St. John's Hospital in Koramangala to Sarjapur town, passing through established localities like Bellandur, Doddakannelli, and Carmelaram",
-        "citation_provided": "Source: tmp4wp0unp6.txt",
-        "category": "property",
-        "confidence": 0.95,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Matches KB definition exactly. Corridor length, endpoints, and localities all confirmed in knowledge base."
-      },
-      {
-        "claim_text": "35-45 minute metro commute to Whitefield from Electronic City",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.65,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide source for commute time estimate",
-        "reasoning": "Specific commute time claim lacks citation. Plausible but unverified against KB."
-      },
-      {
-        "claim_text": "25-35 minutes by bus from Sarjapur Road to Whitefield",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.65,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide source for commute time estimate",
-        "reasoning": "Commute time claim lacks citation. Plausible but unverified."
-      },
-      {
-        "claim_text": "Metro saves 15-20 minutes daily if you work in Electronic City itself",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.6,
-        "status": "unverifiable",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide comparative analysis source",
-        "reasoning": "Comparative claim without citation. Depends on specific origin/destination points."
-      },
-      {
-        "claim_text": "Sarjapur Road to Whitefield IT corridor takes 25-35 minutes",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.65,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide source for commute time",
-        "reasoning": "Specific commute time lacks citation. Plausible but unverified."
-      },
-      {
-        "claim_text": "CBD access from Sarjapur Road requires 40-50 minutes via Old Madras Road",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.6,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide source for commute time estimate",
-        "reasoning": "Commute time claim lacks citation. Plausible but unverified."
-      },
-      {
-        "claim_text": "Upcoming metro Phase 3 proposals target the Sarjapur corridor with completion expected by 2027-2028",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.7,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide official BMRCL or government source for metro timeline",
-        "reasoning": "Metro completion date is critical claim but lacks citation. Plausible timeline but needs verification."
-      },
-      {
-        "claim_text": "Old Madras Road widening projects currently underway",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.6,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide source confirming current status of widening projects",
-        "reasoning": "Infrastructure project status claim lacks citation. Needs verification of current status."
-      },
-      {
-        "claim_text": "Sarjapur Road property prices range from \u20b910,200-11,600 per sq ft as of late 2025",
-        "citation_provided": "Source: tmpt966v948.txt",
-        "category": "property",
-        "confidence": 0.95,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Matches KB exactly. Price range confirmed for late 2025."
-      },
-      {
-        "claim_text": "Premium towers and new launches on Sarjapur Road reaching \u20b912,000-14,000 per sq ft",
-        "citation_provided": "Source: tmpt966v948.txt",
-        "category": "property",
-        "confidence": 0.95,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Matches KB exactly. Premium segment pricing confirmed."
-      },
-      {
-        "claim_text": "Sarjapur Road experienced approximately 79-80% price appreciation from \u20b96,050 per sq ft in 2021 to \u20b910,800 per sq ft by Q2 2025",
-        "citation_provided": "Source: tmpt966v948.txt",
-        "category": "property",
-        "confidence": 0.95,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Matches KB exactly. Historical appreciation data confirmed."
-      },
-      {
-        "claim_text": "2 BHK apartments on Sarjapur Road averaging \u20b965-75 lakh",
-        "citation_provided": null,
-        "category": "property",
-        "confidence": 0.7,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide source for 2 BHK pricing",
-        "reasoning": "Specific unit-type pricing lacks citation. Plausible based on per sq ft rates but needs verification."
-      },
-      {
-        "claim_text": "Electronic City 2 BHK apartments command premium pricing",
-        "citation_provided": null,
+        "claim_text": "Property values in both areas have shown steady growth over recent years, with emerging localities like Sarjapur Road often outpacing established ones like Electronic City",
+        "citation_provided": "Knight Frank India",
         "category": "property",
         "confidence": 0.75,
         "status": "flagged",
         "issue_type": "missing_citation",
-        "suggested_correction": "Provide specific Electronic City 2 BHK pricing for comparison",
-        "reasoning": "Vague comparative claim without specific numbers or citation. Needs quantification."
+        "suggested_correction": "Provide specific growth percentages and time period",
+        "reasoning": "Citation provided but claim is vague without specific growth metrics or timeframe"
       },
       {
-        "claim_text": "Sarjapur Road showed strong appreciation from Q2 2024 to Q2 2025",
-        "citation_provided": null,
-        "category": "property",
-        "confidence": 0.7,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide specific appreciation percentage and source",
-        "reasoning": "Vague claim about appreciation trend. Needs specific percentage and citation."
+        "claim_text": "Electronic City remains Bangalore's largest IT hub with major companies like Infosys, Wipro, and TCS",
+        "citation_provided": "NASSCOM",
+        "category": "infrastructure",
+        "confidence": 0.95,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Well-established fact about Electronic City being a major IT hub with these companies"
       },
       {
-        "claim_text": "Analysts projecting continued growth through 2028 due to infrastructure development",
+        "claim_text": "Sarjapur Road covers 45 sq km with 35% still under construction",
         "citation_provided": null,
         "category": "property",
         "confidence": 0.6,
         "status": "flagged",
         "issue_type": "missing_citation",
-        "suggested_correction": "Identify which analysts and provide their projections",
-        "reasoning": "Vague reference to 'analysts' without naming sources or providing specific projections."
+        "suggested_correction": "Provide source for area coverage and construction percentage",
+        "reasoning": "Specific numerical claim without citation; difficult to verify exact area and construction status"
       },
       {
-        "claim_text": "If metro delays occur, expect appreciation to slow to 8-10% annually",
+        "claim_text": "Electronic City's 100 sq km is 78% complete with few new launches",
         "citation_provided": null,
         "category": "property",
-        "confidence": 0.5,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide basis for this scenario analysis",
-        "reasoning": "Conditional projection lacks citation and analytical basis. Highly speculative."
-      },
-      {
-        "claim_text": "For a \u20b975 lakh purchase today, this projects to \u20b993-94 lakh by 2028",
-        "citation_provided": null,
-        "category": "finance",
-        "confidence": 0.75,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Clarify which growth rate assumption (5-7% or 8-10%) this calculation uses",
-        "reasoning": "Projection calculation lacks clarity on underlying assumptions. Appears to use 5-7% rate from KB but not explicitly stated."
-      },
-      {
-        "claim_text": "typical gross rental yields on Sarjapur Road are approximately 3.0-4.5%",
-        "citation_provided": "Source: tmp4wp0unp6.txt",
-        "category": "finance",
-        "confidence": 0.65,
-        "status": "flagged",
-        "issue_type": "unverifiable",
-        "suggested_correction": null,
-        "reasoning": "Citation provided but source file (tmp4wp0unp6.txt) is not a standard, verifiable reference. Yield calculation depends on rental rates and property prices; KB shows 3 BHK rentals \u20b923,900-\u20b989,000/month but property prices \u20b910,200-14,000/sq ft. Without specific property size/location, yield range cannot be independently verified."
-      },
-      {
-        "claim_text": "Bengaluru's city-wide investment-grade average of approximately 6%",
-        "citation_provided": "Source: tmp4wp0unp6.txt",
-        "category": "finance",
         "confidence": 0.55,
         "status": "flagged",
-        "issue_type": "unverifiable",
-        "suggested_correction": null,
-        "reasoning": "Generic city-wide average claim lacks specificity. Bangalore yields vary significantly by locality (2.5%-8%+). Citation is non-standard file reference. Claim is plausible but unverifiable without authoritative source."
-      },
-      {
-        "claim_text": "If you're buying to live for 5+ years and work in Whitefield, Sarjapur Road's lower prices and shorter commute make it the better choice",
-        "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.7,
-        "status": "flagged",
         "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "Subjective investment advice presented as fact. No citation provided. Commute claim is plausible (Sarjapur Road is closer to Whitefield than Electronic City) but 'better choice' is opinion-based."
+        "suggested_correction": "Provide source for area coverage and completion percentage",
+        "reasoning": "Specific numerical claim without citation; needs verification"
       },
       {
-        "claim_text": "Sarjapur Road localities offer higher green cover with major parks and lakes within close proximity",
+        "claim_text": "Sarjapur Road is 28 km from Bangalore city centre",
         "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.75,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Consistent with KB context describing Sarjapur Road as a suburban corridor. Plausible for this area of Bangalore."
-      },
-      {
-        "claim_text": "Electronic City provides an urban-centric lifestyle with numerous restaurants, shopping centres, and fitness facilities within walking distance",
-        "citation_provided": null,
-        "category": "lifestyle",
+        "category": "infrastructure",
         "confidence": 0.8,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "Well-established fact about Electronic City's urban infrastructure. Consistent with general knowledge of this IT hub."
+        "reasoning": "Plausible distance for Sarjapur Road from city center; consistent with general knowledge"
       },
       {
-        "claim_text": "Electronic City has a cosmopolitan demographic with predominantly young professionals aged 25-40, mostly IT and tech sector employees",
+        "claim_text": "Electronic City is 25 km away",
         "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.75,
+        "category": "infrastructure",
+        "confidence": 0.8,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "Plausible demographic profile for Electronic City, an established IT hub. Consistent with general knowledge."
+        "reasoning": "Plausible distance for Electronic City from city center"
       },
       {
-        "claim_text": "Electronic City has major shopping malls including Phoenix Market City and Garuda Mall",
-        "citation_provided": null,
-        "category": "lifestyle",
+        "claim_text": "Both areas face peak hour traffic with commute times ranging 45-65 minutes depending on route and timing",
+        "citation_provided": "JLL India",
+        "category": "infrastructure",
         "confidence": 0.85,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "Phoenix Market City and Garuda Mall are well-known malls in Electronic City area. Factually accurate."
+        "reasoning": "Realistic commute times for Bangalore IT corridor areas during peak hours"
       },
       {
-        "claim_text": "Sarjapur Road has operational schools (CBSE and ICSE) with international schools having fees ranging from \u20b92.5 lakh to \u20b98 lakh per annum",
+        "claim_text": "Sarjapur Road metro arrives Q4 2027, cutting commute to 35 minutes",
         "citation_provided": null,
-        "category": "lifestyle",
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for metro timeline and projected commute reduction",
+        "reasoning": "Specific date claim without citation; metro timelines are subject to delays and need verification"
+      },
+      {
+        "claim_text": "Sarjapur Road's metro will add \u20b910-15 lakh to property value post-2027",
+        "citation_provided": null,
+        "category": "property",
         "confidence": 0.65,
         "status": "flagged",
-        "issue_type": "unverifiable",
-        "suggested_correction": null,
-        "reasoning": "School fee ranges are plausible for Bangalore international schools but specific claim lacks citation. Fee ranges can vary significantly by institution and change annually."
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source or methodology for value addition estimate",
+        "reasoning": "Speculative claim about future property appreciation without citation"
       },
       {
-        "claim_text": "Sarjapur residents benefit from shared access to retail, mall, and F&B ecosystem with HSR, Koramangala, and Bellandur",
-        "citation_provided": "Source: tmp4wp0unp6.txt",
-        "category": "lifestyle",
+        "claim_text": "Electronic City has no metro plans",
+        "citation_provided": null,
+        "category": "infrastructure",
         "confidence": 0.75,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Geographically accurate. Bellandur is explicitly mentioned in KB as part of Sarjapur Road corridor. HSR and Koramangala are nearby localities with retail/F&B options."
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current metro expansion plans for Electronic City",
+        "reasoning": "Claim about absence of plans needs verification; metro plans may have changed"
       },
       {
-        "claim_text": "Electronic City provides unmatched proximity to IT companies with major tech parks within walking distance",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.85,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Well-established fact about Electronic City. It is a primary IT hub with multiple tech parks in close proximity."
-      },
-      {
-        "claim_text": "Sarjapur Road offers access to multiple IT corridors including Whitefield, Electronic City, and Marathahalli within a 15-25 km radius",
+        "claim_text": "Electronic City's Silk Board metro (2.5 km away) is your only option",
         "citation_provided": null,
         "category": "infrastructure",
         "confidence": 0.7,
         "status": "flagged",
-        "issue_type": "inconsistent",
-        "suggested_correction": "Distance estimates should be more specific or qualified as approximate",
-        "reasoning": "Distances are approximate and vary by specific location on Sarjapur Road. KB defines Sarjapur Road as 20-25 km corridor itself. Claim is directionally correct but lacks precision."
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify distance and confirm no other metro stations serve Electronic City",
+        "reasoning": "Distance claim needs verification; may be inaccurate"
       },
       {
-        "claim_text": "upcoming metro connectivity will significantly improve access to diverse employment opportunities",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.7,
-        "status": "flagged",
-        "issue_type": "outdated",
-        "suggested_correction": "Specify which metro line and expected completion date",
-        "reasoning": "Metro connectivity is mentioned as 'upcoming' but no specific timeline provided. KB mentions metro execution as factor through 2026-27 but article doesn't specify which line or phase."
-      },
-      {
-        "claim_text": "Electronic City's established metro connectivity provides reliable transportation options for IT professionals",
-        "citation_provided": null,
+        "claim_text": "Sarjapur Road connects directly to Outer Ring Road and planned Peripheral Ring Road",
+        "citation_provided": "BBMP Infrastructure Report",
         "category": "infrastructure",
         "confidence": 0.8,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "Electronic City has established metro connectivity (Purple Line). Factually accurate."
+        "reasoning": "Plausible connectivity for Sarjapur Road; consistent with Bangalore infrastructure knowledge"
       },
       {
-        "claim_text": "The dedicated transport infrastructure reduces dependency on private vehicles and offers predictable commute times",
+        "claim_text": "Electronic City relies primarily on Old Madras Road and Hosur Road for connectivity",
+        "citation_provided": "BBMP Infrastructure Report",
+        "category": "infrastructure",
+        "confidence": 0.85,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Accurate description of Electronic City's primary road connectivity"
+      },
+      {
+        "claim_text": "Both areas are 50-60 minutes from Bangalore International Airport",
         "citation_provided": null,
         "category": "infrastructure",
         "confidence": 0.75,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "General statement about metro benefits. Plausible and consistent with metro infrastructure benefits."
+        "reasoning": "Plausible travel time from both areas to airport during normal traffic"
       },
       {
-        "claim_text": "Sarjapur Road yields vary by micro-location: premium towers near metro stations (Bellandur, Doddakannelli) yield higher returns",
-        "citation_provided": null,
-        "category": "finance",
-        "confidence": 0.75,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Bellandur and Doddakannelli are confirmed in KB as part of Sarjapur Road corridor. Micro-location yield variation is plausible real estate principle."
-      },
-      {
-        "claim_text": "Family-oriented communities dominate the residential landscape along this corridor",
-        "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.7,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Consistent with description of Sarjapur Road as suburban area with schools and family amenities. Plausible demographic claim."
-      },
-      {
-        "claim_text": "Electronic City excels in commercial amenities with major shopping malls including Phoenix Market City and Garuda Mall, offering extensive retail options",
-        "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.85,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Factually accurate about Electronic City's retail infrastructure."
-      },
-      {
-        "claim_text": "Sarjapur Road demonstrates superior social infrastructure development with comprehensive educational and healthcare facilities",
-        "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.7,
-        "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": "Provide specific examples or data comparing infrastructure metrics",
-        "reasoning": "Comparative claim ('superior') lacks supporting data or citations. While plausible, 'superior' is subjective without quantitative comparison."
-      },
-      {
-        "claim_text": "Sarjapur Road currently requires private transport or bus connectivity for most IT professionals",
-        "citation_provided": null,
+        "claim_text": "Only minor road improvements remain active as of 2024",
+        "citation_provided": "RERA Karnataka",
         "category": "infrastructure",
         "confidence": 0.7,
         "status": "flagged",
         "issue_type": "outdated",
-        "suggested_correction": "As of late 2025, metro connectivity is under development; current status should be clarified",
-        "reasoning": "Claim is partially true but outdated. KB indicates metro expected by 2025-2026, making this statement potentially stale depending on current date"
+        "suggested_correction": "Update status to current year (2025)",
+        "reasoning": "Reference to 2024 data may be outdated; needs current verification"
       },
       {
-        "claim_text": "Electronic City offers proximity to major IT companies with superior connectivity",
+        "claim_text": "Sarjapur Road benefits from recent pipeline expansions",
+        "citation_provided": "BWSSB",
+        "category": "infrastructure",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide specific dates and details of pipeline expansions",
+        "reasoning": "Vague claim about 'recent' expansions without specific timeline"
+      },
+      {
+        "claim_text": "Electronic City has established water infrastructure since the early 2000s",
+        "citation_provided": "BWSSB",
+        "category": "infrastructure",
+        "confidence": 0.8,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Plausible timeline for Electronic City's water infrastructure development"
+      },
+      {
+        "claim_text": "Sarjapur Road has multiple new commercial complexes and residential projects under construction",
+        "citation_provided": "Anarock Research",
+        "category": "property",
+        "confidence": 0.8,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with known development activity in Sarjapur Road"
+      },
+      {
+        "claim_text": "Electronic City has limited active residential projects with minimal commercial expansion",
+        "citation_provided": "Anarock Research",
+        "category": "property",
+        "confidence": 0.8,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Consistent with Electronic City's mature market status"
+      },
+      {
+        "claim_text": "Average property prices in Sarjapur Road range from Rs 45 lakh to Rs 1.2 crore for 2-3 BHK flats",
+        "citation_provided": "Knight Frank",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current prices; real estate prices change frequently",
+        "reasoning": "Property prices fluctuate; no date provided for when these prices were current"
+      },
+      {
+        "claim_text": "Electronic City prices range from Rs 55 lakh to Rs 1.5 crore for comparable properties",
+        "citation_provided": "Knight Frank",
+        "category": "property",
+        "confidence": 0.75,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current prices; real estate prices change frequently",
+        "reasoning": "Property prices fluctuate; no date provided for when these prices were current"
+      },
+      {
+        "claim_text": "This 15-20% price difference makes Sarjapur Road more accessible for first-time buyers",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.8,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Mathematical conclusion from stated price ranges is reasonable"
+      },
+      {
+        "claim_text": "Sarjapur Road offers 15-20% better value per sq ft (Rs 6,500-8,500) compared to Electronic City (Rs 7,800-9,200)",
+        "citation_provided": "JLL India",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current per sq ft rates; prices change frequently",
+        "reasoning": "Specific price per sq ft claims need current verification"
+      },
+      {
+        "claim_text": "Entry-level 1 BHK flats in Sarjapur Road start at Rs 35-40 lakh",
+        "citation_provided": "Anarock Research",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current entry-level prices",
+        "reasoning": "Property prices change frequently; no date provided"
+      },
+      {
+        "claim_text": "Electronic City's entry-level properties begin at Rs 48-55 lakh",
+        "citation_provided": "Anarock Research",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current entry-level prices",
+        "reasoning": "Property prices change frequently; no date provided"
+      },
+      {
+        "claim_text": "Sarjapur Road 2 BHK flats: Rs 65-85 lakh; Electronic City 2 BHK flats: Rs 80-1.1 crore. Price differential of approximately 18-22%",
+        "citation_provided": "RERA Karnataka",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current 2 BHK prices and recalculate differential",
+        "reasoning": "Property prices change frequently; no date provided for these figures"
+      },
+      {
+        "claim_text": "For a typical 2 BHK purchase, you could save Rs 15-25 lakh by choosing Sarjapur Road",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Recalculate based on current market prices",
+        "reasoning": "Conclusion based on potentially outdated price data"
+      },
+      {
+        "claim_text": "Sarjapur Road 3 BHK flats: Rs 1-1.3 crore; Electronic City 3 BHK flats: Rs 1.25-1.6 crore. Electronic City commands a 20-25% premium",
+        "citation_provided": "Knight Frank",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current 3 BHK prices and recalculate premium",
+        "reasoning": "Property prices change frequently; no date provided"
+      },
+      {
+        "claim_text": "Commercial space in Sarjapur Road is priced at Rs 8,000-10,500 per sq ft. Electronic City commercial space ranges from Rs 11,000-14,000 per sq ft",
+        "citation_provided": "JLL India",
+        "category": "property",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current commercial space pricing",
+        "reasoning": "Commercial real estate prices change frequently; no date provided"
+      },
+      {
+        "claim_text": "Rental yields in Sarjapur Road average 3.8-4.2% annually",
+        "citation_provided": null,
+        "category": "rental",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for rental yield data",
+        "reasoning": "Specific percentage claim lacks citation. Plausible range for Bangalore but needs verification"
+      },
+      {
+        "claim_text": "Infosys Electronic City campus alone employs over 25,000 professionals",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.72,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify current employment numbers with Infosys official data",
+        "reasoning": "Specific employment figure lacks citation. While Infosys EC is major, exact headcount varies and should be sourced from official company reports."
+      },
+      {
+        "claim_text": "Electronic City's dedicated Volvo bus services and metro connectivity provide reliable public transport",
         "citation_provided": null,
         "category": "infrastructure",
         "confidence": 0.85,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "Consistent with general knowledge of Electronic City as established IT hub with mature infrastructure"
+        "reasoning": "Electronic City has established Volvo services and metro connectivity (Purple Line). This is well-documented."
+      },
+      {
+        "claim_text": "Sarjapur Road offers 15-20% cost advantage",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.68,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for cost comparison data",
+        "reasoning": "Percentage advantage stated without citation. Later claims suggest 20-30% advantage, creating internal inconsistency."
+      },
+      {
+        "claim_text": "Sarjapur Road 1 BHK options Rs 35-40 lakh versus Electronic City's Rs 48-55 lakh minimum",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite source for price ranges; verify current market rates",
+        "reasoning": "Specific price ranges lack citation and may be outdated. Real estate prices fluctuate significantly."
+      },
+      {
+        "claim_text": "Electronic City has 15 operational malls",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify exact count of operational malls",
+        "reasoning": "Specific number lacks citation and is difficult to verify without current mall directory."
+      },
+      {
+        "claim_text": "Electronic City has 35 restaurants",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Clarify if this is total or major restaurants; provide source",
+        "reasoning": "Vague claim without citation. Electronic City likely has more than 35 restaurants; number seems understated."
+      },
+      {
+        "claim_text": "Electronic City has 18 hospitals",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify hospital count with healthcare directory",
+        "reasoning": "Specific number lacks source. Later FAQ claims 15+ hospitals, creating inconsistency."
+      },
+      {
+        "claim_text": "Electronic City has 3 golf courses",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Electronic City is known to have multiple golf courses. This figure is plausible."
       },
       {
         "claim_text": "Electronic City properties cost \u20b96,000-10,000/sq ft",
         "citation_provided": null,
         "category": "property",
-        "confidence": 0.6,
+        "confidence": 0.7,
         "status": "flagged",
-        "issue_type": "outdated",
-        "suggested_correction": "No current KB data for Electronic City prices; Sarjapur KB shows \u20b910,200-14,000/sq ft as of late 2025, suggesting Electronic City may be higher",
-        "reasoning": "No KB citation for Electronic City pricing. Given Sarjapur appreciation to \u20b910,800+ by Q2 2025, these prices may be outdated"
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite source and date for price per sq ft data",
+        "reasoning": "Price range lacks citation and may be outdated. Real estate prices change frequently."
       },
       {
         "claim_text": "Sarjapur Road ranges \u20b94,500-8,000/sq ft",
         "citation_provided": null,
         "category": "property",
-        "confidence": 0.2,
+        "confidence": 0.7,
         "status": "flagged",
-        "issue_type": "incorrect_number",
-        "suggested_correction": "KB shows Sarjapur Road at \u20b910,200-11,600/sq ft (late 2025), with premium at \u20b912,000-14,000/sq ft",
-        "reasoning": "Directly contradicts KB data. The \u20b94,500-8,000 range appears to be historical 2021-2023 pricing, not current"
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite source and date for price per sq ft data",
+        "reasoning": "Price range lacks citation and may be outdated."
       },
       {
-        "claim_text": "Sarjapur Road offers 20-30% cost advantage with similar amenities",
+        "claim_text": "Sarjapur Road offers 20-30% cost advantage",
         "citation_provided": null,
         "category": "property",
-        "confidence": 0.3,
-        "status": "flagged",
-        "issue_type": "incorrect_number",
-        "suggested_correction": "Based on current KB pricing, Sarjapur is now comparable or higher than stated Electronic City range",
-        "reasoning": "Inconsistent with KB data showing Sarjapur at \u20b910,200-14,000/sq ft vs claimed \u20b94,500-8,000"
-      },
-      {
-        "claim_text": "2BHK flats cost \u20b980 lakh-1.5 crore in Sarjapur Road",
-        "citation_provided": null,
-        "category": "property",
-        "confidence": 0.4,
+        "confidence": 0.68,
         "status": "flagged",
         "issue_type": "inconsistent",
-        "suggested_correction": "At \u20b910,200-14,000/sq ft, a 1000 sq ft 2BHK would cost \u20b91.02-1.4 crore, not \u20b980 lakh-1.5 crore",
-        "reasoning": "Inconsistent with per-sq-ft pricing claims in same passage and KB data"
+        "suggested_correction": "Clarify if advantage is 15-20% or 20-30%",
+        "reasoning": "Earlier claim stated 15-20% advantage; this states 20-30%. Internal inconsistency."
       },
       {
-        "claim_text": "2BHK flats cost \u20b91.2-2 crore in Electronic City",
+        "claim_text": "2BHK flats cost \u20b980 lakh-1.5 crore in Sarjapur vs \u20b91.2-2 crore in Electronic City",
         "citation_provided": null,
         "category": "property",
-        "confidence": 0.5,
-        "status": "unverifiable",
+        "confidence": 0.65,
+        "status": "flagged",
         "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "No KB data for Electronic City absolute prices; cannot verify against knowledge base"
+        "suggested_correction": "Cite source for 2BHK price ranges",
+        "reasoning": "Specific price ranges lack citation and may be outdated."
       },
       {
         "claim_text": "Sarjapur Road will get metro by 2025-2026",
         "citation_provided": null,
         "category": "infrastructure",
-        "confidence": 0.75,
-        "status": "flagged",
-        "issue_type": "outdated",
-        "suggested_correction": "KB references 2025-2026 timeline; current date context needed to assess if this is still accurate",
-        "reasoning": "Timeline mentioned in KB but article chunk date unknown; may be outdated if written after 2026"
-      },
-      {
-        "claim_text": "Diverse employment options within 15 km radius on Sarjapur Road",
-        "citation_provided": null,
-        "category": "infrastructure",
-        "confidence": 0.7,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Plausible given Sarjapur Road's 20-25 km corridor definition and proximity to multiple IT hubs"
-      },
-      {
-        "claim_text": "Electronic City rentals are 15-25% higher than Sarjapur Road",
-        "citation_provided": null,
-        "category": "rental",
         "confidence": 0.6,
         "status": "flagged",
-        "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "No Electronic City rental data in KB; only Sarjapur 3BHK range \u20b923,900-89,000 provided"
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current metro timeline with BMRCL official sources",
+        "reasoning": "Metro timeline claims are frequently delayed. This specific date needs verification from official BMRCL announcements."
       },
       {
-        "claim_text": "2BHK rentals cost \u20b918,000-32,000 in Electronic City",
-        "citation_provided": null,
-        "category": "rental",
-        "confidence": 0.4,
-        "status": "unverifiable",
-        "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "No KB data for Electronic City rentals; cannot verify"
-      },
-      {
-        "claim_text": "2BHK rentals cost \u20b915,000-28,000 on Sarjapur Road",
-        "citation_provided": null,
-        "category": "rental",
-        "confidence": 0.5,
-        "status": "flagged",
-        "issue_type": "inconsistent",
-        "suggested_correction": "KB shows 3BHK range \u20b923,900-89,000; 2BHK would typically be lower but exact range not provided",
-        "reasoning": "KB provides 3BHK data (\u20b923,900-89,000) but not 2BHK; claimed 2BHK range seems plausible but unverified"
-      },
-      {
-        "claim_text": "3BHK rentals range \u20b930,000-50,000 in Electronic City",
-        "citation_provided": null,
-        "category": "rental",
-        "confidence": 0.4,
-        "status": "unverifiable",
-        "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "No Electronic City rental data in KB"
-      },
-      {
-        "claim_text": "3BHK rentals range \u20b925,000-45,000 on Sarjapur Road",
-        "citation_provided": null,
-        "category": "rental",
-        "confidence": 0.5,
-        "status": "flagged",
-        "issue_type": "inconsistent",
-        "suggested_correction": "KB shows 3BHK range \u20b923,900-89,000, which is wider than claimed \u20b925,000-45,000",
-        "reasoning": "Claimed range is narrower than KB data; may be selective subset but not fully representative"
-      },
-      {
-        "claim_text": "Sarjapur Road has 50+ schools",
-        "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.5,
-        "status": "unverifiable",
-        "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "No KB data on school counts; plausible for 20-25 km corridor but unverified"
-      },
-      {
-        "claim_text": "Electronic City has 30+ schools",
-        "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.5,
-        "status": "unverifiable",
-        "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "No KB data; unverifiable"
-      },
-      {
-        "claim_text": "Sarjapur Road has 20+ hospitals",
-        "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.5,
-        "status": "unverifiable",
-        "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "No KB data on hospital counts; plausible but unverified"
-      },
-      {
-        "claim_text": "Electronic City has 15+ hospitals",
-        "citation_provided": null,
-        "category": "lifestyle",
-        "confidence": 0.5,
-        "status": "unverifiable",
-        "issue_type": "missing_citation",
-        "suggested_correction": null,
-        "reasoning": "No KB data; unverifiable"
-      },
-      {
-        "claim_text": "Both areas offer 8-12% annual appreciation",
-        "citation_provided": null,
-        "category": "finance",
-        "confidence": 0.4,
-        "status": "flagged",
-        "issue_type": "inconsistent",
-        "suggested_correction": "KB shows Sarjapur 5-7% per annum through 2026-27; 8-12% claim exceeds KB projection",
-        "reasoning": "Contradicts KB data showing Sarjapur at 5-7% annual appreciation through 2026-27"
-      },
-      {
-        "claim_text": "Sarjapur Road has higher growth potential due to upcoming metro and infrastructure development",
-        "citation_provided": null,
-        "category": "finance",
-        "confidence": 0.8,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Consistent with KB references to metro execution and ORR-Airport line completion as growth drivers"
-      },
-      {
-        "claim_text": "Electronic City's growth potential remains steady but may be more limited due to mature development",
-        "citation_provided": null,
-        "category": "finance",
-        "confidence": 0.75,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Plausible assessment of mature market dynamics; consistent with general real estate principles"
-      },
-      {
-        "claim_text": "Sarjapur Road's growth trajectory appears more promising over the next 3-5 years",
-        "citation_provided": null,
-        "category": "finance",
-        "confidence": 0.7,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Consistent with KB data on infrastructure development and appreciation potential through 2026-27"
-      },
-      {
-        "claim_text": "Electronic City offers stable rental yields with established tenant demand",
-        "citation_provided": null,
-        "category": "finance",
-        "confidence": 0.75,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Plausible for established IT hub; consistent with general knowledge"
-      },
-      {
-        "claim_text": "Sarjapur Road offers higher capital appreciation potential with strong growth rates",
-        "citation_provided": null,
-        "category": "finance",
-        "confidence": 0.7,
-        "status": "verified",
-        "issue_type": null,
-        "suggested_correction": null,
-        "reasoning": "Supported by KB data showing 79-80% appreciation 2021-Q2 2025"
-      },
-      {
-        "claim_text": "Both areas face traffic congestion during peak hours",
+        "claim_text": "Electronic City has established connectivity with dedicated Volvo services and metro connectivity",
         "citation_provided": null,
         "category": "infrastructure",
         "confidence": 0.85,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "Consistent with general knowledge of Bangalore IT corridors"
+        "reasoning": "Well-documented fact about Electronic City's transport infrastructure."
       },
       {
-        "claim_text": "Sarjapur Road experienced approximately 79\u201380% price appreciation from \u20b96,050 per sq ft in 2021 to \u20b910,800 per sq ft by Q2 2025",
-        "citation_provided": "Knowledge Base",
-        "category": "property",
-        "confidence": 0.95,
+        "claim_text": "Both areas face traffic congestion during peak hours",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.9,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "Directly matches KB data"
+        "reasoning": "General knowledge about Bangalore traffic patterns; plausible for both areas."
       },
       {
-        "claim_text": "Average property prices on Sarjapur Road are in the \u20b910,200\u201311,600 per sq ft range as of late 2025",
-        "citation_provided": "Knowledge Base",
-        "category": "property",
-        "confidence": 0.95,
+        "claim_text": "Electronic City rentals are 15-25% higher",
+        "citation_provided": null,
+        "category": "rental",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite source for rental comparison data",
+        "reasoning": "Percentage difference lacks citation."
+      },
+      {
+        "claim_text": "2BHK costs \u20b918,000-32,000 in Electronic City vs \u20b915,000-28,000 on Sarjapur Road",
+        "citation_provided": null,
+        "category": "rental",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite source for rental rates",
+        "reasoning": "Specific rental figures lack citation and may be outdated."
+      },
+      {
+        "claim_text": "3BHK ranges \u20b930,000-50,000 in Electronic City vs \u20b925,000-45,000 on Sarjapur Road",
+        "citation_provided": null,
+        "category": "rental",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Cite source for rental rates",
+        "reasoning": "Specific rental figures lack citation and may be outdated."
+      },
+      {
+        "claim_text": "Sarjapur Road has 50+ schools",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify school count with education directory",
+        "reasoning": "Specific number lacks citation and is difficult to verify."
+      },
+      {
+        "claim_text": "Electronic City has 30+ schools",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Verify school count with education directory",
+        "reasoning": "Specific number lacks citation and is difficult to verify."
+      },
+      {
+        "claim_text": "Sarjapur Road has 20+ hospitals",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "inconsistent",
+        "suggested_correction": "Clarify hospital count; earlier claim stated 18 for Electronic City",
+        "reasoning": "Contradicts earlier claim that Electronic City has 18 hospitals. Sarjapur having 20+ seems inconsistent."
+      },
+      {
+        "claim_text": "Electronic City has 15+ hospitals",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.6,
+        "status": "flagged",
+        "issue_type": "inconsistent",
+        "suggested_correction": "Clarify if 15 or 18 hospitals",
+        "reasoning": "Earlier claim stated 18 hospitals; this states 15+. Internal inconsistency."
+      },
+      {
+        "claim_text": "Sarjapur Road has better entertainment options",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide specific examples of entertainment options",
+        "reasoning": "Vague claim without specific examples or citations. Contradicts earlier claim that Electronic City has 15 malls and 35 restaurants."
+      },
+      {
+        "claim_text": "Electronic City focuses more on IT infrastructure while Sarjapur offers balanced residential amenities",
+        "citation_provided": null,
+        "category": "lifestyle",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide evidence for this characterization",
+        "reasoning": "Subjective claim presented as fact without supporting data."
+      },
+      {
+        "claim_text": "Sarjapur Road provides access to multiple IT corridors including Outer Ring Road companies, Whitefield tech parks, and emerging Sarjapur-based offices",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.8,
         "status": "verified",
         "issue_type": null,
         "suggested_correction": null,
-        "reasoning": "Directly matches KB data"
+        "reasoning": "Sarjapur Road's proximity to multiple IT hubs is well-documented."
+      },
+      {
+        "claim_text": "Sarjapur Road's upcoming metro connectivity will transform commute options",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.7,
+        "status": "flagged",
+        "issue_type": "outdated",
+        "suggested_correction": "Verify current metro project status and timeline",
+        "reasoning": "Metro project status and timeline need verification from official sources."
+      },
+      {
+        "claim_text": "Both areas offer 8-12% annual appreciation",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.45,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide source for appreciation rate claim with specific time period",
+        "reasoning": "No citation provided for specific appreciation percentage. Real estate appreciation varies by year and market conditions. This is a precise financial claim requiring source documentation."
+      },
+      {
+        "claim_text": "Electronic City is mature with steady growth",
+        "citation_provided": null,
+        "category": "property",
+        "confidence": 0.75,
+        "status": "verified",
+        "issue_type": null,
+        "suggested_correction": null,
+        "reasoning": "Electronic City is an established IT hub in Bangalore with mature infrastructure. This characterization is generally accurate based on market knowledge."
+      },
+      {
+        "claim_text": "Sarjapur Road has higher growth potential due to upcoming metro and infrastructure development",
+        "citation_provided": null,
+        "category": "infrastructure",
+        "confidence": 0.65,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Specify which metro line, expected completion date, and infrastructure projects with timelines",
+        "reasoning": "Claim references 'upcoming metro' but lacks specifics on project name, timeline, or current status. Needs verification of actual metro plans for Sarjapur Road area."
+      },
+      {
+        "claim_text": "Sarjapur offers better entry prices for long-term investment",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.5,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Provide current price comparison data with specific property types and dates",
+        "reasoning": "No citation or price data provided. This is a comparative financial claim that requires current market data to verify."
+      },
+      {
+        "claim_text": "Sarjapur Road has higher growth potential",
+        "citation_provided": null,
+        "category": "finance",
+        "confidence": 0.55,
+        "status": "flagged",
+        "issue_type": "missing_citation",
+        "suggested_correction": "Support with historical growth data, developer activity, or market analysis",
+        "reasoning": "Comparative claim without supporting data. Contradicts earlier statement that both areas offer same 8-12% appreciation."
       }
     ]
   },

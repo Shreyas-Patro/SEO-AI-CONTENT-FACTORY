@@ -1,0 +1,759 @@
+{
+  "cluster_id": "cl-1542aa73-079",
+  "cluster_plan": {
+    "cluster_id": "indiranagar-bangalore-guide",
+    "cluster_name": "Complete Guide to Indiranagar Bangalore",
+    "total_articles": 11,
+    "articles": [
+      {
+        "id": "indiranagar-complete-guide",
+        "title": "Complete Guide to Indiranagar Bangalore: Living, Dining, Shopping & Real Estate",
+        "slug": "indiranagar-bangalore-complete-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "Indiranagar Bangalore guide",
+          "secondary": [
+            "What is Indiranagar Bangalore famous for",
+            "Living in Indiranagar Bangalore",
+            "Is Indiranagar the heart of Bangalore"
+          ]
+        },
+        "word_count_target": 3000,
+        "outline": [
+          "H2: What Makes Indiranagar Bangalore's Most Coveted Neighborhood?",
+          "  H3: Historical Background and Development",
+          "  H3: Why Indiranagar is Called the Heart of Bangalore",
+          "H2: Is Indiranagar a Posh Area? Understanding the Reputation",
+          "  H3: Demographics and Resident Profile",
+          "  H3: Infrastructure and Urban Planning",
+          "H2: Living in Indiranagar: Complete Lifestyle Overview",
+          "  H3: Residential Options and Housing Types",
+          "  H3: Cost of Living Breakdown",
+          "H2: What is Indiranagar Famous For? Key Attractions",
+          "  H3: Dining and Nightlife Scene",
+          "  H3: Shopping and Entertainment Hubs",
+          "H2: Real Estate Market in Indiranagar",
+          "  H3: Property Prices and Investment Potential",
+          "  H3: Rental Market Trends",
+          "H2: Essential Services and Connectivity",
+          "  H3: Transportation and Metro Access",
+          "  H3: Healthcare and Education Facilities",
+          "H2: Indiranagar vs Other Bangalore Neighborhoods",
+          "  H3: Comparison with Koramangala",
+          "  H3: Unique Advantages of Choosing Indiranagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-rent-prices-guide",
+            "anchor_text": "detailed rental cost breakdown",
+            "context": "In the cost of living section when discussing housing expenses"
+          },
+          {
+            "target_slug": "indiranagar-property-prices",
+            "anchor_text": "current property rates in Indiranagar",
+            "context": "In the real estate market section"
+          },
+          {
+            "target_slug": "best-restaurants-indiranagar",
+            "anchor_text": "top dining destinations in Indiranagar",
+            "context": "When discussing the dining scene"
+          },
+          {
+            "target_slug": "indiranagar-shopping-guide",
+            "anchor_text": "complete shopping guide for Indiranagar",
+            "context": "In the shopping and entertainment section"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "resident experiences and reviews",
+            "context": "In the lifestyle overview section"
+          },
+          {
+            "target_slug": "indiranagar-amenities-services",
+            "anchor_text": "essential services and facilities",
+            "context": "When discussing infrastructure and amenities"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "This is the main pillar content that should comprehensively cover all aspects of Indiranagar. Include local insights and current market data.",
+        "db_id": "art-3809f435-77a"
+      },
+      {
+        "id": "indiranagar-rent-prices",
+        "title": "Indiranagar Rent Prices: Complete Cost Guide for 1BHK, 2BHK & 3BHK Apartments",
+        "slug": "indiranagar-rent-prices-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "Indiranagar rent",
+          "secondary": [
+            "2BHK rent Indiranagar",
+            "Cost of living in Indiranagar Bangalore",
+            "Is Indiranagar expensive"
+          ]
+        },
+        "word_count_target": 2500,
+        "outline": [
+          "H2: Current Rental Market Overview in Indiranagar",
+          "  H3: Market Trends and Demand Patterns",
+          "  H3: Factors Affecting Rental Prices",
+          "H2: How Much Does it Cost to Rent in Indiranagar?",
+          "  H3: 1BHK Apartment Rental Rates",
+          "  H3: 2BHK Apartment Rental Costs",
+          "  H3: 3BHK and Larger Apartments",
+          "H2: PG and Shared Accommodation Options",
+          "  H3: Cost of PG in Indiranagar Bangalore",
+          "  H3: Co-living Spaces and Shared Apartments",
+          "H2: Area-wise Rental Price Breakdown",
+          "  H3: 100 Feet Road and CMH Road Properties",
+          "  H3: Inner Indiranagar vs Main Road Properties",
+          "H2: Additional Costs and Hidden Expenses",
+          "  H3: Security Deposits and Brokerage",
+          "  H3: Maintenance and Utility Costs",
+          "H2: Is Indiranagar Expensive? Cost Comparison",
+          "  H3: Comparison with Other Bangalore Areas",
+          "  H3: Value for Money Analysis",
+          "H2: Tips for Finding Affordable Rentals in Indiranagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "comprehensive Indiranagar neighborhood guide",
+            "context": "In the introduction when providing context about the area"
+          },
+          {
+            "target_slug": "indiranagar-property-prices",
+            "anchor_text": "property purchase prices in Indiranagar",
+            "context": "When comparing rental vs buying costs"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "what it's like living in Indiranagar",
+            "context": "When discussing value for money"
+          },
+          {
+            "target_slug": "indiranagar-amenities-services",
+            "anchor_text": "nearby amenities and services",
+            "context": "When explaining factors affecting rental prices"
+          },
+          {
+            "target_slug": "indiranagar-vs-koramangala",
+            "anchor_text": "detailed comparison with Koramangala",
+            "context": "In the cost comparison section"
+          }
+        ],
+        "faq_count": 10,
+        "notes": "Focus on current market rates with specific price ranges. Include seasonal variations and negotiation tips.",
+        "db_id": "art-cefdd939-bd9"
+      },
+      {
+        "id": "indiranagar-property-prices",
+        "title": "Indiranagar Property Prices: Flats for Sale, Per Sq Ft Rates & Investment Guide",
+        "slug": "indiranagar-property-prices",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Indiranagar flat for sale",
+          "secondary": [
+            "Indiranagar property price",
+            "Indiranagar property rate per sq ft",
+            "Cost of 3BHK in Indiranagar Bangalore"
+          ]
+        },
+        "word_count_target": 2000,
+        "outline": [
+          "H2: Current Property Market in Indiranagar",
+          "  H3: Market Overview and Growth Trends",
+          "  H3: Types of Properties Available",
+          "H2: What are the Property Rates per Sq Ft in Indiranagar?",
+          "  H3: Apartment Complexes vs Independent Houses",
+          "  H3: New vs Resale Property Prices",
+          "H2: Flat Prices by Configuration",
+          "  H3: 2BHK Apartment Costs",
+          "  H3: Cost of 3BHK in Indiranagar Bangalore",
+          "  H3: Luxury and Premium Segment Properties",
+          "H2: Area-wise Property Price Analysis",
+          "  H3: 100 Feet Road Properties",
+          "  H3: CMH Road and Surrounding Areas",
+          "H2: Investment Potential and ROI Analysis",
+          "  H3: Capital Appreciation Trends",
+          "  H3: Rental Yield Expectations",
+          "H2: New Projects and Upcoming Developments",
+          "H2: Tips for Property Buyers in Indiranagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "complete guide to Indiranagar",
+            "context": "In the introduction for area context"
+          },
+          {
+            "target_slug": "indiranagar-rent-prices-guide",
+            "anchor_text": "rental rates in Indiranagar",
+            "context": "When discussing rental yield calculations"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "living experience in Indiranagar",
+            "context": "When explaining investment attractiveness"
+          },
+          {
+            "target_slug": "indiranagar-amenities-services",
+            "anchor_text": "infrastructure and amenities",
+            "context": "When discussing factors affecting property values"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "Include current market data, price trends, and investment analysis. Focus on buyer's perspective.",
+        "db_id": "art-116c90ff-78a"
+      },
+      {
+        "id": "living-in-indiranagar-experience",
+        "title": "Living in Indiranagar Bangalore: Resident Reviews, Safety & Family-Friendly Guide",
+        "slug": "living-in-indiranagar-experience",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Living in Indiranagar Bangalore",
+          "secondary": [
+            "Is Indiranagar family friendly",
+            "Living in indiranagar bangalore for females",
+            "Is Indira Nagar a good place to live"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: What's it Really Like Living in Indiranagar?",
+          "  H3: Daily Life and Community Feel",
+          "  H3: Resident Demographics and Culture",
+          "H2: Is Indiranagar Family Friendly?",
+          "  H3: Schools and Educational Facilities",
+          "  H3: Parks and Recreation Areas",
+          "  H3: Child-Friendly Amenities",
+          "H2: Safety and Security in Indiranagar",
+          "  H3: Living in Indiranagar Bangalore for Females",
+          "  H3: Crime Rates and Police Presence",
+          "  H3: Well-lit Streets and Safe Areas",
+          "H2: Transportation and Commute Experience",
+          "  H3: Metro Connectivity and Public Transport",
+          "  H3: Traffic Conditions and Peak Hours",
+          "H2: Lifestyle and Social Scene",
+          "  H3: Community Events and Social Life",
+          "  H3: Work-Life Balance for Residents",
+          "H2: Challenges of Living in Indiranagar",
+          "  H3: Noise Levels and Crowd Management",
+          "  H3: Parking and Space Constraints",
+          "H2: Resident Reviews and Testimonials"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "comprehensive Indiranagar guide",
+            "context": "In the introduction for overall area context"
+          },
+          {
+            "target_slug": "indiranagar-amenities-services",
+            "anchor_text": "schools and hospitals in Indiranagar",
+            "context": "When discussing family-friendly aspects"
+          },
+          {
+            "target_slug": "best-restaurants-indiranagar",
+            "anchor_text": "dining options in the area",
+            "context": "When discussing lifestyle and social scene"
+          },
+          {
+            "target_slug": "indiranagar-vs-koramangala",
+            "anchor_text": "comparison with other Bangalore areas",
+            "context": "When providing perspective on living experience"
+          }
+        ],
+        "faq_count": 7,
+        "notes": "Include real resident testimonials and focus on practical living aspects. Address safety concerns specifically for women.",
+        "db_id": "art-2ae9140d-df0"
+      },
+      {
+        "id": "best-restaurants-indiranagar",
+        "title": "Best Restaurants in Indiranagar: Top Cafes, Pubs & Dining Destinations",
+        "slug": "best-restaurants-indiranagar",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Best restaurants Indiranagar",
+          "secondary": [
+            "Indiranagar restaurants",
+            "Indiranagar cafes",
+            "Indiranagar pubs"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: Why is Indiranagar Famous for its Food Scene?",
+          "  H3: Culinary Diversity and Restaurant Culture",
+          "  H3: Historic Food Establishments",
+          "H2: Top Fine Dining Restaurants in Indiranagar",
+          "  H3: Multi-cuisine Restaurants",
+          "  H3: Specialty and Ethnic Cuisine",
+          "H2: Best Cafes and Coffee Shops",
+          "  H3: Artisan Coffee Houses",
+          "  H3: Breakfast and Brunch Spots",
+          "H2: Popular Pubs and Nightlife Venues",
+          "  H3: Craft Beer and Cocktail Bars",
+          "  H3: Live Music and Entertainment Venues",
+          "H2: Street Food and Budget-Friendly Options",
+          "  H3: Local Street Food Vendors",
+          "  H3: Quick Bites and Fast Food",
+          "H2: Dessert Places and Sweet Treats",
+          "H2: Restaurant Recommendations by Cuisine Type",
+          "  H3: North Indian and South Indian",
+          "  H3: Continental and International"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "complete Indiranagar area guide",
+            "context": "In the introduction when setting area context"
+          },
+          {
+            "target_slug": "things-to-do-indiranagar",
+            "anchor_text": "other entertainment options in Indiranagar",
+            "context": "When discussing nightlife and activities"
+          },
+          {
+            "target_slug": "indiranagar-shopping-guide",
+            "anchor_text": "shopping areas near restaurants",
+            "context": "When mentioning restaurant locations"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "resident dining experiences",
+            "context": "When discussing local favorites"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include specific restaurant names, addresses, and price ranges. Focus on variety and local favorites.",
+        "db_id": "art-723c3aca-2ec"
+      },
+      {
+        "id": "indiranagar-shopping-guide",
+        "title": "Indiranagar Shopping Guide: 100 Feet Road, Street Markets & Best Shopping Areas",
+        "slug": "indiranagar-shopping-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Street shopping in Indiranagar Bangalore",
+          "secondary": [
+            "Indiranagar shopping",
+            "100 Feet Road Indiranagar",
+            "Indira Nagar market Bangalore"
+          ]
+        },
+        "word_count_target": 1700,
+        "outline": [
+          "H2: Shopping Scene in Indiranagar Overview",
+          "  H3: Types of Shopping Available",
+          "  H3: Best Times to Shop",
+          "H2: 100 Feet Road: The Shopping Hub",
+          "  H3: Brand Stores and Boutiques",
+          "  H3: Street Vendors and Local Shops",
+          "H2: Street Shopping in Indiranagar Bangalore",
+          "  H3: Cheap Street Shopping Options",
+          "  H3: What to Buy and Where",
+          "H2: Indira Nagar Market and Local Bazaars",
+          "  H3: Traditional Markets and Vendors",
+          "  H3: Fresh Produce and Grocery Shopping",
+          "H2: Fashion and Clothing Shopping",
+          "  H3: Designer Boutiques and Brand Outlets",
+          "  H3: Affordable Fashion and Accessories",
+          "H2: Electronics and Gadget Stores",
+          "H2: Home Decor and Furniture Shopping",
+          "H2: Shopping Tips and Bargaining Guide"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "complete Indiranagar guide",
+            "context": "In the introduction for area overview"
+          },
+          {
+            "target_slug": "best-restaurants-indiranagar",
+            "anchor_text": "dining options while shopping",
+            "context": "When mentioning food courts and restaurants"
+          },
+          {
+            "target_slug": "things-to-do-indiranagar",
+            "anchor_text": "other activities in Indiranagar",
+            "context": "When discussing entertainment combined with shopping"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "resident shopping experiences",
+            "context": "When providing local insights"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Include specific store names, price ranges, and bargaining tips. Focus on both budget and premium shopping options.",
+        "db_id": "art-cc27328f-c83"
+      },
+      {
+        "id": "things-to-do-indiranagar",
+        "title": "Things to Do in Indiranagar: Entertainment, Nightlife & Couple-Friendly Places",
+        "slug": "things-to-do-indiranagar",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Things to do in Indiranagar",
+          "secondary": [
+            "Places to visit in Indiranagar for couples",
+            "Indiranagar club",
+            "Indiranagar social"
+          ]
+        },
+        "word_count_target": 1600,
+        "outline": [
+          "H2: Entertainment Options in Indiranagar",
+          "  H3: Cinemas and Movie Theaters",
+          "  H3: Gaming Zones and Recreation Centers",
+          "H2: Nightlife and Club Scene",
+          "  H3: Popular Clubs and Dance Venues",
+          "  H3: Rooftop Bars and Lounges",
+          "H2: Places to Visit in Indiranagar for Couples",
+          "  H3: Romantic Restaurants and Cafes",
+          "  H3: Parks and Quiet Spots",
+          "H2: Cultural and Art Venues",
+          "  H3: Art Galleries and Exhibition Spaces",
+          "  H3: Live Music and Performance Venues",
+          "H2: Fitness and Wellness Activities",
+          "  H3: Gyms and Fitness Centers",
+          "  H3: Yoga Studios and Wellness Centers",
+          "H2: Weekend Activities and Events",
+          "  H3: Markets and Flea Markets",
+          "  H3: Community Events and Festivals",
+          "H2: Places to Visit Near Indiranagar"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "complete Indiranagar area guide",
+            "context": "In the introduction for area context"
+          },
+          {
+            "target_slug": "best-restaurants-indiranagar",
+            "anchor_text": "best restaurants and cafes",
+            "context": "When discussing dining as entertainment"
+          },
+          {
+            "target_slug": "indiranagar-shopping-guide",
+            "anchor_text": "shopping destinations",
+            "context": "When mentioning weekend shopping activities"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "resident lifestyle and activities",
+            "context": "When discussing community events"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include specific venue names, timings, and entry fees where applicable. Focus on variety of activities for different age groups.",
+        "db_id": "art-9cf61b74-d31"
+      },
+      {
+        "id": "indiranagar-amenities-services",
+        "title": "Indiranagar Amenities: Schools, Hospitals, Metro Station & Essential Services Guide",
+        "slug": "indiranagar-amenities-services",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Schools near Indiranagar",
+          "secondary": [
+            "Hospitals near Indiranagar",
+            "Indiranagar metro station",
+            "Indiranagar pincode"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: Educational Facilities in Indiranagar",
+          "  H3: Top Schools Near Indiranagar",
+          "  H3: Colleges and Higher Education",
+          "  H3: Coaching Centers and Skill Development",
+          "H2: Healthcare and Medical Facilities",
+          "  H3: Major Hospitals Near Indiranagar",
+          "  H3: Clinics and Specialty Centers",
+          "  H3: Pharmacies and Medical Stores",
+          "H2: Transportation and Connectivity",
+          "  H3: Indiranagar Metro Station Details",
+          "  H3: Bus Routes and Public Transport",
+          "  H3: Auto and Taxi Services",
+          "H2: Banking and Financial Services",
+          "  H3: Banks and ATMs",
+          "  H3: Financial Institutions",
+          "H2: Essential Services and Utilities",
+          "  H3: Post Office and Courier Services",
+          "  H3: Government Offices",
+          "H2: Emergency Services and Safety",
+          "  H3: Police Station and Fire Department",
+          "  H3: Emergency Contact Numbers",
+          "H2: Location Details and Navigation",
+          "  H3: Indiranagar Pincode and Address System"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "comprehensive Indiranagar guide",
+            "context": "In the introduction for area overview"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "living experience in Indiranagar",
+            "context": "When discussing family-friendly amenities"
+          },
+          {
+            "target_slug": "indiranagar-rent-prices-guide",
+            "anchor_text": "rental costs in the area",
+            "context": "When discussing proximity to amenities affecting rent"
+          },
+          {
+            "target_slug": "indiranagar-distance-connectivity",
+            "anchor_text": "connectivity and distance guide",
+            "context": "When discussing transportation options"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "Include specific names, addresses, and contact details. Focus on practical information for residents and visitors.",
+        "db_id": "art-ddf3e7d3-1d0"
+      },
+      {
+        "id": "indiranagar-vs-koramangala",
+        "title": "Indiranagar vs Koramangala: Complete Comparison for Living, Rent & Investment",
+        "slug": "indiranagar-vs-koramangala",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Indiranagar vs koramangala",
+          "secondary": [
+            "Indiranagar vs Koramangala rent",
+            "Indiranagar vs Koramangala for living"
+          ]
+        },
+        "word_count_target": 1400,
+        "outline": [
+          "H2: Indiranagar vs Koramangala: Which is Better?",
+          "  H3: Location and Connectivity Comparison",
+          "  H3: Demographics and Culture",
+          "H2: Cost Comparison: Rent and Property Prices",
+          "  H3: Rental Market Analysis",
+          "  H3: Property Purchase Costs",
+          "H2: Lifestyle and Entertainment Comparison",
+          "  H3: Dining and Nightlife Scene",
+          "  H3: Shopping and Recreation",
+          "H2: Infrastructure and Amenities",
+          "  H3: Transportation and Metro Access",
+          "  H3: Schools and Healthcare",
+          "H2: Investment Potential Analysis",
+          "  H3: Capital Appreciation Trends",
+          "  H3: Rental Yield Comparison",
+          "H2: Which Area Should You Choose?"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "detailed Indiranagar guide",
+            "context": "When providing Indiranagar details"
+          },
+          {
+            "target_slug": "indiranagar-rent-prices-guide",
+            "anchor_text": "Indiranagar rental costs",
+            "context": "In the cost comparison section"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "living experience in Indiranagar",
+            "context": "When comparing lifestyle aspects"
+          },
+          {
+            "target_slug": "indiranagar-property-prices",
+            "anchor_text": "property prices in Indiranagar",
+            "context": "In the investment analysis section"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Provide balanced comparison with specific data points. Include pros and cons of each area.",
+        "db_id": "art-be8d5639-e5e"
+      },
+      {
+        "id": "indiranagar-distance-connectivity",
+        "title": "Indiranagar Distance Guide: Metro, Directions & Connectivity to Major Bangalore Areas",
+        "slug": "indiranagar-distance-connectivity",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "Indiranagar distance",
+          "secondary": [
+            "Indiranagar to koramangala distance",
+            "Indiranagar metro",
+            "Indiranagar Bangalore directions"
+          ]
+        },
+        "word_count_target": 1200,
+        "outline": [
+          "H2: Indiranagar Location and Connectivity Overview",
+          "  H3: Geographic Location in Bangalore",
+          "  H3: Major Landmarks and Reference Points",
+          "H2: Metro Connectivity from Indiranagar",
+          "  H3: Indiranagar Metro Station Details",
+          "  H3: Travel Times to Major Destinations",
+          "H2: Distance to Popular Bangalore Areas",
+          "  H3: Indiranagar to Koramangala Distance",
+          "  H3: Distance to IT Hubs and Business Districts",
+          "  H3: Distance to Airport and Railway Stations",
+          "H2: Transportation Options and Routes",
+          "  H3: Bus Routes and Public Transport",
+          "  H3: Cab and Auto Rickshaw Services",
+          "H2: Traffic Patterns and Best Travel Times",
+          "  H3: Peak Hour Traffic Analysis",
+          "  H3: Alternative Routes and Shortcuts",
+          "H2: Navigation Tips and Directions"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "complete Indiranagar guide",
+            "context": "In the introduction for area context"
+          },
+          {
+            "target_slug": "indiranagar-amenities-services",
+            "anchor_text": "metro station and transport details",
+            "context": "When discussing metro connectivity"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "commute experience for residents",
+            "context": "When discussing daily travel patterns"
+          },
+          {
+            "target_slug": "indiranagar-vs-koramangala",
+            "anchor_text": "comparison with Koramangala",
+            "context": "When mentioning distance to Koramangala"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Include specific distances, travel times, and route information. Focus on practical navigation advice.",
+        "db_id": "art-57f16cb1-620"
+      },
+      {
+        "id": "indiranagar-faq",
+        "title": "Indiranagar Bangalore FAQ: Everything You Need to Know About Living, Rent & Amenities",
+        "slug": "indiranagar-bangalore-faq",
+        "type": "faq",
+        "target_keywords": {
+          "primary": "Indiranagar Bangalore FAQ",
+          "secondary": [
+            "Indiranagar questions",
+            "Indiranagar information",
+            "Indiranagar guide"
+          ]
+        },
+        "word_count_target": 1000,
+        "outline": [
+          "H2: General Questions About Indiranagar",
+          "H2: Living and Accommodation FAQs",
+          "H2: Cost and Pricing Related Questions",
+          "H2: Amenities and Services FAQs",
+          "H2: Transportation and Connectivity Questions",
+          "H2: Safety and Security FAQs",
+          "H2: Entertainment and Lifestyle Questions",
+          "H2: Investment and Property FAQs"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "indiranagar-bangalore-complete-guide",
+            "anchor_text": "comprehensive Indiranagar guide",
+            "context": "For detailed answers to general questions"
+          },
+          {
+            "target_slug": "indiranagar-rent-prices-guide",
+            "anchor_text": "detailed rental cost information",
+            "context": "For rent-related FAQ answers"
+          },
+          {
+            "target_slug": "living-in-indiranagar-experience",
+            "anchor_text": "resident experiences and reviews",
+            "context": "For living experience related questions"
+          },
+          {
+            "target_slug": "indiranagar-amenities-services",
+            "anchor_text": "complete amenities guide",
+            "context": "For amenities and services questions"
+          }
+        ],
+        "faq_count": 25,
+        "notes": "Compile the most frequently asked questions from all other articles. Provide concise but comprehensive answers.",
+        "db_id": "art-fae1fa5a-685"
+      }
+    ],
+    "linking_matrix": {
+      "indiranagar-bangalore-complete-guide": [
+        "indiranagar-rent-prices-guide",
+        "indiranagar-property-prices",
+        "best-restaurants-indiranagar",
+        "indiranagar-shopping-guide",
+        "living-in-indiranagar-experience",
+        "indiranagar-amenities-services"
+      ],
+      "indiranagar-rent-prices-guide": [
+        "indiranagar-bangalore-complete-guide",
+        "indiranagar-property-prices",
+        "living-in-indiranagar-experience",
+        "indiranagar-amenities-services",
+        "indiranagar-vs-koramangala"
+      ],
+      "indiranagar-property-prices": [
+        "indiranagar-bangalore-complete-guide",
+        "indiranagar-rent-prices-guide",
+        "living-in-indiranagar-experience",
+        "indiranagar-amenities-services"
+      ],
+      "living-in-indiranagar-experience": [
+        "indiranagar-bangalore-complete-guide",
+        "indiranagar-amenities-services",
+        "best-restaurants-indiranagar",
+        "indiranagar-vs-koramangala"
+      ],
+      "best-restaurants-indiranagar": [
+        "indiranagar-bangalore-complete-guide",
+        "things-to-do-indiranagar",
+        "indiranagar-shopping-guide",
+        "living-in-indiranagar-experience"
+      ],
+      "indiranagar-shopping-guide": [
+        "indiranagar-bangalore-complete-guide",
+        "best-restaurants-indiranagar",
+        "things-to-do-indiranagar",
+        "living-in-indiranagar-experience"
+      ],
+      "things-to-do-indiranagar": [
+        "indiranagar-bangalore-complete-guide",
+        "best-restaurants-indiranagar",
+        "indiranagar-shopping-guide",
+        "living-in-indiranagar-experience"
+      ],
+      "indiranagar-amenities-services": [
+        "indiranagar-bangalore-complete-guide",
+        "living-in-indiranagar-experience",
+        "indiranagar-rent-prices-guide",
+        "indiranagar-distance-connectivity"
+      ],
+      "indiranagar-vs-koramangala": [
+        "indiranagar-bangalore-complete-guide",
+        "indiranagar-rent-prices-guide",
+        "living-in-indiranagar-experience",
+        "indiranagar-property-prices"
+      ],
+      "indiranagar-distance-connectivity": [
+        "indiranagar-bangalore-complete-guide",
+        "indiranagar-amenities-services",
+        "living-in-indiranagar-experience",
+        "indiranagar-vs-koramangala"
+      ],
+      "indiranagar-bangalore-faq": [
+        "indiranagar-bangalore-complete-guide",
+        "indiranagar-rent-prices-guide",
+        "living-in-indiranagar-experience",
+        "indiranagar-amenities-services"
+      ]
+    }
+  },
+  "articles_created": 11,
+  "articles_failed": 0
+}

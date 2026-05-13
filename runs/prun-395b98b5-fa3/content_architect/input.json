@@ -1,0 +1,156 @@
+{
+  "topic": "sg palaya",
+  "keyword_map": {
+    "topic": "sg palaya",
+    "keyword_groups": [
+      {
+        "group_name": "SG Palya Locality Overview",
+        "primary_keyword": "SG Palya Bangalore",
+        "supporting_keywords": [
+          "What is SG Palya famous for",
+          "Where is SG Palya located",
+          "Suddagunte Palya",
+          "SG Palya pincode",
+          "SG Palya full form"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "SG Palya Safety & Infrastructure",
+        "primary_keyword": "Is Suddagunte Palya a safe area",
+        "supporting_keywords": [
+          "SG Palya police station",
+          "SG Palya safety metrics",
+          "SG Palya infrastructure",
+          "SG Palya amenities",
+          "SG Palya connectivity"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "SG Palya Directions & Connectivity",
+        "primary_keyword": "SG Palya nearest metro",
+        "supporting_keywords": [
+          "SG Palya Bangalore directions",
+          "SG Palya to Koramangala",
+          "SG Palya to HSR Layout",
+          "SG Palya to Whitefield distance",
+          "SG Palya metro station",
+          "SG Palya distance from my location"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 82
+      },
+      {
+        "group_name": "SG Palya Property Buying & Selling",
+        "primary_keyword": "House for sale in SG Palya",
+        "supporting_keywords": [
+          "Bangalore real estate SG Palya for sale",
+          "Bangalore real estate SG Palya flats for sale",
+          "Bangalore property SG Palya resale",
+          "Bangalore property SG Palya price",
+          "Cheap Bangalore property SG Palya"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 68
+      },
+      {
+        "group_name": "SG Palya Rental Market",
+        "primary_keyword": "SG Palya Bangalore rent",
+        "supporting_keywords": [
+          "Bangalore real estate SG Palya rent",
+          "SG Palya PG",
+          "SG Palya Bangalore PG",
+          "Rental prices SG Palya"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 75
+      },
+      {
+        "group_name": "Bangalore Property Investment Decision",
+        "primary_keyword": "Should you buy property in 2026 in Bangalore",
+        "supporting_keywords": [
+          "Is it good to buy a flat in Bangalore now",
+          "Is it worth buying property in Bangalore",
+          "Should I buy property in Bangalore now",
+          "Best time to buy property in Bangalore"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 76
+      },
+      {
+        "group_name": "Bangalore Property Price Forecast 2026",
+        "primary_keyword": "Will property prices increase in 2026",
+        "supporting_keywords": [
+          "Will property prices decrease in 2026",
+          "Bangalore property prices 2026",
+          "What is the guidance value of Bangalore in 2026",
+          "Will Bangalore real estate prices come down",
+          "Are property prices going down in Bangalore"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 74
+      },
+      {
+        "group_name": "Bangalore Real Estate Market Trends",
+        "primary_keyword": "What is the future of Bangalore real estate",
+        "supporting_keywords": [
+          "Which part of Bangalore is growing fastest",
+          "Bangalore housing market trend",
+          "Bangalore housing supply demand",
+          "Bangalore real estate forecast",
+          "Bangalore property price index"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 77
+      },
+      {
+        "group_name": "Bangalore Property Investment Metrics",
+        "primary_keyword": "What is the ROI of property in Bangalore",
+        "supporting_keywords": [
+          "What is the 2% rule for properties",
+          "What is the cost of a 30 * 40 site in Bangalore",
+          "Land rates in Bangalore per square feet",
+          "Bangalore property price index calculator"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 80
+      },
+      {
+        "group_name": "Bangalore Real Estate Market Report",
+        "primary_keyword": "Bangalore real estate report",
+        "supporting_keywords": [
+          "Bangalore property price index graph",
+          "Bangalore property price index by area",
+          "Bangalore real estate sg palya",
+          "Bangalore property sg palya reviews"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "high",
+        "opportunity_score": 70
+      }
+    ],
+    "summary": "SG Palya keyword data reveals strong demand across locality information, property transactions, and broader Bangalore market forecasting. Content strategy should balance high-competition transactional keywords with high-opportunity informational gaps around investment decision-making, price forecasts, and market metrics."
+  }
+}

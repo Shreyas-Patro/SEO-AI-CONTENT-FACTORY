@@ -1,0 +1,144 @@
+{
+  "topic": "indiranagar",
+  "keyword_map": {
+    "topic": "indiranagar",
+    "keyword_groups": [
+      {
+        "group_name": "Indiranagar Overview & Reputation",
+        "primary_keyword": "What is Indiranagar Bangalore famous for",
+        "supporting_keywords": [
+          "Indiranagar Bangalore guide",
+          "Is Indiranagar the heart of Bangalore",
+          "Why is Indiranagar famous",
+          "Indiranagar review",
+          "Is Indiranagar a posh area"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 85
+      },
+      {
+        "group_name": "Rental Costs & Affordability",
+        "primary_keyword": "Indiranagar rent",
+        "supporting_keywords": [
+          "Cost of living in Indiranagar Bangalore",
+          "2BHK rent Indiranagar",
+          "Cost of PG in Indiranagar Bangalore",
+          "Is Indiranagar expensive",
+          "Indiranagar Bangalore rent prices"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 70
+      },
+      {
+        "group_name": "Property Purchase & Investment",
+        "primary_keyword": "Indiranagar flat for sale",
+        "supporting_keywords": [
+          "Indiranagar property price",
+          "Indiranagar property rate per sq ft",
+          "Cost of 3BHK in Indiranagar Bangalore",
+          "Price of land in Indiranagar Bangalore",
+          "Indiranagar new projects"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "Living Experience & Lifestyle",
+        "primary_keyword": "Living in Indiranagar Bangalore",
+        "supporting_keywords": [
+          "Is Indiranagar family friendly",
+          "Is Indira Nagar a good place to live",
+          "Living in indiranagar bangalore for females",
+          "Living in indiranagar bangalore reviews",
+          "Indiranagar vs koramangala"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "Dining & Restaurants",
+        "primary_keyword": "Best restaurants Indiranagar",
+        "supporting_keywords": [
+          "Indiranagar restaurants",
+          "Indiranagar cafes",
+          "Indiranagar places to eat",
+          "What is famous in Bangalore to eat",
+          "Indiranagar pubs"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "high",
+        "competition": "low",
+        "opportunity_score": 90
+      },
+      {
+        "group_name": "Shopping & Street Markets",
+        "primary_keyword": "Street shopping in Indiranagar Bangalore",
+        "supporting_keywords": [
+          "Indiranagar shopping",
+          "100 Feet Road Indiranagar",
+          "Indira Nagar market Bangalore",
+          "Cheap street shopping in Indiranagar Bangalore",
+          "Indiranagar walk in street"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 88
+      },
+      {
+        "group_name": "Things to Do & Entertainment",
+        "primary_keyword": "Things to do in Indiranagar",
+        "supporting_keywords": [
+          "Places to visit in Indiranagar for couples",
+          "Places to visit near Indiranagar Bangalore",
+          "Indiranagar things to do Bangalore",
+          "Indiranagar club",
+          "Indiranagar social"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 85
+      },
+      {
+        "group_name": "Essential Services & Amenities",
+        "primary_keyword": "Schools near Indiranagar",
+        "supporting_keywords": [
+          "Hospitals near Indiranagar",
+          "Indiranagar metro station",
+          "Indiranagar police station",
+          "Indiranagar pincode",
+          "Indiranagar Bangalore map"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 92
+      },
+      {
+        "group_name": "Location & Distance Guide",
+        "primary_keyword": "Indiranagar distance",
+        "supporting_keywords": [
+          "Indiranagar Bangalore directions",
+          "Indiranagar to koramangala distance",
+          "Indira Nagar Bangalore distance",
+          "Indiranagar metro",
+          "Indiranagar Bangalore pincode"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 86
+      }
+    ],
+    "summary": "Indiranagar keyword data reveals strong demand across residential (rent/buy), lifestyle, and local discovery queries. High-opportunity gaps exist in amenities, dining, and shopping content with minimal competitor coverage, while rental and property sales face established competition."
+  }
+}

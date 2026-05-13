@@ -95,7 +95,7 @@ BANGALORE_LOCALITIES = [
     "Narayanapura", "Horamavu",
     "Seegehalli", "Bidarahalli",
     "Avalahalli", "Budigere Cross",
-    "Old Madras Road", "TC Palya",
+    "Old Madras Road", "TC Palya","Sg palya", 
     "NRI Layout", "Medahalli",
 
     "Sadashivanagar", "RT Nagar",

@@ -1,0 +1,866 @@
+{
+  "topic": "sg palaya",
+  "cluster_id": "cl-98b0c727-de3",
+  "keyword_map": {
+    "topic": "sg palaya",
+    "keyword_groups": [
+      {
+        "group_name": "SG Palya Locality Overview",
+        "primary_keyword": "SG Palya Bangalore",
+        "supporting_keywords": [
+          "What is SG Palya famous for",
+          "Where is SG Palya located",
+          "Suddagunte Palya",
+          "SG Palya pincode",
+          "SG Palya full form"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 72
+      },
+      {
+        "group_name": "SG Palya Safety & Infrastructure",
+        "primary_keyword": "Is Suddagunte Palya a safe area",
+        "supporting_keywords": [
+          "SG Palya police station",
+          "SG Palya safety metrics",
+          "SG Palya infrastructure",
+          "SG Palya amenities",
+          "SG Palya connectivity"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 78
+      },
+      {
+        "group_name": "SG Palya Directions & Connectivity",
+        "primary_keyword": "SG Palya nearest metro",
+        "supporting_keywords": [
+          "SG Palya Bangalore directions",
+          "SG Palya to Koramangala",
+          "SG Palya to HSR Layout",
+          "SG Palya to Whitefield distance",
+          "SG Palya metro station",
+          "SG Palya distance from my location"
+        ],
+        "intent": "navigational",
+        "estimated_volume": "medium",
+        "competition": "low",
+        "opportunity_score": 82
+      },
+      {
+        "group_name": "SG Palya Property Buying & Selling",
+        "primary_keyword": "House for sale in SG Palya",
+        "supporting_keywords": [
+          "Bangalore real estate SG Palya for sale",
+          "Bangalore real estate SG Palya flats for sale",
+          "Bangalore property SG Palya resale",
+          "Bangalore property SG Palya price",
+          "Cheap Bangalore property SG Palya"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 68
+      },
+      {
+        "group_name": "SG Palya Rental Market",
+        "primary_keyword": "SG Palya Bangalore rent",
+        "supporting_keywords": [
+          "Bangalore real estate SG Palya rent",
+          "SG Palya PG",
+          "SG Palya Bangalore PG",
+          "Rental prices SG Palya"
+        ],
+        "intent": "transactional",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 75
+      },
+      {
+        "group_name": "Bangalore Property Investment Decision",
+        "primary_keyword": "Should you buy property in 2026 in Bangalore",
+        "supporting_keywords": [
+          "Is it good to buy a flat in Bangalore now",
+          "Is it worth buying property in Bangalore",
+          "Should I buy property in Bangalore now",
+          "Best time to buy property in Bangalore"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 76
+      },
+      {
+        "group_name": "Bangalore Property Price Forecast 2026",
+        "primary_keyword": "Will property prices increase in 2026",
+        "supporting_keywords": [
+          "Will property prices decrease in 2026",
+          "Bangalore property prices 2026",
+          "What is the guidance value of Bangalore in 2026",
+          "Will Bangalore real estate prices come down",
+          "Are property prices going down in Bangalore"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 74
+      },
+      {
+        "group_name": "Bangalore Real Estate Market Trends",
+        "primary_keyword": "What is the future of Bangalore real estate",
+        "supporting_keywords": [
+          "Which part of Bangalore is growing fastest",
+          "Bangalore housing market trend",
+          "Bangalore housing supply demand",
+          "Bangalore real estate forecast",
+          "Bangalore property price index"
+        ],
+        "intent": "informational",
+        "estimated_volume": "high",
+        "competition": "high",
+        "opportunity_score": 77
+      },
+      {
+        "group_name": "Bangalore Property Investment Metrics",
+        "primary_keyword": "What is the ROI of property in Bangalore",
+        "supporting_keywords": [
+          "What is the 2% rule for properties",
+          "What is the cost of a 30 * 40 site in Bangalore",
+          "Land rates in Bangalore per square feet",
+          "Bangalore property price index calculator"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "medium",
+        "opportunity_score": 80
+      },
+      {
+        "group_name": "Bangalore Real Estate Market Report",
+        "primary_keyword": "Bangalore real estate report",
+        "supporting_keywords": [
+          "Bangalore property price index graph",
+          "Bangalore property price index by area",
+          "Bangalore real estate sg palya",
+          "Bangalore property sg palya reviews"
+        ],
+        "intent": "informational",
+        "estimated_volume": "medium",
+        "competition": "high",
+        "opportunity_score": 70
+      }
+    ],
+    "summary": "SG Palya keyword data reveals strong demand across locality information, property transactions, and broader Bangalore market forecasting. Content strategy should balance high-competition transactional keywords with high-opportunity informational gaps around investment decision-making, price forecasts, and market metrics."
+  },
+  "cluster_plan": {
+    "cluster_id": "sg-palya-bangalore-real-estate",
+    "cluster_name": "SG Palya Bangalore Real Estate Guide",
+    "total_articles": 11,
+    "articles": [
+      {
+        "id": "sg-palya-complete-guide",
+        "title": "SG Palya Bangalore: Complete Guide to Living, Buying & Investing in Suddagunte Palya",
+        "slug": "sg-palya-bangalore-complete-guide",
+        "type": "hub",
+        "target_keywords": {
+          "primary": "SG Palya Bangalore",
+          "secondary": [
+            "Suddagunte Palya",
+            "SG Palya pincode",
+            "What is SG Palya famous for"
+          ]
+        },
+        "word_count_target": 2800,
+        "outline": [
+          "H2: What is SG Palya and Where is it Located?",
+          "  H3: SG Palya Full Form and History",
+          "  H3: Geographic Location and Boundaries",
+          "  H3: SG Palya Pincode and Administrative Details",
+          "H2: Why is SG Palya Famous Among Bangalore Residents?",
+          "  H3: Key Attractions and Landmarks",
+          "  H3: Commercial and Residential Significance",
+          "H2: SG Palya Infrastructure and Connectivity Overview",
+          "  H3: Transportation Links and Metro Access",
+          "  H3: Essential Amenities and Services",
+          "H2: Is SG Palya a Good Place to Live?",
+          "  H3: Safety and Security Assessment",
+          "  H3: Quality of Life Factors",
+          "H2: SG Palya Real Estate Market Overview",
+          "  H3: Property Types and Price Ranges",
+          "  H3: Investment Potential and Growth Prospects",
+          "H2: Complete Guide to Buying Property in SG Palya",
+          "  H3: Best Areas Within SG Palya",
+          "  H3: Price Trends and Market Analysis",
+          "H2: Rental Market in SG Palya",
+          "  H3: Rental Rates and Demand",
+          "  H3: PG and Shared Accommodation Options"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sg-palya-safety-infrastructure-analysis",
+            "anchor_text": "detailed safety analysis of SG Palya",
+            "context": "In the safety assessment section"
+          },
+          {
+            "target_slug": "sg-palya-connectivity-metro-transport",
+            "anchor_text": "comprehensive connectivity guide",
+            "context": "In the infrastructure overview section"
+          },
+          {
+            "target_slug": "sg-palya-property-buying-guide",
+            "anchor_text": "complete property buying guide",
+            "context": "In the real estate market section"
+          },
+          {
+            "target_slug": "sg-palya-rental-market-analysis",
+            "anchor_text": "rental market trends in SG Palya",
+            "context": "In the rental market section"
+          },
+          {
+            "target_slug": "bangalore-property-investment-decision-guide",
+            "anchor_text": "property investment strategies",
+            "context": "In the investment potential section"
+          },
+          {
+            "target_slug": "sg-palya-frequently-asked-questions",
+            "anchor_text": "frequently asked questions about SG Palya",
+            "context": "At the end of the article"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "This is the main pillar content that should comprehensively cover all aspects of SG Palya. Include local insights, recent developments, and practical advice for residents and investors.",
+        "db_id": "art-9d536cfc-bf4"
+      },
+      {
+        "id": "sg-palya-safety-infrastructure",
+        "title": "Is SG Palya Safe? Complete Safety and Infrastructure Analysis of Suddagunte Palya",
+        "slug": "sg-palya-safety-infrastructure-analysis",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Is Suddagunte Palya a safe area",
+          "secondary": [
+            "SG Palya police station",
+            "SG Palya safety metrics",
+            "SG Palya infrastructure"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: How Safe is SG Palya for Residents?",
+          "  H3: Crime Statistics and Safety Metrics",
+          "  H3: Police Station Coverage and Response Times",
+          "  H3: Street Lighting and CCTV Coverage",
+          "H2: What Infrastructure Facilities are Available in SG Palya?",
+          "  H3: Healthcare Facilities and Hospitals",
+          "  H3: Educational Institutions and Schools",
+          "  H3: Shopping Centers and Markets",
+          "H2: How is the Road Infrastructure in SG Palya?",
+          "  H3: Main Roads and Internal Connectivity",
+          "  H3: Traffic Conditions and Peak Hour Analysis",
+          "H2: What Amenities Make SG Palya Liveable?",
+          "  H3: Parks and Recreation Facilities",
+          "  H3: Banking and ATM Services",
+          "  H3: Utility Services Coverage"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sg-palya-bangalore-complete-guide",
+            "anchor_text": "complete guide to SG Palya",
+            "context": "In the introduction"
+          },
+          {
+            "target_slug": "sg-palya-connectivity-metro-transport",
+            "anchor_text": "transportation connectivity options",
+            "context": "In the infrastructure section"
+          },
+          {
+            "target_slug": "sg-palya-property-buying-guide",
+            "anchor_text": "property buying considerations",
+            "context": "In the safety assessment conclusion"
+          },
+          {
+            "target_slug": "sg-palya-rental-market-analysis",
+            "anchor_text": "rental market insights",
+            "context": "In the amenities section"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Focus on providing factual safety data, infrastructure quality assessment, and practical information for potential residents.",
+        "db_id": "art-34f64674-1aa"
+      },
+      {
+        "id": "sg-palya-connectivity-metro",
+        "title": "SG Palya Connectivity Guide: Metro, Transport & Distance to Major Bangalore Areas",
+        "slug": "sg-palya-connectivity-metro-transport",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "SG Palya nearest metro",
+          "secondary": [
+            "SG Palya to Koramangala",
+            "SG Palya to HSR Layout",
+            "SG Palya metro station"
+          ]
+        },
+        "word_count_target": 1700,
+        "outline": [
+          "H2: Which is the Nearest Metro Station to SG Palya?",
+          "  H3: Metro Connectivity Options",
+          "  H3: Distance and Travel Time to Metro Stations",
+          "H2: How to Reach Major Bangalore Areas from SG Palya?",
+          "  H3: SG Palya to Koramangala Route and Distance",
+          "  H3: SG Palya to HSR Layout Connectivity",
+          "  H3: SG Palya to Whitefield Distance and Routes",
+          "H2: What are the Public Transport Options in SG Palya?",
+          "  H3: BMTC Bus Routes and Frequency",
+          "  H3: Auto and Cab Availability",
+          "H2: How is the Road Connectivity from SG Palya?",
+          "  H3: Major Road Networks",
+          "  H3: Traffic Patterns and Best Travel Times"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sg-palya-bangalore-complete-guide",
+            "anchor_text": "comprehensive SG Palya guide",
+            "context": "In the introduction"
+          },
+          {
+            "target_slug": "sg-palya-safety-infrastructure-analysis",
+            "anchor_text": "infrastructure and safety analysis",
+            "context": "In the connectivity overview"
+          },
+          {
+            "target_slug": "sg-palya-property-buying-guide",
+            "anchor_text": "property investment guide",
+            "context": "In the connectivity benefits section"
+          },
+          {
+            "target_slug": "bangalore-real-estate-market-trends",
+            "anchor_text": "Bangalore real estate trends",
+            "context": "In the area growth potential section"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Include specific distances, travel times, and route recommendations. Add maps or directions where helpful.",
+        "db_id": "art-114fcf20-82e"
+      },
+      {
+        "id": "sg-palya-property-buying",
+        "title": "House for Sale in SG Palya: Complete Property Buying Guide with Prices & Best Areas",
+        "slug": "sg-palya-property-buying-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "House for sale in SG Palya",
+          "secondary": [
+            "Bangalore real estate SG Palya for sale",
+            "Bangalore property SG Palya price",
+            "Cheap Bangalore property SG Palya"
+          ]
+        },
+        "word_count_target": 1900,
+        "outline": [
+          "H2: What Types of Houses are Available for Sale in SG Palya?",
+          "  H3: Independent Houses and Villas",
+          "  H3: Apartments and Flats",
+          "  H3: Builder Floors and Row Houses",
+          "H2: What are the Current Property Prices in SG Palya?",
+          "  H3: Price Range by Property Type",
+          "  H3: Price Trends and Market Analysis",
+          "  H3: Factors Affecting Property Prices",
+          "H2: Which are the Best Areas to Buy Property in SG Palya?",
+          "  H3: Premium Residential Pockets",
+          "  H3: Budget-Friendly Options",
+          "  H3: Upcoming Development Areas",
+          "H2: How to Find the Best Property Deals in SG Palya?",
+          "  H3: Resale vs New Construction",
+          "  H3: Negotiation Tips and Market Timing",
+          "H2: What Should You Consider Before Buying in SG Palya?",
+          "  H3: Legal Documentation and Approvals",
+          "  H3: Future Development Plans"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sg-palya-bangalore-complete-guide",
+            "anchor_text": "complete area guide for SG Palya",
+            "context": "In the introduction"
+          },
+          {
+            "target_slug": "sg-palya-safety-infrastructure-analysis",
+            "anchor_text": "safety and infrastructure details",
+            "context": "In the buying considerations section"
+          },
+          {
+            "target_slug": "bangalore-property-investment-decision-guide",
+            "anchor_text": "property investment decision guide",
+            "context": "In the market analysis section"
+          },
+          {
+            "target_slug": "bangalore-property-roi-investment-metrics",
+            "anchor_text": "ROI calculations for Bangalore properties",
+            "context": "In the investment potential section"
+          }
+        ],
+        "faq_count": 7,
+        "notes": "Include current market prices, investment potential analysis, and practical buying advice specific to SG Palya.",
+        "db_id": "art-fffa8624-cd8"
+      },
+      {
+        "id": "sg-palya-rental-market",
+        "title": "SG Palya Rent Guide: Rental Prices, PG Options & Best Areas for Tenants",
+        "slug": "sg-palya-rental-market-analysis",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "SG Palya Bangalore rent",
+          "secondary": [
+            "SG Palya PG",
+            "SG Palya Bangalore PG",
+            "Rental prices SG Palya"
+          ]
+        },
+        "word_count_target": 1600,
+        "outline": [
+          "H2: What are the Rental Rates in SG Palya?",
+          "  H3: Apartment Rental Prices by BHK",
+          "  H3: Independent House Rental Rates",
+          "  H3: Commercial Space Rental Costs",
+          "H2: What PG and Shared Accommodation Options are Available?",
+          "  H3: PG Facilities and Pricing",
+          "  H3: Co-living Spaces and Hostels",
+          "  H3: Shared Apartment Options",
+          "H2: Which Areas in SG Palya Offer the Best Rental Value?",
+          "  H3: Budget-Friendly Rental Pockets",
+          "  H3: Premium Rental Areas",
+          "H2: What Should Tenants Know About Renting in SG Palya?",
+          "  H3: Rental Agreement Essentials",
+          "  H3: Deposit and Advance Requirements",
+          "  H3: Tenant Rights and Responsibilities"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sg-palya-bangalore-complete-guide",
+            "anchor_text": "comprehensive SG Palya living guide",
+            "context": "In the introduction"
+          },
+          {
+            "target_slug": "sg-palya-connectivity-metro-transport",
+            "anchor_text": "connectivity and transport options",
+            "context": "In the area benefits section"
+          },
+          {
+            "target_slug": "sg-palya-safety-infrastructure-analysis",
+            "anchor_text": "safety and amenities analysis",
+            "context": "In the tenant considerations section"
+          },
+          {
+            "target_slug": "bangalore-real-estate-market-trends",
+            "anchor_text": "rental market trends in Bangalore",
+            "context": "In the market analysis section"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Focus on current rental rates, tenant-friendly information, and practical advice for finding accommodation in SG Palya.",
+        "db_id": "art-05c98df3-758"
+      },
+      {
+        "id": "bangalore-property-investment-decision",
+        "title": "Should You Buy Property in Bangalore Now? Complete Investment Decision Guide",
+        "slug": "bangalore-property-investment-decision-guide",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Should I buy property in Bangalore now",
+          "secondary": [
+            "Is it good to buy a flat in Bangalore now",
+            "Is it worth buying property in Bangalore",
+            "Best time to buy property in Bangalore"
+          ]
+        },
+        "word_count_target": 2000,
+        "outline": [
+          "H2: Is Now a Good Time to Buy Property in Bangalore?",
+          "  H3: Current Market Conditions Analysis",
+          "  H3: Interest Rate Environment",
+          "  H3: Supply and Demand Dynamics",
+          "H2: What Factors Should Influence Your Property Buying Decision?",
+          "  H3: Personal Financial Readiness",
+          "  H3: Long-term vs Short-term Investment Goals",
+          "  H3: Location and Growth Potential Assessment",
+          "H2: How Do Current Bangalore Property Prices Compare Historically?",
+          "  H3: Price Appreciation Trends",
+          "  H3: Affordability Index Analysis",
+          "H2: What are the Risks and Benefits of Buying Now?",
+          "  H3: Market Risk Assessment",
+          "  H3: Potential Returns and Growth Prospects",
+          "H2: Which Areas in Bangalore Offer the Best Investment Opportunities?",
+          "  H3: Emerging Growth Corridors",
+          "  H3: Established Investment Hotspots"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "bangalore-property-price-forecast",
+            "anchor_text": "property price forecasts for Bangalore",
+            "context": "In the market conditions section"
+          },
+          {
+            "target_slug": "bangalore-real-estate-market-trends",
+            "anchor_text": "comprehensive market trends analysis",
+            "context": "In the historical comparison section"
+          },
+          {
+            "target_slug": "bangalore-property-roi-investment-metrics",
+            "anchor_text": "ROI calculations and investment metrics",
+            "context": "In the returns analysis section"
+          },
+          {
+            "target_slug": "sg-palya-property-buying-guide",
+            "anchor_text": "SG Palya property investment opportunities",
+            "context": "In the area recommendations section"
+          }
+        ],
+        "faq_count": 8,
+        "notes": "Provide balanced analysis of current market conditions, investment timing, and decision-making framework for property buyers.",
+        "db_id": "art-08c219eb-423"
+      },
+      {
+        "id": "bangalore-property-price-forecast",
+        "title": "Bangalore Property Price Forecast: Will Real Estate Prices Rise or Fall?",
+        "slug": "bangalore-property-price-forecast",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "Will property prices increase",
+          "secondary": [
+            "Bangalore property prices",
+            "Will Bangalore real estate prices come down",
+            "Are property prices going down in Bangalore"
+          ]
+        },
+        "word_count_target": 1800,
+        "outline": [
+          "H2: What is the Current Bangalore Property Price Trend?",
+          "  H3: Recent Price Movement Analysis",
+          "  H3: Year-over-Year Growth Rates",
+          "H2: Will Property Prices Increase in Bangalore?",
+          "  H3: Factors Supporting Price Growth",
+          "  H3: Infrastructure Development Impact",
+          "  H3: IT Sector Growth and Demand",
+          "H2: What Could Cause Property Prices to Decrease?",
+          "  H3: Economic Headwinds and Risks",
+          "  H3: Oversupply Concerns",
+          "  H3: Interest Rate Impact",
+          "H2: How Do Expert Predictions Compare?",
+          "  H3: Real Estate Analyst Forecasts",
+          "  H3: Market Research Reports",
+          "H2: What Should Property Investors Expect?",
+          "  H3: Short-term Price Outlook",
+          "  H3: Long-term Investment Perspective"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "bangalore-property-investment-decision-guide",
+            "anchor_text": "property investment decision framework",
+            "context": "In the investor expectations section"
+          },
+          {
+            "target_slug": "bangalore-real-estate-market-trends",
+            "anchor_text": "detailed market trends analysis",
+            "context": "In the current trends section"
+          },
+          {
+            "target_slug": "bangalore-property-roi-investment-metrics",
+            "anchor_text": "investment returns and metrics",
+            "context": "In the investment outlook section"
+          },
+          {
+            "target_slug": "sg-palya-bangalore-complete-guide",
+            "anchor_text": "specific area analysis like SG Palya",
+            "context": "In the location-specific forecasts section"
+          }
+        ],
+        "faq_count": 6,
+        "notes": "Provide data-driven analysis of price trends, expert opinions, and balanced forecasting without making definitive predictions.",
+        "db_id": "art-3dd491ed-4e3"
+      },
+      {
+        "id": "bangalore-real-estate-market-trends",
+        "title": "Bangalore Real Estate Market Trends: Growth Areas, Demand Analysis & Future Outlook",
+        "slug": "bangalore-real-estate-market-trends",
+        "type": "spoke",
+        "target_keywords": {
+          "primary": "What is the future of Bangalore real estate",
+          "secondary": [
+            "Which part of Bangalore is growing fastest",
+            "Bangalore housing market trend",
+            "Bangalore real estate forecast"
+          ]
+        },
+        "word_count_target": 1900,
+        "outline": [
+          "H2: What is the Current State of Bangalore Real Estate Market?",
+          "  H3: Market Size and Transaction Volumes",
+          "  H3: Price Trends Across Different Segments",
+          "H2: Which Parts of Bangalore are Growing the Fastest?",
+          "  H3: Emerging Growth Corridors",
+          "  H3: Infrastructure-Driven Development Areas",
+          "  H3: IT Hub Expansion Impact",
+          "H2: What are the Key Demand Drivers in Bangalore?",
+          "  H3: Population Growth and Migration",
+          "  H3: Employment and Income Growth",
+          "  H3: Lifestyle and Preference Changes",
+          "H2: How is Housing Supply Meeting Demand?",
+          "  H3: New Project Launches",
+          "  H3: Inventory Levels by Area",
+          "H2: What Does the Future Hold for Bangalore Real Estate?",
+          "  H3: Technology and PropTech Impact",
+          "  H3: Sustainability and Green Building Trends",
+          "  H3: Government Policy Influence"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "bangalore-property-price-forecast",
+            "anchor_text": "property price forecasting analysis",
+            "context": "In the future outlook section"
+          },
+          {
+            "target_slug": "bangalore-property-investment-decision-guide",
+            "anchor_text": "investment decision guidance",
+            "context": "In the market opportunities section"
+          },
+          {
+            "target_slug": "sg-palya-bangalore-complete-guide",
+            "anchor_text": "area-specific analysis like SG Palya",
+            "context": "In the growth areas section"
+          },
+          {
+            "target_slug": "bangalore-property-roi-investment-metrics",
+            "anchor_text": "investment metrics and returns",
+            "context": "In the demand drivers section"
+          }
+        ],
+        "faq_count": 7,
+        "notes": "Focus on comprehensive market analysis, growth patterns, and future trends affecting Bangalore real estate.",
+        "db_id": "art-5be141a7-e78"
+      },
+      {
+        "id": "bangalore-property-roi-metrics",
+        "title": "Bangalore Property ROI Guide: Investment Returns, Metrics & Calculation Methods",
+        "slug": "bangalore-property-roi-investment-metrics",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "What is the ROI of property in Bangalore",
+          "secondary": [
+            "What is the 2% rule for properties",
+            "Land rates in Bangalore per square feet",
+            "Bangalore property price index calculator"
+          ]
+        },
+        "word_count_target": 1400,
+        "outline": [
+          "H2: How to Calculate ROI on Bangalore Properties?",
+          "  H3: Basic ROI Calculation Methods",
+          "  H3: Rental Yield Calculations",
+          "H2: What is the Average Property ROI in Bangalore?",
+          "  H3: Historical Returns Analysis",
+          "  H3: Area-wise ROI Comparison",
+          "H2: How Does the 2% Rule Apply to Bangalore Properties?",
+          "  H3: Understanding the 2% Rule",
+          "  H3: Bangalore Market Reality Check",
+          "H2: What Factors Affect Property Investment Returns?",
+          "  H3: Location and Appreciation Potential",
+          "  H3: Rental Demand and Vacancy Rates"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "bangalore-property-investment-decision-guide",
+            "anchor_text": "property investment decision framework",
+            "context": "In the ROI analysis section"
+          },
+          {
+            "target_slug": "bangalore-real-estate-market-trends",
+            "anchor_text": "market trends affecting returns",
+            "context": "In the factors affecting returns section"
+          },
+          {
+            "target_slug": "sg-palya-property-buying-guide",
+            "anchor_text": "specific area investment analysis",
+            "context": "In the area-wise comparison section"
+          },
+          {
+            "target_slug": "bangalore-property-price-forecast",
+            "anchor_text": "price appreciation forecasts",
+            "context": "In the returns calculation section"
+          }
+        ],
+        "faq_count": 5,
+        "notes": "Provide practical ROI calculation methods, realistic return expectations, and investment evaluation tools.",
+        "db_id": "art-58596cc5-865"
+      },
+      {
+        "id": "bangalore-land-rates-guide",
+        "title": "Bangalore Land Rates Guide: Cost per Square Feet & Site Prices by Area",
+        "slug": "bangalore-land-rates-per-square-feet",
+        "type": "sub_spoke",
+        "target_keywords": {
+          "primary": "What is the cost of a 30 * 40 site in Bangalore",
+          "secondary": [
+            "Land rates in Bangalore per square feet",
+            "Bangalore property price index by area"
+          ]
+        },
+        "word_count_target": 1200,
+        "outline": [
+          "H2: What are the Current Land Rates in Bangalore?",
+          "  H3: Average Cost per Square Feet by Zone",
+          "  H3: Premium vs Budget Area Pricing",
+          "H2: How Much Does a 30x40 Site Cost in Different Areas?",
+          "  H3: Central Bangalore Site Prices",
+          "  H3: Peripheral Area Site Costs",
+          "H2: What Factors Determine Land Prices in Bangalore?",
+          "  H3: Location and Connectivity Impact",
+          "  H3: Development Potential and Zoning"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "bangalore-property-roi-investment-metrics",
+            "anchor_text": "land investment ROI calculations",
+            "context": "In the pricing analysis section"
+          },
+          {
+            "target_slug": "bangalore-real-estate-market-trends",
+            "anchor_text": "land market trends and growth",
+            "context": "In the factors determining prices section"
+          },
+          {
+            "target_slug": "sg-palya-bangalore-complete-guide",
+            "anchor_text": "SG Palya land rates and opportunities",
+            "context": "In the area-wise pricing section"
+          },
+          {
+            "target_slug": "bangalore-property-investment-decision-guide",
+            "anchor_text": "land investment decision guide",
+            "context": "In the investment considerations section"
+          }
+        ],
+        "faq_count": 4,
+        "notes": "Focus on current land rates, site pricing for standard dimensions, and factors affecting land values.",
+        "db_id": "art-acc63b11-583"
+      },
+      {
+        "id": "sg-palya-faq",
+        "title": "SG Palya FAQ: Everything You Need to Know About Suddagunte Palya Bangalore",
+        "slug": "sg-palya-frequently-asked-questions",
+        "type": "faq",
+        "target_keywords": {
+          "primary": "SG Palya Bangalore FAQ",
+          "secondary": [
+            "Suddagunte Palya questions",
+            "SG Palya living guide",
+            "SG Palya property FAQ"
+          ]
+        },
+        "word_count_target": 1000,
+        "outline": [
+          "H2: General Questions About SG Palya",
+          "H2: SG Palya Location and Connectivity FAQ",
+          "H2: SG Palya Safety and Infrastructure Questions",
+          "H2: SG Palya Property and Real Estate FAQ",
+          "H2: SG Palya Rental and PG Questions"
+        ],
+        "internal_links": [
+          {
+            "target_slug": "sg-palya-bangalore-complete-guide",
+            "anchor_text": "comprehensive SG Palya guide",
+            "context": "In the introduction"
+          },
+          {
+            "target_slug": "sg-palya-safety-infrastructure-analysis",
+            "anchor_text": "detailed safety analysis",
+            "context": "In the safety FAQ section"
+          },
+          {
+            "target_slug": "sg-palya-connectivity-metro-transport",
+            "anchor_text": "connectivity and transport guide",
+            "context": "In the connectivity FAQ section"
+          },
+          {
+            "target_slug": "sg-palya-property-buying-guide",
+            "anchor_text": "property buying guide",
+            "context": "In the property FAQ section"
+          }
+        ],
+        "faq_count": 25,
+        "notes": "Compile the most commonly asked questions about SG Palya from all other articles in the cluster. Provide concise, helpful answers.",
+        "db_id": "art-2020730f-e23"
+      }
+    ],
+    "linking_matrix": {
+      "sg-palya-bangalore-complete-guide": [
+        "sg-palya-safety-infrastructure-analysis",
+        "sg-palya-connectivity-metro-transport",
+        "sg-palya-property-buying-guide",
+        "sg-palya-rental-market-analysis",
+        "bangalore-property-investment-decision-guide",
+        "sg-palya-frequently-asked-questions"
+      ],
+      "sg-palya-safety-infrastructure-analysis": [
+        "sg-palya-bangalore-complete-guide",
+        "sg-palya-connectivity-metro-transport",
+        "sg-palya-property-buying-guide",
+        "sg-palya-rental-market-analysis"
+      ],
+      "sg-palya-connectivity-metro-transport": [
+        "sg-palya-bangalore-complete-guide",
+        "sg-palya-safety-infrastructure-analysis",
+        "sg-palya-property-buying-guide",
+        "bangalore-real-estate-market-trends"
+      ],
+      "sg-palya-property-buying-guide": [
+        "sg-palya-bangalore-complete-guide",
+        "sg-palya-safety-infrastructure-analysis",
+        "bangalore-property-investment-decision-guide",
+        "bangalore-property-roi-investment-metrics"
+      ],
+      "sg-palya-rental-market-analysis": [
+        "sg-palya-bangalore-complete-guide",
+        "sg-palya-connectivity-metro-transport",
+        "sg-palya-safety-infrastructure-analysis",
+        "bangalore-real-estate-market-trends"
+      ],
+      "bangalore-property-investment-decision-guide": [
+        "bangalore-property-price-forecast",
+        "bangalore-real-estate-market-trends",
+        "bangalore-property-roi-investment-metrics",
+        "sg-palya-property-buying-guide"
+      ],
+      "bangalore-property-price-forecast": [
+        "bangalore-property-investment-decision-guide",
+        "bangalore-real-estate-market-trends",
+        "bangalore-property-roi-investment-metrics",
+        "sg-palya-bangalore-complete-guide"
+      ],
+      "bangalore-real-estate-market-trends": [
+        "bangalore-property-price-forecast",
+        "bangalore-property-investment-decision-guide",
+        "sg-palya-bangalore-complete-guide",
+        "bangalore-property-roi-investment-metrics"
+      ],
+      "bangalore-property-roi-investment-metrics": [
+        "bangalore-property-investment-decision-guide",
+        "bangalore-real-estate-market-trends",
+        "sg-palya-property-buying-guide",
+        "bangalore-property-price-forecast"
+      ],
+      "bangalore-land-rates-per-square-feet": [
+        "bangalore-property-roi-investment-metrics",
+        "bangalore-real-estate-market-trends",
+        "sg-palya-bangalore-complete-guide",
+        "bangalore-property-investment-decision-guide"
+      ],
+      "sg-palya-frequently-asked-questions": [
+        "sg-palya-bangalore-complete-guide",
+        "sg-palya-safety-infrastructure-analysis",
+        "sg-palya-connectivity-metro-transport",
+        "sg-palya-property-buying-guide"
+      ]
+    }
+  }
+}

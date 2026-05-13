@@ -704,7 +704,8 @@ async def log_stream(
                             new = f.read()
                         last_size = size
                         for line in new.splitlines():
-                            yield f"data: {line}\n\n"
+                           yield f"data: {line}\n\n"
+                           await asyncio.sleep(0.05)
             except Exception as e:
                 yield f"data: [stream error] {e}\n\n"
             await asyncio.sleep(1.5)

@@ -129,7 +129,8 @@ We prioritize **numbers and facts**.
 
 ## SEO (Natural)
 
-* Keyword in H1, intro, 1–2 H2s, meta
+* Primary Keyword in H1, intro, 1–2 H2s, meta tags, secondary keywords should answer PAA questions on the particular primary keyword, Longtailed Keyword should be Autocomplete, Gramatically correct keywords.
+* under each H2,H3 and FAQS there should be 2-3 lines of direct answer.
 * Density: 1–2%
 * H2s answer real queries
 * Use descriptive internal links

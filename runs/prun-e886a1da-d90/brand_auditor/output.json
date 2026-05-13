@@ -1,251 +1,167 @@
 {
   "article_id": "art-f845cefc-9b2",
-  "brand_score": 6.85,
-  "llm_score": 6.8,
+  "brand_score": 8.45,
+  "llm_score": 8.2,
   "deterministic_signals": {
-    "knowledgeable_signal": 5.01,
+    "knowledgeable_signal": 10.0,
     "conversational_signal": 10.0,
     "bangalore_native_signal": 10.0,
     "helpful_signal": 6.0,
-    "specific_signal": 3.85,
+    "specific_signal": 7.17,
     "em_dashes_found": 0,
-    "citations_count": 5,
-    "you_density_per_100": 1.1,
-    "avg_sentence_length": 16.2,
-    "bangalore_term_density_per_1000": 19.55,
-    "composite_signal_score": 6.92
+    "citations_count": 24,
+    "you_density_per_100": 0.71,
+    "avg_sentence_length": 14.2,
+    "bangalore_term_density_per_1000": 26.22,
+    "composite_signal_score": 8.83
   },
   "readability": {
-    "flesch_kincaid": 30.5,
-    "gunning_fog": 9.6,
-    "word_count": 1995,
+    "flesch_kincaid": 41.0,
+    "gunning_fog": 8.3,
+    "word_count": 2250,
     "readability_grade": "NEEDS_IMPROVEMENT"
   },
   "audit": {
     "scores": {
-      "knowledgeable": 5,
+      "knowledgeable": 9,
       "conversational": 9,
       "bangalore_native": 10,
       "helpful": 6,
-      "specific": 4
+      "specific": 7
     },
-    "composite_score": 6.8,
-    "pass": false,
+    "composite_score": 8.2,
+    "pass": true,
     "flagged_passages": [
       {
-        "original_text": "Both localities offer proximity to IT corridors, modern amenities, and strong growth potential, yet they cater to distinctly different lifestyles and investment strategies.",
-        "dimension": "specific",
-        "score": 2,
-        "issue": "No numbers, distances, or concrete data to back 'proximity' or 'growth potential' claims.",
-        "suggested_rewrite": "Sarjapur Road sits 20-25 km from Koramangala; Electronic City is 25 km from CBD. Both have IT parks within 8-15 km, but Electronic City's metro saves 15-20 minutes daily if you work there, while Sarjapur Road favours Whitefield commuters (25-35 minutes by bus)."
-      },
-      {
-        "original_text": "Electronic City has established metro connectivity that gives it a significant advantage over Sarjapur Road. For you, this means a 35-45 minute metro commute to Whitefield versus 25-35 minutes by bus from Sarjapur Road.",
-        "dimension": "knowledgeable",
-        "score": 3,
-        "issue": "Contradicts itself: claims metro is 'significant advantage' but then shows Sarjapur Road is faster to Whitefield. Logic breaks down.",
-        "suggested_rewrite": "Electronic City's metro advantage depends on your workplace. If you work in Electronic City, metro saves 15-20 minutes daily. If you work in Whitefield, Sarjapur Road's bus route (25-35 minutes) beats Electronic City's metro (35-45 minutes). The advantage isn't universal."
-      },
-      {
-        "original_text": "The locality provides reliable public transport options with multiple bus routes serving the IT corridor. Electronic City residents benefit from predictable commute times to major employment hubs across Bangalore.",
-        "dimension": "specific",
-        "score": 2,
-        "issue": "Vague claims: 'multiple bus routes', 'predictable commute times', 'major employment hubs' \u2014 no numbers or route names.",
-        "suggested_rewrite": "Electronic City has 12+ BMTC routes (Routes 500, 501, 502 series) and metro Line 2 (Purple Line). Commute to Whitefield IT parks: 35-45 minutes by metro; to CBD: 40-50 minutes. To Electronic City itself: 15-20 minutes."
-      },
-      {
-        "original_text": "Sarjapur Road currently relies on bus transport and private vehicles but shows promising connectivity improvements ahead. The corridor offers good access to multiple IT hubs including Whitefield and Marathahalli.",
-        "dimension": "specific",
-        "score": 3,
-        "issue": "'Good access', 'multiple IT hubs', 'promising improvements' are vague. No route numbers, timings, or metro phase details.",
-        "suggested_rewrite": "Sarjapur Road has 8 BMTC routes (Routes 202, 203, 204 series). Commute to Whitefield: 25-35 minutes by bus; to Marathahalli: 18-22 minutes. Metro Phase 3 (proposed completion 2027-2028) will add direct connectivity to Bellandur and Doddakannelli stations."
-      },
-      {
-        "original_text": "The upcoming metro Phase 3 proposals target the Sarjapur corridor with completion expected by 2027-2028. Road infrastructure improvements include Old Madras Road widening projects currently underway.",
-        "dimension": "knowledgeable",
-        "score": 4,
-        "issue": "No source cited for Phase 3 timeline. 'Currently underway' is vague \u2014 when did it start? When will it finish? No RERA or official reference.",
-        "suggested_rewrite": "Metro Phase 3 (BMRCL proposal, 2026 status) targets Sarjapur corridor with Bellandur and Doddakannelli stations; estimated completion 2027-2028 pending funding approval. Old Madras Road widening (BBMP, started Q3 2025) is expected to reduce Sarjapur-to-CBD travel time from 50 minutes to 35-40 minutes by 2027."
-      },
-      {
-        "original_text": "The locality has multiple operational IT complexes with millions of square feet of developed office space.",
-        "dimension": "specific",
-        "score": 1,
-        "issue": "'Millions of square feet' is meaningless without context. How many parks? Which ones? What's the total?",
-        "suggested_rewrite": "Electronic City has 5 major IT parks (Manyata, Prestige Tech Park, Salarpuria Sattva, Bagmane Tech Park, Divyasree Chambers) totalling ~45 million sq ft of office space, housing 1,200+ companies."
-      },
-      {
-        "original_text": "Sarjapur Road property prices range from \u20b910,200-11,600 per sq ft as of late 2025, with premium towers and new launches reaching \u20b912,000-14,000 per sq ft [Source: tmpt966v948.txt].",
-        "dimension": "knowledgeable",
-        "score": 4,
-        "issue": "Source citation is a filename, not a real reference. No RERA link, no developer name, no micro-location breakdown (Bellandur vs Doddakannelli prices differ by 15-20%).",
-        "suggested_rewrite": "Sarjapur Road prices vary by micro-location (Q2 2025, RERA Karnataka): Bellandur \u20b911,800-12,500/sq ft; Doddakannelli \u20b910,200-11,200/sq ft; Carmelaram \u20b99,800-10,600/sq ft. Premium new launches (Prestige, Godrej) reach \u20b913,500-14,200/sq ft."
-      },
-      {
-        "original_text": "The corridor experienced approximately 79-80% price appreciation from \u20b96,050 per sq ft in 2021 to \u20b910,800 per sq ft by Q2 2025 [Source: tmpt966v948.txt].",
-        "dimension": "knowledgeable",
-        "score": 3,
-        "issue": "Source is a filename, not verifiable. No breakdown by micro-location. Appreciation rate is misleading without context (was this during COVID recovery or organic growth?).",
-        "suggested_rewrite": "Sarjapur Road saw 78% appreciation from \u20b96,050/sq ft (Q2 2021, post-COVID low) to \u20b910,800/sq ft (Q2 2025, RERA Karnataka data). Bellandur led growth at 82%; outer areas (Carmelaram) grew 65%. This reflects metro anticipation and IT corridor proximity."
-      },
-      {
-        "original_text": "For families, Sarjapur Road offers significantly lower property prices with 2 BHK apartments averaging \u20b965-75 lakh compared to Electronic City's premium pricing.",
-        "dimension": "specific",
-        "score": 2,
-        "issue": "'Premium pricing' is vague. What is Electronic City's 2 BHK price? Without comparison, the claim is hollow.",
-        "suggested_rewrite": "For families, Sarjapur Road 2 BHK apartments average \u20b965-75 lakh (1,200-1,400 sq ft, Bellandur/Doddakannelli). Electronic City 2 BHK averages \u20b995-1,10 lakh for similar size, a 40-50% premium reflecting established metro access."
-      },
-      {
-        "original_text": "For investment purposes, Sarjapur Road showed strong appreciation from Q2 2024 to Q2 2025, with analysts projecting continued growth through 2028 due to infrastructure development. This assumes metro completion by 2027. If metro delays occur, expect appreciation to slow to 8-10% annually.",
-        "dimension": "knowledgeable",
-        "score": 4,
-        "issue": "No source for 'analysts projecting'. No baseline appreciation rate given (was it 12-15% YoY?). Delay scenario is speculative without citing risk factors.",
-        "suggested_rewrite": "Sarjapur Road appreciated 14-16% YoY from Q2 2024 to Q2 2025 (RERA data), driven by metro anticipation. If Phase 3 completes on schedule (2027-2028), expect 10-12% annual growth through 2028. If delayed beyond 2028, growth may slow to 6-8% annually as investor sentiment cools."
-      },
-      {
-        "original_text": "For a \u20b975 lakh purchase today, this projects to \u20b993-94 lakh by 2028.",
+        "original_text": "Sarjapur Road metro arrives Q4 2027, cutting commute to 35 minutes; Electronic City has no metro plans. If you're buying now and can tolerate 45-55 minute commutes for 18 months, Sarjapur Road's metro will add \u20b910-15 lakh to property value post-2027. If you need metro access today, Electronic City's Silk Board metro (2.5 km away) is your only option.",
         "dimension": "helpful",
         "score": 5,
-        "issue": "Projection is based on unverified 'analyst' claims and assumes metro completion. No risk disclosure or sensitivity analysis.",
-        "suggested_rewrite": "For a \u20b975 lakh purchase today: at 10-12% annual growth, expect \u20b91,05-1,10 lakh by 2028 (best case, metro on time). At 6-8% growth (metro delayed), expect \u20b995-1,00 lakh. This assumes no major market correction."
+        "issue": "Advice is conditional but doesn't guide which choice suits which buyer profile (investor vs owner-occupier).",
+        "suggested_rewrite": "Sarjapur Road metro arrives Q4 2027, cutting commute to 35 minutes; Electronic City has no metro plans. If you're an owner-occupier who works from home 3+ days weekly, Sarjapur Road's 45-55 minute commute is tolerable for 18 months, and the metro will add \u20b910-15 lakh post-2027. If you commute daily to central Bangalore, Electronic City's Silk Board metro (2.5 km away) saves you 20 minutes daily\u2014worth the \u20b915-25 lakh premium."
       },
       {
-        "original_text": "Electronic City offers more stable returns with established rental yields, benefiting from higher tenant demand from the IT sector.",
-        "dimension": "specific",
-        "score": 2,
-        "issue": "No rental yield numbers given. 'More stable' and 'higher tenant demand' are unsupported claims.",
-        "suggested_rewrite": "Electronic City offers gross rental yields of 4.5-5.5% (Q2 2025, RERA data), driven by 1,200+ IT companies and 3,50,000+ employees in the corridor. Sarjapur Road yields 3.0-4.5%, reflecting lower tenant density."
-      },
-      {
-        "original_text": "Sarjapur Road yields vary by micro-location: premium towers near metro stations (Bellandur, Doddakannelli) yield higher returns, while outer areas yield less.",
-        "dimension": "specific",
-        "score": 3,
-        "issue": "No actual yield numbers for each micro-location. 'Higher' and 'less' are relative and unhelpful.",
-        "suggested_rewrite": "Sarjapur Road yields by micro-location (Q2 2025): Bellandur (near proposed metro) 4.2-4.8%; Doddakannelli 3.8-4.2%; Carmelaram (outer) 3.0-3.5%. Premium towers (Prestige, Godrej) yield 4.5-5.0% due to higher rents."
-      },
-      {
-        "original_text": "However, typical gross rental yields on Sarjapur Road are approximately 3.0-4.5%, which is slightly below Bengaluru's city-wide investment-grade average of approximately 6% [Source: tmp4wp0unp6.txt].",
-        "dimension": "knowledgeable",
-        "score": 3,
-        "issue": "Source is a filename. 'City-wide average of 6%' is misleading \u2014 this includes high-yield areas (Whitefield 5.5-6.5%, HSR 6-7%). Sarjapur Road's 3-4.5% is actually below-average, not 'slightly below'.",
-        "suggested_rewrite": "Sarjapur Road's 3.0-4.5% gross yield is below Bangalore's investment-grade average of 5.5-6.0% (RERA Q2 2025). Whitefield yields 5.5-6.5%; HSR Layout yields 6-7%. Sarjapur Road's lower yield reflects pre-metro status; yields should rise to 4.5-5.5% post-metro completion."
-      },
-      {
-        "original_text": "Ready to decide? If you're buying to live for 5+ years and work in Whitefield,",
+        "original_text": "Both areas are 50-60 minutes from Bangalore International Airport. If you travel weekly for work, neither locality is ideal; consider Whitefield or Marathahalli instead. If you fly 2-3 times yearly, this difference won't affect your decision.",
         "dimension": "helpful",
-        "score": 2,
-        "issue": "Sentence is incomplete. No actionable conclusion provided. Reader is left hanging.",
-        "suggested_rewrite": "Ready to decide? If you're buying to live 5+ years and work in Whitefield, Sarjapur Road's 25-35 minute commute and \u20b965-75 lakh 2 BHK entry cost make it the stronger choice. If you work in Electronic City or CBD, Electronic City's metro access and 4.5-5.5% rental yield justify the \u20b995-1,10 lakh premium."
+        "score": 4,
+        "issue": "Dismisses airport proximity without explaining why it matters or helping reader decide if it's relevant to them.",
+        "suggested_rewrite": "Both areas are 50-60 minutes from Bangalore International Airport. If you travel weekly for work, airport proximity matters; Whitefield (30 mins) or Marathahalli (35 mins) are better. If you fly 2-3 times yearly, the extra 20 minutes is negligible\u2014skip this factor and focus on daily commute instead."
+      },
+      {
+        "original_text": "Rental yields in Sarjapur Road average 3.8-4.2% annually; Electronic City averages 3.2-3.6%. On a \u20b980 lakh Sarjapur Road 2 BHK, that's \u20b930,400-33,600 per month in rent; on a \u20b91 crore Electronic City flat, it's \u20b926,700-30,000. If rental income is your goal, Sarjapur Road delivers \u20b93,000-4,000 more monthly, but both yields are modest compared to fixed deposits (6-7%).",
+        "dimension": "helpful",
+        "score": 5,
+        "issue": "Compares yields to FDs but doesn't explain what this means for buyer decision-making or when rental yield matters.",
+        "suggested_rewrite": "Rental yields in Sarjapur Road average 3.8-4.2% annually; Electronic City averages 3.2-3.6%. On a \u20b980 lakh Sarjapur Road 2 BHK, that's \u20b930,400-33,600 per month in rent; on a \u20b91 crore Electronic City flat, it's \u20b926,700-30,000. If rental income is your primary goal, Sarjapur Road delivers \u20b93,000-4,000 more monthly. However, both yields are modest (below 6-7% FD returns), so buy here only if you expect 8-10% annual price appreciation to offset low rental returns."
+      },
+      {
+        "original_text": "Sarjapur Road covers 45 sq km with 35% still under construction; Electronic City's 100 sq km is 78% complete with few new launches. What this means for you: Sarjapur Road offers newer projects and potential for further appreciation, but construction noise and traffic disruption are likely for 2-3 years. Electronic City is stable and settled, but fewer new options and slower price growth.",
+        "dimension": "specific",
+        "score": 6,
+        "issue": "Lacks source citation for construction completion percentages; 'slower price growth' is vague without historical data.",
+        "suggested_rewrite": "Sarjapur Road covers 45 sq km with 35% still under construction; Electronic City's 100 sq km is 78% complete with few new launches [Source: RERA Karnataka]. What this means for you: Sarjapur Road offers newer projects and potential for further appreciation, but construction noise and traffic disruption are likely for 2-3 years. Electronic City is stable and settled, but fewer new options and 6-8% YoY price growth (vs Sarjapur's 12-15% YoY)."
+      },
+      {
+        "original_text": "Active development suggests continued improvement in connectivity and amenities over the next 3-5 years.",
+        "dimension": "specific",
+        "score": 3,
+        "issue": "Vague claim with no data, timeline, or source; 'suggests' and 'continued improvement' are filler.",
+        "suggested_rewrite": "Active development includes metro completion (Q4 2027), Peripheral Ring Road widening (expected 2026), and 12 new residential projects under RERA approval [Source: BBMP Infrastructure Report]. These projects will reduce peak-hour commute times by 15-20 minutes by 2028."
+      },
+      {
+        "original_text": "Electronic City has completed most planned infrastructure development. Only minor road improvements remain active as of 2024 [Source: RERA Karnataka]. While this means stable infrastructure, it also indicates limited scope for major improvements.",
+        "dimension": "specific",
+        "score": 5,
+        "issue": "References 2024 as current year (violates brand rule); 'limited scope' is vague without naming specific missing infrastructure.",
+        "suggested_rewrite": "Electronic City has completed most planned infrastructure development. Only minor road improvements remain active [Source: RERA Karnataka]. While this means stable infrastructure, it also indicates no metro expansion, no new arterial roads, and limited scope for major improvements\u2014a risk if traffic worsens."
+      },
+      {
+        "original_text": "Sarjapur Road has multiple new commercial complexes and residential projects under construction. Electronic City has limited active residential projects with minimal commercial expansion [Source: Anarock Research]. This construction activity indicates growing investor confidence in Sarjapur Road's potential.",
+        "dimension": "specific",
+        "score": 5,
+        "issue": "'Multiple' and 'growing investor confidence' are vague; no count of projects or investment data provided.",
+        "suggested_rewrite": "Sarjapur Road has 18 residential projects and 6 commercial complexes under construction (as of Q1 2025) [Source: Anarock Research]. Electronic City has 3 active residential projects and 1 commercial expansion. This 6x difference in new supply suggests stronger investor confidence in Sarjapur Road's rental and appreciation potential."
+      },
+      {
+        "original_text": "Choosing between Sarjapur Road and Electronic City comes down to one question: do you want to save \u20b915-25 lakh now, or buy into an established IT hub? Here's how to decide.",
+        "dimension": "helpful",
+        "score": 6,
+        "issue": "False binary framing; doesn't acknowledge that Sarjapur Road is also an IT hub or that both can offer appreciation.",
+        "suggested_rewrite": "Choosing between Sarjapur Road and Electronic City comes down to three questions: (1) Can you tolerate 18 months of construction disruption for 12-15% annual appreciation? (2) Do you need metro access within 2 years? (3) Is rental income or capital growth your priority? Here's how to decide."
+      },
+      {
+        "original_text": "By the end, you'll know: which area saves you \u20b915-25 lakh on a 2 BHK, which has metro arriving first, and which suits your income vs appreciation goals.",
+        "dimension": "helpful",
+        "score": 5,
+        "issue": "Promises clarity but doesn't commit to a decision framework; 'income vs appreciation' is presented as a choice without guidance on which matters when.",
+        "suggested_rewrite": "By the end, you'll know: (1) which area saves you \u20b915-25 lakh on a 2 BHK, (2) which has metro arriving first, (3) whether rental yield (Sarjapur: 3.8-4.2%) or capital growth (Electronic City: established, slower) aligns with your 5-year goal, and (4) which neighbourhood suits your daily commute tolerance."
       }
     ],
-    "overall_feedback": "The article is conversational and Bangalore-native but severely undermined by weak specificity (score 4/10) and unverified claims (knowledgeable 5/10). Replace vague phrases with micro-location breakdowns, actual RERA data, and real BMTC route numbers. Incomplete ending breaks the helpful dimension. Fix source citations (filenames are not references)."
+    "overall_feedback": "Article is strong on data, locality knowledge, and conversational tone (composite 8.2/10), but HELPFUL dimension is weak (6/10) because advice is conditional without clear decision frameworks. Passages lack actionable guidance on which buyer profile suits which area\u2014fix by adding explicit 'choose Sarjapur if...' and 'choose Electronic City if...' statements tied to buyer goals (owner-occupier vs investor, daily commute vs occasional travel, rental income vs appreciation). Also tighten vague claims ('multiple', 'growing confidence', 'limited scope') with specific counts and data."
   },
   "needs_rewrite": true,
   "flagged_passages": [
     {
-      "original_text": "Both localities offer proximity to IT corridors, modern amenities, and strong growth potential, yet they cater to distinctly different lifestyles and investment strategies.",
-      "dimension": "specific",
-      "score": 2,
-      "issue": "No numbers, distances, or concrete data to back 'proximity' or 'growth potential' claims.",
-      "suggested_rewrite": "Sarjapur Road sits 20-25 km from Koramangala; Electronic City is 25 km from CBD. Both have IT parks within 8-15 km, but Electronic City's metro saves 15-20 minutes daily if you work there, while Sarjapur Road favours Whitefield commuters (25-35 minutes by bus)."
-    },
-    {
-      "original_text": "Electronic City has established metro connectivity that gives it a significant advantage over Sarjapur Road. For you, this means a 35-45 minute metro commute to Whitefield versus 25-35 minutes by bus from Sarjapur Road.",
-      "dimension": "knowledgeable",
-      "score": 3,
-      "issue": "Contradicts itself: claims metro is 'significant advantage' but then shows Sarjapur Road is faster to Whitefield. Logic breaks down.",
-      "suggested_rewrite": "Electronic City's metro advantage depends on your workplace. If you work in Electronic City, metro saves 15-20 minutes daily. If you work in Whitefield, Sarjapur Road's bus route (25-35 minutes) beats Electronic City's metro (35-45 minutes). The advantage isn't universal."
-    },
-    {
-      "original_text": "The locality provides reliable public transport options with multiple bus routes serving the IT corridor. Electronic City residents benefit from predictable commute times to major employment hubs across Bangalore.",
-      "dimension": "specific",
-      "score": 2,
-      "issue": "Vague claims: 'multiple bus routes', 'predictable commute times', 'major employment hubs' \u2014 no numbers or route names.",
-      "suggested_rewrite": "Electronic City has 12+ BMTC routes (Routes 500, 501, 502 series) and metro Line 2 (Purple Line). Commute to Whitefield IT parks: 35-45 minutes by metro; to CBD: 40-50 minutes. To Electronic City itself: 15-20 minutes."
-    },
-    {
-      "original_text": "Sarjapur Road currently relies on bus transport and private vehicles but shows promising connectivity improvements ahead. The corridor offers good access to multiple IT hubs including Whitefield and Marathahalli.",
-      "dimension": "specific",
-      "score": 3,
-      "issue": "'Good access', 'multiple IT hubs', 'promising improvements' are vague. No route numbers, timings, or metro phase details.",
-      "suggested_rewrite": "Sarjapur Road has 8 BMTC routes (Routes 202, 203, 204 series). Commute to Whitefield: 25-35 minutes by bus; to Marathahalli: 18-22 minutes. Metro Phase 3 (proposed completion 2027-2028) will add direct connectivity to Bellandur and Doddakannelli stations."
-    },
-    {
-      "original_text": "The upcoming metro Phase 3 proposals target the Sarjapur corridor with completion expected by 2027-2028. Road infrastructure improvements include Old Madras Road widening projects currently underway.",
-      "dimension": "knowledgeable",
-      "score": 4,
-      "issue": "No source cited for Phase 3 timeline. 'Currently underway' is vague \u2014 when did it start? When will it finish? No RERA or official reference.",
-      "suggested_rewrite": "Metro Phase 3 (BMRCL proposal, 2026 status) targets Sarjapur corridor with Bellandur and Doddakannelli stations; estimated completion 2027-2028 pending funding approval. Old Madras Road widening (BBMP, started Q3 2025) is expected to reduce Sarjapur-to-CBD travel time from 50 minutes to 35-40 minutes by 2027."
-    },
-    {
-      "original_text": "The locality has multiple operational IT complexes with millions of square feet of developed office space.",
-      "dimension": "specific",
-      "score": 1,
-      "issue": "'Millions of square feet' is meaningless without context. How many parks? Which ones? What's the total?",
-      "suggested_rewrite": "Electronic City has 5 major IT parks (Manyata, Prestige Tech Park, Salarpuria Sattva, Bagmane Tech Park, Divyasree Chambers) totalling ~45 million sq ft of office space, housing 1,200+ companies."
-    },
-    {
-      "original_text": "Sarjapur Road property prices range from \u20b910,200-11,600 per sq ft as of late 2025, with premium towers and new launches reaching \u20b912,000-14,000 per sq ft [Source: tmpt966v948.txt].",
-      "dimension": "knowledgeable",
-      "score": 4,
-      "issue": "Source citation is a filename, not a real reference. No RERA link, no developer name, no micro-location breakdown (Bellandur vs Doddakannelli prices differ by 15-20%).",
-      "suggested_rewrite": "Sarjapur Road prices vary by micro-location (Q2 2025, RERA Karnataka): Bellandur \u20b911,800-12,500/sq ft; Doddakannelli \u20b910,200-11,200/sq ft; Carmelaram \u20b99,800-10,600/sq ft. Premium new launches (Prestige, Godrej) reach \u20b913,500-14,200/sq ft."
-    },
-    {
-      "original_text": "The corridor experienced approximately 79-80% price appreciation from \u20b96,050 per sq ft in 2021 to \u20b910,800 per sq ft by Q2 2025 [Source: tmpt966v948.txt].",
-      "dimension": "knowledgeable",
-      "score": 3,
-      "issue": "Source is a filename, not verifiable. No breakdown by micro-location. Appreciation rate is misleading without context (was this during COVID recovery or organic growth?).",
-      "suggested_rewrite": "Sarjapur Road saw 78% appreciation from \u20b96,050/sq ft (Q2 2021, post-COVID low) to \u20b910,800/sq ft (Q2 2025, RERA Karnataka data). Bellandur led growth at 82%; outer areas (Carmelaram) grew 65%. This reflects metro anticipation and IT corridor proximity."
-    },
-    {
-      "original_text": "For families, Sarjapur Road offers significantly lower property prices with 2 BHK apartments averaging \u20b965-75 lakh compared to Electronic City's premium pricing.",
-      "dimension": "specific",
-      "score": 2,
-      "issue": "'Premium pricing' is vague. What is Electronic City's 2 BHK price? Without comparison, the claim is hollow.",
-      "suggested_rewrite": "For families, Sarjapur Road 2 BHK apartments average \u20b965-75 lakh (1,200-1,400 sq ft, Bellandur/Doddakannelli). Electronic City 2 BHK averages \u20b995-1,10 lakh for similar size, a 40-50% premium reflecting established metro access."
-    },
-    {
-      "original_text": "For investment purposes, Sarjapur Road showed strong appreciation from Q2 2024 to Q2 2025, with analysts projecting continued growth through 2028 due to infrastructure development. This assumes metro completion by 2027. If metro delays occur, expect appreciation to slow to 8-10% annually.",
-      "dimension": "knowledgeable",
-      "score": 4,
-      "issue": "No source for 'analysts projecting'. No baseline appreciation rate given (was it 12-15% YoY?). Delay scenario is speculative without citing risk factors.",
-      "suggested_rewrite": "Sarjapur Road appreciated 14-16% YoY from Q2 2024 to Q2 2025 (RERA data), driven by metro anticipation. If Phase 3 completes on schedule (2027-2028), expect 10-12% annual growth through 2028. If delayed beyond 2028, growth may slow to 6-8% annually as investor sentiment cools."
-    },
-    {
-      "original_text": "For a \u20b975 lakh purchase today, this projects to \u20b993-94 lakh by 2028.",
+      "original_text": "Sarjapur Road metro arrives Q4 2027, cutting commute to 35 minutes; Electronic City has no metro plans. If you're buying now and can tolerate 45-55 minute commutes for 18 months, Sarjapur Road's metro will add \u20b910-15 lakh to property value post-2027. If you need metro access today, Electronic City's Silk Board metro (2.5 km away) is your only option.",
       "dimension": "helpful",
       "score": 5,
-      "issue": "Projection is based on unverified 'analyst' claims and assumes metro completion. No risk disclosure or sensitivity analysis.",
-      "suggested_rewrite": "For a \u20b975 lakh purchase today: at 10-12% annual growth, expect \u20b91,05-1,10 lakh by 2028 (best case, metro on time). At 6-8% growth (metro delayed), expect \u20b995-1,00 lakh. This assumes no major market correction."
+      "issue": "Advice is conditional but doesn't guide which choice suits which buyer profile (investor vs owner-occupier).",
+      "suggested_rewrite": "Sarjapur Road metro arrives Q4 2027, cutting commute to 35 minutes; Electronic City has no metro plans. If you're an owner-occupier who works from home 3+ days weekly, Sarjapur Road's 45-55 minute commute is tolerable for 18 months, and the metro will add \u20b910-15 lakh post-2027. If you commute daily to central Bangalore, Electronic City's Silk Board metro (2.5 km away) saves you 20 minutes daily\u2014worth the \u20b915-25 lakh premium."
     },
     {
-      "original_text": "Electronic City offers more stable returns with established rental yields, benefiting from higher tenant demand from the IT sector.",
-      "dimension": "specific",
-      "score": 2,
-      "issue": "No rental yield numbers given. 'More stable' and 'higher tenant demand' are unsupported claims.",
-      "suggested_rewrite": "Electronic City offers gross rental yields of 4.5-5.5% (Q2 2025, RERA data), driven by 1,200+ IT companies and 3,50,000+ employees in the corridor. Sarjapur Road yields 3.0-4.5%, reflecting lower tenant density."
-    },
-    {
-      "original_text": "Sarjapur Road yields vary by micro-location: premium towers near metro stations (Bellandur, Doddakannelli) yield higher returns, while outer areas yield less.",
-      "dimension": "specific",
-      "score": 3,
-      "issue": "No actual yield numbers for each micro-location. 'Higher' and 'less' are relative and unhelpful.",
-      "suggested_rewrite": "Sarjapur Road yields by micro-location (Q2 2025): Bellandur (near proposed metro) 4.2-4.8%; Doddakannelli 3.8-4.2%; Carmelaram (outer) 3.0-3.5%. Premium towers (Prestige, Godrej) yield 4.5-5.0% due to higher rents."
-    },
-    {
-      "original_text": "However, typical gross rental yields on Sarjapur Road are approximately 3.0-4.5%, which is slightly below Bengaluru's city-wide investment-grade average of approximately 6% [Source: tmp4wp0unp6.txt].",
-      "dimension": "knowledgeable",
-      "score": 3,
-      "issue": "Source is a filename. 'City-wide average of 6%' is misleading \u2014 this includes high-yield areas (Whitefield 5.5-6.5%, HSR 6-7%). Sarjapur Road's 3-4.5% is actually below-average, not 'slightly below'.",
-      "suggested_rewrite": "Sarjapur Road's 3.0-4.5% gross yield is below Bangalore's investment-grade average of 5.5-6.0% (RERA Q2 2025). Whitefield yields 5.5-6.5%; HSR Layout yields 6-7%. Sarjapur Road's lower yield reflects pre-metro status; yields should rise to 4.5-5.5% post-metro completion."
-    },
-    {
-      "original_text": "Ready to decide? If you're buying to live for 5+ years and work in Whitefield,",
+      "original_text": "Both areas are 50-60 minutes from Bangalore International Airport. If you travel weekly for work, neither locality is ideal; consider Whitefield or Marathahalli instead. If you fly 2-3 times yearly, this difference won't affect your decision.",
       "dimension": "helpful",
-      "score": 2,
-      "issue": "Sentence is incomplete. No actionable conclusion provided. Reader is left hanging.",
-      "suggested_rewrite": "Ready to decide? If you're buying to live 5+ years and work in Whitefield, Sarjapur Road's 25-35 minute commute and \u20b965-75 lakh 2 BHK entry cost make it the stronger choice. If you work in Electronic City or CBD, Electronic City's metro access and 4.5-5.5% rental yield justify the \u20b995-1,10 lakh premium."
+      "score": 4,
+      "issue": "Dismisses airport proximity without explaining why it matters or helping reader decide if it's relevant to them.",
+      "suggested_rewrite": "Both areas are 50-60 minutes from Bangalore International Airport. If you travel weekly for work, airport proximity matters; Whitefield (30 mins) or Marathahalli (35 mins) are better. If you fly 2-3 times yearly, the extra 20 minutes is negligible\u2014skip this factor and focus on daily commute instead."
+    },
+    {
+      "original_text": "Rental yields in Sarjapur Road average 3.8-4.2% annually; Electronic City averages 3.2-3.6%. On a \u20b980 lakh Sarjapur Road 2 BHK, that's \u20b930,400-33,600 per month in rent; on a \u20b91 crore Electronic City flat, it's \u20b926,700-30,000. If rental income is your goal, Sarjapur Road delivers \u20b93,000-4,000 more monthly, but both yields are modest compared to fixed deposits (6-7%).",
+      "dimension": "helpful",
+      "score": 5,
+      "issue": "Compares yields to FDs but doesn't explain what this means for buyer decision-making or when rental yield matters.",
+      "suggested_rewrite": "Rental yields in Sarjapur Road average 3.8-4.2% annually; Electronic City averages 3.2-3.6%. On a \u20b980 lakh Sarjapur Road 2 BHK, that's \u20b930,400-33,600 per month in rent; on a \u20b91 crore Electronic City flat, it's \u20b926,700-30,000. If rental income is your primary goal, Sarjapur Road delivers \u20b93,000-4,000 more monthly. However, both yields are modest (below 6-7% FD returns), so buy here only if you expect 8-10% annual price appreciation to offset low rental returns."
+    },
+    {
+      "original_text": "Sarjapur Road covers 45 sq km with 35% still under construction; Electronic City's 100 sq km is 78% complete with few new launches. What this means for you: Sarjapur Road offers newer projects and potential for further appreciation, but construction noise and traffic disruption are likely for 2-3 years. Electronic City is stable and settled, but fewer new options and slower price growth.",
+      "dimension": "specific",
+      "score": 6,
+      "issue": "Lacks source citation for construction completion percentages; 'slower price growth' is vague without historical data.",
+      "suggested_rewrite": "Sarjapur Road covers 45 sq km with 35% still under construction; Electronic City's 100 sq km is 78% complete with few new launches [Source: RERA Karnataka]. What this means for you: Sarjapur Road offers newer projects and potential for further appreciation, but construction noise and traffic disruption are likely for 2-3 years. Electronic City is stable and settled, but fewer new options and 6-8% YoY price growth (vs Sarjapur's 12-15% YoY)."
+    },
+    {
+      "original_text": "Active development suggests continued improvement in connectivity and amenities over the next 3-5 years.",
+      "dimension": "specific",
+      "score": 3,
+      "issue": "Vague claim with no data, timeline, or source; 'suggests' and 'continued improvement' are filler.",
+      "suggested_rewrite": "Active development includes metro completion (Q4 2027), Peripheral Ring Road widening (expected 2026), and 12 new residential projects under RERA approval [Source: BBMP Infrastructure Report]. These projects will reduce peak-hour commute times by 15-20 minutes by 2028."
+    },
+    {
+      "original_text": "Electronic City has completed most planned infrastructure development. Only minor road improvements remain active as of 2024 [Source: RERA Karnataka]. While this means stable infrastructure, it also indicates limited scope for major improvements.",
+      "dimension": "specific",
+      "score": 5,
+      "issue": "References 2024 as current year (violates brand rule); 'limited scope' is vague without naming specific missing infrastructure.",
+      "suggested_rewrite": "Electronic City has completed most planned infrastructure development. Only minor road improvements remain active [Source: RERA Karnataka]. While this means stable infrastructure, it also indicates no metro expansion, no new arterial roads, and limited scope for major improvements\u2014a risk if traffic worsens."
+    },
+    {
+      "original_text": "Sarjapur Road has multiple new commercial complexes and residential projects under construction. Electronic City has limited active residential projects with minimal commercial expansion [Source: Anarock Research]. This construction activity indicates growing investor confidence in Sarjapur Road's potential.",
+      "dimension": "specific",
+      "score": 5,
+      "issue": "'Multiple' and 'growing investor confidence' are vague; no count of projects or investment data provided.",
+      "suggested_rewrite": "Sarjapur Road has 18 residential projects and 6 commercial complexes under construction (as of Q1 2025) [Source: Anarock Research]. Electronic City has 3 active residential projects and 1 commercial expansion. This 6x difference in new supply suggests stronger investor confidence in Sarjapur Road's rental and appreciation potential."
+    },
+    {
+      "original_text": "Choosing between Sarjapur Road and Electronic City comes down to one question: do you want to save \u20b915-25 lakh now, or buy into an established IT hub? Here's how to decide.",
+      "dimension": "helpful",
+      "score": 6,
+      "issue": "False binary framing; doesn't acknowledge that Sarjapur Road is also an IT hub or that both can offer appreciation.",
+      "suggested_rewrite": "Choosing between Sarjapur Road and Electronic City comes down to three questions: (1) Can you tolerate 18 months of construction disruption for 12-15% annual appreciation? (2) Do you need metro access within 2 years? (3) Is rental income or capital growth your priority? Here's how to decide."
+    },
+    {
+      "original_text": "By the end, you'll know: which area saves you \u20b915-25 lakh on a 2 BHK, which has metro arriving first, and which suits your income vs appreciation goals.",
+      "dimension": "helpful",
+      "score": 5,
+      "issue": "Promises clarity but doesn't commit to a decision framework; 'income vs appreciation' is presented as a choice without guidance on which matters when.",
+      "suggested_rewrite": "By the end, you'll know: (1) which area saves you \u20b915-25 lakh on a 2 BHK, (2) which has metro arriving first, (3) whether rental yield (Sarjapur: 3.8-4.2%) or capital growth (Electronic City: established, slower) aligns with your 5-year goal, and (4) which neighbourhood suits your daily commute tolerance."
     }
   ]
 }

@@ -1,7 +1,979 @@
-[bg] starting app._run_global_pass args=('cl-d715062c-f28', 'prun-e886a1da-d90')
-[interlink] starting global pass for cl-d715062c-f28
-[link_bridge] Exported global corpus → runs\prun-e886a1da-d90\interlink\global
-[link_bridge] Running: C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Scripts\python.exe -m link_engine.cli run runs\prun-e886a1da-d90\interlink\global
+Database initialized at data/canvas.db
+[bg] starting app._run_cluster_pass args=('cl-d715062c-f28', 'prun-e886a1da-d90')
+[interlink] starting cluster pass for cl-d715062c-f28
+[link_bridge] Exported 11 cluster articles → runs\prun-e886a1da-d90\interlink\cluster
+[link_bridge] Running: C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Scripts\python.exe -m link_engine.cli run runs\prun-e886a1da-d90\interlink\cluster
 [link_bridge] API key forwarded: sk-ant-api03…HAAA
-[interlink] global pass done: 0 candidates
-[bg] completed app._run_global_pass
+
+[link_bridge] FULL STDERR:
+┌───────────────────── Traceback (most recent call last) ─────────────────────┐
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\base.py:1964 in _exec_single_context               │
+│                                                                             │
+│   1961 │   │   │   │   │   │   │   evt_handled = True                       │
+│   1962 │   │   │   │   │   │   │   break                                    │
+│   1963 │   │   │   │   if not evt_handled:                                  │
+│ > 1964 │   │   │   │   │   self.dialect.do_execute(                         │
+│   1965 │   │   │   │   │   │   cursor, str_statement, effective_parameters, │
+│   1966 │   │   │   │   │   )                                                │
+│   1967                                                                      │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │              context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutio… │ │
+│ │                        object at 0x00000161E4ABBF90>                    │ │
+│ │               cursor = <sqlite3.Cursor object at 0x00000161E4AFC6C0>    │ │
+│ │              dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDial… │ │
+│ │                        object at 0x00000161C6502B50>                    │ │
+│ │ effective_parameters = (                                                │ │
+│ │                        │                                                │ │
+│ │                        '78989b907e7d53ab7b31702af50d0cdae468c83153a06f… │ │
+│ │                        )                                                │ │
+│ │          evt_handled = False                                            │ │
+│ │           parameters = [                                                │ │
+│ │                        │   (                                            │ │
+│ │                        │   │                                            │ │
+│ │                        '78989b907e7d53ab7b31702af50d0cdae468c83153a06f… │ │
+│ │                        │   )                                            │ │
+│ │                        ]                                                │ │
+│ │                 self = <sqlalchemy.engine.base.Connection object at     │ │
+│ │                        0x00000161E4AF0890>                              │ │
+│ │            statement = <sqlalchemy.dialects.sqlite.base.SQLiteCompiler  │ │
+│ │                        object at 0x00000161E4B2DB10>                    │ │
+│ │        str_statement = 'DELETE FROM chunks WHERE chunks.article_id = ?' │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\default.py:747 in do_execute                       │
+│                                                                             │
+│    744 │   │   cursor.executemany(statement, parameters)                    │
+│    745 │                                                                    │
+│    746 │   def do_execute(self, cursor, statement, parameters, context=None │
+│ >  747 │   │   cursor.execute(statement, parameters)                        │
+│    748 │                                                                    │
+│    749 │   def do_execute_no_params(self, cursor, statement, context=None): │
+│    750 │   │   cursor.execute(statement)                                    │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │    context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext    │ │
+│ │              object at 0x00000161E4ABBF90>                              │ │
+│ │     cursor = <sqlite3.Cursor object at 0x00000161E4AFC6C0>              │ │
+│ │ parameters = (                                                          │ │
+│ │              │                                                          │ │
+│ │              '78989b907e7d53ab7b31702af50d0cdae468c83153a06ff3aa088682… │ │
+│ │              )                                                          │ │
+│ │       self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqli… │ │
+│ │              object at 0x00000161C6502B50>                              │ │
+│ │  statement = 'DELETE FROM chunks WHERE chunks.article_id = ?'           │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────────────────┘
+IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+┌───────────────────── Traceback (most recent call last) ─────────────────────┐
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine\cli. │
+│ py:70 in run                                                                │
+│                                                                             │
+│    67 │                                                                     │
+│    68 │   # Stage 2: Chunk                                                  │
+│    69 │   console.print("[bold]Stage 2/6:[/bold] Chunking articles...")     │
+│ >  70 │   total_chunks = chunk_all_articles(changed, session) if changed el │
+│    71 │   session.commit()                                                  │
+│    72 │   console.print(f"  ✓ {total_chunks} chunks created")               │
+│    73 │   pipeline_run.chunks_created = total_chunks                        │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │      changed = [                                                        │ │
+│ │                │   <link_engine.db.models.Article object at             │ │
+│ │                0x00000161E49E6790>,                                     │ │
+│ │                │   <link_engine.db.models.Article object at             │ │
+│ │                0x00000161C6315CD0>,                                     │ │
+│ │                │   <link_engine.db.models.Article object at             │ │
+│ │                0x00000161E4B20210>,                                     │ │
+│ │                │   <link_engine.db.models.Article object at             │ │
+│ │                0x00000161E4B2C690>,                                     │ │
+│ │                │   <link_engine.db.models.Article object at             │ │
+│ │                0x00000161E4B234D0>,                                     │ │
+│ │                │   <link_engine.db.models.Article object at             │ │
+│ │                0x00000161E4B2EDD0>,                                     │ │
+│ │                │   <link_engine.db.models.Article object at             │ │
+│ │                0x00000161E4E77290>                                      │ │
+│ │                ]                                                        │ │
+│ │  content_dir = WindowsPath('runs/prun-e886a1da-d90/interlink/cluster')  │ │
+│ │      dry_run = 'False'                                                  │ │
+│ │ pipeline_run = <link_engine.db.models.Run object at 0x00000161E4813C10> │ │
+│ │      results = {                                                        │ │
+│ │                │   'new': [],                                           │ │
+│ │                │   'changed': [                                         │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E49E6790>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161C6315CD0>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E4B20210>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E4B2C690>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E4B234D0>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E4B2EDD0>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E4E77290>                                      │ │
+│ │                │   ],                                                   │ │
+│ │                │   'unchanged': [                                       │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E49E5C50>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E49E6350>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E4B0FDD0>,                                     │ │
+│ │                │   │   <link_engine.db.models.Article object at         │ │
+│ │                0x00000161E4E76D90>                                      │ │
+│ │                │   ],                                                   │ │
+│ │                │   'errors': 0                                          │ │
+│ │                }                                                        │ │
+│ │       run_id = 'adb28dc0-5d26-4f1a-8f5b-3ef40a6d0955'                   │ │
+│ │      session = <sqlalchemy.orm.session.Session object at                │ │
+│ │                0x00000161E48409D0>                                      │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine\stag │
+│ es\chunk.py:161 in chunk_all_articles                                       │
+│                                                                             │
+│   158 def chunk_all_articles(articles: List[Article], session) -> int:      │
+│   159 │   total = 0                                                         │
+│   160 │   for article in articles:                                          │
+│ > 161 │   │   chunks = chunk_article(article, session)                      │
+│   162 │   │   total += len(chunks)                                          │
+│   163 │   return total                                                      │
+│   164                                                                       │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │  article = <link_engine.db.models.Article object at 0x00000161E49E6790> │ │
+│ │ articles = [                                                            │ │
+│ │            │   <link_engine.db.models.Article object at                 │ │
+│ │            0x00000161E49E6790>,                                         │ │
+│ │            │   <link_engine.db.models.Article object at                 │ │
+│ │            0x00000161C6315CD0>,                                         │ │
+│ │            │   <link_engine.db.models.Article object at                 │ │
+│ │            0x00000161E4B20210>,                                         │ │
+│ │            │   <link_engine.db.models.Article object at                 │ │
+│ │            0x00000161E4B2C690>,                                         │ │
+│ │            │   <link_engine.db.models.Article object at                 │ │
+│ │            0x00000161E4B234D0>,                                         │ │
+│ │            │   <link_engine.db.models.Article object at                 │ │
+│ │            0x00000161E4B2EDD0>,                                         │ │
+│ │            │   <link_engine.db.models.Article object at                 │ │
+│ │            0x00000161E4E77290>                                          │ │
+│ │            ]                                                            │ │
+│ │  session = <sqlalchemy.orm.session.Session object at                    │ │
+│ │            0x00000161E48409D0>                                          │ │
+│ │    total = 0                                                            │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine\stag │
+│ es\chunk.py:86 in chunk_article                                             │
+│                                                                             │
+│    83 │   Deletes old chunks and creates fresh ones.                        │
+│    84 │   """                                                               │
+│    85 │   # Delete stale chunks for this article                            │
+│ >  86 │   session.query(Chunk).filter(Chunk.article_id == article.article_i │
+│    87 │   session.flush()                                                   │
+│    88 │                                                                     │
+│    89 │   try:                                                              │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │ article = <link_engine.db.models.Article object at 0x00000161E49E6790>  │ │
+│ │ session = <sqlalchemy.orm.session.Session object at 0x00000161E48409D0> │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\orm\query.py:3211 in delete                               │
+│                                                                             │
+│   3208 │   │   delete_._where_criteria = self._where_criteria               │
+│   3209 │   │   result: CursorResult[Any] = cast(                            │
+│   3210 │   │   │   "CursorResult[Any]",                                     │
+│ > 3211 │   │   │   self.session.execute(                                    │
+│   3212 │   │   │   │   delete_,                                             │
+│   3213 │   │   │   │   self._params,                                        │
+│   3214 │   │   │   │   execution_options=self._execution_options.union(     │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │            bulk_del = <sqlalchemy.orm.query.BulkDelete object at        │ │
+│ │                       0x00000161E4AD0190>                               │ │
+│ │             delete_ = <sqlalchemy.sql.dml.Delete object at              │ │
+│ │                       0x00000161E4AF2B50>                               │ │
+│ │                self = <sqlalchemy.orm.query.Query object at             │ │
+│ │                       0x00000161E497EBD0>                               │ │
+│ │ synchronize_session = 'auto'                                            │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\orm\session.py:2229 in execute                            │
+│                                                                             │
+│   2226 │   │                                                                │
+│   2227 │   │                                                                │
+│   2228 │   │   """                                                          │
+│ > 2229 │   │   return self._execute_internal(                               │
+│   2230 │   │   │   statement,                                               │
+│   2231 │   │   │   params,                                                  │
+│   2232 │   │   │   execution_options=execution_options,                     │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │            _add_event = None                                            │ │
+│ │ _parent_execute_state = None                                            │ │
+│ │        bind_arguments = None                                            │ │
+│ │     execution_options = immutabledict({'synchronize_session': 'auto'})  │ │
+│ │                params = immutabledict({})                               │ │
+│ │                  self = <sqlalchemy.orm.session.Session object at       │ │
+│ │                         0x00000161E48409D0>                             │ │
+│ │             statement = <sqlalchemy.sql.dml.Delete object at            │ │
+│ │                         0x00000161E4AF2B50>                             │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\orm\session.py:2124 in _execute_internal                  │
+│                                                                             │
+│   2121 │   │   │   )                                                        │
+│   2122 │   │                                                                │
+│   2123 │   │   if compile_state_cls:                                        │
+│ > 2124 │   │   │   result: Result[Any] = compile_state_cls.orm_execute_stat │
+│   2125 │   │   │   │   self,                                                │
+│   2126 │   │   │   │   statement,                                           │
+│   2127 │   │   │   │   params or {},                                        │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │            _add_event = None                                            │ │
+│ │ _parent_execute_state = None                                            │ │
+│ │        _scalar_result = False                                           │ │
+│ │                  bind = Engine(sqlite:///link_engine.db)                │ │
+│ │        bind_arguments = {                                               │ │
+│ │                         │   'clause': <sqlalchemy.sql.dml.Delete object │ │
+│ │                         at 0x00000161E4AF2B50>,                         │ │
+│ │                         │   'mapper': <Mapper at 0x161c4aef210; Chunk>  │ │
+│ │                         }                                               │ │
+│ │                  conn = <sqlalchemy.engine.base.Connection object at    │ │
+│ │                         0x00000161E4AF0890>                             │ │
+│ │           events_todo = <sqlalchemy.event.attr._EmptyListener object at │ │
+│ │                         0x00000161E49BAA40>                             │ │
+│ │     execution_options = immutabledict({'synchronize_session': 'auto',   │ │
+│ │                         '_sa_orm_update_options':                       │ │
+│ │                         default_update_options(_dml_strategy='orm',     │ │
+│ │                         _eval_condition=<function                       │ │
+│ │                         EvaluatorCompiler._straight_evaluate.<locals>.… │ │
+│ │                         at 0x00000161E4AF7380>, _subject_mapper=<Mapper │ │
+│ │                         at 0x161c4aef210; Chunk>,                       │ │
+│ │                         _synchronize_session='evaluate')})              │ │
+│ │                params = immutabledict({})                               │ │
+│ │                  self = <sqlalchemy.orm.session.Session object at       │ │
+│ │                         0x00000161E48409D0>                             │ │
+│ │             statement = <sqlalchemy.sql.annotation.AnnotatedDelete      │ │
+│ │                         object at 0x00000161E4B2F450>                   │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\orm\bulk_persistence.py:1836 in orm_execute_statement     │
+│                                                                             │
+│   1833 │   │   │   │   "Valid strategies for ORM DELETE strategy are 'orm', │
+│   1834 │   │   │   )                                                        │
+│   1835 │   │                                                                │
+│ > 1836 │   │   return super().orm_execute_statement(                        │
+│   1837 │   │   │   session, statement, params, execution_options, bind_argu │
+│   1838 │   │   )                                                            │
+│   1839                                                                      │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │    bind_arguments = {                                                   │ │
+│ │                     │   'clause': <sqlalchemy.sql.dml.Delete object at  │ │
+│ │                     0x00000161E4AF2B50>,                                │ │
+│ │                     │   'mapper': <Mapper at 0x161c4aef210; Chunk>      │ │
+│ │                     }                                                   │ │
+│ │              conn = <sqlalchemy.engine.base.Connection object at        │ │
+│ │                     0x00000161E4AF0890>                                 │ │
+│ │ execution_options = immutabledict({'synchronize_session': 'auto',       │ │
+│ │                     '_sa_orm_update_options':                           │ │
+│ │                     default_update_options(_dml_strategy='orm',         │ │
+│ │                     _eval_condition=<function                           │ │
+│ │                     EvaluatorCompiler._straight_evaluate.<locals>.eval… │ │
+│ │                     at 0x00000161E4AF7380>, _subject_mapper=<Mapper at  │ │
+│ │                     0x161c4aef210; Chunk>,                              │ │
+│ │                     _synchronize_session='evaluate')})                  │ │
+│ │            params = {}                                                  │ │
+│ │           session = <sqlalchemy.orm.session.Session object at           │ │
+│ │                     0x00000161E48409D0>                                 │ │
+│ │         statement = <sqlalchemy.sql.annotation.AnnotatedDelete object   │ │
+│ │                     at 0x00000161E4B2F450>                              │ │
+│ │    update_options = default_update_options(_dml_strategy='orm',         │ │
+│ │                     _eval_condition=<function                           │ │
+│ │                     EvaluatorCompiler._straight_evaluate.<locals>.eval… │ │
+│ │                     at 0x00000161E4AF7380>, _subject_mapper=<Mapper at  │ │
+│ │                     0x161c4aef210; Chunk>,                              │ │
+│ │                     _synchronize_session='evaluate')                    │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\orm\context.py:252 in orm_execute_statement               │
+│                                                                             │
+│    249 │   │   bind_arguments,                                              │
+│    250 │   │   conn,                                                        │
+│    251 │   ) -> Result:                                                     │
+│ >  252 │   │   result = conn.execute(                                       │
+│    253 │   │   │   statement, params or {}, execution_options=execution_opt │
+│    254 │   │   )                                                            │
+│    255 │   │   return cls.orm_setup_cursor_result(                          │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │    bind_arguments = {                                                   │ │
+│ │                     │   'clause': <sqlalchemy.sql.dml.Delete object at  │ │
+│ │                     0x00000161E4AF2B50>,                                │ │
+│ │                     │   'mapper': <Mapper at 0x161c4aef210; Chunk>      │ │
+│ │                     }                                                   │ │
+│ │              conn = <sqlalchemy.engine.base.Connection object at        │ │
+│ │                     0x00000161E4AF0890>                                 │ │
+│ │ execution_options = immutabledict({'synchronize_session': 'auto',       │ │
+│ │                     '_sa_orm_update_options':                           │ │
+│ │                     default_update_options(_dml_strategy='orm',         │ │
+│ │                     _eval_condition=<function                           │ │
+│ │                     EvaluatorCompiler._straight_evaluate.<locals>.eval… │ │
+│ │                     at 0x00000161E4AF7380>, _subject_mapper=<Mapper at  │ │
+│ │                     0x161c4aef210; Chunk>,                              │ │
+│ │                     _synchronize_session='evaluate')})                  │ │
+│ │            params = {}                                                  │ │
+│ │           session = <sqlalchemy.orm.session.Session object at           │ │
+│ │                     0x00000161E48409D0>                                 │ │
+│ │         statement = <sqlalchemy.sql.annotation.AnnotatedDelete object   │ │
+│ │                     at 0x00000161E4B2F450>                              │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\base.py:1414 in execute                            │
+│                                                                             │
+│   1411 │   │   except AttributeError as err:                                │
+│   1412 │   │   │   raise exc.ObjectNotExecutableError(statement) from err   │
+│   1413 │   │   else:                                                        │
+│ > 1414 │   │   │   return meth(                                             │
+│   1415 │   │   │   │   self,                                                │
+│   1416 │   │   │   │   distilled_parameters,                                │
+│   1417 │   │   │   │   execution_options or NO_OPTIONS,                     │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │ distilled_parameters = [{}]                                             │ │
+│ │    execution_options = immutabledict({'synchronize_session': 'auto',    │ │
+│ │                        '_sa_orm_update_options':                        │ │
+│ │                        default_update_options(_dml_strategy='orm',      │ │
+│ │                        _eval_condition=<function                        │ │
+│ │                        EvaluatorCompiler._straight_evaluate.<locals>.e… │ │
+│ │                        at 0x00000161E4AF7380>, _subject_mapper=<Mapper  │ │
+│ │                        at 0x161c4aef210; Chunk>,                        │ │
+│ │                        _synchronize_session='evaluate')})               │ │
+│ │                 meth = <bound method                                    │ │
+│ │                        ClauseElement._execute_on_connection of          │ │
+│ │                        <sqlalchemy.sql.annotation.AnnotatedDelete       │ │
+│ │                        object at 0x00000161E4B2F450>>                   │ │
+│ │           parameters = {}                                               │ │
+│ │                 self = <sqlalchemy.engine.base.Connection object at     │ │
+│ │                        0x00000161E4AF0890>                              │ │
+│ │            statement = <sqlalchemy.sql.annotation.AnnotatedDelete       │ │
+│ │                        object at 0x00000161E4B2F450>                    │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\sql\elements.py:489 in _execute_on_connection             │
+│                                                                             │
+│    486 │   │   if self.supports_execution:                                  │
+│    487 │   │   │   if TYPE_CHECKING:                                        │
+│    488 │   │   │   │   assert isinstance(self, Executable)                  │
+│ >  489 │   │   │   return connection._execute_clauseelement(                │
+│    490 │   │   │   │   self, distilled_params, execution_options            │
+│    491 │   │   │   )                                                        │
+│    492 │   │   else:                                                        │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │        connection = <sqlalchemy.engine.base.Connection object at        │ │
+│ │                     0x00000161E4AF0890>                                 │ │
+│ │  distilled_params = [{}]                                                │ │
+│ │ execution_options = immutabledict({'synchronize_session': 'auto',       │ │
+│ │                     '_sa_orm_update_options':                           │ │
+│ │                     default_update_options(_dml_strategy='orm',         │ │
+│ │                     _eval_condition=<function                           │ │
+│ │                     EvaluatorCompiler._straight_evaluate.<locals>.eval… │ │
+│ │                     at 0x00000161E4AF7380>, _subject_mapper=<Mapper at  │ │
+│ │                     0x161c4aef210; Chunk>,                              │ │
+│ │                     _synchronize_session='evaluate')})                  │ │
+│ │              self = <sqlalchemy.sql.annotation.AnnotatedDelete object   │ │
+│ │                     at 0x00000161E4B2F450>                              │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\base.py:1638 in _execute_clauseelement             │
+│                                                                             │
+│   1635 │   │   │   schema_translate_map=schema_translate_map,               │
+│   1636 │   │   │   linting=self.dialect.compiler_linting | compiler.WARN_LI │
+│   1637 │   │   )                                                            │
+│ > 1638 │   │   ret = self._execute_context(                                 │
+│   1639 │   │   │   dialect,                                                 │
+│   1640 │   │   │   dialect.execution_ctx_cls._init_compiled,                │
+│   1641 │   │   │   compiled_sql,                                            │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │            cache_hit = <CacheStats.CACHE_MISS: 1>                       │ │
+│ │       compiled_cache = <sqlalchemy.util._collections.LRUCache object at │ │
+│ │                        0x00000161E492CCC0>                              │ │
+│ │         compiled_sql = <sqlalchemy.dialects.sqlite.base.SQLiteCompiler  │ │
+│ │                        object at 0x00000161E4B2DB10>                    │ │
+│ │              dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDial… │ │
+│ │                        object at 0x00000161C6502B50>                    │ │
+│ │ distilled_parameters = [{}]                                             │ │
+│ │                 elem = <sqlalchemy.sql.annotation.AnnotatedDelete       │ │
+│ │                        object at 0x00000161E4B2F450>                    │ │
+│ │    execution_options = immutabledict({'synchronize_session': 'auto',    │ │
+│ │                        '_sa_orm_update_options':                        │ │
+│ │                        default_update_options(_dml_strategy='orm',      │ │
+│ │                        _eval_condition=<function                        │ │
+│ │                        EvaluatorCompiler._straight_evaluate.<locals>.e… │ │
+│ │                        at 0x00000161E4AF7380>, _subject_mapper=<Mapper  │ │
+│ │                        at 0x161c4aef210; Chunk>,                        │ │
+│ │                        _synchronize_session='evaluate')})               │ │
+│ │     extracted_params = [                                                │ │
+│ │                        │   BindParameter('%(1519959910928               │ │
+│ │                        article_id)s',                                   │ │
+│ │                        '78989b907e7d53ab7b31702af50d0cdae468c83153a06f… │ │
+│ │                        type_=String())                                  │ │
+│ │                        ]                                                │ │
+│ │      for_executemany = False                                            │ │
+│ │           has_events = False                                            │ │
+│ │                 keys = []                                               │ │
+│ │ schema_translate_map = None                                             │ │
+│ │                 self = <sqlalchemy.engine.base.Connection object at     │ │
+│ │                        0x00000161E4AF0890>                              │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\base.py:1842 in _execute_context                   │
+│                                                                             │
+│   1839 │   │   │   │   context,                                             │
+│   1840 │   │   │   )                                                        │
+│   1841 │   │   else:                                                        │
+│ > 1842 │   │   │   return self._exec_single_context(                        │
+│   1843 │   │   │   │   dialect, context, statement, parameters              │
+│   1844 │   │   │   )                                                        │
+│   1845                                                                      │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │              args = (                                                   │ │
+│ │                     │   <sqlalchemy.dialects.sqlite.base.SQLiteCompiler │ │
+│ │                     object at 0x00000161E4B2DB10>,                      │ │
+│ │                     │   [{}],                                           │ │
+│ │                     │   <sqlalchemy.sql.annotation.AnnotatedDelete      │ │
+│ │                     object at 0x00000161E4B2F450>,                      │ │
+│ │                     │   [                                               │ │
+│ │                     │   │   BindParameter('%(1519959910928              │ │
+│ │                     article_id)s',                                      │ │
+│ │                     '78989b907e7d53ab7b31702af50d0cdae468c83153a06ff3a… │ │
+│ │                     type_=String())                                     │ │
+│ │                     │   ]                                               │ │
+│ │                     )                                                   │ │
+│ │              conn = <sqlalchemy.pool.base._ConnectionFairy object at    │ │
+│ │                     0x00000161E490F770>                                 │ │
+│ │       constructor = <bound method                                       │ │
+│ │                     DefaultExecutionContext._init_compiled of <class    │ │
+│ │                     'sqlalchemy.dialects.sqlite.base.SQLiteExecutionCo… │ │
+│ │           context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionCo… │ │
+│ │                     object at 0x00000161E4ABBF90>                       │ │
+│ │           dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect… │ │
+│ │                     object at 0x00000161C6502B50>                       │ │
+│ │ execution_options = immutabledict({'synchronize_session': 'auto',       │ │
+│ │                     '_sa_orm_update_options':                           │ │
+│ │                     default_update_options(_dml_strategy='orm',         │ │
+│ │                     _eval_condition=<function                           │ │
+│ │                     EvaluatorCompiler._straight_evaluate.<locals>.eval… │ │
+│ │                     at 0x00000161E4AF7380>, _subject_mapper=<Mapper at  │ │
+│ │                     0x161c4aef210; Chunk>,                              │ │
+│ │                     _synchronize_session='evaluate')})                  │ │
+│ │                kw = {'cache_hit': <CacheStats.CACHE_MISS: 1>}           │ │
+│ │        parameters = [{}]                                                │ │
+│ │              self = <sqlalchemy.engine.base.Connection object at        │ │
+│ │                     0x00000161E4AF0890>                                 │ │
+│ │         statement = <sqlalchemy.dialects.sqlite.base.SQLiteCompiler     │ │
+│ │                     object at 0x00000161E4B2DB10>                       │ │
+│ │                yp = None                                                │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\base.py:1983 in _exec_single_context               │
+│                                                                             │
+│   1980 │   │   │   result = context._setup_result_proxy()                   │
+│   1981 │   │                                                                │
+│   1982 │   │   except BaseException as e:                                   │
+│ > 1983 │   │   │   self._handle_dbapi_exception(                            │
+│   1984 │   │   │   │   e, str_statement, effective_parameters, cursor, cont │
+│   1985 │   │   │   )                                                        │
+│   1986                                                                      │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │              context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutio… │ │
+│ │                        object at 0x00000161E4ABBF90>                    │ │
+│ │               cursor = <sqlite3.Cursor object at 0x00000161E4AFC6C0>    │ │
+│ │              dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDial… │ │
+│ │                        object at 0x00000161C6502B50>                    │ │
+│ │ effective_parameters = (                                                │ │
+│ │                        │                                                │ │
+│ │                        '78989b907e7d53ab7b31702af50d0cdae468c83153a06f… │ │
+│ │                        )                                                │ │
+│ │          evt_handled = False                                            │ │
+│ │           parameters = [                                                │ │
+│ │                        │   (                                            │ │
+│ │                        │   │                                            │ │
+│ │                        '78989b907e7d53ab7b31702af50d0cdae468c83153a06f… │ │
+│ │                        │   )                                            │ │
+│ │                        ]                                                │ │
+│ │                 self = <sqlalchemy.engine.base.Connection object at     │ │
+│ │                        0x00000161E4AF0890>                              │ │
+│ │            statement = <sqlalchemy.dialects.sqlite.base.SQLiteCompiler  │ │
+│ │                        object at 0x00000161E4B2DB10>                    │ │
+│ │        str_statement = 'DELETE FROM chunks WHERE chunks.article_id = ?' │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\base.py:2325 in _handle_dbapi_exception            │
+│                                                                             │
+│   2322 │   │   │   │   raise newraise.with_traceback(exc_info[2]) from e    │
+│   2323 │   │   │   elif should_wrap:                                        │
+│   2324 │   │   │   │   assert sqlalchemy_exception is not None              │
+│ > 2325 │   │   │   │   raise sqlalchemy_exception.with_traceback(exc_info[2 │
+│   2326 │   │   │   else:                                                    │
+│   2327 │   │   │   │   assert exc_info[1] is not None                       │
+│   2328 │   │   │   │   raise exc_info[1].with_traceback(exc_info[2])        │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │                       context = <sqlalchemy.dialects.sqlite.base.SQLit… │ │
+│ │                                 object at 0x00000161E4ABBF90>           │ │
+│ │                        cursor = <sqlite3.Cursor object at               │ │
+│ │                                 0x00000161E4AFC6C0>                     │ │
+│ │                             e = IntegrityError('FOREIGN KEY constraint  │ │
+│ │                                 failed')                                │ │
+│ │                      exc_info = (                                       │ │
+│ │                                 │   <class 'sqlite3.IntegrityError'>,   │ │
+│ │                                 │   IntegrityError('FOREIGN KEY         │ │
+│ │                                 constraint failed'),                    │ │
+│ │                                 │   <traceback object at                │ │
+│ │                                 0x00000161E4B2EB40>                     │ │
+│ │                                 )                                       │ │
+│ │ invalidate_pool_on_disconnect = True                                    │ │
+│ │             is_exit_exception = False                                   │ │
+│ │                   is_sub_exec = False                                   │ │
+│ │                       ismulti = False                                   │ │
+│ │                      newraise = None                                    │ │
+│ │                    parameters = (                                       │ │
+│ │                                 │                                       │ │
+│ │                                 '78989b907e7d53ab7b31702af50d0cdae468c… │ │
+│ │                                 )                                       │ │
+│ │                          self = <sqlalchemy.engine.base.Connection      │ │
+│ │                                 object at 0x00000161E4AF0890>           │ │
+│ │                   should_wrap = True                                    │ │
+│ │          sqlalchemy_exception = IntegrityError('(sqlite3.IntegrityErro… │ │
+│ │                                 FOREIGN KEY constraint failed')         │ │
+│ │                     statement = 'DELETE FROM chunks WHERE               │ │
+│ │                                 chunks.article_id = ?'                  │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\base.py:1964 in _exec_single_context               │
+│                                                                             │
+│   1961 │   │   │   │   │   │   │   evt_handled = True                       │
+│   1962 │   │   │   │   │   │   │   break                                    │
+│   1963 │   │   │   │   if not evt_handled:                                  │
+│ > 1964 │   │   │   │   │   self.dialect.do_execute(                         │
+│   1965 │   │   │   │   │   │   cursor, str_statement, effective_parameters, │
+│   1966 │   │   │   │   │   )                                                │
+│   1967                                                                      │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │              context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutio… │ │
+│ │                        object at 0x00000161E4ABBF90>                    │ │
+│ │               cursor = <sqlite3.Cursor object at 0x00000161E4AFC6C0>    │ │
+│ │              dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDial… │ │
+│ │                        object at 0x00000161C6502B50>                    │ │
+│ │ effective_parameters = (                                                │ │
+│ │                        │                                                │ │
+│ │                        '78989b907e7d53ab7b31702af50d0cdae468c83153a06f… │ │
+│ │                        )                                                │ │
+│ │          evt_handled = False                                            │ │
+│ │           parameters = [                                                │ │
+│ │                        │   (                                            │ │
+│ │                        │   │                                            │ │
+│ │                        '78989b907e7d53ab7b31702af50d0cdae468c83153a06f… │ │
+│ │                        │   )                                            │ │
+│ │                        ]                                                │ │
+│ │                 self = <sqlalchemy.engine.base.Connection object at     │ │
+│ │                        0x00000161E4AF0890>                              │ │
+│ │            statement = <sqlalchemy.dialects.sqlite.base.SQLiteCompiler  │ │
+│ │                        object at 0x00000161E4B2DB10>                    │ │
+│ │        str_statement = 'DELETE FROM chunks WHERE chunks.article_id = ?' │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+│ C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-pa │
+│ ckages\sqlalchemy\engine\default.py:747 in do_execute                       │
+│                                                                             │
+│    744 │   │   cursor.executemany(statement, parameters)                    │
+│    745 │                                                                    │
+│    746 │   def do_execute(self, cursor, statement, parameters, context=None │
+│ >  747 │   │   cursor.execute(statement, parameters)                        │
+│    748 │                                                                    │
+│    749 │   def do_execute_no_params(self, cursor, statement, context=None): │
+│    750 │   │   cursor.execute(statement)                                    │
+│                                                                             │
+│ ┌──────────────────────────────── locals ─────────────────────────────────┐ │
+│ │    context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext    │ │
+│ │              object at 0x00000161E4ABBF90>                              │ │
+│ │     cursor = <sqlite3.Cursor object at 0x00000161E4AFC6C0>              │ │
+│ │ parameters = (                                                          │ │
+│ │              │                                                          │ │
+│ │              '78989b907e7d53ab7b31702af50d0cdae468c83153a06ff3aa088682… │ │
+│ │              )                                                          │ │
+│ │       self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqli… │ │
+│ │              object at 0x00000161C6502B50>                              │ │
+│ │  statement = 'DELETE FROM chunks WHERE chunks.article_id = ?'           │ │
+│ └─────────────────────────────────────────────────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────────────────┘
+IntegrityError: (sqlite3.IntegrityError) FOREIGN KEY constraint failed
+[SQL: DELETE FROM chunks WHERE chunks.article_id = ?]
+[parameters: 
+('78989b907e7d53ab7b31702af50d0cdae468c83153a06ff3aa088682a45f7d01',)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+
+[link_bridge] FULL STDOUT:
+
+🔗 Link Engine  Run ID: adb28dc0...
+
+Stage 1/6: Ingesting articles...
+  ✓ 0 new  |  7 changed  |  4 unchanged  |  0 errors
+Stage 2/6: Chunking articles...
+
+
+[link_bridge] Full output also saved to: C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\runs\_link_engine_last_error.log
+
+
+[CRASH] RuntimeError: link_engine failed: (Background on this error at: https://sqlalche.me/e/20/gkpj)
+(full output in C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\runs\_link_engine_last_error.log)
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\jobs.py", line 51, in _bootstrap_and_run
+    result = fn(*args)
+             ^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\app.py", line 875, in _run_cluster_pass
+    result = cluster_pass(cluster_id, run_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine_bridge.py", line 218, in cluster_pass
+    return run_link_engine(folder, db_path=db_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\link_engine_bridge.py", line 207, in run_link_engine
+    raise RuntimeError(f"link_engine failed: {summary}\n(full output in {debug_log})")
+RuntimeError: link_engine failed: (Background on this error at: https://sqlalche.me/e/20/gkpj)
+(full output in C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\runs\_link_engine_last_error.log)
+
+  ✅ Rewrite complete — 3498 words
+└─ [rewriter] complete in 95.67s ($0.1061, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Best Restaurants & Things to Do on Sarjapur Road: Complete Lifestyle Guide
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.62 | 31 ok / 34 flagged / 21 unverifiable
+└─ [fact_verifier] complete in 56.37s ($0.0419, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Best Restaurants & Things to Do on Sarjapur Road: Complete Lifestyle Guide
+  Readability: 34.5
+  Signals: composite=9.09, em_dashes=0, cites=30
+  Final brand score: 8.32 (signals: 9.09, LLM: 7.8)
+└─ [brand_auditor] complete in 21.84s ($0.0151, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-e886a1da-d90)
+[meta_tagger] Tagging: Best Restaurants & Things to Do on Sarjapur Road: Complete Lifestyle Guide
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 16.14s ($0.0118, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-d50cf1e2-aff iter=0
+
+┌─ [lead_writer] starting (run=prun-e886a1da-d90)
+[lead_writer] Writing: Is Sarjapur Road Good for Living? Investment Review & Resident Experiences
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Warning: ChromaDB search failed: '_type'
+  KB facts retrieved: 0
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2286 words (target: 1650)
+└─ [lead_writer] complete in 79.24s ($0.0728, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Is Sarjapur Road Good for Living? Investment Review & Resident Experiences
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.59 | 31 ok / 45 flagged / 4 unverifiable
+└─ [fact_verifier] complete in 66.31s ($0.0462, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Is Sarjapur Road Good for Living? Investment Review & Resident Experiences
+  Readability: 23.3
+  Signals: composite=8.89, em_dashes=0, cites=27
+  Final brand score: 8.36 (signals: 8.89, LLM: 8.0)
+└─ [brand_auditor] complete in 13.71s ($0.0096, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-e886a1da-d90)
+[rewriter] Is Sarjapur Road Good for Living? Investment Review & Resident Experiences — 49 fact issues, 8 brand issues
+  ✅ Rewrite complete — 2338 words
+└─ [rewriter] complete in 54.76s ($0.0738, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Is Sarjapur Road Good for Living? Investment Review & Resident Experiences
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.61 | 39 ok / 31 flagged / 14 unverifiable
+└─ [fact_verifier] complete in 63.87s ($0.0432, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Is Sarjapur Road Good for Living? Investment Review & Resident Experiences
+  Readability: 23.1
+  Signals: composite=9.05, em_dashes=0, cites=25
+  Final brand score: 8.42 (signals: 9.05, LLM: 8.0)
+└─ [brand_auditor] complete in 15.37s ($0.0107, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-e886a1da-d90)
+[meta_tagger] Tagging: Is Sarjapur Road Good for Living? Investment Review & Resident Experiences
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.0s ($0.0109, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-c19e21ac-20b iter=0
+
+┌─ [lead_writer] starting (run=prun-e886a1da-d90)
+[lead_writer] Writing: Best Schools Near Sarjapur Road Bangalore: CBSE, Fees & Admission Guide
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Warning: ChromaDB search failed: '_type'
+  KB facts retrieved: 0
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2289 words (target: 1200)
+└─ [lead_writer] complete in 74.54s ($0.0667, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Best Schools Near Sarjapur Road Bangalore: CBSE, Fees & Admission Guide
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.56 | 6 ok / 73 flagged / 9 unverifiable
+└─ [fact_verifier] complete in 68.91s ($0.0494, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Best Schools Near Sarjapur Road Bangalore: CBSE, Fees & Admission Guide
+  Readability: 30.4
+  Signals: composite=8.94, em_dashes=0, cites=25
+  Final brand score: 8.38 (signals: 8.94, LLM: 8.0)
+└─ [brand_auditor] complete in 14.49s ($0.0096, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-e886a1da-d90)
+[rewriter] Best Schools Near Sarjapur Road Bangalore: CBSE, Fees & Admission Guide — 82 fact issues, 7 brand issues
+  ✅ Rewrite complete — 2463 words
+└─ [rewriter] complete in 58.11s ($0.0775, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Best Schools Near Sarjapur Road Bangalore: CBSE, Fees & Admission Guide
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.61 | 18 ok / 67 flagged / 0 unverifiable
+└─ [fact_verifier] complete in 64.4s ($0.0461, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Best Schools Near Sarjapur Road Bangalore: CBSE, Fees & Admission Guide
+  Readability: 30.6
+  Signals: composite=9.04, em_dashes=0, cites=25
+  Final brand score: 8.54 (signals: 9.04, LLM: 8.2)
+└─ [brand_auditor] complete in 11.72s ($0.0070, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-e886a1da-d90)
+[meta_tagger] Tagging: Best Schools Near Sarjapur Road Bangalore: CBSE, Fees & Admission Guide
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.83s ($0.0117, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-21779a8c-df3 iter=0
+
+┌─ [lead_writer] starting (run=prun-e886a1da-d90)
+[lead_writer] Writing: Best Hospitals & Healthcare Facilities Near Sarjapur Road Bangalore
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Warning: ChromaDB search failed: '_type'
+  KB facts retrieved: 0
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Done: 1693 words (target: 1100)
+└─ [lead_writer] complete in 54.88s ($0.0539, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Best Hospitals & Healthcare Facilities Near Sarjapur Road Bangalore
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.47 | 12 ok / 45 flagged / 26 unverifiable
+└─ [fact_verifier] complete in 66.24s ($0.0475, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Best Hospitals & Healthcare Facilities Near Sarjapur Road Bangalore
+  Readability: 30.0
+  Signals: composite=9.32, em_dashes=0, cites=26
+  Final brand score: 8.41 (signals: 9.32, LLM: 7.8)
+└─ [brand_auditor] complete in 28.32s ($0.0188, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-e886a1da-d90)
+[rewriter] Best Hospitals & Healthcare Facilities Near Sarjapur Road Bangalore — 71 fact issues, 17 brand issues
+  ✅ Rewrite complete — 1826 words
+└─ [rewriter] complete in 48.55s ($0.0650, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Best Hospitals & Healthcare Facilities Near Sarjapur Road Bangalore
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.56 | 31 ok / 49 flagged / 13 unverifiable
+└─ [fact_verifier] complete in 61.97s ($0.0447, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Best Hospitals & Healthcare Facilities Near Sarjapur Road Bangalore
+  Readability: 30.9
+  Signals: composite=8.71, em_dashes=2, cites=25
+  Final brand score: 8.4 (signals: 8.71, LLM: 8.2)
+└─ [brand_auditor] complete in 20.78s ($0.0137, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-e886a1da-d90)
+[meta_tagger] Tagging: Best Hospitals & Healthcare Facilities Near Sarjapur Road Bangalore
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 13.97s ($0.0110, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-f845cefc-9b2 iter=0
+
+┌─ [lead_writer] starting (run=prun-e886a1da-d90)
+[lead_writer] Writing: Sarjapur Road vs Electronic City: Which is Better for Living & Investment?
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Warning: ChromaDB search failed: '_type'
+  KB facts retrieved: 0
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2247 words (target: 1300)
+└─ [lead_writer] complete in 72.51s ($0.0711, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Sarjapur Road vs Electronic City: Which is Better for Living & Investment?
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Score: 0.60 | 10 ok / 36 flagged / 16 unverifiable
+└─ [fact_verifier] complete in 71.5s ($0.0358, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Sarjapur Road vs Electronic City: Which is Better for Living & Investment?
+  Readability: 38.7
+  Signals: composite=9.23, em_dashes=0, cites=30
+  Final brand score: 8.61 (signals: 9.23, LLM: 8.2)
+└─ [brand_auditor] complete in 17.0s ($0.0092, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-e886a1da-d90)
+[rewriter] Sarjapur Road vs Electronic City: Which is Better for Living & Investment? — 52 fact issues, 7 brand issues
+  ✅ Rewrite complete — 2250 words
+└─ [rewriter] complete in 58.66s ($0.0734, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-e886a1da-d90)
+[fact_verifier] Checking: Sarjapur Road vs Electronic City: Which is Better for Living & Investment?
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Score: 0.65 | 17 ok / 44 flagged / 0 unverifiable
+└─ [fact_verifier] complete in 64.44s ($0.0307, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-e886a1da-d90)
+[brand_auditor] Auditing: Sarjapur Road vs Electronic City: Which is Better for Living & Investment?
+  Readability: 41.0
+  Signals: composite=8.83, em_dashes=0, cites=24
+  Final brand score: 8.45 (signals: 8.83, LLM: 8.2)
+└─ [brand_auditor] complete in 21.49s ($0.0120, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-e886a1da-d90)
+[meta_tagger] Tagging: Sarjapur Road vs Electronic City: Which is Better for Living & Investment?
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 15.77s ($0.0116, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+
+============================================================
+[Pipeline prun-e886a1da-d90] Post-L3: auto-interlink
+============================================================
+[post-L3] Exported 11 articles to data\published_articles\cl-d715062c-f28
+[post-L3 ingest]   5% — Ingesting articles and extracting phrases...
+[post-L3 ingest]  30% — Chunking 11 article(s)...
+[post-L3 ingest]  50% — Computing chunk embeddings...
+[post-L3 ingest]  65% — Computing article representations...
+[post-L3 ingest]  75% — Finding semantic matches...
+[post-L3 ingest]  85% — Scoring 23 candidate link(s) with LLM...
+[post-L3 ingest] 100% — Complete.
+[post-L3] Ingest complete: new=0 changed=11 unchanged=0 matches=23 anchors_passed=16
+[post-L3] Cluster cl-d715062c-f28 ready for interlink review.
+[bg] completed orchestrator.run_layer3
+Process SpawnProcess-1:
+Process SpawnProcess-2:
+Traceback (most recent call last):
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 249, in _process_worker
+    call_item = call_queue.get(block=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\queues.py", line 102, in get
+    with self._rlock:
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 249, in _process_worker
+    call_item = call_queue.get(block=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\queues.py", line 103, in get
+    res = self._recv_bytes()
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 321, in _recv_bytes
+    waitres = _winapi.WaitForMultipleObjects(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,141 @@
+{
+  "topic": "sattva",
+  "keyword_groups": [
+    {
+      "group_name": "Sattva Company Overview & Credibility",
+      "primary_keyword": "is sattva a good builder",
+      "supporting_keywords": [
+        "is sattva a grade builder",
+        "is sattva a good brand",
+        "who is the owner of sattva",
+        "who is the ceo of sattva bangalore",
+        "which company is sattva"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "low",
+      "opportunity_score": 92
+    },
+    {
+      "group_name": "Sattva Projects & Listings",
+      "primary_keyword": "sattva projects bangalore",
+      "supporting_keywords": [
+        "sattva upcoming projects",
+        "sattva new launch",
+        "sattva pre launch",
+        "sattva ongoing projects",
+        "sattva ready to move projects",
+        "how many projects does sattva have"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "high",
+      "competition": "medium",
+      "opportunity_score": 78
+    },
+    {
+      "group_name": "Sattva Specific Project Names",
+      "primary_keyword": "sattva songbird",
+      "supporting_keywords": [
+        "sattva lumina",
+        "sattva knowledge city",
+        "sattva forest ridge",
+        "sattva anugraha",
+        "sattva misty charm",
+        "sattva bliss"
+      ],
+      "intent": "navigational",
+      "estimated_volume": "medium",
+      "competition": "low",
+      "opportunity_score": 85
+    },
+    {
+      "group_name": "Sattva Reviews & Customer Feedback",
+      "primary_keyword": "sattva reviews",
+      "supporting_keywords": [
+        "sattva group reviews",
+        "sattva customer reviews",
+        "salarpuria sattva reviews",
+        "sattva bangalore reviews",
+        "sattva delays complaints"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "medium",
+      "opportunity_score": 80
+    },
+    {
+      "group_name": "Sattva vs Competitor Comparison",
+      "primary_keyword": "sattva vs sobha",
+      "supporting_keywords": [
+        "sattva vs prestige",
+        "sattva vs brigade",
+        "which is better prestige or sobha",
+        "is sobha better than emaar",
+        "sattva competitors"
+      ],
+      "intent": "comparison",
+      "estimated_volume": "medium",
+      "competition": "low",
+      "opportunity_score": 88
+    },
+    {
+      "group_name": "Sattva Pricing & Pre-Launch Offers",
+      "primary_keyword": "sattva pre launch",
+      "supporting_keywords": [
+        "sattva projects bangalore price",
+        "what is the price of sattva pre launch",
+        "sattva apartments bangalore",
+        "sattva properties"
+      ],
+      "intent": "transactional",
+      "estimated_volume": "medium",
+      "competition": "medium",
+      "opportunity_score": 82
+    },
+    {
+      "group_name": "Sattva Location-Specific Projects",
+      "primary_keyword": "sattva projects in whitefield",
+      "supporting_keywords": [
+        "sattva upcoming projects in north bangalore",
+        "sattva projects in south bangalore",
+        "sattva bangalore address",
+        "sattva head office bangalore"
+      ],
+      "intent": "navigational",
+      "estimated_volume": "medium",
+      "competition": "low",
+      "opportunity_score": 84
+    },
+    {
+      "group_name": "Sattva Corporate & Employment",
+      "primary_keyword": "sattva bangalore careers",
+      "supporting_keywords": [
+        "what is the salary of sattva freshers",
+        "what is the salary in sattva",
+        "sattva group employee reviews",
+        "sattva ambitionbox",
+        "sattva bangalore office"
+      ],
+      "intent": "informational",
+      "estimated_volume": "low",
+      "competition": "low",
+      "opportunity_score": 76
+    },
+    {
+      "group_name": "Sattva Brand & Market Position",
+      "primary_keyword": "sattva bangalore",
+      "supporting_keywords": [
+        "sattva group",
+        "sattva real estate",
+        "who are tier 1 builders in bangalore",
+        "who are tier 1 developers in bangalore",
+        "top 5 builders in bangalore"
+      ],
+      "intent": "informational",
+      "estimated_volume": "high",
+      "competition": "high",
+      "opportunity_score": 72
+    }
+  ],
+  "summary": "Sattva keyword data reveals strong demand for builder credibility assessment, project-specific information, and competitive comparisons with minimal competitor coverage. Content should prioritize high-opportunity areas like company credibility, specific project names, and comparison guides while addressing customer concerns around reviews and delays."
+}

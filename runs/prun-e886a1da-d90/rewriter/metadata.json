@@ -10,10 +10,10 @@
   "serp_cache_hits": 0,
   "llm_calls": 1,
   "llm_cache_hits": 0,
-  "tokens_in": 5602,
-  "tokens_out": 3089,
-  "cost_usd": 0.063141,
-  "duration_seconds": 49.48,
-  "completed_at": "2026-05-04T11:37:32.595155",
+  "tokens_in": 5818,
+  "tokens_out": 3732,
+  "cost_usd": 0.073434,
+  "duration_seconds": 58.66,
+  "completed_at": "2026-05-11T17:42:02.432932",
   "attempts": 1
 }

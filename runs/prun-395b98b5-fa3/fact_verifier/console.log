@@ -1,0 +1,6 @@
+[fact_verifier] Checking: Bangalore Property ROI Guide: Investment Returns, Metrics & Calculation Methods (with citations)
+  API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaxayUwQBgnCcmsRX5CHp'}. Retrying in 2s...
+  API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaxayjDt3WqiXYzfH1yiC'}. Retrying in 4s...
+   [fact_verifier] EXECUTION ERROR: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Caxaz3ykRWQ9hDGwohiz7'}
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given

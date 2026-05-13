@@ -59,23 +59,29 @@ USERS: dict[str, dict] = {
         "role": "admin",
         "email": "shreyas@canvas-homes.com",
     },
-    "writer1": {
-        "password": "change-me-writer1",
+    "meenakshi": {
+        "password": "vaultproptech",
         "name": "Writer One",
-        "role": "user",
-        "email": "writer1@canvas-homes.com",
+        "role": "Content Writer",
+        "email": "meenakshi@vaultproptech.com",
     },
-    "writer2": {
-        "password": "change-me-writer2",
-        "name": "Writer Two",
-        "role": "user",
-        "email": "writer2@canvas-homes.com",
+    "anubhav": {
+        "password": "paypal",
+        "name": "Anubhav",
+        "role": "Product Manager",
+        "email": "anubhav@truestate.in",
     },
-    "reviewer": {
-        "password": "change-me-reviewer",
+    "test": {
+        "password": "test",
         "name": "Reviewer",
         "role": "user",
         "email": "reviewer@canvas-homes.com",
+    },
+    "dhananjay": {
+        "password": "iqol",
+        "name": "Dhananjay",
+        "role": "user",
+        "email": "dhananjay@truestate.in",
     },
 }
 

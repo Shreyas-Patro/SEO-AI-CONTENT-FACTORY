@@ -43,8 +43,8 @@ FAQS ({len(faqs)}):
 {json.dumps(faqs[:8], indent=2)[:2500]}
 
 Generate ALL of:
-1. meta_title (50-60 chars, includes primary keyword + brand)
-2. meta_description (150-160 chars, includes keyword + CTA)
+1. meta_title (55-65 chars, includes primary keyword + relavant keywords)
+2. meta_description (155-160 chars, includes keyword + CTA)
 3. og_title, og_description (slightly more shareable phrasing)
 4. focus_keyword
 5. keywords (10-12)

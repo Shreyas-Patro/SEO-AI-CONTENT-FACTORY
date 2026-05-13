@@ -49,7 +49,7 @@ def init_collections():
 def store_fact_embedding(fact_id, fact_text, metadata=None):
     """Store a fact in the vector DB for semantic retrieval."""
     client = get_client()
-    collection = client.get_collection("facts", embedding_function=ef)
+    collection = client.get_or_create_collection("facts", embedding_function=ef)
     meta = metadata or {}
     # ChromaDB metadata values must be str, int, float, or bool
     clean_meta = {k: str(v) if not isinstance(v, (int, float, bool)) else v
@@ -64,8 +64,7 @@ def store_fact_embedding(fact_id, fact_text, metadata=None):
 def search_facts(query, top_k=10, where_filter=None):
     """Semantic search for facts relevant to a query."""
     client = get_client()
-    collection = client.get_collection("facts", embedding_function=ef)
-
+    collection = client.get_or_create_collection("facts", embedding_function=ef)
     kwargs = {
         "query_texts": [query],
         "n_results": min(top_k, collection.count()) if collection.count() > 0 else 1,
@@ -92,7 +91,7 @@ def search_facts(query, top_k=10, where_filter=None):
 def store_article_embedding(article_id, article_text, metadata=None):
     """Store article content for dedup detection and cross-referencing."""
     client = get_client()
-    collection = client.get_collection("articles", embedding_function=ef)
+    collection = client.get_or_create_collection("articles", embedding_function=ef)
     meta = metadata or {}
     clean_meta = {k: str(v) if not isinstance(v, (int, float, bool)) else v
                   for k, v in meta.items()}
@@ -108,7 +107,7 @@ def store_article_embedding(article_id, article_text, metadata=None):
 def search_articles(query, top_k=5):
     """Find articles similar to a query (for interlinking suggestions)."""
     client = get_client()
-    collection = client.get_collection("articles", embedding_function=ef)
+    collection = client.get_or_create_collection("articles", embedding_function=ef)
 
     if collection.count() == 0:
         return []

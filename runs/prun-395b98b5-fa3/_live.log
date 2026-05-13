@@ -1,0 +1,867 @@
+Database initialized at data/canvas.db
+[bg] starting orchestrator.run_layer3 args=('prun-395b98b5-fa3',)
+
+============================================================
+[Pipeline prun-395b98b5-fa3] Layer 3 (LangGraph + quality loop)
+============================================================
+[layer3_init] fresh-run: 11 planned/draft articles
+  ✓ Node done: layer3_init
+[lead_writer] article=art-2020730f-e23 iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: SG Palya FAQ: Everything You Need to Know About Suddagunte Palya Bangalore
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 16
+  Citation stripper: removed 22 markers (2276 clean words vs 2320 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2276 clean words (target: 1000, raw was 2320)
+└─ [lead_writer] complete in 75.57s ($0.0551, 0 SERP, 1 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: SG Palya FAQ: Everything You Need to Know About Suddagunte Palya Bangalore (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.75 | 36 ok / 5 flagged / 25 unverifiable
+└─ [fact_verifier] complete in 55.53s ($0.0398, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: SG Palya FAQ: Everything You Need to Know About Suddagunte Palya Bangalore
+  Readability: 36.2
+  Signals: composite=4.75, em_dashes=0, cites=0
+  Final brand score: 4.9 (signals: 4.75, LLM: 5.0)
+└─ [brand_auditor] complete in 22.28s ($0.0130, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] SG Palya FAQ: Everything You Need to Know About Suddagunte Palya Bangalore — 30 fact issues, 13 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 2275 words
+└─ [rewriter] complete in 51.85s ($0.0733, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: SG Palya FAQ: Everything You Need to Know About Suddagunte Palya Bangalore (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.66 | 37 ok / 14 flagged / 33 unverifiable
+└─ [fact_verifier] complete in 62.46s ($0.0444, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: SG Palya FAQ: Everything You Need to Know About Suddagunte Palya Bangalore
+  Readability: 38.3
+  Signals: composite=5.28, em_dashes=0, cites=0
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Final brand score: 5.71 (signals: 5.28, LLM: 6.0)
+└─ [brand_auditor] complete in 30.91s ($0.0011, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: SG Palya FAQ: Everything You Need to Know About Suddagunte Palya Bangalore
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 16.35s ($0.0130, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-9d536cfc-bf4 iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: SG Palya Bangalore: Complete Guide to Living, Buying & Investing in Suddagunte Palya
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 14
+  Citation stripper: removed 32 markers (3369 clean words vs 3478 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 3369 clean words (target: 2800, raw was 3478)
+└─ [lead_writer] complete in 110.45s ($0.0986, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: SG Palya Bangalore: Complete Guide to Living, Buying & Investing in Suddagunte Palya (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.57 | 24 ok / 25 flagged / 24 unverifiable
+└─ [fact_verifier] complete in 63.68s ($0.0443, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: SG Palya Bangalore: Complete Guide to Living, Buying & Investing in Suddagunte Palya
+  Readability: 27.7
+  Signals: composite=5.88, em_dashes=0, cites=0
+  Final brand score: 5.95 (signals: 5.88, LLM: 6.0)
+└─ [brand_auditor] complete in 32.35s ($0.0182, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] SG Palya Bangalore: Complete Guide to Living, Buying & Investing in Suddagunte Palya — 49 fact issues, 18 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 3375 words
+└─ [rewriter] complete in 104.81s ($0.1066, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: SG Palya Bangalore: Complete Guide to Living, Buying & Investing in Suddagunte Palya (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.54 | 29 ok / 36 flagged / 18 unverifiable
+└─ [fact_verifier] complete in 69.27s ($0.0481, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: SG Palya Bangalore: Complete Guide to Living, Buying & Investing in Suddagunte Palya
+  Readability: 29.1
+  Signals: composite=6.2, em_dashes=0, cites=0
+  Final brand score: 6.44 (signals: 6.2, LLM: 6.6)
+└─ [brand_auditor] complete in 22.17s ($0.0135, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: SG Palya Bangalore: Complete Guide to Living, Buying & Investing in Suddagunte Palya
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 15.81s ($0.0122, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-34f64674-1aa iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: Is SG Palya Safe? Complete Safety and Infrastructure Analysis of Suddagunte Palya
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 30
+  Citation stripper: removed 24 markers (2475 clean words vs 2534 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2475 clean words (target: 1800, raw was 2534)
+└─ [lead_writer] complete in 78.35s ($0.0702, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Is SG Palya Safe? Complete Safety and Infrastructure Analysis of Suddagunte Palya (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.67 | 26 ok / 11 flagged / 26 unverifiable
+└─ [fact_verifier] complete in 61.71s ($0.0424, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: Is SG Palya Safe? Complete Safety and Infrastructure Analysis of Suddagunte Palya
+  Readability: 21.4
+  Signals: composite=5.6, em_dashes=0, cites=0
+  Final brand score: 5.72 (signals: 5.6, LLM: 5.8)
+└─ [brand_auditor] complete in 25.7s ($0.0135, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] Is SG Palya Safe? Complete Safety and Infrastructure Analysis of Suddagunte Palya — 37 fact issues, 12 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 2353 words
+└─ [rewriter] complete in 58.02s ($0.0727, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Is SG Palya Safe? Complete Safety and Infrastructure Analysis of Suddagunte Palya (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.57 | 18 ok / 15 flagged / 42 unverifiable
+└─ [fact_verifier] complete in 54.46s ($0.0381, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: Is SG Palya Safe? Complete Safety and Infrastructure Analysis of Suddagunte Palya
+  Readability: 30.7
+  Signals: composite=4.32, em_dashes=5, cites=0
+  Final brand score: 5.33 (signals: 4.32, LLM: 6.0)
+└─ [brand_auditor] complete in 27.89s ($0.0172, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: Is SG Palya Safe? Complete Safety and Infrastructure Analysis of Suddagunte Palya
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.36s ($0.0115, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-114fcf20-82e iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: SG Palya Connectivity Guide: Metro, Transport & Distance to Major Bangalore Areas
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 16
+  Citation stripper: removed 21 markers (2244 clean words vs 2327 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2244 clean words (target: 1700, raw was 2327)
+└─ [lead_writer] complete in 78.56s ($0.0743, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: SG Palya Connectivity Guide: Metro, Transport & Distance to Major Bangalore Areas (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.59 | 25 ok / 28 flagged / 34 unverifiable
+└─ [fact_verifier] complete in 70.77s ($0.0512, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: SG Palya Connectivity Guide: Metro, Transport & Distance to Major Bangalore Areas
+  Readability: 36.8
+  Signals: composite=6.66, em_dashes=0, cites=0
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Final brand score: 6.98 (signals: 6.66, LLM: 7.2)
+└─ [brand_auditor] complete in 31.86s ($0.0009, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] SG Palya Connectivity Guide: Metro, Transport & Distance to Major Bangalore Areas — 62 fact issues, 1 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 1986 words
+└─ [rewriter] complete in 45.08s ($0.0613, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: SG Palya Connectivity Guide: Metro, Transport & Distance to Major Bangalore Areas (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.71 | 29 ok / 9 flagged / 45 unverifiable
+└─ [fact_verifier] complete in 59.12s ($0.0445, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: SG Palya Connectivity Guide: Metro, Transport & Distance to Major Bangalore Areas
+  Readability: 50.5
+  Signals: composite=5.99, em_dashes=0, cites=0
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Final brand score: 5.76 (signals: 5.99, LLM: 5.6)
+└─ [brand_auditor] complete in 33.87s ($0.0008, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: SG Palya Connectivity Guide: Metro, Transport & Distance to Major Bangalore Areas
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 15.15s ($0.0120, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-fffa8624-cd8 iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: House for Sale in SG Palya: Complete Property Buying Guide with Prices & Best Areas
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 21
+  Citation stripper: removed 37 markers (3089 clean words vs 3204 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 3089 clean words (target: 1900, raw was 3204)
+└─ [lead_writer] complete in 109.03s ($0.0970, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: House for Sale in SG Palya: Complete Property Buying Guide with Prices & Best Areas (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.61 | 31 ok / 24 flagged / 12 unverifiable
+└─ [fact_verifier] complete in 67.18s ($0.0465, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: House for Sale in SG Palya: Complete Property Buying Guide with Prices & Best Areas
+  Readability: 35.9
+  Signals: composite=6.32, em_dashes=0, cites=0
+  Final brand score: 6.37 (signals: 6.32, LLM: 6.4)
+└─ [brand_auditor] complete in 28.24s ($0.0176, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] House for Sale in SG Palya: Complete Property Buying Guide with Prices & Best Areas — 36 fact issues, 16 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 3006 words
+└─ [rewriter] complete in 98.23s ($0.0988, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: House for Sale in SG Palya: Complete Property Buying Guide with Prices & Best Areas (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  ✅ Score: 0.69 | 17 ok / 12 flagged / 16 unverifiable
+└─ [fact_verifier] complete in 67.54s ($0.0276, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: House for Sale in SG Palya: Complete Property Buying Guide with Prices & Best Areas
+  Readability: 37.9
+  Signals: composite=6.21, em_dashes=0, cites=0
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Final brand score: 6.56 (signals: 6.21, LLM: 6.8)
+└─ [brand_auditor] complete in 30.46s ($0.0010, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: House for Sale in SG Palya: Complete Property Buying Guide with Prices & Best Areas
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 20.68s ($0.0125, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-05c98df3-758 iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: SG Palya Rent Guide: Rental Prices, PG Options & Best Areas for Tenants
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 15
+  Citation stripper: removed 29 markers (2224 clean words vs 2329 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2224 clean words (target: 1600, raw was 2329)
+└─ [lead_writer] complete in 80.87s ($0.0774, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: SG Palya Rent Guide: Rental Prices, PG Options & Best Areas for Tenants (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.71 | 36 ok / 37 flagged / 9 unverifiable
+└─ [fact_verifier] complete in 70.77s ($0.0516, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: SG Palya Rent Guide: Rental Prices, PG Options & Best Areas for Tenants
+  Readability: 39.0
+  Signals: composite=6.1, em_dashes=0, cites=0
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Final brand score: 6.28 (signals: 6.1, LLM: 6.4)
+└─ [brand_auditor] complete in 34.77s ($0.0009, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] SG Palya Rent Guide: Rental Prices, PG Options & Best Areas for Tenants — 46 fact issues, 1 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 2208 words
+└─ [rewriter] complete in 68.51s ($0.0643, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: SG Palya Rent Guide: Rental Prices, PG Options & Best Areas for Tenants (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.82 | 66 ok / 8 flagged / 12 unverifiable
+└─ [fact_verifier] complete in 57.39s ($0.0425, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: SG Palya Rent Guide: Rental Prices, PG Options & Best Areas for Tenants
+  Readability: 35.0
+  Signals: composite=5.07, em_dashes=0, cites=0
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Final brand score: 5.27 (signals: 5.07, LLM: 5.4)
+└─ [brand_auditor] complete in 34.3s ($0.0009, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: SG Palya Rent Guide: Rental Prices, PG Options & Best Areas for Tenants
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 14.45s ($0.0115, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-08c219eb-423 iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: Should You Buy Property in Bangalore Now? Complete Investment Decision Guide
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 22
+  Citation stripper: removed 38 markers (2466 clean words vs 2612 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2466 clean words (target: 2000, raw was 2612)
+└─ [lead_writer] complete in 91.87s ($0.0845, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Should You Buy Property in Bangalore Now? Complete Investment Decision Guide (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.59 | 22 ok / 22 flagged / 36 unverifiable
+└─ [fact_verifier] complete in 77.4s ($0.0518, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: Should You Buy Property in Bangalore Now? Complete Investment Decision Guide
+  Readability: 22.6
+  Signals: composite=7.02, em_dashes=0, cites=0
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Final brand score: 7.13 (signals: 7.02, LLM: 7.2)
+└─ [brand_auditor] complete in 31.65s ($0.0009, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] Should You Buy Property in Bangalore Now? Complete Investment Decision Guide — 58 fact issues, 1 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 2121 words
+└─ [rewriter] complete in 48.32s ($0.0582, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Should You Buy Property in Bangalore Now? Complete Investment Decision Guide (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.76 | 34 ok / 5 flagged / 33 unverifiable
+└─ [fact_verifier] complete in 57.96s ($0.0406, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: Should You Buy Property in Bangalore Now? Complete Investment Decision Guide
+  Readability: 15.2
+  Signals: composite=5.72, em_dashes=0, cites=0
+  Final brand score: 5.77 (signals: 5.72, LLM: 5.8)
+└─ [brand_auditor] complete in 23.44s ($0.0147, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: Should You Buy Property in Bangalore Now? Complete Investment Decision Guide
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 13.51s ($0.0104, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-3dd491ed-4e3 iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: Bangalore Property Price Forecast: Will Real Estate Prices Rise or Fall?
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 28
+  Citation stripper: removed 30 markers (2637 clean words vs 2764 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2637 clean words (target: 1800, raw was 2764)
+└─ [lead_writer] complete in 98.63s ($0.0821, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Bangalore Property Price Forecast: Will Real Estate Prices Rise or Fall? (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.66 | 25 ok / 16 flagged / 30 unverifiable
+└─ [fact_verifier] complete in 61.47s ($0.0427, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: Bangalore Property Price Forecast: Will Real Estate Prices Rise or Fall?
+  Readability: 23.4
+  Signals: composite=6.08, em_dashes=0, cites=0
+  Final brand score: 6.39 (signals: 6.08, LLM: 6.6)
+└─ [brand_auditor] complete in 31.33s ($0.0176, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] Bangalore Property Price Forecast: Will Real Estate Prices Rise or Fall? — 46 fact issues, 17 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 2477 words
+└─ [rewriter] complete in 81.43s ($0.0816, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Bangalore Property Price Forecast: Will Real Estate Prices Rise or Fall? (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.66 | 27 ok / 22 flagged / 36 unverifiable
+└─ [fact_verifier] complete in 70.48s ($0.0494, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: Bangalore Property Price Forecast: Will Real Estate Prices Rise or Fall?
+  Readability: 33.1
+  Signals: composite=6.03, em_dashes=0, cites=0
+⚠️  JSON parse failed on attempt 1/2. Retrying at temperature 0...
+  Final brand score: 6.49 (signals: 6.03, LLM: 6.8)
+└─ [brand_auditor] complete in 33.34s ($0.0010, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: Bangalore Property Price Forecast: Will Real Estate Prices Rise or Fall?
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 15.3s ($0.0112, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-5be141a7-e78 iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: Bangalore Real Estate Market Trends: Growth Areas, Demand Analysis & Future Outlook
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 27
+  Citation stripper: removed 33 markers (2673 clean words vs 2811 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2673 clean words (target: 1900, raw was 2811)
+└─ [lead_writer] complete in 105.56s ($0.0887, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Bangalore Real Estate Market Trends: Growth Areas, Demand Analysis & Future Outlook (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.55 | 19 ok / 43 flagged / 14 unverifiable
+└─ [fact_verifier] complete in 70.46s ($0.0482, 0 SERP, 4 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: Bangalore Real Estate Market Trends: Growth Areas, Demand Analysis & Future Outlook
+  Readability: 29.4
+  Signals: composite=6.41, em_dashes=0, cites=0
+  Final brand score: 6.52 (signals: 6.41, LLM: 6.6)
+└─ [brand_auditor] complete in 22.29s ($0.0134, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [rewriter] starting (run=prun-395b98b5-fa3)
+[rewriter] Bangalore Real Estate Market Trends: Growth Areas, Demand Analysis & Future Outlook — 57 fact issues, 15 brand issues
+  Citation stripper: removed 0 markers from rewrite
+  ✅ Rewrite complete — 2831 words
+└─ [rewriter] complete in 80.75s ($0.0878, 0 SERP, 1 LLM)
+  ✓ Node done: rewriter
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Bangalore Real Estate Market Trends: Growth Areas, Demand Analysis & Future Outlook (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  ✅ Score: 0.57 | 21 ok / 47 flagged / 19 unverifiable
+└─ [fact_verifier] complete in 70.17s ($0.0456, 0 SERP, 3 LLM)
+  ✓ Node done: fact_verifier
+
+┌─ [brand_auditor] starting (run=prun-395b98b5-fa3)
+[brand_auditor] Auditing: Bangalore Real Estate Market Trends: Growth Areas, Demand Analysis & Future Outlook
+  Readability: 28.9
+  Signals: composite=6.47, em_dashes=0, cites=0
+  Final brand score: 6.43 (signals: 6.47, LLM: 6.4)
+└─ [brand_auditor] complete in 21.83s ($0.0141, 0 SERP, 1 LLM)
+  ✓ Node done: brand_auditor
+  ✓ Node done: supervisor
+
+┌─ [meta_tagger] starting (run=prun-395b98b5-fa3)
+[meta_tagger] Tagging: Bangalore Real Estate Market Trends: Growth Areas, Demand Analysis & Future Outlook
+  ✅ Meta tagged
+└─ [meta_tagger] complete in 16.45s ($0.0115, 0 SERP, 1 LLM)
+  ✓ Node done: meta_tagger
+  ✓ Node done: advance_queue
+[lead_writer] article=art-58596cc5-865 iter=0
+
+┌─ [lead_writer] starting (run=prun-395b98b5-fa3)
+[lead_writer] Writing: Bangalore Property ROI Guide: Investment Returns, Metrics & Calculation Methods
+  FAQs to embed: 6
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  KB facts retrieved: 29
+  Citation stripper: removed 19 markers (2152 clean words vs 2222 raw)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  Done: 2152 clean words (target: 1400, raw was 2222)
+└─ [lead_writer] complete in 73.52s ($0.0686, 0 SERP, 2 LLM)
+  ✓ Node done: lead_writer
+
+┌─ [fact_verifier] starting (run=prun-395b98b5-fa3)
+[fact_verifier] Checking: Bangalore Property ROI Guide: Investment Returns, Metrics & Calculation Methods (with citations)
+Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+  API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaxayUwQBgnCcmsRX5CHp'}. Retrying in 2s...
+  API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaxayjDt3WqiXYzfH1yiC'}. Retrying in 4s...
+   [fact_verifier] EXECUTION ERROR: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Caxaz3ykRWQ9hDGwohiz7'}
+
+[CRASH] BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Caxaz3ykRWQ9hDGwohiz7'}
+Traceback (most recent call last):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\jobs.py", line 51, in _bootstrap_and_run
+    result = fn(*args)
+             ^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\orchestrator.py", line 134, in run_layer3
+    for event in graph.stream(init_state, config=config):
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\pregel\__init__.py", line 1656, in stream
+    for _ in runner.tick(
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\pregel\runner.py", line 167, in tick
+    run_with_retry(
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\utils\runnable.py", line 408, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\langgraph\utils\runnable.py", line 184, in invoke
+    ret = context.run(self.func, input, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\graph\nodes.py", line 224, in node_fact_verifier
+    output = agent.run({"article_id": article_id})
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 247, in run
+    output = self._call_execute(state, merged_input)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\base.py", line 187, in _call_execute
+    return self._execute(state, agent_input)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\agents\fact_verifier.py", line 81, in _execute
+    result = call_llm_json(
+             ^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\llm.py", line 193, in call_llm_json
+    result = call_llm(
+             ^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\llm.py", line 78, in call_llm
+    response = client.messages.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\anthropic\_utils\_utils.py", line 275, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\anthropic\resources\messages\messages.py", line 904, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\anthropic\_base_client.py", line 1282, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\anthropic\_base_client.py", line 959, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\OneDrive\Desktop\BlogContent-AI-Agent-Swarm\venv\Lib\site-packages\anthropic\_base_client.py", line 1063, in _request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Caxaz3ykRWQ9hDGwohiz7'}
+During task with name 'fact_verifier' and id '79e83c37-273e-d18b-40e1-1214dd92e785'
+
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\process.py", line 249, in _process_worker
+    call_item = call_queue.get(block=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\queues.py", line 103, in get
+    res = self._recv_bytes()
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Shrey\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\connection.py", line 321, in _recv_bytes
+    waitres = _winapi.WaitForMultipleObjects(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

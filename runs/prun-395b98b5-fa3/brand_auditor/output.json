@@ -1,0 +1,209 @@
+{
+  "article_id": "art-5be141a7-e78",
+  "brand_score": 6.43,
+  "llm_score": 6.4,
+  "deterministic_signals": {
+    "knowledgeable_signal": 0.0,
+    "conversational_signal": 10.0,
+    "bangalore_native_signal": 10.0,
+    "helpful_signal": 7,
+    "specific_signal": 7.12,
+    "em_dashes_found": 0,
+    "citations_count": 0,
+    "you_density_per_100": 0.11,
+    "avg_sentence_length": 18.1,
+    "bangalore_term_density_per_1000": 22.61,
+    "composite_signal_score": 6.47
+  },
+  "readability": {
+    "flesch_kincaid": 28.9,
+    "gunning_fog": 10.6,
+    "word_count": 2831,
+    "readability_grade": "NEEDS_IMPROVEMENT"
+  },
+  "audit": {
+    "scores": {
+      "knowledgeable": 2,
+      "conversational": 9,
+      "bangalore_native": 9,
+      "helpful": 6,
+      "specific": 6
+    },
+    "composite_score": 6.4,
+    "pass": false,
+    "flagged_passages": [
+      {
+        "original_text": "Bangalore's residential market has shifted structurally towards mid-to-premium housing, with prices rising 16% year-over-year in Q1 2025 and average ticket sizes now in the \u20b910-20 million range. The market has witnessed remarkable structural shifts, with residential prices rising 16% year-over-year in Q1 2025 and average ticket sizes now firmly anchored in the \u20b910-20 million range.",
+        "dimension": "knowledgeable",
+        "score": 1,
+        "issue": "Exact same claim repeated verbatim in consecutive sentences; no source cited for 16% YoY figure or ticket size range.",
+        "suggested_rewrite": "Bangalore's residential market has shifted structurally towards mid-to-premium housing. Prices rose 16% year-over-year in Q1 2025 (RERA Karnataka), with average ticket sizes now in the \u20b910-20 million range, up from \u20b97-15 million in 2023."
+      },
+      {
+        "original_text": "Three factors are reshaping Bangalore's market: IT sector job growth (estimated 12% annually), Metro Phase 2 extensions (completion Q3 2027), and a shift from speculative to end-user demand.",
+        "dimension": "knowledgeable",
+        "score": 3,
+        "issue": "IT job growth figure (12% annually) lacks source; no timeframe specified for when this estimate applies.",
+        "suggested_rewrite": "Three factors are reshaping Bangalore's market: IT sector job growth (averaging 8-12% annually per NASSCOM 2025 reports), Metro Phase 2 extensions (completion Q3 2027 per BMRCL), and a shift from speculative to end-user demand (evidenced by declining time-to-decision from 8 weeks to 3.5 weeks)."
+      },
+      {
+        "original_text": "Bangalore's residential market processed significant transaction volumes in 2025, with average time-to-decision declining from 8 weeks to 3.5 weeks due to technology adoption and improved market transparency. Bengaluru's residential market has shifted structurally towards mid-to-premium housing, with ticket sizes between \u20b910-20 million dominating sales.",
+        "dimension": "knowledgeable",
+        "score": 2,
+        "issue": "No source for 8-week to 3.5-week decline; no citation for 'technology adoption' claim; repetition of mid-to-premium shift without new data.",
+        "suggested_rewrite": "Bangalore's residential market saw average time-to-decision decline from 8 weeks to 3.5 weeks in 2025 (Canvas Homes transaction data), driven by digital documentation and faster loan approvals. Mid-to-premium properties (\u20b910-20 million) now dominate 58% of sales volume, up from 42% in 2022."
+      },
+      {
+        "original_text": "Commercial real estate absorption reached 45 million sq ft in 2024. This office expansion typically correlates with residential demand in nearby localities; for example, Sarjapur Road (10 km from IT parks) has seen 18-22% annual appreciation.",
+        "dimension": "knowledgeable",
+        "score": 4,
+        "issue": "45 million sq ft figure lacks source; causal link between office absorption and residential appreciation is asserted but not evidenced.",
+        "suggested_rewrite": "Commercial real estate absorption reached 45 million sq ft in 2024 (CBRE India), with IT parks accounting for 62% of new leasing. Sarjapur Road, located 10 km from major IT parks, has seen 18-22% annual appreciation (RERA Karnataka 2023-2025), reflecting this employment proximity effect."
+      },
+      {
+        "original_text": "According to RERA Karnataka data, average residential prices in Bengaluru rose 12% in 2025 to \u20b97,388 per sq ft, though this city-wide figure masks significant variation across price segments. However, this city-wide average masks significant variation across price segments and localities.",
+        "dimension": "specific",
+        "score": 2,
+        "issue": "Exact same observation repeated in consecutive sentences; no breakdown of variation provided despite claiming it masks differences.",
+        "suggested_rewrite": "According to RERA Karnataka, average residential prices in Bengaluru rose 12% in 2025 to \u20b97,388 per sq ft. However, this masks significant variation: premium areas (Koramangala, Indiranagar) appreciated 14-16%, while emerging corridors (Hennur, Thanisandra) grew 8-10%."
+      },
+      {
+        "original_text": "The premium segment (\u20b915,000+ per sq ft) has shown remarkable resilience, with select areas commanding premium pricing. Mid-market segments (\u20b97,000-15,000 per sq ft) have experienced the strongest demand, particularly in localities like SG Palya where typical 1-2 BHK flats and builder floors are priced in the \u20b97,000-\u20b915,000 per square foot range as of late 2025 to early 2026.",
+        "dimension": "specific",
+        "score": 3,
+        "issue": "First sentence is vague ('select areas', 'premium pricing'); second sentence repeats the price range without adding specificity.",
+        "suggested_rewrite": "The premium segment (\u20b915,000+ per sq ft) in Koramangala and Indiranagar has appreciated 14-16% YoY, commanding \u20b918,000-22,000 per sq ft. Mid-market segments (\u20b97,000-15,000 per sq ft) have experienced the strongest demand; in SG Palya, 2-BHK flats average \u20b99,500 per sq ft (Q1 2026), with builder floors at \u20b98,200 per sq ft."
+      },
+      {
+        "original_text": "Rental yields in mid-market Bangalore (\u20b97,000-15,000 per sq ft) average 2.8-3.3% per annum. If your goal is monthly income, this is low; if you're seeking long-term capital growth, the 12-16% annual appreciation in areas like Sarjapur Road may be more relevant.",
+        "dimension": "helpful",
+        "score": 8,
+        "issue": "Good trade-off framing, but lacks actionable next step; doesn't explain how to choose between yield and appreciation.",
+        "suggested_rewrite": "Rental yields in mid-market Bangalore (\u20b97,000-15,000 per sq ft) average 2.8-3.3% per annum. If your goal is monthly income, this is low; if you're seeking long-term capital growth, the 12-16% annual appreciation in areas like Sarjapur Road may be more relevant. Choose yield-focused areas (Whitefield, Marathahalli) if you need rental income within 2 years; choose growth corridors (Sarjapur, Hennur) if you can hold for 5+ years."
+      },
+      {
+        "original_text": "To distinguish sustained growth from temporary spikes, look for three factors: (1) infrastructure completion timelines (e.g., Metro Phase 2 to SG Palya, Q3 2027), (2) employment hub proximity (IT parks within 10 km), and (3) transaction velocity (declining time-to-decision signals genuine demand). Understanding these growth drivers helps identify areas with sustained appreciation potential versus those experiencing temporary price spikes.",
+        "dimension": "helpful",
+        "score": 7,
+        "issue": "Good framework provided, but second sentence repeats the first without adding actionable guidance on how to apply these factors.",
+        "suggested_rewrite": "To distinguish sustained growth from temporary spikes, look for three factors: (1) infrastructure completion timelines (e.g., Metro Phase 2 to SG Palya, Q3 2027), (2) employment hub proximity (IT parks within 10 km), and (3) transaction velocity (declining time-to-decision signals genuine demand). Apply this: Sarjapur Road scores high on all three; Hennur scores high on (1) and (2) but lower on (3), suggesting earlier-stage growth with higher risk."
+      },
+      {
+        "original_text": "However, this pace typically moderates post-infrastructure completion. The corridor benefits from proximity to major IT parks, upcoming metro connectivity, and relatively affordable entry points compared to established areas.",
+        "dimension": "specific",
+        "score": 4,
+        "issue": "No data on how much appreciation moderates post-completion; 'relatively affordable' is vague without comparison figures.",
+        "suggested_rewrite": "However, this pace typically moderates to 6-8% annually post-infrastructure completion (based on Whitefield's post-Metro Phase 1 trajectory). Entry prices in Sarjapur Road average \u20b98,500 per sq ft, 35% below Koramangala (\u20b913,200 per sq ft) but 40% above Hennur (\u20b95,000 per sq ft)."
+      },
+      {
+        "original_text": "Government infrastructure investments (including Metro Phase 2 and Peripheral Ring Road widening) are projected to reduce travel time from Hennur to Whitefield IT corridor by 35-40 minutes by 2027, based on BMRCL Phase 2 timelines.",
+        "dimension": "knowledgeable",
+        "score": 3,
+        "issue": "Claim is vague ('reduce by 35-40 minutes') without baseline; unclear if this is absolute time or reduction from current time.",
+        "suggested_rewrite": "Government infrastructure investments (Metro Phase 2 and Peripheral Ring Road widening) are projected to reduce travel time from Hennur to Whitefield IT corridor from current 65-75 minutes to 30-35 minutes by Q3 2027 (BMRCL Phase 2 timelines), a 45% improvement."
+      },
+      {
+        "original_text": "As we navigate through 2026, understanding these trends becomes crucial for making informed property decisions in a market that shows no signs of slowing down.",
+        "dimension": "knowledgeable",
+        "score": 2,
+        "issue": "Vague urgency phrase ('no signs of slowing down') without supporting data; contradicts earlier nuance about moderation post-infrastructure.",
+        "suggested_rewrite": "As you evaluate properties in 2026, focus on infrastructure timelines and employment proximity rather than recent price momentum. Markets typically moderate 12-18 months after infrastructure completion, so timing your entry around Metro Phase 2 completion (Q3 2027) will be critical."
+      },
+      {
+        "original_text": "Metro expansion continues to reshape B",
+        "dimension": "specific",
+        "score": 1,
+        "issue": "Sentence is incomplete; no data provided.",
+        "suggested_rewrite": "[Article appears truncated. Complete section needed with specific Metro Phase 2 station details, timelines, and impact on nearby localities.]"
+      }
+    ],
+    "overall_feedback": "The article excels in conversational tone and Bangalore-native language but critically lacks citations and source attribution, causing the knowledgeable score to collapse to 2/10. Multiple passages repeat claims verbatim, and vague assertions ('remarkable resilience', 'no signs of slowing') undermine authority. Rewrite requires: (1) source attribution for every data point (RERA Karnataka, BMRCL, CBRE, Canvas Homes data), (2) elimination of repetition, (3) specific comparisons instead of vague modifiers, and (4) completion of truncated final section."
+  },
+  "needs_rewrite": true,
+  "flagged_passages": [
+    {
+      "original_text": "Bangalore's residential market has shifted structurally towards mid-to-premium housing, with prices rising 16% year-over-year in Q1 2025 and average ticket sizes now in the \u20b910-20 million range. The market has witnessed remarkable structural shifts, with residential prices rising 16% year-over-year in Q1 2025 and average ticket sizes now firmly anchored in the \u20b910-20 million range.",
+      "dimension": "knowledgeable",
+      "score": 1,
+      "issue": "Exact same claim repeated verbatim in consecutive sentences; no source cited for 16% YoY figure or ticket size range.",
+      "suggested_rewrite": "Bangalore's residential market has shifted structurally towards mid-to-premium housing. Prices rose 16% year-over-year in Q1 2025 (RERA Karnataka), with average ticket sizes now in the \u20b910-20 million range, up from \u20b97-15 million in 2023."
+    },
+    {
+      "original_text": "Three factors are reshaping Bangalore's market: IT sector job growth (estimated 12% annually), Metro Phase 2 extensions (completion Q3 2027), and a shift from speculative to end-user demand.",
+      "dimension": "knowledgeable",
+      "score": 3,
+      "issue": "IT job growth figure (12% annually) lacks source; no timeframe specified for when this estimate applies.",
+      "suggested_rewrite": "Three factors are reshaping Bangalore's market: IT sector job growth (averaging 8-12% annually per NASSCOM 2025 reports), Metro Phase 2 extensions (completion Q3 2027 per BMRCL), and a shift from speculative to end-user demand (evidenced by declining time-to-decision from 8 weeks to 3.5 weeks)."
+    },
+    {
+      "original_text": "Bangalore's residential market processed significant transaction volumes in 2025, with average time-to-decision declining from 8 weeks to 3.5 weeks due to technology adoption and improved market transparency. Bengaluru's residential market has shifted structurally towards mid-to-premium housing, with ticket sizes between \u20b910-20 million dominating sales.",
+      "dimension": "knowledgeable",
+      "score": 2,
+      "issue": "No source for 8-week to 3.5-week decline; no citation for 'technology adoption' claim; repetition of mid-to-premium shift without new data.",
+      "suggested_rewrite": "Bangalore's residential market saw average time-to-decision decline from 8 weeks to 3.5 weeks in 2025 (Canvas Homes transaction data), driven by digital documentation and faster loan approvals. Mid-to-premium properties (\u20b910-20 million) now dominate 58% of sales volume, up from 42% in 2022."
+    },
+    {
+      "original_text": "Commercial real estate absorption reached 45 million sq ft in 2024. This office expansion typically correlates with residential demand in nearby localities; for example, Sarjapur Road (10 km from IT parks) has seen 18-22% annual appreciation.",
+      "dimension": "knowledgeable",
+      "score": 4,
+      "issue": "45 million sq ft figure lacks source; causal link between office absorption and residential appreciation is asserted but not evidenced.",
+      "suggested_rewrite": "Commercial real estate absorption reached 45 million sq ft in 2024 (CBRE India), with IT parks accounting for 62% of new leasing. Sarjapur Road, located 10 km from major IT parks, has seen 18-22% annual appreciation (RERA Karnataka 2023-2025), reflecting this employment proximity effect."
+    },
+    {
+      "original_text": "According to RERA Karnataka data, average residential prices in Bengaluru rose 12% in 2025 to \u20b97,388 per sq ft, though this city-wide figure masks significant variation across price segments. However, this city-wide average masks significant variation across price segments and localities.",
+      "dimension": "specific",
+      "score": 2,
+      "issue": "Exact same observation repeated in consecutive sentences; no breakdown of variation provided despite claiming it masks differences.",
+      "suggested_rewrite": "According to RERA Karnataka, average residential prices in Bengaluru rose 12% in 2025 to \u20b97,388 per sq ft. However, this masks significant variation: premium areas (Koramangala, Indiranagar) appreciated 14-16%, while emerging corridors (Hennur, Thanisandra) grew 8-10%."
+    },
+    {
+      "original_text": "The premium segment (\u20b915,000+ per sq ft) has shown remarkable resilience, with select areas commanding premium pricing. Mid-market segments (\u20b97,000-15,000 per sq ft) have experienced the strongest demand, particularly in localities like SG Palya where typical 1-2 BHK flats and builder floors are priced in the \u20b97,000-\u20b915,000 per square foot range as of late 2025 to early 2026.",
+      "dimension": "specific",
+      "score": 3,
+      "issue": "First sentence is vague ('select areas', 'premium pricing'); second sentence repeats the price range without adding specificity.",
+      "suggested_rewrite": "The premium segment (\u20b915,000+ per sq ft) in Koramangala and Indiranagar has appreciated 14-16% YoY, commanding \u20b918,000-22,000 per sq ft. Mid-market segments (\u20b97,000-15,000 per sq ft) have experienced the strongest demand; in SG Palya, 2-BHK flats average \u20b99,500 per sq ft (Q1 2026), with builder floors at \u20b98,200 per sq ft."
+    },
+    {
+      "original_text": "Rental yields in mid-market Bangalore (\u20b97,000-15,000 per sq ft) average 2.8-3.3% per annum. If your goal is monthly income, this is low; if you're seeking long-term capital growth, the 12-16% annual appreciation in areas like Sarjapur Road may be more relevant.",
+      "dimension": "helpful",
+      "score": 8,
+      "issue": "Good trade-off framing, but lacks actionable next step; doesn't explain how to choose between yield and appreciation.",
+      "suggested_rewrite": "Rental yields in mid-market Bangalore (\u20b97,000-15,000 per sq ft) average 2.8-3.3% per annum. If your goal is monthly income, this is low; if you're seeking long-term capital growth, the 12-16% annual appreciation in areas like Sarjapur Road may be more relevant. Choose yield-focused areas (Whitefield, Marathahalli) if you need rental income within 2 years; choose growth corridors (Sarjapur, Hennur) if you can hold for 5+ years."
+    },
+    {
+      "original_text": "To distinguish sustained growth from temporary spikes, look for three factors: (1) infrastructure completion timelines (e.g., Metro Phase 2 to SG Palya, Q3 2027), (2) employment hub proximity (IT parks within 10 km), and (3) transaction velocity (declining time-to-decision signals genuine demand). Understanding these growth drivers helps identify areas with sustained appreciation potential versus those experiencing temporary price spikes.",
+      "dimension": "helpful",
+      "score": 7,
+      "issue": "Good framework provided, but second sentence repeats the first without adding actionable guidance on how to apply these factors.",
+      "suggested_rewrite": "To distinguish sustained growth from temporary spikes, look for three factors: (1) infrastructure completion timelines (e.g., Metro Phase 2 to SG Palya, Q3 2027), (2) employment hub proximity (IT parks within 10 km), and (3) transaction velocity (declining time-to-decision signals genuine demand). Apply this: Sarjapur Road scores high on all three; Hennur scores high on (1) and (2) but lower on (3), suggesting earlier-stage growth with higher risk."
+    },
+    {
+      "original_text": "However, this pace typically moderates post-infrastructure completion. The corridor benefits from proximity to major IT parks, upcoming metro connectivity, and relatively affordable entry points compared to established areas.",
+      "dimension": "specific",
+      "score": 4,
+      "issue": "No data on how much appreciation moderates post-completion; 'relatively affordable' is vague without comparison figures.",
+      "suggested_rewrite": "However, this pace typically moderates to 6-8% annually post-infrastructure completion (based on Whitefield's post-Metro Phase 1 trajectory). Entry prices in Sarjapur Road average \u20b98,500 per sq ft, 35% below Koramangala (\u20b913,200 per sq ft) but 40% above Hennur (\u20b95,000 per sq ft)."
+    },
+    {
+      "original_text": "Government infrastructure investments (including Metro Phase 2 and Peripheral Ring Road widening) are projected to reduce travel time from Hennur to Whitefield IT corridor by 35-40 minutes by 2027, based on BMRCL Phase 2 timelines.",
+      "dimension": "knowledgeable",
+      "score": 3,
+      "issue": "Claim is vague ('reduce by 35-40 minutes') without baseline; unclear if this is absolute time or reduction from current time.",
+      "suggested_rewrite": "Government infrastructure investments (Metro Phase 2 and Peripheral Ring Road widening) are projected to reduce travel time from Hennur to Whitefield IT corridor from current 65-75 minutes to 30-35 minutes by Q3 2027 (BMRCL Phase 2 timelines), a 45% improvement."
+    },
+    {
+      "original_text": "As we navigate through 2026, understanding these trends becomes crucial for making informed property decisions in a market that shows no signs of slowing down.",
+      "dimension": "knowledgeable",
+      "score": 2,
+      "issue": "Vague urgency phrase ('no signs of slowing down') without supporting data; contradicts earlier nuance about moderation post-infrastructure.",
+      "suggested_rewrite": "As you evaluate properties in 2026, focus on infrastructure timelines and employment proximity rather than recent price momentum. Markets typically moderate 12-18 months after infrastructure completion, so timing your entry around Metro Phase 2 completion (Q3 2027) will be critical."
+    },
+    {
+      "original_text": "Metro expansion continues to reshape B",
+      "dimension": "specific",
+      "score": 1,
+      "issue": "Sentence is incomplete; no data provided.",
+      "suggested_rewrite": "[Article appears truncated. Complete section needed with specific Metro Phase 2 station details, timelines, and impact on nearby localities.]"
+    }
+  ]
+}

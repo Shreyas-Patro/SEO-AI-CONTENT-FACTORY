@@ -1,0 +1,33 @@
+{
+  "faqs_by_article": {
+    "art-fae1fa5a-685": [
+      {
+        "question": "What is Indiranagar Bangalore famous for?",
+        "answer": "Indiranagar is famous for its vibrant nightlife, upscale restaurants, boutique shopping on 100 Feet Road, and cosmopolitan culture. It's considered one of Bangalore's most happening neighborhoods with over 200 restaurants and cafes, making it a food lover's paradise.",
+        "target_keyword": "what is indiranagar bangalore famous for"
+      },
+      {
+        "question": "How much does it cost to live in Indiranagar?",
+        "answer": "The cost of living in Indiranagar varies based on location and amenities. Rental prices range from 15,000 to 50,000 INR per month for apartments, while property prices range from 8,000 to 15,000 INR per square foot depending on proximity to 100 Feet Road and other key areas.",
+        "target_keyword": "indiranagar bangalore cost of living"
+      }
+    ],
+    "art-d11083e6-8ed": [
+      {
+        "question": "What makes Indiranagar one of Bangalore's most popular neighborhoods?",
+        "answer": "Indiranagar is popular for its vibrant nightlife, diverse dining scene with over 200 restaurants, excellent connectivity via metro, and balanced mix of residential and commercial spaces. The area offers premium lifestyle amenities within 7km of central Bangalore.",
+        "target_keyword": "why indiranagar popular bangalore"
+      },
+      {
+        "question": "How accessible is Indiranagar by public transportation?",
+        "answer": "Indiranagar is highly accessible with direct metro connectivity through the Purple Line, multiple bus routes, and well-maintained roads. The metro station provides quick access to other parts of Bangalore, making commuting convenient for residents and visitors.",
+        "target_keyword": "indiranagar public transportation metro"
+      }
+    ]
+  },
+  "total_faqs": 4,
+  "total_articles": 2,
+  "expected_articles": 16,
+  "coverage_pct": 12.5,
+  "summary": "4 FAQs for 2 articles"
+}

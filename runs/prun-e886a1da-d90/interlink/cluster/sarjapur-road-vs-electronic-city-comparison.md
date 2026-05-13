@@ -28,7 +28,7 @@ The [Sarjapur Road connectivity and infrastructure](/sarjapur-road-metro-connect
 
 ### Infrastructure Development Status
 
-[Sarjapur Road infrastructure](/sarjapur-road-metro-connectivity-infrastructure) development includes planned metro extensions and road widening projects that will improve connectivity significantly. The upcoming metro Phase 3 proposals target the Sarjapur corridor with completion expected by 2027-2028. Road infrastructure improvements include Old Madras Road widening projects currently underway.
+Sarjapur Road infrastructure development includes planned metro extensions and road widening projects that will improve connectivity significantly. The upcoming metro Phase 3 proposals target the Sarjapur corridor with completion expected by 2027-2028. Road infrastructure improvements include Old Madras Road widening projects currently underway.
 
 Electronic City maintains its infrastructure advantage with established IT parks and commercial developments. The locality has multiple operational IT complexes with millions of square feet of developed office space. The established infrastructure provides immediate benefits for residents and investors, though growth potential may be more limited compared to developing areas.
 
@@ -38,7 +38,7 @@ Property pricing represents the most significant differentiator between these tw
 
 ### Property Price Comparison
 
-[Sarjapur Road property prices](/sarjapur-road-bangalore-complete-guide) range from ₹10,200-11,600 per sq ft as of late 2025, with premium towers and new launches reaching ₹12,000-14,000 per sq ft [Source: tmpt966v948.txt]. The corridor experienced approximately 79-80% price appreciation from ₹6,050 per sq ft in 2021 to ₹10,800 per sq ft by Q2 2025 [Source: tmpt966v948.txt].
+Sarjapur Road property prices range from ₹10,200-11,600 per sq ft as of late 2025, with premium towers and new launches reaching ₹12,000-14,000 per sq ft [Source: tmpt966v948.txt]. The corridor experienced approximately 79-80% price appreciation from ₹6,050 per sq ft in 2021 to ₹10,800 per sq ft by Q2 2025 [Source: tmpt966v948.txt].
 
 For families, Sarjapur Road offers significantly lower property prices with 2 BHK apartments averaging ₹65-75 lakh compared to Electronic City's premium pricing. This substantial price difference makes Sarjapur Road attractive for first-time homebuyers and investors seeking entry-level opportunities.
 

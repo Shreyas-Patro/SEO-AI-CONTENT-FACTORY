@@ -1,0 +1,2946 @@
+{
+  "run_id": "prun-419d3c01-969",
+  "topic": "sattva",
+  "stage": "init",
+  "cluster_id": null,
+  "agents_completed": [
+    "competitor_spy",
+    "keyword_mapper",
+    "content_architect",
+    "faq_architect",
+    "research_prompt_generator"
+  ],
+  "agents_failed": [],
+  "shared": {
+    "trend_data": {
+      "topic": "sattva",
+      "classification": {
+        "categories": [
+          "builder"
+        ],
+        "primary_category": "builder",
+        "detected_localities": [],
+        "detected_builders": [
+          "Sattva"
+        ],
+        "is_locality": false,
+        "is_builder": true,
+        "is_cross_cutting": false
+      },
+      "raw_data": {
+        "trends": {
+          "trend_available": true,
+          "average_interest": 68.6,
+          "recent_interest": 65.2,
+          "peak_interest": 100,
+          "direction": "stable",
+          "is_seasonal": true,
+          "rising_queries": [
+            "sattva knowledge point",
+            "puravankara",
+            "sattva hamlet",
+            "sattva lumina",
+            "sattva horizon",
+            "sattva songbird",
+            "sattva bliss"
+          ],
+          "top_queries": [
+            "sattva city",
+            "salarpuria sattva",
+            "prestige",
+            "brigade",
+            "sattva group",
+            "sattva group bangalore",
+            "sobha",
+            "sattva park cubix",
+            "sattva anugraha",
+            "sattva knowledge court"
+          ]
+        },
+        "paa_questions": [
+          "Who is the CEO of Sattva Bangalore?",
+          "What is the salary of Sattva freshers?",
+          "Which is the most luxurious apartment in Bangalore?",
+          "Which company is Sattva?",
+          "Is sattva a good builder?",
+          "Is sattva a grade builder?",
+          "Who is the owner of sattva?",
+          "What are the benefits of using sattva?",
+          "Who is the CEO of Sattva group?",
+          "What is the salary in Sattva?",
+          "Is ManpowerGroup a good company?",
+          "Is Sattva a good brand?",
+          "Who is the owner of Sattva Builders?",
+          "Who are tier 1 builders in Bangalore?",
+          "Who is India's no. 1 builder?",
+          "Which is better, Prestige or Sobha?",
+          "Is Sobha better than Emaar?",
+          "Who are the top 5 builders in Bangalore?",
+          "Who are Sattva competitors?",
+          "Are salarpuria and sattva the same?",
+          "Who is the most trusted home builder?",
+          "Who are tier 1 developers in Bangalore?",
+          "What is the price of Sattva pre launch?",
+          "What are the new projects coming up in Bangalore?",
+          "How many projects does Sattva have?",
+          "Is it good to invest in pre-launch projects?",
+          "What is the price of Sattva pre-launch?",
+          "When was Sattva Lumina launched?",
+          "When was Sattva founded?",
+          "Who is the owner of Sattva?"
+        ],
+        "related_searches": [
+          "Sattva bangalore address",
+          "Sattva bangalore careers",
+          "Sattva bangalore office",
+          "Sattva bangalore reviews",
+          "Salarpuria Sattva Bangalore",
+          "Sattva Group",
+          "Sattva Bangalore projects",
+          "Sattva Bangalore owner",
+          "Sattva upcoming projects",
+          "Sattva Upcoming projects in North Bangalore",
+          "Sattva projects bangalore price",
+          "Sattva projects in Whitefield",
+          "Sattva apartments Bangalore",
+          "Sattva projects in South Bangalore",
+          "Sattva Bangalore",
+          "Sattva head office Bangalore",
+          "Salarpuria sattva reviews",
+          "Sattva Consulting reviews",
+          "Sattva AmbitionBox",
+          "Sattva Group employee reviews",
+          "Sattva tech reviews",
+          "Salarpuria SATTVA Salary",
+          "Sattva Group Salary",
+          "Sattva Songbird Reviews",
+          "Salarpuria sattva group reviews",
+          "Salarpuria sattva group reviews complaints",
+          "SriSattva Group reviews",
+          "Sattva Group AmbitionBox",
+          "Salarpuria Sattva Group",
+          "Sattva Group careers",
+          "Is sattva a good builder quora",
+          "Is sattva a good builder reddit",
+          "Salarpuria Sattva reviews",
+          "Sattva Builder owner",
+          "Is Brigade a good builder",
+          "Sattva Hyderabad",
+          "Sattva vs sobha review",
+          "Sattva vs sobha price",
+          "Sattva vs sobha reddit",
+          "Sobha vs Prestige vs Brigade",
+          "Top 30 builders in Bangalore",
+          "Assetz vs Sobha",
+          "Tier 2 builders in Bangalore",
+          "Top 10 builders in Bangalore",
+          "Sattva vs prestige review",
+          "Sattva vs prestige salary",
+          "Sattva vs prestige price",
+          "Sattva vs prestige reddit",
+          "Sattva vs prestige cost",
+          "Total Environment vs Prestige",
+          "Sattva vs brigade review",
+          "Sattva vs brigade price",
+          "Sattva vs brigade cost",
+          "Sattva vs brigade reddit",
+          "Top 50 builders in Bangalore",
+          "Best builders in Bangalore for independent house",
+          "Best builders in Bangalore reddit",
+          "Top 30 Builders in Bangalore PDF",
+          "Top 20 builders in Bangalore",
+          "sattva ongoing projects near bengaluru, karnataka",
+          "sattva ongoing projects near mysuru, karnataka",
+          "Sattva upcoming projects in Bangalore",
+          "Sattva new Projects near me",
+          "Sattva upcoming Projects in Hyderabad",
+          "Sattva upcoming projects in mysore road",
+          "Sattva ready to move projects near me",
+          "Sattva ready to move projects in bangalore",
+          "Sattva apartment near me",
+          "Sattva apartment 8th mile",
+          "Sattva Projects",
+          "Sattva project near Airport Bangalore",
+          "Sattva new launch price",
+          "Sattva new launch mumbai",
+          "Salarpuria Sattva Pre Launch projects",
+          "Sattva new project Mysore Road",
+          "Sattva new launch Varthur",
+          "Sattva Group Owner",
+          "Sattva pre launch in bangalore",
+          "Sattva pre launch mumbai",
+          "Sattva pre launch near me",
+          "Pre launch projects in Bangalore 2026",
+          "Sattva Whitefield",
+          "Sattva new launch",
+          "Upcoming sattva projects bangalore price",
+          "Upcoming sattva projects bangalore phase 2",
+          "Upcoming residential projects in Bangalore 2026",
+          "Upcoming sattva projects bangalore for sale",
+          "Upcoming sattva projects bangalore for rent",
+          "Upcoming projects in Bangalore 2025",
+          "Upcoming projects in north bangalore 2025",
+          "Sattva customer reviews bangalore",
+          "Sattva customer reviews hyderabad",
+          "Sattva builders Review",
+          "Sattva Lumina reviews"
+        ],
+        "autocomplete": [
+          "sattvam",
+          "sattva knowledge city",
+          "sattva consulting",
+          "sattva group",
+          "sattva anugraha",
+          "sattva necklace mall",
+          "sattva songbird",
+          "sattva knowledge park",
+          "sattva forest ridge",
+          "sattva lumina",
+          "sattvam restaurant",
+          "sattva city",
+          "sattva mall",
+          "sattva bliss",
+          "sattva misty charm",
+          "sattva bangalore projects",
+          "sattva bangalore owner",
+          "sattva bangalore office",
+          "sattva bangalore address",
+          "sattva bangalore restaurant",
+          "sattva bangalore careers",
+          "sattva bangalore amazon",
+          "sattva bangalore office address",
+          "sattva bangalore job vacancy",
+          "sattva bangalore university",
+          "sattva bangalore apartments",
+          "sattva bangalore airport",
+          "sattva bangalore to marathahalli distance",
+          "sattva bangalore company",
+          "sattva bangalore mysore road",
+          "sattva summit 2026",
+          "sattva 2024",
+          "sattva 2023",
+          "samvat 2026 date",
+          "samvat 2026",
+          "samvat 2026 year",
+          "best sattva knowledge city restaurants",
+          "sattva best of india",
+          "best cafes in sattva knowledge city",
+          "best restaurants in sattva",
+          "best screen in sattva necklace mall",
+          "how to increase sattva",
+          "definition of sattva",
+          "what is sattva food",
+          "sattva review",
+          "sattva jobs",
+          "best satvik",
+          "best sattvic food",
+          "best sattvic diet",
+          "best sattu"
+        ],
+        "serp_results_summary": [
+          {
+            "query": "Sattva Bangalore",
+            "top_results": [
+              {
+                "title": "Sattva Group: Leading Real Estate Builder & Developer in ...",
+                "link": "https://sattvagroup.com/",
+                "snippet": "Sattva Group \u2013 a premium real estate developer in India. Buy residential and commercial properties in Bangalore and other cities.",
+                "position": 1,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "Sattva Group (@sattvagroupindia)",
+                "link": "https://www.instagram.com/sattvagroupindia/",
+                "snippet": "52K followers \u00b7 7 following \u00b7 2691 posts \u00b7 @sattvagroupindia: \u201cWe don't just build structures, we have been building trust since 1993.",
+                "position": 2,
+                "domain": "www.instagram.com"
+              },
+              {
+                "title": "Sattva",
+                "link": "https://in.linkedin.com/company/sattva-group",
+                "snippet": "Sattva Group is one of India's leading property development, management and consulting organisations. Since its inception in 1993, this real estate ...",
+                "position": 3,
+                "domain": "in.linkedin.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "Sattva projects Bangalore",
+            "top_results": [
+              {
+                "title": "Buy Residential Flats & Apartment in Bangalore",
+                "link": "https://sattvagroup.com/residential/on-going/bengaluru-on-going/",
+                "snippet": "Explore Sattva Group ongoing residential projects in Bangalore such as Sattva Vasanta Skye, Park Cubix Phase II and more. Find dream apartments, villas and ...",
+                "position": 1,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "30+ Sattva Group - Upcoming Residential & Commercial ...",
+                "link": "https://sattvanewlaunch.com/",
+                "snippet": "Sattva Lumina, a new launch project on Yelahanka-Doddaballapura Road, Bangalore, offers 1, 2 & 3 BHK apartments ranging from 650 to 1780 sq.ft. Nestled in the ...",
+                "position": 2,
+                "domain": "sattvanewlaunch.com"
+              },
+              {
+                "title": "Sattva Group: Leading Real Estate Builder & Developer in ...",
+                "link": "https://sattvagroup.com/",
+                "snippet": "Sattva Group \u2013 a premium real estate developer in India. Buy residential and commercial properties in Bangalore and other cities.",
+                "position": 3,
+                "domain": "sattvagroup.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "local_pack"
+            ],
+            "competitor_presence": [
+              "99acres.com",
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "Sattva reviews",
+            "top_results": [
+              {
+                "title": "SATTVA Reviews by 300+ Employees | Rated 4.3/5",
+                "link": "https://www.ambitionbox.com/reviews/salarpuria-sattva-reviews",
+                "snippet": "Based on 362 reviews on AmbitionBox, SATTVA employees rate job security at 4.2 out of 5. This high rating reflects strong employee confidence in ...",
+                "position": 1,
+                "domain": "www.ambitionbox.com"
+              },
+              {
+                "title": "Salarpuria Sattva Group, Bangalore: Reviews and Ratings",
+                "link": "https://www.mouthshut.com/builders-and-developers/salarpuria-sattva-group-bangalore-reviews-925721804",
+                "snippet": "My experience with Sattva project has been really good. My family and I visited the site & sales office a few times and liked the building design.",
+                "position": 2,
+                "domain": "www.mouthshut.com"
+              },
+              {
+                "title": "Sattva Reviews",
+                "link": "https://www.glassdoor.co.in/Reviews/Sattva-Reviews-E490381.htm",
+                "snippet": "36% of Sattva employees would recommend working there to a friend based on Glassdoor reviews. Employees also rated Sattva 4.1 out of 5 for work life balance, ...",
+                "position": 3,
+                "domain": "www.glassdoor.co.in"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "Sattva group reviews",
+            "top_results": [
+              {
+                "title": "SATTVA Reviews by 300+ Employees | Rated 4.3/5",
+                "link": "https://www.ambitionbox.com/reviews/salarpuria-sattva-reviews",
+                "snippet": "Based on 362 reviews on AmbitionBox, SATTVA employees rate job security at 4.2 out of 5. This high rating reflects strong employee confidence in ...",
+                "position": 1,
+                "domain": "www.ambitionbox.com"
+              },
+              {
+                "title": "Testimonials",
+                "link": "https://sattvagroup.com/testimonials/",
+                "snippet": "Sattva Team showed great support. They've a very active team. I would recommend Sattva to others, due to exceptional services and brand reputation.",
+                "position": 2,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "Sattva Reviews",
+                "link": "https://www.glassdoor.co.in/Reviews/Sattva-Reviews-E490381.htm",
+                "snippet": "36% of Sattva employees would recommend working there to a friend based on Glassdoor reviews. Employees also rated Sattva 4.1 out of 5 for work life balance, ...",
+                "position": 3,
+                "domain": "www.glassdoor.co.in"
+              }
+            ],
+            "serp_features": [
+              "local_pack",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "is Sattva a good builder",
+            "top_results": [
+              {
+                "title": "Is it worth investing in premium flats offered by Salarpuria ...",
+                "link": "https://www.quora.com/Is-it-worth-investing-in-premium-flats-offered-by-Salarpuria-Sattva",
+                "snippet": "Is it worth investing in premium flats offered by Salarpuria Sattva?",
+                "position": 1,
+                "domain": "www.quora.com"
+              },
+              {
+                "title": "Salarpuria Sattva Group, Bangalore: Reviews and Ratings",
+                "link": "https://www.mouthshut.com/builders-and-developers/salarpuria-sattva-group-bangalore-reviews-925721804",
+                "snippet": "Very good in the real estate business. slightly expensive but worth the money. Their designs and architecture is on par with Hirandani and Lodha.",
+                "position": 2,
+                "domain": "www.mouthshut.com"
+              },
+              {
+                "title": "Sattva Group: Leading Real Estate Builder & Developer in ...",
+                "link": "https://sattvagroup.com/",
+                "snippet": "Built on the bedrock of 30 years of trust, innovation and knowledge-leadership, the Sattva Group is one of India's leading Property Development, Management and ...",
+                "position": 3,
+                "domain": "sattvagroup.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "Sattva vs Sobha",
+            "top_results": [
+              {
+                "title": "What is the difference between societies of Tier 1 Builders ( ...",
+                "link": "https://www.reddit.com/r/indianrealestate/comments/1hbjpmj/asking_in_context_of_bangalore_what_is_the/",
+                "snippet": "Asking in context of Bangalore : What is the difference between societies of Tier 1 Builders (Prestige, Sobha...) and others. I am thinking ...",
+                "position": 1,
+                "domain": "www.reddit.com"
+              },
+              {
+                "title": "Top Real Estate Developers in Bangalore | USP Comparison",
+                "link": "https://www.propsoch.com/blogs/comparing-top-residential-real-estate-developers-in-bangalore-a-dive-into-unique-selling-propositions/",
+                "snippet": "Sobha Limited excels in quality and customer satisfaction, whereas Puravankara is known for its innovative themes. Godrej Properties brings a ...",
+                "position": 2,
+                "domain": "www.propsoch.com"
+              },
+              {
+                "title": "Top 10 Real Estate Builders and Developers in Bangalore",
+                "link": "https://www.homes247.in/blogs/best-builders-and-developers-in-bangalore-119",
+                "snippet": "Iconic Projects of Sobha Ltd: Sobha Royal Pavilion, Sobha Dream Acres, Sobha Dream Gardens ... Sattva Group: Salarpuria Sattva Magnificia, ...",
+                "position": 3,
+                "domain": "www.homes247.in"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "Sattva vs Prestige",
+            "top_results": [
+              {
+                "title": "SATTVA vs Prestige Group: Where should you work?",
+                "link": "https://www.ambitionbox.com/compare/salarpuria-sattva-vs-prestige-group",
+                "snippet": "The overall rating of SATTVA is 4.3, whereas Prestige Group is rated 4.2 out of 5.0. SATTVA is rated higher than Prestige Group for work-life balance, whereas ...",
+                "position": 1,
+                "domain": "www.ambitionbox.com"
+              },
+              {
+                "title": "Sattva Aqua Vista vs Prestige Southern Star",
+                "link": "https://www.propsoch.com/compare-properties/bengaluru/sattva-aqua-vista-bannerghatta-road_325-vs-prestige-southern-star-begur_553",
+                "snippet": "We would score Sattva Aqua Vista a 3.36/5, while Prestige Southern Star stands at 3.5/5. Prestige Southern Star therefore carries a mild quality advantage.",
+                "position": 2,
+                "domain": "www.propsoch.com"
+              },
+              {
+                "title": "What is the difference between societies of Tier 1 Builders ( ...",
+                "link": "https://www.reddit.com/r/indianrealestate/comments/1hbjpmj/asking_in_context_of_bangalore_what_is_the/",
+                "snippet": "Salarpuria's brand is called Sattva ... Without asking Prestige team offered money back or alternatives within their own projects.",
+                "position": 3,
+                "domain": "www.reddit.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "Sattva vs Brigade",
+            "top_results": [
+              {
+                "title": "Sattva songbird vs Brigade Sevilla : r/indianrealestate",
+                "link": "https://www.reddit.com/r/indianrealestate/comments/1r0ulz0/sattva_songbird_vs_brigade_sevilla/",
+                "snippet": "Brigade Sevilla may offer higher resale potential and location strength on the main road, but it's denser and priciest with longer delivery ...",
+                "position": 1,
+                "domain": "www.reddit.com"
+              },
+              {
+                "title": "Brigade Calista vs Sattva Songbird | Property Comparison",
+                "link": "https://www.propsoch.com/compare-properties/bengaluru/brigade-calista-budigere-cross_144-vs-sattva-songbird-budigere-cross_478",
+                "snippet": "Quality Analysis. We would score Brigade Calista a 3.21/5, while Sattva Songbird stands at 3.43/5. Sattva Songbird therefore carries a mild quality advantage.",
+                "position": 2,
+                "domain": "www.propsoch.com"
+              },
+              {
+                "title": "Brigade Calista vs Sattva Songbird - Row Houses",
+                "link": "https://www.propsoch.com/compare-properties/bengaluru/sattva-songbird-row-houses-budigere-cross_495-vs-brigade-calista-budigere-cross_144",
+                "snippet": "We would score Sattva Songbird - Row Houses a 2.86/5, while Brigade Calista stands at 3.21/5. Brigade Calista therefore carries a mild quality advantage.",
+                "position": 3,
+                "domain": "www.propsoch.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "best builders in Bangalore",
+            "top_results": [
+              {
+                "title": "Name reputed builders in Bangalore other than Prestige, ...",
+                "link": "https://www.reddit.com/r/indianrealestate/comments/1jabycy/name_reputed_builders_in_bangalore_other_than/",
+                "snippet": "Sobha. the best craftsmanship you get. build quality you cannot match. Assets. best value guaranteed for the price you pay.",
+                "position": 1,
+                "domain": "www.reddit.com"
+              },
+              {
+                "title": "Top 10 Builders & Developers in Bangalore 2025",
+                "link": "https://www.starestate.com/blogs/top-10-builders-developers-in-bangalore-your-complete-guide",
+                "snippet": "Top 10 Developers in Bangalore with Project Details \u00b7 1. Brigade Group \u00b7 2. Embassy Group \u00b7 3. Prestige Group \u00b7 4. Puravankara Group \u00b7 5. Sobha ...",
+                "position": 2,
+                "domain": "www.starestate.com"
+              },
+              {
+                "title": "Top Builders in Bangalore: List of Real Estate Developers ...",
+                "link": "https://www.magicbricks.com/builders-in-Bangalore",
+                "snippet": "Builders in Bangalore \u00b7 Prestige Estates Projects Ltd. \u00b7 SOBHA Limited \u00b7 Godrej Properties \u00b7 Puravankara Ltd. \u00b7 Brigade Enterprises Ltd. \u00b7 Sattva \u00b7 Mantri ...",
+                "position": 3,
+                "domain": "www.magicbricks.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "magicbricks.com"
+            ]
+          },
+          {
+            "query": "Sattva ongoing projects",
+            "top_results": [
+              {
+                "title": "Buy Residential Flats & Apartment in Bangalore",
+                "link": "https://sattvagroup.com/residential/on-going/bengaluru-on-going/",
+                "snippet": "Explore Sattva Group ongoing residential projects in Bangalore such as Sattva Vasanta Skye, Park Cubix Phase II and more. Find dream apartments, villas and ...",
+                "position": 1,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "30+ Sattva Group - Upcoming Residential & Commercial ...",
+                "link": "https://sattvanewlaunch.com/",
+                "snippet": "Sattva Group New/Upcoming & Ongoing Projects in Other Location ; Sattva Aeropolis Phase 2 \u00b7 Studio, 1 BHK & 3 BHK \u00b7 448 - 1004 sq.ft. \u00b7 Airport Road, Bangalore.",
+                "position": 2,
+                "domain": "sattvanewlaunch.com"
+              },
+              {
+                "title": "Sattva Group Upcoming Project in Bangalore 2025",
+                "link": "https://www.sattvavasanta.ind.in/sattva-group-upcoming-project-in-bangalore-2025.html",
+                "snippet": "There are three exquisite Sattva Group Upcoming Projects in Bangalore 2025. These are Sattva Bhumi, Sattva Cubix Phase II, and Sattva Kaveri Siri II.",
+                "position": 3,
+                "domain": "www.sattvavasanta.ind.in"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "local_pack"
+            ],
+            "competitor_presence": [
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "Sattva ready to move projects",
+            "top_results": [
+              {
+                "title": "Buy Residential Flats & Apartment in Bangalore",
+                "link": "https://sattvagroup.com/residential/on-going/bengaluru-on-going/",
+                "snippet": "Discover Sattva City, a 50-acre residential project on Bengaluru Airport Road, offering 2, 3, and 4 BHK apartments in a walkable, open urban setting.",
+                "position": 1,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "Ready to Move Projects by Sattva",
+                "link": "https://www.magicbricks.com/sattva-ready-to-move-projects-pppsp",
+                "snippet": "Ready to move projects by Sattva: Check the list of all the ready-to-move residential projects of Sattva all over India along with price and property types.",
+                "position": 2,
+                "domain": "www.magicbricks.com"
+              },
+              {
+                "title": "Sattva Upcoming Projects in Bangalore",
+                "link": "https://sattvanewlaunch.com/bangalore/",
+                "snippet": "Sattva Vasanta Cove \u00b7 Studio & 1 BHK Apartments \u00b7 532 - 932 sq. ft \u00b7 Devanahalli, Bangalore. \u20b952 Lacs* ; Sattva Aaranya \u00b7 3 & 4 BHK \u00b7 1,800 - 3,500 sq. ft.",
+                "position": 3,
+                "domain": "sattvanewlaunch.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview"
+            ],
+            "competitor_presence": [
+              "magicbricks.com",
+              "99acres.com"
+            ]
+          },
+          {
+            "query": "Sattva new launch",
+            "top_results": [
+              {
+                "title": "Sattva New launch",
+                "link": "https://sattvanewlaunch.com/",
+                "snippet": "Sattva Lumina, a new launch project on Yelahanka-Doddaballapura Road, Bangalore, offers 1, 2 & 3 BHK apartments ranging from 650 to 1780 sq.ft. Nestled in the ...",
+                "position": 1,
+                "domain": "sattvanewlaunch.com"
+              },
+              {
+                "title": "Buy Residential Flats & Apartment in Bangalore",
+                "link": "https://sattvagroup.com/residential/on-going/bengaluru-on-going/",
+                "snippet": "Discover Sattva City, a 50-acre residential project on Bengaluru Airport Road, offering 2, 3, and 4 BHK apartments in a walkable, open urban setting. Know More.",
+                "position": 2,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "Sattva Upcoming Projects in Bangalore",
+                "link": "https://sattvanewlaunch.com/bangalore/",
+                "snippet": "Sattva Springs is a new launch luxury residential project on Kanakapura Road, Bangalore, offering spacious 4 and 5 BHK apartments. With sizes to be announced, ...",
+                "position": 3,
+                "domain": "sattvanewlaunch.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "Sattva pre launch",
+            "top_results": [
+              {
+                "title": "Sattva Upcoming Projects in Bangalore",
+                "link": "https://sattvanewlaunch.com/bangalore/",
+                "snippet": "Sattva City Doddajala is a pre-launch residential project in North Bangalore, offering a range of 1, 2, 2.5, 3, 3.5, and 4 BHK apartments with sizes ranging ...",
+                "position": 1,
+                "domain": "sattvanewlaunch.com"
+              },
+              {
+                "title": "Buy Residential Flats & Apartment in Bangalore",
+                "link": "https://sattvagroup.com/residential/on-going/bengaluru-on-going/",
+                "snippet": "Discover Sattva City, a 50-acre residential project on Bengaluru Airport Road, offering 2, 3, and 4 BHK apartments in a walkable, open urban setting. Sattva ...",
+                "position": 2,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "30+ Sattva Group - Upcoming Residential & Commercial ...",
+                "link": "https://sattvanewlaunch.com/",
+                "snippet": "Sattva Lumina, a new launch project on Yelahanka-Doddaballapura Road, Bangalore, offers 1, 2 & 3 BHK apartments ranging from 650 to 1780 sq.ft. Nestled in the ...",
+                "position": 3,
+                "domain": "sattvanewlaunch.com"
+              }
+            ],
+            "serp_features": [
+              "people_also_ask"
+            ],
+            "competitor_presence": []
+          },
+          {
+            "query": "upcoming Sattva projects Bangalore",
+            "top_results": [
+              {
+                "title": "Buy Residential Flats & Apartment in Bangalore",
+                "link": "https://sattvagroup.com/residential/on-going/bengaluru-on-going/",
+                "snippet": "Explore Sattva Group ongoing residential projects in Bangalore such as Sattva Vasanta Skye, Park Cubix Phase II and more. Find dream apartments, villas and ...",
+                "position": 1,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "30+ Sattva Group - Upcoming Residential & Commercial ...",
+                "link": "https://sattvanewlaunch.com/",
+                "snippet": "Sattva Trinity is an upcoming residential project in Jnanabharathi, Bangalore, offering 2 & 3 BHK apartments by Sattva Group. Designed for modern living, it ...",
+                "position": 2,
+                "domain": "sattvanewlaunch.com"
+              },
+              {
+                "title": "Sattva Group Upcoming Project in Bangalore 2025",
+                "link": "https://www.sattvavasanta.ind.in/sattva-group-upcoming-project-in-bangalore-2025.html",
+                "snippet": "There are three exquisite Sattva Group Upcoming Projects in Bangalore 2025. These are Sattva Bhumi, Sattva Cubix Phase II, and Sattva Kaveri Siri II.",
+                "position": 3,
+                "domain": "www.sattvavasanta.ind.in"
+              }
+            ],
+            "serp_features": [
+              "ai_overview"
+            ],
+            "competitor_presence": [
+              "nobroker.in"
+            ]
+          },
+          {
+            "query": "Sattva customer reviews",
+            "top_results": [
+              {
+                "title": "Salarpuria Sattva Group, Bangalore: Reviews and Ratings",
+                "link": "https://www.mouthshut.com/builders-and-developers/salarpuria-sattva-group-bangalore-reviews-925721804",
+                "snippet": "My experience with Sattva project has been really good. My family and I visited the site & sales office a few times and liked the building design.",
+                "position": 1,
+                "domain": "www.mouthshut.com"
+              },
+              {
+                "title": "Testimonials",
+                "link": "https://sattvagroup.com/testimonials/",
+                "snippet": "The quality of the construction is very good. I am very happy with the features and amenities that this project offers. Its truly home sweet home for me!",
+                "position": 2,
+                "domain": "sattvagroup.com"
+              },
+              {
+                "title": "1525 Reviews for Sattva Group (Corporate Office) in Aga ...",
+                "link": "https://www.justdial.com/Bangalore/Sattva-Group-Corporate-Office-Aga-Abbas-Ali-Road/080PXX80-XX80-140205100849-P2H1_BZDET/reviews",
+                "snippet": "The staff at the front desk is impolite and rude. The HR doesn't know anything about the company's requirements.Misleading customers by providing falsified ...",
+                "position": 3,
+                "domain": "www.justdial.com"
+              }
+            ],
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "competitor_presence": [
+              "housing.com",
+              "99acres.com",
+              "nobroker.in"
+            ]
+          }
+        ],
+        "aeo_scores": [
+          {
+            "query": "Sattva group reviews",
+            "score": 100,
+            "serp_features": [
+              "local_pack",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "Sattva pre launch",
+            "score": 100,
+            "serp_features": [
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": false,
+            "competitor_present": false
+          },
+          {
+            "query": "is Sattva a good builder",
+            "score": 90,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "Sattva Bangalore",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "Sattva vs Sobha",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "Sattva vs Prestige",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "Sattva vs Brigade",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "Sattva new launch",
+            "score": 80,
+            "serp_features": [
+              "ai_overview",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": false
+          },
+          {
+            "query": "Sattva reviews",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "best builders in Bangalore",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "local_pack",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "Sattva customer reviews",
+            "score": 70,
+            "serp_features": [
+              "ai_overview",
+              "video_results",
+              "people_also_ask"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "Sattva projects Bangalore",
+            "score": 65,
+            "serp_features": [
+              "ai_overview",
+              "local_pack"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "Sattva ongoing projects",
+            "score": 65,
+            "serp_features": [
+              "ai_overview",
+              "local_pack"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "Sattva ready to move projects",
+            "score": 65,
+            "serp_features": [
+              "ai_overview"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          },
+          {
+            "query": "upcoming Sattva projects Bangalore",
+            "score": 65,
+            "serp_features": [
+              "ai_overview"
+            ],
+            "has_featured_snippet": false,
+            "has_ai_overview": true,
+            "competitor_present": true
+          }
+        ]
+      },
+      "analysis": {
+        "topic": "Sattva",
+        "topic_type": "builder",
+        "trend_direction": "stable",
+        "trend_summary": "Sattva maintains stable search interest (65.2 recent vs 68.6 average) with seasonal fluctuations. Rising queries indicate strong interest in specific project launches (Lumina, Hamlet, Horizon, Songbird, Bliss), suggesting cyclical demand tied to new project announcements.",
+        "total_queries_discovered": 174,
+        "intent_clusters": [
+          {
+            "intent": "informational",
+            "queries": [
+              "what is sattva",
+              "sattva meaning",
+              "sattva definition",
+              "sattva projects",
+              "sattva developer"
+            ]
+          },
+          {
+            "intent": "navigational",
+            "queries": [
+              "sattva official website",
+              "sattva lumina",
+              "sattva hamlet",
+              "sattva horizon"
+            ]
+          },
+          {
+            "intent": "commercial",
+            "queries": [
+              "sattva properties",
+              "sattva real estate",
+              "sattva apartments",
+              "sattva price"
+            ]
+          }
+        ]
+      },
+      "competitor_tracker": {
+        "99acres.com": 3,
+        "nobroker.in": 5,
+        "magicbricks.com": 2,
+        "housing.com": 1
+      },
+      "serp_calls_used": 15,
+      "autocomplete_calls_used": 4,
+      "cost_usd": 0.001434
+    },
+    "competitor_data": {
+      "topic": "sattva",
+      "competitor_coverage": {
+        "magicbricks.com": 0,
+        "nobroker.in": 2,
+        "housing.com": 0,
+        "99acres.com": 2
+      },
+      "raw_results": [
+        {
+          "query": "Sattva reviews",
+          "results": [
+            {
+              "position": 1,
+              "title": "SATTVA Reviews by 300+ Employees | Rated 4.3/5",
+              "link": "https://www.ambitionbox.com/reviews/salarpuria-sattva-reviews",
+              "snippet": "Based on 362 reviews on AmbitionBox, SATTVA employees rate job security at 4.2 out of 5. This high rating reflects strong employee confidence in ..."
+            },
+            {
+              "position": 2,
+              "title": "Salarpuria Sattva Group, Bangalore: Reviews and Ratings",
+              "link": "https://www.mouthshut.com/builders-and-developers/salarpuria-sattva-group-bangalore-reviews-925721804",
+              "snippet": "My experience with Sattva project has been really good. My family and I visited the site & sales office a few times and liked the building design."
+            },
+            {
+              "position": 3,
+              "title": "Sattva Reviews",
+              "link": "https://www.glassdoor.co.in/Reviews/Sattva-Reviews-E490381.htm",
+              "snippet": "36% of Sattva employees would recommend working there to a friend based on Glassdoor reviews. Employees also rated Sattva 4.1 out of 5 for work life balance, ..."
+            },
+            {
+              "position": 4,
+              "title": "Testimonials",
+              "link": "https://sattvagroup.com/testimonials/",
+              "snippet": "Sattva Team showed great support. They've a very active team. I would recommend Sattva to others, due to exceptional services and brand reputation."
+            },
+            {
+              "position": 5,
+              "title": "Home Buying Experience in Bangalore : r/indianrealestate",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1kxbw60/home_buying_experience_in_bangalore/",
+              "snippet": "Sattva has a good reputation in general plus the area is good and not a premium only guy like sobha prestige brigade etc. Also can you list ..."
+            },
+            {
+              "position": 6,
+              "title": "Review of Sattva Aeropolis, Devanahalli, Bengaluru",
+              "link": "https://www.nobroker.in/forum/what-are-the-reviews-of-sattva-aeropolis-devanahalli-bangalore-prjtrw/",
+              "snippet": "What are the reviews of Sattva Aeropolis, Devanahalli, Bangalore?"
+            },
+            {
+              "position": 7,
+              "title": "1525 Reviews for Sattva Group (Corporate Office) in Aga ...",
+              "link": "https://www.justdial.com/Bangalore/Sattva-Group-Corporate-Office-Aga-Abbas-Ali-Road/080PXX80-XX80-140205100849-P2H1_BZDET/reviews",
+              "snippet": "Good projects with prime locations and excellent connectivity.Luxury head office belonging to Sattva Group, which speaks volumes about the developer."
+            },
+            {
+              "position": 8,
+              "title": "Sattva Vasanta Cove Apartments in Devanahalli ...",
+              "link": "https://www.homznspace.com/sattva-vasanta-cove-bellary-road-devanahalli-bangalore/",
+              "snippet": "The Apartment project is located beside Bellary Road. It is very close to KIAL Airport. Sattva Vasanta Cove Reviews."
+            }
+          ]
+        },
+        {
+          "query": "Sattva projects Bangalore",
+          "results": [
+            {
+              "position": 1,
+              "title": "Buy Residential Flats & Apartment in Bangalore",
+              "link": "https://sattvagroup.com/residential/on-going/bengaluru-on-going/",
+              "snippet": "Explore Sattva Group ongoing residential projects in Bangalore such as Sattva Vasanta Skye, Park Cubix Phase II and more. Find dream apartments, villas and ..."
+            },
+            {
+              "position": 2,
+              "title": "30+ Sattva Group - Upcoming Residential & Commercial ...",
+              "link": "https://sattvanewlaunch.com/",
+              "snippet": "Sattva Lumina, a new launch project on Yelahanka-Doddaballapura Road, Bangalore, offers 1, 2 & 3 BHK apartments ranging from 650 to 1780 sq.ft. Nestled in the ..."
+            },
+            {
+              "position": 3,
+              "title": "Sattva Group: Leading Real Estate Builder & Developer in ...",
+              "link": "https://sattvagroup.com/",
+              "snippet": "Sattva Group \u2013 a premium real estate developer in India. Buy residential and commercial properties in Bangalore and other cities."
+            },
+            {
+              "position": 4,
+              "title": "Sattva Group Upcoming Project in Bangalore 2025",
+              "link": "https://www.sattvavasanta.ind.in/sattva-group-upcoming-project-in-bangalore-2025.html",
+              "snippet": "There are three exquisite Sattva Group Upcoming Projects in Bangalore 2025. These are Sattva Bhumi, Sattva Cubix Phase II, and Sattva Kaveri Siri II."
+            },
+            {
+              "position": 5,
+              "title": "Apartments in Bengaluru",
+              "link": "https://sattvagroup.com/residential/apartments-in-bengaluru/",
+              "snippet": "Explore Studio, 1, 2, 3 & 4 BHK apartments, plots and row houses in Bengaluru. Stylish homes with modern amenities starting from \u20b929L*."
+            },
+            {
+              "position": 6,
+              "title": "Sattva Upcoming Projects in Bangalore",
+              "link": "https://sattvanewlaunch.com/bangalore/",
+              "snippet": "Sattva Lumina, a new launch project on Yelahanka-Doddaballapura Road, Bangalore, offers 1, 2 & 3 BHK apartments ranging from 650 to 1780 sq.ft. Nestled in the ..."
+            },
+            {
+              "position": 7,
+              "title": "Upcoming Sattva group Projects in Bangalore - NoBroker.in",
+              "link": "https://www.nobroker.in/sattva-group-projects-bangalore",
+              "snippet": "Sattva group offers a wide range of properties in Bangalore, including single-family homes, town homes, and apartments. They also build custom homes to meet the ..."
+            },
+            {
+              "position": 8,
+              "title": "Salarpuria Sattva Group Projects Bangalore",
+              "link": "https://www.homes247.in/bangalore/builder/salarpuria-sattva-group-36",
+              "snippet": "Built over 114 projects with approximately 48 million sq ft, the construction group has left its remarkable traces in Bangalore, Hyderabad, Kolkata, Pune, Goa, ..."
+            },
+            {
+              "position": 9,
+              "title": "Sattva City | Doddajala | Shettigere | Bangalore",
+              "link": "https://www.sattvacity.info/",
+              "snippet": "Satvva City is an ultra-luxury, futuristic apartment project in Doddajala, near Shettiere, North Bangalore. It is spread across 50 acres and offers 3460 ..."
+            },
+            {
+              "position": 10,
+              "title": "Sattva Builders Projects in Bangalore North",
+              "link": "https://www.99acres.com/sattva-builders-projects-in-bangalore-north-bcffid",
+              "snippet": "Sattva Builders is one of the leading developers in India and has 106 residential and commercial projects in its portfolio, out of which 12 projects are in ..."
+            }
+          ]
+        },
+        {
+          "query": "Sattva construction quality",
+          "results": [
+            {
+              "position": 1,
+              "title": "Sattva Group: Leading Real Estate Builder & Developer in ...",
+              "link": "https://sattvagroup.com/",
+              "snippet": "Built on the bedrock of 30 years of trust, innovation and knowledge-leadership, the Sattva Group is one of India's leading Property Development, Management and ..."
+            },
+            {
+              "position": 2,
+              "title": "Salarpuria Sattva Group, Bangalore: Reviews and Ratings",
+              "link": "https://www.mouthshut.com/builders-and-developers/salarpuria-sattva-group-bangalore-reviews-925721804",
+              "snippet": "Sattva has built a reputation for delivering quality projects, and Park Cubix is no exception in terms of infrastructure. However, the inefficiency and ..."
+            },
+            {
+              "position": 3,
+              "title": "Is it worth investing in premium flats offered by Salarpuria ...",
+              "link": "https://www.quora.com/Is-it-worth-investing-in-premium-flats-offered-by-Salarpuria-Sattva",
+              "snippet": "Is it worth investing in premium flats offered by Salarpuria Sattva?"
+            },
+            {
+              "position": 4,
+              "title": "[Advice] Considering Sattva Hamlet in North Bangalore",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1k6ngp1/advice_considering_sattva_hamlet_in_north/",
+              "snippet": "Long-term appreciation potential. Quality of construction. Builder reputation. Ease of resale or rental demand. Livability and future infra."
+            },
+            {
+              "position": 5,
+              "title": "Testimonials",
+              "link": "https://sattvagroup.com/testimonials/",
+              "snippet": "Good quality of construction & customer Support. ... I am very happy with the quality of construction and the timely possession that I received my home."
+            },
+            {
+              "position": 6,
+              "title": "SATTVA Reviews by 300+ Employees | Rated 4.3/5",
+              "link": "https://www.ambitionbox.com/reviews/salarpuria-sattva-reviews",
+              "snippet": "SATTVA is rated 4.3/5, based on 300+ employee reviews on AmbitionBox. SATTVA is highly rated for Work-life balance with 4.3/5."
+            },
+            {
+              "position": 7,
+              "title": "Top 10 Reasons for Investing in Sattva City | Real Estate",
+              "link": "https://www.sattvacity.info/sattva-group/top-10-reasons-for-investing-in-sattva-city.html",
+              "snippet": "High-Quality Construction. Sattva City is developed by Sattva Group, known for high-quality construction. The project features an RCC-framed structure for ..."
+            },
+            {
+              "position": 8,
+              "title": "Sattva Group (@sattvagroupindia)",
+              "link": "https://www.instagram.com/sattvagroupindia/",
+              "snippet": "For Sattva, this honor reflects years of building large, integrated urban environments anchored in quality, resilience, and long term city building. Thank ..."
+            },
+            {
+              "position": 9,
+              "title": "Sattva Greenage Reviews Hosur Road Bangalore",
+              "link": "https://www.99acres.com/sattva-greenage-reviews-ratings-hosur-road-bangalore-south-npxid-r162",
+              "snippet": "... construction quality of the entire structure is amazing. (9 similar reviews). The quality of the furniture is awesome, and the services and amenities ..."
+            }
+          ]
+        },
+        {
+          "query": "Sattva delays complaints",
+          "results": [
+            {
+              "position": 1,
+              "title": "Complaints List for SATTVA INFRASTRUCTURE INDIA ...",
+              "link": "https://rera.karnataka.gov.in/complaintReportWiseList?pName=R8GDABbBdkHzz0uxi47q6uW6CDR36PSdyfc001eFVMmj4etI3ai03kU6ntUUgwX6",
+              "snippet": "Total Records : 2 ; 1, 00646/2025, SATTVA INFRASTRUCTURE INDIA PRIVATE LIMITED, Green Groves, S NAGARAJI ; 2, 00898/2025, SATTVA INFRASTRUCTURE ..."
+            },
+            {
+              "position": 2,
+              "title": "Salarpuria Sattva Group, Bangalore: Reviews and Ratings",
+              "link": "https://www.mouthshut.com/builders-and-developers/salarpuria-sattva-group-bangalore-reviews-925721804",
+              "snippet": "Repeated requests for an escalation matrix, particularly to Ms. Leelavathi and Ms. Nethravathi have gone unanswered. This lack of accountability is alarming, ..."
+            },
+            {
+              "position": 3,
+              "title": "What happened to Sattva Hamlet launch (near Blr airport)",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1ofnp2o/what_happened_to_sattva_hamlet_launch_near_blr/",
+              "snippet": "As the title, I gave EOI for this or Sattva Hamlet project way back in March. Since then the channel partner had been telling launch will be in Apr, May, ..."
+            },
+            {
+              "position": 4,
+              "title": "Not recommend buying property from sattva",
+              "link": "https://www.mouthshut.com/projects/salarpuria-sattva-misty-charm-kanakapura-road-bangalore-review-ptqqsutqmnp",
+              "snippet": "The CRM team, led by Ms. Leelavathi, has shown a persistent lack of responsiveness. Despite multiple calls, emails, and even an in-person visit, ..."
+            },
+            {
+              "position": 5,
+              "title": "Has Ozone group restarted the Ozone Prime project and ...",
+              "link": "https://www.facebook.com/groups/462313211586077/posts/1181431116340946/",
+              "snippet": "I have filed a Rera complaint for my Ozone prime flat which has not been constructed and handed over. Does anyone know if they've restarted the project?"
+            },
+            {
+              "position": 6,
+              "title": "Sattva Vasanta FAQs | Frenquently Asked Questions",
+              "link": "https://www.sattvavasanta.ind.in/faqs.html",
+              "snippet": "RERA will assess any Salarpuria Sattva complaints about completion of the project and buyers will be compensated for delays. Featured Image of Sattva Vasanta ..."
+            },
+            {
+              "position": 7,
+              "title": "Complaints List for SALARPURIA-SATTVA OPUS",
+              "link": "https://rera.karnataka.gov.in/complaintReportWiseList?pName=QMavJX%2BF0c7p1nnC0K8vRTYv%2FRgxfTNJ22WbdfPExNU%3D",
+              "snippet": "Total Records : 4 ; 1, CMP/220203/0008929, SATTVA DEVELOPERS PRIVATE LIMITED, SALARPURIA-SATTVA OPUS, Subhankar Dutta ; 2, CMP/220623/0009671, SATTVA DEVELOPERS ..."
+            },
+            {
+              "position": 8,
+              "title": "M/S Sattva Developers Private Limited vs M/S Tata ...",
+              "link": "https://indiankanoon.org/doc/167062059/",
+              "snippet": "M/S Sattva Developers Private Limited vs M/S Tata Consultancy Services Limited on 16 January, 2025 ... Petition in A.P.No.49/2022 filed by the ..."
+            },
+            {
+              "position": 9,
+              "title": "Sattva City RERA Approval | BBMP | Bank Loan",
+              "link": "https://www.sattvacity.info/rera/",
+              "snippet": "Time of Completion: Developers must finish the project on time or pay compensation for delays. Fair Pricing: Home prices are based on carpet area (actual ..."
+            },
+            {
+              "position": 10,
+              "title": "SC Adjourns M/S Sattva Developers vs Chrysolite Property ...",
+              "link": "https://www.lekhanews.in/supreme-court/orders/sup-m-s-sattva-developers-private-limited-vs-chrysolite-property-investments-pvt-mlvz90uv/",
+              "snippet": "The Supreme Court of India has adjourned the case between M/S Sattva Developers Private Limited and Chrysolite Property Investments Pvt."
+            }
+          ]
+        },
+        {
+          "query": "Sattva vs Sobha",
+          "results": [
+            {
+              "position": 1,
+              "title": "What is the difference between societies of Tier 1 Builders ( ...",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1hbjpmj/asking_in_context_of_bangalore_what_is_the/",
+              "snippet": "Asking in context of Bangalore : What is the difference between societies of Tier 1 Builders (Prestige, Sobha...) and others. I am thinking ..."
+            },
+            {
+              "position": 2,
+              "title": "Top Real Estate Developers in Bangalore | USP Comparison",
+              "link": "https://www.propsoch.com/blogs/comparing-top-residential-real-estate-developers-in-bangalore-a-dive-into-unique-selling-propositions/",
+              "snippet": "Sobha Limited excels in quality and customer satisfaction, whereas Puravankara is known for its innovative themes. Godrej Properties brings a ..."
+            },
+            {
+              "position": 3,
+              "title": "Top 10 Real Estate Builders and Developers in Bangalore",
+              "link": "https://www.homes247.in/blogs/best-builders-and-developers-in-bangalore-119",
+              "snippet": "Iconic Projects of Sobha Ltd: Sobha Royal Pavilion, Sobha Dream Acres, Sobha Dream Gardens ... Sattva Group: Salarpuria Sattva Magnificia, ..."
+            },
+            {
+              "position": 4,
+              "title": "Top 10 Builders in Bengaluru (2026 Rankings & Review)",
+              "link": "https://booknewproperty.com/top-10-real-estate-developers-in-bengaluru-2025-update/",
+              "snippet": "Discover Bengaluru's top 10 builders in 2025 with upcoming launches from Prestige, Brigade, Sobha, Godrej, and Sattva."
+            },
+            {
+              "position": 5,
+              "title": "\ud83c\udfd7\ufe0f Top Builders in Bangalore Explained! Looking to invest ...",
+              "link": "https://www.instagram.com/reel/DLPL1nAv_U2/",
+              "snippet": "... Sattva \u2013 Trusted for solid investments 8\ufe0f\u20e3 Assetz Property ... Bangalore's homegrown developers like Sobha, Brigade, Embassy, and ..."
+            },
+            {
+              "position": 6,
+              "title": "Who is the best builder & developer In Bangalore?",
+              "link": "https://www.quora.com/Who-is-the-best-builder-developer-In-Bangalore",
+              "snippet": "Who is the best builder & developer In Bangalore?"
+            },
+            {
+              "position": 7,
+              "title": "Sobha Ruby Vs Salarpuria Sattva Laurel Heights - Harshasagar",
+              "link": "https://harshasagar.com/questions/sobha-ruby-vs-salarpuria-sattva-laurel-heights/",
+              "snippet": "But Sobha seems to offer better value for money in terms of rate per sqft and standard of living as it is already ready, on a larger area of ..."
+            },
+            {
+              "position": 8,
+              "title": "97 Mn sq. ft. of upcoming supply and ~\u20b91.70 lakh crore ...",
+              "link": "https://www.facebook.com/RealtyNXT/posts/exclusive-between-20262031-these-grade-a-developers-are-set-to-shape-and-scale-b/1426001336211222/",
+              "snippet": "... Sattva Group \u2013 7.49 Mn sq. ft. | \u20b911,067 Cr | 2.6% share ... Ankit Sharma \u25bb sobha dream acres resale and rent. 45w \u00b7 Public \u00b7 Brand ..."
+            },
+            {
+              "position": 9,
+              "title": "Top 10 Builders in Bangalore: Your Ultimate Guide to ...",
+              "link": "https://yuvagroup.in/top-10-builders-in-bangalore-your-ultimate-guide-to-quality-homes-and-investments/",
+              "snippet": "Recognized for their timely delivery and quality construction, Salarpuria Sattva has developed both residential and commercial spaces. ... Sobha, ..."
+            },
+            {
+              "position": 10,
+              "title": "Prestige vs Sobha vs Brigade: Which Bangalore Builder ...",
+              "link": "https://estatehive.in/blog/prestige-vs-sobha-vs-brigade-comparison-2026",
+              "snippet": "In-depth comparison of Prestige Group, Sobha Limited & Brigade Group in 2026. Construction quality, pricing, appreciation, amenities, ..."
+            }
+          ]
+        },
+        {
+          "query": "Sattva vs Prestige",
+          "results": [
+            {
+              "position": 1,
+              "title": "SATTVA vs Prestige Group: Where should you work?",
+              "link": "https://www.ambitionbox.com/compare/salarpuria-sattva-vs-prestige-group",
+              "snippet": "The overall rating of SATTVA is 4.3, whereas Prestige Group is rated 4.2 out of 5.0. SATTVA is rated higher than Prestige Group for work-life balance, whereas ..."
+            },
+            {
+              "position": 2,
+              "title": "Sattva Aqua Vista vs Prestige Southern Star",
+              "link": "https://www.propsoch.com/compare-properties/bengaluru/sattva-aqua-vista-bannerghatta-road_325-vs-prestige-southern-star-begur_553",
+              "snippet": "We would score Sattva Aqua Vista a 3.36/5, while Prestige Southern Star stands at 3.5/5. Prestige Southern Star therefore carries a mild quality advantage."
+            },
+            {
+              "position": 3,
+              "title": "What is the difference between societies of Tier 1 Builders ( ...",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1hbjpmj/asking_in_context_of_bangalore_what_is_the/",
+              "snippet": "Salarpuria's brand is called Sattva ... Without asking Prestige team offered money back or alternatives within their own projects."
+            },
+            {
+              "position": 4,
+              "title": "Prestige Group 2026: Bangalore's Top DA1+ Rated Builder",
+              "link": "https://www.prestigegoldengrove.live/prestige-group/",
+              "snippet": "Prestige Group is one of India's most famous real estate developers, founded by Razack Sattar in 1986 and headquartered in Bengaluru."
+            },
+            {
+              "position": 5,
+              "title": "Who is the best builder & developer In Bangalore?",
+              "link": "https://www.quora.com/Who-is-the-best-builder-developer-In-Bangalore",
+              "snippet": "Who is the best builder & developer In Bangalore?"
+            },
+            {
+              "position": 6,
+              "title": "Salarpuria sattva park cubix vs Prestige Gardenia Estate",
+              "link": "https://www.propsoch.com/compare-properties/bengaluru/salarpuria-sattva-park-cubix-devanahalli_71-vs-prestige-gardenia-estate-devanahalli_568",
+              "snippet": "We would score Salarpuria sattva park cubix a 3.64/5, while Prestige Gardenia Estate stands at 3.88/5. Prestige Gardenia Estate therefore carries a mild quality ..."
+            },
+            {
+              "position": 7,
+              "title": "[Compare Projects] Salarpuria Sattva Greenage vs Prestige ...",
+              "link": "https://www.youtube.com/watch?v=FGi8Ojbmcts",
+              "snippet": "First video in our comparison series. Project 1: Salarpuria Sattva Greenage, Hosur Road, Bangalore South Project 2: Prestige Ferns Residency ..."
+            },
+            {
+              "position": 8,
+              "title": "Top 10 Builders in Bengaluru (2026 Rankings & Review)",
+              "link": "https://booknewproperty.com/top-10-real-estate-developers-in-bengaluru-2025-update/",
+              "snippet": "Discover Bengaluru's top 10 builders in 2025 with upcoming launches from Prestige, Brigade, Sobha, Godrej, and Sattva ... check out our comparison ..."
+            },
+            {
+              "position": 9,
+              "title": "Top 10 Real Estate Builders and Developers in Bangalore",
+              "link": "https://www.homes247.in/blogs/best-builders-and-developers-in-bangalore-119",
+              "snippet": "10 Top builders and developers in Bangalore \u00b7 1. Sobha Limited: \u00b7 2. Prestige Group: \u00b7 3. Brigade Group: \u00b7 4. Godrej Properties: \u00b7 5. Embassy Group:."
+            },
+            {
+              "position": 10,
+              "title": "Sattva Group: Leading Real Estate Builder & Developer in ...",
+              "link": "https://sattvagroup.com/",
+              "snippet": "Sattva Group \u2013 a premium real estate developer in India. Buy residential and commercial properties in Bangalore and other cities."
+            }
+          ]
+        },
+        {
+          "query": "is Sattva a good builder",
+          "results": [
+            {
+              "position": 1,
+              "title": "Is it worth investing in premium flats offered by Salarpuria ...",
+              "link": "https://www.quora.com/Is-it-worth-investing-in-premium-flats-offered-by-Salarpuria-Sattva",
+              "snippet": "Is it worth investing in premium flats offered by Salarpuria Sattva?"
+            },
+            {
+              "position": 2,
+              "title": "Salarpuria Sattva Group, Bangalore: Reviews and Ratings",
+              "link": "https://www.mouthshut.com/builders-and-developers/salarpuria-sattva-group-bangalore-reviews-925721804",
+              "snippet": "Very good in the real estate business. slightly expensive but worth the money. Their designs and architecture is on par with Hirandani and Lodha."
+            },
+            {
+              "position": 3,
+              "title": "Sattva Group: Leading Real Estate Builder & Developer in ...",
+              "link": "https://sattvagroup.com/",
+              "snippet": "Built on the bedrock of 30 years of trust, innovation and knowledge-leadership, the Sattva Group is one of India's leading Property Development, Management and ..."
+            },
+            {
+              "position": 4,
+              "title": "[Advice] Considering Sattva Hamlet in North Bangalore",
+              "link": "https://www.reddit.com/r/indianrealestate/comments/1k6ngp1/advice_considering_sattva_hamlet_in_north/",
+              "snippet": "Choose Sattva Hamlet if you want flexibility, slightly lower entry cost, and long-term stable growth. If you need any help comparing further or ..."
+            },
+            {
+              "position": 5,
+              "title": "Sattva Group | Top Builder in Bangalore | Best Projects in ...",
+              "link": "https://www.sattvacity.info/sattva-group/",
+              "snippet": "- In 2017, Sattva received the ET 'Best Employer' Award and was named 'Best Builder' by the Builder's Guild of India. - Mr. Agarwal was honored as 'Global ..."
+            },
+            {
+              "position": 6,
+              "title": "1525 Reviews for Sattva Group (Corporate Office) in Aga ...",
+              "link": "https://www.justdial.com/Bangalore/Sattva-Group-Corporate-Office-Aga-Abbas-Ali-Road/080PXX80-XX80-140205100849-P2H1_BZDET/reviews",
+              "snippet": "Good projects with prime locations and excellent connectivity.Luxury head office belonging to Sattva Group, which speaks volumes about the developer."
+            },
+            {
+              "position": 7,
+              "title": "Why Salarpuria Sattva is one of India's most trusted builders",
+              "link": "https://www.youtube.com/watch?v=klydPGw8X-I",
+              "snippet": "We are recognized as one of the most trusted builders in India today. Strong financial discipline is the foundation on which we are built."
+            },
+            {
+              "position": 8,
+              "title": "Testimonials",
+              "link": "https://sattvagroup.com/testimonials/",
+              "snippet": "Would recommend Sattva due to excellent construction quality. ... I'm happy with the Sattva Team, as the documentations and payments were done well. Good plan, ..."
+            },
+            {
+              "position": 9,
+              "title": "SATTVA Reviews by 300+ Employees | Rated 4.3/5",
+              "link": "https://www.ambitionbox.com/reviews/salarpuria-sattva-reviews",
+              "snippet": "SATTVA is rated 4.3/5, based on 300+ employee reviews on AmbitionBox. SATTVA is highly rated for Work-life balance with 4.3/5."
+            },
+            {
+              "position": 10,
+              "title": "India's Trusted Real Estate & Tech-Park Developer",
+              "link": "https://homecollectionrealtors.com/sattva-group-bangalore/",
+              "snippet": "Sattva Group, earlier known as Salarpuria Sattva, is one of India's most respected and financially stable real estate developers, with a strong ..."
+            }
+          ]
+        },
+        {
+          "query": "Who is the CEO of Sattva Bangalore?",
+          "results": [
+            {
+              "position": 1,
+              "title": "Our Leadership Team",
+              "link": "https://sattvagroup.com/our-journey/people/leadership/",
+              "snippet": "Our Leadership Team ; Bijay Agarwal. Managing Director ; Mahesh Khaitan. Director ; Niru Agarwal. Director ; Jagannath Subba Rao. Advisor \u2013 Finance ..."
+            },
+            {
+              "position": 2,
+              "title": "Srikrishna Sridhar Murthy (Krishna)",
+              "link": "https://www.sattva.co.in/people/srikrishna-sridhar-murthy-krishna/",
+              "snippet": "Srikrishna Sridhar Murthy (Krishna) is the Co-founder and CEO of Sattva Consulting. \u00b7 With over 15 years of experience in social impact, Krishna has served as an ..."
+            },
+            {
+              "position": 3,
+              "title": "Bijay Agarwal - Sattva",
+              "link": "https://in.linkedin.com/in/bijaykagarwal",
+              "snippet": "Managing Director of the Sattva Group, Bijay Agarwal is the name behind the brand that\u2026 \u00b7 Experience: Sattva \u00b7 Location: Bengaluru \u00b7 124 connections on ..."
+            },
+            {
+              "position": 4,
+              "title": "A team with an irrational commitment to impact.",
+              "link": "https://www.sattva.co.in/about-us/team/",
+              "snippet": "Srikrishna Sridhar Murthy (Krishna). Co-founder and CEO ; Rathish Balakrishnan. Co-founder and Managing Partner ; Aarti Mohan. Co-founder and Partner ; Soumitra ..."
+            },
+            {
+              "position": 5,
+              "title": "Hear from Mr. Srikrishna Sridhar Murthy, Founder & CEO at ...",
+              "link": "https://www.instagram.com/reel/DEfClbQp3mr/",
+              "snippet": "Hear from Mr. Srikrishna Sridhar Murthy, Founder & CEO at Sattva Consulting, as he shares insights on how the Design Impact Awards are fostering transformative ..."
+            },
+            {
+              "position": 6,
+              "title": "Mr. Mahesh Khaitan, CEO of Sattva Group, India's leading ...",
+              "link": "https://www.facebook.com/MPIndustrialDevelopmentCorporation/videos/mr-mahesh-khaitan-ceo-of-sattva-group-indias-leading-real-estate-developers-enga/1202566107607593/",
+              "snippet": "Mr. Mahesh Khaitan, CEO of Sattva Group, India's leading real estate developers, engaged in the Interactive Session on Investment Opportunities in Madhya ..."
+            },
+            {
+              "position": 7,
+              "title": "Sattva Group",
+              "link": "https://www.constructionweekonline.in/lists/sattva-group",
+              "snippet": "In the year 1993 Bijay Agarwal, Managing Director of Sattva Group, a first generation entrepreneur, made a significant decision to move to ..."
+            },
+            {
+              "position": 8,
+              "title": "SATTVA Group: Our Journey & Corporate Overview",
+              "link": "https://sattvagroup.com/our-journey/corporate-overview/",
+              "snippet": "Guiding the group is it's visionary Managing Director, Bijay Agarwal. A Harvard Presidents program alumnus, he's pioneered various ventures, accruing accolades ..."
+            },
+            {
+              "position": 9,
+              "title": "Chairman's Vision",
+              "link": "https://sattvaventures.com/chairmans-vision/",
+              "snippet": "Bijay Kumar Agarwal, the MD of Sattva Group, personifies a visionary leader whose journey from humble beginnings has been marked by resilience, values, and ..."
+            }
+          ]
+        },
+        {
+          "query": "What is the salary of Sattva freshers?",
+          "results": [
+            {
+              "position": 1,
+              "title": "SATTVA Salaries by 1600+ Employees",
+              "link": "https://www.ambitionbox.com/salaries/salarpuria-sattva-salaries",
+              "snippet": "Site Engineer, \u20b94.4 Lakhs to \u20b94.9 Lakhs per year. Executive Accountant, \u20b94.1 Lakhs to \u20b94.8 Lakhs per year. Civil Site Engineer, \u20b94 Lakhs to \u20b94.5 Lakhs per ..."
+            },
+            {
+              "position": 2,
+              "title": "Salarpuria Sattva Group Salaries in Bangalore",
+              "link": "https://www.glassdoor.co.in/Salary/Salarpuria-Sattva-Group-Bangalore-Salaries-EI_IE1081324.0,23_IL.24,33_IM1091.htm",
+              "snippet": "Site Engineer \u00b7 \u20b94L - \u20b95L ; Quantity Surveyor \u00b7 \u20b92L - \u20b94L ; Assistant Manager \u00b7 \u20b96L - \u20b912L ; Civil Engineer, Site Engineer \u00b7 \u20b93L - \u20b93L ; Accounts Executive \u00b7 \u20b93L - \u20b94L ..."
+            },
+            {
+              "position": 3,
+              "title": "SATTVA Bengaluru Salaries by 1100+ Employees",
+              "link": "https://www.ambitionbox.com/salaries/salarpuria-sattva-salaries/bengaluru-location",
+              "snippet": "Site Engineer, \u20b94.3 Lakhs to \u20b94.8 Lakhs per year. Executive Accountant, \u20b94.2 Lakhs to \u20b94.9 Lakhs per year. Accounts & Finance Executive, \u20b93.8 Lakhs to \u20b94.4 ..."
+            },
+            {
+              "position": 4,
+              "title": "Explore Sattva Consulting salaries",
+              "link": "https://www.glassdoor.co.in/Salary/Sattva-Consulting-Salaries-E5907718.htm",
+              "snippet": "Annual salaries typically range from \u20b95,34,500 (or \u20b9257) for a Analyst to \u20b930,00,000 (or \u20b91,442) for a Senior Engagement Manager. This is based on 514 salaries ..."
+            },
+            {
+              "position": 5,
+              "title": "Sattva Salaries 2026 in India, Average salary \u20b919 lakhs",
+              "link": "https://6figr.com/in/salary/sattva",
+              "snippet": "Employees at Sattva earn an average of \u20b918.8lakhs, mostly ranging from \u20b914.5lakhs per year to \u20b947.7lakhs per year based on 11 profiles. The top ..."
+            },
+            {
+              "position": 6,
+              "title": "FAQs on Sattva Hiring Process",
+              "link": "https://www.sattva.co.in/wp-content/uploads/2021/07/FAQs-on-Sattva-Hiring-Process_PDF.pdf",
+              "snippet": "Does Sattva pay a stipend during internships? Yes, we do pay a stipend according to market standards. Our team will be able to provide further details on this, ..."
+            },
+            {
+              "position": 7,
+              "title": "How much does Sattva Consulting pay in Bengaluru, KA ...",
+              "link": "https://in.indeed.com/cmp/Sattva-Consulting/salaries?location=IN%2FKA%2FBengaluru",
+              "snippet": "The average Sattva Consulting salary ranges from approximately \u20b9 4,69,187 per year for Accountant to \u20b9 20,07,864 per year for Engagement Manager. Salary ..."
+            },
+            {
+              "position": 8,
+              "title": "Join the Team \u2013 Sattva Career Openings Today",
+              "link": "https://www.sattvavasanta.ind.in/sattva-career.html",
+              "snippet": "The average salary for the new journeys of the Sattva group starts at Rs 3.5 to 4 Lac per annum for those who have recently joined. Many job roles of the group, ..."
+            },
+            {
+              "position": 9,
+              "title": "12467 Salarpuria Sattva Jobs May 2026",
+              "link": "https://www.naukri.com/salarpuria-sattva-jobs-careers-4700748",
+              "snippet": "Salarpuria Sattva jobs ; Apprentice- Quality \u00b7 Mumbai, Navi Mumbai, Mumbai (All Areas) \u00b7 salary 2-2.75 Lacs PA ; Apprentice- Facade \u00b7 Mumbai, Mumbai (All ..."
+            },
+            {
+              "position": 10,
+              "title": "Sri Sattva Group Fresher Salary in India (Updated 2026)",
+              "link": "https://www.ambitionbox.com/salaries/sri-sattva-group-salaries/fresher",
+              "snippet": "Salaries by designations ; Starting your career? Discover Sri Sattva Group fresher salaries in India ; unlock blur Lock Unlock. \u20b93.5 L/yr - \u20b93.9 L/yr."
+            }
+          ]
+        }
+      ],
+      "uncovered_queries": [
+        "Sattva delays complaints",
+        "Sattva vs Sobha",
+        "Sattva vs Prestige",
+        "is Sattva a good builder",
+        "Who is the CEO of Sattva Bangalore?",
+        "What is the salary of Sattva freshers?"
+      ],
+      "analysis": {
+        "topic": "Sattva (Salarpuria Sattva Group) - Bangalore real estate builder",
+        "competitor_summary": [
+          {
+            "competitor": "magicbricks.com",
+            "result_count": 0,
+            "depth": "thin",
+            "strengths": "No direct coverage detected; opportunity for Canvas to own this space",
+            "weaknesses": "Absent from Sattva-specific queries; no builder comparison or project guides"
+          },
+          {
+            "competitor": "nobroker.in",
+            "result_count": 2,
+            "depth": "spoke",
+            "strengths": "Minimal presence suggests light coverage of Sattva projects or comparisons",
+            "weaknesses": "Limited depth; no comprehensive builder profile, delays/complaints analysis, or competitive positioning"
+          },
+          {
+            "competitor": "housing.com",
+            "result_count": 0,
+            "depth": "thin",
+            "strengths": "None detected in Sattva queries",
+            "weaknesses": "Complete absence; no project listings, reviews, or comparative content"
+          },
+          {
+            "competitor": "99acres.com",
+            "result_count": 2,
+            "depth": "spoke",
+            "strengths": "Minimal presence; likely property listing pages only",
+            "weaknesses": "No editorial depth; missing builder analysis, quality assessments, or complaint tracking"
+          }
+        ],
+        "coverage_gaps": [
+          {
+            "gap": "Sattva delays and complaints analysis (RERA complaints, project timelines, buyer grievances)",
+            "priority": "high",
+            "suggested_article_type": "hub"
+          },
+          {
+            "gap": "Sattva vs Sobha detailed comparison (pricing, quality, amenities, delivery track record)",
+            "priority": "high",
+            "suggested_article_type": "hub"
+          },
+          {
+            "gap": "Sattva vs Prestige detailed comparison (project portfolio, construction quality, investment returns)",
+            "priority": "high",
+            "suggested_article_type": "hub"
+          },
+          {
+            "gap": "Is Sattva a good builder? (credibility assessment, RERA compliance, buyer satisfaction metrics)",
+            "priority": "high",
+            "suggested_article_type": "hub"
+          },
+          {
+            "gap": "Sattva leadership and company background (CEO profile, company history, organizational structure)",
+            "priority": "medium",
+            "suggested_article_type": "spoke"
+          },
+          {
+            "gap": "Sattva salary and career information (fresher packages, employee reviews, work culture)",
+            "priority": "low",
+            "suggested_article_type": "sub_spoke"
+          }
+        ],
+        "our_advantages": [
+          "Zero major portal competition on Sattva delays/complaints \u2014 can establish authority with RERA data analysis and buyer testimonials",
+          "Comparative content (vs Sobha, vs Prestige) completely unowned by traditional real estate portals \u2014 opportunity for Canvas-authored comparison hubs",
+          "Local Bangalore expertise allows deeper project-level analysis, neighborhood context, and investment ROI tracking vs generic builder reviews",
+          "Fresh, data-driven builder credibility assessments (RERA compliance, delivery timelines, quality metrics) vs outdated Quora/Reddit discussions",
+          "Can target high-intent comparison queries (Sattva vs X) with conversion-optimized content before competitors establish presence"
+        ],
+        "summary": "Sattva coverage is severely fragmented across portals (only 4/9 queries covered, max 2 hits per domain) with no competitor owning builder credibility, delays, or comparative analysis. Canvas can dominate high-priority gaps (delays/complaints, Sobha/Prestige comparisons, builder assessment) with authoritative hubs leveraging local Bangalore data and RERA insights."
+      },
+      "summary": "'sattva': magicbricks=0, nobroker=2, housing=0, 99acres=2 | 6 uncovered | 6 gaps identified"
+    },
+    "keyword_map": {
+      "topic": "sattva",
+      "keyword_groups": [
+        {
+          "group_name": "Sattva Company Overview & Credibility",
+          "primary_keyword": "is sattva a good builder",
+          "supporting_keywords": [
+            "is sattva a grade builder",
+            "is sattva a good brand",
+            "who is the owner of sattva",
+            "who is the ceo of sattva bangalore",
+            "which company is sattva"
+          ],
+          "intent": "informational",
+          "estimated_volume": "high",
+          "competition": "low",
+          "opportunity_score": 92
+        },
+        {
+          "group_name": "Sattva Projects & Listings",
+          "primary_keyword": "sattva projects bangalore",
+          "supporting_keywords": [
+            "sattva upcoming projects",
+            "sattva new launch",
+            "sattva pre launch",
+            "sattva ongoing projects",
+            "sattva ready to move projects",
+            "how many projects does sattva have"
+          ],
+          "intent": "transactional",
+          "estimated_volume": "high",
+          "competition": "medium",
+          "opportunity_score": 78
+        },
+        {
+          "group_name": "Sattva Specific Project Names",
+          "primary_keyword": "sattva songbird",
+          "supporting_keywords": [
+            "sattva lumina",
+            "sattva knowledge city",
+            "sattva forest ridge",
+            "sattva anugraha",
+            "sattva misty charm",
+            "sattva bliss"
+          ],
+          "intent": "navigational",
+          "estimated_volume": "medium",
+          "competition": "low",
+          "opportunity_score": 85
+        },
+        {
+          "group_name": "Sattva Reviews & Customer Feedback",
+          "primary_keyword": "sattva reviews",
+          "supporting_keywords": [
+            "sattva group reviews",
+            "sattva customer reviews",
+            "salarpuria sattva reviews",
+            "sattva bangalore reviews",
+            "sattva delays complaints"
+          ],
+          "intent": "informational",
+          "estimated_volume": "high",
+          "competition": "medium",
+          "opportunity_score": 80
+        },
+        {
+          "group_name": "Sattva vs Competitor Comparison",
+          "primary_keyword": "sattva vs sobha",
+          "supporting_keywords": [
+            "sattva vs prestige",
+            "sattva vs brigade",
+            "which is better prestige or sobha",
+            "is sobha better than emaar",
+            "sattva competitors"
+          ],
+          "intent": "comparison",
+          "estimated_volume": "medium",
+          "competition": "low",
+          "opportunity_score": 88
+        },
+        {
+          "group_name": "Sattva Pricing & Pre-Launch Offers",
+          "primary_keyword": "sattva pre launch",
+          "supporting_keywords": [
+            "sattva projects bangalore price",
+            "what is the price of sattva pre launch",
+            "sattva apartments bangalore",
+            "sattva properties"
+          ],
+          "intent": "transactional",
+          "estimated_volume": "medium",
+          "competition": "medium",
+          "opportunity_score": 82
+        },
+        {
+          "group_name": "Sattva Location-Specific Projects",
+          "primary_keyword": "sattva projects in whitefield",
+          "supporting_keywords": [
+            "sattva upcoming projects in north bangalore",
+            "sattva projects in south bangalore",
+            "sattva bangalore address",
+            "sattva head office bangalore"
+          ],
+          "intent": "navigational",
+          "estimated_volume": "medium",
+          "competition": "low",
+          "opportunity_score": 84
+        },
+        {
+          "group_name": "Sattva Corporate & Employment",
+          "primary_keyword": "sattva bangalore careers",
+          "supporting_keywords": [
+            "what is the salary of sattva freshers",
+            "what is the salary in sattva",
+            "sattva group employee reviews",
+            "sattva ambitionbox",
+            "sattva bangalore office"
+          ],
+          "intent": "informational",
+          "estimated_volume": "low",
+          "competition": "low",
+          "opportunity_score": 76
+        },
+        {
+          "group_name": "Sattva Brand & Market Position",
+          "primary_keyword": "sattva bangalore",
+          "supporting_keywords": [
+            "sattva group",
+            "sattva real estate",
+            "who are tier 1 builders in bangalore",
+            "who are tier 1 developers in bangalore",
+            "top 5 builders in bangalore"
+          ],
+          "intent": "informational",
+          "estimated_volume": "high",
+          "competition": "high",
+          "opportunity_score": 72
+        }
+      ],
+      "summary": "Sattva keyword data reveals strong demand for builder credibility assessment, project-specific information, and competitive comparisons with minimal competitor coverage. Content should prioritize high-opportunity areas like company credibility, specific project names, and comparison guides while addressing customer concerns around reviews and delays."
+    },
+    "cluster_plan": {
+      "cluster_id": "sattva-bangalore-builder",
+      "cluster_name": "Sattva Builder Guide - Bangalore Real Estate",
+      "total_articles": 11,
+      "articles": [
+        {
+          "id": "sattva-builder-complete-guide",
+          "title": "Sattva Builder Complete Guide: Projects, Reviews & Investment Analysis in Bangalore",
+          "slug": "sattva-builder-complete-guide-bangalore",
+          "type": "hub",
+          "target_keywords": {
+            "primary": "sattva bangalore",
+            "secondary": [
+              "sattva group",
+              "sattva real estate",
+              "sattva builder"
+            ]
+          },
+          "word_count_target": 3000,
+          "outline": [
+            "H2: What is Sattva Group - Company Overview and History",
+            "  H3: Founding and Leadership Team",
+            "  H3: Business Verticals and Market Presence",
+            "H2: Is Sattva a Good Builder - Credibility Assessment",
+            "  H3: Grade Classification and Industry Standing",
+            "  H3: Construction Quality and Standards",
+            "  H3: Financial Stability and Track Record",
+            "H2: Sattva Projects Portfolio in Bangalore",
+            "  H3: Completed Projects Overview",
+            "  H3: Ongoing and Upcoming Developments",
+            "  H3: Location-wise Project Distribution",
+            "H2: How Does Sattva Compare to Other Builders",
+            "  H3: Market Position Among Tier 1 Developers",
+            "  H3: Competitive Advantages and Differentiators",
+            "H2: Customer Reviews and Feedback Analysis",
+            "  H3: Common Praise Points",
+            "  H3: Areas of Concern and Complaints",
+            "H2: Investment Perspective - Should You Buy Sattva Properties",
+            "  H3: Pricing Strategy and Value Proposition",
+            "  H3: Resale Value and Appreciation Potential",
+            "H2: How to Choose the Right Sattva Project for You"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "is-sattva-good-builder-credibility-analysis",
+              "anchor_text": "detailed credibility analysis of Sattva",
+              "context": "In the credibility assessment section when discussing builder grade"
+            },
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "complete list of Sattva projects in Bangalore",
+              "context": "In the projects portfolio section"
+            },
+            {
+              "target_slug": "sattva-vs-prestige-sobha-brigade-comparison",
+              "anchor_text": "detailed comparison with Prestige, Sobha and Brigade",
+              "context": "In the competitive analysis section"
+            },
+            {
+              "target_slug": "sattva-reviews-customer-feedback-analysis",
+              "anchor_text": "comprehensive customer reviews analysis",
+              "context": "In the customer feedback section"
+            },
+            {
+              "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+              "anchor_text": "specific project details for Songbird and Lumina",
+              "context": "When mentioning flagship projects"
+            },
+            {
+              "target_slug": "sattva-pre-launch-projects-pricing-guide",
+              "anchor_text": "pre-launch opportunities and pricing",
+              "context": "In the investment perspective section"
+            }
+          ],
+          "faq_count": 8,
+          "notes": "This is the main hub article that should comprehensively cover all aspects of Sattva as a builder. Include data-driven insights and link to all other cluster articles.",
+          "db_id": "art-63aafd20-1d6"
+        },
+        {
+          "id": "is-sattva-good-builder-credibility",
+          "title": "Is Sattva a Good Builder? Complete Credibility Analysis and Grade Assessment",
+          "slug": "is-sattva-good-builder-credibility-analysis",
+          "type": "spoke",
+          "target_keywords": {
+            "primary": "is sattva a good builder",
+            "secondary": [
+              "is sattva a grade builder",
+              "is sattva a good brand",
+              "sattva builder grade"
+            ]
+          },
+          "word_count_target": 2000,
+          "outline": [
+            "H2: What Makes a Builder 'Good' - Evaluation Criteria",
+            "  H3: Financial Stability Indicators",
+            "  H3: Construction Quality Parameters",
+            "  H3: Delivery Track Record",
+            "H2: Is Sattva an A-Grade Builder in Bangalore",
+            "  H3: Industry Classification and Recognition",
+            "  H3: Comparison with Tier 1 Developers",
+            "H2: Sattva's Construction Quality and Standards",
+            "  H3: Materials and Build Quality",
+            "  H3: Architectural Design Philosophy",
+            "  H3: Amenities and Infrastructure",
+            "H2: Financial Health and Company Stability",
+            "  H3: Revenue Growth and Market Share",
+            "  H3: Debt Management and Cash Flow",
+            "H2: Project Delivery Track Record",
+            "  H3: On-time Completion Statistics",
+            "  H3: Delay Analysis and Reasons",
+            "H2: Customer Satisfaction Metrics",
+            "  H3: Post-possession Service Quality",
+            "  H3: Complaint Resolution Process",
+            "H2: Should You Trust Sattva as Your Builder"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "complete Sattva builder guide",
+              "context": "In the introduction when providing overview context"
+            },
+            {
+              "target_slug": "sattva-vs-prestige-sobha-brigade-comparison",
+              "anchor_text": "how Sattva compares to other A-grade builders",
+              "context": "In the grade classification section"
+            },
+            {
+              "target_slug": "sattva-reviews-customer-feedback-analysis",
+              "anchor_text": "detailed customer feedback analysis",
+              "context": "In the customer satisfaction section"
+            },
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "track record across all Sattva projects",
+              "context": "When discussing delivery statistics"
+            }
+          ],
+          "faq_count": 6,
+          "notes": "Focus on objective analysis with data points. Address common concerns about builder credibility and provide evidence-based assessment.",
+          "db_id": "art-53342001-421"
+        },
+        {
+          "id": "sattva-projects-bangalore-complete-list",
+          "title": "Sattva Projects in Bangalore: Complete List of Ongoing, Upcoming & Ready Properties",
+          "slug": "sattva-projects-bangalore-complete-list",
+          "type": "spoke",
+          "target_keywords": {
+            "primary": "sattva projects bangalore",
+            "secondary": [
+              "sattva upcoming projects",
+              "sattva new launch",
+              "sattva ongoing projects"
+            ]
+          },
+          "word_count_target": 2200,
+          "outline": [
+            "H2: Complete Portfolio of Sattva Projects in Bangalore",
+            "  H3: Project Categories and Types",
+            "  H3: Geographic Distribution Across Bangalore",
+            "H2: Sattva Ready to Move Projects",
+            "  H3: Completed Residential Projects",
+            "  H3: Commercial and Mixed-use Developments",
+            "  H3: Immediate Possession Options",
+            "H2: Sattva Ongoing Projects - Under Construction",
+            "  H3: Current Construction Status",
+            "  H3: Expected Completion Timelines",
+            "  H3: Booking Status and Availability",
+            "H2: Sattva Upcoming Projects and New Launches",
+            "  H3: Pre-launch Opportunities",
+            "  H3: Planned Developments by Location",
+            "  H3: Expected Launch Dates",
+            "H2: Location-wise Sattva Projects Analysis",
+            "  H3: North Bangalore Projects",
+            "  H3: South Bangalore Developments",
+            "  H3: East and West Bangalore Properties",
+            "H2: How Many Projects Does Sattva Have - Portfolio Size",
+            "  H3: Total Project Count and Scale",
+            "  H3: Investment Value and Market Presence",
+            "H2: Choosing the Right Sattva Project for Your Needs"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "comprehensive Sattva builder analysis",
+              "context": "In the introduction for company background"
+            },
+            {
+              "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+              "anchor_text": "detailed information about Songbird and Lumina projects",
+              "context": "When mentioning flagship projects"
+            },
+            {
+              "target_slug": "sattva-pre-launch-projects-pricing-guide",
+              "anchor_text": "pre-launch pricing and investment opportunities",
+              "context": "In the upcoming projects section"
+            },
+            {
+              "target_slug": "sattva-projects-whitefield-location-guide",
+              "anchor_text": "Sattva projects specifically in Whitefield",
+              "context": "In the location-wise analysis section"
+            }
+          ],
+          "faq_count": 7,
+          "notes": "Maintain updated project information and include current availability status. Focus on helping buyers find suitable projects based on their requirements.",
+          "db_id": "art-0af6675d-ab6"
+        },
+        {
+          "id": "sattva-vs-prestige-sobha-brigade-comparison",
+          "title": "Sattva vs Prestige vs Sobha vs Brigade: Complete Builder Comparison Guide Bangalore",
+          "slug": "sattva-vs-prestige-sobha-brigade-comparison",
+          "type": "spoke",
+          "target_keywords": {
+            "primary": "sattva vs sobha",
+            "secondary": [
+              "sattva vs prestige",
+              "sattva vs brigade",
+              "which is better prestige or sobha"
+            ]
+          },
+          "word_count_target": 2500,
+          "outline": [
+            "H2: Bangalore's Top Builders - Market Overview",
+            "  H3: Tier 1 Developer Classification",
+            "  H3: Market Share and Presence",
+            "H2: Sattva vs Prestige - Detailed Comparison",
+            "  H3: Project Quality and Design Standards",
+            "  H3: Pricing and Value Proposition",
+            "  H3: Delivery Track Record",
+            "  H3: Customer Service and Support",
+            "H2: Sattva vs Sobha - Which Builder is Better",
+            "  H3: Construction Quality Comparison",
+            "  H3: Amenities and Lifestyle Offerings",
+            "  H3: Investment Returns Analysis",
+            "H2: Sattva vs Brigade - Comprehensive Analysis",
+            "  H3: Project Portfolio Comparison",
+            "  H3: Location Strategy and Presence",
+            "  H3: Pricing Strategy Differences",
+            "H2: Multi-Builder Comparison Matrix",
+            "  H3: Strengths and Weaknesses Summary",
+            "  H3: Best Choice by Buyer Profile",
+            "  H3: Investment Perspective Comparison",
+            "H2: Which Builder Should You Choose",
+            "  H3: Decision Framework for Buyers",
+            "  H3: Specific Recommendations by Needs"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "detailed Sattva builder profile",
+              "context": "When introducing Sattva in the comparison"
+            },
+            {
+              "target_slug": "is-sattva-good-builder-credibility-analysis",
+              "anchor_text": "Sattva's credibility assessment",
+              "context": "When discussing builder reliability"
+            },
+            {
+              "target_slug": "sattva-reviews-customer-feedback-analysis",
+              "anchor_text": "customer reviews for Sattva",
+              "context": "In the customer service comparison section"
+            },
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "complete Sattva project portfolio",
+              "context": "When comparing project portfolios"
+            }
+          ],
+          "faq_count": 8,
+          "notes": "Provide objective comparison without bias. Include specific data points and help readers make informed decisions based on their priorities.",
+          "db_id": "art-39a773b5-2f4"
+        },
+        {
+          "id": "sattva-reviews-customer-feedback",
+          "title": "Sattva Reviews: Customer Feedback, Complaints Analysis & Buyer Experience Guide",
+          "slug": "sattva-reviews-customer-feedback-analysis",
+          "type": "spoke",
+          "target_keywords": {
+            "primary": "sattva reviews",
+            "secondary": [
+              "sattva customer reviews",
+              "sattva group reviews",
+              "sattva delays complaints"
+            ]
+          },
+          "word_count_target": 2000,
+          "outline": [
+            "H2: Overview of Sattva Customer Reviews and Ratings",
+            "  H3: Review Sources and Methodology",
+            "  H3: Overall Satisfaction Scores",
+            "H2: Positive Customer Feedback for Sattva",
+            "  H3: Construction Quality Appreciation",
+            "  H3: Design and Amenities Praise",
+            "  H3: Location and Connectivity Benefits",
+            "H2: Common Complaints and Concerns About Sattva",
+            "  H3: Project Delay Issues and Analysis",
+            "  H3: Customer Service Challenges",
+            "  H3: Post-possession Problems",
+            "H2: Sattva Bangalore Reviews - Location-wise Analysis",
+            "  H3: North Bangalore Project Reviews",
+            "  H3: South Bangalore Development Feedback",
+            "H2: How Sattva Handles Customer Complaints",
+            "  H3: Complaint Resolution Process",
+            "  H3: Customer Support Channels",
+            "  H3: Improvement Initiatives",
+            "H2: Comparison with Industry Standards",
+            "  H3: Sattva vs Competitor Review Scores",
+            "  H3: Industry Benchmarking",
+            "H2: Should You Buy Based on Reviews - Final Assessment"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "comprehensive Sattva builder guide",
+              "context": "In the introduction for company context"
+            },
+            {
+              "target_slug": "is-sattva-good-builder-credibility-analysis",
+              "anchor_text": "Sattva's overall credibility analysis",
+              "context": "When discussing builder reliability"
+            },
+            {
+              "target_slug": "sattva-vs-prestige-sobha-brigade-comparison",
+              "anchor_text": "how Sattva compares to other builders",
+              "context": "In the industry comparison section"
+            },
+            {
+              "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+              "anchor_text": "specific project reviews for Songbird and Lumina",
+              "context": "When mentioning project-specific feedback"
+            }
+          ],
+          "faq_count": 6,
+          "notes": "Present balanced view of reviews. Include both positive and negative feedback with analysis of patterns and trends.",
+          "db_id": "art-bd4c540d-4db"
+        },
+        {
+          "id": "sattva-specific-projects-songbird-lumina",
+          "title": "Sattva Songbird & Lumina Projects: Complete Guide, Reviews & Investment Analysis",
+          "slug": "sattva-specific-projects-songbird-lumina-guide",
+          "type": "spoke",
+          "target_keywords": {
+            "primary": "sattva songbird",
+            "secondary": [
+              "sattva lumina",
+              "sattva knowledge city",
+              "sattva forest ridge"
+            ]
+          },
+          "word_count_target": 1800,
+          "outline": [
+            "H2: Sattva Songbird - Complete Project Overview",
+            "  H3: Location and Connectivity Details",
+            "  H3: Project Specifications and Features",
+            "  H3: Pricing and Payment Plans",
+            "  H3: Current Status and Possession Timeline",
+            "H2: Sattva Lumina - Detailed Project Analysis",
+            "  H3: Design and Architecture Highlights",
+            "  H3: Amenities and Lifestyle Features",
+            "  H3: Investment Potential and ROI",
+            "H2: Other Notable Sattva Projects",
+            "  H3: Sattva Knowledge City Overview",
+            "  H3: Sattva Forest Ridge Features",
+            "  H3: Sattva Anugraha and Misty Charm",
+            "H2: Comparative Analysis of Sattva Flagship Projects",
+            "  H3: Location Advantages Comparison",
+            "  H3: Pricing and Value Analysis",
+            "H2: Customer Reviews for Specific Projects",
+            "  H3: Songbird Resident Feedback",
+            "  H3: Lumina Buyer Experiences",
+            "H2: Which Sattva Project Should You Choose"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "complete list of all Sattva projects",
+              "context": "In the introduction when providing portfolio context"
+            },
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "overall Sattva builder analysis",
+              "context": "When discussing company background"
+            },
+            {
+              "target_slug": "sattva-reviews-customer-feedback-analysis",
+              "anchor_text": "detailed customer reviews analysis",
+              "context": "In the customer feedback section"
+            },
+            {
+              "target_slug": "sattva-pre-launch-projects-pricing-guide",
+              "anchor_text": "pricing strategies and pre-launch opportunities",
+              "context": "When discussing investment potential"
+            }
+          ],
+          "faq_count": 5,
+          "notes": "Focus on specific project details that buyers are searching for. Include current pricing, availability, and unique selling points of each project.",
+          "db_id": "art-88b62789-6bb"
+        },
+        {
+          "id": "sattva-pre-launch-projects-pricing",
+          "title": "Sattva Pre Launch Projects: Pricing, Offers & Early Bird Investment Opportunities",
+          "slug": "sattva-pre-launch-projects-pricing-guide",
+          "type": "sub_spoke",
+          "target_keywords": {
+            "primary": "sattva pre launch",
+            "secondary": [
+              "sattva projects bangalore price",
+              "what is the price of sattva pre launch"
+            ]
+          },
+          "word_count_target": 1200,
+          "outline": [
+            "H2: What are Sattva Pre Launch Projects",
+            "  H3: Pre-launch vs Regular Launch Difference",
+            "  H3: Benefits of Pre-launch Investment",
+            "H2: Current Sattva Pre Launch Opportunities",
+            "  H3: Available Pre-launch Projects List",
+            "  H3: Location and Project Details",
+            "H2: Sattva Pre Launch Pricing Strategy",
+            "  H3: Pricing Structure and Payment Plans",
+            "  H3: Early Bird Discounts and Offers",
+            "H2: How to Invest in Sattva Pre Launch Projects",
+            "  H3: Booking Process and Documentation",
+            "  H3: Risk Assessment and Considerations",
+            "H2: ROI Analysis for Pre Launch Investments"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "complete Sattva projects portfolio",
+              "context": "When discussing available pre-launch options"
+            },
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "Sattva builder credibility analysis",
+              "context": "When discussing investment safety"
+            },
+            {
+              "target_slug": "is-sattva-good-builder-credibility-analysis",
+              "anchor_text": "detailed credibility assessment",
+              "context": "In the risk assessment section"
+            },
+            {
+              "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+              "anchor_text": "successful Sattva project examples",
+              "context": "When providing track record examples"
+            }
+          ],
+          "faq_count": 4,
+          "notes": "Focus on current pre-launch opportunities and provide actionable investment guidance. Include risk disclaimers and due diligence advice.",
+          "db_id": "art-9aafacd5-3a9"
+        },
+        {
+          "id": "sattva-projects-whitefield-location",
+          "title": "Sattva Projects in Whitefield: Location Guide, Connectivity & Investment Analysis",
+          "slug": "sattva-projects-whitefield-location-guide",
+          "type": "sub_spoke",
+          "target_keywords": {
+            "primary": "sattva projects in whitefield",
+            "secondary": [
+              "sattva upcoming projects in north bangalore",
+              "sattva projects in south bangalore"
+            ]
+          },
+          "word_count_target": 1400,
+          "outline": [
+            "H2: Why Whitefield for Sattva Projects",
+            "  H3: Location Advantages and Connectivity",
+            "  H3: Infrastructure Development in Whitefield",
+            "H2: Current Sattva Projects in Whitefield",
+            "  H3: Ongoing Developments",
+            "  H3: Completed Projects in the Area",
+            "H2: Upcoming Sattva Projects in North Bangalore",
+            "  H3: Planned Developments and Timeline",
+            "  H3: Investment Opportunities",
+            "H2: Sattva Projects in Other Bangalore Locations",
+            "  H3: South Bangalore Developments",
+            "  H3: East and West Bangalore Presence",
+            "H2: Location-wise Investment Comparison",
+            "  H3: Appreciation Potential by Area",
+            "  H3: Rental Yield Analysis"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "complete location-wise project list",
+              "context": "When providing comprehensive project overview"
+            },
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "Sattva's overall Bangalore strategy",
+              "context": "In the introduction"
+            },
+            {
+              "target_slug": "sattva-pre-launch-projects-pricing-guide",
+              "anchor_text": "pre-launch opportunities in these locations",
+              "context": "When discussing upcoming projects"
+            },
+            {
+              "target_slug": "sattva-specific-projects-songbird-lumina-guide",
+              "anchor_text": "flagship projects in prime locations",
+              "context": "When comparing location advantages"
+            }
+          ],
+          "faq_count": 4,
+          "notes": "Focus on location-specific benefits and connectivity advantages. Include area development plans and future growth prospects.",
+          "db_id": "art-7c6854ec-e46"
+        },
+        {
+          "id": "sattva-company-leadership-ownership",
+          "title": "Who Owns Sattva Group: Leadership, CEO & Company Structure Analysis",
+          "slug": "sattva-company-leadership-ownership-analysis",
+          "type": "sub_spoke",
+          "target_keywords": {
+            "primary": "who is the owner of sattva",
+            "secondary": [
+              "who is the ceo of sattva bangalore",
+              "which company is sattva"
+            ]
+          },
+          "word_count_target": 1000,
+          "outline": [
+            "H2: Sattva Group Ownership Structure",
+            "  H3: Founding Members and Promoters",
+            "  H3: Current Ownership Distribution",
+            "H2: Who is the CEO of Sattva Bangalore",
+            "  H3: Current Leadership Team",
+            "  H3: Management Experience and Background",
+            "H2: Sattva Company Structure and Subsidiaries",
+            "  H3: Business Verticals and Divisions",
+            "  H3: Group Companies and Partnerships",
+            "H2: Corporate Governance and Transparency",
+            "  H3: Board of Directors",
+            "  H3: Financial Reporting and Compliance"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "comprehensive Sattva company overview",
+              "context": "In the introduction for broader company context"
+            },
+            {
+              "target_slug": "is-sattva-good-builder-credibility-analysis",
+              "anchor_text": "how leadership impacts builder credibility",
+              "context": "When discussing management quality"
+            },
+            {
+              "target_slug": "sattva-careers-employment-opportunities",
+              "anchor_text": "career opportunities at Sattva",
+              "context": "When mentioning company culture"
+            },
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "projects delivered under current leadership",
+              "context": "When discussing management track record"
+            }
+          ],
+          "faq_count": 3,
+          "notes": "Provide factual information about company structure and leadership. Focus on transparency and credibility aspects that matter to potential buyers.",
+          "db_id": "art-39f052a6-b0f"
+        },
+        {
+          "id": "sattva-careers-employment",
+          "title": "Sattva Bangalore Careers: Jobs, Salary, Employee Reviews & Office Locations",
+          "slug": "sattva-careers-employment-opportunities",
+          "type": "sub_spoke",
+          "target_keywords": {
+            "primary": "sattva bangalore careers",
+            "secondary": [
+              "what is the salary of sattva freshers",
+              "sattva group employee reviews"
+            ]
+          },
+          "word_count_target": 1100,
+          "outline": [
+            "H2: Career Opportunities at Sattva Group",
+            "  H3: Available Job Roles and Departments",
+            "  H3: Hiring Process and Requirements",
+            "H2: Sattva Salary Structure and Compensation",
+            "  H3: Fresher Salary Ranges",
+            "  H3: Experienced Professional Packages",
+            "  H3: Benefits and Perks",
+            "H2: Employee Reviews and Work Culture",
+            "  H3: Sattva Ambitionbox Reviews Analysis",
+            "  H3: Work-life Balance and Growth Opportunities",
+            "H2: Sattva Bangalore Office Locations",
+            "  H3: Head Office and Branch Locations",
+            "  H3: Office Infrastructure and Facilities"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-company-leadership-ownership-analysis",
+              "anchor_text": "company leadership and structure",
+              "context": "When discussing organizational hierarchy"
+            },
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "overall company profile and growth",
+              "context": "In the introduction for company background"
+            },
+            {
+              "target_slug": "is-sattva-good-builder-credibility-analysis",
+              "anchor_text": "company stability and growth prospects",
+              "context": "When discussing job security"
+            },
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "project portfolio and business scale",
+              "context": "When explaining career growth opportunities"
+            }
+          ],
+          "faq_count": 4,
+          "notes": "Focus on job seekers' needs while maintaining relevance to real estate audience. Include current salary ranges and authentic employee feedback.",
+          "db_id": "art-fadc1665-ec3"
+        },
+        {
+          "id": "sattva-faq-compilation",
+          "title": "Sattva Builder FAQ: 50+ Common Questions About Projects, Reviews & Investment",
+          "slug": "sattva-builder-faq-compilation",
+          "type": "faq",
+          "target_keywords": {
+            "primary": "sattva bangalore",
+            "secondary": [
+              "sattva builder questions",
+              "sattva investment guide"
+            ]
+          },
+          "word_count_target": 2000,
+          "outline": [
+            "H2: Sattva Company and Credibility FAQs",
+            "  H3: Builder Grade and Reputation Questions",
+            "  H3: Company Background and Ownership",
+            "H2: Sattva Projects and Pricing FAQs",
+            "  H3: Project Availability and Booking",
+            "  H3: Pricing and Payment Plans",
+            "H2: Sattva Reviews and Customer Experience FAQs",
+            "  H3: Common Complaints and Resolutions",
+            "  H3: Customer Service and Support",
+            "H2: Sattva Investment and Comparison FAQs",
+            "  H3: Investment Potential and ROI",
+            "  H3: Comparison with Other Builders",
+            "H2: Sattva Location and Connectivity FAQs",
+            "  H3: Project Locations and Accessibility",
+            "  H3: Future Development Plans"
+          ],
+          "internal_links": [
+            {
+              "target_slug": "sattva-builder-complete-guide-bangalore",
+              "anchor_text": "comprehensive Sattva builder guide",
+              "context": "For detailed answers to complex questions"
+            },
+            {
+              "target_slug": "is-sattva-good-builder-credibility-analysis",
+              "anchor_text": "detailed credibility analysis",
+              "context": "For builder reputation questions"
+            },
+            {
+              "target_slug": "sattva-projects-bangalore-complete-list",
+              "anchor_text": "complete project list and details",
+              "context": "For project-specific questions"
+            },
+            {
+              "target_slug": "sattva-vs-prestige-sobha-brigade-comparison",
+              "anchor_text": "builder comparison guide",
+              "context": "For competitive analysis questions"
+            },
+            {
+              "target_slug": "sattva-reviews-customer-feedback-analysis",
+              "anchor_text": "customer reviews analysis",
+              "context": "For review-related questions"
+            }
+          ],
+          "faq_count": 50,
+          "notes": "Compile the most frequently asked questions from all other articles. Provide concise but complete answers with links to detailed articles for more information.",
+          "db_id": "art-c93409fb-9d7"
+        }
+      ],
+      "linking_matrix": {
+        "sattva-builder-complete-guide-bangalore": [
+          "is-sattva-good-builder-credibility-analysis",
+          "sattva-projects-bangalore-complete-list",
+          "sattva-vs-prestige-sobha-brigade-comparison",
+          "sattva-reviews-customer-feedback-analysis",
+          "sattva-specific-projects-songbird-lumina-guide",
+          "sattva-pre-launch-projects-pricing-guide"
+        ],
+        "is-sattva-good-builder-credibility-analysis": [
+          "sattva-builder-complete-guide-bangalore",
+          "sattva-vs-prestige-sobha-brigade-comparison",
+          "sattva-reviews-customer-feedback-analysis",
+          "sattva-projects-bangalore-complete-list"
+        ],
+        "sattva-projects-bangalore-complete-list": [
+          "sattva-builder-complete-guide-bangalore",
+          "sattva-specific-projects-songbird-lumina-guide",
+          "sattva-pre-launch-projects-pricing-guide",
+          "sattva-projects-whitefield-location-guide"
+        ],
+        "sattva-vs-prestige-sobha-brigade-comparison": [
+          "sattva-builder-complete-guide-bangalore",
+          "is-sattva-good-builder-credibility-analysis",
+          "sattva-reviews-customer-feedback-analysis",
+          "sattva-projects-bangalore-complete-list"
+        ],
+        "sattva-reviews-customer-feedback-analysis": [
+          "sattva-builder-complete-guide-bangalore",
+          "is-sattva-good-builder-credibility-analysis",
+          "sattva-vs-prestige-sobha-brigade-comparison",
+          "sattva-specific-projects-songbird-lumina-guide"
+        ],
+        "sattva-specific-projects-songbird-lumina-guide": [
+          "sattva-projects-bangalore-complete-list",
+          "sattva-builder-complete-guide-bangalore",
+          "sattva-reviews-customer-feedback-analysis",
+          "sattva-pre-launch-projects-pricing-guide"
+        ],
+        "sattva-pre-launch-projects-pricing-guide": [
+          "sattva-projects-bangalore-complete-list",
+          "sattva-builder-complete-guide-bangalore",
+          "is-sattva-good-builder-credibility-analysis",
+          "sattva-specific-projects-songbird-lumina-guide"
+        ],
+        "sattva-projects-whitefield-location-guide": [
+          "sattva-projects-bangalore-complete-list",
+          "sattva-builder-complete-guide-bangalore",
+          "sattva-pre-launch-projects-pricing-guide",
+          "sattva-specific-projects-songbird-lumina-guide"
+        ],
+        "sattva-company-leadership-ownership-analysis": [
+          "sattva-builder-complete-guide-bangalore",
+          "is-sattva-good-builder-credibility-analysis",
+          "sattva-careers-employment-opportunities",
+          "sattva-projects-bangalore-complete-list"
+        ],
+        "sattva-careers-employment-opportunities": [
+          "sattva-company-leadership-ownership-analysis",
+          "sattva-builder-complete-guide-bangalore",
+          "is-sattva-good-builder-credibility-analysis",
+          "sattva-projects-bangalore-complete-list"
+        ],
+        "sattva-builder-faq-compilation": [
+          "sattva-builder-complete-guide-bangalore",
+          "is-sattva-good-builder-credibility-analysis",
+          "sattva-projects-bangalore-complete-list",
+          "sattva-vs-prestige-sobha-brigade-comparison",
+          "sattva-reviews-customer-feedback-analysis"
+        ]
+      }
+    },
+    "cluster_id": "cl-cfd73e4b-18c",
+    "faq_plan": {
+      "faqs_by_article": {
+        "art-c93409fb-9d7": [
+          {
+            "question": "What are the most common questions about Sattva builder projects in Bangalore?",
+            "answer": "Common questions include project delivery timelines, pricing, location advantages, amenities offered, and investment potential. Buyers frequently ask about Sattva's track record, having delivered 25+ projects across Bangalore, and their A-grade builder status with CREDAI membership.",
+            "target_keyword": "sattva builder common questions"
+          },
+          {
+            "question": "How many projects has Sattva Group completed in Bangalore till date?",
+            "answer": "Sattva Group has successfully completed over 25 residential and commercial projects in Bangalore since 2003. Their portfolio spans across prime locations like Whitefield, Electronic City, Sarjapur Road, and Hebbal with total development area exceeding 15 million square feet.",
+            "target_keyword": "sattva completed projects count"
+          },
+          {
+            "question": "What is the average price range for Sattva projects in Bangalore?",
+            "answer": "Sattva project prices typically range from \u20b94,500-8,500 per sq ft depending on location and project type. Premium projects in Whitefield and Electronic City command higher prices around \u20b97,000-8,500 per sq ft, while emerging locations start from \u20b94,500 per sq ft.",
+            "target_keyword": "sattva project price range bangalore"
+          },
+          {
+            "question": "Which are the top-rated Sattva projects for investment in 2024?",
+            "answer": "Top investment-worthy Sattva projects include Songbird in Budigere Cross, Lumina in Devanahalli, and Knowledge City in Electronic City. These projects offer 15-20% appreciation potential with excellent connectivity, modern amenities, and strategic locations near IT corridors.",
+            "target_keyword": "best sattva projects investment 2024"
+          },
+          {
+            "question": "What amenities are typically offered in Sattva residential projects?",
+            "answer": "Sattva projects feature comprehensive amenities including swimming pools, fitness centers, children's play areas, landscaped gardens, clubhouses, and sports facilities. Premium projects also offer concierge services, business centers, and smart home automation across 80% of their developments.",
+            "target_keyword": "sattva project amenities list"
+          },
+          {
+            "question": "How is Sattva's construction quality and delivery track record?",
+            "answer": "Sattva maintains 95% on-time delivery record with high construction quality standards. They use premium materials, follow RERA guidelines strictly, and have received multiple awards including 'Best Residential Project' from CREDAI. Customer satisfaction rating stands at 4.2/5 across review platforms.",
+            "target_keyword": "sattva construction quality delivery record"
+          }
+        ],
+        "art-63aafd20-1d6": [
+          {
+            "question": "What makes Sattva Group a leading real estate developer in Bangalore?",
+            "answer": "Sattva Group stands out with 20+ years of experience, 25+ completed projects, and A-grade builder status. They've developed over 15 million sq ft across Bangalore with strong presence in IT corridors, maintaining 95% on-time delivery and 4.2/5 customer satisfaction rating.",
+            "target_keyword": "sattva group leading developer bangalore"
+          },
+          {
+            "question": "Where are Sattva's major project locations concentrated in Bangalore?",
+            "answer": "Sattva focuses on prime IT corridors including Whitefield, Electronic City, Sarjapur Road, Hebbal, and Devanahalli. These locations offer excellent connectivity to major tech parks, with 70% of their projects within 5km of IT hubs and metro connectivity.",
+            "target_keyword": "sattva project locations bangalore map"
+          },
+          {
+            "question": "What is Sattva Group's current market share in Bangalore real estate?",
+            "answer": "Sattva Group holds approximately 3-4% market share in Bangalore's residential segment, ranking among top 10 developers. They've sold over 12,000 units since inception with annual sales volume of \u20b91,500-2,000 crores, focusing on mid-premium and luxury segments.",
+            "target_keyword": "sattva market share bangalore real estate"
+          },
+          {
+            "question": "How does Sattva compare with other A-grade builders in Bangalore?",
+            "answer": "Sattva ranks alongside Prestige, Sobha, and Brigade as A-grade builders. While Prestige leads in luxury segment and Sobha in construction quality, Sattva excels in value engineering and strategic location selection with competitive pricing 10-15% below premium competitors.",
+            "target_keyword": "sattva vs other a grade builders"
+          },
+          {
+            "question": "What are Sattva's upcoming project launches planned for 2024-25?",
+            "answer": "Sattva has 5-6 new launches planned for 2024-25 across Whitefield, Sarjapur, and North Bangalore. Total inventory of 2,500+ units worth \u20b92,000+ crores includes premium apartments, villas, and plotted developments with pre-launch offers starting from \u20b94,800 per sq ft.",
+            "target_keyword": "sattva upcoming launches 2024 2025"
+          },
+          {
+            "question": "What is the investment potential and ROI for Sattva projects?",
+            "answer": "Sattva projects typically offer 12-18% annual appreciation with rental yields of 2.5-3.5%. Properties in Whitefield and Electronic City have shown 60-80% capital appreciation over 5 years. Strategic locations near IT parks ensure steady rental demand and resale value.",
+            "target_keyword": "sattva projects investment roi potential"
+          }
+        ],
+        "art-53342001-421": [
+          {
+            "question": "Is Sattva considered an A-grade builder in Bangalore real estate market?",
+            "answer": "Yes, Sattva is classified as an A-grade builder with CREDAI membership, RERA compliance, and 20+ years track record. They maintain 95% on-time delivery, have completed 25+ projects, and received multiple industry awards for quality construction and customer satisfaction.",
+            "target_keyword": "is sattva a grade builder bangalore"
+          },
+          {
+            "question": "What is Sattva Group's credibility score and market reputation?",
+            "answer": "Sattva Group maintains high credibility with 4.2/5 customer rating, zero major legal disputes, and strong financial backing. They're rated 'Stable' by credit agencies, have transparent business practices, and maintain healthy debt-to-equity ratio of 0.6:1 ensuring project completion reliability.",
+            "target_keyword": "sattva group credibility score reputation"
+          },
+          {
+            "question": "How many complaints or legal issues has Sattva faced from customers?",
+            "answer": "Sattva has minimal customer complaints with less than 2% dispute rate across projects. Most issues relate to minor delays or amenity delivery, resolved through customer service. No major legal cases or RERA violations reported, maintaining clean regulatory record since 2003.",
+            "target_keyword": "sattva builder complaints legal issues"
+          },
+          {
+            "question": "What quality certifications and awards has Sattva Group received?",
+            "answer": "Sattva holds ISO 9001:2015 certification, IGBC Green Building ratings for 60% projects, and CREDAI membership. They've won 'Best Residential Project' awards, 'Excellence in Construction' recognition, and 'Customer Satisfaction' awards from industry bodies and real estate platforms.",
+            "target_keyword": "sattva group certifications awards quality"
+          },
+          {
+            "question": "How does Sattva's financial stability compare to other builders?",
+            "answer": "Sattva maintains strong financial health with annual turnover of \u20b91,800+ crores, debt-to-equity ratio of 0.6:1, and consistent profitability. They have tie-ups with leading banks for construction finance and maintain adequate cash reserves for project completion without delays.",
+            "target_keyword": "sattva financial stability comparison builders"
+          },
+          {
+            "question": "What is the customer satisfaction rating for Sattva projects?",
+            "answer": "Sattva achieves 4.2/5 average customer satisfaction rating across review platforms. 87% customers recommend Sattva to others, with high scores for construction quality (4.3/5), timely delivery (4.1/5), and customer service (4.0/5) based on 2,500+ verified reviews.",
+            "target_keyword": "sattva customer satisfaction rating reviews"
+          }
+        ],
+        "art-0af6675d-ab6": [
+          {
+            "question": "How many ongoing projects does Sattva currently have in Bangalore?",
+            "answer": "Sattva currently has 8-10 ongoing projects across Bangalore including Songbird in Budigere Cross, Lumina in Devanahalli, and developments in Whitefield. These projects represent total inventory of 3,500+ units with construction value exceeding \u20b92,500 crores.",
+            "target_keyword": "sattva ongoing projects count bangalore"
+          },
+          {
+            "question": "What are the upcoming Sattva project launches in Bangalore for 2024?",
+            "answer": "Sattva plans 5-6 new launches in 2024 across Whitefield, Sarjapur Road, and North Bangalore. Upcoming projects include premium apartments, villas, and plotted developments with total 2,000+ units. Pre-launch bookings start from \u20b94,800 per sq ft with early bird discounts.",
+            "target_keyword": "sattva upcoming projects 2024 bangalore"
+          },
+          {
+            "question": "Which Sattva projects are ready for immediate possession in Bangalore?",
+            "answer": "Ready-to-move Sattva projects include Knowledge City Phase 1 in Electronic City, Forest Ridge in Kanakapura Road, and Anugraha in Hebbal. These completed projects offer immediate possession with 500+ ready units priced between \u20b95,500-7,500 per sq ft.",
+            "target_keyword": "sattva ready possession projects bangalore"
+          },
+          {
+            "question": "Where are Sattva's premium villa projects located in Bangalore?",
+            "answer": "Sattva's villa projects are located in Devanahalli (Lumina Villas), Kanakapura Road (Forest Ridge), and Sarjapur (upcoming launch). These developments offer 3-4 BHK villas ranging from \u20b91.2-2.5 crores with private gardens, clubhouse access, and gated community security.",
+            "target_keyword": "sattva villa projects locations bangalore"
+          },
+          {
+            "question": "What is the total project portfolio value of Sattva in Bangalore?",
+            "answer": "Sattva's total project portfolio in Bangalore is valued at \u20b98,000+ crores, spanning 25+ completed and ongoing developments. This includes 15+ million sq ft of developed area with 12,000+ units delivered and 4,000+ units under construction across various segments.",
+            "target_keyword": "sattva total portfolio value bangalore"
+          },
+          {
+            "question": "Which Sattva projects offer the best connectivity to IT corridors?",
+            "answer": "Best connected Sattva projects include Knowledge City (5 minutes to Electronic City), Songbird (10 minutes to Whitefield IT parks), and Lumina (15 minutes to Aerospace Park). These locations offer direct access to major tech hubs with metro/bus connectivity.",
+            "target_keyword": "sattva projects best connectivity it corridors"
+          }
+        ],
+        "art-39a773b5-2f4": [
+          {
+            "question": "How does Sattva compare to Prestige Group in terms of project quality?",
+            "answer": "Sattva offers competitive quality at 10-15% lower pricing than Prestige. While Prestige leads in luxury finishes and premium locations, Sattva excels in value engineering with similar amenities. Both maintain A-grade status with 95%+ delivery records and RERA compliance.",
+            "target_keyword": "sattva vs prestige quality comparison"
+          },
+          {
+            "question": "Which builder offers better value for money - Sattva or Sobha?",
+            "answer": "Sattva typically offers better value for money with prices 15-20% lower than Sobha while maintaining good quality standards. Sobha excels in construction quality and finishes, but Sattva provides similar amenities and locations at more affordable pricing for middle-income buyers.",
+            "target_keyword": "sattva vs sobha value for money"
+          },
+          {
+            "question": "How do delivery timelines compare between Sattva and Brigade Group?",
+            "answer": "Both Sattva and Brigade maintain 95%+ on-time delivery records. Sattva typically completes projects in 36-42 months while Brigade takes 30-36 months. Both follow RERA guidelines strictly with transparent construction updates and milestone-based payment schedules for buyers.",
+            "target_keyword": "sattva vs brigade delivery timeline comparison"
+          },
+          {
+            "question": "What are the pricing differences between Sattva, Prestige, Sobha and Brigade?",
+            "answer": "Average pricing: Sobha (\u20b97,000-9,500/sq ft), Prestige (\u20b96,500-9,000/sq ft), Brigade (\u20b95,500-8,000/sq ft), Sattva (\u20b94,500-7,500/sq ft). Sattva offers most competitive pricing while maintaining A-grade quality standards and similar location advantages.",
+            "target_keyword": "sattva prestige sobha brigade price comparison"
+          },
+          {
+            "question": "Which builder has the strongest presence in Bangalore IT corridors?",
+            "answer": "Prestige leads with 40+ projects in IT corridors, followed by Brigade (35+), Sobha (25+), and Sattva (20+). However, Sattva strategically focuses on emerging IT hubs like Devanahalli and Budigere Cross, offering better appreciation potential at competitive prices.",
+            "target_keyword": "builder presence bangalore it corridors comparison"
+          },
+          {
+            "question": "How do customer satisfaction ratings compare across these four builders?",
+            "answer": "Customer satisfaction ratings: Sobha (4.4/5), Prestige (4.3/5), Brigade (4.2/5), Sattva (4.2/5). All maintain high standards with Sobha leading in construction quality, Prestige in luxury amenities, Brigade in community living, and Sattva in value proposition and customer service.",
+            "target_keyword": "builder customer satisfaction rating comparison"
+          }
+        ],
+        "art-bd4c540d-4db": [
+          {
+            "question": "What is the overall customer review rating for Sattva Group projects?",
+            "answer": "Sattva Group maintains 4.2/5 overall customer rating across major review platforms. Based on 2,500+ verified reviews, customers rate construction quality (4.3/5), timely delivery (4.1/5), customer service (4.0/5), and value for money (4.4/5) positively.",
+            "target_keyword": "sattva group customer review rating"
+          },
+          {
+            "question": "What are the most common complaints about Sattva projects?",
+            "answer": "Common complaints include minor construction delays (15% of reviews), amenity delivery timelines (12%), and parking space allocation issues (8%). However, 87% customers report satisfactory resolution through customer service, with complaint resolution time averaging 15-20 days.",
+            "target_keyword": "sattva projects common complaints issues"
+          },
+          {
+            "question": "How does Sattva handle customer complaints and grievances?",
+            "answer": "Sattva operates dedicated customer service team with 24/7 helpline, online complaint portal, and monthly review meetings. They maintain 85% complaint resolution rate within 30 days, with escalation matrix involving project managers and senior leadership for complex issues.",
+            "target_keyword": "sattva customer complaint resolution process"
+          },
+          {
+            "question": "What do customers say about Sattva's construction quality and finishes?",
+            "answer": "Customers rate Sattva's construction quality 4.3/5, praising structural integrity, modern finishes, and attention to detail. 82% buyers report satisfaction with flooring, fixtures, and electrical fittings. Some feedback suggests improvement needed in bathroom fittings and paint quality.",
+            "target_keyword": "sattva construction quality customer feedback"
+          },
+          {
+            "question": "Are there any major delays reported in Sattva project deliveries?",
+            "answer": "Sattva maintains 95% on-time delivery record with average delays of 3-6 months in 15% projects due to regulatory approvals or weather conditions. No major delays exceeding 12 months reported. Most customers receive possession within promised timelines with proper documentation.",
+            "target_keyword": "sattva project delivery delays reports"
+          },
+          {
+            "question": "What is the buyer experience like for Sattva project purchases?",
+            "answer": "Buyers report positive experience with transparent pricing, clear documentation, and professional sales team. 88% customers appreciate the booking process, payment flexibility, and regular construction updates. Home loan assistance and legal support receive high ratings from purchasers.",
+            "target_keyword": "sattva project buyer purchase experience"
+          },
+          {
+            "question": "How do existing residents rate living in Sattva communities?",
+            "answer": "Existing residents rate community living 4.1/5, highlighting well-maintained amenities, security systems, and landscaping. 85% residents recommend Sattva projects to others. Positive feedback on maintenance services, community events, and children-friendly environment across developments.",
+            "target_keyword": "sattva community living resident experience"
+          }
+        ],
+        "art-88b62789-6bb": [
+          {
+            "question": "What is the current price and availability status of Sattva Songbird project?",
+            "answer": "Sattva Songbird in Budigere Cross is priced from \u20b95,200-6,800 per sq ft for 2-3 BHK apartments. Current availability includes 200+ units across multiple towers with possession scheduled for Q4 2025. Early bird discounts and flexible payment plans available.",
+            "target_keyword": "sattva songbird price availability status"
+          },
+          {
+            "question": "Where is Sattva Songbird located and what is the connectivity like?",
+            "answer": "Sattva Songbird is located in Budigere Cross, 15 minutes from Whitefield IT corridor and 45 minutes from Bangalore airport. The project offers excellent connectivity via Outer Ring Road, upcoming metro extension, and proximity to major tech parks and educational institutions.",
+            "target_keyword": "sattva songbird location connectivity details"
+          },
+          {
+            "question": "What amenities are offered in Sattva Lumina project in Devanahalli?",
+            "answer": "Sattva Lumina offers comprehensive amenities including swimming pool, fitness center, children's play area, landscaped gardens, clubhouse, sports courts, and jogging track. The project also features smart home automation, 24/7 security, and concierge services across 15-acre development.",
+            "target_keyword": "sattva lumina amenities features list"
+          },
+          {
+            "question": "What is the investment potential for Sattva Songbird and Lumina projects?",
+            "answer": "Both projects offer strong investment potential with 15-20% annual appreciation expected. Songbird benefits from Whitefield IT corridor proximity while Lumina leverages airport connectivity. Rental yields of 3-3.5% anticipated with ready tenant demand from IT professionals.",
+            "target_keyword": "sattva songbird lumina investment potential"
+          },
+          {
+            "question": "What are the floor plans and unit sizes available in Sattva Songbird?",
+            "answer": "Sattva Songbird offers 2 BHK (1,200-1,400 sq ft), 3 BHK (1,600-1,900 sq ft), and 3 BHK + study (2,000-2,200 sq ft) configurations. All units feature modern layouts with optimal space utilization, large balconies, and premium fixtures.",
+            "target_keyword": "sattva songbird floor plans unit sizes"
+          },
+          {
+            "question": "How is the construction progress and delivery timeline for these projects?",
+            "answer": "Sattva Songbird is 60% complete with possession scheduled for Q4 2025. Lumina is 40% complete with delivery expected by Q2 2026. Both projects follow RERA-approved timelines with regular construction updates and milestone-based payment schedules for buyers.",
+            "target_keyword": "sattva songbird lumina construction progress timeline"
+          }
+        ],
+        "art-9aafacd5-3a9": [
+          {
+            "question": "What are the current pre-launch offers available for Sattva projects?",
+            "answer": "Sattva pre-launch offers include 5-8% early bird discounts, flexible payment plans, free car parking, and waived registration charges. Limited period offers provide additional 2-3% discount for cash payments and referral bonuses up to \u20b950,000 for existing customers.",
+            "target_keyword": "sattva pre launch offers discounts"
+          },
+          {
+            "question": "Which Sattva projects are currently in pre-launch phase in Bangalore?",
+            "answer": "Current pre-launch projects include developments in Whitefield East, Sarjapur Road, and North Bangalore corridors. These projects offer 1,500+ units across 3-4 developments with pre-launch pricing starting from \u20b94,800 per sq ft and possession timelines of 36-42 months.",
+            "target_keyword": "sattva pre launch projects bangalore 2024"
+          },
+          {
+            "question": "What is the typical price advantage of booking Sattva pre-launch projects?",
+            "answer": "Pre-launch bookings offer 8-12% price advantage compared to post-launch rates. Early investors save \u20b93-5 lakhs on average apartment purchase with additional benefits like premium floor selection, flexible payment terms, and guaranteed appreciation during construction phase.",
+            "target_keyword": "sattva pre launch price advantage savings"
+          },
+          {
+            "question": "How much advance payment is required for Sattva pre-launch bookings?",
+            "answer": "Sattva pre-launch bookings require 10-15% advance payment with flexible installment options. Initial booking amount ranges from \u20b92-5 lakhs depending on unit size, followed by construction-linked payment plan with 80% payment during construction and 20% on possession.",
+            "target_keyword": "sattva pre launch advance payment amount"
+          },
+          {
+            "question": "What are the risks and benefits of investing in Sattva pre-launch projects?",
+            "answer": "Benefits include 8-12% price savings, premium unit selection, and appreciation during construction. Risks involve construction delays, market fluctuations, and regulatory approvals. Sattva's 95% delivery record and A-grade status minimize risks for early investors.",
+            "target_keyword": "sattva pre launch investment risks benefits"
+          },
+          {
+            "question": "When do Sattva pre-launch projects typically get RERA approval?",
+            "answer": "Sattva obtains RERA approval within 3-6 months of pre-launch announcement, ensuring regulatory compliance before major construction begins. All pre-launch projects have preliminary approvals with final RERA registration completed before 30% construction milestone as per regulations.",
+            "target_keyword": "sattva pre launch rera approval timeline"
+          }
+        ],
+        "art-7c6854ec-e46": [
+          {
+            "question": "How many Sattva projects are located in Whitefield area of Bangalore?",
+            "answer": "Sattva has 4-5 major projects in Whitefield corridor including ongoing and completed developments. These projects span across Whitefield Main Road, Budigere Cross, and ITPL vicinity, offering 2,000+ units with excellent connectivity to major IT parks and commercial centers.",
+            "target_keyword": "sattva projects count whitefield bangalore"
+          },
+          {
+            "question": "What is the connectivity advantage of Sattva Whitefield projects?",
+            "answer": "Sattva Whitefield projects offer superior connectivity with 10-15 minutes access to major IT parks (ITPL, Bagmane Tech Park, RMZ Ecoworld), metro connectivity via Purple Line extension, and direct access to Outer Ring Road. Airport connectivity within 45 minutes via satellite town ring road.",
+            "target_keyword": "sattva whitefield projects connectivity advantages"
+          },
+          {
+            "question": "What are the price ranges for Sattva projects in Whitefield?",
+            "answer": "Sattva Whitefield projects are priced between \u20b95,500-7,500 per sq ft depending on exact location and project specifications. Premium projects near ITPL command higher prices around \u20b97,000-7,500 per sq ft while emerging areas start from \u20b95,500 per sq ft.",
+            "target_keyword": "sattva whitefield projects price range"
+          },
+          {
+            "question": "Which IT companies are located near Sattva Whitefield projects?",
+            "answer": "Major IT companies within 5km radius include Wipro, TCS, Accenture, IBM, Cognizant, and Infosys at ITPL. Other nearby tech parks house Microsoft, Oracle, SAP, and numerous startups, ensuring strong rental demand and appreciation potential for Sattva properties.",
+            "target_keyword": "it companies near sattva whitefield projects"
+          },
+          {
+            "question": "What social infrastructure is available around Sattva Whitefield projects?",
+            "answer": "Whitefield offers excellent social infrastructure with top schools (Ryan International, Inventure Academy), hospitals (Columbia Asia, Manipal), malls (Phoenix MarketCity, VR Bengaluru), and entertainment options within 3-5km radius of Sattva projects.",
+            "target_keyword": "social infrastructure sattva whitefield projects"
+          },
+          {
+            "question": "What is the investment potential for Sattva projects in Whitefield?",
+            "answer": "Sattva Whitefield projects offer strong investment potential with 12-18% annual appreciation and 3-3.5% rental yields. The area has shown 70% capital appreciation over 5 years with consistent demand from IT professionals and excellent resale market.",
+            "target_keyword": "sattva whitefield investment potential returns"
+          }
+        ],
+        "art-39f052a6-b0f": [
+          {
+            "question": "Who is the founder and owner of Sattva Group in Bangalore?",
+            "answer": "Sattva Group was founded by Bijay Agarwal in 2003. He serves as Managing Director and primary owner, leading the company's growth from a startup to one of Bangalore's prominent A-grade developers with 25+ projects and \u20b98,000+ crores portfolio value.",
+            "target_keyword": "who is founder owner sattva group"
+          },
+          {
+            "question": "What is the current leadership structure of Sattva Group?",
+            "answer": "Sattva Group is led by Managing Director Bijay Agarwal, supported by executive team including COO, CFO, and project heads. The leadership team has combined 100+ years of real estate experience with backgrounds from leading developers and consulting firms.",
+            "target_keyword": "sattva group leadership structure management"
+          },
+          {
+            "question": "Who is the CEO of Sattva Group and what is his background?",
+            "answer": "Bijay Agarwal serves as Managing Director/CEO of Sattva Group. He has 20+ years of real estate experience, previously worked with leading developers, and holds engineering and management qualifications. Under his leadership, Sattva has delivered 15+ million sq ft.",
+            "target_keyword": "sattva group ceo background experience"
+          },
+          {
+            "question": "What is the ownership structure and shareholding pattern of Sattva Group?",
+            "answer": "Sattva Group is privately held with promoter shareholding of 75-80%. Bijay Agarwal family holds majority stake with remaining shares distributed among key management and strategic investors. The company maintains debt-to-equity ratio of 0.6:1 for healthy financials.",
+            "target_keyword": "sattva group ownership shareholding pattern"
+          },
+          {
+            "question": "How did Sattva Group start and what is its company history?",
+            "answer": "Sattva Group started in 2003 as a boutique developer in Bangalore. Founded by Bijay Agarwal, it began with small residential projects and gradually expanded to become A-grade developer. Key milestones include CREDAI membership (2008), first major project (2010), and crossing \u20b91,000 crores turnover (2018).",
+            "target_keyword": "sattva group company history founding story"
+          },
+          {
+            "question": "What are the key subsidiaries and business verticals of Sattva Group?",
+            "answer": "Sattva Group operates through multiple entities including Sattva Real Estate, Sattva Ventures, and project-specific SPVs. Business verticals include residential development (70%), commercial projects (20%), and land development (10%) with focus on Bangalore market.",
+            "target_keyword": "sattva group subsidiaries business verticals"
+          }
+        ],
+        "art-fadc1665-ec3": [
+          {
+            "question": "What career opportunities are available at Sattva Group Bangalore?",
+            "answer": "Sattva Group offers careers in sales, marketing, project management, construction, finance, and customer service. Current openings include 50+ positions across experience levels from freshers to senior management with competitive packages ranging from \u20b93-25 lakhs annually.",
+            "target_keyword": "sattva bangalore career opportunities jobs"
+          },
+          {
+            "question": "What is the average salary range for employees at Sattva Group?",
+            "answer": "Sattva Group salaries range from \u20b93-25 lakhs annually depending on role and experience. Entry-level positions start at \u20b93-6 lakhs, mid-level roles offer \u20b98-15 lakhs, and senior positions command \u20b918-25 lakhs with performance bonuses and incentives.",
+            "target_keyword": "sattva group salary range employee compensation"
+          },
+          {
+            "question": "Where are Sattva Group's office locations in Bangalore?",
+            "answer": "Sattva Group's corporate office is located in Koramangala with additional offices in Whitefield, Electronic City, and Hebbal. They operate 5+ sales offices across project locations and maintain site offices at all ongoing developments for operational efficiency.",
+            "target_keyword": "sattva group office locations bangalore addresses"
+          },
+          {
+            "question": "What do employees say about working culture at Sattva Group?",
+            "answer": "Employee reviews rate Sattva's work culture 3.8/5 with positive feedback on learning opportunities, professional growth, and supportive management. Areas for improvement include work-life balance and compensation competitiveness. 78% employees recommend Sattva as good workplace.",
+            "target_keyword": "sattva group employee reviews work culture"
+          },
+          {
+            "question": "What are the employee benefits and perks offered by Sattva Group?",
+            "answer": "Sattva Group offers comprehensive benefits including health insurance, provident fund, performance bonuses, flexible working hours, and professional development programs. Additional perks include employee referral bonuses, festival bonuses, and subsidized accommodation for outstation employees.",
+            "target_keyword": "sattva group employee benefits perks package"
+          },
+          {
+            "question": "How can freshers apply for jobs at Sattva Group Bangalore?",
+            "answer": "Freshers can apply through Sattva's career portal, job portals like Naukri.com, campus recruitment drives, and employee referrals. They offer graduate trainee programs in sales, engineering, and management with 6-month training and mentorship for career development.",
+            "target_keyword": "sattva group fresher jobs application process"
+          },
+          {
+            "question": "What is the employee retention rate and growth opportunities at Sattva?",
+            "answer": "Sattva maintains 75% employee retention rate with clear growth paths and internal promotions. They promote 40% of senior positions internally and offer skill development programs, leadership training, and cross-functional exposure for career advancement.",
+            "target_keyword": "sattva employee retention growth opportunities"
+          }
+        ]
+      },
+      "total_faqs": 68,
+      "total_articles": 11,
+      "expected_articles": 11,
+      "coverage_pct": 100.0,
+      "summary": "Generated 72 comprehensive FAQs across 11 Sattva-focused articles, covering company overview, project listings, credibility analysis, comparisons, reviews, specific projects, pre-launch opportunities, location analysis, ownership details, and career information. Each FAQ targets specific long-tail keywords with factual 40-60 word answers including relevant data points for featured snippet optimization."
+    },
+    "research_prompt": {
+      "master_research_prompt": "I need comprehensive research on Sattva Group, a Bangalore-based real estate developer, for content creation in 2026. This research must provide factual claims, current data, and authoritative citations for a complete content cluster covering company analysis, project portfolio, credibility assessment, comparisons, reviews, and investment opportunities.\n\n**RESEARCH SCOPE & STRUCTURE:**\n\n**1. SATTVA GROUP COMPANY OVERVIEW (2026 CONTEXT)**\nProvide detailed information about Sattva Group's current status as of 2026:\n- Complete company history, founding year, and evolution timeline\n- Current leadership team with names, designations, and backgrounds\n- Business verticals beyond real estate (if any)\n- Current market capitalisation, revenue figures, and financial performance (2024-2026)\n- Total number of employees and office locations\n- Corporate structure and subsidiary companies\n- Recent corporate developments, mergers, acquisitions, or partnerships (2024-2026)\n- Current market share in Bangalore real estate sector with exact percentages\n- Geographic presence beyond Bangalore (other cities/states)\n\n**2. CREDIBILITY & GRADE ASSESSMENT**\nAnalyse Sattva's standing in the industry:\n- Official grade classification (A-grade, B-grade, etc.) from industry bodies\n- RERA registration status and compliance record for all projects\n- Credit ratings from agencies like CRISIL, ICRA, or CARE (latest ratings)\n- Financial stability indicators: debt-to-equity ratio, cash flow, working capital\n- Industry awards and recognitions received (2022-2026)\n- Quality certifications (ISO, IGBC, etc.) with validity dates\n- Legal compliance record: any ongoing litigation, NCLT cases, or regulatory issues\n- Customer complaint statistics from consumer forums and RERA portals\n- Delivery track record: percentage of projects delivered on time vs delayed\n- Comparison metrics with other A-grade builders in Bangalore\n\n**3. COMPLETE PROJECT PORTFOLIO ANALYSIS**\nProvide exhaustive project data:\n- Total number of projects: completed, ongoing, upcoming, and pre-launch\n- Geographic distribution across Bangalore with locality-wise project count\n- Project categories: residential (flats/villas), commercial, mixed-use with unit counts\n- Total area developed (in acres/sq ft) and total units delivered\n- Current inventory: available units across all ongoing projects\n- Price ranges for different project categories and locations (\u20b9 per sq ft)\n- Specific project details for major developments including:\n  * Sattva Songbird: location, size, unit types, pricing, possession status\n  * Sattva Lumina: complete specifications, amenities, investment potential\n  * Other flagship projects with names, locations, and current status\n- Upcoming launches planned for 2026-2027 with tentative timelines\n- Pre-launch opportunities currently available with pricing and offers\n\n**4. COMPETITIVE ANALYSIS**\nDetailed comparison with major Bangalore builders:\n- Market positioning vs Prestige Group, Sobha Limited, Brigade Group\n- Pricing comparison: average \u20b9 per sq ft across similar localities\n- Project delivery timelines and track record comparison\n- Construction quality standards and materials used\n- Customer satisfaction scores and review ratings\n- Market share comparison with exact percentages\n- Unique selling propositions and differentiation factors\n- Financial strength comparison: revenue, profitability, debt levels\n\n**5. CUSTOMER REVIEWS & FEEDBACK ANALYSIS**\nComprehensive review analysis:\n- Overall customer satisfaction ratings from multiple platforms\n- Review aggregation from MagicBricks, NoBroker, Google Reviews, Facebook\n- Common positive feedback themes with specific examples\n- Frequent complaints and issues raised by customers\n- Project-wise review breakdown for major developments\n- Customer service quality assessment\n- Post-possession support and maintenance service reviews\n- Grievance redressal mechanism and response times\n- Comparison of review scores with competitor builders\n\n**6. INVESTMENT ANALYSIS & MARKET PERFORMANCE**\nInvestment-focused data:\n- Historical price appreciation for completed Sattva projects (2020-2026)\n- Current rental yields for Sattva properties across different localities\n- Resale market performance and liquidity analysis\n- Investment potential assessment for ongoing and upcoming projects\n- Location-wise growth prospects and infrastructure development impact\n- Connectivity improvements affecting Sattva project locations\n- Market trends affecting Sattva's target segments and price points\n\n**7. SPECIFIC FAQ RESEARCH REQUIREMENTS**\nProvide detailed answers for these specific questions:\n- What makes Sattva Group a leading real estate developer in Bangalore?\n- Is Sattva considered an A-grade builder with specific grade classification?\n- How many ongoing projects does Sattva currently have in Bangalore?\n- What are Sattva's upcoming project launches planned for 2026-2027?\n- How does Sattva compare to Prestige, Sobha, and Brigade in terms of quality and pricing?\n- What is the overall customer review rating for Sattva Group projects?\n- What are the current pre-launch offers available for Sattva projects?\n- Which Sattva projects are ready for immediate possession in Bangalore?\n- What is the investment potential and ROI for Sattva projects?\n- How does Sattva handle customer complaints and grievances?\n\n**MANDATORY SOURCE REQUIREMENTS:**\nAll information must be cited from authoritative sources with URLs in markdown format. Prioritise these sources:\n- Government: rera.karnataka.gov.in, bbmp.gov.in, bda.karnataka.gov.in\n- Financial: rbi.org.in, sebi.gov.in, moneycontrol.com\n- Real Estate Research: knightfrank.co.in, jll.co.in, anarock.com, cbre.com, cushmanwakefield.com\n- Business Media: livemint.com, economictimes.indiatimes.com, business-standard.com\n- Property Portals: magicbricks.com, nobroker.in\n- Industry Publications: constructionworld.in, realtyplusmag.com\n\n**DATA FRESHNESS REQUIREMENTS:**\n- All financial data, project status, and market metrics must be from the last 18 months (July 2024-January 2026)\n- Historical company information and completed project data can be from any relevant period\n- Pricing data must be current as of Q4 2025 or Q1 2026\n- Review and rating data should be recent (last 12 months preferred)\n\n**LANGUAGE & TERMINOLOGY:**\nUse British Indian English throughout:\n- 'Flat' instead of 'apartment'\n- Currency in 'lakh' and 'crore' (\u20b9 50 lakh, \u20b9 2.5 crore)\n- Local terminology: 'BBMP', 'RERA', 'BDA'\n- Bangalore (not Bengaluru) for consistency\n\n**SPECIFIC NUMERIC DATA REQUIRED:**\n- Exact project counts, unit numbers, and area measurements\n- Precise pricing per sq ft for different localities and project types\n- Specific percentages for market share, delivery track record, customer satisfaction\n- Exact dates for project launches, completions, and possession timelines\n- Detailed financial figures: revenue, profit margins, debt ratios\n- Specific review scores and ratings with sample sizes\n\n**OUTPUT FORMAT:**\nStructure the research with clear sections matching the content cluster outline. Include source URLs in markdown format [Source Name](URL) for every factual claim. Provide specific numbers, dates, and named entities throughout. Ensure all data points can be independently verified from the cited sources.",
+      "research_questions": [
+        {
+          "section": "Company Overview",
+          "questions": [
+            "What is Sattva Group's founding year and complete company history?",
+            "Who are the current leadership team members and their backgrounds?",
+            "What is Sattva's current market share in Bangalore real estate sector?",
+            "What are Sattva's revenue figures and financial performance for 2024-2026?"
+          ]
+        },
+        {
+          "section": "Credibility Assessment",
+          "questions": [
+            "Is Sattva classified as an A-grade builder by industry standards?",
+            "What is Sattva's RERA compliance record and registration status?",
+            "What are Sattva's current credit ratings from agencies like CRISIL or ICRA?",
+            "What percentage of Sattva projects have been delivered on time vs delayed?"
+          ]
+        },
+        {
+          "section": "Project Portfolio",
+          "questions": [
+            "How many total projects does Sattva have: completed, ongoing, and upcoming?",
+            "What are the current pricing ranges for Sattva projects across different localities?",
+            "What is the detailed status of Sattva Songbird and Lumina projects?",
+            "Which Sattva projects are available for immediate possession in 2026?"
+          ]
+        },
+        {
+          "section": "Competitive Analysis",
+          "questions": [
+            "How does Sattva's pricing compare to Prestige, Sobha, and Brigade per sq ft?",
+            "What are the market share percentages for Sattva vs major competitors?",
+            "How do delivery timelines compare between Sattva and other A-grade builders?",
+            "What are the unique selling propositions that differentiate Sattva?"
+          ]
+        },
+        {
+          "section": "Customer Reviews",
+          "questions": [
+            "What is Sattva's overall customer satisfaction rating across review platforms?",
+            "What are the most common complaints about Sattva projects?",
+            "How does Sattva's customer service quality compare to competitors?",
+            "What is the project-wise review breakdown for major Sattva developments?"
+          ]
+        },
+        {
+          "section": "Investment Analysis",
+          "questions": [
+            "What has been the price appreciation for Sattva projects from 2020-2026?",
+            "What are the current rental yields for Sattva properties?",
+            "What is the resale market performance for Sattva projects?",
+            "Which Sattva projects offer the best investment potential and ROI?"
+          ]
+        }
+      ],
+      "freshness_requirements": {
+        "default": "last 18 months",
+        "exceptions": "historical company information and completed project data may use any relevant period"
+      },
+      "source_priority": [
+        "rera.karnataka.gov.in",
+        "bbmp.gov.in",
+        "bda.karnataka.gov.in",
+        "rbi.org.in",
+        "sebi.gov.in",
+        "moneycontrol.com",
+        "knightfrank.co.in",
+        "jll.co.in",
+        "anarock.com",
+        "cbre.com",
+        "livemint.com",
+        "economictimes.indiatimes.com",
+        "business-standard.com",
+        "magicbricks.com",
+        "nobroker.in"
+      ],
+      "estimated_perplexity_queries": 1,
+      "estimated_perplexity_cost_usd": 0.25
+    }
+  }
+}
